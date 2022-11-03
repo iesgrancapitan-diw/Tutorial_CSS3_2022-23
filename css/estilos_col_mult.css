@@ -1,0 +1,7 @@
+#col_ejemploColumn-count{
+    column-count: 5;
+}
+#col_ejemploColumn-width{
+    column-count: 5;
+    column-width:5px; /* no lo hace */
+}

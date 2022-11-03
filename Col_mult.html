@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>TUTORIAL CSS3 - 2020/2021 - Diseño de Interfaces Web - CFGS DAW - IES Gran Capitán</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="css/estilos_col_mult.css">
+    <script src="js/prism.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">TUTORIAL CSS3 - 2022/2023</a></h1>
+        <h2><img src="icon/language-css3.svg"></h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Bordes.html">Bordes</a></li>
+            <li><a href="Fondos.html">Fondos</a></li>
+            <li><a href="Efectos_texto.html">Fuentes y Ef Texto</a></li>
+            <li><a href="Transformaciones.html">Transformac.</a></li>
+            <li><a href="Transiciones.html">Transiciones</a></li>
+            <li><a href="Animaciones.html">Animaciones</a></li>
+            <li><a href="Col_mult.html">Col Múltiples</a></li>
+            <li><a href="Color.html">Color y Degradado</a></li>
+            <li><a href="Pseudos_Css3.html">Pseudos CSS3</a></li>
+            <li><a href="Svg_filter.html">Filter y SVG</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <h2>TUTORIAL CSS3 - Columnas Múltiples</h2>
+            <h3>Propiedades para modificar la disposición de los elementos de un documento HTML en formato columnas</h3>
+        </div>
+
+        <section>
+            <article>
+                <h3>column-count</h3>
+                <p>Indica el número de colmunas que pueden aparecer en la misma linea.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">column-count: [Número de columnas en una fila];</code></pre>
+                <p>Admite únicamente un valor positivo y entero </p>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">column-count:5;</code></pre>
+                <p>El elemento se dividirá en 5 columnas</p>
+                <h4>Resultado:</h4>
+                <br>
+                <div id="col_ejemploColumn-count">
+                    <p>columna 1</p> <!-- se pone mas debajo que las otras, arreglar -->
+                    <p>columna 2</p>
+                    <p>columna 3</p>
+                    <p>columna 4</p>
+                    <p>columna 5</p>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h3>column-width</h3>
+                <p>Indica el ancho de colmunas</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">column-width: [Número de columnas en una fila o auto];</code></pre>
+                    <p>Admite un valor o un auto</p>
+                    <ul>
+                        <li>Un valor: En cualquier unidad de medida aceptada en HTML</li>
+                        <li>Auto: asigna el mismo ancho a todas las columnas en función de la pantalla ocupando todo el espacio que le aporte la etiqueta padre</li>
+                    </ul>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">column-count:5;
+column-width:10%;</code></pre>
+                <p>El elemento se dividirá en 5 columnas con un ancho del 10%</p>
+                <h4>Resultado:</h4>
+                <br>
+                <div id="col_ejemploColumn-width">
+                    <p>columna 1</p> <!-- se pone mas debajo que las otras, arreglar -->
+                    <p>columna 2</p>
+                    <p>columna 3</p>
+                    <p>columna 4</p>
+                    <p>columna 5</p>
+                </div>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <div>Jaime Rabasco Ronda</div>
+        <a href="https://twitter.com/jaimerr" class="social"><img src="icon/twitter.svg" alt="Twitter"></a>
+        <a href="https://github.com/jaimerabasco" class="social"><img src="icon/github.svg" alt="GitHub"></a>
+    </footer>
+</body>
+
+</html>

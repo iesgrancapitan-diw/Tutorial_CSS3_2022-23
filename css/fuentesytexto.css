@@ -1,0 +1,31 @@
+.fuentesytexto_title_result{
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.fuentesytexto_resultado{
+    border: 2px solid #000000;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: hsl(227, 50%, 22%);
+    color: white;
+}
+.fuentesytexto_align_center{
+    text-align: center;
+}
+
+.fuentesytexto_align_left{
+    text-align: left;
+}
+
+.fuentesytexto_align_right{
+    text-align: right;
+}
+
+.fuentesytexto_align_justify{
+    text-align: justify;
+}
+

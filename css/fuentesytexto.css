@@ -29,3 +29,19 @@
     text-align: justify;
 }
 
+.fuentesytexto_align_last_center{
+    text-align-last: center;
+}
+
+.fuentesytexto_align_last_left{
+    text-align-last: left;
+}
+
+.fuentesytexto_align_last_right{
+    text-align-last: right;
+}
+
+.fuentesytexto_align_last_justify{
+    text-align-last: justify;
+}
+

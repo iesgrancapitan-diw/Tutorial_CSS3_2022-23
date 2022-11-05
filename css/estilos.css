@@ -216,3 +216,10 @@ span{
 		width: 98%;
 	}
 }
+
+.Transformaciones-matrix-cuadrado {
+	width: 100px;
+	height: 100px;
+	background-color: #ff0000;
+	transform: matrix(1.2, 0.2, -1, 0.9, 0, 20);
+}

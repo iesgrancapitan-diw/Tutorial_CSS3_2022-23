@@ -47,27 +47,47 @@
       </div>
       <section>
         <article>
-            <h3>tiitulo</h3>
-            <p>¿que hace?</p>
+            <h3>transformaciones-perspective</h3>
+            <p>La función CSS perspective() define una transformación que establece la distancia entre el usuario y el plano z=0, la perspectiva desde la que estaría el espectador si la interfaz bidimensional fuera tridimensional.</p>
+            <p>Su resultado es un tipo de datos &lt;transformación-función>. </p>
             <h4>Sintaxis</h4>
-            <pre class="line-numbers"><code class="language-css">ejemplo codigo</code></pre>
+            <pre class="line-numbers"><code class="language-css">perspective(800px);
+perspective(d);</code></pre>
             <p>valores admitidos </p>
             <ul>
-                <li>ej1</li>
-                <li>ej2</li>
-                <li>ej3</li>
+                <li>
+                  d <br>
+                  Es una &lt;longitud> que representa la distancia del usuario al plano z=0. Si es 0 o un valor negativo, no se aplica ninguna transformación de perspectiva.
+                </li>
             </ul>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae velit laudantium adipisci esse voluptates deserunt eum ex, excepturi, amet, sequi praesentium fugiat fugit accusamus vel nostrum numquam neque repellat autem.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam repellat earum recusandae ad voluptates necessitatibus alias eaque unde expedita, iste, at quibusdam tenetur quis voluptatibus harum culpa a porro.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ad porro optio vel beatae rem quidem quasi blanditiis sint numquam ullam, maxime neque impedit, nobis id? Maxime, commodi! Commodi, quam?</p>
-            
             <h4>Ejemplos:</h4>
-            <pre class="line-numbers"><code class="language-css">ej1
-ej2
-ej3</code></pre>
-		Aquí el resultado del ejemplo del código fuente indicado arriba. En el código fuente de los ejemplos no debe haber ninguna propiedad no explicada anteriormente. Es decir, si para el ejemplo necesitas border-style, border-width y/o border-color, estas propiedades deben ser explicadas con anterioridad
-        </article>
-    </main>
+            <pre class="line-numbers"><code class="language-css">style="transform: perspective(none);
+style="transform: perspective(800px);</code></pre>  
+    <section class="transformaciones-perspective-ejemplo-sin-modificar">
+      <div id="transformaciones-perspective-example-element" class="transition-all">
+          <div class="transformaciones-perspective-face transformaciones-perspective-front">1</div>
+          <div class="transformaciones-perspective-face transformaciones-perspective-back">2</div>
+          <div class="transformaciones-perspective-face transformaciones-perspective-right">3</div>
+          <div class="transformaciones-perspective-face transformaciones-perspective-left">4</div>
+          <div class="transformaciones-perspective-face transformaciones-perspective-top">5</div>
+          <div class="transformaciones-perspective-face transformaciones-perspective-bottom">6</div>
+      </div>
+    </section>
+<br>
+      <section class="transformaciones-perspective-ejemplo-modificada">
+        <div id="transformaciones-perspective-example-element" class="transition-all">
+          <div class="transformaciones-perspective-face transformaciones-perspective-front">1</div>
+          <div class="transformaciones-perspective-face transformaciones-perspective-back">2</div>
+          <div class="transformaciones-perspective-face transformaciones-perspective-right">3</div>
+          <div class="transformaciones-perspective-face transformaciones-perspective-left">4</div>
+          <div class="transformaciones-perspective-face transformaciones-perspective-top">5</div>
+          <div class="transformaciones-perspective-face transformaciones-perspective-bottom">6</div>
+      </div>
+     </div>
+     </section>
+<br>
+      </article>
+     </main>
     <footer>
       <div>Jaime Rabasco Ronda</div>
       <a href="https://twitter.com/jaimerr" class="social"

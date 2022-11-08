@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>TUTORIAL CSS3 - 2020/2021 - Diseño de Interfaces Web - CFGS DAW - IES Gran Capitán</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="css/prism.css">
     <script src="js/prism.js"></script>
 </head>
+
 <body>
     <header>
         <h1><a href="index.html">TUTORIAL CSS3 - 2022/2023</a></h1>
@@ -21,7 +23,7 @@
         <ul>
             <li><a href="Bordes.html">Bordes</a></li>
             <li><a href="Fondos.html">Fondos</a></li>
-            <li><a href="Efectos_texto.html">Fuentes y Ef Texto</a></li>   
+            <li><a href="Efectos_texto.html">Fuentes y Ef Texto</a></li>
             <li><a href="Transformaciones.html">Transformac.</a></li>
             <li><a href="Transiciones.html">Transiciones</a></li>
             <li><a href="Animaciones.html">Animaciones</a></li>
@@ -34,96 +36,128 @@
     </nav>
     <main>
         <div>
-            <h2>TUTORIAL CSS3 - Bordes</h2>
-            <h3>Propiedades para modificar los bordes de los elementos de un documento HTML</h3>
+            <h2>TUTORIAL CSS3 - Fondos</h2>
+            <h3>Propiedades para modificar los fondos de los elementos de un documento HTML</h3>
         </div>
 
-    <section>
-        <article>
-            <h3>border-radius</h3>
-            <p>Indica que el tamaño del borde redondeado. Es importante definir un border-style para que el borde
-                se vea redondeado.</p>
-            <h4>Sintaxis</h4>
-            <pre class="line-numbers"><code class="language-css">border-radius: [Aqui va la sintaxis de cada propiedad];</code></pre>
-            <p>Admite de uno a cuatro valores, que son los siguientes: </p>
-            <ul>
-                <li>Un valor: se aplica a los cuatros lados.</li>
-                <li>Dos valores. se aplica el primero a arriba y abajo y el segundo a derecha e
-                    izquierda.</li>
-                <li>Tres valores: se aplica el <span>primero</span> a arriba,el segundo a derecha e izquierda y el
-                    tercero a abajo.</li>
-                <li>Cuatro valores: se aplica el primero a arriba, el segundo a la derecha, el tercero abajo y el cuarto
-                    a la izquierda.</li>
-            </ul>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae velit laudantium adipisci esse voluptates deserunt eum ex, excepturi, amet, sequi praesentium fugiat fugit accusamus vel nostrum numquam neque repellat autem.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam repellat earum recusandae ad voluptates necessitatibus alias eaque unde expedita, iste, at quibusdam tenetur quis voluptatibus harum culpa a porro.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ad porro optio vel beatae rem quidem quasi blanditiis sint numquam ullam, maxime neque impedit, nobis id? Maxime, commodi! Commodi, quam?</p>
-            
-            <h4>Ejemplos:</h4>
-            <pre class="line-numbers"><code class="language-css">border-radius: 15px 10px 15px 10px;
-border-style: solid;
-border-width: 2px;
-border-color: black;</code></pre>
-		Aquí el resultado del ejemplo del código fuente indicado arriba. En el código fuente de los ejemplos no debe haber ninguna propiedad no explicada anteriormente. Es decir, si para el ejemplo necesitas border-style, border-width y/o border-color, estas propiedades deben ser explicadas con anterioridad
-        </article>
+        <section>
+            <article>
+                <h3>background-attachment</h3>
+                <p>Determina si la posición de la imagen de fondo será fija
+                    dentro de la pantalla o se desplazará con su bloque contenedor.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">background-attachment: scroll|fixed|local|initial|inherit;</code></pre>
+                <p>Valores: </p>
+                <ul>
+                    <li>
+                        <p>Scroll</p>
+                        - La imagen de fondo se desplazará con la página. esto es por defecto
+                    </li>
+                    <li>
+                        <p>fixed</p>
+                        - La imagen de fondo no se desplazará con la página.
+                    </li>
+                    <li>
+                        <p>local</p>
+                        - La imagen de fondo se desplazará con el contenido del elemento.
+                    </li>
+                    <li>
+                        <p>initial</p>
+                        - Establece esta propiedad en su valor predeterminado.
+                    </li>
+                    <li>
+                        <p>inherit</p>
+                        - Hereda esta propiedad de su elemento padre.
+                    </li>
+                </ul>
 
-        <article>
-            <h3>border-radius</h3>
-            <p>Indica que el tamaño del borde redondeado. Es importante definir un border-style para que el borde
-                se vea redondeado.</p>
-            <h4>Sintaxis</h4>
-            <pre class="line-numbers"><code class="language-css">border-radius: [Aqui va la sintaxis de cada propiedad];</code></pre>
-            <p>Admite de uno a cuatro valores, que son los siguientes: </p>
-            <ul>
-                <li>Un valor: se aplica a los cuatros lados.</li>
-                <li>Dos valores. se aplica el primero a arriba y abajo y el segundo a derecha e
-                    izquierda.</li>
-                <li>Tres valores: se aplica el <span>primero</span> a arriba,el segundo a derecha e izquierda y el
-                    tercero a abajo.</li>
-                <li>Cuatro valores: se aplica el primero a arriba, el segundo a la derecha, el tercero abajo y el cuarto
-                    a la izquierda.</li>
-            </ul>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae velit laudantium adipisci esse voluptates deserunt eum ex, excepturi, amet, sequi praesentium fugiat fugit accusamus vel nostrum numquam neque repellat autem.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam repellat earum recusandae ad voluptates necessitatibus alias eaque unde expedita, iste, at quibusdam tenetur quis voluptatibus harum culpa a porro.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ad porro optio vel beatae rem quidem quasi blanditiis sint numquam ullam, maxime neque impedit, nobis id? Maxime, commodi! Commodi, quam?</p>
-            
-            <h4>Ejemplos:</h4>
-            <pre class="line-numbers"><code class="language-html">&lt;p&gt;Párrafo 1&lt;/p&gt;
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">body { 
+    background-image: url("img_tree.gif");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+</code></pre>
+            </article>  
+
+            <article>
+                <h3>border-radius</h3>
+                <p>Indica que el tamaño del borde redondeado. Es importante definir un border-style para que el borde
+                    se vea redondeado.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">border-radius: [Aqui va la sintaxis de cada propiedad];</code></pre>
+                <p>Admite de uno a cuatro valores, que son los siguientes: </p>
+                <ul>
+                    <li>Un valor: se aplica a los cuatros lados.</li>
+                    <li>Dos valores. se aplica el primero a arriba y abajo y el segundo a derecha e
+                        izquierda.</li>
+                    <li>Tres valores: se aplica el <span>primero</span> a arriba,el segundo a derecha e izquierda y el
+                        tercero a abajo.</li>
+                    <li>Cuatro valores: se aplica el primero a arriba, el segundo a la derecha, el tercero abajo y el
+                        cuarto
+                        a la izquierda.</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae velit laudantium adipisci esse
+                    voluptates deserunt eum ex, excepturi, amet, sequi praesentium fugiat fugit accusamus vel nostrum
+                    numquam neque repellat autem.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam repellat earum recusandae
+                    ad voluptates necessitatibus alias eaque unde expedita, iste, at quibusdam tenetur quis voluptatibus
+                    harum culpa a porro.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ad porro optio vel beatae rem
+                    quidem quasi blanditiis sint numquam ullam, maxime neque impedit, nobis id? Maxime, commodi!
+                    Commodi, quam?</p>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-html">&lt;p&gt;Párrafo 1&lt;/p&gt;
 &lt;p&gt;Párrafo 2&lt;/p&gt;
 &lt;p&gt;Párrafo 3&lt;/p&gt;</code></pre>
-			Aquí el resultado del ejemplo del código fuente indicado arriba. En el código fuente de los ejemplos no debe haber ninguna propiedad no explicada anteriormente. Es decir, si para el ejemplo necesitas border-style, border-width y/o border-color, estas propiedades deben ser explicadas con anterioridad
-black;
-        </article>
+                Aquí el resultado del ejemplo del código fuente indicado arriba. En el código fuente de los ejemplos no
+                debe haber ninguna propiedad no explicada anteriormente. Es decir, si para el ejemplo necesitas
+                border-style, border-width y/o border-color, estas propiedades deben ser explicadas con anterioridad
+                black;
+            </article>
 
-        <article>
-            <h3>border-radius</h3>
-            <p>Indica que el tamaño del borde redondeado. Es importante definir un border-style para que el borde
-                se vea redondeado.</p>
-            <h4>Sintaxis</h4>
-            <pre class="line-numbers"><code class="language-css">border-radius: [Aqui va la sintaxis de cada propiedad];</code></pre>
-            <p>Admite de uno a cuatro valores, que son los siguientes: </p>
-            <ul>
-                <li>Un valor: se aplica a los cuatros lados.</li>
-                <li>Dos valores. se aplica el primero a arriba y abajo y el segundo a derecha e
-                    izquierda.</li>
-                <li>Tres valores: se aplica el <span>primero</span> a arriba,el segundo a derecha e izquierda y el
-                    tercero a abajo.</li>
-                <li>Cuatro valores: se aplica el primero a arriba, el segundo a la derecha, el tercero abajo y el cuarto
-                    a la izquierda.</li>
-            </ul>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae velit laudantium adipisci esse voluptates deserunt eum ex, excepturi, amet, sequi praesentium fugiat fugit accusamus vel nostrum numquam neque repellat autem.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam repellat earum recusandae ad voluptates necessitatibus alias eaque unde expedita, iste, at quibusdam tenetur quis voluptatibus harum culpa a porro.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ad porro optio vel beatae rem quidem quasi blanditiis sint numquam ullam, maxime neque impedit, nobis id? Maxime, commodi! Commodi, quam?</p>
-            
-            <h4>Ejemplos:</h4>
-            <pre class="line-numbers"><code class="language-css">border-radius: 15px 10px 15px 10px;
+            <article>
+                <h3>border-radius</h3>
+                <p>Indica que el tamaño del borde redondeado. Es importante definir un border-style para que el borde
+                    se vea redondeado.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">border-radius: [Aqui va la sintaxis de cada propiedad];</code></pre>
+                <p>Admite de uno a cuatro valores, que son los siguientes: </p>
+                <ul>
+                    <li>Un valor: se aplica a los cuatros lados.</li>
+                    <li>Dos valores. se aplica el primero a arriba y abajo y el segundo a derecha e
+                        izquierda.</li>
+                    <li>Tres valores: se aplica el <span>primero</span> a arriba,el segundo a derecha e izquierda y el
+                        tercero a abajo.</li>
+                    <li>Cuatro valores: se aplica el primero a arriba, el segundo a la derecha, el tercero abajo y el
+                        cuarto
+                        a la izquierda.</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae velit laudantium adipisci esse
+                    voluptates deserunt eum ex, excepturi, amet, sequi praesentium fugiat fugit accusamus vel nostrum
+                    numquam neque repellat autem.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam repellat earum recusandae
+                    ad voluptates necessitatibus alias eaque unde expedita, iste, at quibusdam tenetur quis voluptatibus
+                    harum culpa a porro.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ad porro optio vel beatae rem
+                    quidem quasi blanditiis sint numquam ullam, maxime neque impedit, nobis id? Maxime, commodi!
+                    Commodi, quam?</p>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">border-radius: 15px 10px 15px 10px;
 border-style: solid;
 border-width: 2px;
 border-color: black;</code></pre>
-			Aquí el resultado del ejemplo del código fuente indicado arriba. En el código fuente de los ejemplos no debe haber ninguna propiedad no explicada anteriormente. Es decir, si para el ejemplo necesitas border-style, border-width y/o border-color, estas propiedades deben ser explicadas con anterioridad
-        </article>
+                Aquí el resultado del ejemplo del código fuente indicado arriba. En el código fuente de los ejemplos no
+                debe haber ninguna propiedad no explicada anteriormente. Es decir, si para el ejemplo necesitas
+                border-style, border-width y/o border-color, estas propiedades deben ser explicadas con anterioridad
+            </article>
 
-    </section>
+        </section>
     </main>
     <footer>
         <div>Jaime Rabasco Ronda</div>
@@ -131,4 +165,5 @@ border-color: black;</code></pre>
         <a href="https://github.com/jaimerabasco" class="social"><img src="icon/github.svg" alt="GitHub"></a>
     </footer>
 </body>
+
 </html>

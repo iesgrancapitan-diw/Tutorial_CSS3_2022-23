@@ -45,3 +45,10 @@
     text-align-last: justify;
 }
 
+.fuentesytexto_direction_ltr{
+    direction: ltr;
+}
+
+.fuentesytexto_direction_rtl{
+    direction: rtl;
+}

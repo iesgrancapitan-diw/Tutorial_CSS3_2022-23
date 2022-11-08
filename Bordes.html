@@ -66,7 +66,7 @@
                 <p>Admite de uno a cuatro valores, que son los siguientes: </p>
                 <ul>
                     <li>Un valor: se aplica a los cuatros lados.</li>
-                    <li>Dos valores. se aplica el primero a arriba y abajo y el segundo a derecha e
+                    <li>Dos valores: se aplica el primero a arriba y abajo y el segundo a derecha e
                         izquierda.</li>
                     <li>Tres valores: se aplica el <span>primero</span> a arriba,el segundo a derecha e izquierda y el
                         tercero a abajo.</li>
@@ -106,7 +106,7 @@
                 <p>Admite de uno a cuatro valores, que son los siguientes: </p>
                 <ul>
                     <li>Un valor: se aplica a los cuatros lados.</li>
-                    <li>Dos valores. se aplica el primero a arriba y abajo y el segundo a derecha e
+                    <li>Dos valores: se aplica el primero a arriba y abajo y el segundo a derecha e
                         izquierda.</li>
                     <li>Tres valores: se aplica el <span>primero</span> a arriba,el segundo a derecha e izquierda y el
                         tercero a abajo.</li>
@@ -134,9 +134,99 @@ border-width: 2px 4px 6px 8px;</code></pre>
             </article>
 
             <article>
+                <h3>border-color</h3>
+                <p>Propiedad que se utiliza para establecer el color de los cuatro bordes</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">border-style: {color | [color borde derecho] | [color borde inferior] | [color borde izquierdo]};</code></pre>
+                <p>Admite de uno a cuatro valores, que son los siguientes: </p>
+                <ul>
+                    <li>Un valor: se aplica a los cuatros lados.</li>
+                    <li>Dos valores: se aplica el primero a arriba y abajo y el segundo a derecha e
+                        izquierda.</li>
+                    <li>Tres valores: se aplica el <span>primero</span> a arriba,el segundo a derecha e izquierda y el
+                        tercero a abajo.</li>
+                    <li>Cuatro valores: se aplica el primero a arriba, el segundo a la derecha, el tercero abajo y el
+                        cuarto
+                        a la izquierda.</li>
+                </ul>
+                <p>El color se puede configurar mediante: </p>
+                <ul>
+                    <li>nombre - especifique un nombre de color, como "rojo"</li>
+                    <li>HEX: especifica un valor HEX, como "#ff0000"</li>
+                    <li>RGB: especifica un valor RGB, como "rgb(255,0,0)"</li>
+                    <li>HSL: especifique un valor HSL, como "hsl(0, 100%, 50%)"</li>
+                    <li>transparente</li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">border-color: red;
+border-style: solid;
+border-width: 2px;</code></pre>
+                <div id="border-color-1">Ejemplo de border-color</div>
+                <pre class="line-numbers"><code class="language-css">border-color: red green;
+border-style: solid;
+border-width: 4px;</code></pre>
+                <div id="border-color-2">Ejemplo de border-color con dos parámetros</div>    
+                <pre class="line-numbers"><code class="language-css">border-color: red green;
+border-style: solid;
+border-width: 4px;</code></pre>
+                <div id="border-color-3">Ejemplo de border-color con 4 parámetros</div>
+            </article>
+
+
+            <article>
                 <h3>border-radius</h3>
                 <p>Indica que el tamaño del borde redondeado. Es importante definir un border-style para que el borde
                     se vea redondeado.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">border-style: {tamaño de redondeado | [tamaño de redondeado borde esquina posterior derecha] | [tamaño de redondeado borde inferior derecho] | [tamaño de redondeado borde inferior izquierdo]};</code></pre>
+                <p>Admite de uno a cuatro valores, que son los siguientes: </p>
+                <ul>
+                    <li>Un valor: se aplica a las cuatros esquinas del borde.</li>
+                    <li>Dos valores: se aplica el primero a la esquina superior izquierda y a la esquina inferior derecha. Y el segundo valor se aplica a la esquina superior derecha y a la esquina inferior izquierda.  </li>
+                    <li>Tres valores: se aplica el <span>primero</span> a la esquina superior izquierda,el segundo a la esquina superior derecha e esquina inferior izquierda y el
+                        tercero a la esquina inferior derecha.</li>
+                    <li>Cuatro valores: se aplica el primero a la esquina superior izquierda, el segundo a la esquina superior derecha, el tercero esquina inferior derecha y el
+                        cuarto
+                        a la esquina inferior izquierda.</li>
+                </ul>
+    
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">border-radius: 8px;
+border-style: solid;
+border-width: 4px;
+                </code></pre>
+                <div id="border-radius-1">Ejemplo de border-radius con un solo parámetro</div>
+                <pre class="line-numbers"><code class="language-css">border-radius: 8px 4px;
+border-style: solid;
+border-width: 4px;</code></pre>
+                <div id="border-radius-2">Ejemplo de border-radius con dos parámetros</div>
+                <pre class="line-numbers"><code class="language-css">border-radius: 16px 8px 4px;
+border-style: solid;
+border-width: 4px;</code></pre>
+                <div id="border-radius-3">Ejemplo de border-radius con tres parámetros</div>
+                <pre class="line-numbers"><code class="language-css">border-radius: 16px 8px 4px 10px;
+border-style: solid;
+border-width: 4px;</code></pre>
+                <div id="border-radius-4">Ejemplo de border-radius con cuatro parámetros</div>
+            </article>
+
+            <article>
+                <h3>box-shadow</h3>
+                <p>Agrega sombras a diferentes elementos</p>
+                <h4>Se permiten los siguientes valores para dicha propiedad</h4>
+                <ul>
+                    <li><b>none</b> - Valor por defecto. No se muestra ninguna sombra</li>
+                    <li><b>h-offset</b> - Requerido. Es el desplazamiento horizontal de la sombra. Un valor positivo situa la sombra en el lado derecho del cuadro(elemento), un valor negativo situa la sombra en el lado izquierdo del cuadro</li>
+                    <li><b>v-offset</b> - Requerido. Es el desplazamiento vertical de la sombra. Un valor positivo situa la sombra debajo del cuadro(elemento), un valor negativo situa la sombra encima del cuadro</li>
+                    <li><b>blur</b> - Opcional. Es el radio de desenfoque. Cuanto mayor sea el número, más borrosa será la sombra</li>
+                    <li><b>spread</b> - Opcional. Es el radio de propagación. Un valor positivo aumenta el tamaño de la sombra, un valor negativo disminuye el tamaño de la sombra</li>
+                    <li><b>color</b> - Opcional. Es el color de la sombra. El valor predeterminado es el color del texto. </li>
+                    <li><b>inset</b> - Opcional. Cambia la sombra de una sombra exterior(por fuera del elemento) a una sombra interior(dentro del elemento)</li>
+                    <li><b>initial</b> - Establece esta propiedad en su valor predeterminado.</li>
+                    <li><b>inherit</b> - Hereda esta propiedad de su elemento principal.</li>
+                </ul>
                 <h4>Sintaxis</h4>
                 <pre
                     class="line-numbers"><code class="language-css">border-radius: [Aqui va la sintaxis de cada propiedad];</code></pre>
@@ -200,14 +290,16 @@ border-width: 2px 4px 6px 8px;</code></pre>
                     Commodi, quam?</p>
 
                 <h4>Ejemplos:</h4>
-                <pre class="line-numbers"><code class="language-css">border-radius: 15px 10px 15px 10px;
-border-style: solid;
-border-width: 2px;
-border-color: black;</code></pre>
+                <pre class="line-numbers"><code class="language-html">&lt;p&gt;Párrafo 1&lt;/p&gt;
+&lt;p&gt;Párrafo 2&lt;/p&gt;
+&lt;p&gt;Párrafo 3&lt;/p&gt;</code></pre>
                 Aquí el resultado del ejemplo del código fuente indicado arriba. En el código fuente de los ejemplos no
                 debe haber ninguna propiedad no explicada anteriormente. Es decir, si para el ejemplo necesitas
                 border-style, border-width y/o border-color, estas propiedades deben ser explicadas con anterioridad
+                black;
             </article>
+
+            
 
         </section>
     </main>

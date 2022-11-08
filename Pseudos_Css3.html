@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>TUTORIAL CSS3 - 2020/2021 - Diseño de Interfaces Web - CFGS DAW - IES Gran Capitán</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="css/pseudos-estilos.css">
+    <script src="js/prism.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">TUTORIAL CSS3 - 2022/2023</a></h1>
+        <h2><img src="icon/language-css3.svg"></h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Bordes.html">Bordes</a></li>
+            <li><a href="Fondos.html">Fondos</a></li>
+            <li><a href="Efectos_texto.html">Fuentes y Ef Texto</a></li>
+            <li><a href="Transformaciones.html">Transformac.</a></li>
+            <li><a href="Transiciones.html">Transiciones</a></li>
+            <li><a href="Animaciones.html">Animaciones</a></li>
+            <li><a href="Col_mult.html">Col Múltiples</a></li>
+            <li><a href="Color.html">Color y Degradado</a></li>
+            <li><a href="Pseudos_Css3.html">Pseudos CSS3</a></li>
+            <li><a href="Svg_filter.html">Filter y SVG</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <h2>TUTORIAL CSS3 - Pseudos Css3</h2>
+            <h3>
+                Un PseudoElemento CSS es una palabra clave que se añade a los selectores y que especifica un elemento
+                especial del elemento seleccionado.<br>
+                Una PseudoClase CSS es una palabra clave que se añade a los selectores y que especifica un estado
+                especial del elemento seleccionado.
+            </h3>
+        </div>
+
+        <section>
+            <h2 id="PseudoElementos">PseudoElementos</h2>
+            <h3><a href="#PseudoClases" style="color: #ffd149";>Ir a Pseudo Clases</a></h3>
+            <article>
+                <h3>::after</h3>
+                <p> Selecciona el elemento al que se puede aplicar estilo que aparece a continuación del contenido del
+                    elemento que lo origina.</p>
+                    <h4>Sintaxis</h4>
+                    <pre class="line-numbers"><code class="language-css">elemento::after {CSS a aplicar}</code></pre>
+                <p>Admite todas las propiedades css  y ademas la propiedad "content".</p>
+                <p>La propiedad "content" es obligatoria y se utiliza para especificar el contenido del pseudoElemento.</p>	
+                <p>El valor de la propiedad "content" puede ser:</p>
+                <ul>
+                    <li>cadena: Define el contenido de texto. El valor por defecto es "".</li>
+                    <li>url: Define una dirección URL</li>
+                    <li>counter (name)</li>
+                    <li>counter (name, list-style-type)</li>
+                    <li>counter (name, list-style-type, separator)</li>
+                    <li>counters (name, string)</li>
+                    <li>counters (name, string, list-style-type)</li>
+                    <li>counters (name, string, list-style-type, separator)</li>
+                    <li>attr(name): Define un atributo de un selector que será mostrado antes/después del selector.</li>
+                    <li>open-quote</li>
+                    <li>close-quote</li>
+                    <li>no-open-quote</li>
+                    <li>no-close-quote</li>
+                </ul>
+                <br>
+                <p>Es comunmente usado para añadir contenido cosmético a un elemento con la propiedad content. Es en
+                    linea (inline) de forma predeterminada.</p>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">#ejemplo::after {
+    content: "→";
+    color: #f00;
+}
+</code></pre>
+            <p>Resultado:</p>
+            <p id="ejemplo">A este texto se le añade una flecha roja</p>
+            </article>
+
+            <article>
+                <h3>::before</h3>
+                <p>Crea un pseudoelemento que es el primer hijo del elemento seleccionado. 
+                Es usado normalmente para añadir contenido estético a un elemento, 
+                usando la propiedad content. Este elemento se muestra en línea con el texto de forma predeterminada.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">elemento::before{CSS a aplicar}</code></pre>
+                    <p>Admite todas las propiedades css  y ademas la propiedad "content".</p>
+                    <p>La propiedad "content" es obligatoria y se utiliza para especificar el contenido del pseudoElemento.</p>	
+                    <p>El valor de la propiedad "content" puede ser:</p>
+                    <ul>
+                        <li>cadena: Define el contenido de texto. El valor por defecto es "".</li>
+                        <li>url: Define una dirección URL</li>
+                        <li>counter (name)</li>
+                        <li>counter (name, list-style-type)</li>
+                        <li>counter (name, list-style-type, separator)</li>
+                        <li>counters (name, string)</li>
+                        <li>counters (name, string, list-style-type)</li>
+                        <li>counters (name, string, list-style-type, separator)</li>
+                        <li>attr(name): Define un atributo de un selector que será mostrado antes/después del selector.</li>
+                        <li>open-quote</li>
+                        <li>close-quote</li>
+                        <li>no-open-quote</li>
+                        <li>no-close-quote</li>
+                    </ul>
+                    <br>
+                    <p>Es comunmente usado para añadir contenido cosmético a un elemento con la propiedad content. Es en
+                        linea (inline) de forma predeterminada.</p>    
+                <h4>Ejemplos:</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">#ejemplo2::before{
+    content: "♥";
+    color: #f00;
+}
+</code></pre>
+            <p>Resultado:</p>
+            <p id="ejemplo2">A este texto se le añade un corazón al inicio.</p> 
+            </article>
+
+            <article>
+                <h3>::first-letter</h3>
+                <p> Aplica estilos a la primera letra de la primera línea un elemento de bloque, 
+                    sólo cuando no es precedido de otro contenido (como imágenes o tablas).</p>
+                    <h4>Sintaxis</h4>
+                    <pre class="line-numbers"><code class="language-css">elemento::first-letter {CSS a aplicar}</code></pre>
+                <p>Propiedades admitidas:</p>
+                <ul>
+                    <li>Todas las propiedades de fuente</li>
+                    <li>Todas las propiedades de fondo</li>
+                    <li>Todas las propiedades de márgenes</li>
+                    <li>Todas las propiedades de relleno</li>
+                    <li>Todas las propiedades de bordes</li>
+                    <li>La propiedad color</li>
+                    <li>Las propiedades text-decoration, text-shadow, text-transform, letter-spacing, word-spacing, 
+                        line-height, text-decoration-line, text-decoration-style, box-shadow, 
+                        float y vertical-align</li>
+                </ul>
+                <br>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">#ejemplo3::first-letter {
+    color: #f00;
+    font-size: 2em;
+}
+</code></pre>
+            <p>Resultado:</p>
+            <p id="ejemplo3">La primera letra de este parrafo es roja y más grande.</p>
+            </article>
+
+            <article>
+                <h3>::placeholder</h3>
+                <p> Representa el texto provisional en un elemento "input" o un elemento "textarea".</p>
+                    <h4>Sintaxis</h4>
+                    <pre class="line-numbers"><code class="language-css">input::placeholder {CSS a aplicar}</code></pre>
+                <p>Propiedades admitidas:</p>
+                <ul>
+                    <li>Todas las propiedades de fuente</li>
+                    <li>Todas las propiedades de fondo</li>
+                    <li>Todas las propiedades de márgenes</li>
+                    <li>Todas las propiedades de relleno</li>
+                    <li>Todas las propiedades de bordes</li>
+                    <li>La propiedad color</li>
+                    <li>Las propiedades text-decoration, text-shadow, text-transform, letter-spacing, word-spacing, 
+                        line-height, text-decoration-line, text-decoration-style, box-shadow, 
+                        float y vertical-align</li>
+                </ul>
+                <br>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">#ejemplo4::placeholder {
+    color: blue;
+    background-color: #f00;
+}
+</code></pre>
+            <p>Resultado:</p>
+            <input id="ejemplo4" placeholder="Texto en azul con fondo rojo" style="width: 250px;">
+
+            </article>
+            
+            <article>
+                <h3>::marker</h3>
+                <p> Selecciona la caja de marcadores de un elemento de la lista, que normalmente contiene una viñeta o un número</p>
+                    <h4>Sintaxis</h4>
+                    <pre class="line-numbers"><code class="language-css">ul li::marker {CSS a aplicar}</code></pre>
+                <p>Propiedades admitidas:</p>
+                <ul>
+                    <li>Todas las propiedades de fuente</li>
+                    <li>La propiedad text-combine-upright, unicode-bidi y direction</li>
+                    <li>La propiedad content</li>
+                    <li>La propiedad color</li>
+                </ul>
+                <br>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.ejemplo5::marker {
+    color: blue;
+    font-size: 2em;
+}
+</code></pre>
+            <p>Resultado:</p>
+            <ul>
+                <li class="ejemplo5">Marca con color azul</li>
+                <li class="ejemplo5">Marca con color azul 2</li>
+                <li class="ejemplo5">Marca con color azul 3</li>
+            </ul>
+
+            </article>
+
+            <article>
+                <h3>::spelling-error</h3>
+                <h4>IMPORTANTE: este Pseudo Elemento NO es compatible con los siguientes navegadores:
+                    <ul>
+                        <li>Chrome</li>
+                        <li>Edge</li>
+                        <li>Firefox</li>
+                        <li>Opera</li>
+                        <li>Safari</li>
+                        <li>Chrome Android</li>
+                        <li>Firefox for Android</li>
+                        <li>Opera Android</li>
+                        <li>Safari on iOS</li>
+                        <li>Samsung Internet</li>
+                        <li>WebView Android</li>
+                    </ul>
+                </h4>
+                <p> Representa un segmento de texto que el user agent ha marcado como deletreado incorrectamente.</p>
+                    <h4>Sintaxis</h4>
+                    <pre class="line-numbers"><code class="language-css">elemento::spelling-error {CSS a aplicar}</code></pre>
+                <p>Propiedades admitidas:</p>
+                <ul>
+                    <li>color</li>
+                    <li>background-color</li>
+                    <li>cursor</li>
+                    <li>caret-color</li>
+                    <li>outline</li>
+                    <li>text-decoration</li>
+                    <li>text-emphasis-color</li>
+                    <li>text-shadow</li>
+                </ul>
+                <br>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">#ejemplo6::spelling-error {
+    color: green;
+    text-decoration: underline;
+}
+</code></pre>
+            <p>Resultado:</p>
+            <p id="ejemplo6">Texto del ejemplo 6</p>
+
+            </article>
+
+            <article>
+            <h3>::grammar-error</h3>
+            <h4>IMPORTANTE: este Pseudo Elemento NO es compatible con los siguientes navegadores:
+                <ul>
+                    <li>Chrome</li>
+                    <li>Edge</li>
+                    <li>Firefox</li>
+                    <li>Opera</li>
+                    <li>Safari</li>
+                    <li>Chrome Android</li>
+                    <li>Firefox for Android</li>
+                    <li>Opera Android</li>
+                    <li>Safari on iOS</li>
+                    <li>Samsung Internet</li>
+                    <li>WebView Android</li>
+                </ul>
+            </h4>
+            <p> Representa un segmento de texto que el user agent ha marcado como gramaticamente incorrecto.</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento::grammar-error {CSS a aplicar}</code></pre>
+            <p>Propiedades admitidas:</p>
+            <ul>
+                <li>color</li>
+                <li>background-color</li>
+                <li>cursor</li>
+                <li>caret-color</li>
+                <li>outline</li>
+                <li>text-decoration</li>
+                <li>text-emphasis-color</li>
+                <li>text-shadow</li>
+            </ul>
+            <br>
+
+            <h4>Ejemplos:</h4>
+            <pre class="line-numbers"><code class="language-css">#ejemplo7::grammar-error {
+color: green;
+text-decoration: underline;
+}
+</code></pre>
+        <p>Resultado:</p>
+        <p id="ejemplo7">Texto del ejemplo 7</p>
+
+        </article>
+
+        </section>
+
+        <section>
+            <h2 id="PseudoClases">PseudoClases</h2>
+            <h3><a href="#PseudoElementos" style="color: #ffd149";>Ir a Pseudo Elementos</a></h3>
+
+            <article>
+                <h3>:active</h3>
+                <p> Representa un elemento (como un botón) que el usuario está activando.</p>
+                    <h4>Sintaxis</h4>
+                    <pre class="line-numbers"><code class="language-css">elemento:active {CSS a aplicar}</code></pre>
+                    <p>Admite todas las propiedades css.</p>
+                <br>
+                <p>La pseudo-clase :active se usa comúnmente en los elementos "a" y "button", pero también se puede usar en otros elementos.</p>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">#ejemploPClase:active {
+    color: #f00;
+    background-color: #0f0;
+}
+</code></pre>
+            <p>Resultado:</p>
+            <p id="ejemploPClase">El estilo se aplica al hacer click en este elemento</p>
+            </article>
+
+            <!--TODO todas las demás PseudoClases https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes --> 
+        </section>
+    </main>
+    <footer>
+        <div>Jaime Rabasco Ronda</div>
+        <a href="https://twitter.com/jaimerr" class="social"><img src="icon/twitter.svg" alt="Twitter"></a>
+        <a href="https://github.com/jaimerabasco" class="social"><img src="icon/github.svg" alt="GitHub"></a>
+    </footer>
+</body>
+
+</html>

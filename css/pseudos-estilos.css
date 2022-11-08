@@ -1,0 +1,36 @@
+#ejemplo::after {
+    content: "→";
+    color: #f00;
+}
+#ejemplo2::before {
+    content: "♥";
+    color: #f00;
+}
+
+#ejemplo3::first-letter {
+    color: #f00;
+    font-size: 2em;
+}
+#ejemplo4::placeholder {
+    color: blue;
+    background-color: #f00;
+}
+.ejemplo5::marker {
+    color: blue;
+    font-size: 2em;
+}
+#ejemplo6::spelling-error {
+    color: green;
+    text-decoration: underline;
+}
+#ejemplo7::grammar-error {
+    color: green;
+    text-decoration: underline;
+}
+#ejemploPClase{
+    width: 25%;
+}
+#ejemploPClase:active {
+    color: #f00;
+    background-color: #0f0;
+}

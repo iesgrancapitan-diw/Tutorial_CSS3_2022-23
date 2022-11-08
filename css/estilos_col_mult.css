@@ -1,9 +1,21 @@
-#col_ejemploColumn-count{
+img {
+    display: flex;
+    margin: auto;
+}
+
+#col_ejemploColumn-count {
     column-count: 5;
 }
-#col_ejemploColumn-width{
+
+#col_ejemploColumn-width {
     column-count: 5;
 }
-#col_ejemploColumn-width > p{
-    column-width:10%; /* no lo hace */
+
+#col_ejemploColumn-width>p {
+    column-width: 5px;
+}
+
+#col_ejemploColumn-gap {
+    column-count: 5;
+    column-gap: 80px;
 }

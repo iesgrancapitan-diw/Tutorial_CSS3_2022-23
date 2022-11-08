@@ -77,16 +77,17 @@
                         <li>Un valor: En cualquier unidad de medida aceptada en HTML</li>
                         <li>Auto: asigna el mismo ancho a todas las columnas en función de la pantalla ocupando todo el espacio que le aporte la etiqueta padre</li>
                     </ul>
-
+                    <img src="img\col_mult\col_mult_width.jfif" alt="column-width">
                 <h4>Ejemplos:</h4>
                 <pre class="line-numbers"><code class="language-css">.grupo_columnas{
     column-count:5;
 }
 .grupo_columnas > p{
-    column-width:10%;
+    background-color: aqua;
+    column-width:5px;
 }
 </code></pre>
-                <p>El elemento se dividirá en 5 columnas con un ancho del 10%</p>
+                <p>El elemento se dividirá en 5 columnas con un ancho de 5px</p>
                 <h4>Resultado:</h4>
                 <br>
                 <div id="col_ejemploColumn-width">
@@ -98,12 +99,64 @@
                 </div>
             </article>
         </section>
+        <section>
+            <article>
+                <h3>column-gap</h3>
+                <p>Indica el espaciado entre columnas.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">column-gap: [tamaño del espaciado];</code></pre>
+                <p>Admite únicamente un valor o un auto</p>
+                <img src="img\col_mult\col_mult_gap.jfif" alt="column-width">
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">column-count: 5;
+column-gap:80px;</code></pre>
+                <p>Las columnas se separarán 50 px</p>
+                <h4>Resultado:</h4>
+                <br>
+                <div id="col_ejemploColumn-gap">
+                    <p>columna 1</p> <!-- se pone mas debajo que las otras, arreglar -->
+                    <p>columna 2</p>
+                    <p>columna 3</p>
+                    <p>columna 4</p>
+                    <p>columna 5</p>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h3>column-rule</h3>
+                <p>La 'regla de la columna' coloca efectivamente un borde en el medio del 'espacio de la columna'. Por lo tanto, para habilitar esto, se debe especificar un ancho de 'espacio de columna' que tenga el mismo valor o mayor que la regla de columna.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">column-rule-width:[tamño];
+column-rule-style: none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset;
+column-rule-color: [color];
+column-rule: [tamaño] [estilo] [color]; /* forma acortada */</code></pre>
+<br>
+                <img src="img\col_mult\col_mult_rule.jfif" alt="column-width">
+                <h4>Ejemplos:</h4><!-- segir por aqui --------------------------------------------------------------------------------------------------------->
+                <pre class="line-numbers"><code class="language-css">column-count: 5;
+column-gap:80px;</code></pre>
+                <p>Las columnas se separarán 50 px</p>
+                <h4>Resultado:</h4>
+                <br>
+                <div id="col_ejemploColumn-gap">
+                    <p>columna 1</p> <!-- se pone mas debajo que las otras, arreglar -->
+                    <p>columna 2</p>
+                    <p>columna 3</p>
+                    <p>columna 4</p>
+                    <p>columna 5</p>
+                </div>
+            </article>
+        </section>
 
     </main>
     <footer>
-        <div>Jaime Rabasco Ronda</div>
+        <div>Jaime Rabasco Ronda, AlexSRK 09</div>
         <a href="https://twitter.com/jaimerr" class="social"><img src="icon/twitter.svg" alt="Twitter"></a>
-        <a href="https://github.com/jaimerabasco" class="social"><img src="icon/github.svg" alt="GitHub"></a>
+        <a href="https://github.com/alexsrk09" class="social"><img src="icon/github.svg" alt="GitHub"></a>
     </footer>
 </body>
 

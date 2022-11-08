@@ -47,7 +47,7 @@
       </div>
 
       <section>
-        <h2></h2>
+        <h2>Alineación del texto</h2>
         <article>
           <h3>text-align</h3>
           <p>Se usa para establecer la alineación horizontal del texto</p>
@@ -242,7 +242,61 @@ direction: rtl;</code></pre>
           </div>
         </article>
         <article>
+          <h3>unicode-bidi</h3>
+          <p>
+            Se usa para establecer el nivel de bidi (bidireccionalidad) de un
+            elemento. El nivel de bidi es un número que indica la dirección del
+            texto en un elemento. Los números pares indican que el texto se
+            escribe de izquierda a derecha, mientras que los números impares
+            indican que el texto se escribe de derecha a izquierda.
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">unicode-bidi: normal|embed|bidi-override|initial|inherit;</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li>normal: el texto se escribe de izquierda a derecha.</li>
+            <li>embed: el texto se escribe de derecha a izquierda.</li>
+            <li>bidi-override: el texto se escribe de derecha a izquierda.</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <p>normal</p>
 
+          <h4>Ejemplos:</h4>
+          <pre class="line-numbers"><code class="language-css">unicode-bidi: normal;
+unicode-bidi: embed;
+unicode-bidi: bidi-override;</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado">
+            <p class="fuentesytexto_title_result">Unicode Bidi Normal</p>
+            <p class="fuentesytexto_unicode_bidi_normal">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quae
+              laborum velit dolorem nihil, rerum omnis reprehenderit fugiat
+              sequi facilis neque sit recusandae quasi provident sunt, ad
+              debitis molestiae officiis. Illo optio vero possimus adipisci,
+              dolores officiis quidem iusto dolorem tempore voluptatibus quo id
+              ab, voluptatem necessitatibus harum doloribus neque non quas
+              officia eius cum quae. Quis ex illo dicta!
+            </p>
+            <p class="fuentesytexto_title_result">Unicode Bidi Embed</p>
+            <p class="fuentesytexto_unicode_bidi_embed">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quae
+              laborum velit dolorem nihil, rerum omnis reprehenderit fugiat
+              sequi facilis neque sit recusandae quasi provident sunt, ad
+              debitis molestiae officiis. Illo optio vero possimus adipisci,
+              dolores officiis quidem iusto dolorem tempore voluptatibus quo id
+              ab, voluptatem necessitatibus harum doloribus neque non quas
+              officia eius cum quae. Quis ex illo dicta!
+            </p>
+            <p class="fuentesytexto_title_result">Unicode Bidi Bidi Override</p>
+            <p class="fuentesytexto_unicode_bidi_bidi_override">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quae
+              laborum velit dolorem nihil, rerum omnis reprehenderit fugiat
+              sequi facilis neque sit recusandae quasi provident sunt, ad
+              debitis molestiae officiis. Illo optio vero possimus adipisci,
+              dolores officiis quidem iusto dolorem tempore voluptatibus quo id
+              ab, voluptatem necessitatibus harum doloribus ne
         </article>
       </section>
     </main>

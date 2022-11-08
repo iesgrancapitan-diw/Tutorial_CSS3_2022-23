@@ -52,3 +52,15 @@
 .fuentesytexto_direction_rtl{
     direction: rtl;
 }
+
+.fuentesytexto_unicode_bidi_normal{
+    unicode-bidi: normal;
+}
+
+.fuentesytexto_unicode_bidi_embed{
+    unicode-bidi: embed;
+}
+
+.fuentesytexto_unicode_bidi_bidi_override{
+    unicode-bidi: bidi-override;
+}

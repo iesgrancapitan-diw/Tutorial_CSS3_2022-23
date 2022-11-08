@@ -1,0 +1,64 @@
+#border-style-dotted{
+	border-style: dotted;
+}
+
+#border-style-dashed{
+	border-style: dashed;
+}
+
+#border-style-solid{
+	border-style: solid;
+}
+
+#border-style-double{
+	border-style: double;
+    border-width: 5px;
+}
+
+#border-style-groove{
+	border-style: groove;
+    border-width: 5px;
+}
+
+#border-style-ridge{
+	border-style: ridge;
+    border-width: 5px;
+}
+#border-style-inset{
+	border-style: inset;
+    border-width: 5px;
+}
+
+#border-style-outset{
+	border-style: outset;
+    border-width: 5px;
+}
+
+#border-style-none{
+	border-style: none;
+}
+
+#border-style-hidden{
+	border-style: hidden;
+}
+
+#border-width-1{
+    border-style: solid;
+    border-width: 4px;
+}
+#border-width-2{
+    border-style: solid;
+    border-width: thin;
+}
+#border-width-3{
+    border-style: solid;
+    border-width: medium;
+}
+#border-width-4{
+    border-style: solid;
+    border-width: thick;
+}
+#border-width-5{
+    border-style: solid;
+    border-width: 2px 4px 6px 8px;
+}

@@ -166,3 +166,53 @@
     text-decoration-line: underline;
     text-decoration-color: rgba(255, 0, 0, 0.5);
 }
+
+.fuentesytexto_text-decoration-style-solid{
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
+.fuentesytexto_text-decoration-style-double{
+    text-decoration-line: line-through underline;
+    text-decoration-style: double;
+}
+
+.fuentesytexto_text-decoration-style-dotted{
+    text-decoration-line: overline underline;
+    text-decoration-style: dotted;
+}
+
+.fuentesytexto_text-decoration-style-dashed{
+    text-decoration-line: overline;
+    text-decoration-style: dashed;
+}
+
+.fuentesytexto_text-decoration-style-wavy{
+    text-decoration-line: line-through;
+    text-decoration-style: wavy;
+}
+
+.fuentesytexto_text-decoration-thickness-2px{
+    text-decoration-thickness: 2px;
+    text-decoration-line: line-through underline;
+}
+
+.fuentesytexto_text-decoration-thickness-4px{
+    text-decoration-thickness: 4px;
+    text-decoration-line: overline underline;
+}
+
+.fuentesytexto_text-decoration-thickness-6px{
+    text-decoration-thickness: 6px;
+    text-decoration-line: overline;
+}
+
+.fuentesytexto_text-decoration-thickness-8px{
+    text-decoration-thickness: 8px;
+    text-decoration-line: line-through;
+}
+
+.fuentesytexto_text-decoration-thickness-10px{
+    text-decoration-thickness: 10px;
+    text-decoration-line: underline;
+}

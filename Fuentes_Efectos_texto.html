@@ -409,7 +409,8 @@ text-decoration-line: underline overline;</code></pre>
           <h4>Valor por defecto</h4>
           <p>color</p>
           <h4>Ejemplos:</h4>
-          <pre class="line-numbers"><code class="language-css">text-decoration-color: red;
+          <pre class="line-numbers"><code class="language-css">text-decoration-line: underline;
+text-decoration-color: red;
 text-decoration-color: #ff0000;
 text-decoration-color: rgb(255, 0, 0);
 text-decoration-color: rgba(255, 0, 0, 0.5);</code></pre>
@@ -420,6 +421,84 @@ text-decoration-color: rgba(255, 0, 0, 0.5);</code></pre>
             <p class="fuentesytexto_text-decoration-color-hsl">hsl(0, 100%, 50%)</p>
             <p class="fuentesytexto_text-decoration-color-rgb">rgb(255, 0, 0)</p>
             <p class="fuentesytexto_text-decoration-color-rgba">rgba(255, 0, 0, 0.5)</p>
+          </div>
+        </article>
+        <article>
+          <h3>text-decoration-style</h3>
+          <p>
+            Se usa para establecer el estilo de la decoración del texto. La
+            decoración del texto se puede establecer en relación con el elemento
+            padre, el elemento anterior o el elemento siguiente.
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">text-decoration-style: solid|double|dotted|dashed|wavy|initial|inherit;</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li>solid: establece una línea sólida.</li>
+            <li>double: establece una línea doble.</li>
+            <li>dotted: establece una línea punteada.</li>
+            <li>dashed: establece una línea discontinua.</li>
+            <li>wavy: establece una línea ondulada.</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <p>solid</p>
+          <h4>Ejemplos:</h4>
+          <pre class="line-numbers"><code class="language-css">text-decoration-line: underline;
+text-decoration-style: solid;
+text-decoration-line: line-through underline;
+text-decoration-style: double;
+text-decoration-line: overline underline;
+text-decoration-style: dotted;
+text-decoration-line: overline;
+text-decoration-style: dashed;
+text-decoration-line: line-through;
+text-decoration-style: wavy;</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado">
+            <p class="fuentesytexto_text-decoration-style-solid">Solid</p>
+            <p class="fuentesytexto_text-decoration-style-double">Double</p>
+            <p class="fuentesytexto_text-decoration-style-dotted">Dotted</p>
+            <p class="fuentesytexto_text-decoration-style-dashed">Dashed</p>
+            <p class="fuentesytexto_text-decoration-style-wavy">Wavy</p>
+          </div>
+        </article>
+        <article>
+          <h3>text-decoration-thickness</h3>
+          <p>
+            Se usa para establecer el grosor de la decoración del texto. La
+            decoración del texto se puede establecer en relación con el elemento
+            padre, el elemento anterior o el elemento siguiente.
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">text-decoration-thickness: length|initial|inherit;</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li>length: establece el grosor de la decoración del texto.</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <p>auto</p>
+          <h4>Ejemplos:</h4>
+          <pre class="line-numbers"><code class="language-css">text-decoration-thickness: 2px;
+text-decoration-line: line-through underline;
+text-decoration-thickness: 4px;
+text-decoration-line: overline underline;
+text-decoration-thickness: 6px;
+text-decoration-line: overline;
+text-decoration-thickness: 8px;
+text-decoration-line: line-through;
+text-decoration-thickness: 10px;
+text-decoration-line: underline;</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado">
+            <p class="fuentesytexto_text-decoration-thickness-2px">2px</p>
+            <p class="fuentesytexto_text-decoration-thickness-4px">4px</p>
+            <p class="fuentesytexto_text-decoration-thickness-6px">6px</p>
+            <p class="fuentesytexto_text-decoration-thickness-8px">8px</p>
+            <p class="fuentesytexto_text-decoration-thickness-10px">10px</p>
           </div>
         </article>
       </section>

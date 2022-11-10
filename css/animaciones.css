@@ -174,3 +174,29 @@
         transform: translateX(100px);
     }
 }
+#Animation-timing-function{
+    animation-name: animacion-timing-function;
+    width: 100px;
+    height: 100px;
+    
+    animation: animacion-timing-function 3s linear infinite;
+    animation-timing-function: ease-in-out;
+    background-color: rgb(111, 194, 202);
+    
+    
+
+}
+@keyframes animacion-timing-function {
+    0%{
+        background-color: black;
+        transform: translateX(0px);
+    }
+    50%{
+        
+        transform: translateX(50px);
+    }
+    100%{
+        
+        transform: translateX(100px);
+    }
+}

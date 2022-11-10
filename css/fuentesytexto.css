@@ -247,3 +247,99 @@
 .fuentesytexto_text-indent-50px{
     text-indent: 50px;
 }
+
+.fuentesytexto_text-indent-50porciento{
+    text-indent: 50%;
+}
+
+.fuentesytexto_text-indent-50em{
+    text-indent: 50em;
+}
+
+.fuentesytexto_letter-spacing-normal{
+    letter-spacing: normal;
+}
+
+.fuentesytexto_letter-spacing-5px{
+    letter-spacing: 5px;
+}
+
+.fuentesytexto_letter-spacing-menos2px{
+    letter-spacing: -2px;
+}
+
+.fuentesytexto_letter-spacing-5em{
+    letter-spacing: 5em;
+}
+
+.fuentesytexto_line-height-normal{
+    line-height: normal;
+}
+
+.fuentesytexto_line-height-1punto5{
+    line-height: 1.5;
+}
+
+.fuentesytexto_line-height-2{
+    line-height: 2;
+}
+
+.fuentesytexto_line-height-50px{
+    line-height: 50px;
+}
+
+.fuentesytexto_line-height-50porciento{
+    line-height: 50%;
+}
+
+.fuentesytexto_line-height-2em{
+    line-height: 2em;
+}
+
+.fuentesytexto_word-spacing-normal{
+    word-spacing: normal;
+}
+
+.fuentesytexto_word-spacing-5px{
+    word-spacing: 5px;
+}
+
+.fuentesytexto_word-spacing-menos2px{
+    word-spacing: -2px;
+}
+
+.fuentesytexto_word-spacing-5em{
+    word-spacing: 5em;
+}
+
+.fuentesytexto_white-space-normal{
+    white-space: normal;
+}
+
+.fuentesytexto_white-space-nowrap{
+    white-space: nowrap;
+}
+
+.fuentesytexto_white-space-pre{
+    white-space: pre;
+}
+
+.fuentesytexto_white-space-pre-line{
+    white-space: pre-line;
+}
+
+.fuentesytexto_white-space-pre-wrap{
+    white-space: pre-wrap;
+}
+
+.fuentesytexto_text-shadow-none{
+    text-shadow: none;
+}
+
+.fuentesytexto_text-shadow-2px{
+    text-shadow: 2px 2px 2px white;
+}
+
+.fuentesytexto_text-shadow-2px-4px{
+    text-shadow: 2px 2px 2px white, 4px 4px 4px white;
+}

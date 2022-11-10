@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/transformaciones.css" />
     <script src="js/prism.js"></script>
   </head>
+
   <body>
     <header>
       <h1><a href="index.html">TUTORIAL CSS3 - 2022/2023</a></h1>
@@ -48,7 +49,7 @@
       </div>
       <section>
         <article>
-            <h3>transform-matrix</h3>
+             <h3>transform-matrix</h3>
             <p>La función CSS matrix() define una matriz de transformación 2D homogénea. Su resultado es un tipo de datos &lt;transformación-función>.</p>
             <h4>Sintaxis</h4>
             <pre class="line-numbers"><code class="language-css">transform: matrix(1.2, 0.2, -1, 0.9, 0, 20);
@@ -125,6 +126,128 @@ style="transform: perspective(800px);</code></pre>
 <br/>
       </article>
       </section>
+      <section>
+        <article>
+          <h3>transformaciones-rotate</h3>
+          <p>
+            La propiedad CSS rotate permite especificar las transformaciones de
+            rotación de forma individual e independiente de la propiedad
+            transform.
+          </p>
+          <p>
+            Esto se ajusta mejor al uso típico de la interfaz de usuario, y
+            ahorra tener que recordar el orden exacto de las funciones de
+            transformación para especificar en la propiedad transform.
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">/* Keyword values */
+rotate: none;
+
+/* Angle value */
+rotate: 90deg;
+rotate: 0.25turn;
+rotate: 1.57rad;
+
+/* x, y, or z axis name plus angle */
+rotate: x 90deg;
+rotate: y 0.25turn;
+rotate: z 1.57rad;
+
+/* Vector plus angle value */
+rotate: 1 1 1 90deg;
+
+/* Global values */
+rotate: inherit;
+rotate: initial;
+rotate: revert;
+rotate: revert-layer;
+rotate: unset;</code></pre>
+          <ul>
+            <li>
+              Valor del ángulo<br />
+              Un ángulo(&lt;angle>) que especifica el ángulo de rotación del
+              elemento afectado, alrededor del eje Z. Equivale a la función
+              rotate() (rotación 2D).
+            </li>
+            <br />
+            <li>
+              Nombre del eje x, y o z más el valor del ángulo <br />
+              El nombre del eje alrededor del cual se quiere girar el elemento
+              afectado ("x", "y" o "z"), más un ángulo(&lt;angle>) que
+              especifica el ángulo por el que se girará el elemento. Equivale a
+              una función rotateX()/rotateY()/rotateZ() (rotación 3D).
+            </li>
+            <br />
+            <li>
+              Vector más valor angular<br />
+              Tres &lt;number>s que representan un vector centrado en el origen
+              que define una línea alrededor de la cual se quiere girar el
+              elemento, más un ángulo(&lt;angle>) que especifica el ángulo por
+              el que se girará el elemento. Equivale a una función rotate3d()
+              (rotación 3D).
+            </li>
+            <br />
+            <li>
+              none <br />
+              Especifica que no se debe aplicar ninguna rotación.
+            </li>
+            <br />
+          </ul>
+        </article>
+        <h2>Ejemplos:</h2>
+        <article>
+          <h3>rotate angle</h3>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">rotate: 90deg;</code></pre>
+          <div class="transformaciones-rotate">
+            <p class="transformaciones-rotate-angle1">Rotation</p>
+          </div>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">rotate: 0.50turn;</code></pre>
+          <div class="transformaciones-rotate">
+            <p class="transformaciones-rotate-angle2">Rotation</p>
+          </div>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">rotate: 2.28rad;</code></pre>
+          <div class="transformaciones-rotate">
+            <p class="transformaciones-rotate-angle3">Rotation</p>
+          </div>
+        </article>
+        <article>
+          <h3>rotate x, y o z </h3>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">rotate: x 25deg;</code></pre>
+          <div class="transformaciones-rotate">
+            <p class="transformaciones-rotate-anglex">Rotation</p>
+          </div>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">rotate: y 0.15turn;</code></pre>
+          <div class="transformaciones-rotate">
+            <p class="transformaciones-rotate-angley">Rotation</p>
+          </div>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">rotate:z 2.28rad;</code></pre>
+          <div class="transformaciones-rotate">
+            <p class="transformaciones-rotate-anglez">Rotation</p>
+          </div>
+        </article>
+        <article>
+          <h3>rotate vector</h3>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">rotate: 1 -0.5 1 180deg;</code></pre>
+          <div class="transformaciones-rotate">
+            <p class="transformaciones-rotate">Rotation</p>
+          </div>
+        </article>
     </main>
     <footer>
       <div>Jaime Rabasco Ronda</div>

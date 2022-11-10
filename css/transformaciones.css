@@ -53,3 +53,43 @@
 	transform: perspective(800px);
   }
   
+.transformaciones-rotate {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.transformaciones-rotate p {
+  padding: 10px 5px;
+  border: 3px solid black;
+  border-radius: 20px;
+  width: 150px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.transformaciones-rotate {
+  transition: rotate 1s;
+}
+
+div:hover .transformaciones-rotate-angle1 {
+  rotate: 90deg;
+}
+div:hover .transformaciones-rotate-angle2 {
+  rotate: 0.5turn;
+}
+div:hover .transformaciones-rotate-angle3 {
+  rotate: 2.28rad;
+}
+div:hover .transformaciones-rotate-anglex {
+  rotate: x 25deg;
+}
+div:hover .transformaciones-rotate-angley {
+  rotate: y 0.15turn;
+}
+div:hover .transformaciones-rotate-anglez {
+  rotate: z 1.57rad;
+}
+
+div:hover .transformaciones-rotate {
+  rotate: 1 -0.5 1 180deg;
+}

@@ -1,0 +1,16 @@
+.fondos-imagen1{
+    background-image: url("../img/imagen.png");
+    background-attachment: scroll;
+}
+.fondos-imagen2{
+    background-image: url("../img/imagen.png");
+    background-attachment: fixed;
+}
+.fondos-imagen3{
+    background-image: url("../img/imagen.png");
+    background-attachment: local;
+}
+.fondos-imagen4{
+    background-image: url("../img/imagen.png");
+    background-attachment: initial;
+}

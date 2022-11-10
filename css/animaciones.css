@@ -47,6 +47,7 @@
     animation-direction: alternate-reverse;
     background-color: black;
     
+    
 
 }
 @keyframes animacion-direction {
@@ -67,3 +68,29 @@
     }
 }
     
+#Animation-duration{
+    animation-name: animacion-duration;
+    width: 100px;
+    height: 100px;
+    
+    animation: animacion-duration 3s linear infinite;
+    animation-duration: 3s;
+    background-color: rgb(111, 194, 202);
+    
+    
+
+}
+@keyframes animacion-duration {
+    0%{
+        
+        transform: translateX(0px);
+    }
+    50%{
+        
+        transform: translateX(50px);
+    }
+    100%{
+        
+        transform: translateX(100px);
+    }
+}

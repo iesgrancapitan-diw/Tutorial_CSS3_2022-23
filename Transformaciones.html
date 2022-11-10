@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/estilos.css" />
     <link rel="stylesheet" href="css/prism.css" />
+    <link rel="stylesheet" href="css/transformaciones.css" />
     <script src="js/prism.js"></script>
   </head>
   <body>
@@ -47,26 +48,40 @@
       </div>
       <section>
         <article>
-            <h3>tiitulo</h3>
-            <p>¿que hace?</p>
+            <h3>transform-matrix</h3>
+            <p>La función CSS matrix() define una matriz de transformación 2D homogénea. Su resultado es un tipo de datos &lt;transformación-función>.</p>
             <h4>Sintaxis</h4>
-            <pre class="line-numbers"><code class="language-css">ejemplo codigo</code></pre>
+            <pre class="line-numbers"><code class="language-css">transform: matrix(1.2, 0.2, -1, 0.9, 0, 20);
+transform: matrix(a, b, c, d, tx, ty);</code></pre>
             <p>valores admitidos </p>
             <ul>
-                <li>ej1</li>
-                <li>ej2</li>
-                <li>ej3</li>
+                <li>
+                  a b c d<br/>
+                  Son &lt;números> que describen la transformación lineal.
+                  </li>
+                  <li>
+                  tx ty <br/>
+                  Son &lt;números> que describen la traslación a aplicar.
+                </li>
             </ul>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae velit laudantium adipisci esse voluptates deserunt eum ex, excepturi, amet, sequi praesentium fugiat fugit accusamus vel nostrum numquam neque repellat autem.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam repellat earum recusandae ad voluptates necessitatibus alias eaque unde expedita, iste, at quibusdam tenetur quis voluptatibus harum culpa a porro.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ad porro optio vel beatae rem quidem quasi blanditiis sint numquam ullam, maxime neque impedit, nobis id? Maxime, commodi! Commodi, quam?</p>
+            <p>Los primeros cuatro valores hacen referencia a la transformación que sufre el objeto que estamos modificando</p>
+            <p>Los ultimos dos valores hacen referenciaa la traslación que sufre el objeto que estamos modificando</p>
+            <p>La diferencia esta en que los primeros cuuatro valores modifican su tamaño y los ultimos dos valores modifican su posición respecto al eje de coordenadas original</p>
             
-            <h4>Ejemplos:</h4>
-            <pre class="line-numbers"><code class="language-css">ej1
-ej2
-ej3</code></pre>
-		Aquí el resultado del ejemplo del código fuente indicado arriba. En el código fuente de los ejemplos no debe haber ninguna propiedad no explicada anteriormente. Es decir, si para el ejemplo necesitas border-style, border-width y/o border-color, estas propiedades deben ser explicadas con anterioridad
+            <h4>Ejemplos:</h4> 
+            <br/>
+            <p>En el siguiente ejemplo se puede ver como se modifica el tamaño y la posición de un elemento</p>
+            <pre class="line-numbers"><code class="language-css">.cuadrado {
+  width: 100px;
+  height: 100px;
+  background-color: #ff0000;
+  transform: matrix(1.2, 0.2, -1, 0.9, 0, 20);
+}</code></pre>
+          <div class="Transformaciones-matrix-cuadrado">
+          </div>
+          <br/>
         </article>
+        </section>
     </main>
     <footer>
       <div>Jaime Rabasco Ronda</div>
@@ -79,3 +94,4 @@ ej3</code></pre>
     </footer>
   </body>
 </html>
+

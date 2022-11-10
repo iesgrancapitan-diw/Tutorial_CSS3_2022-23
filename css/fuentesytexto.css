@@ -223,3 +223,27 @@
     text-decoration-color: red;
     text-decoration-thickness: 5px;
 }
+
+.fuentesytexto_color-green{
+    color: green;
+}
+
+.fuentesytexto_color-red{
+    color: red;
+}
+
+.fuentesytexto_text-transform-capitalize{
+    text-transform: capitalize;
+}
+
+.fuentesytexto_text-transform-uppercase{
+    text-transform: uppercase;
+}
+
+.fuentesytexto_text-transform-lowercase{
+    text-transform: lowercase;
+}
+
+.fuentesytexto_text-indent-50px{
+    text-indent: 50px;
+}

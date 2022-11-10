@@ -1,0 +1,147 @@
+.transformaciones-translateX {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+    transition: 1.5s;
+}
+
+.translateX-ej1:hover {
+	transform: translateX(0px);
+}
+
+.translateX-ej2:hover {
+	transform: translateX(400px);
+}
+
+.translateX-ej3:hover {
+	transform: translateX(-1rem);
+}
+
+.translateX-ej4:hover {
+	transform: translateX(30ch);
+}
+
+
+.transformaciones-translateY {
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+    transition: 1.5s;
+}
+
+.translateY-ej1:hover {
+	transform: translateY(0px);
+}
+
+.translateY-ej2:hover {
+	transform: translateY(50px);
+}
+
+.translateY-ej3:hover {
+	transform: translateY(-1rem);
+}
+
+.translateY-ej4:hover {
+	transform: translateY(3ch);
+}
+
+.transformaciones-translate {
+	width: 100px;
+	height: 100px;
+	background-color: orange;
+    transition: 1.5s;
+}
+
+.translate-ej1:hover{
+    transform: translate(20px);
+}
+
+.translate-ej2:hover{
+    transform: translate(50px,40px);
+}
+
+.translate-ej3:hover{
+    transform: translate(-3ch, -3mm);
+}
+
+.translate-ej4:hover{
+    transform: translate(2.1rem, -2ex);
+}
+
+.transformaciones-translateZ {
+	width: 100px;
+	height: 100px;
+	margin: 40px;
+	background-color: rgb(130, 75, 219);
+	transform: perspective(100px);
+    transition: 1.5s;
+}
+
+.translateZ-ej1:hover{
+    transform: perspective(100px) translateZ(60px);
+	background-color: rgb(81, 49, 133);
+}
+
+.translateZ-ej2:hover{
+    transform: perspective(100px) translateZ(-15rem);
+	background-color: rgb(81, 49, 133);
+
+}
+
+.translateZ-ej3:hover{
+    transform: perspective(100px) translateZ(4ch);
+	background-color: rgb(81, 49, 133);
+
+}
+
+
+.transformaciones-translate3d {
+	width: 100px;
+	height: 100px;
+	margin: 40px;
+	background-color: rgb(101, 209, 228);
+	transform-style: preserve-3d;
+	transition: 1.5s;
+
+}
+
+.translate3d-ej1:hover{
+    transform: perspective(200px) translate3d(42px, -62px, 90px);
+}
+
+.translate3d-ej2:hover{
+    transform: perspective(200px) translate3d(-4rem, 0.5rem, -8rem);
+}
+
+.translate3d-ej3:hover{
+    transform: perspective(200px) translate3d(3ch, 1ch, 7ch);
+}
+
+.transformaciones-translateProp {
+	width: 100px;
+	height: 100px;
+	margin: 40px;
+	background-color: rgb(226, 113, 151);
+	transition: 1.5s;
+
+}
+
+.translateProp-ej1:hover{
+    translate: none;
+}
+
+.translateProp-ej2:hover{
+    translate: 70px;
+}
+
+.translateProp-ej3:hover{
+    translate: 0 -3rem;
+}
+
+.translateProp-ej4:hover{
+    translate: 40% 70%;
+}
+
+.translateProp-ej5:hover{
+	translate: 0px 0px 50px;
+}

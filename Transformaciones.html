@@ -49,125 +49,66 @@
       </div>
       <section>
         <article>
-          <h3>transformaciones-rotate</h3>
+          <h3>transformaciones-skew</h3>
           <p>
-            La propiedad CSS rotate permite especificar las transformaciones de
-            rotación de forma individual e independiente de la propiedad
-            transform.
+            La función CSS skew() define una transformación que sesga un
+            elemento en el plano 2D. Su resultado es un tipo de datos
+            &lt;transform-function>.
           </p>
           <p>
-            Esto se ajusta mejor al uso típico de la interfaz de usuario, y
-            ahorra tener que recordar el orden exacto de las funciones de
-            transformación para especificar en la propiedad transform.
+            Esta transformación es un mapeo de cizallamiento (transvección) que
+            distorsiona cada punto dentro de un elemento en un determinado
+            ángulo en las direcciones horizontal y vertical. El efecto es como
+            si se cogiera cada esquina del elemento y se tirara de ellas en un
+            ángulo determinado.
+          </p>
+          <p>
+            Las coordenadas de cada punto se modifican en un valor proporcional
+            al ángulo especificado y a la distancia al origen. Así, cuanto más
+            lejos del origen esté un punto, mayor será el valor que se le añada.
           </p>
           <h4>Sintaxis</h4>
-          <pre
-            class="line-numbers"
-          ><code class="language-css">/* Keyword values */
-rotate: none;
+          <p>
+            La función skew() se especifica con uno o dos valores, que
+            representan la cantidad de inclinación que se aplicará en cada
+            dirección. Si sólo se especifica un valor se utiliza para el eje x y
+            no habrá inclinación en el eje y.
+          </p>
+          <pre class="line-numbers"><code class="language-css">skew(ax)
 
-/* Angle value */
-rotate: 90deg;
-rotate: 0.25turn;
-rotate: 1.57rad;
-
-/* x, y, or z axis name plus angle */
-rotate: x 90deg;
-rotate: y 0.25turn;
-rotate: z 1.57rad;
-
-/* Vector plus angle value */
-rotate: 1 1 1 90deg;
-
-/* Global values */
-rotate: inherit;
-rotate: initial;
-rotate: revert;
-rotate: revert-layer;
-rotate: unset;</code></pre>
+skew(ax, ay)</code></pre>
           <ul>
             <li>
-              Valor del ángulo<br />
-              Un ángulo(&lt;angle>) que especifica el ángulo de rotación del
-              elemento afectado, alrededor del eje Z. Equivale a la función
-              rotate() (rotación 2D).
+              ax
+            </br>              
+              Es un &lt;ángulo> que representa el ángulo a utilizar para distorsionar el elemento a lo largo del eje x (o abscisa).
             </li>
-            <br />
+          </br>
             <li>
-              Nombre del eje x, y o z más el valor del ángulo <br />
-              El nombre del eje alrededor del cual se quiere girar el elemento
-              afectado ("x", "y" o "z"), más un ángulo(&lt;angle>) que
-              especifica el ángulo por el que se girará el elemento. Equivale a
-              una función rotateX()/rotateY()/rotateZ() (rotación 3D).
+              ay
+            </br>              
+            Es un &lt;ángulo> que representa el ángulo a utilizar para distorsionar el elemento a lo largo del eje y (u ordenada). Si no se define, su valor por defecto es 0, lo que resulta en una inclinación puramente horizontal.
             </li>
-            <br />
-            <li>
-              Vector más valor angular<br />
-              Tres &lt;number>s que representan un vector centrado en el origen
-              que define una línea alrededor de la cual se quiere girar el
-              elemento, más un ángulo(&lt;angle>) que especifica el ángulo por
-              el que se girará el elemento. Equivale a una función rotate3d()
-              (rotación 3D).
-            </li>
-            <br />
-            <li>
-              none <br />
-              Especifica que no se debe aplicar ninguna rotación.
-            </li>
-            <br />
+            
+
           </ul>
         </article>
         <h2>Ejemplos:</h2>
         <article>
-          <h3>rotate angle</h3>
+          <h3>Inclinación en el eje x solamente</h3>
           <pre
             class="line-numbers"
-          ><code class="language-css">rotate: 90deg;;</code></pre>
-          <div class="transformaciones">
-            <p class="transformaciones-rotate-angle1">Rotation</p>
-          </div>
-          <pre
-            class="line-numbers"
-          ><code class="language-css">rotate: 0.50turn;</code></pre>
-          <div class="transformaciones">
-            <p class="transformaciones-rotate-angle2">Rotation</p>
-          </div>
-          <pre
-            class="line-numbers"
-          ><code class="language-css">rotate: 2.28rad;</code></pre>
-          <div class="transformaciones">
-            <p class="transformaciones-rotate-angle3">Rotation</p>
-          </div>
+          ><code class="language-css">transform: skew(10deg);</code></pre>
+          <div class="transformaciones">Normal</div>
+          <div class="transformaciones-skewedx">Skewed</div>
         </article>
         <article>
-          <h3>rotate x, y o z </h3>
+          <h3>Inclinación en ambos ejes</h3>
           <pre
             class="line-numbers"
-          ><code class="language-css">rotate: x 25deg;;</code></pre>
-          <div class="transformaciones">
-            <p class="transformaciones-rotate-anglex">Rotation</p>
-          </div>
-          <pre
-            class="line-numbers"
-          ><code class="language-css">rotate: y 0.15turn;</code></pre>
-          <div class="transformaciones">
-            <p class="transformaciones-rotate-angley">Rotation</p>
-          </div>
-          <pre
-            class="line-numbers"
-          ><code class="language-css">rotate:z 2.28rad;</code></pre>
-          <div class="transformaciones">
-            <p class="transformaciones-rotate-anglez">Rotation</p>
-          </div>
-        </article>
-        <article>
-          <h3>rotate vector</h3>
-          <pre
-            class="line-numbers"
-          ><code class="language-css">rotate: 1 -0.5 1 180deg;</code></pre>
-          <div class="transformaciones">
-            <p class="transformaciones-rotate">Rotation</p>
-          </div>
+          ><code class="language-css"> transform: skew(10deg, 10deg);</code></pre>
+          <div class="transformaciones">Normal</div>
+          <div class="transformaciones-skewed">Skewed</div>
         </article>
       </section>
     </main>

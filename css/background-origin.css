@@ -1,0 +1,12 @@
+.fondos-background-origin-imagen1{
+    background: url("../img/background-origin-imagen.png");
+    background-origin: content-box;
+}
+.fondos-background-origin-imagen2{
+    background: url("../img/background-origin-imagen.png");
+    background-origin: border-box;
+}
+.fondos-background-origin-imagen3{
+    background: url("../img/background-origin-imagen.png");
+    background-origin: content-box;
+}

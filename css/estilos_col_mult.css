@@ -19,3 +19,25 @@ img {
     column-count: 5;
     column-gap: 80px;
 }
+
+#col_ejemploColumn-rule {
+    column-count: 5;
+    column-rule: 1px solid black;
+}
+
+#col_spam_h1 {
+    color: black;
+    column-span: all;
+}
+#col_ejemploColumn_fill-auto{
+    column-count: 5;
+    column-fill: auto;
+}
+#col_ejemploColumn_fill_balance{
+    column-count: 5;
+    column-fill: balance;
+}
+#col_ejemploColumn_fill_balance-all{
+    column-count: 5;
+    column-fill: balance-all;
+}

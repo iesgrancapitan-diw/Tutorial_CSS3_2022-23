@@ -56,11 +56,11 @@
                 <h4>Resultado:</h4>
                 <br>
                 <div id="col_ejemploColumn-count">
-                    <p>columna 1</p> <!-- se pone mas debajo que las otras, arreglar -->
-                    <p>columna 2</p>
-                    <p>columna 3</p>
-                    <p>columna 4</p>
-                    <p>columna 5</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p> <!-- se pone mas debajo que las otras, arreglar -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
                 </div>
             </article>
         </section>
@@ -136,19 +136,56 @@ column-rule-color: [color];
 column-rule: [tamaño] [estilo] [color]; /* forma acortada */</code></pre>
 <br>
                 <img src="img\col_mult\col_mult_rule.jfif" alt="column-width">
-                <h4>Ejemplos:</h4><!-- segir por aqui --------------------------------------------------------------------------------------------------------->
-                <pre class="line-numbers"><code class="language-css">column-count: 5;
-column-gap:80px;</code></pre>
-                <p>Las columnas se separarán 50 px</p>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">column-rule-width:1px;
+column-rule-style: solid;
+column-rule-color: #000;</code></pre>
+                <p>Las columnas tendran una linea separadora de 1 pixel, de estilo sólida y de color negro</p>
                 <h4>Resultado:</h4>
                 <br>
-                <div id="col_ejemploColumn-gap">
-                    <p>columna 1</p> <!-- se pone mas debajo que las otras, arreglar -->
-                    <p>columna 2</p>
-                    <p>columna 3</p>
-                    <p>columna 4</p>
-                    <p>columna 5</p>
+                <div id="col_ejemploColumn-rule">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p> <!-- se pone mas debajo que las otras, arreglar -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
                 </div>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h3>column-fill</h3>
+                <p>Da dos controles para establecer cómo se equilibra la cantidad de contenido en las columnas.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">column-fill: [auto o balance];</code></pre>
+                <p>Si se establece en 'balance', la variación en la longitud de la columna se minimizará y todas las longitudes serán lo más iguales posible. Si se establece en 'auto', las columnas se llenarán en orden y (por ejemplo) puede resultar en que la cuarta de 4 columnas tenga menos contenido que las 3 columnas anteriores. Si se estableciera un equilibrio en esto, permitiría que las 4 columnas tuvieran aproximadamente la misma altura</p>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">column-fill:auto;</code></pre>
+                <p>Las columnas se colocarán de forma automática</p>
+                <h4>Resultado:</h4>
+                <br>
+                <div id="col_ejemploColumn_fill-auto">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p> <!-- se pone mas debajo que las otras, arreglar -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                </div>
+
+                <pre class="line-numbers"><code class="language-css">column-fill:balance;</code></pre>
+                <p>Las columnas se colocarán de forma balanceada</p>
+                <h4>Resultado:</h4>
+                <br>
+                <div id="col_ejemploColumn_fill_balance">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p> <!-- se pone mas debajo que las otras, arreglar -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                </div>
+
+                
             </article>
         </section>
 

@@ -216,3 +216,10 @@
     text-decoration-thickness: 10px;
     text-decoration-line: underline;
 }
+
+.fuentesytexto_text-decoration-underline-wavy-blue-5px{
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+    text-decoration-thickness: 5px;
+}

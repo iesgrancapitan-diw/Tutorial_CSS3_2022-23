@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="css/background-color.css">
     <link rel="stylesheet" href="css/fondos-background-attachment.css">
     <script src="js/prism.js"></script>
 </head>
@@ -41,6 +42,32 @@
             <h3>Propiedades para modificar los fondos de los elementos de un documento HTML</h3>
         </div>
 
+    <section>
+        <article>
+            <h3>Background-color</h3>
+            <p>Es un propiedad de CSS que define el <b>color de fondo</b> de un elemento, puede ser el valor de un color o la palabra clave <b>transparent.</b></p>
+            <h4>Sintaxis</h4>
+            <pre class="line-numbers"><code class="language-css">background-color: [color | transparent | inherit];</code></pre>
+            <p>Admite 2 valores, que son los siguientes: </p>
+            <ul>
+                <li>Un color: Se puede especificar el color de fondo como un valor RGB(A) hexa-decimal o regular, con valores HSL(A) o utilizando una de las palabras claves predefinidas de color.</li>
+                <li>Transparent: El valor por defecto del color de fondo (background-color) es transparent tomando así el color del elemento que está justo debajo de él en el apilamiento.</li>
+            </ul>
+            <div id="fondos-color"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae velit laudantium adipisci esse voluptates deserunt eum ex, excepturi, amet, sequi praesentium fugiat fugit accusamus vel nostrum numquam neque repellat autem.</p></div>
+            <div id="fondos-rgb" ><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam repellat earum recusandae ad voluptates necessitatibus alias eaque unde expedita, iste, at quibusdam tenetur quis voluptatibus harum culpa a porro.</p></div>
+            <div id="fondos-transparent"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ad porro optio vel beatae rem quidem quasi blanditiis sint numquam ullam, maxime neque impedit, nobis id? Maxime, commodi! Commodi, quam?</p></div>
+            <div id="fondos-rgba"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ad porro optio vel beatae rem quidem quasi blanditiis sint numquam ullam, maxime neque impedit, nobis id? Maxime, commodi! Commodi, quam?</p></div>
+            <div id="fondos-hsl"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ad porro optio vel beatae rem quidem quasi blanditiis sint numquam ullam, maxime neque impedit, nobis id? Maxime, commodi! Commodi, quam?</p></div>
+            <div id="fondos-hsla"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ad porro optio vel beatae rem quidem quasi blanditiis sint numquam ullam, maxime neque impedit, nobis id? Maxime, commodi! Commodi, quam?</p></div>    
+            <h4>Ejemplos:</h4>
+            <pre class="line-numbers"><code class="language-css">background-color: red;
+background-color: #add8e6;
+background-color: transparent;
+background-color: rgba(30, 27, 96, 0.911);
+background-color: hsl(14, 100%, 73%);
+background-color: hsla(14, 100%, 53%, 0.2);</code></pre>
+		Aquí el resultado del ejemplo del código fuente indicado arriba. En el código fuente de los ejemplos no debe haber ninguna propiedad no explicada anteriormente. Es decir, si para el ejemplo necesitas algún background-color, estas propiedades deben ser explicadas con anterioridad.
+        </article>
         <section>
             <article>
                 <h3>background-attachment</h3>

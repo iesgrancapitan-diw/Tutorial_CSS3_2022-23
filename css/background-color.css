@@ -1,0 +1,23 @@
+#fondos-color{
+    background-color: red;
+}
+
+#fondos-rgb{
+    background-color: #add8e6;
+}
+
+#fondos-transparent{
+    background-color: transparent;
+}
+
+#fondos-rgba{
+    background-color: rgba(30, 27, 96, 0.911);
+}
+
+#fondos-hsl{
+    background-color: hsl(14, 100%, 73%);
+}
+
+#fondos-hsla{
+    background-color: hsla(14, 100%, 53%, 0.2);
+}

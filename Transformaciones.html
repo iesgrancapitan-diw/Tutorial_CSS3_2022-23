@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/estilos.css" />
     <link rel="stylesheet" href="css/prism.css" />
-    <link rel="stylesheet" href="css/tarnsformaciones.css" />
+    <link rel="stylesheet" href="css/transformaciones.css" />
     <script src="js/prism.js"></script>
   </head>
   <body>
@@ -46,6 +46,42 @@
           documento HTML
         </h3>
       </div>
+      <section>
+        <article>
+            <h3>transform-matrix</h3>
+            <p>La función CSS matrix() define una matriz de transformación 2D homogénea. Su resultado es un tipo de datos &lt;transformación-función>.</p>
+            <h4>Sintaxis</h4>
+            <pre class="line-numbers"><code class="language-css">transform: matrix(1.2, 0.2, -1, 0.9, 0, 20);
+transform: matrix(a, b, c, d, tx, ty);</code></pre>
+            <p>valores admitidos </p>
+            <ul>
+                <li>
+                  a b c d<br/>
+                  Son &lt;números> que describen la transformación lineal.
+                  </li>
+                  <li>
+                  tx ty <br/>
+                  Son &lt;números> que describen la traslación a aplicar.
+                </li>
+            </ul>
+            <p>Los primeros cuatro valores hacen referencia a la transformación que sufre el objeto que estamos modificando</p>
+            <p>Los ultimos dos valores hacen referenciaa la traslación que sufre el objeto que estamos modificando</p>
+            <p>La diferencia esta en que los primeros cuuatro valores modifican su tamaño y los ultimos dos valores modifican su posición respecto al eje de coordenadas original</p>
+            
+            <h4>Ejemplos:</h4> 
+            <br/>
+            <p>En el siguiente ejemplo se puede ver como se modifica el tamaño y la posición de un elemento</p>
+            <pre class="line-numbers"><code class="language-css">.cuadrado {
+  width: 100px;
+  height: 100px;
+  background-color: #ff0000;
+  transform: matrix(1.2, 0.2, -1, 0.9, 0, 20);
+}</code></pre>
+          <div class="Transformaciones-matrix-cuadrado">
+          </div>
+          <br/>
+        </article>
+        </section>
       <section>
         <article>
             <h3>transformaciones-perspective</h3>
@@ -89,7 +125,7 @@ style="transform: perspective(800px);</code></pre>
 <br/>
       </article>
       </section>
-     </main>
+    </main>
     <footer>
       <div>Jaime Rabasco Ronda</div>
       <a href="https://twitter.com/jaimerr" class="social"
@@ -101,3 +137,4 @@ style="transform: perspective(800px);</code></pre>
     </footer>
   </body>
 </html>
+

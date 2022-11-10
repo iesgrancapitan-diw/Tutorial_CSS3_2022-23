@@ -1,0 +1,69 @@
+
+/* Crea una animacion del div con id animation-delay */
+#animation-delay{
+    animation-name: animation-delay;
+    width: 100px;
+    height: 100px;
+    animation-duration: 6s linear infinite;
+    animation-iteration-count: infinite;
+    
+    animation-timing-function: ease-in-out;
+    
+    border: 1px solid; 
+    animation: animation-delay 6s linear infinite;
+    animation-delay: 10s;
+    /* // centrar */
+    background-color: black;
+
+    
+}
+
+@keyframes animation-delay{
+    0%{
+        background-color: red;
+        /* aumento de tamaño
+         */
+        transform: scale(1);
+    }
+    50%{
+        background-color: blue;
+        /* aumento de tamaño
+         */
+        transform: scale(1.5);
+    }
+    100%{
+        background-color: green;
+        /* aumento de tamaño
+         */
+        transform: scale(1);
+    }
+}
+#Animation-direction{
+    animation-name: animacion_de_direcion;
+    width: 100px;
+    height: 100px;
+    
+    animation: animacion-direction 3s linear infinite;
+    animation-direction: alternate-reverse;
+    background-color: black;
+    
+
+}
+@keyframes animacion-direction {
+    0%{
+        /* move a la derecha */
+        transform: translateX(0px);
+
+
+        
+    }
+    50%{
+        /* move a la izquierda */
+        transform: translateX(50px);
+    }
+    100%{
+        /* move a la derecha */
+        transform: translateX(100px);
+    }
+}
+    

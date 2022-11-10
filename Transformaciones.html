@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -248,6 +249,199 @@ rotate: unset;</code></pre>
             <p class="transformaciones-rotate">Rotation</p>
           </div>
         </article>
+         <section>
+     
+      <!-- 1. TransformacionesX -->
+      <article>
+        <h3>translateX(x)</h3>
+        <p>La función CSS translateX() translada un elemento horizontalmente en el plano 2D.</p>
+        <h4>Sintaxis</h4>
+        <pre class="line-numbers"><code class="language-css">transform: translateX(size);</code></pre>
+        <p>Admite un valor</p>
+        <ul>
+          <li>El valor se aplica al desplazamiento en el eje x.</li>
+        </ul>
+        <p>Si se indica un valor negativo, el elemento se desplazará en la dirección opuesta.</p>
+
+          <h4>Ejemplos:</h4>
+          <!--Ejemplo 1-->
+          <pre class="line-numbers"><code class="language-css">transform: translateX(0);</code></pre>
+          <div class= "transformaciones-translateX translateX-ej1"></div>
+          <!--Ejemplo 2-->
+          <pre class="line-numbers"><code class="language-css">transform: translateX(400px);</code></pre>
+          <div class= "transformaciones-translateX translateX-ej2"></div>
+
+          <!--Ejemplo 3-->
+          <pre class="line-numbers"><code class="language-css">transform: translateX(-1rem);</code></pre>
+          <div class= "transformaciones-translateX translateX-ej3"></div>
+
+          <!--Ejemplo 4-->
+          <pre class="line-numbers"><code class="language-css">transform: translateX(30ch);</code></pre>
+          <div class= "transformaciones-translateX translateX-ej4"></div>
+
+        
+
+        </div>
+      </article>
+
+      <!-- 2. TransformacionesY -->
+      <article>
+        <h3>translateY(y)</h3>
+        <p>La función CSS translateY() translada un elemento verticalmente en el plano 2D.</p>
+        <h4>Sintaxis</h4>
+        <pre class="line-numbers"><code class="language-css">transform: translateY(size);</code></pre>
+        <p>Admite un valor</p>
+        <ul>
+          <li>El valor se aplica al desplazamiento en el eje y.</li>
+        </ul>
+        <p>Si se indica un valor negativo, el elemento se desplazará en la dirección opuesta.</p>
+
+          <h4>Ejemplos:</h4>
+          <!--Ejemplo 1-->
+          <pre class="line-numbers"><code class="language-css">transform: translateY(0);</code></pre>
+          <div class= "transformaciones-translateY translateY-ej1"></div>
+          <!--Ejemplo 2-->
+          <pre class="line-numbers"><code class="language-css">transform: translateY(50px);</code></pre>
+          <div class= "transformaciones-translateY translateY-ej2"></div><br/><br/><br/><br/>
+
+          <!--Ejemplo 3-->
+          <pre class="line-numbers"><code class="language-css">transform: translateY(-1rem);</code></pre>
+          <br/><br/>
+          <div class= "transformaciones-translateY translateY-ej3"></div>
+
+          <!--Ejemplo 4-->
+          <pre class="line-numbers"><code class="language-css">transform: translateY(3ch);</code></pre>
+          <div class= "transformaciones-translateY translateY-ej4"></div><br/><br/><br/>
+
+        
+
+        </div>
+      </article>
+       <!-- 3. Transformaciones -->
+       <article>
+        <h3>translate()</h3>
+        <p>La function de CSS translate() recoloca un elemento en el eje horizontal y/o vertical.</p>
+        <h4>Sintaxis</h4>
+        <pre class="line-numbers"><code class="language-css">transform: translate(size , [size]);</code></pre>
+        <p>Admite uno o dos valores</p>
+        <ul>
+          <li>El valor se aplica al desplazamiento en el eje x o/y y.</li>
+        </ul>
+        <p>Si se indica un valor negativo, el elemento se desplazará en la dirección opuesta.</p>
+
+          <h4>Ejemplos:</h4>
+          <!--Ejemplo 1-->
+          <pre class="line-numbers"><code class="language-css">transform: translate(20px);</code></pre>
+          <div class= "transformaciones-translate translate-ej1"></div>
+          <!--Ejemplo 2-->
+          <pre class="line-numbers"><code class="language-css">transform: translate(50px,40px);</code></pre>
+          <div class= "transformaciones-translate translate-ej2"></div><br/><br/><br/><br/>
+
+          <!--Ejemplo 3-->
+          <pre class="line-numbers"><code class="language-css">transform: translate(-3ch, -3mm);</code></pre>
+          <br/>
+          <div class= "transformaciones-translate translate-ej3"></div>
+
+          <!--Ejemplo 4-->
+          <pre class="line-numbers"><code class="language-css">transform: translate(2.1rem, -2ex);</code></pre>
+          <div class= "transformaciones-translate translate-ej4"></div><br/><br/><br/>
+
+        
+
+        </div>
+      </article>
+
+       <!-- 4. Transformaciones -->
+       <article>
+        <h3>translateZ()</h3>
+        <p>La función translateZ() CSS reposiciona un elemento a lo largo del eje-z (z-axis) en el espacio 3D, es decir, más cerca o mas lejos del espectador.</p>
+        <h4>Sintaxis</h4>
+        <pre class="line-numbers"><code class="language-css">transform: perspective translateZ(size);</code></pre>
+        <p>Admite un valor</p>
+        <ul>
+          <li>El valor se aplica al desplazamiento en el eje z.</li>
+        </ul>
+        <p>La función perspective() posiciona al espectador en relación con el plano que se encuentra donde z=0</p>
+        <p>Si se indica un valor negativo, el elemento se desplazará en la dirección opuesta.</p>
+
+          <h4>Ejemplos:</h4>
+          <!--Ejemplo 1-->
+          <pre class="line-numbers"><code class="language-css">transform: perspective(100px) translateZ(60px);</code></pre>
+          <div class= "transformaciones-translateZ translateZ-ej1"></div>
+          <!--Ejemplo 2-->
+          <pre class="line-numbers"><code class="language-css">perspective(100px) translateZ(-15rem);</code></pre>
+          <div class= "transformaciones-translateZ translateZ-ej2"></div>
+
+          <!--Ejemplo 3-->
+          <pre class="line-numbers"><code class="language-css">transform: perspective(100px) translateZ(4ch);</code></pre>
+          <br/>
+          <div class= "transformaciones-translateZ translateZ-ej3"></div>
+        
+        </div>
+      </article>
+       <!-- 5. Transformaciones -->
+       <article>
+        <h3>translate3d()</h3>
+        <p>La función CSS translate3d() recoloca un elemento en el espacio 3D.</p>
+        <h4>Sintaxis</h4>
+        <pre class="line-numbers"><code class="language-css">transform: translate(size , [size]);</code></pre>
+        <p>Admite de uno a tres valores</p>
+        <ul>
+          <li>El valor se aplica al desplazamiento en el eje x,y o/y z.</li>
+        </ul>
+        <p>Si se indica un valor negativo, el elemento se desplazará en la dirección opuesta.</p>
+
+          <h4>Ejemplos:</h4>
+          <!--Ejemplo 1-->
+          <pre class="line-numbers"><code class="language-css">transform: perspective(200px) translate3d(42px, -62px, 70px);</code></pre>
+          <div class= "transformaciones-translate3d translate3d-ej1"></div>
+          <!--Ejemplo 2-->
+          <pre class="line-numbers"><code class="language-css">transform: perspective(200px) translate3d(-4rem, 0.5rem, -8rem);</code></pre>
+          <div class= "transformaciones-translate3d translate3d-ej2"></div>
+
+          <!--Ejemplo 3-->
+          <pre class="line-numbers"><code class="language-css">transform:  perspective(200px) translate3d(3ch, 1ch, 7ch);</code></pre>
+          <br/>
+          <div class= "transformaciones-translate3d translate3d-ej3"></div>
+
+        </div>
+      </article>
+      <!-- 6. Transformaciones -->
+      <article>
+        <h3>translate</h3>
+        <p>La propiedad de CSS translate recoloca un elemento en el eje x, y, z.</p>
+        <h4>Sintaxis</h4>
+        <pre class="line-numbers"><code class="language-css">translate(sizeX , [sizeY], [sizeZ]);</code></pre>
+        <p>Admite de uno a tres valores</p>
+        <ul>
+          <li>El valor se aplica al desplazamiento en el eje x, y o/y z.</li>
+        </ul>
+        <p>Si se indica un valor negativo, el elemento se desplazará en la dirección opuesta.</p>
+
+          <h4>Ejemplos:</h4>
+          <!--Ejemplo 1-->
+          <pre class="line-numbers"><code class="language-css">translate: none;</code></pre>
+          <div class= "transformaciones-translateProp translateProp-ej1"></div>
+          <!--Ejemplo 2-->
+          <pre class="line-numbers"><code class="language-css">translate: 70px;</code></pre>
+          <div class= "transformaciones-translateProp translateProp-ej2"></div><br/>
+
+          <!--Ejemplo 3-->
+          <pre class="line-numbers"><code class="language-css">translate: 0 -3rem;</code></pre>
+          <div class= "transformaciones-translateProp translateProp-ej3"></div>
+
+          <!--Ejemplo 4-->
+          <pre class="line-numbers"><code class="language-css">translate: 40% 70%;</code></pre>
+          <div class= "transformaciones-translateProp translateProp-ej4"></div>
+
+           <!--Ejemplo 5-->
+           <pre class="line-numbers"><code class="language-css">translate: 0px 0px 50px;</code></pre>
+           <div class= "transformaciones-translateProp translateProp-ej5"></div>
+
+        </div>
+      </article>
+
+    </section>
     </main>
     <footer>
       <div>Jaime Rabasco Ronda</div>
@@ -260,4 +454,5 @@ rotate: unset;</code></pre>
     </footer>
   </body>
 </html>
+
 

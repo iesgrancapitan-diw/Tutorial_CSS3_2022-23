@@ -49,6 +49,85 @@
       </div>
       <section>
         <article>
+             <h3>transform-matrix</h3>
+            <p>La función CSS matrix() define una matriz de transformación 2D homogénea. Su resultado es un tipo de datos &lt;transformación-función>.</p>
+            <h4>Sintaxis</h4>
+            <pre class="line-numbers"><code class="language-css">transform: matrix(1.2, 0.2, -1, 0.9, 0, 20);
+transform: matrix(a, b, c, d, tx, ty);</code></pre>
+            <p>valores admitidos </p>
+            <ul>
+                <li>
+                  a b c d<br/>
+                  Son &lt;números> que describen la transformación lineal.
+                  </li>
+                  <li>
+                  tx ty <br/>
+                  Son &lt;números> que describen la traslación a aplicar.
+                </li>
+            </ul>
+            <p>Los primeros cuatro valores hacen referencia a la transformación que sufre el objeto que estamos modificando</p>
+            <p>Los ultimos dos valores hacen referenciaa la traslación que sufre el objeto que estamos modificando</p>
+            <p>La diferencia esta en que los primeros cuuatro valores modifican su tamaño y los ultimos dos valores modifican su posición respecto al eje de coordenadas original</p>
+            
+            <h4>Ejemplos:</h4> 
+            <br/>
+            <p>En el siguiente ejemplo se puede ver como se modifica el tamaño y la posición de un elemento</p>
+            <pre class="line-numbers"><code class="language-css">.cuadrado {
+  width: 100px;
+  height: 100px;
+  background-color: #ff0000;
+  transform: matrix(1.2, 0.2, -1, 0.9, 0, 20);
+}</code></pre>
+          <div class="Transformaciones-matrix-cuadrado">
+          </div>
+          <br/>
+        </article>
+        </section>
+      <section>
+        <article>
+            <h3>transformaciones-perspective</h3>
+            <p>La función CSS perspective() define una transformación que establece la distancia entre el usuario y el plano z=0, la perspectiva desde la que estaría el espectador si la interfaz bidimensional fuera tridimensional.</p>
+            <p>Su resultado es un tipo de datos &lt;transformación-función>. </p>
+            <h4>Sintaxis</h4>
+            <pre class="line-numbers"><code class="language-css">perspective(800px);
+perspective(d);</code></pre>
+            <p>valores admitidos </p>
+            <ul>
+                <li>
+                  d <br/>
+                  Es una &lt;longitud> que representa la distancia del usuario al plano z=0. Si es 0 o un valor negativo, no se aplica ninguna transformación de perspectiva.
+                </li>
+            </ul>
+            <h4>Ejemplos:</h4>
+            <pre class="line-numbers"><code class="language-css">style="transform: perspective(none);
+style="transform: perspective(800px);</code></pre>  
+    <section class="transformaciones-perspective-ejemplo-sin-modificar">
+      <div id="transformaciones-perspective-example-element" class="transformaciones-perspective-example-element">
+          <div class="transformaciones-perspective-face transformaciones-perspective-front">1</div>
+          <div class="transformaciones-perspective-face transformaciones-perspective-back">2</div>
+          <div class="transformaciones-perspective-face transformaciones-perspective-right">3</div>
+          <div class="transformaciones-perspective-face transformaciones-perspective-left">4</div>
+          <div class="transformaciones-perspective-face transformaciones-perspective-top">5</div>
+          <div class="transformaciones-perspective-face transformaciones-perspective-bottom">6</div>
+      </div>
+    </section>
+<br/>
+      <section class="transformaciones-perspective-ejemplo-modificada">
+        <div id="transformaciones-perspective-example-element" class="transformaciones-perspective-example-element">
+          <div class="transformaciones-perspective-face transformaciones-perspective-front">1</div>
+          <div class="transformaciones-perspective-face transformaciones-perspective-back">2</div>
+          <div class="transformaciones-perspective-face transformaciones-perspective-right">3</div>
+          <div class="transformaciones-perspective-face transformaciones-perspective-left">4</div>
+          <div class="transformaciones-perspective-face transformaciones-perspective-top">5</div>
+          <div class="transformaciones-perspective-face transformaciones-perspective-bottom">6</div>
+      </div>
+     </div>
+     </section>
+<br/>
+      </article>
+      </section>
+      <section>
+        <article>
           <h3>transformaciones-rotate</h3>
           <p>
             La propiedad CSS rotate permite especificar las transformaciones de
@@ -169,7 +248,6 @@ rotate: unset;</code></pre>
             <p class="transformaciones-rotate">Rotation</p>
           </div>
         </article>
-      </section>
     </main>
     <footer>
       <div>Jaime Rabasco Ronda</div>
@@ -182,3 +260,4 @@ rotate: unset;</code></pre>
     </footer>
   </body>
 </html>
+

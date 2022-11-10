@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/prism.css" />
     <link rel="stylesheet" href="css/animaciones.css" />
     <script src="js/prism.js"></script>
+    <script src="js/animacion.js"></script>
   </head>
   <body>
     <header>
@@ -150,9 +151,20 @@
             animación, y se aplican estilos de la animación después de que se
             haya completado la animación.
           </li>
+          <li>
+            inherit: Se hereda el valor de la propiedad animation-fill-mode del
+            elemento padre.
+
+          </li>
+          <li>
+            initial: Toma el valor por defecto de la propiedad
+            animation-fill-mode.
+          </li>
+
+
         </ul>
         <p>El valor por defecto es none.</p>
-        
+        <div id="Animation-fill-mode"></div>
         <pre class="line-numbers">
             <code class="language-css"><!-- Ejemplo de Animation-fill-mode -->
                 div {
@@ -162,7 +174,7 @@
                 }
             </code>
         </pre>
-        <div id="Animation-fill-mode"></div>
+        
         <h3>Animation-iteration-count</h3>
         <p>
           La propiedad animation-iteration-count especifica el número de veces
@@ -201,6 +213,23 @@
                 }
             </code>
         </pre>
+        <p>Funcion js</p>
+        <pre class="line-numbers">
+            <code class="language-js"><!-- Ejemplo de Animation-play-state -->
+              document.addEventListener("DOMContentLoaded", function(event) {
+                document.getElementById("cambiar_estado").addEventListener("click", function(){
+                    var animation = document.getElementById("Animation-play-state");
+                    if(animation.style.animationPlayState == "paused"){
+                        animation.style.animationPlayState = "running";
+                    }else{
+                        animation.style.animationPlayState = "paused";
+                    }
+                }
+                );
+            });
+            </code>
+          </pre>
+        <button id="cambiar_estado">Play/Pause</button>
         <div id="Animation-play-state"></div>
         <h3>Animation-timing-function</h3>
         <p>

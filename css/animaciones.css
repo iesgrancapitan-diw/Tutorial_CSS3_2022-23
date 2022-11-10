@@ -94,3 +94,83 @@
         transform: translateX(100px);
     }
 }
+#Animation-fill-mode{
+    animation-name: animacion-fill-mode;
+    width: 100px;
+    height: 100px;
+    
+    animation: animacion-fill-mode 3s linear infinite;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    background-color: rgb(111, 194, 202);
+    
+    
+
+}
+@keyframes animacion-fill-mode {
+    0%{
+        background-color: black;
+        transform: translateX(0px);
+    }
+    50%{
+        
+        transform: translateX(50px);
+    }
+    100%{
+        
+        transform: translateX(100px);
+    }
+}
+#Animation-iteration-count{
+    animation-name: animacion-iteration-count;
+    width: 100px;
+    height: 100px;
+    
+    animation: animacion-iteration-count 3s linear infinite;
+    animation-iteration-count: 3;
+    background-color: rgb(111, 194, 202);
+    
+    
+
+}
+@keyframes animacion-iteration-count {
+    0%{
+        background-color: black;
+        transform: translateX(0px);
+    }
+    50%{
+        
+        transform: translateX(50px);
+    }
+    100%{
+        
+        transform: translateX(100px);
+    }
+}
+#Animation-play-state{
+    animation-name: animacion-play-state;
+    width: 100px;
+    height: 100px;
+    
+    animation: animacion-play-state 3s linear infinite;
+    animation-play-state: paused;
+    background-color: rgb(111, 194, 202);
+    
+    
+
+
+}
+@keyframes animacion-play-state {
+    0%{
+        background-color: black;
+        transform: translateX(0px);
+    }
+    50%{
+        
+        transform: translateX(50px);
+    }
+    100%{
+        
+        transform: translateX(100px);
+    }
+}

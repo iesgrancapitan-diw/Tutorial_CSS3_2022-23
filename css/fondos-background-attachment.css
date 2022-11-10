@@ -1,16 +1,16 @@
 .fondos-background-attachment-imagen1{
-    background-image: url("../img/imagen.png");
+    background-image: url("../img/background-attachment-imagen.png");
     background-attachment: scroll;
 }
 .fondos-background-attachment-imagen2{
-    background-image: url("../img/imagen.png");
+    background-image: url("../img/background-attachment-imagen.png");
     background-attachment: fixed;
 }
 .fondos-background-attachment-imagen3{
-    background-image: url("../img/imagen.png");
+    background-image: url("../img/background-attachment-imagen.png");
     background-attachment: local;
 }
 .fondos-background-attachment-imagen4{
-    background-image: url("../img/imagen.png");
+    background-image: url("../img/background-attachment-imagen.png");
     background-attachment: initial;
 }

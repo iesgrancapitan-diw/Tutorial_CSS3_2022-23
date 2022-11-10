@@ -1,3 +1,100 @@
+
+.Transformaciones-matrix-cuadrado {
+	width: 100px;
+	height: 100px;
+	background-color: #ff0000;
+	transform: matrix(1.2, 0.2, -1, 0.9, 0, 20);
+}
+
+.transformaciones-perspective-example-element {
+	width: 100px;
+	height: 100px;
+	perspective: 550px;
+	transform-style: preserve-3d;
+  }
+  .transformaciones-perspective-face {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	backface-visibility: inherit;
+	font-size: 60px;
+	color: #fff;
+  }
+  .transformaciones-perspective-front {
+	background: rgba(90, 90, 90, 0.7);
+	transform: translateZ(50px);
+  }
+  .transformaciones-perspective-back {
+	background: rgba(0, 210, 0, 0.7);
+	transform: rotateY(180deg) translateZ(50px);
+  }
+  .transformaciones-perspective-right {
+	background: rgba(210, 0, 0, 0.7);
+	transform: rotateY(90deg) translateZ(50px);
+  }
+  .transformaciones-perspective-left {
+	background: rgba(0, 0, 210, 0.7);
+	transform: rotateY(-90deg) translateZ(50px);
+  }
+  .transformaciones-perspective-top {
+	background: rgba(210, 210, 0, 0.7);
+	transform: rotateX(90deg) translateZ(50px);
+  }
+  .transformaciones-perspective-bottom {
+	background: rgba(210, 0, 210, 0.7);
+	transform: rotateX(-90deg) translateZ(50px);
+  }
+  .transformaciones-perspective-ejemplo-sin-modificar {
+	transform: perspective(none);
+  }
+  .transformaciones-perspective-ejemplo-modificada {
+	transform: perspective(800px);
+  }
+  
+.transformaciones-rotate {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.transformaciones-rotate p {
+  padding: 10px 5px;
+  border: 3px solid black;
+  border-radius: 20px;
+  width: 150px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.transformaciones-rotate {
+  transition: rotate 1s;
+}
+
+div:hover .transformaciones-rotate-angle1 {
+  rotate: 90deg;
+}
+div:hover .transformaciones-rotate-angle2 {
+  rotate: 0.5turn;
+}
+div:hover .transformaciones-rotate-angle3 {
+  rotate: 2.28rad;
+}
+div:hover .transformaciones-rotate-anglex {
+  rotate: x 25deg;
+}
+div:hover .transformaciones-rotate-angley {
+  rotate: y 0.15turn;
+}
+div:hover .transformaciones-rotate-anglez {
+  rotate: z 1.57rad;
+}
+
+div:hover .transformaciones-rotate {
+  rotate: 1 -0.5 1 180deg;
+}
+
 .transformaciones-translateX {
 	width: 100px;
 	height: 100px;
@@ -145,3 +242,4 @@
 .translateProp-ej5:hover{
 	translate: 0px 0px 50px;
 }
+

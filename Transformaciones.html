@@ -1,51 +1,255 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title>
-    TUTORIAL CSS3 - 2020/2021 - Diseño de Interfaces Web - CFGS DAW - IES Gran
-    Capitán
-  </title>
-  <meta name="description" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/estilos.css" />
-  <link rel="stylesheet" href="css/prism.css" />
-  <link rel="stylesheet" href="css/transformaciones.css" />
-  <script src="js/prism.js"></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>
+      TUTORIAL CSS3 - 2020/2021 - Diseño de Interfaces Web - CFGS DAW - IES Gran
+      Capitán
+    </title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/prism.css" />
+    <link rel="stylesheet" href="css/transformaciones.css" />
+    <script src="js/prism.js"></script>
+  </head>
 
-<body>
-  <header>
-    <h1><a href="index.html">TUTORIAL CSS3 - 2022/2023</a></h1>
-    <h2><img src="icon/language-css3.svg" /></h2>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="Bordes.html">Bordes</a></li>
-      <li><a href="Fondos.html">Fondos</a></li>
-      <li><a href="Efectos_texto.html">Fuentes y Ef Texto</a></li>
-      <li><a href="Transformaciones.html">Transformac.</a></li>
-      <li><a href="Transiciones.html">Transiciones</a></li>
-      <li><a href="Animaciones.html">Animaciones</a></li>
-      <li><a href="Col_mult.html">Col Múltiples</a></li>
-      <li><a href="Color.html">Color y Degradado</a></li>
-      <li><a href="Pseudos_Css3.html">Pseudos CSS3</a></li>
-      <li><a href="Svg_filter.html">Filter y SVG</a></li>
-    </ul>
-  </nav>
-  <main>
-    <div>
-      <h2>TUTORIAL CSS3 - Transformaciones</h2>
-      <h3>
-        Propiedades para modificar las transformaciones de los elementos de un
-        documento HTML
-      </h3>
-    </div>
-    <section>
+  <body>
+    <header>
+      <h1><a href="index.html">TUTORIAL CSS3 - 2022/2023</a></h1>
+      <h2><img src="icon/language-css3.svg" /></h2>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="Bordes.html">Bordes</a></li>
+        <li><a href="Fondos.html">Fondos</a></li>
+        <li><a href="Efectos_texto.html">Fuentes y Ef Texto</a></li>
+        <li><a href="Transformaciones.html">Transformac.</a></li>
+        <li><a href="Transiciones.html">Transiciones</a></li>
+        <li><a href="Animaciones.html">Animaciones</a></li>
+        <li><a href="Col_mult.html">Col Múltiples</a></li>
+        <li><a href="Color.html">Color y Degradado</a></li>
+        <li><a href="Pseudos_Css3.html">Pseudos CSS3</a></li>
+        <li><a href="Svg_filter.html">Filter y SVG</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div>
+        <h2>TUTORIAL CSS3 - Transformaciones</h2>
+        <h3>
+          Propiedades para modificar las transformaciones de los elementos de un
+          documento HTML
+        </h3>
+      </div>
+      <section>
+        <article>
+             <h3>transform-matrix</h3>
+            <p>La función CSS matrix() define una matriz de transformación 2D homogénea. Su resultado es un tipo de datos &lt;transformación-función>.</p>
+            <h4>Sintaxis</h4>
+            <pre class="line-numbers"><code class="language-css">transform: matrix(1.2, 0.2, -1, 0.9, 0, 20);
+transform: matrix(a, b, c, d, tx, ty);</code></pre>
+            <p>valores admitidos </p>
+            <ul>
+                <li>
+                  a b c d<br/>
+                  Son &lt;números> que describen la transformación lineal.
+                  </li>
+                  <li>
+                  tx ty <br/>
+                  Son &lt;números> que describen la traslación a aplicar.
+                </li>
+            </ul>
+            <p>Los primeros cuatro valores hacen referencia a la transformación que sufre el objeto que estamos modificando</p>
+            <p>Los ultimos dos valores hacen referenciaa la traslación que sufre el objeto que estamos modificando</p>
+            <p>La diferencia esta en que los primeros cuuatro valores modifican su tamaño y los ultimos dos valores modifican su posición respecto al eje de coordenadas original</p>
+            
+            <h4>Ejemplos:</h4> 
+            <br/>
+            <p>En el siguiente ejemplo se puede ver como se modifica el tamaño y la posición de un elemento</p>
+            <pre class="line-numbers"><code class="language-css">.cuadrado {
+  width: 100px;
+  height: 100px;
+  background-color: #ff0000;
+  transform: matrix(1.2, 0.2, -1, 0.9, 0, 20);
+}</code></pre>
+          <div class="Transformaciones-matrix-cuadrado">
+          </div>
+          <br/>
+        </article>
+        </section>
+      <section>
+        <article>
+            <h3>transformaciones-perspective</h3>
+            <p>La función CSS perspective() define una transformación que establece la distancia entre el usuario y el plano z=0, la perspectiva desde la que estaría el espectador si la interfaz bidimensional fuera tridimensional.</p>
+            <p>Su resultado es un tipo de datos &lt;transformación-función>. </p>
+            <h4>Sintaxis</h4>
+            <pre class="line-numbers"><code class="language-css">perspective(800px);
+perspective(d);</code></pre>
+            <p>valores admitidos </p>
+            <ul>
+                <li>
+                  d <br/>
+                  Es una &lt;longitud> que representa la distancia del usuario al plano z=0. Si es 0 o un valor negativo, no se aplica ninguna transformación de perspectiva.
+                </li>
+            </ul>
+            <h4>Ejemplos:</h4>
+            <pre class="line-numbers"><code class="language-css">style="transform: perspective(none);
+style="transform: perspective(800px);</code></pre>  
+    <section class="transformaciones-perspective-ejemplo-sin-modificar">
+      <div id="transformaciones-perspective-example-element" class="transformaciones-perspective-example-element">
+          <div class="transformaciones-perspective-face transformaciones-perspective-front">1</div>
+          <div class="transformaciones-perspective-face transformaciones-perspective-back">2</div>
+          <div class="transformaciones-perspective-face transformaciones-perspective-right">3</div>
+          <div class="transformaciones-perspective-face transformaciones-perspective-left">4</div>
+          <div class="transformaciones-perspective-face transformaciones-perspective-top">5</div>
+          <div class="transformaciones-perspective-face transformaciones-perspective-bottom">6</div>
+      </div>
+    </section>
+<br/>
+      <section class="transformaciones-perspective-ejemplo-modificada">
+        <div id="transformaciones-perspective-example-element" class="transformaciones-perspective-example-element">
+          <div class="transformaciones-perspective-face transformaciones-perspective-front">1</div>
+          <div class="transformaciones-perspective-face transformaciones-perspective-back">2</div>
+          <div class="transformaciones-perspective-face transformaciones-perspective-right">3</div>
+          <div class="transformaciones-perspective-face transformaciones-perspective-left">4</div>
+          <div class="transformaciones-perspective-face transformaciones-perspective-top">5</div>
+          <div class="transformaciones-perspective-face transformaciones-perspective-bottom">6</div>
+      </div>
+     </div>
+     </section>
+<br/>
+      </article>
+      </section>
+      <section>
+        <article>
+          <h3>transformaciones-rotate</h3>
+          <p>
+            La propiedad CSS rotate permite especificar las transformaciones de
+            rotación de forma individual e independiente de la propiedad
+            transform.
+          </p>
+          <p>
+            Esto se ajusta mejor al uso típico de la interfaz de usuario, y
+            ahorra tener que recordar el orden exacto de las funciones de
+            transformación para especificar en la propiedad transform.
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">/* Keyword values */
+rotate: none;
+
+/* Angle value */
+rotate: 90deg;
+rotate: 0.25turn;
+rotate: 1.57rad;
+
+/* x, y, or z axis name plus angle */
+rotate: x 90deg;
+rotate: y 0.25turn;
+rotate: z 1.57rad;
+
+/* Vector plus angle value */
+rotate: 1 1 1 90deg;
+
+/* Global values */
+rotate: inherit;
+rotate: initial;
+rotate: revert;
+rotate: revert-layer;
+rotate: unset;</code></pre>
+          <ul>
+            <li>
+              Valor del ángulo<br />
+              Un ángulo(&lt;angle>) que especifica el ángulo de rotación del
+              elemento afectado, alrededor del eje Z. Equivale a la función
+              rotate() (rotación 2D).
+            </li>
+            <br />
+            <li>
+              Nombre del eje x, y o z más el valor del ángulo <br />
+              El nombre del eje alrededor del cual se quiere girar el elemento
+              afectado ("x", "y" o "z"), más un ángulo(&lt;angle>) que
+              especifica el ángulo por el que se girará el elemento. Equivale a
+              una función rotateX()/rotateY()/rotateZ() (rotación 3D).
+            </li>
+            <br />
+            <li>
+              Vector más valor angular<br />
+              Tres &lt;number>s que representan un vector centrado en el origen
+              que define una línea alrededor de la cual se quiere girar el
+              elemento, más un ángulo(&lt;angle>) que especifica el ángulo por
+              el que se girará el elemento. Equivale a una función rotate3d()
+              (rotación 3D).
+            </li>
+            <br />
+            <li>
+              none <br />
+              Especifica que no se debe aplicar ninguna rotación.
+            </li>
+            <br />
+          </ul>
+        </article>
+        <h2>Ejemplos:</h2>
+        <article>
+          <h3>rotate angle</h3>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">rotate: 90deg;</code></pre>
+          <div class="transformaciones-rotate">
+            <p class="transformaciones-rotate-angle1">Rotation</p>
+          </div>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">rotate: 0.50turn;</code></pre>
+          <div class="transformaciones-rotate">
+            <p class="transformaciones-rotate-angle2">Rotation</p>
+          </div>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">rotate: 2.28rad;</code></pre>
+          <div class="transformaciones-rotate">
+            <p class="transformaciones-rotate-angle3">Rotation</p>
+          </div>
+        </article>
+        <article>
+          <h3>rotate x, y o z </h3>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">rotate: x 25deg;</code></pre>
+          <div class="transformaciones-rotate">
+            <p class="transformaciones-rotate-anglex">Rotation</p>
+          </div>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">rotate: y 0.15turn;</code></pre>
+          <div class="transformaciones-rotate">
+            <p class="transformaciones-rotate-angley">Rotation</p>
+          </div>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">rotate:z 2.28rad;</code></pre>
+          <div class="transformaciones-rotate">
+            <p class="transformaciones-rotate-anglez">Rotation</p>
+          </div>
+        </article>
+        <article>
+          <h3>rotate vector</h3>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">rotate: 1 -0.5 1 180deg;</code></pre>
+          <div class="transformaciones-rotate">
+            <p class="transformaciones-rotate">Rotation</p>
+          </div>
+        </article>
+         <section>
      
       <!-- 1. TransformacionesX -->
       <article>
@@ -238,12 +442,17 @@
       </article>
 
     </section>
-  </main>
-  <footer>
-    <div>Jaime Rabasco Ronda</div>
-    <a href="https://twitter.com/jaimerr" class="social"><img src="icon/twitter.svg" alt="Twitter" /></a>
-    <a href="https://github.com/jaimerabasco" class="social"><img src="icon/github.svg" alt="GitHub" /></a>
-  </footer>
-</body>
-
+    </main>
+    <footer>
+      <div>Jaime Rabasco Ronda</div>
+      <a href="https://twitter.com/jaimerr" class="social"
+        ><img src="icon/twitter.svg" alt="Twitter"
+      /></a>
+      <a href="https://github.com/jaimerabasco" class="social"
+        ><img src="icon/github.svg" alt="GitHub"
+      /></a>
+    </footer>
+  </body>
 </html>
+
+

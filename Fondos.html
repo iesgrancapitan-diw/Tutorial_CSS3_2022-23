@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/background-color.css">
     <link rel="stylesheet" href="css/fondos-background-attachment.css">
     <link rel="stylesheet" href="css/background-image.css">
+    <link rel="stylesheet" href="css/background-clip.css">
     <script src="js/prism.js"></script>
 </head>
 
@@ -99,9 +100,9 @@ background-color: hsla(14, 100%, 53%, 0.2);</code></pre>
                 debe haber ninguna propiedad no explicada anteriormente. Es decir, si para el ejemplo necesitas algún
                 background-color, estas propiedades deben ser explicadas con anterioridad.
             </article>
-            <section>
                 <article>
-                    <h3>Background-attachment</h3>
+                    <h3>background-attachment</h3>
+                    
                     <p>Determina si la posición de la imagen de fondo será fija
                         dentro de la pantalla o se desplazará con su bloque contenedor.</p>
                     <h4>Sintaxis</h4>
@@ -109,19 +110,19 @@ background-color: hsla(14, 100%, 53%, 0.2);</code></pre>
                         class="line-numbers"><code class="language-css">background-attachment: scroll|fixed|local|initial|inherit;</code></pre>
                     <p>Valores: </p>
                     <ul>
-                        <li class="fondos-background-attachment-imagen1">
+                        <li class="fondos-imagen1">
                             <p>Scroll</p>
                             <p>- La imagen de fondo se desplazará con la página. esto es por defecto</p>
                         </li>
-                        <li class="fondos-background-attachment-imagen2">
+                        <li class="fondos-imagen2">
                             <p>fixed</p>
                             <p>- La imagen de fondo no se desplazará con la página.</p>
                         </li>
-                        <li class="fondos-background-attachment-imagen3">
+                        <li class="fondos-imagen3">
                             <p>local</p>
                             <p>- La imagen de fondo se desplazará con el contenido del elemento.</p>
                         </li>
-                        <li class="fondos-background-attachment-imagen4">
+                        <li class="fondos-imagen4">
                             <p>initial</p>
                             <p>- Establece esta propiedad en su valor predeterminado.</p>
                         </li>
@@ -198,6 +199,106 @@ background-image: url("img_tree.gif"), url("paper.gif");
 background-repeat: no-repeat, repeat;
 background-color: #cccccc;
 }</code></pre>
+                </article>
+
+                <article>
+                    <h3>border-radius</h3>
+                    <p>Indica que el tamaño del borde redondeado. Es importante definir un border-style para que el
+                        borde
+                        se vea redondeado.</p>
+                    <h4>Sintaxis</h4>
+                    <pre
+                        class="line-numbers"><code class="language-css">border-radius: [Aqui va la sintaxis de cada propiedad];</code></pre>
+                    <p>Admite de uno a cuatro valores, que son los siguientes: </p>
+                    <ul>
+                        <li>Un valor: se aplica a los cuatros lados.</li>
+                        <li>Dos valores. se aplica el primero a arriba y abajo y el segundo a derecha e
+                            izquierda.</li>
+                        <li>Tres valores: se aplica el <span>primero</span> a arriba,el segundo a derecha e izquierda y
+                            el
+                            tercero a abajo.</li>
+                        <li>Cuatro valores: se aplica el primero a arriba, el segundo a la derecha, el tercero abajo y
+                            el
+                            cuarto
+                            a la izquierda.</li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae velit laudantium adipisci esse
+                        voluptates deserunt eum ex, excepturi, amet, sequi praesentium fugiat fugit accusamus vel
+                        nostrum
+                        numquam neque repellat autem.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam repellat earum
+                        recusandae
+                        ad voluptates necessitatibus alias eaque unde expedita, iste, at quibusdam tenetur quis
+                        voluptatibus
+                        harum culpa a porro.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ad porro optio vel beatae rem
+                        quidem quasi blanditiis sint numquam ullam, maxime neque impedit, nobis id? Maxime, commodi!
+                        Commodi, quam?</p>
+
+                    <h3>Background-clip</h3>
+                    <p>Define hasta dónde debe extenderse el fondo dentro del elemento.</p>
+                    <h4>Sintaxis</h4>
+                    <pre
+                        class="line-numbers"><code class="language-css">background-clip: [border-box|padding-box|content-box];</code></pre>
+                    <p>Explicación del uso de las 3 propiedades:</p>
+                    <ul>
+                        <li><b>Border-box: </b>El fondo se extiende completamente por todo el elemento, incluso debajo
+                            del
+                            borde.</li>
+                        <li><b>Padding-box: </b>El fondo solo se extiende hasta el borde del borde: incluye el relleno
+                            pero
+                            no el borde.</li>
+                        <li><b>Content-box: </b>El fondo solo se extiende hasta el borde del contenido : no incluye el
+                            relleno ni el borde.</li>
+                    </ul>
+                    <div id="fondos-clip-border-box">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam repellat earum
+                            recusandae ad voluptates necessitatibus alias eaque unde expedita, iste, at quibusdam
+                            tenetur
+                            quis voluptatibus harum culpa a porro.</p>
+                    </div>
+                    <br /><br />
+                    <div id="fondos-clip-padding-box">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam repellat earum
+                            recusandae ad voluptates necessitatibus alias eaque unde expedita, iste, at quibusdam
+                            tenetur
+                            quis voluptatibus harum culpa a porro.</p>
+                    </div>
+                    <br /><br />
+                    <div id="fondos-clip-content-box">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam repellat earum
+                            recusandae ad voluptates necessitatibus alias eaque unde expedita, iste, at quibusdam
+                            tenetur
+                            quis voluptatibus harum culpa a porro.</p>
+                    </div>
+                    <h4>Ejemplos:</h4>
+                    <pre class="line-numbers"><code class="language-css">#fondos-clip-border-box{
+    background-color: aqua;
+    background-clip: border-box;
+    border: 5px dotted black;
+    margin: 10px;
+    padding: 10px;
+}
+
+#fondos-clip-padding-box{
+    background-color: aqua;
+    background-clip: padding-box;
+    border: 5px dotted black;
+    margin: 10px;
+    padding: 10px;
+}
+
+#fondos-clip-content-box {
+    background-color: aqua;
+    background-clip: content-box;
+    border: 5px dotted black;
+    margin: 10px;
+    padding: 10px;
+}
+</code></pre>
+                    Aquí el resultado del ejemplo del código fuente indicado arriba. En el código fuente de los ejemplos
+                    no debe haber ninguna propiedad no explicada anteriormente. Es decir, si para el ejemplo necesitas
+                    <b>content-box, padding-box, o border-box</b>, estas propiedades deben ser explicadas con anterioridad.
                 </article>
 
                 <article>

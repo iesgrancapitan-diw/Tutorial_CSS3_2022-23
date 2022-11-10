@@ -42,7 +42,7 @@
         </div>
 
         <section>
-            
+
             <article>
                 <h3>border-style</h3>
                 <p>Indica el estilo del borde. Es importante definir un border-style para que el borde
@@ -53,10 +53,14 @@
                     <li><b>dashed</b> - Define un borde discontinuo.</li>
                     <li><b>solid</b> - Define un borde sólido.</li>
                     <li><b>double</b> - Define un borde doble.</li>
-                    <li><b>groove</b> - Define un borde ranurado 3D. El efecto depende del valor del color del borde.</li>
-                    <li><b>ridge</b> - Define un borde estriado 3D. El efecto depende del valor del color del borde.</li>
-                    <li><b>inset</b> - Define un borde de inserción 3D. El efecto depende del valor del color del borde.</li>
-                    <li><b>outset</b> - Define un borde inicial 3D. El efecto depende del valor del color del borde.</li>
+                    <li><b>groove</b> - Define un borde ranurado 3D. El efecto depende del valor del color del borde.
+                    </li>
+                    <li><b>ridge</b> - Define un borde estriado 3D. El efecto depende del valor del color del borde.
+                    </li>
+                    <li><b>inset</b> - Define un borde de inserción 3D. El efecto depende del valor del color del borde.
+                    </li>
+                    <li><b>outset</b> - Define un borde inicial 3D. El efecto depende del valor del color del borde.
+                    </li>
                     <li><b>none</b> - No define ningún borde</li>
                     <li><b>hidden</b> - Define un borde oculto</li>
                 </ul>
@@ -98,8 +102,9 @@
             </article>
             <article>
                 <h3>border-width</h3>
-                <p>Indica que el ancho de los bordes. El ancho se puede establecer con un tamaño específico (en px, pt, cm, em, etc.)
-                     o usando uno de los tres valores predefinidos: thin, medium, or thick:</p>
+                <p>Indica que el ancho de los bordes. El ancho se puede establecer con un tamaño específico (en px, pt,
+                    cm, em, etc.)
+                    o usando uno de los tres valores predefinidos: thin, medium, or thick:</p>
                 <h4>Sintaxis</h4>
                 <pre
                     class="line-numbers"><code class="language-css">border-width: {ancho borde | [ancho borde derecho] | [ancho borde inferior] | [ancho borde izquierdo]};</code></pre>
@@ -130,7 +135,8 @@ border-width: thick;</code></pre>
                 <div id="border-width-4">Ejemplo de border-width con thick</div>
                 <pre class="line-numbers"><code class="language-css">border-style: solid;
 border-width: 2px 4px 6px 8px;</code></pre>
-                <div id="border-width-5">Ejemplo de border-width donde el borde de cada lado sera de un ancho diferente</div>
+                <div id="border-width-5">Ejemplo de border-width donde el borde de cada lado sera de un ancho diferente
+                </div>
             </article>
 
             <article>
@@ -166,7 +172,7 @@ border-width: 2px;</code></pre>
                 <pre class="line-numbers"><code class="language-css">border-color: red green;
 border-style: solid;
 border-width: 4px;</code></pre>
-                <div id="border-color-2">Ejemplo de border-color con dos parámetros</div>    
+                <div id="border-color-2">Ejemplo de border-color con dos parámetros</div>
                 <pre class="line-numbers"><code class="language-css">border-color: red green;
 border-style: solid;
 border-width: 4px;</code></pre>
@@ -184,14 +190,18 @@ border-width: 4px;</code></pre>
                 <p>Admite de uno a cuatro valores, que son los siguientes: </p>
                 <ul>
                     <li>Un valor: se aplica a las cuatros esquinas del borde.</li>
-                    <li>Dos valores: se aplica el primero a la esquina superior izquierda y a la esquina inferior derecha. Y el segundo valor se aplica a la esquina superior derecha y a la esquina inferior izquierda.  </li>
-                    <li>Tres valores: se aplica el <span>primero</span> a la esquina superior izquierda,el segundo a la esquina superior derecha e esquina inferior izquierda y el
+                    <li>Dos valores: se aplica el primero a la esquina superior izquierda y a la esquina inferior
+                        derecha. Y el segundo valor se aplica a la esquina superior derecha y a la esquina inferior
+                        izquierda. </li>
+                    <li>Tres valores: se aplica el <span>primero</span> a la esquina superior izquierda,el segundo a la
+                        esquina superior derecha e esquina inferior izquierda y el
                         tercero a la esquina inferior derecha.</li>
-                    <li>Cuatro valores: se aplica el primero a la esquina superior izquierda, el segundo a la esquina superior derecha, el tercero esquina inferior derecha y el
+                    <li>Cuatro valores: se aplica el primero a la esquina superior izquierda, el segundo a la esquina
+                        superior derecha, el tercero esquina inferior derecha y el
                         cuarto
                         a la esquina inferior izquierda.</li>
                 </ul>
-    
+
                 <h4>Ejemplos:</h4>
                 <pre class="line-numbers"><code class="language-css">border-radius: 8px;
 border-style: solid;
@@ -218,47 +228,81 @@ border-width: 4px;</code></pre>
                 <h4>Se permiten los siguientes valores para dicha propiedad</h4>
                 <ul>
                     <li><b>none</b> - Valor por defecto. No se muestra ninguna sombra</li>
-                    <li><b>h-offset</b> - Requerido. Es el desplazamiento horizontal de la sombra. Un valor positivo situa la sombra en el lado derecho del cuadro(elemento), un valor negativo situa la sombra en el lado izquierdo del cuadro</li>
-                    <li><b>v-offset</b> - Requerido. Es el desplazamiento vertical de la sombra. Un valor positivo situa la sombra debajo del cuadro(elemento), un valor negativo situa la sombra encima del cuadro</li>
-                    <li><b>blur</b> - Opcional. Es el radio de desenfoque. Cuanto mayor sea el número, más borrosa será la sombra</li>
-                    <li><b>spread</b> - Opcional. Es el radio de propagación. Un valor positivo aumenta el tamaño de la sombra, un valor negativo disminuye el tamaño de la sombra</li>
-                    <li><b>color</b> - Opcional. Es el color de la sombra. El valor predeterminado es el color del texto. </li>
-                    <li><b>inset</b> - Opcional. Cambia la sombra de una sombra exterior(por fuera del elemento) a una sombra interior(dentro del elemento)</li>
+                    <li><b>h-offset</b> - Requerido. Es el desplazamiento horizontal de la sombra. Un valor positivo
+                        situa la sombra en el lado derecho del cuadro(elemento), un valor negativo situa la sombra en el
+                        lado izquierdo del cuadro</li>
+                    <li><b>v-offset</b> - Requerido. Es el desplazamiento vertical de la sombra. Un valor positivo situa
+                        la sombra debajo del cuadro(elemento), un valor negativo situa la sombra encima del cuadro</li>
+                    <li><b>blur</b> - Opcional. Es el radio de desenfoque. Cuanto mayor sea el número, más borrosa será
+                        la sombra</li>
+                    <li><b>spread</b> - Opcional. Es el radio de propagación. Un valor positivo aumenta el tamaño de la
+                        sombra, un valor negativo disminuye el tamaño de la sombra</li>
+                    <li><b>color</b> - Opcional. Es el color de la sombra. El valor predeterminado es el color del
+                        texto. </li>
+                    <li><b>inset</b> - Opcional. Cambia la sombra de una sombra exterior(por fuera del elemento) a una
+                        sombra interior(dentro del elemento)</li>
                     <li><b>initial</b> - Establece esta propiedad en su valor predeterminado.</li>
                     <li><b>inherit</b> - Hereda esta propiedad de su elemento principal.</li>
                 </ul>
                 <h4>Sintaxis</h4>
                 <pre
-                    class="line-numbers"><code class="language-css">border-radius: [Aqui va la sintaxis de cada propiedad];</code></pre>
+                    class="line-numbers"><code class="language-css">box-shadow: [none|h-offset v-offset blur spread color |inset|initial|inherit]</code></pre>
                 <p>Admite de uno a cuatro valores, que son los siguientes: </p>
                 <ul>
-                    <li>Un valor: se aplica a los cuatros lados.</li>
-                    <li>Dos valores. se aplica el primero a arriba y abajo y el segundo a derecha e
-                        izquierda.</li>
-                    <li>Tres valores: se aplica el <span>primero</span> a arriba,el segundo a derecha e izquierda y el
-                        tercero a abajo.</li>
-                    <li>Cuatro valores: se aplica el primero a arriba, el segundo a la derecha, el tercero abajo y el
-                        cuarto
-                        a la izquierda.</li>
+                    <li>Dos valores: se aplica el primero a el desplazamiento horizontal de la sombra y el segundo a el
+                        desplazamiento vertical de la sombra.</li>
+                    <li>Tres valores: se aplica el primero a el desplazamiento horizontal de la sombra, el segundo a el
+                        desplazamiento vertical de la sombra y el tercero aumenta el tamaño de la sombra.</li>
+                    <li>Cuatro valores: se aplica el primero a el desplazamiento horizontal de la sombra, el segundo a
+                        el desplazamiento vertical de la sombra, el tercero aumenta el tamaño de la sombra y el cuarto
+                        si es positivo aumenta el tamaño de la sombra y si es negegativo aumenta la sombra.</li>
+                    <li>Cinco valores: se aplica el primero a el desplazamiento horizontal de la sombra, el segundo a
+                        el desplazamiento vertical de la sombra, el tercero aumenta el tamaño de la sombra, el cuarto
+                        si es positivo aumenta el tamaño de la sombra y si es negegativo aumenta la sombra y el quinto
+                        le da color a la sombra.</li>
+                    <li>Seis valores: se aplica el primero a el desplazamiento horizontal de la sombra, el segundo a
+                        el desplazamiento vertical de la sombra, el tercero aumenta el tamaño de la sombra, el cuarto
+                        si es positivo aumenta el tamaño de la sombra y si es negegativo aumenta la sombra, el quinto le
+                        da color a la sombra y el sexto valor puede ser inset, initial o inherit.
+                    </li>
                 </ul>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae velit laudantium adipisci esse
-                    voluptates deserunt eum ex, excepturi, amet, sequi praesentium fugiat fugit accusamus vel nostrum
-                    numquam neque repellat autem.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam repellat earum recusandae
-                    ad voluptates necessitatibus alias eaque unde expedita, iste, at quibusdam tenetur quis voluptatibus
-                    harum culpa a porro.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ad porro optio vel beatae rem
-                    quidem quasi blanditiis sint numquam ullam, maxime neque impedit, nobis id? Maxime, commodi!
-                    Commodi, quam?</p>
-
                 <h4>Ejemplos:</h4>
-                <pre class="line-numbers"><code class="language-html">&lt;p&gt;Párrafo 1&lt;/p&gt;
-&lt;p&gt;Párrafo 2&lt;/p&gt;
-&lt;p&gt;Párrafo 3&lt;/p&gt;</code></pre>
-                Aquí el resultado del ejemplo del código fuente indicado arriba. En el código fuente de los ejemplos no
-                debe haber ninguna propiedad no explicada anteriormente. Es decir, si para el ejemplo necesitas
-                border-style, border-width y/o border-color, estas propiedades deben ser explicadas con anterioridad
-                black;
+                <pre class="line-numbers"><code class="language-css">width: 200px;
+height: 100px;
+text-align: center;
+background-color: lightblue;
+box-shadow: 20px 20px;
+margin-bottom: 30px;</code></pre>
+                <div id="border-box-shadow-1">Box-shadow con dos parámetros</div>
+                <pre class="line-numbers"><code class="language-css">width: 200px;
+height: 100px;
+text-align: center;
+background-color: lightblue;
+box-shadow: 20px 20px 20px;
+margin-bottom: 30px;</code></pre>
+                <div id="border-box-shadow-2">Box-shadow con tres parámetros</div>
+                <pre class="line-numbers"><code class="language-css">width: 200px;
+height: 100px;
+text-align: center;
+background-color: lightblue;
+box-shadow: 20px 20px 20px 10px;
+margin-bottom: 40px;</code></pre>
+                <div id="border-box-shadow-3">Box-shadow con cuatro parámetros</div>
+                <pre class="line-numbers"><code class="language-css">width: 200px;
+height: 100px;
+text-align: center;
+background-color: lightblue;
+box-shadow: 20px 20px 20px 10px green;
+margin-bottom: 40px;</code></pre>
+                <div id="border-box-shadow-4">Box-shadow con cinco parámetros</div>
+                <pre class="line-numbers"><code class="language-css">color: white;
+width: 200px;
+height: 100px;
+text-align: center;
+background-color: lightblue;
+box-shadow: 20px 20px 20px 10px green inset;
+margin-bottom: 40px;</code></pre>
+                <div id="border-box-shadow-5">Box-shadow con seis parámetros</div>
             </article>
 
             <article>
@@ -298,15 +342,52 @@ border-width: 4px;</code></pre>
                 border-style, border-width y/o border-color, estas propiedades deben ser explicadas con anterioridad
                 black;
             </article>
+            <article>
+                <h3>border-radius</h3>
+                <p>Indica que el tamaño del borde redondeado. Es importante definir un border-style para que el borde
+                    se vea redondeado.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">border-radius: [Aqui va la sintaxis de cada propiedad];</code></pre>
+                <p>Admite de uno a cuatro valores, que son los siguientes: </p>
+                <ul>
+                    <li>Un valor: se aplica a los cuatros lados.</li>
+                    <li>Dos valores. se aplica el primero a arriba y abajo y el segundo a derecha e
+                        izquierda.</li>
+                    <li>Tres valores: se aplica el <span>primero</span> a arriba,el segundo a derecha e izquierda y el
+                        tercero a abajo.</li>
+                    <li>Cuatro valores: se aplica el primero a arriba, el segundo a la derecha, el tercero abajo y el
+                        cuarto
+                        a la izquierda.</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae velit laudantium adipisci esse
+                    voluptates deserunt eum ex, excepturi, amet, sequi praesentium fugiat fugit accusamus vel nostrum
+                    numquam neque repellat autem.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam repellat earum recusandae
+                    ad voluptates necessitatibus alias eaque unde expedita, iste, at quibusdam tenetur quis voluptatibus
+                    harum culpa a porro.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ad porro optio vel beatae rem
+                    quidem quasi blanditiis sint numquam ullam, maxime neque impedit, nobis id? Maxime, commodi!
+                    Commodi, quam?</p>
 
-            
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-html">&lt;p&gt;Párrafo 1&lt;/p&gt;
+&lt;p&gt;Párrafo 2&lt;/p&gt;
+&lt;p&gt;Párrafo 3&lt;/p&gt;</code></pre>
+                Aquí el resultado del ejemplo del código fuente indicado arriba. En el código fuente de los ejemplos no
+                debe haber ninguna propiedad no explicada anteriormente. Es decir, si para el ejemplo necesitas
+                border-style, border-width y/o border-color, estas propiedades deben ser explicadas con anterioridad
+                black;
+            </article>
+
+
 
         </section>
     </main>
     <footer>
-        <div>Jaime Rabasco Ronda</div>
-        <a href="https://twitter.com/jaimerr" class="social"><img src="icon/twitter.svg" alt="Twitter"></a>
-        <a href="https://github.com/jaimerabasco" class="social"><img src="icon/github.svg" alt="GitHub"></a>
+        <div>Hugo Vicente Peligro</div>
+        <a href="#" class="social"><img src="icon/twitter.svg" alt="Twitter"></a>
+        <a href="#" class="social"><img src="icon/github.svg" alt="GitHub"></a>
     </footer>
 </body>
 

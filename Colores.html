@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>
+      TUTORIAL CSS3 - 2020/2021 - Diseño de Interfaces Web - CFGS DAW - IES Gran
+      Capitán
+    </title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/prism.css" />
+    <script src="js/prism.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1><a href="index.html">TUTORIAL CSS3 - 2022/2023</a></h1>
+      <h2><img src="icon/language-css3.svg" /></h2>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="Bordes.html">Bordes</a></li>
+        <li><a href="Fondos.html">Fondos</a></li>
+        <li><a href="Efectos_texto.html">Fuentes y Ef Texto</a></li>
+        <li><a href="Transformaciones.html">Transformac.</a></li>
+        <li><a href="Transiciones.html">Transiciones</a></li>
+        <li><a href="Animaciones.html">Animaciones</a></li>
+        <li><a href="Col_mult.html">Col Múltiples</a></li>
+        <li><a href="Color.html">Color y Degradado</a></li>
+        <li><a href="Pseudos_Css3.html">Pseudos CSS3</a></li>
+        <li><a href="Svg_filter.html">Filter y SVG</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div>
+        <h2>TUTORIAL CSS3 - Colores</h2>
+        <h3>Colores y degradados en HTML y CSS</h3>
+      </div>
+
+      <section>
+        <article>
+          <h4 style="color: black">¿Qué se va a ver en el tutorial?</h4>
+          <ul>
+            <a href="#coloresNombre"><li>Definir colores por nombre</li></a
+            ><br />
+            <a href="#coloresHexadecimal"
+              ><li>Definir colores con valores Hexadecimales</li></a
+            ><br />
+            <a href="#coloresRGB"><li>Definir colores con RGB</li></a
+            ><br />
+            <a href="#coloresRGBA"
+              ><li>Definir colores con RGBA (canal alfa)</li></a
+            ><br />
+            <a href="#coloresHSL"><li>Definir colores por HSL</li></a
+            ><br />
+            <a href="#coloresHSLA"><li>Definir colores por HSLA</li></a
+            ><br />
+            <a href="#degradados"><li>Degradados</li></a>
+          </ul>
+        </article>
+        <article>
+          <h3 id="coloresNombre">
+            Colores con nombre<br />
+            <img src="icon/colorIcon.png" width="100px" />
+          </h3>
+          <p>
+            Los colores podemos definirlos poniendo solo el nombre del color que
+            queramos de esta forma:
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">color:[Color que queramos, ya sea red,blue,tomato];</code></pre>
+          <a
+            href="https://www.quackit.com/css/color/charts/css_color_names_chart.cfm"
+            >Pagina con todos los colores</a
+          >
+
+          <h4>Ejemplos:</h4>
+          <pre class="line-numbers"><code class="language-css">h1{
+  color: red;
+}
+h2{
+  color: green;
+}
+h3{
+  color: blue;
+}</code></pre>
+          <img src="img/ej3.png" />
+        </article>
+        <article>
+          <h3 id="coloresHexadecimal">Hexadecimal en colores</h3>
+          <p>Podemos definir los colores mediante un valor hexadecimal</p>
+          <h4>Sintaxis</h4>
+          <pre class="line-numbers"><code class="language-css">p{
+  color:[Los valores empiezan con # y despues seguido de 6 numeros]
+}</code></pre>
+          <p>
+            Para definir un color hexadecimal lo hacemos con #RRGGBB, donde las
+            letras significan RR (rojo) GG (green) BB (blue)
+          </p>
+          <p>
+            Al especificar un color hexadecimal tenemos que saber que las dos
+            letras de cada color es un rango entre 00 y ff, igual que es en
+            decimal con 0-255. <br />
+            Por lo que si queremos escribir un color en rojo tan solo tenemos
+            que escribir #ff en las letras de RR y todo lo demas a 0: #ff0000
+          </p>
+          <h4>Ejemplos:</h4>
+          <pre class="line-numbers"><code class="language-css">h1{
+  color:#ff0000;
+}
+h2{
+  color:#0000ff;
+}
+h3{
+  color:#009b00;
+}</code></pre>
+          <img src="img/ej4.png" />
+        </article>
+        <article>
+          <h3 id="coloresRGB">Colores con RGB</h3>
+          <p>Podemos definir un color con RGB()</p>
+          <h4>Sintaxis</h4>
+          <pre class="line-numbers"><code class="language-css">p{
+  color:rgb("numero","numero","numero");
+  color:rgb("numero%","numero%","numero%")
+}</code></pre>
+          <p>
+            Para definir un color con RGB() necesitamos 3 parametros, que son
+            numeros del 0-255 cada parametro seguido de una 'coma'
+          </p>
+          <p>
+            El rango de 0-255 en cada parametro significa la intensidad que se
+            le da a ese color.<br />
+            Tambien podemos escribir la intensidad de los numeros seguidos de un
+            %, el rango sería del 0-100.<br /><br />
+          </p>
+          <table>
+            <tr>
+              <th>Color</th>
+              <th style="text-align: center">RGB</th>
+              <th>Color</th>
+            </tr>
+            <tr>
+              <td style="background-color: red"></td>
+              <td>rgb(255,0,0)</td>
+              <td>Red</td>
+            </tr>
+            <tr>
+              <td style="background-color: green"></td>
+              <td>rgb(0,255,0)</td>
+              <td>Green</td>
+            </tr>
+            <tr>
+              <td style="background-color: blue"></td>
+              <td>rgb(0,0,255)</td>
+              <td>Blue</td>
+            </tr>
+          </table>
+          <h4>Ejemplos:</h4>
+          <pre class="line-numbers"><code class="language-css">h1{
+  color:rgb(65%,0%,0%);
+}
+h2{
+  color:rgb(129,129,129);
+}
+h3{
+  color:rgb(100%,3%,100%);
+}</code></pre>
+          <img src="img/ej5.png" />
+        </article>
+        <article>
+          <h3 id="coloresRGBA">Colores con RGBA (canal alpha)</h3>
+          <p>
+            Al especificar un color con RGB también podemos añadirle el canal
+            alpha.<br />
+            El canal alpha tiene un valor numerico que podemos añadir en los
+            colores para indicar el nivel de transparencia.
+          </p>
+          <h4>Sintaxis</h4>
+          <pre class="line-numbers"><code class="language-css">p.a0{
+  color:[rgb("color"/[nivel de transparencia])];
+}</code></pre>
+          <p>Podemos especificar la transparencia del alpha de esta forma</p>
+          <ul>
+            <li>
+              Con rgba() y en la tercera ',' escribir la transparencia del 0 al
+              1
+            </li>
+          </ul>
+          <h4>Ejemplos:</h4>
+          <pre class="line-numbers"><code class="language-css">p.p1{
+  color:rgba(255,0,0,0.5);
+}
+p.p2{
+  color: rgba(255,0,0,1);
+}</code></pre>
+          <img src="img/ej2.png" />
+        </article>
+        <article>
+          <h3 id="coloresHSL">Definir colores con HSL</h3>
+          <p>
+            Otra forma de definir colores es mediante HSL, sus siglas vienen de
+            Hue, Saturation y Lightness, que son el tono, la saturacion y la
+            luminosidad
+          </p>
+          <h4>Sintaxis</h4>
+          <pre class="line-numbers"><code class="language-css">h1{
+  hsl( tono ,ion , luminosidad )
+}</code></pre>
+          <p>
+            Para poder elegir un color con HSL debemos saber que valores puede
+            tener cada parametros, y esos valores son:
+          </p>
+          <ul>
+            <li>
+              El tono se puede definir con un rango de 0 a 360, donde 0 es rojo,
+              120 es verde y 240 es azul
+            </li>
+            <li>
+              La saturación es un valor porcentual donde 0% significa un tono de
+              gris o donde la saturación es 100% que es el color completo
+            </li>
+            <li>
+              La luminosidad tambien es un valor porcentual, 0% es negro, 50% no
+              es ni claro ni oscuro y 100% es blanco
+            </li>
+          </ul>
+          <h4>Ejemplos:</h4>
+          <pre class="line-numbers"><code class="language-css">h1{
+color: hsl(120,100%,65%);
+}
+h2{
+color: hsl(120,100%,20%);
+}
+h3{
+color:hsl(240,0%,50%); /*Color rojo pero saturacion al minimo por lo que es gris*/
+}</code></pre>
+          <img src="img/ej6.png" />
+        </article>
+        <article>
+          <h3 id="coloresHSLA">Definir colores con HSLA</h3>
+          <p>
+            HSLA es lo mismo que HSL pero añadiendo el canal alpha, que nos deja
+            definir una opacidad del color
+          </p>
+          <h4>Sintaxis</h4>
+          <pre class="line-numbers"><code class="language-css">h1{
+  hsla( tono , saturacion , luminosidad, alpha )
+}</code></pre>
+          <p>
+            HSLA tiene los mismos valores que HSL, tono tiene un rango de 0-360,
+            saturación puede ser desde 0 a 100%, luminosidad del 0% al 100%.
+            <br />
+            Por último el canal alpha que con él podemos elegir la opacidad que
+            queramos que tenga el color, su valor va desde el 0.0 que el color
+            es transparente del todo hasta el 1.0, que el valor es opaco y el
+            color se muestra normal
+          </p>
+          <h4>Ejemplos:</h4>
+          <pre class="line-numbers"><code class="language-css">h1 {
+  color: hsla(120, 100%, 65%, 0.2);
+}
+h2 {
+  color: hsla(120, 100%, 50%, 0.5);
+}
+h3 {
+  color: hsla(120, 100%, 50%, 1);
+}</code></pre>
+          <img src="img/ej7.png" />
+        </article>
+        <article>
+          <h3 id="degradados">Degradados</h3>
+          <p>
+            Los degradados son usados en colores de fondo, o en imagenes de fondo.
+            Existen 3 tipos de degradados:
+            <ul>
+              <li>Degradados lineales son usados para separar dos o más colores en formatos lineales, como por ejemplo<br>
+                 de arriba a abajo, izquierda a derecha o viceversa. Tambien pueden ir los colores diagonalmente que van desde una esquina hasta otra</li>
+                 <li>
+                  Degradados radiales, son parecidos a los lineales pero podemos especificar donde acaba la sombra
+                 </li>
+            </ul>
+          </p>
+          <h4>Sintaxis</h4>
+          <pre class="line-numbers"><code class="language-css">body{
+  background: [Aqui ponemos si queremos que sea linear-gradient o radial-gradient] 
+  /*En caso de que sea linear-gradient(aqui ponemos hacia donde queremos el degradado, despues el color
+   que queremos que tenga, y hasta cual color va a llegar)*/
+          </code></pre>
+          <p>
+            
+          </p>
+          <h4>Ejemplos:</h4>
+          <pre class="line-numbers"><code class="language-css">#grad1 {
+  height: 100px;
+  background: linear-gradient(to bottom, red, black);
+}
+#grad2 {
+  height: 100px;
+  background: linear-gradient(to top, blue, green);
+}
+#grad3 {
+  height: 100px;
+  background: linear-gradient(to right, yellow, orange);
+}
+#grad4 {
+  height: 100px;
+  background: linear-gradient(to left, purple, brown);
+}</code></pre>
+          <img src="img/ej8.png" width="1264px" />
+          <p>Tambien podemos tener un degradado con varios colores, e incluso hacer un arcoiris con degradados</p>
+          <h4>Ejemplos:</h4>
+          <pre class="line-numbers"><code class="language-css">#grad1 {
+  height: 280px;
+  background: linear-gradient(to bottom, lime,aqua,crimson,deepPink);
+}
+#grad2 {
+  height: 280px;
+  background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+}</code></pre>
+<img src="img/ej9.png" width="1264px" />
+          <p>Existe una funcion que podemos repetir el degradado cada X pixeles, también podemos darle transparencia a un degradado con rgba</p>
+          <h4>Ejemplos:</h4>
+          <pre class="line-numbers"><code class="language-css">#grad1 {
+  height: 100px;
+  background: repeating-linear-gradient(red ,yellow 20px);
+}
+#grad2 {
+  height: 100px;
+  background: linear-gradient(to left,rgba(255,0,0,0.0),rgba(255,0,0,1));
+}</code></pre>
+<img src="img/ej10.png" width="1264px" />
+        </article>
+      </section>
+    </main>
+    <footer>
+      <div>Raul Pantoja Porras</div>
+      <a href="https://github.com/RaulPantoja" class="social"
+        ><img src="icon/github.svg" alt="GitHub"
+      /></a>
+    </footer>
+  </body>
+</html>

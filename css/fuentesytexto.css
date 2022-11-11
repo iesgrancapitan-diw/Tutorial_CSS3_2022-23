@@ -396,3 +396,59 @@
 .fuentesytexto_font-weight-900{
     font-weight: 900;
 }
+
+.fuentesytexto_font-variant{
+    font-variant: normal;
+}
+
+.fuentesytexto_font-variant-small-caps{
+    font-variant: small-caps;
+}
+
+.fuentesytexto_font-size-xx-small{
+    font-size: xx-small;
+}
+
+.fuentesytexto_font-size-x-small{
+    font-size: x-small;
+}
+
+.fuentesytexto_font-size-small{
+    font-size: small;
+}
+
+.fuentesytexto_font-size-medium{
+    font-size: medium;
+}
+
+.fuentesytexto_font-size-large{
+    font-size: large;
+}
+
+.fuentesytexto_font-size-x-large{
+    font-size: x-large;
+}
+
+.fuentesytexto_font-size-xx-large{
+    font-size: xx-large;
+}
+
+.fuentesytexto_font-size-smaller{
+    font-size: smaller;
+}
+
+.fuentesytexto_font-size-larger{
+    font-size: larger;
+}
+
+.fuentesytexto_font-size-30px{
+    font-size: 30px;
+}
+
+.fuentesytexto_font-size-80porciento{
+    font-size: 80%;
+}
+
+.fuentesytexto_font-size-150porciento{
+    font-size: 150%;
+}

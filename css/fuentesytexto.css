@@ -138,322 +138,325 @@
     text-decoration-line: line-through;
 }
 
-.fuentesytexto_text-decoration-line-underline-overline{
+.fuentesytexto_text-decoration-line-underline-overline {
     text-decoration-line: underline overline;
 }
 
-.fuentesytexto_text-decoration-color-red{
+.fuentesytexto_text-decoration-color-red {
     text-decoration-line: underline;
     text-decoration-color: red;
 }
 
-.fuentesytexto_text-decoration-color-ff0000{
+.fuentesytexto_text-decoration-color-ff0000 {
     text-decoration-line: underline;
     text-decoration-color: #ff0000;
 }
 
-.fuentesytexto_text-decoration-color-hsl{
+.fuentesytexto_text-decoration-color-hsl {
     text-decoration-line: underline;
     text-decoration-color: hsl(0, 100%, 50%);
 }
 
-.fuentesytexto_text-decoration-color-rgb{
+.fuentesytexto_text-decoration-color-rgb {
     text-decoration-line: underline;
     text-decoration-color: rgb(255, 0, 0);
 }
 
-.fuentesytexto_text-decoration-color-rgba{
+.fuentesytexto_text-decoration-color-rgba {
     text-decoration-line: underline;
     text-decoration-color: rgba(255, 0, 0, 0.5);
 }
 
-.fuentesytexto_text-decoration-style-solid{
+.fuentesytexto_text-decoration-style-solid {
     text-decoration-line: underline;
     text-decoration-style: solid;
 }
 
-.fuentesytexto_text-decoration-style-double{
+.fuentesytexto_text-decoration-style-double {
     text-decoration-line: line-through underline;
     text-decoration-style: double;
 }
 
-.fuentesytexto_text-decoration-style-dotted{
+.fuentesytexto_text-decoration-style-dotted {
     text-decoration-line: overline underline;
     text-decoration-style: dotted;
 }
 
-.fuentesytexto_text-decoration-style-dashed{
+.fuentesytexto_text-decoration-style-dashed {
     text-decoration-line: overline;
     text-decoration-style: dashed;
 }
 
-.fuentesytexto_text-decoration-style-wavy{
+.fuentesytexto_text-decoration-style-wavy {
     text-decoration-line: line-through;
     text-decoration-style: wavy;
 }
 
-.fuentesytexto_text-decoration-thickness-2px{
+.fuentesytexto_text-decoration-thickness-2px {
     text-decoration-thickness: 2px;
     text-decoration-line: line-through underline;
 }
 
-.fuentesytexto_text-decoration-thickness-4px{
+.fuentesytexto_text-decoration-thickness-4px {
     text-decoration-thickness: 4px;
     text-decoration-line: overline underline;
 }
 
-.fuentesytexto_text-decoration-thickness-6px{
+.fuentesytexto_text-decoration-thickness-6px {
     text-decoration-thickness: 6px;
     text-decoration-line: overline;
 }
 
-.fuentesytexto_text-decoration-thickness-8px{
+.fuentesytexto_text-decoration-thickness-8px {
     text-decoration-thickness: 8px;
     text-decoration-line: line-through;
 }
 
-.fuentesytexto_text-decoration-thickness-10px{
+.fuentesytexto_text-decoration-thickness-10px {
     text-decoration-thickness: 10px;
     text-decoration-line: underline;
 }
 
-.fuentesytexto_text-decoration-underline-wavy-blue-5px{
+.fuentesytexto_text-decoration-underline-wavy-blue-5px {
     text-decoration-line: underline;
     text-decoration-style: wavy;
     text-decoration-color: red;
     text-decoration-thickness: 5px;
 }
 
-.fuentesytexto_color-green{
+.fuentesytexto_color-green {
     color: green;
 }
 
-.fuentesytexto_color-red{
+.fuentesytexto_color-red {
     color: red;
 }
 
-.fuentesytexto_text-transform-capitalize{
+.fuentesytexto_text-transform-capitalize {
     text-transform: capitalize;
 }
 
-.fuentesytexto_text-transform-uppercase{
+.fuentesytexto_text-transform-uppercase {
     text-transform: uppercase;
 }
 
-.fuentesytexto_text-transform-lowercase{
+.fuentesytexto_text-transform-lowercase {
     text-transform: lowercase;
 }
 
-.fuentesytexto_text-indent-50px{
+.fuentesytexto_text-indent-50px {
     text-indent: 50px;
 }
 
-.fuentesytexto_text-indent-50porciento{
+.fuentesytexto_text-indent-50porciento {
     text-indent: 50%;
 }
 
-.fuentesytexto_text-indent-50em{
+.fuentesytexto_text-indent-50em {
     text-indent: 50em;
 }
 
-.fuentesytexto_letter-spacing-normal{
+.fuentesytexto_letter-spacing-normal {
     letter-spacing: normal;
 }
 
-.fuentesytexto_letter-spacing-5px{
+.fuentesytexto_letter-spacing-5px {
     letter-spacing: 5px;
 }
 
-.fuentesytexto_letter-spacing-menos2px{
+.fuentesytexto_letter-spacing-menos2px {
     letter-spacing: -2px;
 }
 
-.fuentesytexto_letter-spacing-5em{
+.fuentesytexto_letter-spacing-5em {
     letter-spacing: 5em;
 }
 
-.fuentesytexto_line-height-normal{
+.fuentesytexto_line-height-normal {
     line-height: normal;
 }
 
-.fuentesytexto_line-height-1punto5{
+.fuentesytexto_line-height-1punto5 {
     line-height: 1.5;
 }
 
-.fuentesytexto_line-height-2{
+.fuentesytexto_line-height-2 {
     line-height: 2;
 }
 
-.fuentesytexto_line-height-50px{
+.fuentesytexto_line-height-50px {
     line-height: 50px;
 }
 
-.fuentesytexto_line-height-50porciento{
+.fuentesytexto_line-height-50porciento {
     line-height: 50%;
 }
 
-.fuentesytexto_line-height-2em{
+.fuentesytexto_line-height-2em {
     line-height: 2em;
 }
 
-.fuentesytexto_word-spacing-normal{
+.fuentesytexto_word-spacing-normal {
     word-spacing: normal;
 }
 
-.fuentesytexto_word-spacing-5px{
+.fuentesytexto_word-spacing-5px {
     word-spacing: 5px;
 }
 
-.fuentesytexto_word-spacing-menos2px{
+.fuentesytexto_word-spacing-menos2px {
     word-spacing: -2px;
 }
 
-.fuentesytexto_word-spacing-5em{
+.fuentesytexto_word-spacing-5em {
     word-spacing: 5em;
 }
 
-.fuentesytexto_white-space-normal{
+.fuentesytexto_white-space-normal {
     white-space: normal;
 }
 
-.fuentesytexto_white-space-nowrap{
+.fuentesytexto_white-space-nowrap {
     white-space: nowrap;
 }
 
-.fuentesytexto_white-space-pre{
+.fuentesytexto_white-space-pre {
     white-space: pre;
 }
 
-.fuentesytexto_white-space-pre-line{
+.fuentesytexto_white-space-pre-line {
     white-space: pre-line;
 }
 
-.fuentesytexto_white-space-pre-wrap{
+.fuentesytexto_white-space-pre-wrap {
     white-space: pre-wrap;
 }
 
-.fuentesytexto_text-shadow-none{
+.fuentesytexto_text-shadow-none {
     text-shadow: none;
 }
 
-.fuentesytexto_text-shadow-2px{
+.fuentesytexto_text-shadow-2px {
     text-shadow: 2px 2px 2px white;
 }
 
-.fuentesytexto_text-shadow-2px-4px{
+.fuentesytexto_text-shadow-2px-4px {
     text-shadow: 2px 2px 2px white, 4px 4px 4px white;
 }
 
-.fuentesytexto_font-family{
+.fuentesytexto_font-family {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.fuentesytexto_font-family-2{
+.fuentesytexto_font-family-2 {
     font-family: "Times New Roman", Times, serif;
 
 }
 
-.fuentesytexto_font-family-3{
+.fuentesytexto_font-family-3 {
     font-family: "Courier New", Courier, monospace;
 }
 
-.fuentesytexto_font-family-4{
+.fuentesytexto_font-family-4 {
     font-family: "Lucida Console", "Courier New", monospace;
 }
 
-.fuentesytexto_font-style{
+.fuentesytexto_font-style {
     font-style: normal;
 }
 
-.fuentesytexto_font-style-italic{
+.fuentesytexto_font-style-italic {
     font-style: italic;
 }
 
-.fuentesytexto_font-style-oblique{
+.fuentesytexto_font-style-oblique {
     font-style: oblique;
 }
 
-.fuentesytexto_font-weight{
+.fuentesytexto_font-weight {
     font-weight: normal;
 }
 
-.fuentesytexto_font-weight-bold{
+.fuentesytexto_font-weight-bold {
     font-weight: bold;
 }
 
-.fuentesytexto_font-weight-bolder{
+.fuentesytexto_font-weight-bolder {
     font-weight: bolder;
 }
 
-.fuentesytexto_font-weight-lighter{
+.fuentesytexto_font-weight-lighter {
     font-weight: lighter;
 }
 
-.fuentesytexto_font-weight-100{
+.fuentesytexto_font-weight-100 {
     font-weight: 100;
 }
 
-.fuentesytexto_font-weight-900{
+.fuentesytexto_font-weight-900 {
     font-weight: 900;
 }
 
-.fuentesytexto_font-variant{
+.fuentesytexto_font-variant {
     font-variant: normal;
 }
 
-.fuentesytexto_font-variant-small-caps{
+.fuentesytexto_font-variant-small-caps {
     font-variant: small-caps;
 }
 
-.fuentesytexto_font-size-xx-small{
+.fuentesytexto_font-size-xx-small {
     font-size: xx-small;
 }
 
-.fuentesytexto_font-size-x-small{
+.fuentesytexto_font-size-x-small {
     font-size: x-small;
 }
 
-.fuentesytexto_font-size-small{
+.fuentesytexto_font-size-small {
     font-size: small;
 }
 
-.fuentesytexto_font-size-medium{
+.fuentesytexto_font-size-medium {
     font-size: medium;
 }
 
-.fuentesytexto_font-size-large{
+.fuentesytexto_font-size-large {
     font-size: large;
 }
 
-.fuentesytexto_font-size-x-large{
+.fuentesytexto_font-size-x-large {
     font-size: x-large;
 }
 
-.fuentesytexto_font-size-xx-large{
+.fuentesytexto_font-size-xx-large {
     font-size: xx-large;
 }
 
-.fuentesytexto_font-size-smaller{
+.fuentesytexto_font-size-smaller {
     font-size: smaller;
 }
 
-.fuentesytexto_font-size-larger{
+.fuentesytexto_font-size-larger {
     font-size: larger;
 }
 
-.fuentesytexto_font-size-30px{
+.fuentesytexto_font-size-30px {
     font-size: 30px;
 }
 
-.fuentesytexto_font-size-80porciento{
+.fuentesytexto_font-size-80porciento {
     font-size: 80%;
 }
 
-.fuentesytexto_font-size-150porciento{
+.fuentesytexto_font-size-150porciento {
     font-size: 150%;
 }
 
-.fuentesytexto_google-fonts{
+.fuentesytexto_google-fonts {
     font-family: 'Roboto', sans-serif;
 }
 
+.fuentesytexto_font {
+    font: italic small-caps bold 12px/30px Georgia, serif;
+}

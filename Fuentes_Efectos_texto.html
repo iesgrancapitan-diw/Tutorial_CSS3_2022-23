@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/estilos.css" />
     <link rel="stylesheet" href="css/prism.css" />
     <link rel="stylesheet" href="css/fuentesytexto.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&effect=shadow-multiple|fire" rel="stylesheet">
     <script src="js/prism.js"></script>
   </head>
   <body>
@@ -942,6 +943,25 @@ font-size: 150%;
             <p class="fuentesytexto_font-size-30pixeles">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
             <p class="fuentesytexto_font-size-80porciento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
             <p class="fuentesytexto_font-size-150porciento">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          </div>
+        </article>
+        <article>
+          <h3>Google Fonts</h3>
+          <p>Google Fonts es un servicio gratuito que ofrece fuentes de Google para que las utilices en tus sitios web. Puedes ver todas las fuentes disponibles en <a href="https://fonts.google.com/" target="_blank">https://fonts.google.com/</a></p>
+          <p>Para utilizar una fuente de Google Fonts, debes incluir el siguiente código en la sección <code>&lt;head&gt;</code> de tu documento HTML:</p>
+          <pre class="line-numbers"><code class="language-html">&lt;link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"&gt;</code></pre>
+          <p>En el ejemplo anterior, se incluye la fuente Roboto. Para incluir otra fuente, debes reemplazar <code>Roboto</code> por el nombre de la fuente que deseas utilizar.</p>
+          <p>También podemos añadir efectos a las fuentes añadiendo la palabra effect seguido del nombre del efecto con la barra vertical "|" podemos añadir varios efectos </p>
+          <pre class="line-numbers"><code class="language-html">&lt;link href="https://fonts.googleapis.com/css?family=Roboto&effect=shadow-multiple|fire" rel="stylesheet"&gt;</code></pre>
+          <h4>Ejemplos</h4>
+          <pre class="line-numbers"><code class="language-css">font-family: 'Roboto', sans-serif;
+</code></pre>
+<p>Añadimos las clases que queremos al elemento seleccionado</p>
+<pre class="line-numbers"><code class="language-html">&lt;p class="font-effect-fire font-effect-shadow-multiple"&gt;</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado">
+            <p class="fuentesytexto_google-fonts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_google-fonts2 font-effect-fire font-effect-shadow-multiple">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
           </div>
         </article>
       </section>

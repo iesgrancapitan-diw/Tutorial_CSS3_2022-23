@@ -1,5 +1,4 @@
 
-/* Crea una animacion del div con id animation-delay */
 #animation-delay{
     animation-name: animation-delay;
     width: 100px;
@@ -21,20 +20,17 @@
 @keyframes animation-delay{
     0%{
         background-color: red;
-        /* aumento de tamaño
-         */
+
         transform: scale(1);
     }
     50%{
         background-color: blue;
-        /* aumento de tamaño
-         */
+
         transform: scale(1.5);
     }
     100%{
         background-color: green;
-        /* aumento de tamaño
-         */
+
         transform: scale(1);
     }
 }

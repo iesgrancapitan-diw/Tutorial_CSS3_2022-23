@@ -756,14 +756,81 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eum vel iusto c
           <p>none</p>
           <h4>Ejemplos:</h4>
           <pre class="line-numbers"><code class="language-css">text-shadow: none;
-text-shadow: 2px 2px 2px #000;
-text-shadow: 2px 2px 2px #000, 4px 4px 4px #000;
+text-shadow: 2px 2px 2px white;
+text-shadow: 2px 2px 2px white, 4px 4px 4px #000;
 </code></pre>
           <h4>Resultado</h4>
           <div class="fuentesytexto_resultado">
             <p class="fuentesytexto_text-shadow-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <p class="fuentesytexto_text-shadow-2px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
             <p class="fuentesytexto_text-shadow-2px-4px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </article>
+      </section>
+      <section>
+        <h2>Fuentes</h2>
+        <article>
+          <h3>font-family</h3>
+          <p>Se usa para establecer la familia de fuentes del texto.</p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">font-family: family-name|generic-family|initial|inherit;</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li>family-name: establece el nombre de la familia de fuentes.</li>
+            <li>generic-family: establece la familia de fuentes genérica.</li>
+          </ul>
+          <p>En CSS hay 5 familias de fuentes genéricas:</p>
+          <ul>
+            <li>serif: tienen un pequeño trazo en los bordes de cada letra. Crean una sensación de formalidad y elegancia.</li>
+            <li>monospace: tienen un ancho fijo. Crean un aspecto mecánico </li>
+            <li>sans-serif: no tienen trazos en los bordes de cada letra. Son más modernas y menos formales.</li>
+            <li>cursive: tienen un trazo que recorre cada letra. Son más informales y creativas.</li>
+            <li>fantasy: tienen un trazo que recorre cada letra. Son más informales y creativas.</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <p>serif</p>
+          <h4>Ejemplos:</h4>
+          <pre class="line-numbers"><code class="language-css">font-family: Arial, Helvetica, sans-serif;
+font-family: "Times New Roman", Times, serif;
+font-family: "Courier New", Courier, monospace;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado">
+            <p class="fuentesytexto_font-family">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-family-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-family-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-family-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          </div>
+        </article>
+        <article>
+          <h3>font-style</h3>
+          <p>Se usa para establecer el estilo de la fuente.</p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">font-style: normal|italic|oblique|initial|inherit;</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li>normal: establece el estilo normal de la fuente.</li>
+            <li>italic: establece el estilo cursiva de la fuente.</li>
+            <li>oblique: establece el estilo oblicuo de la fuente. (Parecido a italic pero menos soportado)</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <p>normal</p>
+          <h4>Ejemplos:</h4>
+          <pre class="line-numbers"><code class="language-css">font-style: normal;
+font-style: italic;
+font-style: oblique;
+</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado">
+            <p class="fuentesytexto_font-style">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-style-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-style-oblique">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          </div>
+
         </article>
       </section>
     </main>

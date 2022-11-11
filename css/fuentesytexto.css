@@ -343,3 +343,32 @@
 .fuentesytexto_text-shadow-2px-4px{
     text-shadow: 2px 2px 2px white, 4px 4px 4px white;
 }
+
+.fuentesytexto_font-family{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fuentesytexto_font-family-2{
+    font-family: "Times New Roman", Times, serif;
+
+}
+
+.fuentesytexto_font-family-3{
+    font-family: "Courier New", Courier, monospace;
+}
+
+.fuentesytexto_font-family-4{
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.fuentesytexto_font-style{
+    font-style: normal;
+}
+
+.fuentesytexto_font-style-italic{
+    font-style: italic;
+}
+
+.fuentesytexto_font-style-oblique{
+    font-style: oblique;
+}

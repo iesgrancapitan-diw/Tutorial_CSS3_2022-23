@@ -440,6 +440,204 @@ rotate: unset;</code></pre>
       </article>
 
     </section>
+    <section>
+     
+      <!-- 1. ScaleX -->
+      <article>
+        <h3>scaleX(x)</h3>
+        <p>La función CSS scaleX() define una transformación que cambia el tamaño de un elemento a lo largo del eje x (horizontalmente).</p>
+        <h4>Sintaxis</h4>
+        <pre class="line-numbers"><code class="language-css">transform: scaleX(size);</code></pre>
+        <p>Admite un valor</p>
+        <ul>
+          <li>Reescala el elemento un número de veces (sólo en horizontal).</li>
+          <li>Solo admite porcentajes y números decimales</li>
+        </ul>
+        <p>Si se indica un valor negativo, el elemento se escala de forma inversa.</p>
+
+          <h4>Ejemplos:</h4>
+          <!--Ejemplo 1-->
+          <pre class="line-numbers"><code class="language-css">transform: scaleX(2);</code></pre>
+          <div class="div-generico"></div>
+          <div class= "transformaciones-scaleX scaleX-ej1"></div>
+          <!--Ejemplo 2-->
+          <pre class="line-numbers"><code class="language-css">transform: scaleX(50%);</code></pre>
+          <div class= "transformaciones-scaleX scaleX-ej2"></div>
+
+          <!--Ejemplo 3-->
+          <pre class="line-numbers"><code class="language-css">transform: scaleX(-3.5);</code></pre>
+          <div class= "transformaciones-scaleX scaleX-ej3"></div>
+
+          <!--Ejemplo 4-->
+          <pre class="line-numbers"><code class="language-css">transform: scaleX(-20%);</code></pre>
+          <div class= "transformaciones-scaleX scaleX-ej4"></div>
+
+        
+
+        </div>
+      </article>
+
+      <!-- 2. ScaleY -->
+      <article>
+        <h3>scaleY(y)</h3>
+        <p>Reescala el elemento un número de veces (sólo en vertical).</p>
+        <h4>Sintaxis</h4>
+        <pre class="line-numbers"><code class="language-css">transform: translateY(size);</code></pre>
+        <p>Admite un valor</p>
+        <ul>
+          <li>Reescala el elemento un número de veces (sólo en vertical).</li>
+          <li>Solo admite porcentajes y números decimales</li>
+        </ul>
+        <p>Si se indica un valor negativo, el elemento se escala de forma inversa.</p>
+
+          <h4>Ejemplos:</h4>
+          <!--Ejemplo 1-->
+          <pre class="line-numbers"><code class="language-css">transform:scaleY(1.5);</code></pre>
+          <div class= "transformaciones-scaleY scaleY-ej1"></div>
+          <!--Ejemplo 2-->
+          <pre class="line-numbers"><code class="language-css">transform: scaleY(300%);</code></pre>
+          <div class= "transformaciones-scaleY scaleY-ej2"></div>
+
+          <!--Ejemplo 3-->
+          <pre class="line-numbers"><code class="language-css">transform: scaleY(-2.5);</code></pre>
+          <div class= "transformaciones-scaleY scaleY-ej3"></div>
+
+          <!--Ejemplo 4-->
+          <pre class="line-numbers"><code class="language-css">transform: scaleY(-20%);</code></pre>
+          <div class= "transformaciones-scaleY scaleY-ej4"></div>
+
+        
+
+        </div>
+      </article>
+       <!-- 3. Scale -->
+       <article>
+        <h3>scale()</h3>
+        <p>La función CSS scale() define una transformación que modifica el tamaño de un elemento en el plano 2D. Debido a que la cantidad de escalado está
+           definida por un vector, puede cambiar el tamaño de la dimensiones horizontal y vertical a diferentes escalas.</p>
+        <h4>Sintaxis</h4>
+        <pre class="line-numbers"><code class="language-css">transform: translate(size , [size]);</code></pre>
+        <p>Admite uno o dos valores</p>
+        <ul>
+          <li>Reescala el elemento un número de veces (sólo en vertical y/o horizontal).</li>
+          <li>Solo admite porcentajes y números decimales</li>
+        </ul>
+        <p>Si se indica un valor negativo, el elemento se escala de forma inversa.</p>
+
+          <h4>Ejemplos:</h4>
+          <!--Ejemplo 1-->
+          <pre class="line-numbers"><code class="language-css">transform: scale(2,3);</code></pre>
+          <div class= "transformaciones-scale scale-ej1"></div>
+          <!--Ejemplo 2-->
+          <pre class="line-numbers"><code class="language-css">transform: scale(140%,50%);</code></pre>
+          <div class= "transformaciones-scale scale-ej2"></div>
+
+          <!--Ejemplo 3-->
+          <pre class="line-numbers"><code class="language-css">transform: scale(-4, -3);</code></pre>
+          <br/>
+          <div class= "transformaciones-scale scale-ej3"></div>
+
+          <!--Ejemplo 4-->
+          <pre class="line-numbers"><code class="language-css">transform: scale(-40%, -300%);</code></pre>
+          <div class= "transformaciones-scale scale-ej4"></div>
+
+        
+
+        </div>
+      </article>
+
+       <!-- 4. Scale -->
+       <article>
+        <h3>scaleZ()</h3>
+        <p>La función CSS scaleZ() modifica la coordenada z de cada punto del elemento por un factor constante</p>
+        <h4>Sintaxis</h4>
+        <pre class="line-numbers"><code class="language-css">transform: perspective translateZ(size);</code></pre>
+        <p>Admite un valor</p>
+        <ul>
+          <li>Moodifica la coordenada z.</li>
+          <li>Si el escalado es 1 no se modifica</li>
+          <li>Solo admite porcentajes y números decimales</li>
+        </ul>
+        <p>La función perspective() posiciona al espectador en relación con el plano que se encuentra donde z=0</p>
+        <p>Si se indica un valor negativo, el elemento se escala de forma inversa.</p>
+          <h4>Ejemplos:</h4>
+          <!--Ejemplo 1-->
+          <pre class="line-numbers"><code class="language-css">transform: perspective(300px) scale3d(3,4,5) rotateX(45deg);</code></pre>
+          <div class= "transformaciones-scaleZ scaleZ-ej1"></div>
+          <!--Ejemplo 2-->
+          <pre class="line-numbers"><code class="language-css">transform: perspective(300px) scale3d(10%,40%,50%) rotateX(45deg);</code></pre>
+          <div class= "transformaciones-scaleZ scaleZ-ej2"></div>
+
+          <!--Ejemplo 3-->
+          <pre class="line-numbers"><code class="language-css">transform: perspective(300px) scale3d(-1,150%,2) rotateX(45deg);</code></pre>
+          <br/>
+          <div class= "transformaciones-scaleZ scaleZ-ej3"></div>
+        
+        </div>
+      </article>
+       <!-- 5. Scale -->
+       <article>
+        <h3>scale3d()</h3>
+        <p>La función CSS scale3d() define una transformación que cambia el tamaño de un elemento en el espacio 3D.
+           Debido a que la cantidad de escala está definida por un vector, puede cambiar el tamaño de diferentes dimensiones en diferentes escalas.</p>
+        <h4>Sintaxis</h4>
+        <pre class="line-numbers"><code class="language-css">transform: translate(size , [size]);</code></pre>
+        <p>Admite de uno a tres valores</p>
+        <ul>
+          <li>El valor se aplica al escalado en el eje x,y o/y z.</li>
+        </ul>
+        <p>Si se indica un valor negativo, el elemento se escala de forma inversa.</p>
+          <h4>Ejemplos:</h4>
+          <!--Ejemplo 1-->
+          <pre class="line-numbers"><code class="language-css">transform: perspective(200px) translate3d(42px, -62px, 70px);</code></pre>
+          <div class= "transformaciones-scale3d scale3d-ej1"></div>
+          <!--Ejemplo 2-->
+          <pre class="line-numbers"><code class="language-css">transform: perspective(200px) translate3d(-4rem, 0.5rem, -8rem);</code></pre>
+          <div class= "transformaciones-scale3d scale3d-ej2"></div>
+
+          <!--Ejemplo 3-->
+          <pre class="line-numbers"><code class="language-css">transform:  perspective(200px) translate3d(3ch, 1ch, 7ch);</code></pre>
+          <br/>
+          <div class= "transformaciones-scale3d scale3d-ej3"></div>
+
+        </div>
+      </article>
+      <!-- 6. Scale -->
+      <article>
+        <h3>scale</h3>
+        <p>La propiedad de CSS scale escala un elemento en el eje x, y, z.</p>
+        <h4>Sintaxis</h4>
+        <pre class="line-numbers"><code class="language-css">scale(sizeX , [sizeY], [sizeZ]);</code></pre>
+        <p>Admite de uno a tres valores</p>
+        <ul>
+          <li>El valor se aplica al escalado en el eje x, y o/y z.</li>
+        </ul>
+        <p>Si se indica un valor negativo, el elemento se escala de forma inversa.</p>
+          <h4>Ejemplos:</h4>
+          <!--Ejemplo 1-->
+          <pre class="line-numbers"><code class="language-css">scale: 3;</code></pre>
+          <div class= "transformaciones-scaleProp scaleProp-ej1"></div>
+          <!--Ejemplo 2-->
+          <pre class="line-numbers"><code class="language-css">scale: 70%;</code></pre>
+          <div class= "transformaciones-scaleProp scaleProp-ej2"></div>
+
+          <!--Ejemplo 3-->
+          <pre class="line-numbers"><code class="language-css">scale: 0 -3rem;</code></pre>
+          <div class= "transformaciones-scaleProp scaleProp-ej3"></div>
+
+          <!--Ejemplo 4-->
+          <pre class="line-numbers"><code class="language-css">scale: 40% 70%;</code></pre>
+          <div class= "transformaciones-scaleProp scaleProp-ej4"></div>
+
+           <!--Ejemplo 5-->
+           <pre class="line-numbers"><code class="language-css">scale: 2 40% 200%;
+transform: perspective(300px) rotateX(45deg);</code></pre>
+           <div class= "transformaciones-scaleProp scaleProp-ej5"></div>
+
+        </div>
+      </article>
+
+    </section>
     </main>
     <footer>
       <div>Jaime Rabasco Ronda</div>

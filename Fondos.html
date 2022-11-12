@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/background-clip.css">
     <link rel="stylesheet" href="css/background-origin.css">
     <link rel="stylesheet" href="css/background-position.css">
+    <link rel="stylesheet" href="css/background-repeat.css">
     <script src="js/prism.js"></script>
 </head>
 
@@ -102,147 +103,146 @@ background-color: hsla(14, 100%, 53%, 0.2);</code></pre>
                 debe haber ninguna propiedad no explicada anteriormente. Es decir, si para el ejemplo necesitas algún
                 background-color, estas propiedades deben ser explicadas con anterioridad.
             </article>
-                <article>
-                    <h3>background-attachment</h3>
-                    
-                    <p>Determina si la posición de la imagen de fondo será fija
-                        dentro de la pantalla o se desplazará con su bloque contenedor.</p>
-                    <h4>Sintaxis</h4>
-                    <pre
-                        class="line-numbers"><code class="language-css">background-attachment: scroll|fixed|local|initial|inherit;</code></pre>
-                    <p>Valores: </p>
-                    <ul>
-                        <li class="fondos-background-attachment-imagen1">
-                            <p>Scroll</p>
-                            <p>- La imagen de fondo se desplazará con la página. esto es por defecto</p>
-                        </li>
-                        <li class="fondos-background-attachment-imagen2">
-                            <p>fixed</p>
-                            <p>- La imagen de fondo no se desplazará con la página.</p>
-                        </li>
-                        <li class="fondos-background-attachment-imagen3">
-                            <p>local</p>
-                            <p>- La imagen de fondo se desplazará con el contenido del elemento.</p>
-                        </li>
-                        <li class="fondos-background-attachment-imagen4">
-                            <p>initial</p>
-                            <p>- Establece esta propiedad en su valor predeterminado.</p>
-                        </li>
-                        <li>
-                            <p>inherit</p>
-                            <p>- Hereda esta propiedad de su elemento padre.</p>
-                        </li>
-                    </ul>
+            <article>
+                <h3>background-attachment</h3>
 
-                    <h4>Ejemplos:</h4>
-                    <pre class="line-numbers"><code class="language-css">img { 
+                <p>Determina si la posición de la imagen de fondo será fija
+                    dentro de la pantalla o se desplazará con su bloque contenedor.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">background-attachment: scroll|fixed|local|initial|inherit;</code></pre>
+                <p>Valores: </p>
+                <ul>
+                    <li class="fondos-background-attachment-imagen1">
+                        <p>Scroll</p>
+                        <p>- La imagen de fondo se desplazará con la página. esto es por defecto</p>
+                    </li>
+                    <li class="fondos-background-attachment-imagen2">
+                        <p>fixed</p>
+                        <p>- La imagen de fondo no se desplazará con la página.</p>
+                    </li>
+                    <li class="fondos-background-attachment-imagen3">
+                        <p>local</p>
+                        <p>- La imagen de fondo se desplazará con el contenido del elemento.</p>
+                    </li>
+                    <li class="fondos-background-attachment-imagen4">
+                        <p>initial</p>
+                        <p>- Establece esta propiedad en su valor predeterminado.</p>
+                    </li>
+                    <li>
+                        <p>inherit</p>
+                        <p>- Hereda esta propiedad de su elemento padre.</p>
+                    </li>
+                </ul>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">img { 
     background-image: url("img_tree.gif");
     background-repeat: no-repeat;
     background-attachment: scroll;
 }
 </code></pre>
-                </article>
+            </article>
+            <article>
+                <h3>Background-image</h3>
+                <p>Establece una o más imágenes de fondo para un elemento.</p>
+                <p>De forma predeterminada, se coloca una imagen de fondo en la esquina superior izquierda de un
+                    elemento y se repite tanto vertical como horizontalmente.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">background-image: url|none|initial|inherit;</code></pre>
+                <p>Valores: </p>
+                <ul>
+                    <li class="fondos-background-image-imagen1">
+                        <p>url</p>
+                        <p>- La URL de la imagen. Se pueden especificar más imagenes separando con una coma.</p>
+                    </li>
+                    <li class="fondos-background-image-imagen2">
+                        <p>none</p>
+                        <p>- No se muestra ninguna imagen por defecto.</p>
+                    </li>
+                    <li class="fondos-background-image-imagen3">
+                        <p>conic-gradient</p>
+                        <p>- Establece un degradado cónico, pero se tienen que definir dos colores como mínimo.</p>
+                    </li>
+                    <li class="fondos-background-image-imagen4">
+                        <p>linear-gradient</p>
+                        <p>- Establece un degradado lineal, pero se tiene que definir dos colores como mínimo.</p>
+                    </li>
+                    <li class="fondos-background-image-imagen5">
+                        <p>radial-gradient</p>
+                        <p>- Establece un degradado radial(del centro a los bordes), teniendo que definir dos colores
+                            como mínimo.</p>
+                    </li>
+                    <li class="fondos-background-image-imagen6">
+                        <p>repeating-conic-gradient</p>
+                        <p>- Repite un radiante cónico.</p>
+                    </li>
+                    <li class="fondos-background-image-imagen7">
+                        <p>repeating-linear-gradient</p>
+                        <p>- Repite un radiante lineal.</p>
+                    </li>
+                    <li class="fondos-background-image-imagen8">
+                        <p>repeating-radial-gradient</p>
+                        <p>- Repite un radiante radial.</p>
+                    </li>
+                    <li>
+                        <p>initial</p>
+                        <p>- Establece su valor predeterminado.</p>
+                    </li>
+                    <li>
+                        <p>inherit</p>
+                        <p>- Hereda esta propiedad de su elemento padre.</p>
+                    </li>
+                </ul>
 
-                <article>
-                    <h3>Background-image</h3>
-                    <p>Establece una o más imágenes de fondo para un elemento.</p>
-                    <p>De forma predeterminada, se coloca una imagen de fondo en la esquina superior izquierda de un
-                       elemento y se repite tanto vertical como horizontalmente.</p>
-                    <h4>Sintaxis</h4>
-                    <pre
-                        class="line-numbers"><code class="language-css">background-image: url|none|initial|inherit;</code></pre>
-                    <p>Valores: </p>
-                    <ul>
-                        <li class="fondos-background-image-imagen1">
-                            <p>url</p>
-                            <p>- La URL de la imagen. Se pueden especificar más imagenes separando con una coma.</p>
-                        </li>
-                        <li class="fondos-background-image-imagen2">
-                            <p>none</p>
-                            <p>- No se muestra ninguna imagen por defecto.</p>
-                        </li>
-                        <li class="fondos-background-image-imagen3">
-                            <p>conic-gradient</p>
-                            <p>- Establece un degradado cónico, pero se tienen que definir dos colores como mínimo.</p>
-                        </li>
-                        <li class="fondos-background-image-imagen4">
-                            <p>linear-gradient</p>
-                            <p>- Establece un degradado lineal, pero se tiene que definir dos colores como mínimo.</p>
-                        </li>
-                        <li class="fondos-background-image-imagen5">
-                            <p>radial-gradient</p>
-                            <p>- Establece un degradado radial(del centro a los bordes), teniendo que definir dos colores como mínimo.</p>
-                        </li>
-                        <li class="fondos-background-image-imagen6">
-                            <p>repeating-conic-gradient</p>
-                            <p>- Repite un radiante cónico.</p>
-                        </li>
-                        <li class="fondos-background-image-imagen7">
-                            <p>repeating-linear-gradient</p>
-                            <p>- Repite un radiante lineal.</p>
-                        </li>
-                        <li class="fondos-background-image-imagen8">
-                            <p>repeating-radial-gradient</p>
-                            <p>- Repite un radiante radial.</p>
-                        </li>
-                        <li>
-                            <p>initial</p>
-                            <p>- Establece su valor predeterminado.</p>
-                        </li>
-                        <li>
-                            <p>inherit</p>
-                            <p>- Hereda esta propiedad de su elemento padre.</p>
-                        </li>
-                    </ul>
-
-                    <h4>Ejemplos:</h4>
-                    <pre class="line-numbers"><code class="language-html">body {
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-html">body {
 background-image: url("img_tree.gif"), url("paper.gif");
 background-repeat: no-repeat, repeat;
 background-color: #cccccc;
 }</code></pre>
-                </article>
+            </article>
+            <article>
 
-                <article>
-
-                    <h3>Background-clip</h3>
-                    <p>Define hasta dónde debe extenderse el fondo dentro del elemento.</p>
-                    <h4>Sintaxis</h4>
-                    <pre
-                        class="line-numbers"><code class="language-css">background-clip: [border-box|padding-box|content-box];</code></pre>
-                    <p>Explicación del uso de las 3 propiedades:</p>
-                    <ul>
-                        <li><b>Border-box: </b>El fondo se extiende completamente por todo el elemento, incluso debajo
-                            del
-                            borde.</li>
-                        <li><b>Padding-box: </b>El fondo solo se extiende hasta el borde del borde: incluye el relleno
-                            pero
-                            no el borde.</li>
-                        <li><b>Content-box: </b>El fondo solo se extiende hasta el borde del contenido : no incluye el
-                            relleno ni el borde.</li>
-                    </ul>
-                    <div id="fondos-clip-border-box">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam repellat earum
-                            recusandae ad voluptates necessitatibus alias eaque unde expedita, iste, at quibusdam
-                            tenetur
-                            quis voluptatibus harum culpa a porro.</p>
-                    </div>
-                    <br /><br />
-                    <div id="fondos-clip-padding-box">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam repellat earum
-                            recusandae ad voluptates necessitatibus alias eaque unde expedita, iste, at quibusdam
-                            tenetur
-                            quis voluptatibus harum culpa a porro.</p>
-                    </div>
-                    <br /><br />
-                    <div id="fondos-clip-content-box">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam repellat earum
-                            recusandae ad voluptates necessitatibus alias eaque unde expedita, iste, at quibusdam
-                            tenetur
-                            quis voluptatibus harum culpa a porro.</p>
-                    </div>
-                    <h4>Ejemplos:</h4>
-                    <pre class="line-numbers"><code class="language-css">#fondos-clip-border-box{
+                <h3>Background-clip</h3>
+                <p>Define hasta dónde debe extenderse el fondo dentro del elemento.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">background-clip: [border-box|padding-box|content-box];</code></pre>
+                <p>Explicación del uso de las 3 propiedades:</p>
+                <ul>
+                    <li><b>Border-box: </b>El fondo se extiende completamente por todo el elemento, incluso debajo
+                        del
+                        borde.</li>
+                    <li><b>Padding-box: </b>El fondo solo se extiende hasta el borde del borde: incluye el relleno
+                        pero
+                        no el borde.</li>
+                    <li><b>Content-box: </b>El fondo solo se extiende hasta el borde del contenido : no incluye el
+                        relleno ni el borde.</li>
+                </ul>
+                <div id="fondos-clip-border-box">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam repellat earum
+                        recusandae ad voluptates necessitatibus alias eaque unde expedita, iste, at quibusdam
+                        tenetur
+                        quis voluptatibus harum culpa a porro.</p>
+                </div>
+                <br /><br />
+                <div id="fondos-clip-padding-box">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam repellat earum
+                        recusandae ad voluptates necessitatibus alias eaque unde expedita, iste, at quibusdam
+                        tenetur
+                        quis voluptatibus harum culpa a porro.</p>
+                </div>
+                <br /><br />
+                <div id="fondos-clip-content-box">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam repellat earum
+                        recusandae ad voluptates necessitatibus alias eaque unde expedita, iste, at quibusdam
+                        tenetur
+                        quis voluptatibus harum culpa a porro.</p>
+                </div>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">#fondos-clip-border-box{
     background-color: aqua;
     background-clip: border-box;
     border: 5px dotted black;
@@ -266,82 +266,178 @@ background-color: #cccccc;
     padding: 10px;
 }
 </code></pre>
-                    Aquí el resultado del ejemplo del código fuente indicado arriba. En el código fuente de los ejemplos
-                    no debe haber ninguna propiedad no explicada anteriormente. Es decir, si para el ejemplo necesitas
-                    <b>content-box, padding-box, o border-box</b>, estas propiedades deben ser explicadas con anterioridad.
-                </article>
+                Aquí el resultado del ejemplo del código fuente indicado arriba. En el código fuente de los ejemplos
+                no debe haber ninguna propiedad no explicada anteriormente. Es decir, si para el ejemplo necesitas
+                <b>content-box, padding-box, o border-box</b>, estas propiedades deben ser explicadas con anterioridad.
+            </article>
+            <article>
+                <h3>Background-origin</h3>
+                <p>Propiedad especifica la posición de origen de una imagen de fondo.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">background-origin: padding-box|border-box|content-box|initial|inherit;</code></pre>
+                <p>Valores: </p>
+                <ul>
+                    <li class="fondos-background-origin-imagen1">
+                        <p>padding-box</p>
+                        <p>- Valor por defecto. La imagen de fondo comienza desde la esquina superior izquierda del
+                            borde de relleno. Se puede poner más de un valor con una coma.</p>
+                    </li>
+                    <li class="fondos-background-origin-imagen2">
+                        <p>border-box</p>
+                        <p>- La imagen de fondo comienza desde la esquina superior izquierda del borde.</p>
+                    </li>
+                    <li class="fondos-background-origin-imagen3">
+                        <p>content-box</p>
+                        <p>- La imagen de fondo comienza desde la esquina superior izquierda del contenido.</p>
+                    </li>
+                    <li>
+                        <p>initial</p>
+                        <p>- Establece esta propiedad en su valor predeterminado.</p>
+                    </li>
+                    <li>
+                        <p>inherit</p>
+                        <p>- Hereda esta propiedad de su elemento principal.</p>
+                    </li>
+                </ul>
 
-                <article>
-                    <h3>Background-origin</h3>
-                    <p>Propiedad especifica la posición de origen de una imagen de fondo.</p>
-    
-                    <h4>Sintaxis</h4>
-                    <pre
-                        class="line-numbers"><code class="language-css">background-origin: padding-box|border-box|content-box|initial|inherit;</code></pre>
-                    <p>Valores: </p>
-                    <ul>
-                        <li class="fondos-background-origin-imagen1">
-                            <p>padding-box</p>
-                            <p>- Valor por defecto. La imagen de fondo comienza desde la esquina superior izquierda del
-                                borde de relleno. Se puede poner más de un valor con una coma.</p>
-                        </li>
-                        <li class="fondos-background-origin-imagen2">
-                            <p>border-box</p>
-                            <p>- La imagen de fondo comienza desde la esquina superior izquierda del borde.</p>
-                        </li>
-                        <li class="fondos-background-origin-imagen3">
-                            <p>content-box</p>
-                            <p>- La imagen de fondo comienza desde la esquina superior izquierda del contenido.</p>
-                        </li>
-                        <li>
-                            <p>initial</p>
-                            <p>- Establece esta propiedad en su valor predeterminado.</p>
-                        </li>
-                        <li>
-                            <p>inherit</p>
-                            <p>- Hereda esta propiedad de su elemento principal.</p>
-                        </li>
-                    </ul>
-    
-                    <h4>Ejemplos:</h4>
-                    <pre class="line-numbers"><code class="language-css">#example1 {
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">#example1 {
         border: 10px dashed black;
         padding: 25px;
         background: url(img_tree.gif), url(paper.gif);
         background-repeat: no-repeat;
         background-origin: content-box, padding-box;
     }</code></pre>
-                </article>
+            </article>
+            <article>
+                <h3>Background-repeat</h3>
+                <p>La propiedad CSS establece <b>cómo se repiten las imágenes de fondo.</b>Una imagen de fondo puede repetirse a lo largo de los 
+                    ejes horizontal y vertical, o no repetirse en absoluto.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">background-repeat: [repeat | repeat-x | repeat-y | no-repeat | space | round ];</code></pre>
+                <p>Definiremos a continuación más detallado: </p>
+                <ul>
+                    <li><b>repeat: </b>La imagen de fondo se repetirá tanto horizontal como verticalmente. 
+                        La última imagen se recortará si no encaja.</li>
+                    <li><b>repeat-x: </b>La imagen de fondo solo se repetirá horizontalmente.</li>
+                    <li><b>repeat-y: </b>La imagen de fondo solo se repetirá verticalmente.</li>
+                    <li><b>no-repeat: </b>La imagen no se repite (y, por lo tanto, el área de pintura de la imagen de fondo no 
+                        estará necesariamente cubierta por completo).</li>
+                    <li><b>space: </b>La imagen se repite tanto como sea posible sin recorte. La primera y la última imagen se fijan a ambos lados 
+                        del elemento y los espacios en blanco se distribuyen uniformemente entre las imágenes.</li>
+                    <li><b>round: </b>A medida que el espacio permitido aumenta de tamaño, las imágenes repetidas se estirarán (sin dejar espacios) hasta que 
+                        haya espacio (espacio restante >= la mitad del ancho de la imagen) para agregar otra. Cuando se agrega la siguiente imagen, 
+                        todas las actuales se comprimen para dejar espacio. Ejemplo: una imagen con un ancho original de 260 px, repetida tres veces, 
+                        puede estirarse hasta que cada repetición tenga 300 px de ancho, y luego se agregará otra imagen. Luego se comprimirán a 225px.</li>
+                </ul>
+                <div id="fondos-background-repeat-repeat">
+                </div>
+                <br />
+                <div id="fondos-background-repeat-repeat-x">
+                </div>
+                <br />
+                <div id="fondos-background-repeat-repeat-y">
+                </div>
+                <br />
+                <div id="fondos-background-repeat-no-repeat">
+                </div>
+                <br />
+                <div id="fondos-background-repeat-repeat-space">
+                </div>
+                <br />
+                <div id="fondos-background-repeat-repeat-round">
+                </div>
+                <br />
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">#fondos-background-repeat-repeat {
+    background-image: url("../img/background-position-img.png");
+    background-repeat: repeat;
+    background-size: 50px 50px;
+    height: 200px;
+    border: 2px solid;
+}
 
-                <article>
-                    <h3>Background-position</h3>
-                    <p>Es un propiedad de CSS que define la posición de la imagen de fondo.</b></p>
-                    <h4>Sintaxis</h4>
-                    <pre
-                        class="line-numbers"><code class="language-css">background-position: [porcentaje | palabras clave posición | center];</code></pre>
-                    <p>Admite 3 valores, que son los siguientes: </p>
-                    <ul>
-                        <li><b>Un porcentaje:</b> La imagen de fondo se colocará al 0 % en el eje horizontal y al 0 % en el eje vertical, 
-                            lo que significa la esquina superior izquierda del elemento.</li>
-                        <li><b>Palabras clave de posición:</b> Puede utilizar una combinación de palabras clave de posición: 
-                            <b>center, top, bottom y left right.</b></li>
-                        <li><b>Center: </b> La imagen de fondo se colocará en el centro del elemento.</b></li>
-                    </ul>
-                    
-                    <div id="fondos-background-position-porcentaje">
-                        <p>Hola</p>
-                    </div>
-                    <br/>
-                    <div id="fondos-background-position-porcentaje2">
-                        <p>Hola</p>
-                    </div>
-                    <br/>
-                    <div id="fondos-background-position-porcentaje3">
-                        <p>Hola</p>
-                    </div>
-                   <br/>
-                    <h4>Ejemplos:</h4>
-                    <pre class="line-numbers"><code class="language-css">#fondos-background-position-porcentaje {
+#fondos-background-repeat-repeat-x {
+    background-image: url("../img/background-position-img.png");
+    background-repeat: repeat-x;
+    background-size: 50px 50px;
+    height: 100px;
+    border: 2px solid;
+}
+
+#fondos-background-repeat-repeat-y {
+    background-image: url("../img/background-position-img.png");
+    background-repeat: repeat-y;
+    background-size: 20px 20px;
+    height: 100px;
+    border: 2px solid;
+}
+
+#fondos-background-repeat-no-repeat {
+    background-image: url("../img/background-position-img.png");
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+    background-position: center center;
+    height: 100px;
+    border: 2px solid;
+}
+
+#fondos-background-repeat-repeat-space {
+    background-image: url("../img/background-position-img.png");
+    background-repeat: space;
+    background-size: 50px 50px;
+    height: 100px;
+    border: 2px solid;
+}
+
+#fondos-background-repeat-repeat-round {
+    background-image: url("../img/background-position-img.png");
+    background-repeat: round;
+    background-size: 50px 50px;
+    height: 100px;
+    width: 500px;
+    border: 2px solid;
+}
+
+</code></pre>
+                Aquí el resultado del ejemplo del código fuente indicado arriba. En el código fuente de los ejemplos no
+                debe haber ninguna propiedad no explicada anteriormente. Es decir, si para el ejemplo necesitas algún
+                background-color, background-image u otras propiedades, estas propiedades deben ser explicadas con
+                anterioridad.
+            </article>
+            <article>
+                <h3>Background-position</h3>
+                <p>Es un propiedad de CSS que define la posición de la imagen de fondo.</b></p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">background-position: [porcentaje | palabras clave posición | center];</code></pre>
+                <p>Admite 3 valores, que son los siguientes: </p>
+                <ul>
+                    <li><b>Un porcentaje:</b> La imagen de fondo se colocará al 0 % en el eje horizontal y al 0 % en el
+                        eje vertical,
+                        lo que significa la esquina superior izquierda del elemento.</li>
+                    <li><b>Palabras clave de posición:</b> Puede utilizar una combinación de palabras clave de posición:
+                        <b>center, top, bottom y left right.</b>
+                    </li>
+                    <li><b>Center: </b> La imagen de fondo se colocará en el centro del elemento.</b></li>
+                </ul>
+
+                <div id="fondos-background-position-porcentaje">
+                    <p>Hola</p>
+                </div>
+                <br />
+                <div id="fondos-background-position-porcentaje2">
+                    <p>Hola</p>
+                </div>
+                <br />
+                <div id="fondos-background-position-porcentaje3">
+                    <p>Hola</p>
+                </div>
+                <br />
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">#fondos-background-position-porcentaje {
     background-image: url("../img/background-position-img.png");
     background-position: 0% 0%;
     background-repeat: no-repeat;
@@ -372,11 +468,12 @@ background-color: #cccccc;
  }
 
 </code></pre>
-                    Aquí el resultado del ejemplo del código fuente indicado arriba. En el código fuente de los ejemplos no
-                    debe haber ninguna propiedad no explicada anteriormente. Es decir, si para el ejemplo necesitas algún
-                    background-color, background-image u otras propiedades, estas propiedades deben ser explicadas con anterioridad.
-                </article>
-            </section>
+                Aquí el resultado del ejemplo del código fuente indicado arriba. En el código fuente de los ejemplos no
+                debe haber ninguna propiedad no explicada anteriormente. Es decir, si para el ejemplo necesitas algún
+                background-color, background-image u otras propiedades, estas propiedades deben ser explicadas con
+                anterioridad.
+            </article>
+        </section>
     </main>
     <footer>
         <div>Jaime Rabasco Ronda</div>

@@ -400,6 +400,26 @@ div:hover .transformaciones-rotate {
 	transform: perspective(300px) rotateX(45deg);
 }
 
+.transformaciones-skew {
+	width: 80px;
+	height: 80px;
+	background-color: skyblue;
+  }
+  
+  .transformaciones-skewedx {
+	width: 80px;
+	height: 80px;
+	transform: skew(10deg); /* Equal to skewX(10deg) */
+	background-color: pink;
+  }
+  
+  .transformaciones-skewed {
+	width: 80px;
+	height: 80px;
+	transform: skew(10deg, 10deg);
+	background-color: pink;
+  }
+
 .div-generico-scale{
 	display: inline-block;
 	width: 100px;

@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/background-position.css">
     <link rel="stylesheet" href="css/background-repeat.css">
     <link rel="stylesheet" href="css/background-size.css">
+    <link rel="stylesheet" href="css/background-blend-mode.css">
     <script src="js/prism.js"></script>
 </head>
 
@@ -318,14 +319,17 @@ background-color: #cccccc;
                 <p>Definiremos a continuación más detallado: </p>
                 <ul>
                     <li><b>auto: </b>La imagen de fondo conservará su tamaño original.
-                        Por ejemplo, esta imagen de fondo tiene un tamaño de 960 px por 640 px. Su relación de aspecto es de 3 por 2, es más grande que su 
+                        Por ejemplo, esta imagen de fondo tiene un tamaño de 960 px por 640 px. Su relación de aspecto
+                        es de 3 por 2, es más grande que su
                         contenedor (que tiene una altura de 150 px) y, por lo tanto, se recortará .</li>
-                    <li><b>tamaño en pixeles: </b>Puede especificar un tamaño en píxeles: el primer valor es el tamaño horizontal, el segundo es el tamaño vertical.</li>
-                    <li><b>tamaño en porcentaje: </b>Puede utilizar valores porcentuales. Tenga en cuenta que esto puede alterar la relación de 
+                    <li><b>tamaño en pixeles: </b>Puede especificar un tamaño en píxeles: el primer valor es el tamaño
+                        horizontal, el segundo es el tamaño vertical.</li>
+                    <li><b>tamaño en porcentaje: </b>Puede utilizar valores porcentuales. Tenga en cuenta que esto puede
+                        alterar la relación de
                         aspecto de la imagen de fondo y generar resultados inesperados.</li>
-                    <li><b>contain: </b>La palabra clave containcambiará el tamaño de la imagen de fondo para asegurarse 
+                    <li><b>contain: </b>La palabra clave containcambiará el tamaño de la imagen de fondo para asegurarse
                         de que permanezca totalmente visible.</li>
-                    <li><b>cover: </b>La palabra clave covercambiará el tamaño de la imagen de fondo para asegurarse de 
+                    <li><b>cover: </b>La palabra clave covercambiará el tamaño de la imagen de fondo para asegurarse de
                         que el elemento esté completamente cubierto.</li>
                 </ul>
                 <div id="fondos-background-size-auto">
@@ -491,7 +495,7 @@ background-color: #cccccc;
             </article>
             <article>
                 <h3>Background-position</h3>
-                <p>Es un propiedad de CSS que define la posición de la imagen de fondo.</b></p>
+                <p>Es un propiedad de CSS que define la posición de la imagen de fondo.</p>
                 <h4>Sintaxis</h4>
                 <pre
                     class="line-numbers"><code class="language-css">background-position: [porcentaje | palabras clave posición | center];</code></pre>
@@ -548,6 +552,158 @@ background-color: #cccccc;
     border: 2px solid;
     background-color: aqua;
  }
+
+</code></pre>
+                Aquí el resultado del ejemplo del código fuente indicado arriba. En el código fuente de los ejemplos no
+                debe haber ninguna propiedad no explicada anteriormente. Es decir, si para el ejemplo necesitas algún
+                background-color, background-image u otras propiedades, estas propiedades deben ser explicadas con
+                anterioridad.
+            </article>
+            <article>
+                <h3>Background-blend-mode</h3>
+                <p>La propiedad CSS establece cómo las imágenes de fondo de un elemento deben combinarse entre sí y 
+                    con el color de fondo del elemento.background-blend-mode.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">background-blend-mode: [normal | 2 valores(darken,luminosity) | globales(inherit,initial,revert,revert-layer,unset)];</code></pre>
+                <p>Admite varios valores, que son los siguientes: </p>
+                <ul>
+                    <li><b>Background-blend-mode: </b>El modo de fusión que se va a aplicar. 
+                        Puede haber varios valores, separados por comas.</li>
+                </ul>
+
+                <div id="fondos-background-blend-mode-normal">
+                </div>
+                <br />
+                <div id="fondos-background-blend-mode-multiply">
+                </div>
+                <br />
+                <div id="fondos-background-blend-mode-screen">
+                </div>
+                <br />
+                <div id="fondos-background-blend-mode-overlay">
+                </div>
+                <br />
+                <div id="fondos-background-blend-mode-darken">
+                </div>
+                <br />
+                <div id="fondos-background-blend-mode-lighten">
+                </div>
+                <br />
+                <div id="fondos-background-blend-mode-color-dodge">
+                </div>
+                <br />
+                <div id="fondos-background-blend-mode-saturation">
+                </div>
+                <br />
+                <div id="fondos-background-blend-mode-color">
+                </div>
+                <br />
+                <div id="fondos-background-blend-mode-luminosity">
+                </div>
+                <br />
+                <div id="fondos-background-blend-mode-color-burn">
+                </div>
+                <br />
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">#fondos-background-blend-mode-normal {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+    url("../img/background-blend-mode-img.png");
+    background-size: contain;
+    background-blend-mode: normal;
+    height: 250px;
+    border: 2px solid;
+}
+  
+#fondos-background-blend-mode-multiply {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+        url("../img/background-blend-mode-img.png");
+    background-size: contain;
+    background-blend-mode: multiply;
+    height: 250px;
+    border: 2px solid;
+}
+
+#fondos-background-blend-mode-screen {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+        url("../img/background-blend-mode-img.png");
+    background-size: contain;
+    height: 250px;
+    border: 2px solid;
+    background-blend-mode: screen;
+}
+
+#fondos-background-blend-mode-overlay {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+        url("../img/background-blend-mode-img.png");
+    background-size: contain;
+    height: 250px;
+    border: 2px solid;
+    background-blend-mode: overlay;
+}
+
+#fondos-background-blend-mode-darken {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+        url("../img/background-blend-mode-img.png");
+    background-size: contain;
+    height: 250px;
+    border: 2px solid;
+    background-blend-mode: darken;
+}
+
+#fondos-background-blend-mode-lighten {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+        url("../img/background-blend-mode-img.png");
+    background-size: contain;
+    height: 250px;
+    border: 2px solid;
+    background-blend-mode: lighten;
+}
+
+#fondos-background-blend-mode-color-dodge {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+        url("../img/background-blend-mode-img.png");
+    background-size: contain;
+    height: 250px;
+    border: 2px solid;
+    background-blend-mode: color-dodge;
+}
+
+#fondos-background-blend-mode-saturation {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+        url("../img/background-blend-mode-img.png");
+    background-size: contain;
+    height: 250px;
+    border: 2px solid;
+    background-blend-mode: saturation;
+}
+
+#fondos-background-blend-mode-color {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+        url("../img/background-blend-mode-img.png");
+    background-size: contain;
+    height: 250px;
+    border: 2px solid;
+    background-blend-mode: color;
+}
+
+#fondos-background-blend-mode-luminosity {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+        url("../img/background-blend-mode-img.png");
+    background-size: contain;
+    height: 250px;
+    border: 2px solid;
+    background-blend-mode: luminosity;
+}
+
+#fondos-background-blend-mode-color-burn {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+        url("../img/background-blend-mode-img.png");
+    background-size: contain;
+    height: 250px;
+    border: 2px solid;
+    background-blend-mode: color-burn;
+}
 
 </code></pre>
                 Aquí el resultado del ejemplo del código fuente indicado arriba. En el código fuente de los ejemplos no

@@ -1,0 +1,98 @@
+#fondos-background-blend-mode-normal {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+        url("../img/background-blend-mode-img.png");
+    background-size: contain;
+    background-blend-mode: normal;
+    height: 250px;
+    border: 2px solid;
+}
+
+#fondos-background-blend-mode-multiply {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+        url("../img/background-blend-mode-img.png");
+    background-size: contain;
+    background-blend-mode: multiply;
+    height: 250px;
+    border: 2px solid;
+}
+
+#fondos-background-blend-mode-screen {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+        url("../img/background-blend-mode-img.png");
+    background-size: contain;
+    height: 250px;
+    border: 2px solid;
+    background-blend-mode: screen;
+}
+
+#fondos-background-blend-mode-overlay {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+        url("../img/background-blend-mode-img.png");
+    background-size: contain;
+    height: 250px;
+    border: 2px solid;
+    background-blend-mode: overlay;
+}
+
+#fondos-background-blend-mode-darken {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+        url("../img/background-blend-mode-img.png");
+    background-size: contain;
+    height: 250px;
+    border: 2px solid;
+    background-blend-mode: darken;
+}
+
+#fondos-background-blend-mode-lighten {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+        url("../img/background-blend-mode-img.png");
+    background-size: contain;
+    height: 250px;
+    border: 2px solid;
+    background-blend-mode: lighten;
+}
+
+#fondos-background-blend-mode-color-dodge {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+        url("../img/background-blend-mode-img.png");
+    background-size: contain;
+    height: 250px;
+    border: 2px solid;
+    background-blend-mode: color-dodge;
+}
+
+#fondos-background-blend-mode-saturation {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+        url("../img/background-blend-mode-img.png");
+    background-size: contain;
+    height: 250px;
+    border: 2px solid;
+    background-blend-mode: saturation;
+}
+
+#fondos-background-blend-mode-color {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+        url("../img/background-blend-mode-img.png");
+    background-size: contain;
+    height: 250px;
+    border: 2px solid;
+    background-blend-mode: color;
+}
+
+#fondos-background-blend-mode-luminosity {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+        url("../img/background-blend-mode-img.png");
+    background-size: contain;
+    height: 250px;
+    border: 2px solid;
+    background-blend-mode: luminosity;
+}
+
+#fondos-background-blend-mode-color-burn {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+        url("../img/background-blend-mode-img.png");
+    background-size: contain;
+    height: 250px;
+    border: 2px solid;
+    background-blend-mode: color-burn;
+}

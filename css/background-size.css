@@ -1,0 +1,34 @@
+#fondos-background-size-auto {
+    background-image: url("../img/background-size-img.png");
+    background-size: auto;
+    height: 150px;
+    border: 2px solid;
+}
+
+#fondos-background-size-px {
+    background-image: url("../img/background-size-img.png");
+    background-size: 400px 400px;
+    height: 150px;
+    border: 2px solid;
+}
+
+#fondos-background-size-porcentaje {
+    background-image: url("../img/background-size-img.png");
+    background-size: 100% 100%;
+    height: 150px;
+    border: 2px solid;
+}
+
+#fondos-background-size-contain {
+    background-image: url("../img/background-size-img.png");
+    background-size: contain;
+    height: 150px;
+    border: 2px solid;
+}
+
+#fondos-background-size-cover {
+    background-image: url("../img/background-size-img.png");
+    background-size: cover;
+    height: 150px;
+    border: 2px solid;
+}

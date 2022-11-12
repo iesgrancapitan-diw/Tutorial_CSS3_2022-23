@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/background-origin.css">
     <link rel="stylesheet" href="css/background-position.css">
     <link rel="stylesheet" href="css/background-repeat.css">
+    <link rel="stylesheet" href="css/background-size.css">
     <script src="js/prism.js"></script>
 </head>
 
@@ -105,7 +106,6 @@ background-color: hsla(14, 100%, 53%, 0.2);</code></pre>
             </article>
             <article>
                 <h3>background-attachment</h3>
-
                 <p>Determina si la posición de la imagen de fondo será fija
                     dentro de la pantalla o se desplazará con su bloque contenedor.</p>
                 <h4>Sintaxis</h4>
@@ -204,7 +204,6 @@ background-color: #cccccc;
 }</code></pre>
             </article>
             <article>
-
                 <h3>Background-clip</h3>
                 <p>Define hasta dónde debe extenderse el fondo dentro del elemento.</p>
                 <h4>Sintaxis</h4>
@@ -311,26 +310,109 @@ background-color: #cccccc;
     }</code></pre>
             </article>
             <article>
+                <h3>Background-size</h3>
+                <p>Define el tamaño de la imagen de fondo.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">background-size: [auto | tamaño(px px) | tamaño(% %) | contain | cover];</code></pre>
+                <p>Definiremos a continuación más detallado: </p>
+                <ul>
+                    <li><b>auto: </b>La imagen de fondo conservará su tamaño original.
+                        Por ejemplo, esta imagen de fondo tiene un tamaño de 960 px por 640 px. Su relación de aspecto es de 3 por 2, es más grande que su 
+                        contenedor (que tiene una altura de 150 px) y, por lo tanto, se recortará .</li>
+                    <li><b>tamaño en pixeles: </b>Puede especificar un tamaño en píxeles: el primer valor es el tamaño horizontal, el segundo es el tamaño vertical.</li>
+                    <li><b>tamaño en porcentaje: </b>Puede utilizar valores porcentuales. Tenga en cuenta que esto puede alterar la relación de 
+                        aspecto de la imagen de fondo y generar resultados inesperados.</li>
+                    <li><b>contain: </b>La palabra clave containcambiará el tamaño de la imagen de fondo para asegurarse 
+                        de que permanezca totalmente visible.</li>
+                    <li><b>cover: </b>La palabra clave covercambiará el tamaño de la imagen de fondo para asegurarse de 
+                        que el elemento esté completamente cubierto.</li>
+                </ul>
+                <div id="fondos-background-size-auto">
+                </div>
+                <br />
+                <div id="fondos-background-size-px">
+                </div>
+                <br />
+                <div id="fondos-background-size-porcentaje">
+                </div>
+                <br />
+                <div id="fondos-background-size-contain">
+                </div>
+                <br />
+                <div id="fondos-background-size-cover">
+                </div>
+                <br />
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">#fondos-background-size-auto {
+    background-image: url("../img/background-size-img.png");
+    background-size: auto;
+    height: 150px;
+    border: 2px solid;
+}
+
+#fondos-background-size-px {
+    background-image: url("../img/background-size-img.png");
+    background-size: 400px 400px;
+    height: 150px;
+    border: 2px solid;
+}
+
+#fondos-background-size-porcentaje {
+    background-image: url("../img/background-size-img.png");
+    background-size: 100% 100%;
+    height: 150px;
+    border: 2px solid;
+}
+
+#fondos-background-size-contain {
+    background-image: url("../img/background-size-img.png");
+    background-size: contain;
+    height: 150px;
+    border: 2px solid;
+}
+
+#fondos-background-size-cover {
+    background-image: url("../img/background-size-img.png");
+    background-size: cover;
+    height: 150px;
+    border: 2px solid;
+}
+
+</code></pre>
+                Aquí el resultado del ejemplo del código fuente indicado arriba. En el código fuente de los ejemplos no
+                debe haber ninguna propiedad no explicada anteriormente. Es decir, si para el ejemplo necesitas algún
+                background-color, background-image u otras propiedades, estas propiedades deben ser explicadas con
+                anterioridad.
+            </article>
+            <article>
                 <h3>Background-repeat</h3>
-                <p>La propiedad CSS establece <b>cómo se repiten las imágenes de fondo.</b>Una imagen de fondo puede repetirse a lo largo de los 
+                <p>La propiedad CSS establece <b>cómo se repiten las imágenes de fondo.</b>Una imagen de fondo puede
+                    repetirse a lo largo de los
                     ejes horizontal y vertical, o no repetirse en absoluto.</p>
                 <h4>Sintaxis</h4>
                 <pre
                     class="line-numbers"><code class="language-css">background-repeat: [repeat | repeat-x | repeat-y | no-repeat | space | round ];</code></pre>
                 <p>Definiremos a continuación más detallado: </p>
                 <ul>
-                    <li><b>repeat: </b>La imagen de fondo se repetirá tanto horizontal como verticalmente. 
+                    <li><b>repeat: </b>La imagen de fondo se repetirá tanto horizontal como verticalmente.
                         La última imagen se recortará si no encaja.</li>
                     <li><b>repeat-x: </b>La imagen de fondo solo se repetirá horizontalmente.</li>
                     <li><b>repeat-y: </b>La imagen de fondo solo se repetirá verticalmente.</li>
-                    <li><b>no-repeat: </b>La imagen no se repite (y, por lo tanto, el área de pintura de la imagen de fondo no 
+                    <li><b>no-repeat: </b>La imagen no se repite (y, por lo tanto, el área de pintura de la imagen de
+                        fondo no
                         estará necesariamente cubierta por completo).</li>
-                    <li><b>space: </b>La imagen se repite tanto como sea posible sin recorte. La primera y la última imagen se fijan a ambos lados 
+                    <li><b>space: </b>La imagen se repite tanto como sea posible sin recorte. La primera y la última
+                        imagen se fijan a ambos lados
                         del elemento y los espacios en blanco se distribuyen uniformemente entre las imágenes.</li>
-                    <li><b>round: </b>A medida que el espacio permitido aumenta de tamaño, las imágenes repetidas se estirarán (sin dejar espacios) hasta que 
-                        haya espacio (espacio restante >= la mitad del ancho de la imagen) para agregar otra. Cuando se agrega la siguiente imagen, 
-                        todas las actuales se comprimen para dejar espacio. Ejemplo: una imagen con un ancho original de 260 px, repetida tres veces, 
-                        puede estirarse hasta que cada repetición tenga 300 px de ancho, y luego se agregará otra imagen. Luego se comprimirán a 225px.</li>
+                    <li><b>round: </b>A medida que el espacio permitido aumenta de tamaño, las imágenes repetidas se
+                        estirarán (sin dejar espacios) hasta que
+                        haya espacio (espacio restante >= la mitad del ancho de la imagen) para agregar otra. Cuando se
+                        agrega la siguiente imagen,
+                        todas las actuales se comprimen para dejar espacio. Ejemplo: una imagen con un ancho original de
+                        260 px, repetida tres veces,
+                        puede estirarse hasta que cada repetición tenga 300 px de ancho, y luego se agregará otra
+                        imagen. Luego se comprimirán a 225px.</li>
                 </ul>
                 <div id="fondos-background-repeat-repeat">
                 </div>

@@ -177,6 +177,110 @@
     margin-bottom: 40px;
 }
 
+#border-image-source-1{
+    text-align: center;
+    border: 10px solid;
+    border-image-source: url(../border-img/border.png);
+}
+
+.border-image-slice-ejemplos{
+    display: inline-block;
+    width: 31%;
+    border: 10px solid;
+    border-image-source: url(../border-img/border.png);
+}
+
+#border-image-slice-1{
+    border-image-slice: 10;
+}
+#border-image-slice-2{
+    border-image-slice: 10 40%;
+}
+#border-image-slice-3{
+    border-image-slice: 10 10% fill;
+}
+
+.border-image-outset-ejemplos{
+    display: inline-block;
+    width: 21%;
+    border: 10px solid;
+    margin: 10px ;
+    border-image-source: url(../border-img/border.png);
+}
+
+#border-image-outset-1{
+    border-image-outset: 5px;
+}
+
+#border-image-outset-2{
+    border-image-outset: 5px 8px;
+}
+
+#border-image-outset-3{
+    border-image-outset: 5px 8px 10px;
+}
+#border-image-outset-4{
+    border-image-outset: 5px 8px 10px 12px;
+}
+
+.border-image-width-ejemplos{
+    display: inline-block;
+    width: 21%;
+    border: 10px solid;
+    margin: 10px ;
+    border-image-source: url(../border-img/border.png);
+    
+}
+
+#border-image-width-1{
+    border-image-slice: 10;
+    border-image-width: 10px;
+}
+
+#border-image-width-2{
+    border-image-slice: 10;
+    border-image-width: 10% 15px;
+}
+
+#border-image-width-3{
+    border-image-slice: 10;
+    border-image-width: 10px 15px 5px;
+}
+
+#border-image-width-4{
+    border-image-slice: 10;
+    border-image-width: 10px 15px 5px 20px;
+}
+
+.border-image-repeat-ejemplos{
+    display: inline-block;
+    width: 23%;
+    border: 10px solid;
+    border-image-source: url(../border-img/border.png);
+}
+
+#border-image-repeat-1{
+    border-image-slice: 10;
+    border-image-repeat: stretch;
+}
+
+#border-image-repeat-2{
+    border-image-slice: 30;
+    border-image-repeat: repeat;
+}
+
+#border-image-repeat-3{
+    border-image-slice: 30;
+    border-image-repeat: round;
+}
+
+#border-image-repeat-4{
+    border-image-slice: 30;
+    border-image-repeat: space;
+}
+
+
+
 .border-image-ejemplos{
     display: inline-block;
     width: 18%;

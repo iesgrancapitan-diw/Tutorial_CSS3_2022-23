@@ -315,6 +315,226 @@ box-shadow: 20px 20px 20px 10px green inset;
             </article>
 
             <article>
+                <h3>border-image-source</h3>
+                <p>propiedad especifica la ruta a la imagen que se usará como borde.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">border-image-source: {none|image|initial|inherit}</code></pre>
+                <p>Admite de uno a cuatro valores, que son los siguientes: </p>
+                <ul>
+                    <li>Un valor: url de la imagen a cargar en el borde o initial que establece esta propiedad en su
+                        valor predeterminado o inherit que hereda esta propiedad de su elemento padre o none que no usa
+                        una imagen.</li>
+                </ul>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">border-image-source: url(../border-img/border.png);
+</code></pre>
+                <div id="border-image-source-1">Ejemplo de border-image con un solo
+                    parámetro</div>
+
+            </article>
+
+            <article>
+                <h3>border-image-slice</h3>
+                <p>Propiedad que especifica cómo dividir la imagen especificada por border-image-source . La imagen
+                    siempre se divide en nueve secciones: cuatro esquinas, cuatro bordes y el medio.</p>
+                <h4>Se permiten los siguientes valores para dicha propiedad</h4>
+                <ul>
+                    <li><b>number</b> - El número representa los píxeles para imágenes rasterizadas o coordenadas para
+                        imágenes vectoriales.</li>
+                    <li><b>%</b> - El porcentaje es relativo a la altura o el ancho de la imagen.</li>
+                    <li><b>fill</b> - Hace que se muestre la parte central de la imagen.</li>
+                    <li><b>initial</b> - Establece esta propiedad en su valor predeterminado.</li>
+                    <li><b>inherit</b> - Hereda la propiedad de el elemento padre.</li>
+                </ul>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">border-image-slice: {number|%|fill|initial|inherit}</code></pre>
+                <p>Admite de uno a cuatro valores, que son los siguientes: </p>
+                <ul>
+                    <li>Puede tomar de uno a cuatro valores. Si se omite el cuarto valor, es lo mismo que el segundo. Si
+                        también se omite el tercero, es lo mismo que el primero. Si también se omite el segundo, es lo
+                        mismo que el primero.
+
+                    </li>
+                </ul>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">border-image-slice: 10;
+border-image-slice: 10 40%;
+border-image-slice: 10 10% fill;
+</code></pre>
+                <div>
+                    <div id="border-image-slice-1" class="border-image-slice-ejemplos">Ejemplo de border-image-slice con
+                        un
+                        solo
+                        parámetro</div>
+                    <div id="border-image-slice-2" class="border-image-slice-ejemplos">Ejemplo de border-image-slice con
+                        dos
+                        parámetros</div>
+                    <div id="border-image-slice-3" class="border-image-slice-ejemplos">Ejemplo de border-image-slice con
+                        tres
+                        parámetros</div>
+                </div>
+
+            </article>
+
+            <article>
+                <h3>border-image-outset
+                </h3>
+                <p>Propiedad que especifica la cantidad en la que el área de la imagen del borde se extiende más allá
+                    del cuadro del borde.</p>
+                <h4>Se permiten los siguientes valores para dicha propiedad</h4>
+                <ul>
+                    <li><b>number</b> - Representa múltiplos del ancho de borde correspondiente.</li>
+                    <li><b>length</b> - Una unidad de longitud que especifica qué tan lejos de los bordes aparecerá la
+                        imagen del borde. El valor predeterminado es 0.</li>
+                    <li><b>initial</b> - Establece esta propiedad en su valor predeterminado.</li>
+                    <li><b>inherit</b> - Hereda la propiedad de el elemento padre.</li>
+                </ul>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">border-image-outset: {length|number|initial|inherit}</code></pre>
+                <p>Admite de uno a cuatro valores, que son los siguientes: </p>
+                <ul>
+                    <li>Un valor: lado superior.
+                    </li>
+                    <li>Dos valores: primer valor para el lado superior e inferior y el segundo valor para el lado
+                        derecho
+                        e izquierdo.
+                    </li>
+                    <li>Tres valores: primer valor para el lado superior, el segundo valor para el lado derecho e
+                        izquierdo y el tercer valor para el lado izquiero.
+                    </li>
+                    <li>Cuatro valores: primer valor para el lado superior, el segundo valor para el lado derecho, el
+                        tercer valor para el lado inferior y el cuarto valor para el lado izquierdo.
+                    </li>
+                </ul>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">border-image-outset: 10;
+</code></pre>
+                <div>
+                    <div id="border-image-outset-1" class="border-image-outset-ejemplos">Ejemplo de border-image-outset
+                        con un
+                        solo
+                        parámetro</div>
+                    <div id="border-image-outset-2" class="border-image-outset-ejemplos">Ejemplo de border-image-outset
+                        con dos
+                        parámetros</div>
+                    <div id="border-image-outset-3" class="border-image-outset-ejemplos">Ejemplo de border-image-outset
+                        con tres
+                        parámetros</div>
+                    <div id="border-image-outset-4" class="border-image-outset-ejemplos">Ejemplo de border-image-outset
+                        con cuatro
+                        parámetros</div>
+                </div>
+
+            </article>
+
+            <article>
+                <h3>border-image-width
+                </h3>
+                <p>Propiedad que especifica el ancho de la imagen del borde.</p>
+                <h4>Se permiten los siguientes valores para dicha propiedad</h4>
+                <ul>
+                    <li><b>number</b> - Valor predeterminado 1. Representa múltiplos del ancho del borde correspondiente.
+                    </li>
+                    <li><b>length</b> - Una unidad de longitud (px) que especifica el tamaño del ancho del borde.</li>
+                    <li><b>%</b> - Se refiere al tamaño del área de la imagen del borde: el ancho del área para
+                        desplazamientos horizontales, la altura para desplazamientos verticales.</li>
+                    <li><b>auto</b> - Si se especifica, el ancho es el ancho o alto intrínseco del segmento de imagen
+                        correspondiente.</li>
+                    <li><b>initial</b> - Establece esta propiedad en su valor predeterminado.</li>
+                    <li><b>inherit</b> - Hereda la propiedad de el elemento padre.</li>
+                </ul>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">border-image-width: {number|%|auto|initial|inherit}</code></pre>
+                <p>Admite de uno a cuatro valores, que son los siguientes: </p>
+                <ul>
+                    <li>Un valores: lado superior.
+                    </li>
+                    <li>Dos valores: primer valor para el lado superior e inferior y el segundo valor para el lado
+                        derecho
+                        e izquierdo.
+                    </li>
+                    <li>Tres valores: primer valor para el lado superior, el segundo valor para el lado derecho e
+                        izquierdo y el tercer valor para el lado izquiero.
+                    </li>
+                    <li>Cuatro valores: primer valor para el lado superior, el segundo valor para el lado derecho, el
+                        tercer valor para el lado inferior y el cuarto valor para el lado izquierdo.
+                    </li>
+                </ul>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">border-image-width: 10px;
+border-image-width: 10% 15px;
+border-image-width: 10px 15px 5px;
+border-image-width: 10px 15px 5px 20px;</code></pre>
+                <div>
+                    <div id="border-image-width-1" class="border-image-width-ejemplos">Ejemplo de border-image-width
+                        con un
+                        solo
+                        parámetro</div>
+                    <div id="border-image-width-2" class="border-image-width-ejemplos">Ejemplo de border-image-width
+                        con dos
+                        parámetros</div>
+                    <div id="border-image-width-3" class="border-image-width-ejemplos">Ejemplo de border-image-width
+                        con tres
+                        parámetros</div>
+                    <div id="border-image-width-4" class="border-image-width-ejemplos">Ejemplo de border-image-width
+                        con cuatro
+                        parámetros</div>
+                </div>
+
+            </article>
+
+            <article>
+                <h3>border-image-repeat
+                </h3>
+                <p>Propiedad que especifica si la imagen del borde debe repetirse, redondearse, espaciarse o estirarse..
+                </p>
+                <h4>Se permiten los siguientes valores para dicha propiedad</h4>
+                <ul>
+                    <li><b>stretch</b> - Valor por defecto. La imagen se estira para llenar el área.
+                    <li><b>repeat</b> - La imagen se repite en modo mosaico para rellenar el área.</li>
+                    <li><b>round</b> - La imagen está en mosaico (repetida) para llenar el área. Si no se llena el área
+                        con un número entero de mosaicos, la imagen se vuelve a escalar para que quepa.</li>
+                    <li><b>space</b> - La imagen está en mosaico (repetida) para llenar el área. Si no llena el área con
+                        un número entero de mosaicos, el espacio adicional se distribuye alrededor de los mosaicos.</li>
+                    <li><b>initial</b> - Establece esta propiedad en su valor predeterminado.</li>
+                    <li><b>inherit</b> - Hereda la propiedad de el elemento padre.</li>
+                </ul>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">border-image-width: {stretch|repeat|round|space|initial|inherit}</code></pre>
+                <p>Admite de uno a cuatro valores, que son los siguientes: </p>
+                <ul>
+                    <li>Un valores: Indica uno de los valores que admite dicha propiedad.
+                    </li>
+                </ul>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">border-image-repeat: stretch;
+border-image-repeat: repeat;
+border-image-repeat: round;
+border-image-repeat: space;</code></pre>
+                <div>
+                    <div id="border-image-repeat-1" class="border-image-repeat-ejemplos">Ejemplo de border-image-repeat
+                        con stretch</div>
+                    <div id="border-image-repeat-2" class="border-image-repeat-ejemplos">Ejemplo de border-image-repeat
+                        con repeat</div>
+                    <div id="border-image-repeat-3" class="border-image-repeat-ejemplos">Ejemplo de border-image-repeat
+                        con round</div>
+                    <div id="border-image-repeat-4" class="border-image-repeat-ejemplos">Ejemplo de border-image-repeat
+                        con space</div>
+                </div>
+
+            </article>
+
+            <article>
                 <h3>border-image</h3>
                 <p>Propiedad que permite especificar una imagen para usarla como borde alrededor de un elemento. Siempre
                     tiene que haber una propiedad border, para definir primero el borde.</p>

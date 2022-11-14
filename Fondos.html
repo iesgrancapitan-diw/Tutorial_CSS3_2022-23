@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/background-repeat.css">
     <link rel="stylesheet" href="css/background-size.css">
     <link rel="stylesheet" href="css/background-blend-mode.css">
+    <link rel="stylesheet" href="css/background.css">
     <script src="js/prism.js"></script>
 </head>
 
@@ -105,6 +106,7 @@ background-color: hsla(14, 100%, 53%, 0.2);</code></pre>
                 debe haber ninguna propiedad no explicada anteriormente. Es decir, si para el ejemplo necesitas algún
                 background-color, estas propiedades deben ser explicadas con anterioridad.
             </article>
+
             <article>
                 <h3>background-attachment</h3>
                 <p>Determina si la posición de la imagen de fondo será fija
@@ -144,6 +146,7 @@ background-color: hsla(14, 100%, 53%, 0.2);</code></pre>
 }
 </code></pre>
             </article>
+
             <article>
                 <h3>Background-image</h3>
                 <p>Establece una o más imágenes de fondo para un elemento.</p>
@@ -204,6 +207,7 @@ background-repeat: no-repeat, repeat;
 background-color: #cccccc;
 }</code></pre>
             </article>
+
             <article>
                 <h3>Background-clip</h3>
                 <p>Define hasta dónde debe extenderse el fondo dentro del elemento.</p>
@@ -270,6 +274,7 @@ background-color: #cccccc;
                 no debe haber ninguna propiedad no explicada anteriormente. Es decir, si para el ejemplo necesitas
                 <b>content-box, padding-box, o border-box</b>, estas propiedades deben ser explicadas con anterioridad.
             </article>
+
             <article>
                 <h3>Background-origin</h3>
                 <p>Propiedad especifica la posición de origen de una imagen de fondo.</p>
@@ -310,6 +315,7 @@ background-color: #cccccc;
         background-origin: content-box, padding-box;
     }</code></pre>
             </article>
+
             <article>
                 <h3>Background-size</h3>
                 <p>Define el tamaño de la imagen de fondo.</p>
@@ -389,6 +395,7 @@ background-color: #cccccc;
                 background-color, background-image u otras propiedades, estas propiedades deben ser explicadas con
                 anterioridad.
             </article>
+
             <article>
                 <h3>Background-repeat</h3>
                 <p>La propiedad CSS establece <b>cómo se repiten las imágenes de fondo.</b>Una imagen de fondo puede
@@ -493,6 +500,7 @@ background-color: #cccccc;
                 background-color, background-image u otras propiedades, estas propiedades deben ser explicadas con
                 anterioridad.
             </article>
+
             <article>
                 <h3>Background-position</h3>
                 <p>Es un propiedad de CSS que define la posición de la imagen de fondo.</p>
@@ -559,16 +567,17 @@ background-color: #cccccc;
                 background-color, background-image u otras propiedades, estas propiedades deben ser explicadas con
                 anterioridad.
             </article>
+
             <article>
                 <h3>Background-blend-mode</h3>
-                <p>La propiedad CSS establece cómo las imágenes de fondo de un elemento deben combinarse entre sí y 
+                <p>La propiedad CSS establece cómo las imágenes de fondo de un elemento deben combinarse entre sí y
                     con el color de fondo del elemento.background-blend-mode.</p>
                 <h4>Sintaxis</h4>
                 <pre
                     class="line-numbers"><code class="language-css">background-blend-mode: [normal | 2 valores(darken,luminosity) | globales(inherit,initial,revert,revert-layer,unset)];</code></pre>
                 <p>Admite varios valores, que son los siguientes: </p>
                 <ul>
-                    <li><b>Background-blend-mode: </b>El modo de fusión que se va a aplicar. 
+                    <li><b>Background-blend-mode: </b>El modo de fusión que se va a aplicar.
                         Puede haber varios valores, separados por comas.</li>
                 </ul>
 
@@ -711,10 +720,50 @@ background-color: #cccccc;
                 background-color, background-image u otras propiedades, estas propiedades deben ser explicadas con
                 anterioridad.
             </article>
+            
+            <article>
+                <h3>Background</h3>
+                <p>Engloba todas las propiedades anteriores haciendolo mas general.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment;</code></pre>
+
+                <div class="fondos-background1"></div>
+                <br />
+                <div class="fondos-background2"></div>
+                <br />
+                <div class="fondos-background3"></div>
+                <br />
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.fondos-background1 {
+    background: rgb(212, 124, 201) url("../img/background-origin-imagen.png") 75% 75% / 50px 50px no-repeat;
+    height: 100px;
+    background-blend-mode: luminosity;
+}
+
+.fondos-background2 {
+    background: rgb(1, 148, 75) url("../img/background-blend-mode-img.png") 25% 50% / 100px 100px repeat-y content-box border-box fixed;
+    height: 200px;
+    background-blend-mode: lighten;
+}
+ 
+.fondos-background3 {
+    background: rgb(160, 111, 7) url("../img/background-position-img.png") 25% 50% / 100px 100px space padding-box content-box local;
+    height: 150px;
+    background-blend-mode: color-burn;
+}
+
+</code></pre>
+                Aquí el resultado del ejemplo del código fuente indicado arriba. En el código fuente de los ejemplos no
+                debe haber ninguna propiedad no explicada anteriormente. Es decir, si para el ejemplo necesitas algún
+                background-color, background-image u otras propiedades, estas propiedades deben ser explicadas con
+                anterioridad.
+            </article>
         </section>
     </main>
     <footer>
-        <div>Jaime Rabasco Ronda</div>
+        <div>Jose Miguel Escribano Ruiz, Andrés Rodríguez Machado</div>
         <a href="https://twitter.com/jaimerr" class="social"><img src="icon/twitter.svg" alt="Twitter"></a>
         <a href="https://github.com/jaimerabasco" class="social"><img src="icon/github.svg" alt="GitHub"></a>
     </footer>

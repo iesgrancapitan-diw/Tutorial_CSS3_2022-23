@@ -1,24 +1,10 @@
-.fuentesytexto_title_result {
-    font-size: 1em;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 10px;
-}
 
 .fuentesytexto_resultado {
-    border: 2px solid #000000;
     padding: 10px;
     margin-top: 20px;
     border-radius: 10px;
-    background-color: hsl(227, 50%, 22%);
-    color: white;
+    background-color: hsl(0, 0%, 90%);
 }
-
-
-
-
-
 
 .fuentesytexto_text-transform-capitalize {
     text-transform: capitalize;
@@ -37,11 +23,11 @@
 }
 
 .fuentesytexto_text-shadow-2px {
-    text-shadow: 2px 2px 2px white;
+    text-shadow: 2px 2px 2px black;
 }
 
 .fuentesytexto_text-shadow-2px-4px {
-    text-shadow: 2px 2px 2px white, 4px 4px 4px white;
+    text-shadow: 2px 2px 2px black, 4px 4px 4px black;
 }
 
 .fuentesytexto_font-family {

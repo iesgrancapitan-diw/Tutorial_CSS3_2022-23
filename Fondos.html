@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="css/background-repeat.css">
     <link rel="stylesheet" href="css/background-size.css">
     <link rel="stylesheet" href="css/background-blend-mode.css">
+    <link rel="stylesheet" href="css/background.css">
     <script src="js/prism.js"></script>
 </head>
 
@@ -561,14 +562,14 @@ background-color: #cccccc;
             </article>
             <article>
                 <h3>Background-blend-mode</h3>
-                <p>La propiedad CSS establece cómo las imágenes de fondo de un elemento deben combinarse entre sí y 
+                <p>La propiedad CSS establece cómo las imágenes de fondo de un elemento deben combinarse entre sí y
                     con el color de fondo del elemento.background-blend-mode.</p>
                 <h4>Sintaxis</h4>
                 <pre
                     class="line-numbers"><code class="language-css">background-blend-mode: [normal | 2 valores(darken,luminosity) | globales(inherit,initial,revert,revert-layer,unset)];</code></pre>
                 <p>Admite varios valores, que son los siguientes: </p>
                 <ul>
-                    <li><b>Background-blend-mode: </b>El modo de fusión que se va a aplicar. 
+                    <li><b>Background-blend-mode: </b>El modo de fusión que se va a aplicar.
                         Puede haber varios valores, separados por comas.</li>
                 </ul>
 
@@ -702,6 +703,45 @@ background-color: #cccccc;
     background-size: contain;
     height: 250px;
     border: 2px solid;
+    background-blend-mode: color-burn;
+}
+
+</code></pre>
+                Aquí el resultado del ejemplo del código fuente indicado arriba. En el código fuente de los ejemplos no
+                debe haber ninguna propiedad no explicada anteriormente. Es decir, si para el ejemplo necesitas algún
+                background-color, background-image u otras propiedades, estas propiedades deben ser explicadas con
+                anterioridad.
+            </article>
+            <article>
+                <h3>Background</h3>
+                <p>Engloba todas las propiedades anteriores haciendolo mas general.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment;</code></pre>
+
+                <div class="fondos-background1"></div>
+                <br />
+                <div class="fondos-background2"></div>
+                <br />
+                <div class="fondos-background3"></div>
+                <br />
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.fondos-background1 {
+    background: rgb(212, 124, 201) url("../img/background-origin-imagen.png") 75% 75% / 50px 50px no-repeat;
+    height: 100px;
+    background-blend-mode: luminosity;
+}
+
+.fondos-background2 {
+    background: rgb(1, 148, 75) url("../img/background-blend-mode-img.png") 25% 50% / 100px 100px repeat-y content-box border-box fixed;
+    height: 200px;
+    background-blend-mode: lighten;
+}
+ 
+.fondos-background3 {
+    background: rgb(160, 111, 7) url("../img/background-position-img.png") 25% 50% / 100px 100px space padding-box content-box local;
+    height: 150px;
     background-blend-mode: color-burn;
 }
 

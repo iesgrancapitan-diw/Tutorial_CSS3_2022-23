@@ -90,3 +90,25 @@
 .fuentesytexto_font {
     font: italic small-caps bold 12px/30px Georgia, serif;
 }
+
+.fuentesytexto_font-variant-ligatures-normal{
+    font-variant-ligatures: normal;
+}
+
+.fuentesytexto_font-variant-ligatures-common-ligatures{
+    font-variant-ligatures: common-ligatures;
+}
+
+.fuentesytexto_font-variant-ligatures-no-common-ligatures{
+    font-variant-ligatures: no-common-ligatures;
+}
+
+.fuentesytexto_font-variant-ligatures-historical-ligatures{
+    font-feature-settings: "hlig";
+    font-variant-ligatures: historical-ligatures;
+}
+
+.fuentesytexto_font-variant-ligatures-no-historical-ligatures{
+    font-feature-settings: "hlig";
+    font-variant-ligatures: no-historical-ligatures;
+}

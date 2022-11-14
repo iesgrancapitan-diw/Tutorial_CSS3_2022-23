@@ -111,6 +111,33 @@ text-shadow: 2px 2px 2px black, 4px 4px 4px #000;
       <section>
         <h2>Fuentes</h2>
         <article>
+          <h3>font-variant-ligatures</h3>
+          <p>Se usa para establecer las ligaduras de las fuentes.</p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">font-variant-ligatures: normal|no-common-ligatures| common-ligatures|historical-lig-value|inherit;</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li>normal: no se aplica ninguna ligadura.</li>
+            <li>common-ligatures: se aplican las ligaduras comunes. Que pueden ser "fi", "ffi", "th" o parecidos</li>
+            <li>no-common-ligatures: no se aplica ninguna ligadura común.</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <p>normal</p>
+          <h4>Ejemplos:</h4>
+          <pre class="line-numbers"><code class="language-css">font-variant-ligatures: normal;
+font-variant-ligatures: common-ligatures;
+font-variant-ligatures: no-common-ligatures;
+</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado">
+            <p class="fuentesytexto_font-variant-ligatures-normal">fi ffi th</p>
+            <p class="fuentesytexto_font-variant-ligatures-common-ligatures">fi ffi th</p>
+            <p class="fuentesytexto_font-variant-ligatures-no-common-ligatures">fi ffi th</p>
+          </div>
+        </article>
+        <article>
           <h3>font-family</h3>
           <p>Se usa para establecer la familia de fuentes del texto.</p>
           <h4>Sintaxis</h4>

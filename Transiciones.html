@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>TUTORIAL CSS3 - 2020/2021 - Diseño de Interfaces Web - CFGS DAW - IES Gran Capitán</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/prism.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">TUTORIAL CSS3 - 2022/2023</a></h1>
+        <h2><img src="icon/language-css3.svg"></h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Bordes.html">Bordes</a></li>
+            <li><a href="Fondos.html">Fondos</a></li>
+            <li><a href="Efectos_texto.html">Fuentes y Ef Texto</a></li>
+            <li><a href="Transformaciones.html">Transformac.</a></li>
+            <li><a href="Transiciones.html">Transiciones</a></li>
+            <li><a href="Animaciones.html">Animaciones</a></li>
+            <li><a href="Col_mult.html">Col Múltiples</a></li>
+            <li><a href="Color.html">Color y Degradado</a></li>
+            <li><a href="Pseudos_Css3.html">Pseudos CSS3</a></li>
+            <li><a href="Svg_filter.html">Filter y SVG</a></li>
+
+        </ul>
+    </nav>
+    <section>
+        <div>
+            <h2>TUTORIAL CSS3 - Transiciones</h2>
+            <h3></h3>
+        </div>
+        <article>
+            <h3>Transición del color de fondo</h3>
+
+            <p>Este código lo que hará es, que cuando estemos encima del texto que queremos, haya una transición 
+                y se cambie el color de fondo.<br><br>
+            La etiqueta background-color la usaremos para cambiar el color de fondo.<br><br>
+            La etiqueta -webkit-transition es la que nos permite hacer la transición, y dentro de ella, le indicamos 
+                que queremos que se haga la transición del color de fondo, y que dure 1 segundo.</p>
+            </p>
+            <h4></h4>
+            <pre class="line-numbers"><code class="language-css">.caja1{
+background-color: #C0392B;
+-webkit-transition: background-color 1s linear;
+transition: background-color 1s linear;
+}
+.caja1:hover{
+background-color: #3F51B5;
+}
+</code></pre>
+            <p></p>
+            <h4>Ejemplo:</h4>
+            <div class="caja caja1">Color de fondo</div>
+            <p class="margen"></p>
+        </article>
+    </section>
+
+    <section>
+        <article>
+            <h3>Transición del tamaño de la fuente</h3>
+
+            <p>Este código lo que hará es, que cuando estemos encima del texto que queremos, haya una transición que nos cambiará
+                el tamaño de la fuente.<br><br>
+
+                La etiqueta font-size la usaremos para cambiar el tamaño de la fuente.<br><br> 
+            </p>
+            <h4></h4>
+            <pre class="line-numbers"><code class="language-css">.caja2{
+background-color: #9B59B6;
+-webkit-transition: font-size 1s ease;
+transition: font-size 1s ease;
+}
+.caja2:hover{
+font-size: 28px;
+}</code></pre>
+            <p></p>
+            <h4>Ejemplo:</h4>
+            <div class="caja caja2">Font-size</div>
+            <p class="margen"></p>
+        </article>
+
+
+    </section>
+
+    <section>
+        <article>
+            <h3>Transición de cambio de color de texto</h3>
+
+            <p>Este código lo que hará es, que cuando estemos encima del texto que queremos, haya una transición de
+                cambio de color en el texto.<br><br>
+            </p>
+            <h4></h4>
+            <pre class="line-numbers"><code class="language-css">.caja3{
+background-color: #2980B9;
+-webkit-transition: color 1s linear;
+transition: color 1s linear;
+}
+.caja3:hover{
+color: black;
+}</code></pre>
+            <p></p>
+            <h4>Ejemplo:</h4>
+            <div class="caja caja3">Color</div>
+            <p class="margen"></p>
+        </article>
+
+
+    </section>
+
+    <section>
+        <article>
+            <h3>Transición de movimiento de línea</h3>
+
+            <p>Este código lo que hará es, que cuando estemos encima del texto que queremos, haya una transición que moverá la posición del texto.
+                <br><br>
+              La etiqueta line-height la usaremos para cambiar la altura de la línea.<br><br>  
+            </p>
+            <h4></h4>
+            <pre class="line-numbers"><code class="language-css">.caja4{
+background-color: #3498DB;
+-webkit-transition: 1s linear;
+transition: 1s linear;
+}
+.caja4:hover{
+line-height: 300px;
+}</code></pre>
+            <h4>Ejemplos:</h4>
+            <div class="caja caja4">Line-height</div>
+            <p class="margen"></p>
+        </article>
+    </section>
+
+    <section>
+        <article>
+            <h3>Transición del radio del borde</h3>
+
+            <p>Este código lo que hará es, que cuando estemos encima del texto que queremos, haya una transición de
+                cambio en el radio del borde.</p>
+                La etiqueta border-radius la usaremos para cambiar el radio del borde.<br><br>
+            <h4></h4>
+            <pre class="line-numbers"><code class="language-css">.caja5{
+border-radius: 0px;
+background-color: #17A589;
+-webkit-transition: 1s linear;
+transition: 1s linear
+}
+.caja5:hover{
+border-radius: 20px;
+}</code></pre>
+            <h4>Ejemplos:</h4>
+            <div class="caja caja5">Border-radius</div>
+            <p class="margen"></p>
+        </article>
+    </section>
+
+    <section>
+        <article>
+            <h3>Transición de sombra</h3>
+
+            <p>Este código lo que hará es, que cuando estemos encima del texto que queremos, haya una transición mostrando la sombra
+                <br><br>
+                La etiqueta box-shadow la usaremos para cambiar la sombra.<br><br>
+            </p>
+            <h4></h4>
+            <pre class="line-numbers"><code class="language-css">.caja6{
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  background-color: #F1C40F;
+}
+.caja6:hover{
+  -webkit-box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+  box-shadow: 10px 10px 14px 2px rgba(0,0,0,0.47);
+}</code></pre>
+<h4>Ejemplos:</h4>
+            <div class="caja caja6">Box-shadow</div>
+            <p class="margen"></p>
+        </article>
+    </section>
+
+    <section>
+        <article>
+            <h3>Transición de opacidad</h3>
+
+            <p>Este código lo que hará es, que cuando estemos encima del texto que queremos, haya una transición
+                que nos mostrará opacidad. <br><br>
+                La etiqueta opacity la usaremos para cambiar la opacidad.<br><br>
+            </p>
+            <pre class="line-numbers"><code class="language-css">.caja7{
+-webkit-transition: 1s linear;
+transition: 1s linear;
+background-color: #E67E22;
+}
+.caja7:hover{
+opacity: 0.3;
+}</code></pre>
+<h4>Ejemplos:</h4>
+<div class="caja caja7">Opacity</div>
+            <p class="margen"></p>
+        </article>
+    </section>
+
+    <section>
+        <article>
+            <h3>Transición del borde</h3>
+
+            <p>Este código lo que hará es, que cuando estemos encima del texto que queremos, haya una transición en el borde. <br><br>
+            La etiqueta border la usaremos para cambiar el borde.<br><br>
+            </p>
+            <h4></h4>
+            <pre class="line-numbers"><code class="language-css">.caja8{
+-webkit-transition: 1s linear;
+transition: 1s linear;
+background-color: #95A5A6;
+}
+.caja8:hover{
+border-style: solid;
+border-color: #95A5A6;
+border-color: #000;
+}</code></pre>
+<h4>Ejemplos:</h4>
+<div class="caja caja8">Border</div>
+            <p class="margen"></p>
+        </article>
+    </section>
+
+    <section>
+        <article>
+            <h3>Transición del margin</h3>
+
+            <p>Este código lo que hará es, que cuando estemos encima del texto que queremos, haya una transición en el margin. <br><br></p>
+            <pre class="line-numbers"><code class="language-css">.caja9{
+-webkit-transition: 1s linear;
+transition: 1s linear;
+background-color: #2C3E50;
+}
+.caja9:hover{
+margin: 80px;
+}</code></pre>
+<h4>Ejemplos:</h4>
+<div class="caja caja9">Margin</div>
+            <p class="margen"></p>
+        </article>
+    </section>
+
+    <section>
+        <article>
+            <h3>Transicion del padding</h3>
+
+            <p>Este código lo que hará es, que cuando estemos encima del texto que queremos, haya una transición en el padding. <br><br>
+            
+            </p>
+            <h4></h4>
+            <pre class="line-numbers"><code class="language-css">.caja10{
+-webkit-transition: 1s linear;
+transition: 1s linear;
+background-color: black;
+}
+.caja10:hover{
+padding: 30px;
+}</code></pre>
+<h4>Ejemplos:</h4>
+<div class="caja caja10">Padding</div>
+            <p class="margen"></p>
+        </article>
+    </section>
+    </main>
+    <!-- <footer>
+        <div>Gontzal García Triviño</div>
+    </footer> -->
+</body>
+
+</html>

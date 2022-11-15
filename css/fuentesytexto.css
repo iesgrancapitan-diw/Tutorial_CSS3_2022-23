@@ -223,3 +223,20 @@
 .fuentesytexto_text-rendering-geometricPrecision{
     text-rendering: geometricPrecision;
 }
+
+.fuentesytexto_text-orientation{
+    text-orientation: mixed;
+    writing-mode: vertical-rl;
+}
+
+.fuentesytexto_text-orientation-upright{
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+}
+
+.fuentesytexto_text-orientation-sideways{
+    text-orientation: sideways;
+    writing-mode: vertical-rl;
+}
+
+

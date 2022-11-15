@@ -361,6 +361,36 @@ text-rendering: geometricPrecision;
 
         </article>
         <article>
+          <h3>text-orientation</h3>
+          <p>Se usa para establecer la orientación del texto. Solo afecta cuando "writing-mode" no está definido a "horizontal-tb"</p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">text-orientation: mixed|upright|sideways-right|sideways-left|initial|inherit;</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li>mixed: establece la orientación del texto en vertical y horizontal.</li>
+            <li>upright: establece la orientación del texto en horizontal.</li>
+            <li>sideways: establece la orientación del texto como lo harían horizontalmente pero girada 90º en sentido de las agujas del relok.</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <p>mixed</p>
+          <h4>Ejemplos:</h4>
+          <pre class="line-numbers"><code class="language-css">text-orientation: mixed;
+text-orientation: upright;
+text-orientation: sideways;
+</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado">
+            <p class="fuentesytexto_text-orientation">Lorem ipsum dolor sit amet consectetur </p>
+            <p class="fuentesytexto_text-orientation-upright">Lorem ipsum dolor sit amet consectetur </p>
+            <p class="fuentesytexto_text-orientation-sideways">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+          </div>
+
+
+        </article>
+        <article>
           <h3>Google Fonts</h3>
           <p>Google Fonts es un servicio gratuito que ofrece fuentes de Google para que las utilices en tus sitios web. Puedes ver todas las fuentes disponibles en <a href="https://fonts.google.com/" target="_blank">https://fonts.google.com/</a></p>
           <p>Para utilizar una fuente de Google Fonts, debes incluir el siguiente código en la sección <code>&lt;head&gt;</code> de tu documento HTML:</p>

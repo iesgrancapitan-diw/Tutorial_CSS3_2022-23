@@ -160,3 +160,66 @@
     font-family: 'League Spartan', sans-serif;
     font-variant-caps: titling-caps;
 }
+/* TODO */
+.fuentesytexto_font-variant-alternates{
+    font-variant-alternates: normal;
+}
+
+.fuentesytexto_font-variant-alternates-2{
+    font-variant-alternates: historical-forms;
+    font-family: 'League Spartan', sans-serif;
+
+}
+
+.fuentesytexto_font-variant-alternates-3{
+    font-feature-settings: "salt 2";
+    font-family: 'League Spartan', sans-serif;
+    font-variant-alternates: stylistic(1);
+}
+
+.fuentesytexto_font-variant-alternates-4{
+    font-variant-alternates: styleset(1);
+}
+
+.fuentesytexto_font-variant-alternates-5{
+    font-variant-alternates: character-variant(1);
+}
+
+.fuentesytexto_font-variant-alternates-6{
+    font-variant-alternates: swash(1);
+}
+
+.fuentesytexto_font-variant-alternates-7{
+    font-variant-alternates: ornaments(1);
+}
+
+.fuentesytexto_font-variant-alternates-8{
+    font-variant-alternates: annotation(1);
+}
+
+.fuentesytexto_font-variant-alternates-9{
+    font-variant-alternates: ornaments(1);
+}
+
+.fuentesytexto_font-variant-alternates-10{
+    font-variant-alternates: annotation(1);
+}
+
+/* FIN DEL TODO */
+
+.fuentesytexto_text-rendering{
+    text-rendering: auto;
+}
+
+.fuentesytexto_text-rendering-optimizeSpeed{
+    text-rendering: optimizeSpeed;
+}
+
+.fuentesytexto_text-rendering-optimizeLegibility{
+    text-rendering: optimizeLegibility;
+    font-size: 10px;
+}
+
+.fuentesytexto_text-rendering-geometricPrecision{
+    text-rendering: geometricPrecision;
+}

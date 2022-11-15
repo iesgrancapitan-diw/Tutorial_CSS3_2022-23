@@ -222,7 +222,50 @@ font-variant-caps: titling-caps;
           </div>
 
         </article>
-        
+        <article>
+          <!-- TODO -->
+          <h3> font-variant-alternates</h3>
+          <p>Se usa para establecer el tipo de alternativas de las fuentes.</p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">font-variant-alternates: normal|historical-forms|stylistic(<number>)|styleset(<number>)|character-variant(<number>)|swash(<number>)|ornaments(<number>)|annotation(<number>)|inherit;</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li>normal: no se aplica ninguna alternativa.</li>
+            <li>historical-forms: se aplican las alternativas históricas.</li>
+            <li>stylistic(<number>): se aplican las alternativas estilísticas.</li>
+            <li>styleset(<number>): se aplican las alternativas de conjunto de estilos.</li>
+            <li>character-variant(<number>): se aplican las alternativas de caracteres.</li>
+            <li>swash(<number>): se aplican las alternativas de trazo.</li>
+            <li>ornaments(<number>): se aplican las alternativas de ornamentación.</li>
+            <li>annotation(<number>): se aplican las alternativas de anotación.</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <p>normal</p>
+          <h4>Ejemplos:</h4>
+          <pre class="line-numbers"><code class="language-css">font-variant-alternates: normal;
+font-variant-alternates: historical-forms;
+font-variant-alternates: stylistic(1);
+font-variant-alternates: styleset(1);
+font-variant-alternates: character-variant(1);
+font-variant-alternates: swash(1);
+font-variant-alternates: ornaments(1);
+font-variant-alternates: annotation(1);
+</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado">
+            <p class="fuentesytexto_font-variant-alternates">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-variant-alternates-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-variant-alternates-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-variant-alternates-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-variant-alternates-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-variant-alternates-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-variant-alternates-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          </div>
+
+          <!-- FIN DEL TODO  -->
+        </article>
         <article>
           <h3>font-style</h3>
           <p>Se usa para establecer el estilo de la fuente.</p>
@@ -285,6 +328,37 @@ font-weight: 900;
             <p class="fuentesytexto_font-weight-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
             <p class="fuentesytexto_font-weight-900">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
           </div>
+        </article>
+        <article>
+          <h3>text-rendering</h3>
+          <p>Se usa para establecer el modo de renderizado del texto.</p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">text-rendering: auto|optimizeSpeed|optimizeLegibility|geometricPrecision|initial|inherit;</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li>auto: establece el modo de renderizado automático.</li>
+            <li>optimizeSpeed: establece el modo de renderizado para optimizar la velocidad.</li>
+            <li>optimizeLegibility: establece el modo de renderizado para optimizar la legibilidad. En fuentes menores de 20px utiliza las ligaduras de las letras en sílabas como "fi"</li>
+            <li>geometricPrecision: establece el modo de renderizado para optimizar la precisión geométrica.</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <p>auto</p>
+          <h4>Ejemplos:</h4>
+          <pre class="line-numbers"><code class="language-css">text-rendering: auto;
+text-rendering: optimizeSpeed;
+text-rendering: optimizeLegibility;
+text-rendering: geometricPrecision;
+</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado">
+            <p class="fuentesytexto_text-rendering">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_text-rendering-optimizeSpeed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_text-rendering-optimizeLegibility">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. fififif</p>
+            <p class="fuentesytexto_text-rendering-geometricPrecision">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          </div>
+
         </article>
         <article>
           <h3>Google Fonts</h3>

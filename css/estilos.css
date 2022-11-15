@@ -18,12 +18,184 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
-
+#hexadecimalSinAlpha {
+  background-color: #0080ff;
+}
+#hexadecimalConAlpha {
+  background-color: #0080ff80;
+}
+#colorTomate {
+  color: tomato;
+}
+#colorLima {
+  color: lime;
+}
+#colorAgua {
+  color: aqua;
+}
+#colorRed {
+  color: #ff0000;
+}
+#colorBlue {
+  color: #0000ff;
+}
+#colorGreen {
+  color: #009b00;
+}
+#colorRojoRGB {
+  color: rgb(65%, 0%, 0%);
+}
+#colorGrisRGB {
+  color: rgb(129, 129, 129);
+}
+#colorMoradoRGB {
+  color: rgb(100%, 3%, 100%);
+}
+#textoConOpacidad {
+  color: rgba(255, 0, 0, 0.5);
+}
+#textoSinOpacidad {
+  color: rgba(255, 0, 0, 1);
+}
+#hslVerdeClaro {
+  color: hsl(120, 100%, 65%);
+}
+#hslVerdeOscuro {
+  color: hsl(120, 100%, 20%);
+}
+#hslAzul {
+  color: hsl(240, 0%, 50%);
+}
+#hslaVerde1 {
+  color: hsla(120, 100%, 65%, 0.2);
+}
+#hslaVerde2 {
+  color: hsla(120, 100%, 50%, 0.5);
+}
+#hslaVerde3 {
+  color: hsla(120, 100%, 50%, 1);
+}
+#grad1 {
+  height: 100px;
+  background: linear-gradient(to bottom, red, black);
+}
+#grad2 {
+  height: 100px;
+  background: linear-gradient(to top, blue, green);
+}
+#grad3 {
+  height: 100px;
+  background: linear-gradient(to right, yellow, orange);
+}
+#grad4 {
+  height: 100px;
+  background: linear-gradient(to left, purple, brown);
+}
+#grad5 {
+  height: 100px;
+  background: linear-gradient(to bottom, lime, aqua, crimson, deepPink);
+}
+#grad6 {
+  height: 100px;
+  background: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+}
+#grad7 {
+  height: 100px;
+  background: repeating-linear-gradient(red, yellow 20px);
+}
+#grad8 {
+  height: 100px;
+  background: linear-gradient(to left, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
+}
+#grad9 {
+  height: 100px;
+  background: linear-gradient(180deg, blue, green);
+}
+#grad10 {
+  height: 200px;
+  width: 200px;
+  background: linear-gradient(
+      200deg,
+      rgba(250, 0, 0, 0.8),
+      rgba(255, 0, 0, 0) 70.7%
+    ),
+    linear-gradient(120deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.7%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+}
+#grad11 {
+  height: 200px;
+  width: 200px;
+  background: radial-gradient(blue, aqua, lime);
+}
+#grad12 {
+  height: 120px;
+  background: radial-gradient(red 10%, yellow 20%, green 50%);
+}
+#grad13 {
+  height: 150px;
+  width: 150px;
+  background: radial-gradient(closest-side at 60% 55%, red, yellow, black);
+}
+#grad14 {
+  height: 150px;
+  width: 150px;
+  background: radial-gradient(farthest-side at 60% 55%, red, yellow, black);
+}
+#grad15 {
+  height: 150px;
+  width: 150px;
+  background: radial-gradient(closest-corner at 60% 55%, red, yellow, black);
+}
+#grad16 {
+  height: 150px;
+  width: 150px;
+  background: radial-gradient(farthest-corner at 60% 55%, red, yellow, black);
+}
+#grad17{
+  height: 250px;
+  width: 250px;
+  background-image: conic-gradient(red,blue,green);
+}
+#grad18{
+  height: 250px;
+  width: 250px;
+  background-image: conic-gradient(from 70deg,red,blue,green);
+}
+#grad19{
+  height: 250px;;
+  width: 250px;
+  background:conic-gradient(red 0deg,red 90deg,yellow 90deg, yellow 180deg, green 180deg,green 270deg,blue 270deg, blue 360deg);
+}
+#grad20{
+  height: 100px;
+  background: linear-gradient(to right, rgb(100%,0%,0%),rgb(75%,25%,50%)25%),rgb(50%,50%,100%);
+}
+#grad21{
+  height: 100px;
+  background: linear-gradient(to right,rgb(100%,0%,0%),25%,rgb(50%,50%,100%));
+}
+#tipoDegradado {
+  display: block;
+  margin: auto;
+  height: 220px;
+}
 footer {
   text-align: center;
   margin-top: 0.5rem;
 }
-
+#currentColor {
+  color: blue;
+  border: 2px solid currentColor;
+}
 footer div {
   color: var(--secondaryTextColor);
   margin: 0.5rem 0;
@@ -217,10 +389,10 @@ td {
 .colorGreen {
   color: black;
 }
-p{
-	color: black;
+p {
+  color: black;
 }
-a{
+a {
   text-decoration: none;
   color: Indigo;
 }

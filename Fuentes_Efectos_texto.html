@@ -9,6 +9,8 @@
     </title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
@@ -18,6 +20,8 @@
     <link rel="stylesheet" href="css/prism.css" />
     <link rel="stylesheet" href="css/fuentesytexto.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto&effect=shadow-multiple|fire" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
     <script src="js/prism.js"></script>
   </head>
   <body>
@@ -173,6 +177,52 @@ font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
             <p class="fuentesytexto_font-family-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
           </div>
         </article>
+        <article>
+          <h3>font-variant-caps</h3>
+          <p>Se usa para establecer el tipo de capitalización de las fuentes.</p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">font-variant-caps: normal|small-caps|all-small-caps|petite-caps|all-petite-caps|unicase|titling-caps|inherit;</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li>normal: no se aplica ninguna capitalización.</li>
+            <li>small-caps: se aplican las mayúsculas pequeñas.</li>
+            <li>all-small-caps: se aplican las mayúsculas pequeñas a todas las letras.</li>
+            <li>petite-caps: se aplican las mayúsculas pequeñas.</li>
+            <li>all-petite-caps: se aplican las mayúsculas pequeñas a todas las letras.</li>
+            <li>unicase: se aplican las mayúsculas pequeñas a todas las letras.</li>
+            <li>titling-caps: se aplican las mayúsculas pequeñas a todas las letras.</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <p>normal</p>
+          <h4>Ejemplos:</h4>
+          <pre class="line-numbers"><code class="language-css">font-variant-caps: small-caps;
+font-variant-caps: all-small-caps;
+font-variant-caps: petite-caps;
+
+font-feature-settings: "unic";
+font-family: Arial, Helvetica, sans-serif;
+font-variant-caps: unicase;
+
+font-variant-caps: all-petite-caps;
+
+font-feature-settings: "titl";
+font-family: 'League Spartan', sans-serif;
+font-variant-caps: titling-caps;
+</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado">
+            <p class="fuentesytexto_font-variant-caps">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-variant-caps-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-variant-caps-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-variant-caps-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-variant-caps-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-variant-caps-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          </div>
+
+        </article>
+        
         <article>
           <h3>font-style</h3>
           <p>Se usa para establecer el estilo de la fuente.</p>

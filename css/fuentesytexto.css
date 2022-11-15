@@ -103,12 +103,60 @@
     font-variant-ligatures: no-common-ligatures;
 }
 
-.fuentesytexto_font-variant-ligatures-historical-ligatures{
-    font-feature-settings: "hlig";
-    font-variant-ligatures: historical-ligatures;
+.fuentesytexto_font-variant-caps-normal{
+    font-variant-caps: normal;
 }
 
-.fuentesytexto_font-variant-ligatures-no-historical-ligatures{
-    font-feature-settings: "hlig";
-    font-variant-ligatures: no-historical-ligatures;
+.fuentesytexto_font-variant-caps-small-caps{
+    font-variant-caps: small-caps;
+}
+
+.fuentesytexto_font-variant-caps-all-small-caps{
+    font-variant-caps: all-small-caps;
+}
+
+.fuentesytexto_font-variant-caps-petite-caps{
+    font-variant-caps: petite-caps;
+}
+
+.fuentesytexto_font-variant-caps-all-petite-caps{
+    font-variant-caps: all-petite-caps;
+}
+
+.fuentesytexto_font-variant-caps-unicase{
+    font-variant-caps: unicase;
+}
+
+.fuentesytexto_font-variant-caps-all-titling-caps{
+    font-variant-caps: titling-caps;
+}
+
+
+
+.fuentesytexto_font-variant-caps{
+    font-variant-caps: small-caps;
+}
+
+.fuentesytexto_font-variant-caps-2{
+    font-variant-caps: all-small-caps;
+}
+
+.fuentesytexto_font-variant-caps-3{
+    font-variant-caps: petite-caps;
+}
+
+.fuentesytexto_font-variant-caps-4{
+    font-feature-settings: "unic";
+    font-variant-caps: unicase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fuentesytexto_font-variant-caps-5{
+    font-variant-caps: all-petite-caps;
+}
+
+.fuentesytexto_font-variant-caps-6{
+    font-feature-settings: "titl";
+    font-family: 'League Spartan', sans-serif;
+    font-variant-caps: titling-caps;
 }

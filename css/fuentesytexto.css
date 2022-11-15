@@ -240,3 +240,7 @@
 }
 
 
+.fuentesytexto_-webkit-text-fill-color{
+    -webkit-text-fill-color: blue;
+    color: red;
+}

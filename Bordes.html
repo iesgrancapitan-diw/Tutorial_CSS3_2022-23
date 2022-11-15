@@ -271,7 +271,7 @@ border-radius: 16px 8px 4px 10px;</code></pre>
                 <h4>Sintaxis</h4>
                 <pre
                     class="line-numbers"><code class="language-css">box-shadow: [none|h-offset v-offset blur spread color |inset|initial|inherit]</code></pre>
-                <p>Admite de uno a cuatro valores, que son los siguientes: </p>
+                <p>Admite de dos a seis valores, que son los siguientes: </p>
                 <ul>
                     <li>Dos valores: se aplica el primero a el desplazamiento horizontal de la sombra y el segundo a el
                         desplazamiento vertical de la sombra.</li>
@@ -320,7 +320,7 @@ box-shadow: 20px 20px 20px 10px green inset;
                 <h4>Sintaxis</h4>
                 <pre
                     class="line-numbers"><code class="language-css">border-image-source: {none|image|initial|inherit}</code></pre>
-                <p>Admite de uno a cuatro valores, que son los siguientes: </p>
+                <p>Admite un valor: </p>
                 <ul>
                     <li>Un valor: url de la imagen a cargar en el borde o initial que establece esta propiedad en su
                         valor predeterminado o inherit que hereda esta propiedad de su elemento padre o none que no usa
@@ -338,7 +338,10 @@ box-shadow: 20px 20px 20px 10px green inset;
             <article>
                 <h3>border-image-slice</h3>
                 <p>Propiedad que especifica cómo dividir la imagen especificada por border-image-source . La imagen
-                    siempre se divide en nueve secciones: cuatro esquinas, cuatro bordes y el medio.</p>
+                    siempre se divide en nueve secciones: cuatro esquinas, cuatro bordes y el medio.
+                    Las propiedades border-image-repeat, border-image-width y border-image-outset definen cómo se usarán
+                    estas imágenes.
+                </p>
                 <h4>Se permiten los siguientes valores para dicha propiedad</h4>
                 <ul>
                     <li><b>number</b> - El número representa los píxeles para imágenes rasterizadas o coordenadas para
@@ -355,15 +358,35 @@ box-shadow: 20px 20px 20px 10px green inset;
                 <ul>
                     <li>Puede tomar de uno a cuatro valores. Si se omite el cuarto valor, es lo mismo que el segundo. Si
                         también se omite el tercero, es lo mismo que el primero. Si también se omite el segundo, es lo
-                        mismo que el primero.
-
+                        mismo que el primero. El valor de relleno se puede colocar entre cualquiervalor (fill).
                     </li>
+                    <li>Un valor: se aplica a todo el borde(slice).</li>
+                    <li>Dos valores: El primer valor es para el borde horizontal y el segundo para el borde vertical.
+                    </li>
+                    <li>Tres valores: El primer valor es para el borde top, el segundo para el borde horizontal y el
+                        tercero para el bottom.</li>
+                    <li>Cuatro valores: El primer valor es para el borde top, el segundo para el borde right, el tercero
+                        para el bottom y el cuarto para el left.</li>
+                </ul>
+
+                <ul>
+                    <li><b>Slice</b> - Es un valor number o % de la separación de las cuatro líneas de
+                        corte.</li>
+                    <li><b>Horizontal</b> - Es un valor number o % de la separación de las dos líneas de corte
+                        horizontales, la superior y la inferior.</li>
+                    <li><b>Vertical</b> - Es un valor number o % de la separación de las dos líneas de corte verticales,
+                        la izquierda y la derecha.</li>
+                    <li><b>Top</b> - Es un valor number o % de la separación de la línea de corte superior.</li>
+                    <li><b>bottom</b> - Es un valor number o % de la separación de la línea de corte inferior.</li>
+                    <li><b>right</b> - Es un valor number o % de la separación de la línea de corte derecha.</li>
+                    <li><b>Left</b> - Es un valor number o % de la separación de la línea de corte izquierda.</li>
                 </ul>
 
                 <h4>Ejemplos:</h4>
                 <pre class="line-numbers"><code class="language-css">border-image-slice: 10;
 border-image-slice: 10 40%;
 border-image-slice: 10 10% fill;
+border-image-slice: 10 10% 45 fill;
 </code></pre>
                 <div>
                     <div id="border-image-slice-1" class="border-image-slice-ejemplos">Ejemplo de border-image-slice con
@@ -375,7 +398,17 @@ border-image-slice: 10 10% fill;
                         parámetros</div>
                     <div id="border-image-slice-3" class="border-image-slice-ejemplos">Ejemplo de border-image-slice con
                         tres
+
+                        parámetros con fill</div>
+                    <div id="border-image-slice-4" class="border-image-slice-ejemplos">Ejemplo de border-image-slice con
+                        cuatro
+
+                        parámetros con fill</div>
+                    <div id="border-image-slice-5" class="border-image-slice-ejemplos">Ejemplo de border-image-slice con
+                        cuatro
+
                         parámetros</div>
+
                 </div>
 
             </article>
@@ -458,7 +491,7 @@ border-image-outset: 5px 8px 10px 12px;
                     class="line-numbers"><code class="language-css">border-image-width: {number|%|auto|initial|inherit}</code></pre>
                 <p>Admite de uno a cuatro valores, que son los siguientes: </p>
                 <ul>
-                    <li>Un valores: lado superior.
+                    <li>Un valor: lado superior.
                     </li>
                     <li>Dos valores: primer valor para el lado superior e inferior y el segundo valor para el lado
                         derecho
@@ -514,9 +547,9 @@ border-image-width: 10px 15px 5px 20px;</code></pre>
                 <h4>Sintaxis</h4>
                 <pre
                     class="line-numbers"><code class="language-css">border-image-width: {stretch|repeat|round|space|initial|inherit}</code></pre>
-                <p>Admite de uno a cuatro valores, que son los siguientes: </p>
+                <p>Admite de un, que es el siguientes: </p>
                 <ul>
-                    <li>Un valores: Indica uno de los valores que admite dicha propiedad.
+                    <li>Un valor: Indica uno de los valores que admite dicha propiedad.
                     </li>
                 </ul>
 
@@ -545,7 +578,7 @@ border-image-repeat: space;</code></pre>
                 <h4>Sintaxis</h4>
                 <pre
                     class="line-numbers"><code class="language-css">border-image: {[source] [slice] [width] [outset] [repeat|initial|inherit]}</code></pre>
-                <p>Admite de uno a cuatro valores, que son los siguientes: </p>
+                <p>Admite de uno a cinco valores, que son los siguientes: </p>
                 <ul>
                     <li>Un valor: url de la imagen a cargar en el borde o initial que establece esta propiedad en su
                         valor predeterminado o inherit que hereda esta propiedad de su elemento padre.</li>
@@ -606,7 +639,7 @@ border-image: url(../border-img/border.png) 27% 15% 40% repeat;
                 <h4>Sintaxis</h4>
                 <pre
                     class="line-numbers"><code class="language-css">border: {[border-width] | border-style | [border-color] | [initial] | [inherit}</code></pre>
-                <p>Admite de uno a cuatro valores, que son los siguientes: </p>
+                <p>Admite de uno a tres valores, que son los siguientes: </p>
                 <ul>
                     <li>Un valor: Se le aplica el estilo al borde (al no aparecer el parámetro para definir el color del
                         borde, se aplicaría el color del texto). También se puede poner inherit o initial.</li>

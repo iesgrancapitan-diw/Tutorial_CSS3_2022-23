@@ -1,4 +1,3 @@
-
 .fuentesytexto_resultado {
     padding: 10px;
     margin-top: 20px;
@@ -91,189 +90,243 @@
     font: italic small-caps bold 12px/30px Georgia, serif;
 }
 
-.fuentesytexto_font-variant-ligatures-normal{
+.fuentesytexto_font-variant-ligatures-normal {
     font-variant-ligatures: normal;
 }
 
-.fuentesytexto_font-variant-ligatures-common-ligatures{
+.fuentesytexto_font-variant-ligatures-common-ligatures {
     font-variant-ligatures: common-ligatures;
 }
 
-.fuentesytexto_font-variant-ligatures-no-common-ligatures{
+.fuentesytexto_font-variant-ligatures-no-common-ligatures {
     font-variant-ligatures: no-common-ligatures;
 }
 
-.fuentesytexto_font-variant-ligatures-historical-ligatures{
+.fuentesytexto_font-variant-ligatures-historical-ligatures {
     font-variant-ligatures: historical-ligatures;
 }
 
-.fuentesytexto_font-variant-ligatures-no-historical-ligatures{
+.fuentesytexto_font-variant-ligatures-no-historical-ligatures {
     font-variant-ligatures: no-historical-ligatures;
 }
 
-.fuentesytexto_font-variant-ligatures-contextual{
+.fuentesytexto_font-variant-ligatures-contextual {
     font-variant-ligatures: contextual;
 }
 
-.fuentesytexto_font-variant-ligatures-no-contextual{
+.fuentesytexto_font-variant-ligatures-no-contextual {
     font-variant-ligatures: no-contextual;
 }
 
-.fuentesytexto_font-variant-ligatures-discretionary-ligatures{
-    font-variant-ligatures: discretionary-ligatures;
+.fuentesytexto_font-variant-ligatures-discretionary-ligatures {
+    font-variant-ligatures: discretionary-ligatures; 
 }
 
-.fuentesytexto_font-variant-ligatures-no-discretionary-ligatures{
+.fuentesytexto_font-variant-ligatures-no-discretionary-ligatures {
     font-variant-ligatures: no-discretionary-ligatures;
 }
 
-.fuentesytexto_font-variant-ligatures{
+.fuentesytexto_font-variant-ligatures {
     font-family: Lora, serif;
 }
 
-.fuentesytexto_font-variant-caps-normal{
+.fuentesytexto_font-variant-caps-normal {
     font-variant-caps: normal;
 }
 
-.fuentesytexto_font-variant-caps-small-caps{
+.fuentesytexto_font-variant-caps-small-caps {
     font-variant-caps: small-caps;
 }
 
-.fuentesytexto_font-variant-caps-all-small-caps{
+.fuentesytexto_font-variant-caps-all-small-caps {
     font-variant-caps: all-small-caps;
 }
 
-.fuentesytexto_font-variant-caps-petite-caps{
+.fuentesytexto_font-variant-caps-petite-caps {
     font-variant-caps: petite-caps;
 }
 
-.fuentesytexto_font-variant-caps-all-petite-caps{
+.fuentesytexto_font-variant-caps-all-petite-caps {
     font-variant-caps: all-petite-caps;
 }
 
-.fuentesytexto_font-variant-caps-unicase{
+.fuentesytexto_font-variant-caps-unicase {
     font-variant-caps: unicase;
 }
 
-.fuentesytexto_font-variant-caps-all-titling-caps{
+.fuentesytexto_font-variant-caps-all-titling-caps {
     font-variant-caps: titling-caps;
 }
 
 
 
-.fuentesytexto_font-variant-caps{
+.fuentesytexto_font-variant-caps {
     font-variant-caps: small-caps;
 }
 
-.fuentesytexto_font-variant-caps-2{
+.fuentesytexto_font-variant-caps-2 {
     font-variant-caps: all-small-caps;
 }
 
-.fuentesytexto_font-variant-caps-3{
+.fuentesytexto_font-variant-caps-3 {
     font-variant-caps: petite-caps;
 }
 
-.fuentesytexto_font-variant-caps-4{
+.fuentesytexto_font-variant-caps-4 {
     font-feature-settings: "unic";
     font-variant-caps: unicase;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.fuentesytexto_font-variant-caps-5{
+.fuentesytexto_font-variant-caps-5 {
     font-variant-caps: all-petite-caps;
 }
 
-.fuentesytexto_font-variant-caps-6{
+.fuentesytexto_font-variant-caps-6 {
     font-feature-settings: "titl";
     font-family: 'League Spartan', sans-serif;
     font-variant-caps: titling-caps;
 }
+
 /* TODO */
-.fuentesytexto_font-variant-alternates{
+.fuentesytexto_font-variant-alternates {
     font-variant-alternates: normal;
 }
 
-.fuentesytexto_font-variant-alternates-2{
+.fuentesytexto_font-variant-alternates-2 {
     font-variant-alternates: historical-forms;
     font-family: 'League Spartan', sans-serif;
 
 }
 
-.fuentesytexto_font-variant-alternates-3{
+.fuentesytexto_font-variant-alternates-3 {
     font-feature-settings: "salt 2";
     font-family: 'League Spartan', sans-serif;
     font-variant-alternates: stylistic(1);
 }
 
-.fuentesytexto_font-variant-alternates-4{
+.fuentesytexto_font-variant-alternates-4 {
     font-variant-alternates: styleset(1);
 }
 
-.fuentesytexto_font-variant-alternates-5{
+.fuentesytexto_font-variant-alternates-5 {
     font-variant-alternates: character-variant(1);
 }
 
-.fuentesytexto_font-variant-alternates-6{
+.fuentesytexto_font-variant-alternates-6 {
     font-variant-alternates: swash(1);
 }
 
-.fuentesytexto_font-variant-alternates-7{
+.fuentesytexto_font-variant-alternates-7 {
     font-variant-alternates: ornaments(1);
 }
 
-.fuentesytexto_font-variant-alternates-8{
+.fuentesytexto_font-variant-alternates-8 {
     font-variant-alternates: annotation(1);
 }
 
-.fuentesytexto_font-variant-alternates-9{
+.fuentesytexto_font-variant-alternates-9 {
     font-variant-alternates: ornaments(1);
 }
 
-.fuentesytexto_font-variant-alternates-10{
+.fuentesytexto_font-variant-alternates-10 {
     font-variant-alternates: annotation(1);
 }
 
 /* FIN DEL TODO */
 
-.fuentesytexto_text-rendering{
+.fuentesytexto_text-rendering {
     text-rendering: auto;
 }
 
-.fuentesytexto_text-rendering-optimizeSpeed{
+.fuentesytexto_text-rendering-optimizeSpeed {
     text-rendering: optimizeSpeed;
 }
 
-.fuentesytexto_text-rendering-optimizeLegibility{
+.fuentesytexto_text-rendering-optimizeLegibility {
     text-rendering: optimizeLegibility;
     font-size: 10px;
 }
 
-.fuentesytexto_text-rendering-geometricPrecision{
+.fuentesytexto_text-rendering-geometricPrecision {
     text-rendering: geometricPrecision;
 }
 
-.fuentesytexto_text-orientation{
+.fuentesytexto_text-orientation {
     text-orientation: mixed;
     writing-mode: vertical-lr;
 }
 
-.fuentesytexto_text-orientation-upright{
+.fuentesytexto_text-orientation-upright {
     text-orientation: upright;
     writing-mode: vertical-lr;
 }
 
-.fuentesytexto_text-orientation-sideways{
+.fuentesytexto_text-orientation-sideways {
     text-orientation: sideways;
     writing-mode: vertical-lr;
 }
 
 
-.fuentesytexto_-webkit-text-fill-color{
+.fuentesytexto_-webkit-text-fill-color {
     -webkit-text-fill-color: blue;
     color: red;
 }
 
-.fuentesytexto_cols{
+.fuentesytexto_cols {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
+
+.fuentesytexto_font-variant-numeric-0 {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.fuentesytexto_font-variant-numeric {
+    font-variant-numeric: normal;
+}
+
+.fuentesytexto_font-variant-numeric-2 {
+    font-variant-numeric: ordinal;
+}
+
+.fuentesytexto_font-variant-numeric-3 { 
+    font-variant-numeric: slashed-zero;
+}
+
+.fuentesytexto_font-variant-numeric-4 {
+    font-variant-numeric: lining-nums;
+}
+
+.fuentesytexto_font-variant-numeric-5 {
+    font-variant-numeric: oldstyle-nums;
+}
+
+.fuentesytexto_font-variant-numeric-6 {
+    font-variant-numeric: proportional-nums;
+}
+
+.fuentesytexto_font-variant-numeric-7 {
+    font-variant-numeric: tabular-nums;
+}
+
+.fuentesytexto_font-variant-numeric-8 {
+    font-variant-numeric: diagonal-fractions;
+}
+
+.fuentesytexto_font-variant-numeric-9 {
+    font-variant-numeric: stacked-fractions;
+}
+
+.fuentesytexto_font-size-adjust-yes{
+    font-family: Times, serif;
+    font-size-adjust: 0.58;
+    font-size: 10px;
+}
+
+.fuentesytexto_font-size-adjust-no{
+    font-family: Times, serif;
+    font-size-adjust: none;
+    font-size: 10px;
+}
+

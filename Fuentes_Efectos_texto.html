@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/prism.css" />
     <link rel="stylesheet" href="css/fuentesytexto.css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto&effect=shadow-multiple|fire" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
     <script src="js/prism.js"></script>
   </head>
@@ -112,6 +112,42 @@ text-shadow: 2px 2px 2px black, 4px 4px 4px #000;
       </section>
       <section>
         <article>
+          <h3>font-family</h3>
+          <p>Se usa para establecer la familia de fuentes del texto.</p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">font-family: family-name|generic-family|initial|inherit;</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li>family-name: establece el nombre de la familia de fuentes.</li>
+            <li>generic-family: establece la familia de fuentes genérica.</li>
+          </ul>
+          <p>En CSS hay 5 familias de fuentes genéricas:</p>
+          <ul>
+            <li>serif: tienen un pequeño trazo en los bordes de cada letra. Crean una sensación de formalidad y elegancia.</li>
+            <li>monospace: tienen un ancho fijo. Crean un aspecto mecánico </li>
+            <li>sans-serif: no tienen trazos en los bordes de cada letra. Son más modernas y menos formales.</li>
+            <li>cursive: tienen un trazo que recorre cada letra. Son más informales y creativas.</li>
+            <li>fantasy: tienen un trazo que recorre cada letra. Son más informales y creativas.</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <p>serif</p>
+          <h4>Ejemplos:</h4>
+          <pre class="line-numbers"><code class="language-css">font-family: Arial, Helvetica, sans-serif;
+font-family: "Times New Roman", Times, serif;
+font-family: "Courier New", Courier, monospace;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado">
+            <p class="fuentesytexto_font-family">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-family-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-family-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-family-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          </div>
+        </article>
+        <article>
           <h3>font-variant-ligatures</h3>
           <p>Se usa para establecer las ligaduras de las fuentes.</p>
           <h4>Sintaxis</h4>
@@ -157,42 +193,7 @@ font-variant-ligatures: no-discretionary-ligatures;
 
           </div>
         </article>
-        <article>
-          <h3>font-family</h3>
-          <p>Se usa para establecer la familia de fuentes del texto.</p>
-          <h4>Sintaxis</h4>
-          <pre
-            class="line-numbers"
-          ><code class="language-css">font-family: family-name|generic-family|initial|inherit;</code></pre>
-          <p>Admite los siguientes valores:</p>
-          <ul>
-            <li>family-name: establece el nombre de la familia de fuentes.</li>
-            <li>generic-family: establece la familia de fuentes genérica.</li>
-          </ul>
-          <p>En CSS hay 5 familias de fuentes genéricas:</p>
-          <ul>
-            <li>serif: tienen un pequeño trazo en los bordes de cada letra. Crean una sensación de formalidad y elegancia.</li>
-            <li>monospace: tienen un ancho fijo. Crean un aspecto mecánico </li>
-            <li>sans-serif: no tienen trazos en los bordes de cada letra. Son más modernas y menos formales.</li>
-            <li>cursive: tienen un trazo que recorre cada letra. Son más informales y creativas.</li>
-            <li>fantasy: tienen un trazo que recorre cada letra. Son más informales y creativas.</li>
-          </ul>
-          <h4>Valor por defecto</h4>
-          <p>serif</p>
-          <h4>Ejemplos:</h4>
-          <pre class="line-numbers"><code class="language-css">font-family: Arial, Helvetica, sans-serif;
-font-family: "Times New Roman", Times, serif;
-font-family: "Courier New", Courier, monospace;
-font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-</code></pre>
-          <h4>Resultado</h4>
-          <div class="fuentesytexto_resultado">
-            <p class="fuentesytexto_font-family">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            <p class="fuentesytexto_font-family-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            <p class="fuentesytexto_font-family-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            <p class="fuentesytexto_font-family-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-          </div>
-        </article>
+        
         <article>
           <h3>font-variant-caps</h3>
           <p>Se usa para establecer el tipo de capitalización de las fuentes.</p>
@@ -284,6 +285,54 @@ font-variant-alternates: annotation(1);
           </div>
 
           <!-- FIN DEL TODO  -->
+        </article>
+        <article>
+          <h3>font-variant-numeric</h3>
+          <p>Se usa para establecer el tipo de numeración de las fuentes.</p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">font-variant-numeric: normal|ordinal|slashed-zero|lining-nums|oldstyle-nums|proportional-nums|tabular-nums|diagonal-fractions|stacked-fractions|inherit;</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li>normal: no se aplica ninguna numeración.</li>
+            <li>ordinal: se aplica la numeración ordinal.</li>
+            <li>slashed-zero: se aplica la numeración con cero barrado.</li>
+            <li>lining-nums: se aplica la numeración de líneas.</li>
+            <li>oldstyle-nums: se aplica la numeración antigua.</li>
+            <li>proportional-nums: se aplica la numeración proporcional.</li>
+            <li>tabular-nums: se aplica la numeración tabular.</li>
+            <li>diagonal-fractions: se aplica la numeración de fracciones diagonales.</li>
+            <li>stacked-fractions: se aplica la numeración de fracciones apiladas.</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <p>normal</p>
+          <h4>Ejemplos:</h4>
+          <pre class="line-numbers"><code class="language-css">font-variant-numeric: normal;
+font-variant-numeric: ordinal;
+font-variant-numeric: slashed-zero;
+font-variant-numeric: lining-nums;
+font-variant-numeric: oldstyle-nums;
+font-variant-numeric: proportional-nums;
+font-variant-numeric: tabular-nums;
+font-variant-numeric: diagonal-fractions;
+font-variant-numeric: stacked-fractions;
+</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado fuentesytexto_font-variant-numeric-0">
+            <p class="fuentesytexto_font-variant-numeric">0123456789 3.14 2.72</p>
+            <p class="fuentesytexto_font-variant-numeric-2">0123456789 3.14 2.72</p>
+            <p class="fuentesytexto_font-variant-numeric-3">0 123456789 3.14 2.72</p>
+            <p class="fuentesytexto_font-variant-numeric-4">0123456789 3.14 2.72</p>
+            <p class="fuentesytexto_font-variant-numeric-5">0123456789 3.14 2.72</p>
+            <p class="fuentesytexto_font-variant-numeric-6">0123456789 3.14 2.72</p>
+            <p class="fuentesytexto_font-variant-numeric-7">0123456789 3.14 2.72</p>
+            <p class="fuentesytexto_font-variant-numeric-8">0123456789 3.14 2.72</p>
+            <p class="fuentesytexto_font-variant-numeric-9">0123456789 3.14 2.72</p>
+          </div>
+
+          <!-- FIN DEL TODO  -->
+          
         </article>
         <article>
           <h3>font-style</h3>
@@ -431,6 +480,34 @@ color: red;
           <h4>Resultado</h4>
           <div class="fuentesytexto_resultado">
             <p class="fuentesytexto_-webkit-text-fill-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          </div>
+        </article>
+        <article>
+          <h2>font-size-adjust</h2>
+          <p>Especifica un factor de ajuste de tamaño de fuente. Esto es util cuando en la propiedad font-family el valor no está disponible, entonces se puede reeemplazar por un "porcentaje" representado en esta propiedad.</p>
+          <h4>Sintaxis</h4>
+          <pre class="line-numbers"><code class="language-css">font-size-adjust: none | number;
+</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li>none: No se aplica ningún ajuste de tamaño de fuente.</li>
+            <li>number: Especifica un factor de ajuste de tamaño de fuente.</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <pre class="line-numbers"><code class="language-css">font-size-adjust: none;
+</code></pre>
+          <h4>Ejemplos</h4>
+          <pre class="line-numbers"><code class="language-css">font-family: Times, serif;
+font-size: 10px;
+
+font-family: Times, serif;
+font-size-adjust: 0.58;
+font-size: 10px;
+</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado">
+            <p class="fuentesytexto_font-size-adjust-no">De dificil lectura </p>
+            <p class="fuentesytexto_font-size-adjust-yes">Un poco más legible </p>
           </div>
         </article>
         <article>

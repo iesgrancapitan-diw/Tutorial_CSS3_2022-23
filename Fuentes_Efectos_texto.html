@@ -120,9 +120,15 @@ text-shadow: 2px 2px 2px black, 4px 4px 4px #000;
           ><code class="language-css">font-variant-ligatures: normal|no-common-ligatures| common-ligatures|historical-lig-value|inherit;</code></pre>
           <p>Admite los siguientes valores:</p>
           <ul>
+
             <li>normal: no se aplica ninguna ligadura.</li>
-            <li>common-ligatures: se aplican las ligaduras comunes. Que pueden ser "fi", "ffi", "th" o parecidos</li>
-            <li>no-common-ligatures: no se aplica ninguna ligadura común.</li>
+            <li>common-ligatures: se aplican las ligaduras comunes.</li>
+            <li>historical-ligatures: se aplican las ligaduras históricas. Que pueden ser "fl", "st" o parecidos</li>
+            <li>no-historical-ligatures: no se aplican las ligaduras históricas.</li>
+            <li>contextual: especifica que se van a utilizar este tipo de ligadura. </li>
+            <li>no-contextual: especifica que no se van a usar.</li>
+            <li>discretionary-ligatures: controla ligaduras específicas de la fuente.</li>
+            <li>no-discretionary-ligatures: no las controla</li>
           </ul>
           <h4>Valor por defecto</h4>
           <p>normal</p>
@@ -130,12 +136,25 @@ text-shadow: 2px 2px 2px black, 4px 4px 4px #000;
           <pre class="line-numbers"><code class="language-css">font-variant-ligatures: normal;
 font-variant-ligatures: common-ligatures;
 font-variant-ligatures: no-common-ligatures;
+font-variant-ligatures: historical-ligatures;
+font-variant-ligatures: no-historical-ligatures;
+font-variant-ligatures: contextual;
+font-variant-ligatures: no-contextual;
+font-variant-ligatures: discretionary-ligatures;
+font-variant-ligatures: no-discretionary-ligatures;
 </code></pre>
           <h4>Resultado</h4>
-          <div class="fuentesytexto_resultado">
-            <p class="fuentesytexto_font-variant-ligatures-normal">fi ffi th</p>
-            <p class="fuentesytexto_font-variant-ligatures-common-ligatures">fi ffi th</p>
-            <p class="fuentesytexto_font-variant-ligatures-no-common-ligatures">fi ffi th</p>
+          <div class="fuentesytexto_resultado fuentesytexto_font-variant-ligatures">
+            <p class="fuentesytexto_font-variant-ligatures-normal">if fi ff tf ft jf fj //normal</p>
+            <p class="fuentesytexto_font-variant-ligatures-common-ligatures">if fi ff tf ft jf fj // common-ligatures</p>
+            <p class="fuentesytexto_font-variant-ligatures-no-common-ligatures">if fi ff tf ft jf fj // no-common-ligatures</p>
+            <p class="fuentesytexto_font-variant-ligatures-historical-ligatures">if fi ff tf ft jf fj // historical-ligatures</p>
+            <p class="fuentesytexto_font-variant-ligatures-no-historical-ligatures">if fi ff tf ft jf fj // no-historical-ligatures</p>
+            <p class="fuentesytexto_font-variant-ligatures-contextual">if fi ff tf ft jf fj // contextual</p>
+            <p class="fuentesytexto_font-variant-ligatures-no-contextual">if fi ff tf ft jf fj // no-contextual</p>
+            <p class="fuentesytexto_font-variant-ligatures-discretionary-ligatures">if fi ff tf ft jf fj //discretionary-ligatures</p>
+            <p class="fuentesytexto_font-variant-ligatures-no-discretionary-ligatures">if fi ff tf ft jf fj // no-discretionary-ligatures</p>
+
           </div>
         </article>
         <article>
@@ -386,10 +405,10 @@ text-orientation: upright;
 text-orientation: sideways;
 </code></pre>
           <h4>Resultado</h4>
-          <div class="fuentesytexto_resultado">
+          <div class="fuentesytexto_resultado fuentesytexto_cols">
             <p class="fuentesytexto_text-orientation">Lorem ipsum dolor sit amet consectetur </p>
-            <p class="fuentesytexto_text-orientation-upright">Lorem ipsum dolor sit amet consectetur </p>
-            <p class="fuentesytexto_text-orientation-sideways">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_text-orientation-upright">Lorem ipsum dolor sit amet  </p>
+            <p class="fuentesytexto_text-orientation-sideways">Lorem ipsum dolor sit amet consectetur </p>
           </div>
         </article>
         <article>

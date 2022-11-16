@@ -103,6 +103,34 @@
     font-variant-ligatures: no-common-ligatures;
 }
 
+.fuentesytexto_font-variant-ligatures-historical-ligatures{
+    font-variant-ligatures: historical-ligatures;
+}
+
+.fuentesytexto_font-variant-ligatures-no-historical-ligatures{
+    font-variant-ligatures: no-historical-ligatures;
+}
+
+.fuentesytexto_font-variant-ligatures-contextual{
+    font-variant-ligatures: contextual;
+}
+
+.fuentesytexto_font-variant-ligatures-no-contextual{
+    font-variant-ligatures: no-contextual;
+}
+
+.fuentesytexto_font-variant-ligatures-discretionary-ligatures{
+    font-variant-ligatures: discretionary-ligatures;
+}
+
+.fuentesytexto_font-variant-ligatures-no-discretionary-ligatures{
+    font-variant-ligatures: no-discretionary-ligatures;
+}
+
+.fuentesytexto_font-variant-ligatures{
+    font-family: Lora, serif;
+}
+
 .fuentesytexto_font-variant-caps-normal{
     font-variant-caps: normal;
 }
@@ -226,7 +254,7 @@
 
 .fuentesytexto_text-orientation{
     text-orientation: mixed;
-    writing-mode: vertical-rl;
+    writing-mode: vertical-lr;
 }
 
 .fuentesytexto_text-orientation-upright{
@@ -236,11 +264,16 @@
 
 .fuentesytexto_text-orientation-sideways{
     text-orientation: sideways;
-    writing-mode: vertical-rl;
+    writing-mode: vertical-lr;
 }
 
 
 .fuentesytexto_-webkit-text-fill-color{
     -webkit-text-fill-color: blue;
     color: red;
+}
+
+.fuentesytexto_cols{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }

@@ -194,8 +194,11 @@ font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
           <h4>Valor por defecto</h4>
           <p>normal</p>
           <h4>Ejemplos:</h4>
+          <p>Como en algunas propiedades se ha tenido que usar más de dos instrucciones, en este caso los ejemplos se representarán como bloques separados, que representan una línea en el resultado, por un salto de línea.</p>
           <pre class="line-numbers"><code class="language-css">font-variant-caps: small-caps;
+
 font-variant-caps: all-small-caps;
+
 font-variant-caps: petite-caps;
 
 font-feature-settings: "unic";
@@ -335,7 +338,7 @@ font-weight: 900;
           ><code class="language-css">text-rendering: auto|optimizeSpeed|optimizeLegibility|geometricPrecision|initial|inherit;</code></pre>
           <p>Admite los siguientes valores:</p>
           <ul>
-            <li>auto: establece el modo de renderizado automático.</li>
+            <li>auto: establece el modo de renderizado automático. Dependiendo del navegador este valor cambia, por ejemplo, en Firefox si la fuente es 20 píxeles o mayor lo interpreta como optimizeLegibility en cambio si esta condición no se aplica se interpreta como optimizeSpeed en los demás navegadores siempre se va a interpretar como optimizeSpeed</li>
             <li>optimizeSpeed: establece el modo de renderizado para optimizar la velocidad.</li>
             <li>optimizeLegibility: establece el modo de renderizado para optimizar la legibilidad. En fuentes menores de 20px utiliza las ligaduras de las letras en sílabas como "fi"</li>
             <li>geometricPrecision: establece el modo de renderizado para optimizar la precisión geométrica.</li>
@@ -343,9 +346,14 @@ font-weight: 900;
           <h4>Valor por defecto</h4>
           <p>auto</p>
           <h4>Ejemplos:</h4>
+          <p>Como en algunas propiedades se ha tenido que usar más de dos instrucciones, en este caso los ejemplos se representarán como bloques separados, que representan una línea en el resultado, por un salto de línea.</p>
           <pre class="line-numbers"><code class="language-css">text-rendering: auto;
+
 text-rendering: optimizeSpeed;
+
 text-rendering: optimizeLegibility;
+font-size: 10px;
+
 text-rendering: geometricPrecision;
 </code></pre>
           <h4>Resultado</h4>

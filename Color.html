@@ -100,9 +100,11 @@
 #colorAgua{
   color: aqua;
 }</code></pre>
-        <div id="colorTomate">Color tomate</div><br>
-        <div id="colorLima">Color lima</div><br>
-        <div id="colorAgua">Color agua</div><br>
+        <div class="container">
+        <div id="colorTomate">Color tomate</div>
+        <div id="colorLima">Color lima</div>
+        <div id="colorAgua">Color agua</div>
+      </div>
         <!-- <img src="img/ej3.png" /> -->
       </article>
       <article>
@@ -110,24 +112,22 @@
           currentcolor<br />
         </h3>
         <p>
-          Tambien existe la keywork currentcolor, que nos sirve para definir un color por defecto, y despues con poner currentcolor en otro lado estamos usando<br>
-      el color que definimos al principio
+          Tambien existe la keyword currentcolor, que nos sirve para definir un color por defecto, y despues con poner currentcolor en otro lado estamos usando<br>
+      el color que definimos al principio. Currentcolor seria es una variable que nosotros definimos al principio del codigo de donde vayamos a usar el currentcolor
+      y a ese currentColor le asociamos un color, para después usar esa variable donde queramos
         </p>
         <h4>Sintaxis</h4>
         <pre
           class="line-numbers"><code class="language-css">
 p{
-  color:[currentcolor : (color)];
-}
-div{
-  background-color:[currentcolor];
-}
-;</code></pre>
+  color:[color];
+  border: [currentcolor]
+};</code></pre>
         <h4>Ejemplos:</h4>
-        <pre class="line-numbers"><code class="language-css">#currentColor{
-  color:blue;
-  border:2px solid currentColor;
-}</code></pre>
+        <pre class="line-numbers"><code class="language-css">div{
+color:blue; /*Ahora este color es el que va a estar asociado a currentcolor, serviria como una variable*/
+border:3px solid currentColor; /*Y cuando queramos darle color al borde solo ponemos la variable currentColor, que contiene el color azul*/
+        </code></pre>
       <div id="currentColor">Ejemplo currentcolor</div>
       </article>
       <article>
@@ -158,9 +158,11 @@ h2{
 h3{
   color:#009b00;
 }</code></pre>
-        <div id="colorRed">Color rojo con hexadecimal</div><br>
-        <div id="colorBlue">Color azul con hexadecimal</div><br>
-        <div id="colorGreen">Color verde con hexadecimal</div><br>
+<div class="container">
+        <div id="colorRed">Color rojo con hexadecimal</div>
+        <div id="colorBlue">Color azul con hexadecimal</div>
+        <div id="colorGreen">Color verde con hexadecimal</div>
+      </div>
         <!-- <img src="img/ej4.png" /> -->
       </article>
       <article>
@@ -181,8 +183,10 @@ background-color: #0080FF;
 #hexadecimalConAlpha{
 background-color: #0080FF80;
 }</code></pre>
+<div class="container">
         <div id="hexadecimalSinAlpha">Hexadimal sin canal alpha</div><br>
         <div id="hexadecimalConAlpha">Hexadimal con canal alpha</div>
+      </div>
       </article>
       <article>
         <h3 id="coloresRGB">Colores con RGB</h3>
@@ -234,9 +238,11 @@ background-color: #0080FF80;
 #colorMoradoRGB {
   color: rgb(100%, 3%, 100%);
 }</code></pre>
-        <div id="colorRojoRGB">Color rojo apagado con rgb</div><br>
-        <div id="colorGrisRGB">Color gris con rgb</div><br>
-        <div id="colorMoradoRGB">Color morado con rgb</div><br>
+<div class="container">
+        <div id="colorRojoRGB">Color rojo apagado con rgb</div>
+        <div id="colorGrisRGB">Color gris con rgb</div>
+        <div id="colorMoradoRGB">Color morado con rgb</div>
+      </div>
         <!-- <img src="img/ej5.png" /> -->
       </article>
       <article>
@@ -265,8 +271,10 @@ background-color: #0080FF80;
 #textoSinOpacidad{
   color: rgba(255,0,0,1);
 }</code></pre>
-        <div id="textoConOpacidad">Texto con una opacidad del 0.5%</div><br>
+<div class="container">
+        <div id="textoConOpacidad">Texto con una opacidad del 0.5%</div>
         <div id="textoSinOpacidad">Texto sin opacidad</div>
+      </div>
         <!-- <img src="img/ej2.png" /> -->
       </article>
       <article>
@@ -311,23 +319,24 @@ background-color: #0080FF80;
 #hslAzul{
   color:hsl(240,0%,50%);
 }</code></pre>
-        <div id="hslVerdeClaro">Color verde claro</div><br>
-        <div id="hslVerdeOscuro">Color verde oscuro</div><br>
-        <div id="hslAzul">Color azul pero saturacion a 0%</div><br>
+<div class="container">
+        <div id="hslVerdeClaro">Color verde claro</div>
+        <div id="hslVerdeOscuro">Color verde oscuro</div>
+        <div id="hslAzul">Color azul pero saturacion a 0%</div>
+      </div>
         <!-- <img src="img/ej6.png" /> -->
       </article>
       <article>
         <h3 id="coloresHSLA">Definir colores con HSLA</h3>
         <p>
-          HSLA es lo mismo que HSL pero añadiendo el canal alpha, que nos deja
-          definir una opacidad del color
+          El significado de las siglas HSLA son, Hue (tono), Saturation (saturacion), Lightness (luminosidad), Alpha (opacidad)
         </p>
         <h4>Sintaxis</h4>
         <pre class="line-numbers"><code class="language-css">h1{
   hsla( tono , saturacion , luminosidad, alpha )
 }</code></pre>
         <p>
-          HSLA tiene los mismos valores que HSL, tono tiene un rango de 0-360,
+          HSLA tiene los mismos valores que HSL, tono tiene un rango de 0-360, donde 0 es rojo, 120 es verde y 240 es azul
           saturación puede ser desde 0 a 100%, luminosidad del 0% al 100%.
           <br />
           Por último el canal alpha que con él podemos elegir la opacidad que
@@ -345,9 +354,11 @@ background-color: #0080FF80;
 #hslaVerde3 {
   color: hsla(120, 100%, 50%, 1);
 }</code></pre>
-        <div id="hslaVerde1">Color verde poca transparencia</div><br>
-        <div id="hslaVerde2">Color verde mitad transparencia</div><br>
-        <div id="hslaVerde3">Color verde mucha transparencia</div><br>
+<div class="container">
+        <div id="hslaVerde1">Color verde poca transparencia</div>
+        <div id="hslaVerde2">Color verde mitad transparencia</div>
+        <div id="hslaVerde3">Color verde mucha transparencia</div>
+      </div>
         <!-- <img src="img/ej7.png" /> -->
       </article>
       <article>
@@ -390,16 +401,18 @@ background-color: #0080FF80;
   height: 100px;
   background: linear-gradient(to left, purple, brown);
 }
-#grad9{
-  height: 100px;
-  background:linear-gradient(180deg,blue,green)
+
+#grad6 {
+  height: 280px;
+  background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
 }
   </code></pre>
+  <div class="container">
         <div id="grad1">Degradado hacia abajo</div><br>
         <div id="grad2">Degradado hacia arriba</div><br>
         <div id="grad3">Degradado hacia derecha</div><br>
         <div id="grad4">Degradado hacia izquierda</div><br>
-        <div id="grad9">Degradado con angulos</div>
+      </div>
         <!-- <img src="img/ej8.png" width="1264px" /> -->
         <p>Tambien podemos tener un degradado con varios colores, e incluso hacer un arcoiris con degradados</p>
         <h4>Ejemplos:</h4>
@@ -407,12 +420,11 @@ background-color: #0080FF80;
   height: 280px;
   background: linear-gradient(to bottom, lime,aqua,crimson,deepPink);
 }
-#grad6 {
-  height: 280px;
-  background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
-}</code></pre>
+</code></pre>
+<div class="container">
         <div id="grad5">Degradado con nombres de color</div><br>
         <div id="grad6">Arcoiris</div>
+      </div>
         <!-- <img src="img/ej9.png" width="1264px" /> -->
         <p>Existe una funcion que podemos repetir el degradado cada X pixeles, también podemos darle transparencia a un
           degradado con rgba</p>
@@ -421,19 +433,104 @@ background-color: #0080FF80;
   height: 100px;
   background: repeating-linear-gradient(red ,yellow 20px);
 }
-#grad8 {
-  height: 100px;
-  background: linear-gradient(to left,rgba(255,0,0,0.0),rgba(255,0,0,1));
-}
+
 #grad11 {
   height: 200px;
   width: 200px;
   background: radial-gradient(blue,aqua,lime);
 }</code></pre>
+<div class="container">
         <div id="grad7">Funcion repeating-linear-gradient</div><br>
-        <div id="grad8">Transparencia en degradado</div>
-        <div id="grad10">Stacked gradient</div>
+      </div>
         <!-- <img src="img/ej10.png" width="1264px" /> -->
+      </article>
+      <article>
+        <h3>Degradado lineal con transparencia</h3>
+        <p>
+          Podemos añadirle transparencia a un degradado gracias al canal alpha, podemos hacer que empieze en un color y vaya haciendose
+          transparente a medida que va hacia X lado
+        </p>
+        <h4>Sintaxis</h4>
+        <pre class="line-numbers"><code class="language-css">div{
+background: linea-gradient(lado que queramos que vaya,color que empieza, color que acaba con rgba para que tenga transparencia)
+        </code></pre>
+        <p>
+        </p>
+        <h4>Ejemplos:</h4>
+        <pre class="line-numbers"><code class="language-css">#grad8 {
+  background: linear-gradient(to left,rgba(255,0,0,0.0),rgba(255,0,0,1));
+}</code></pre>
+<div class="container">
+  <div id="grad8">Transparencia en degradado</div>
+  
+</div>
+      </article>
+      <article>
+        <h3>Degradado lineal stacked</h3>
+        <p>
+          Podemos stackear muchos degradados que empiezen desde un sitio en concreto, para que su color se mezcle
+        </p>
+        <h4>Ejemplos:</h4>
+        <pre class="line-numbers"><code class="language-css">#grad10 {
+  background: linear-gradient(
+  200deg,
+  rgba(250, 0, 0, 0.8),
+  rgba(255, 0, 0, 0) 70.7%
+),
+  linear-gradient(120deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.7%),
+  linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+}</code></pre>
+<div class="container">
+  <div id="grad10">Stacked gradient</div>
+</div>
+      </article>
+      <article>
+        <h3>Degradado lineal con angulos</h3>
+        <p>
+          
+        </p>
+        <h4>Sintaxis</h4>
+        <pre class="line-numbers"><code class="language-css">div{
+background:linear-gradient(Grados de la posicion del degradado, el siguiente ejemplo tiene
+una disposicion diagonal, con dos colores se reparten en el degradado de manera equitativa)
+}</code></pre>
+        <p>
+        </p>
+        <h4>Ejemplos:</h4>
+        <pre class="line-numbers"><code class="language-css">#grad9{
+  height: 100px;
+  background:linear-gradient(45deg,blue,green)
+}</code></pre>
+<div class="container">
+  <div id="grad9">Degradado con angulos</div> 
+</div>
+      </article>
+      <article>
+        <h3>Degradado lineal con colors stops</h3>
+        <p>
+          Un degradado con color stop significa que tiene una parada de color, es decir, que el primer color estaría sin degradado hasta el % del elemento que nosotros digamos y
+          después empezaría a degradarse hasta el segundo color
+        </p>
+        <h4>Sintaxis</h4>
+        <pre class="line-numbers"><code class="language-css">div{
+background: linear-gradient(primerColor %[del tamaño del elemento, en este caso div],segundoColor)</code></pre>
+        <p>
+        </p>
+        <h4>Ejemplos:</h4>
+        <pre class="line-numbers"><code class="language-css">#grad23{
+  height: 200px;
+  width: 200px;
+  background: linear-gradient(#00f 40%, #000);
+}
+#grad24{
+  height: 200px;
+  width: 200px;
+  background: linear-gradient(#00f 80%, #000);
+}</code></pre>
+<div class="container">
+  <div id="grad23"></div>
+  <div id="grad24"></div>
+</div>
       </article>
       <article>
         <h3 id="degradadoRadial">Degradado radial</h3>
@@ -449,26 +546,138 @@ background-color: #0080FF80;
         </p>
         <h4>Ejemplos:</h4>
         <pre class="line-numbers"><code class="language-css">#grad11 {
-  height: 200px;
-  width: 200px;
   background: radial-gradient(blue,aqua,lime);
 }
 #grad12 {
-  height: 120px;
   background: radial-gradient(red 10%, yellow 20%, green 50%);
-}
-#grad21{
-  height: 100px;
-  background: linear-gradient(to right,rgb(100%,0%,0%),25%,rgb(50%,50%,100%));
 }</code></pre>
+<div class="container">
       <div id="grad11">Degradado radial</div>
       <div id="grad12">Degradado radial con %</div>
-      <div id="grad20">Degradado radial con color stop</div><br>
-      <div id="grad21">Degradado radial con color hint</div>
-      <!-- <div id="grad13"></div>
-      <div id="grad14"></div>
-      <div id="grad15"></div>
-      <div id="grad16"></div> -->
+    </div>
+    <p>Tambien tenemos el metodo repeat en el degradado radial, y se define de esta forma</p>
+    <h4>Sintaxis</h4>
+    <pre class="line-numbers"><code class="language-css">div{
+background: repeating-radial-gradient(donde empieza el degradado,en que color empieza, que color sigue,
+y que color acaba[y podemos poner X pixeles para que el color se repita cada X pixeles]);</code></pre>
+<div class="container">
+  <div id="grad22"></div>
+</div>
+      </article>
+      <article>
+        <h3>Degradado radial con position</h3>
+        <p>
+          Con la posicion podemos definir en que lado queremos empezar el degradado
+        </p>
+        <h4>Sintaxis</h4>
+        <pre class="line-numbers"><code class="language-css">div{
+  background: radial-gradient(posicion,color,color,color);
+}</code></pre>
+        <p>
+        </p>
+        <h4>Ejemplos:</h4>
+        <pre class="line-numbers"><code class="language-css">#grad25{
+  background: radial-gradient(at top,red,blue,green);
+}</code></pre>
+<div class="container">
+   <div id="grad25"></div>
+   <div id="grad26"></div>
+</div>
+      </article>
+      <article>
+        <h3>Degradado radial con ending-shape</h3>
+        <p>
+          El ending-shape su valor puede ser un circle haciendo que la sombra del degradado
+          sea un circulo o un ellipse
+        </p>
+        <h4>Sintaxis</h4>
+        <pre class="line-numbers"><code class="language-css">div{
+background: radial-gradient(lo que queremos que sea [ellipse/circle],color,color,color)
+</code></pre>
+        <p>
+        </p>
+        <h4>Ejemplos:</h4>
+        <pre class="line-numbers"><code class="language-css">#grad27{
+  background: radial-gradient(circle,red 20%,blue 50%,rgb(11, 215, 198) 0%);
+}
+#grad28{
+  background: radial-gradient(ellipse,red 20%,blue 50%,rgb(11, 215, 198) 0%);
+}</code></pre>
+<div class="container">
+  <div id="grad27"></div>
+  <div id="grad28"></div>
+</div>
+      </article>
+      <article>
+        <h3>Degradado radial con size</h3>
+        <p>
+          Podemos definir el tamaño de un degradado radial con %
+        </p>
+        <h4>Sintaxis</h4>
+        <pre class="line-numbers"><code class="language-css">div{
+background: radial-gradient([primer % que es el horizontal] [segundo % que es el vertical],color,color,color)</code></pre>
+        <p>
+        </p>
+        <h4>Ejemplos:</h4>
+        <pre class="line-numbers"><code class="language-css">#grad29{
+background: radial-gradient(50% 30% at center,green,orange,black);
+}
+#grad30{
+  background: radial-gradient(90% 10% at center,green,orange,black);
+}</code></pre>
+<div class="container">
+  <div id="grad29"></div>
+  <div id="grad30"></div>
+   
+</div>
+      </article>
+      <article>
+        <h3>Degradado radial con color stop</h3>
+        <p>
+          Con color stops definimos que colores queramos que tenga el degradado y donde deberían de parar, normalmente estan separados equitativamente
+          pero podemos darle el tamaño del color que queramos
+        </p>
+        <h4>Sintaxis</h4>
+        <pre class="line-numbers"><code class="language-css">div{
+background: radial-gradient(hacia donde va el degradado,color que empieza,color que sigue,color con el que acaba el degradado)
+        </code></pre>
+        <p>
+        </p>
+        <h4>Ejemplos:</h4>
+        <pre class="line-numbers"><code class="language-css"></code></pre>
+<div class="container">
+  <div id="grad31"></div>
+  <div id="grad32"></div>
+  <div id="grad33"></div>
+   
+</div>
+      </article>
+      <article>
+        <h3>Degradado radial con color hint</h3>
+        <p>
+          El color hint define que color entre los dos color stop tiene que llegar
+        </p>
+        <h4>Sintaxis</h4>
+        <pre class="line-numbers"><code class="language-css">div{
+background: radial-gradient(color,poncentaje,color)
+}</code></pre>
+        <p>
+        </p>
+        <h4>Ejemplos:</h4>
+        <pre class="line-numbers"><code class="language-css">#grad34{
+  height: 200px;
+  width: 200px;
+  background: radial-gradient(red,10%,blue);
+}
+#grad35{
+  height: 200px;
+  width: 200px;
+  background: radial-gradient(red,40%,blue);
+}</code></pre>
+<div class="container">
+  <div id="grad34">color stop</div><br>
+  <div id="grad35">color hint</div>
+</div>
       </article>
       <article>
         <h3 id="degradadoConico">Degradado cónico</h3>
@@ -503,9 +712,79 @@ div{
   width: 250px;
   background:cronic-gradient(red 0deg,red 90deg,yellow 90deg, yellow 180deg, green 180deg,green 270deg,blue 270deg, blue 360deg);
 }</code></pre>
+<div class="container">
       <div id="grad17"></div><br>
       <div id="grad18"></div>
       <div id="grad19"></div>
+      <div id="grad42"></div>
+    </div>
+      </article>
+      <article>
+        <h3>Degradado conico angulo de inicio</h3>
+        <p>
+          Especificar desde donde sale el degradado con un angulo
+        </p>
+        <h4>Sintaxis</h4>
+        <pre class="line-numbers"><code class="language-css">div{
+background: conic-gradient(color grados, grados, color grados)
+        </code></pre>
+        <p>
+        </p>
+        <h4>Ejemplos:</h4>
+        <pre class="line-numbers"><code class="language-css">#grad43{
+  background: conic-gradient(red 40grad,80grad, blue 360grad);
+}</code></pre>
+<div class="container">
+  <div id="grad43"></div>
+  <div id="grad44"></div>
+  <div id="grad45"></div>
+</div>
+      </article>
+      <article>
+        <h3>Degradado conico con posicion</h3>
+        <p>
+          Tambien podemos posicionar el degradado cónico con posicion
+        </p>
+        <h4>Sintaxis</h4>
+        <pre class="line-numbers"><code class="language-css">div{
+background: conic-gradient(posicion donde queramos el degradado conico, color %,color %, color %)
+        </code></pre>
+        <p>
+        </p>
+        <h4>Ejemplos:</h4>
+        <pre class="line-numbers"><code class="language-css">#grad36{
+  background: conic-gradient(at 0% 30%, red 20%,yellow 30%,rgb(37, 168, 255) 50%);
+}
+#grad37{
+  background: conic-gradient(at 20% 30%, red 20%,yellow 40%,rgb(37, 168, 255) 90%);
+}</code></pre>
+<div class="container">
+  <div id="grad36"></div>
+  <div id="grad37"></div>
+   
+</div>
+      </article>
+      <article>
+        <h3>Degradado conico con angulo de color</h3>
+        <p>
+          Por defecto el color stops que especifiquemos esta espaciado de manera equitativamente alrededor del circulo, pero podemos
+          posicionar el color al principio del degradado cónico usando la palabra from seguido de el grado o la longuitud
+        </p>
+        <h4>Sintaxis</h4>
+        <pre class="line-numbers"><code class="language-css">div{
+  background: conic-gradient(from [longuitud],color,color,color,color%)
+}</code></pre>
+        <p>
+        </p>
+        <h4>Ejemplos:</h4>
+        <pre class="line-numbers"><code class="language-css">#grad39{
+  background: conic-gradient(from 40deg,green,yellow,blue,red);
+}</code></pre>
+<div class="container">
+   <div id="grad39"></div>
+   <div id="grad40"></div>
+   <div id="grad41"></div>
+</div>
       </article>
     </section>
   </main>

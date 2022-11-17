@@ -354,21 +354,21 @@
                 <p>Define el tamaño de la imagen de fondo.</p>
                 <h4>Sintaxis</h4>
                 <pre
-                    class="line-numbers"><code class="language-css">background-size: [auto | tamaño(px px) | tamaño(% %) | contain | cover];</code></pre>
-                <p>Definiremos a continuación más detallado: </p>
+                    class="line-numbers"><code class="language-css">background-size: [auto | size(px px) | size(% %) | contain | cover];</code></pre>
+                <p>Definiremos a continuación sus propiedades más detalladas: </p>
                 <ul>
                     <li><b>auto: </b>La imagen de fondo conservará su tamaño original.
                         Por ejemplo, esta imagen de fondo tiene un tamaño de 960 px por 640 px. Su relación de aspecto
                         es de 3 por 2, es más grande que su
                         contenedor (que tiene una altura de 150 px) y, por lo tanto, se recortará .</li>
-                    <li><b>tamaño en pixeles: </b>Puede especificar un tamaño en píxeles: el primer valor es el tamaño
+                    <li><b>size (pixeles): </b>Puede especificar un tamaño en píxeles: el primer valor es el tamaño
                         horizontal, el segundo es el tamaño vertical.</li>
-                    <li><b>tamaño en porcentaje: </b>Puede utilizar valores porcentuales. Tenga en cuenta que esto puede
+                    <li><b>size (porcentaje): </b>Puede utilizar valores porcentuales. Tenga en cuenta que esto puede
                         alterar la relación de
                         aspecto de la imagen de fondo y generar resultados inesperados.</li>
-                    <li><b>contain: </b>La palabra clave containcambiará el tamaño de la imagen de fondo para asegurarse
+                    <li><b>contain: </b>La palabra clave contain cambiará el tamaño de la imagen de fondo para asegurarse
                         de que permanezca totalmente visible.</li>
-                    <li><b>cover: </b>La palabra clave covercambiará el tamaño de la imagen de fondo para asegurarse de
+                    <li><b>cover: </b>La palabra clave cover cambiará el tamaño de la imagen de fondo para asegurarse de
                         que el elemento esté completamente cubierto.</li>
                 </ul>
 
@@ -421,7 +421,6 @@
                 <br />
             </article>
 
-
             <article>
                 <h3>Background-repeat</h3>
                 <p>La propiedad CSS establece <b>cómo se repiten las imágenes de fondo.</b>Una imagen de fondo puede
@@ -437,8 +436,7 @@
                     <li><b>repeat-x: </b>La imagen de fondo solo se repetirá horizontalmente.</li>
                     <li><b>repeat-y: </b>La imagen de fondo solo se repetirá verticalmente.</li>
                     <li><b>no-repeat: </b>La imagen no se repite (y, por lo tanto, el área de pintura de la imagen de
-                        fondo no
-                        estará necesariamente cubierta por completo).</li>
+                        fondo no estará necesariamente cubierta por completo).</li>
                     <li><b>space: </b>La imagen se repite tanto como sea posible sin recorte. La primera y la última
                         imagen se fijan a ambos lados
                         del elemento y los espacios en blanco se distribuyen uniformemente entre las imágenes.</li>

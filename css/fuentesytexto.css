@@ -119,7 +119,7 @@
 }
 
 .fuentesytexto_font-variant-ligatures-discretionary-ligatures {
-    font-variant-ligatures: discretionary-ligatures; 
+    font-variant-ligatures: discretionary-ligatures;
 }
 
 .fuentesytexto_font-variant-ligatures-no-discretionary-ligatures {
@@ -278,24 +278,34 @@
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+
 .fuentesytexto_font-variant-numeric-0 {
-    font-family: 'Fira Sans', sans-serif;
+    font-family: none;
 }
 
 .fuentesytexto_font-variant-numeric {
     font-variant-numeric: normal;
 }
 
+@font-face {
+    font-family: "Warnock Pro";
+    src: url(WarnockPro-Regular.otf);
+}
+
+@font-face {
+    font-family: "HypatiaSansPro-Regular";
+    src: url(HypatiaSansPro-Regular.otf);
+}
+
 .fuentesytexto_font-variant-numeric-2 {
+    font-feature-settings: "ordn";
+    font-family: "Warnock Pro", serif;
     font-variant-numeric: ordinal;
 }
 
-.fuentesytexto_font-variant-numeric-3 { 
+.fuentesytexto_font-variant-numeric-3 {
     font-variant-numeric: slashed-zero;
-}
-
-.fuentesytexto_font-variant-numeric-4 {
-    font-variant-numeric: lining-nums;
+    font-family: 'Noto Sans Mono', monospace;
 }
 
 .fuentesytexto_font-variant-numeric-5 {
@@ -303,10 +313,12 @@
 }
 
 .fuentesytexto_font-variant-numeric-6 {
+    font-family: 'HypatiaSansPro-Regular', sans-serif;
     font-variant-numeric: proportional-nums;
 }
 
 .fuentesytexto_font-variant-numeric-7 {
+    font-family: 'HypatiaSansPro-Regular', sans-serif;
     font-variant-numeric: tabular-nums;
 }
 
@@ -315,18 +327,100 @@
 }
 
 .fuentesytexto_font-variant-numeric-9 {
+    font-family: 'Ubuntu Mono', monospace;
     font-variant-numeric: stacked-fractions;
 }
 
-.fuentesytexto_font-size-adjust-yes{
+.fuentesytexto_font-size-adjust-yes {
     font-family: Times, serif;
     font-size-adjust: 0.58;
     font-size: 10px;
 }
 
-.fuentesytexto_font-size-adjust-no{
+.fuentesytexto_font-size-adjust-no {
     font-family: Times, serif;
     font-size-adjust: none;
     font-size: 10px;
 }
 
+.fuentesytexto_font-variant-settings-normal {
+    font-variation-settings: normal;
+}
+
+@font-face {
+    font-family: "Amstelvar VF";
+    src: url(Amstelvar-Roman[wdth\,wght\,opsz].ttf);
+}
+
+.fuentesytexto_font-variant-settings-wght {
+    font-variation-settings: "wght" 900;
+    font-family: "Amstelvar VF", Georgia, serif;
+}
+
+.fuentesytexto_font-variant-settings-wdth {
+    font-variation-settings: "wdth" 900;
+    font-family: "Amstelvar VF", Georgia, serif;
+}
+
+.fuentesytexto_font-variant-settings-opsz {
+    font-variation-settings: "opsz" 10;
+    font-family: "Amstelvar VF", Georgia, serif;
+}
+
+.fuentesytexto_font-variant-settings-ital {
+    font-variation-settings: "ital" 1;
+    font-family: "Amstelvar VF", Georgia, serif;
+}
+
+.fuentesytexto_font-variant-settings-slnt {
+    font-family: "Roboto VF", Helvetica, sans-serif;
+    font-variation-settings: "slnt" 12;
+}
+
+@font-face {
+    src: url(LeagueMono-VF.ttf) format('truetype');
+    font-family: League;
+    font-style: normal;
+    font-stretch: 50% 200%
+}
+
+.fuentesytexto_font-stretch {
+    font-size: 1.2em;
+    font-family: League, sans-serif;
+}
+
+.fuentesytexto_font-stretch-normal {
+    font-stretch: normal;
+}
+
+.fuentesytexto_font-stretch-ultra-condensed {
+    font-stretch: ultra-condensed;
+}
+
+.fuentesytexto_font-stretch-extra-condensed {
+    font-stretch: extra-condensed;
+}
+
+.fuentesytexto_font-stretch-condensed {
+    font-stretch: condensed;
+}
+
+.fuentesytexto_font-stretch-semi-condensed {
+    font-stretch: semi-condensed;
+}
+
+.fuentesytexto_font-stretch-semi-expanded {
+    font-stretch: semi-expanded;
+}
+
+.fuentesytexto_font-stretch-expanded {
+    font-stretch: expanded;
+}
+
+.fuentesytexto_font-stretch-extra-expanded {
+    font-stretch: extra-expanded;
+}
+
+.fuentesytexto_font-stretch-ultra-expanded {
+    font-stretch: ultra-expanded;
+}

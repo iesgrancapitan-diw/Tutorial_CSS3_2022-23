@@ -15,6 +15,8 @@
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
     />
+   
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/estilos.css" />
     <link rel="stylesheet" href="css/prism.css" />
@@ -22,6 +24,10 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&effect=shadow-multiple|fire" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
     <script src="js/prism.js"></script>
   </head>
   <body>
@@ -112,6 +118,56 @@ text-shadow: 2px 2px 2px black, 4px 4px 4px #000;
       </section>
       <section>
         <article>
+          <h3>font-stretch</h3>
+          <p>Se usa para establecer la extensión de la fuente.</p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">font-stretch: normal|ultra-condensed|extra-condensed|condensed|semi-condensed|semi-expanded|expanded|extra-expanded|ultra-expanded|initial|inherit;</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li>normal: establece la extensión normal de la fuente.</li>
+            <li>ultra-condensed: establece la extensión ultra-condensada de la fuente.</li>
+            <li>extra-condensed: establece la extensión extra-condensada de la fuente.</li>
+            <li>condensed: establece la extensión condensada de la fuente.</li>
+            <li>semi-condensed: establece la extensión semi-condensada de la fuente.</li>
+            <li>semi-expanded: establece la extensión semi-expandida de la fuente.</li>
+            <li>expanded: establece la extensión expandida de la fuente.</li>
+            <li>extra-expanded: establece la extensión extra-expandida de la fuente.</li>
+            <li>ultra-expanded: establece la extensión ultra-expandida de la fuente.</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <p>normal</p>
+          <h4>Ejemplos:</h4>
+          <p>He usado la fuente League</p>
+          <pre class="line-numbers"><code class="language-css">font-family: League, sans-serif;
+
+font-stretch: normal;
+font-stretch: ultra-condensed;
+font-stretch: extra-condensed;
+font-stretch: condensed;
+font-stretch: semi-condensed;
+font-stretch: semi-expanded;
+font-stretch: expanded;
+font-stretch: extra-expanded;
+font-stretch: ultra-expanded;
+</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado fuentesytexto_font-stretch ">
+            <p class="fuentesytexto_font-stretch-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="fuentesytexto_font-stretch-ultra-condensed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="fuentesytexto_font-stretch-extra-condensed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="fuentesytexto_font-stretch-condensed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.orem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="fuentesytexto_font-stretch-semi-condensed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elitLorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="fuentesytexto_font-stretch-semi-expanded">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="fuentesytexto_font-stretch-expanded">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="fuentesytexto_font-stretch-extra-expanded">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="fuentesytexto_font-stretch-ultra-expanded">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+
+
+        </article>
+        <article>
           <h3>font-family</h3>
           <p>Se usa para establecer la familia de fuentes del texto.</p>
           <h4>Sintaxis</h4>
@@ -193,7 +249,54 @@ font-variant-ligatures: no-discretionary-ligatures;
 
           </div>
         </article>
-        
+        <article>
+          <h3>font-variant-settings</h3>
+          <p>Esta función solo funciona en el navegador Firefox.</p>
+          <p>Se usa para establecer las variantes de las fuentes.</p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">font-variant-settings: normal|wght|wdth|slnt|ital|opsz|inherit;</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li>normal: no se aplica ninguna variante.</li>
+            <li>wght: especifica el peso de la fuente.</li>
+            <li>wdth: especifica el ancho de la fuente.</li>
+            <li>slnt: especifica la inclinación de la fuente.</li>
+            <li>ital: especifica si la fuente es cursiva.</li>
+            <li>opsz: especifica el porcentaje de "efecto optico que se le aplica a la fuente".</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <p>normal</p>
+          <h4>Ejemplos:</h4>
+          <pre class="line-numbers"><code class="language-css">font-variation-settings: normal;
+
+font-variation-settings: "wght" 900;
+font-family: "Amstelvar VF", Georgia,serif;
+
+font-variation-settings: "wdth" 900;
+font-family: "Amstelvar VF", Georgia,serif;
+
+font-family: "Roboto VF", Helvetica, sans-serif;
+font-variation-settings: "slnt" 12;
+
+font-variation-settings: "ital" 1;
+font-family: "Amstelvar VF", Georgia,serif;
+
+font-variation-settings: "opsz" 10;
+font-family: "Amstelvar VF", Georgia,serif;
+</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado fuentesytexto_font-variant-settings">
+            <p class="fuentesytexto_font-variant-settings-normal">if fi ff tf ft jf fj </p>
+            <p class="fuentesytexto_font-variant-settings-wght">if fi ff tf ft jf fj </p>
+            <p class="fuentesytexto_font-variant-settings-wdth">if fi ff tf ft jf fj</p>
+            <p class="fuentesytexto_font-variant-settings-slnt">if fi ff tf ft jf fj </p>
+            <p class="fuentesytexto_font-variant-settings-ital">if fi ff tf ft jf fj ss01</p>
+            <p class="fuentesytexto_font-variant-settings-opsz">if fi ff tf ft jf fj ss01 ss02</p>
+          </div>
+
+        </article>
         <article>
           <h3>font-variant-caps</h3>
           <p>Se usa para establecer el tipo de capitalización de las fuentes.</p>
@@ -308,27 +411,40 @@ font-variant-alternates: annotation(1);
           <h4>Valor por defecto</h4>
           <p>normal</p>
           <h4>Ejemplos:</h4>
+          <p>Algunos parámetros solo funcionan con unas fuentes específicas</p>
+          <p>Como en algunas propiedades se ha tenido que usar más de dos instrucciones, en este caso los ejemplos se representarán como bloques separados, que representan una línea en el resultado, por un salto de línea.</p>
           <pre class="line-numbers"><code class="language-css">font-variant-numeric: normal;
+
+font-family: "Warnock Pro" , serif;
 font-variant-numeric: ordinal;
+
+font-family: 'Noto Sans Mono', monospace;
 font-variant-numeric: slashed-zero;
-font-variant-numeric: lining-nums;
+
 font-variant-numeric: oldstyle-nums;
+
+font-family: 'HypatiaSansPro-Regular', sans-serif;
 font-variant-numeric: proportional-nums;
+
+font-family: 'HypatiaSansPro-Regular', sans-serif;
 font-variant-numeric: tabular-nums;
+
 font-variant-numeric: diagonal-fractions;
+
+font-family: 'Ubuntu Mono', monospace;
 font-variant-numeric: stacked-fractions;
 </code></pre>
           <h4>Resultado</h4>
           <div class="fuentesytexto_resultado fuentesytexto_font-variant-numeric-0">
             <p class="fuentesytexto_font-variant-numeric">0123456789 3.14 2.72</p>
-            <p class="fuentesytexto_font-variant-numeric-2">0123456789 3.14 2.72</p>
-            <p class="fuentesytexto_font-variant-numeric-3">0 123456789 3.14 2.72</p>
-            <p class="fuentesytexto_font-variant-numeric-4">0123456789 3.14 2.72</p>
+            
+            <p class="fuentesytexto_font-variant-numeric-2">1st</p>
+            <p class="fuentesytexto_font-variant-numeric-3">0123456789 3.14 2.
             <p class="fuentesytexto_font-variant-numeric-5">0123456789 3.14 2.72</p>
             <p class="fuentesytexto_font-variant-numeric-6">0123456789 3.14 2.72</p>
             <p class="fuentesytexto_font-variant-numeric-7">0123456789 3.14 2.72</p>
-            <p class="fuentesytexto_font-variant-numeric-8">0123456789 3.14 2.72</p>
-            <p class="fuentesytexto_font-variant-numeric-9">0123456789 3.14 2.72</p>
+            <p class="fuentesytexto_font-variant-numeric-8">5/5 709/780</p>
+            <p class="fuentesytexto_font-variant-numeric-9">5/5 709/780</p>
           </div>
 
           <!-- FIN DEL TODO  -->

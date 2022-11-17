@@ -1,13 +1,10 @@
-.border-style-ejemplos1 {
+.border-style-ejemplos {
     display: inline-block;
-    width: 19%;
+    width: 100px;
     padding: 1px;
-}
-
-.border-style-ejemplos2 {
-    display: inline-block;
-    width: 19%;
-    padding: 1px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 10px;
 }
 
 #border-style-dotted {

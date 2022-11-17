@@ -425,7 +425,9 @@ background-color: #0080FF80;
         <div id="grad5">Degradado con nombres de color</div><br>
         <div id="grad6">Arcoiris</div>
       </div>
-        <!-- <img src="img/ej9.png" width="1264px" /> -->
+      </article>
+      <article>
+        <h3 id="degradadoLineal">Degradado repeat lineal</h3>
         <p>Existe una funcion que podemos repetir el degradado cada X pixeles, también podemos darle transparencia a un
           degradado con rgba</p>
         <h4>Ejemplos:</h4>
@@ -442,7 +444,6 @@ background-color: #0080FF80;
 <div class="container">
         <div id="grad7">Funcion repeating-linear-gradient</div><br>
       </div>
-        <!-- <img src="img/ej10.png" width="1264px" /> -->
       </article>
       <article>
         <h3>Degradado lineal con transparencia</h3>
@@ -487,8 +488,11 @@ background: linea-gradient(lado que queramos que vaya,color que empieza, color q
       <article>
         <h3>Degradado lineal con angulos</h3>
         <p>
-          
+          Gracias a los ángulos podemos usar degradados con la unidad de medida deg, cuando lo usamos en el degradado lineal, va desde la parte de arriba en el centro 
+          y el orden va igual que las horas del reloj, si ponemos un degradado de 90 es la esquina desde el medio centro hacia la derecha, con 180 grados desde el medio centro hasta
+          abajo centro, con -90 deg va desde el medio centro hasta el medio izquierda.
         </p>
+        <img src="img/anguloDegradado.png">
         <h4>Sintaxis</h4>
         <pre class="line-numbers"><code class="language-css">div{
 background:linear-gradient(Grados de la posicion del degradado, el siguiente ejemplo tiene
@@ -536,7 +540,13 @@ background: linear-gradient(primerColor %[del tamaño del elemento, en este caso
         <h3 id="degradadoRadial">Degradado radial</h3>
         <p>
           El degradado radial se define por su centro, igual que el degradado lineal, tiene que tener al menos dos paradas de color
-        </p>
+          Con este gradiente radial podemos crear degradados con forma circular, la propiedad de este degradado son:
+          <ul>
+            <li>forma: existen dos tipos de forma: circle y ellipse, por defecto el valor será ellipse</li>
+            <li>color: podemos crear un degradado con varias paradas para ir cambiando el color del degradado, podemos definir todos los colores que queramos</li>
+            <li>tamaño: para cada color podemos indicar la posicion en la que comienzan las transiciones</li>
+          </ul>
+          </p>
         <h4>Sintaxis</h4>
         <pre class="line-numbers"><code class="language-css">div{
   background: radial-gradient(posicion de la sombra,color de inicio, color final);
@@ -554,15 +564,28 @@ background: linear-gradient(primerColor %[del tamaño del elemento, en este caso
 <div class="container">
       <div id="grad11">Degradado radial</div>
       <div id="grad12">Degradado radial con %</div>
-    </div>
-    <p>Tambien tenemos el metodo repeat en el degradado radial, y se define de esta forma</p>
-    <h4>Sintaxis</h4>
-    <pre class="line-numbers"><code class="language-css">div{
-background: repeating-radial-gradient(donde empieza el degradado,en que color empieza, que color sigue,
-y que color acaba[y podemos poner X pixeles para que el color se repita cada X pixeles]);</code></pre>
-<div class="container">
-  <div id="grad22"></div>
-</div>
+      </div>
+      </article>
+      <article>
+        <h3>Degradado repeat radial</h3>
+        <p>
+          Tambien tenemos el metodo repeat en el degradado radial, y se define de esta forma
+        </p>
+        <h4>Sintaxis</h4>
+        <pre class="line-numbers"><code class="language-css">div{
+  background: repeating-radial-gradient(donde empieza el degradado,en que color empieza, que color sigue,
+  y que color acaba[y podemos poner X pixeles para que el color se repita cada X pixeles])</code></pre>
+        <p>
+        </p>
+        <h4>Ejemplos:</h4>
+        <pre class="line-numbers"><code class="language-css">#grad22{
+    width: 500px;
+    height: 200px;
+    background: repeating-radial-gradient(#444ffd, #9198e5 15%);
+  }</code></pre>
+  <div class="container">
+    <div id="grad22"></div>
+  </div>
       </article>
       <article>
         <h3>Degradado radial con position</h3>
@@ -684,7 +707,11 @@ background: radial-gradient(color,poncentaje,color)
         <img src="img/conic-gradient.png" id="tipoDegradado"><br>
 
         <p>
-          El degradado cónico crea un degradado con transiciones de color que giran alrededor de un punto central
+          El degradado cónico crea un degradado con transiciones de color que giran alrededor de un punto central.<br>
+          Su sintaxis es muy similar al del degradado radial, pero los topes de color se colocan alrededor de un arco del degradado
+          en la circunferencia de un circulo en lugar <br> de en la linea del degradado que sale del centro.<br> Con el degradado cónico los colores
+          hacen una transicion como si girasen alrededor del centro de un circulo, empezando por la parte superior y va en sentido
+          a las agujas del reloj.
         </p>
         <h4>Sintaxis</h4>
         <pre class="line-numbers"><code class="language-css">div{
@@ -716,7 +743,6 @@ div{
       <div id="grad17"></div><br>
       <div id="grad18"></div>
       <div id="grad19"></div>
-      <div id="grad42"></div>
     </div>
       </article>
       <article>
@@ -785,6 +811,21 @@ background: conic-gradient(posicion donde queramos el degradado conico, color %,
    <div id="grad40"></div>
    <div id="grad41"></div>
 </div>
+      </article>
+      <article>
+        <h3 id="degradadoLineal">Degradado repeat conico</h3>
+        <p>Existe una funcion que podemos repetir el degradado cada X pixeles, también podemos darle transparencia a un
+          degradado con rgba</p>
+        <h4>Ejemplos:</h4>
+        <pre class="line-numbers"><code class="language-css">#grad42{
+  height: 250px;
+  width: 400px;
+  background: repeating-conic-gradient(red 0%,yellow,20%,red 50%)
+}</code></pre>
+<div class="container">
+  <div id="grad42"></div>
+
+      </div>
       </article>
     </section>
   </main>

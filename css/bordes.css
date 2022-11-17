@@ -219,6 +219,12 @@
     border-image-slice: 10 10% 45 5;
 }
 
+#foto-border-image-slice{
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+}
+
 .border-image-outset-ejemplos {
     display: inline-block;
     width: 21%;

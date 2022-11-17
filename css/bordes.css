@@ -186,14 +186,14 @@
 #border-image-source-1 {
     text-align: center;
     border: 10px solid;
-    border-image-source: url(../border-img/border.png);
+    border-image-source: url(../img/border.png);
 }
 
 .border-image-slice-ejemplos {
     display: inline-block;
     width: 18%;
     border: 10px solid;
-    border-image-source: url(../border-img/border.png);
+    border-image-source: url(../img/border.png);
 }
 
 #border-image-slice-1 {
@@ -227,7 +227,7 @@
     width: 21%;
     border: 10px solid;
     margin: 10px;
-    border-image-source: url(../border-img/border.png);
+    border-image-source: url(../img/border.png);
 }
 
 #border-image-outset-1 {
@@ -251,7 +251,7 @@
     width: 21%;
     border: 10px solid;
     margin: 10px;
-    border-image-source: url(../border-img/border.png);
+    border-image-source: url(../img/border.png);
 
 }
 
@@ -279,7 +279,7 @@
     display: inline-block;
     width: 23%;
     border: 10px solid;
-    border-image-source: url(../border-img/border.png);
+    border-image-source: url(../img/border.png);
 }
 
 #border-image-repeat-1 {
@@ -311,23 +311,23 @@
 }
 
 #border-image-1 {
-    border-image: url(../border-img/border.png);
+    border-image: url(../img/border.png);
 }
 
 #border-image-2 {
-    border-image: url(../border-img/border.png) 27%;
+    border-image: url(../img/border.png) 27%;
 }
 
 #border-image-3 {
-    border-image: url(../border-img/border.png) 27% 15%;
+    border-image: url(../img/border.png) 27% 15%;
 }
 
 #border-image-4 {
-    border-image: url(../border-img/border.png) 27% 15% 50%;
+    border-image: url(../img/border.png) 27% 15% 50%;
 }
 
 #border-image-5 {
-    border-image: url(../border-img/border.png) 27% 15% 40% repeat;
+    border-image: url(../img/border.png) 27% 15% 40% repeat;
 }
 
 .border-ejemplos {

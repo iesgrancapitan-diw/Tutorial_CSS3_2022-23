@@ -1,0 +1,364 @@
+.border-style-ejemplos1 {
+    display: inline-block;
+    width: 19%;
+    padding: 1px;
+}
+
+.border-style-ejemplos2 {
+    display: inline-block;
+    width: 19%;
+    padding: 1px;
+}
+
+#border-style-dotted {
+    border-style: dotted;
+}
+
+#border-style-dashed {
+    border-style: dashed;
+}
+
+#border-style-solid {
+    border-style: solid;
+}
+
+#border-style-double {
+    border-style: double;
+    border-width: 5px;
+}
+
+#border-style-groove {
+    border-style: groove;
+    border-color: orange;
+    border-width: 5px;
+}
+
+#border-style-ridge {
+    border-style: ridge;
+    border-color: orange;
+    border-width: 5px;
+}
+
+#border-style-inset {
+    border-style: inset;
+    border-color: orange;
+    border-width: 5px;
+}
+
+#border-style-outset {
+    border-style: outset;
+    border-color: orange;
+    border-width: 5px;
+}
+
+#border-style-none {
+    border-style: none;
+}
+
+#border-style-hidden {
+    border-style: hidden;
+}
+
+.border-width-ejemplos {
+    display: inline-block;
+    width: 19%;
+    padding: 1px;
+}
+
+#border-width-1 {
+    border-style: solid;
+    border-width: 4px;
+}
+
+#border-width-2 {
+    border-style: solid;
+    border-width: thin;
+}
+
+#border-width-3 {
+    border-style: solid;
+    border-width: medium;
+}
+
+#border-width-4 {
+    border-style: solid;
+    border-width: thick;
+}
+
+#border-width-5 {
+    border-style: solid;
+    border-width: 2px 4px 6px 8px;
+}
+
+.border-color-ejemplos {
+    display: inline-block;
+    width: 32%;
+}
+
+#border-color-1 {
+    border-color: red;
+    border-width: 2px;
+    border-style: solid;
+}
+
+#border-color-2 {
+    border-color: red green;
+    border-width: 4px;
+    border-style: solid;
+}
+
+#border-color-3 {
+    border-color: red green yellow purple;
+    border-width: 4px;
+    border-style: solid;
+}
+
+.border-radius-ejemplos {
+    display: inline-block;
+    width: 24%;
+}
+
+#border-radius-1 {
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 4px;
+}
+
+#border-radius-2 {
+    border-radius: 8px 4px;
+    border-style: solid;
+    border-width: 4px;
+}
+
+#border-radius-3 {
+    border-radius: 16px 8px 4px;
+    border-style: solid;
+    border-width: 4px;
+}
+
+#border-radius-4 {
+    border-radius: 16px 8px 4px 10px;
+    border-style: solid;
+    border-width: 4px;
+}
+
+.border-box-shadow-ejemplos {
+    display: inline-block;
+    width: 13%;
+    height: 100px;
+    margin-left: 5%;
+    margin-right: 1%;
+}
+
+#border-box-shadow-1 {
+    text-align: center;
+    background-color: lightblue;
+    box-shadow: 20px 20px;
+    margin-bottom: 30px;
+}
+
+#border-box-shadow-2 {
+    text-align: center;
+    background-color: lightblue;
+    box-shadow: 20px 20px 20px;
+    margin-bottom: 30px;
+}
+
+#border-box-shadow-3 {
+    text-align: center;
+    background-color: lightblue;
+    box-shadow: 20px 20px 20px 10px;
+    margin-bottom: 40px;
+}
+
+#border-box-shadow-4 {
+    text-align: center;
+    background-color: lightblue;
+    box-shadow: 20px 20px 20px 10px green;
+    margin-bottom: 40px;
+}
+
+#border-box-shadow-5 {
+    color: white;
+    text-align: center;
+    background-color: lightblue;
+    box-shadow: 20px 20px 20px 10px green inset;
+    margin-bottom: 40px;
+}
+
+#border-image-source-1 {
+    text-align: center;
+    border: 10px solid;
+    border-image-source: url(../border-img/border.png);
+}
+
+.border-image-slice-ejemplos {
+    display: inline-block;
+    width: 18%;
+    border: 10px solid;
+    border-image-source: url(../border-img/border.png);
+}
+
+#border-image-slice-1 {
+    border-image-slice: 10;
+}
+
+#border-image-slice-2 {
+    border-image-slice: 10 40%;
+}
+
+#border-image-slice-3 {
+    border-image-slice: 10 10% fill;
+}
+
+#border-image-slice-4 {
+    border-image-slice: 10 10% 45 fill;
+}
+
+#border-image-slice-5 {
+    border-image-slice: 10 10% 45 5;
+}
+
+#foto-border-image-slice{
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+}
+
+.border-image-outset-ejemplos {
+    display: inline-block;
+    width: 21%;
+    border: 10px solid;
+    margin: 10px;
+    border-image-source: url(../border-img/border.png);
+}
+
+#border-image-outset-1 {
+    border-image-outset: 5px;
+}
+
+#border-image-outset-2 {
+    border-image-outset: 5px 8px;
+}
+
+#border-image-outset-3 {
+    border-image-outset: 5px 8px 10px;
+}
+
+#border-image-outset-4 {
+    border-image-outset: 5px 8px 10px 12px;
+}
+
+.border-image-width-ejemplos {
+    display: inline-block;
+    width: 21%;
+    border: 10px solid;
+    margin: 10px;
+    border-image-source: url(../border-img/border.png);
+
+}
+
+#border-image-width-1 {
+    border-image-slice: 10;
+    border-image-width: 10px;
+}
+
+#border-image-width-2 {
+    border-image-slice: 10;
+    border-image-width: 10% 15px;
+}
+
+#border-image-width-3 {
+    border-image-slice: 10;
+    border-image-width: 10px 15px 5px;
+}
+
+#border-image-width-4 {
+    border-image-slice: 10;
+    border-image-width: 10px 15px 5px 20px;
+}
+
+.border-image-repeat-ejemplos {
+    display: inline-block;
+    width: 23%;
+    border: 10px solid;
+    border-image-source: url(../border-img/border.png);
+}
+
+#border-image-repeat-1 {
+    border-image-slice: 10;
+    border-image-repeat: stretch;
+}
+
+#border-image-repeat-2 {
+    border-image-slice: 30;
+    border-image-repeat: repeat;
+}
+
+#border-image-repeat-3 {
+    border-image-slice: 30;
+    border-image-repeat: round;
+}
+
+#border-image-repeat-4 {
+    border-image-slice: 30;
+    border-image-repeat: space;
+}
+
+
+
+.border-image-ejemplos {
+    display: inline-block;
+    width: 18%;
+    border: 10px solid;
+}
+
+#border-image-1 {
+    border-image: url(../border-img/border.png);
+}
+
+#border-image-2 {
+    border-image: url(../border-img/border.png) 27%;
+}
+
+#border-image-3 {
+    border-image: url(../border-img/border.png) 27% 15%;
+}
+
+#border-image-4 {
+    border-image: url(../border-img/border.png) 27% 15% 50%;
+}
+
+#border-image-5 {
+    border-image: url(../border-img/border.png) 27% 15% 40% repeat;
+}
+
+.border-ejemplos {
+    display: inline-block;
+    width: 18%;
+}
+
+#border1 {
+    border: solid;
+}
+
+#border2-div-padre {
+    padding: 10px;
+    border: 5px dashed orange;
+}
+
+#border2 {
+    border: inherit;
+}
+
+#border3 {
+    border: 10px solid;
+}
+
+#border4 {
+    border: solid orange;
+}
+
+#border5 {
+    border: 10px solid orange;
+}

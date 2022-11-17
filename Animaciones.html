@@ -47,6 +47,30 @@
       </div>
       <section>
         <article>
+          <h3>
+            @keyframes
+          </h3>
+          <p>
+            La propiedad @keyframes define una animación. La animación se compone
+            de dos componentes: el estilo de la animación y la duración de la
+            animación.
+            Estilo: El estilo de la animación se define con las propiedades CSS
+            que se quieren animar.
+            Duración: La duración de la animación se define con la propiedad
+            animation-duration.
+          </p>
+          <pre class="line-numbers">
+            <code class="language-css"><!-- Ejemplo de @keyframe -->
+            @keyframes nombreAnimacion {
+              0% {background-color: red;}
+              25% {background-color: yellow;}
+              50% {background-color: blue;}
+              100% {background-color: green;}
+            </code>
+        </pre>
+
+        </article>
+        <article>
           <h3>Animation-delay</h3>
           <p>
             La propiedad animation-delay especifica un retraso para iniciar una
@@ -61,11 +85,11 @@
           </p>
           <pre class="line-numbers">
             <code class="language-css"><!-- Ejemplo de Animation-delay -->
-                div {
-                  animation-name: example;
-                  animation-duration: 4s;
-                  animation-delay: 2s;
-                }
+            div {
+              animation-name: example;
+              animation-duration: 4s;
+              animation-delay: 2s;
+            }
             </code>
         </pre>
           <div id="animation-delay"></div>
@@ -99,11 +123,11 @@
           <p>El valor por defecto es normal.</p>
           <pre class="line-numbers">
             <code class="language-css"><!-- Ejemplo de Animation-direction -->
-                div {
-                  animation-name: example;
-                  animation-duration: 4s;
-                  animation-direction: alternate;
-                }
+            div {
+              animation-name: example;
+              animation-duration: 4s;
+              animation-direction: alternate;
+            }
             </code>
         </pre>
           <div id="Animation-direction"></div>
@@ -120,10 +144,10 @@
           </p>
           <pre class="line-numbers">
             <code class="language-css"><!-- Ejemplo de Animation-duration -->
-                div {
-                  animation-name: example;
-                  animation-duration: 4s;
-                }
+            div {
+              animation-name: example;
+              animation-duration: 4s;
+            }
             </code>
         </pre>
         </article>
@@ -171,11 +195,11 @@
           <div id="Animation-fill-mode"></div>
           <pre class="line-numbers">
             <code class="language-css"><!-- Ejemplo de Animation-fill-mode -->
-                div {
-                  animation-name: example;
-                  animation-duration: 4s;
-                  animation-fill-mode: forwards;
-                }
+            div {
+              animation-name: example;
+              animation-duration: 4s;
+              animation-fill-mode: forwards;
+            }
             </code>
         </pre>
         </article>
@@ -190,11 +214,11 @@
           </p>
           <pre class="line-numbers">
             <code class="language-css"><!-- Ejemplo de Animation-iteration-count -->
-                div {
-                  animation-name: example;
-                  animation-duration: 4s;
-                  animation-iteration-count: infinite;
-                }
+            div {
+              animation-name: example;
+              animation-duration: 4s;
+              animation-iteration-count: infinite;
+            }
             </code>
         </pre>
           <div id="Animation-iteration-count"></div>
@@ -212,30 +236,15 @@
           </ul>
           <p>El valor por defecto es running.</p>
           <pre class="line-numbers">
-            <code class="language-css"><!-- Ejemplo de Animation-play-state -->
-                div {
-                  animation-name: example;
-                  animation-duration: 4s;
-                  animation-play-state: paused;
-                }
-            </code>
+          <code class="language-css"><!-- Ejemplo de Animation-play-state -->
+          div {
+            animation-name: example;
+            animation-duration: 4s;
+            animation-play-state: paused;
+          }
+          </code>
         </pre>
-          <p>Funcion js</p>
-          <pre class="line-numbers">
-            <code class="language-js"><!-- Ejemplo de Animation-play-state -->
-              document.addEventListener("DOMContentLoaded", function(event) {
-                document.getElementById("cambiar_estado").addEventListener("click", function(){
-                    var animation = document.getElementById("Animation-play-state");
-                    if(animation.style.animationPlayState == "paused"){
-                        animation.style.animationPlayState = "running";
-                    }else{
-                        animation.style.animationPlayState = "paused";
-                    }
-                }
-                );
-            });
-            </code>
-          </pre>
+          
           <button id="cambiar_estado">Play/Pause</button>
           <div id="Animation-play-state"></div>
         </article>
@@ -252,11 +261,11 @@
           <p>El valor por defecto es ease.</p>
           <pre class="line-numbers">
             <code class="language-css"><!-- Ejemplo de Animation-timing-function -->
-                div {
-                  animation-name: example;
-                  animation-duration: 4s;
-                  animation-timing-function: linear;
-                }
+            div {
+              animation-name: example;
+              animation-duration: 4s;
+              animation-timing-function: linear;
+            }
             </code>
         </pre>
           <div id="Animation-timing-function"></div>

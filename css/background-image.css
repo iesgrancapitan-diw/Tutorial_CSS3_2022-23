@@ -17,8 +17,8 @@
     background-image: repeating-conic-gradient(red 20%, yellow 25%);
 }
 .fondos-background-image-imagen7{
-background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+    background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
 }
 .fondos-background-image-imagen8{
-background-image: repeating-radial-gradient(red, yellow 20%, green 25%);
+    background-image: repeating-radial-gradient(red, yellow 20%, green 25%);
 }

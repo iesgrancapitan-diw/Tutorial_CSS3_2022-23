@@ -1,0 +1,80 @@
+.Svg_filter_tablas{
+	width: 100%;
+}
+
+.Svg_filter_blur1{
+    filter: blur(2px);
+}
+.Svg_filter_blur2{
+    filter: blur(10px);
+}
+
+.Svg_filter_brightness1{
+    filter: brightness(50%);
+}
+.Svg_filter_brightness2{
+    filter: brightness(150%);
+}
+
+.Svg_filter_contrast1{
+    filter: contrast(50%);
+}
+.Svg_filter_contrast2{
+    filter: contrast(150%);
+}
+
+.Svg_filter_grayscale1{
+    filter: grayscale(50%);
+}
+.Svg_filter_grayscale2{
+    filter: grayscale(100%);
+}
+
+.Svg_filter_hue1{
+    filter: hue-rotate(90deg);
+}
+.Svg_filter_hue2{
+    filter: hue-rotate(180deg);
+}
+
+.Svg_filter_invert1{
+    filter: invert(50%);
+}
+.Svg_filter_invert2{
+    filter: invert(100%);
+}
+
+.Svg_filter_opacity1{
+    filter: opacity(50%);
+}
+.Svg_filter_opacity2{
+    filter: opacity(10%);
+}
+
+.Svg_filter_saturate1{
+    filter: saturate(50%);
+}
+.Svg_filter_saturate2{
+    filter: saturate(200%);
+}
+
+.Svg_filter_sepia1{
+    filter: sepia(50%);
+}
+.Svg_filter_sepia2{
+    filter: sepia(100%);
+}
+
+.Svg_filter_drop1{
+    filter: drop-shadow(16px 5px 2px blue);
+}
+.Svg_filter_drop2{
+    filter: drop-shadow(5px -16px 20px red);
+}
+
+.Svg_filter_url1{
+    filter: url(#mifiltro);
+}
+.Svg_filter_url2{
+    filter: url(#granulado);
+}

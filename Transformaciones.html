@@ -47,88 +47,6 @@
     </div>
     <section>
       <article>
-        <h3>transform-matrix</h3>
-        <p>La función CSS matrix() define una matriz de transformación 2D homogénea. Su resultado es un tipo de datos
-          &lt;transformación-función>.</p>
-        <h4>Sintaxis</h4>
-        <pre class="line-numbers"><code class="language-css">transform: matrix(1.2, 0.2, -1, 0.9, 0, 20);
-transform: matrix(a, b, c, d, tx, ty);</code></pre>
-        <p>valores admitidos </p>
-        <ul>
-          <li>
-            a b c d<br />
-            Son &lt;números> que describen la transformación lineal.
-          </li>
-          <li>
-            tx ty <br />
-            Son &lt;números> que describen la traslación a aplicar.
-          </li>
-        </ul>
-        <p>Los primeros cuatro valores hacen referencia a la transformación que sufre el objeto que estamos modificando
-        </p>
-        <p>Los ultimos dos valores hacen referenciaa la traslación que sufre el objeto que estamos modificando</p>
-        <p>La diferencia esta en que los primeros cuuatro valores modifican su tamaño y los ultimos dos valores
-          modifican su posición respecto al eje de coordenadas original</p>
-
-        <h4>Ejemplos:</h4>
-        <br />
-        <p>En el siguiente ejemplo se puede ver como se modifica el tamaño y la posición de un elemento</p>
-        <pre class="line-numbers"><code class="language-css">.cuadrado {
-  width: 100px;
-  height: 100px;
-  background-color: #ff0000;
-  transform: matrix(1.2, 0.2, -1, 0.9, 0, 20);
-}</code></pre>
-        <div class="Transformaciones-matrix-cuadrado">
-        </div>
-        <br />
-      </article>
-    </section>
-    <section>
-      <article>
-        <h3>transformaciones-perspective</h3>
-        <p>La función CSS perspective() define una transformación que establece la distancia entre el usuario y el plano
-          z=0, la perspectiva desde la que estaría el espectador si la interfaz bidimensional fuera tridimensional.</p>
-        <p>Su resultado es un tipo de datos &lt;transformación-función>. </p>
-        <h4>Sintaxis</h4>
-        <pre class="line-numbers"><code class="language-css">perspective(d);</code></pre>
-        <p>valores admitidos </p>
-        <ul>
-          <li>
-            d <br />
-            Es una &lt;longitud> que representa la distancia del usuario al plano z=0. Si es 0 o un valor negativo, no
-            se aplica ninguna transformación de perspectiva.
-          </li>
-        </ul>
-        <h4>Ejemplos:</h4>
-        <pre class="line-numbers"><code class="language-css">style=transform: perspective(800px);</code></pre>
-        <section class="transformaciones-perspective-ejemplo-sin-modificar">
-          <div id="transformaciones-perspective-example-element" class="transformaciones-perspective-example-element">
-            <div class="transformaciones-perspective-face transformaciones-perspective-front">1</div>
-            <div class="transformaciones-perspective-face transformaciones-perspective-back">2</div>
-            <div class="transformaciones-perspective-face transformaciones-perspective-right">3</div>
-            <div class="transformaciones-perspective-face transformaciones-perspective-left">4</div>
-            <div class="transformaciones-perspective-face transformaciones-perspective-top">5</div>
-            <div class="transformaciones-perspective-face transformaciones-perspective-bottom">6</div>
-          </div>
-        </section>
-        <br />
-        <section class="transformaciones-perspective-ejemplo-modificada">
-          <div id="transformaciones-perspective-example-element" class="transformaciones-perspective-example-element">
-            <div class="transformaciones-perspective-face transformaciones-perspective-front">1</div>
-            <div class="transformaciones-perspective-face transformaciones-perspective-back">2</div>
-            <div class="transformaciones-perspective-face transformaciones-perspective-right">3</div>
-            <div class="transformaciones-perspective-face transformaciones-perspective-left">4</div>
-            <div class="transformaciones-perspective-face transformaciones-perspective-top">5</div>
-            <div class="transformaciones-perspective-face transformaciones-perspective-bottom">6</div>
-          </div>
-          </div>
-        </section>
-        <br />
-      </article>
-    </section>
-    <section>
-      <article>
         <h3>transformaciones-rotate</h3>
         <p>
           La propiedad CSS rotate permite especificar las transformaciones de
@@ -145,17 +63,17 @@ transform: matrix(a, b, c, d, tx, ty);</code></pre>
 rotate: none;
 
 /* Angle value */
-rotate: 90deg;
-rotate: 0.25turn;
-rotate: 1.57rad;
+rotate: (x deg);
+rotate: (x turn);
+rotate: (x rad);
 
 /* x, y, or z axis name plus angle */
-rotate: x 90deg;
-rotate: y 0.25turn;
-rotate: z 1.57rad;
+rotate: x (x deg);
+rotate: y (x turn);
+rotate: z (x rad);
 
-/* Vector plus angle value */
-rotate: 1 1 1 90deg;
+/* Vector plus angle value  rotate3d(x, y, z, a)*/
+rotate: (x y z a);
 
 /* Global values */
 rotate: inherit;
@@ -194,9 +112,7 @@ rotate: unset;</code></pre>
           </li>
           <br />
         </ul>
-      </article>
-      <h2>Ejemplos:</h2>
-      <article>
+        <h2>Ejemplos:</h2>
         <h3>rotate angle</h3>
         <pre class="line-numbers"><code class="language-css">rotate: 90deg;</code></pre>
         <div class="transformaciones-rotate">
@@ -213,8 +129,8 @@ rotate: unset;</code></pre>
           <p>Rotation</p>
           <p class="transformaciones-rotate-angle3">Rotation</p>
         </div>
-      </article>
-      <article>
+        <br/>
+        <br/>
         <h3>rotate x, y o z </h3>
         <pre class="line-numbers"><code class="language-css">rotate: x 45deg;</code></pre>
         <div class="transformaciones-rotate">
@@ -231,16 +147,17 @@ rotate: unset;</code></pre>
           <p>Rotation</p>
           <p class="transformaciones-rotate-anglez">Rotation</p>
         </div>
-      </article>
-      <article>
-        <h3>Inclinación en ambos ejes</h3>
+        <br/>
+        <br/>
+        <h3>Inclinación en todos los ejes</h3>
         <pre class="line-numbers"><code class="language-css">rotate: 1 -0.5 1 180deg;</code></pre>
         <div class="transformaciones-rotate">
           <p>Rotation</p>
           <p class="transformaciones-rotate-dosejes">Rotation</p>
         </div>
       </article>
-      <section>
+    </section>
+     <section>
 
         <!-- 1. TransformacionesX -->
         <article>
@@ -273,10 +190,6 @@ rotate: unset;</code></pre>
           <pre class="line-numbers"><code class="language-css">transform: translateX(30ch);</code></pre>
           <div class="div-generico-translate"></div>
           <div class="transformaciones-translateX translateX-ej4"></div>
-
-
-
-          </div>
         </article>
 
         <!-- 2. TransformacionesY -->
@@ -313,7 +226,7 @@ rotate: unset;</code></pre>
 
 
 
-          </div>
+
         </article>
         <!-- 3. Transformaciones -->
         <article>
@@ -349,7 +262,7 @@ rotate: unset;</code></pre>
 
 
 
-          </div>
+
         </article>
 
         <!-- 4. Transformaciones -->
@@ -383,7 +296,7 @@ rotate: unset;</code></pre>
           <div class="div-generico-translate"></div>
           <div class="transformaciones-translateZ translateZ-ej3"></div>
 
-          </div>
+
         </article>
         <!-- 5. Transformaciones -->
         <article>
@@ -415,7 +328,7 @@ rotate: unset;</code></pre>
           <div class="div-generico-translate"></div>
           <div class="transformaciones-translate3d translate3d-ej3"></div>
 
-          </div>
+
         </article>
         <!-- 6. Transformaciones -->
         <article>
@@ -450,7 +363,7 @@ rotate: unset;</code></pre>
           <div class="transformaciones-translateProp translateProp-ej4"></div>
 
 
-          </div>
+
         </article>
 
       </section>
@@ -492,7 +405,7 @@ rotate: unset;</code></pre>
 
 
 
-          </div>
+
         </article>
 
         <!-- 2. ScaleY -->
@@ -530,7 +443,7 @@ rotate: unset;</code></pre>
 
 
 
-          </div>
+
         </article>
         <!-- 3. Scale -->
         <article>
@@ -570,7 +483,7 @@ rotate: unset;</code></pre>
 
 
 
-          </div>
+
         </article>
 
         <!-- 4. Scale -->
@@ -605,7 +518,7 @@ rotate: unset;</code></pre>
           <div class="div-generico-scale"></div>
           <div class="transformaciones-scaleZ scaleZ-ej3"></div>
 
-          </div>
+
         </article>
         <!-- 5. Scale -->
         <article>
@@ -638,7 +551,7 @@ rotate: unset;</code></pre>
           <div class="div-generico-scale"></div>
           <div class="transformaciones-scale3d scale3d-ej3"></div>
 
-          </div>
+
         </article>
         <!-- 6. Scale -->
         <article>
@@ -679,7 +592,7 @@ transform: perspective(300px) rotateX(45deg);</code></pre>
           <div class="transformaciones-scaleProp scaleProp-ej5"></div>
 
 
-          </div>
+
         </article>
 
       </section>
@@ -687,7 +600,50 @@ transform: perspective(300px) rotateX(45deg);</code></pre>
     </section>
     <section>
       <article>
-        <h3>transformaciones-skew</h3>
+        <h3>transformaciones-perspective</h3>
+        <p>La función CSS perspective() define una transformación que establece la distancia entre el usuario y el plano
+          z=0, la perspectiva desde la que estaría el espectador si la interfaz bidimensional fuera tridimensional.</p>
+        <p>Su resultado es un tipo de datos &lt;transformación-función>. </p>
+        <h4>Sintaxis</h4>
+        <pre class="line-numbers"><code class="language-css">perspective(d);</code></pre>
+        <p>valores admitidos </p>
+        <ul>
+          <li>
+            d <br />
+            Es una &lt;longitud> que representa la distancia del usuario al plano z=0. Si es 0 o un valor negativo, no
+            se aplica ninguna transformación de perspectiva.
+          </li>
+        </ul>
+        <h4>Ejemplos:</h4>
+        <pre class="line-numbers"><code class="language-css">transform: perspective(800px);</code></pre>
+        <section class="transformaciones-perspective-ejemplo-sin-modificar">
+          <div id="transformaciones-perspective-example-element" class="transformaciones-perspective-example-element">
+            <div class="transformaciones-perspective-face transformaciones-perspective-front">1</div>
+            <div class="transformaciones-perspective-face transformaciones-perspective-back">2</div>
+            <div class="transformaciones-perspective-face transformaciones-perspective-right">3</div>
+            <div class="transformaciones-perspective-face transformaciones-perspective-left">4</div>
+            <div class="transformaciones-perspective-face transformaciones-perspective-top">5</div>
+            <div class="transformaciones-perspective-face transformaciones-perspective-bottom">6</div>
+          </div>
+        </section>
+        <br />
+        <section class="transformaciones-perspective-ejemplo-modificada">
+          <div id="transformaciones-perspective-example-element" class="transformaciones-perspective-example-element">
+            <div class="transformaciones-perspective-face transformaciones-perspective-front">1</div>
+            <div class="transformaciones-perspective-face transformaciones-perspective-back">2</div>
+            <div class="transformaciones-perspective-face transformaciones-perspective-right">3</div>
+            <div class="transformaciones-perspective-face transformaciones-perspective-left">4</div>
+            <div class="transformaciones-perspective-face transformaciones-perspective-top">5</div>
+            <div class="transformaciones-perspective-face transformaciones-perspective-bottom">6</div>
+          </div>
+          </div>
+        </section>
+        <br />
+      </article>
+    </section>
+    <section>
+      <article>
+        <h3>transformaciones-skew(inclinar)</h3>
         <p>
           La función CSS skew() define una transformación que sesga un
           elemento en el plano 2D. Su resultado es un tipo de datos
@@ -714,18 +670,30 @@ transform: perspective(300px) rotateX(45deg);</code></pre>
         </p>
         <pre class="line-numbers"><code class="language-css">skew(ax)
 
-skew(ax, ay)</code></pre>
+skew(ax, ay)
+
+/*skewx() es igual que skew() ya que ambos usan el eje x*/
+skewx(a)
+
+skewy(a)</code></pre>
         <ul>
           <li>
+            a
+            <br/>
+            Representa el ángulo de inclinación en el eje x o y. Puede ser un ángulo en grados, radianes o grados
+            sexagesimales.
+          </li>
+          <br/>
+          <li>
             ax
-            </br>
+            <br/>
             Es un &lt;ángulo> que representa el ángulo a utilizar para distorsionar el elemento a lo largo del eje x (o
             abscisa).
           </li>
-          </br>
+          <br/>
           <li>
             ay
-            </br>
+            <br/>
             Es un &lt;ángulo> que representa el ángulo a utilizar para distorsionar el elemento a lo largo del eje y (u
             ordenada). Si no se define, su valor por defecto es 0, lo que resulta en una inclinación puramente
             horizontal.
@@ -733,22 +701,57 @@ skew(ax, ay)</code></pre>
 
 
         </ul>
-      </article>
-      <h2>Ejemplos:</h2>
-      <article>
+        <h2>Ejemplos:</h2>
         <h3>Inclinación en el eje x solamente</h3>
         <pre class="line-numbers"><code class="language-css">transform: skew(10deg);</code></pre>
         <div class="transformaciones-skew">Normal</div>
         <div class="transformaciones-skewedx">Skewed</div>
+        <pre class="line-numbers"><code class="language-css">transform: skewx(10deg);</code></pre>
+        <div class="transformaciones-skew">Normal</div>
+        <div class="transformaciones-skewedx">Skewed</div>
+        <h3>Inclinación en el eje y solamente</h3>
+        <pre class="line-numbers"><code class="language-css">transform: skewy(10deg);</code></pre>
+        <div class="transformaciones-skew">Normal</div>
+        <div class="transformaciones-skewedy">Skewed</div>
+        <h3>Inclinación en ambos ejes</h3>
+        <pre class="line-numbers"><code class="language-css"> transform: skew(10deg, 10deg);</code></pre>
+        <div class="transformaciones-skew">Normal</div>
+        <div class="transformaciones-skewed">Skewed</div>
       </article>
-      <article>
+    </section>
+      <section>
         <article>
-          <h3>Inclinación en ambos ejes</h3>
-          <pre class="line-numbers"><code class="language-css"> transform: skew(10deg, 10deg);</code></pre>
-          <div class="transformaciones-skew">Normal</div>
-          <div class="transformaciones-skewed">Skewed</div>
+          <h3>transform-matrix</h3>
+          <p>La función CSS matrix() define una matriz de transformación 2D homogénea. Su resultado es un tipo de datos
+            &lt;transformación-función>.</p>
+          <h4>Sintaxis</h4>
+          <pre class="line-numbers"><code class="language-css">transform: matrix(a, b, c, d, tx, ty);</code></pre>
+          <p>valores admitidos </p>
+          <ul>
+            <li>
+              a b c d<br />
+              Son &lt;números> que describen la transformación lineal.
+            </li>
+            <li>
+              tx ty <br />
+              Son &lt;números> que describen la traslación a aplicar.
+            </li>
+          </ul>
+          <p>Los primeros cuatro valores hacen referencia a la transformación que sufre el objeto que estamos modificando
+          </p>
+          <p>Los ultimos dos valores hacen referenciaa la traslación que sufre el objeto que estamos modificando</p>
+          <p>La diferencia esta en que los primeros cuuatro valores modifican su tamaño y los ultimos dos valores
+            modifican su posición respecto al eje de coordenadas original</p>
+  
+          <h4>Ejemplos:</h4>
+          <br />
+          <p>En el siguiente ejemplo se puede ver como se modifica el tamaño y la posición de un elemento</p>
+          <pre class="line-numbers"><code class="language-css">transform: matrix(1.2, 0.2, -1, 0.9, 0, 20);</code></pre>
+          <div class="Transformaciones-matrix-cuadrado">
+          </div>
+          <br />
         </article>
-        <section>
+      </section>
   </main>
   <footer>
     <div>Jaime Rabasco Ronda</div>

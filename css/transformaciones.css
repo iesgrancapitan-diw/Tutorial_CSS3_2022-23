@@ -396,6 +396,12 @@
   transform: skew(10deg); /* Equal to skewX(10deg) */
   background-color: pink;
 }
+.transformaciones-skewedy {
+  width: 80px;
+  height: 80px;
+  transform: skewy(10deg); /* Equal to skewX(10deg) */
+  background-color: pink;
+}
 
 .transformaciones-skewed {
   width: 80px;

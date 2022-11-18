@@ -37,7 +37,7 @@
       <li><a href="Svg_filter.html">Filter y SVG</a></li>
     </ul>
   </nav>
-  <main>
+  <main class="transformaciones-continer">
     <div>
       <h2>TUTORIAL CSS3 - Transformaciones</h2>
       <h3>
@@ -172,24 +172,14 @@ rotate: unset;</code></pre>
           <p>Si se indica un valor negativo, el elemento se desplazará en la dirección opuesta.</p>
 
           <h4>Ejemplos:</h4>
+         
+          <pre class="line-numbers"><code class="language-css">transform: translateX(400px);
+transform: translateX(50ch);</code></pre>
+          <div class="div-generico-translate"></div>
           <!--Ejemplo 1-->
-          <pre class="line-numbers"><code class="language-css">transform: translateX(0);</code></pre>
-          <div class="div-generico-translate"></div>
-          <div class="transformaciones-translateX translateX-ej1"></div>
+          <div class="transformaciones-translateX translateX-ej2">1</div>
           <!--Ejemplo 2-->
-          <pre class="line-numbers"><code class="language-css">transform: translateX(400px);</code></pre>
-          <div class="div-generico-translate"></div>
-          <div class="transformaciones-translateX translateX-ej2"></div>
-
-          <!--Ejemplo 3-->
-          <pre class="line-numbers"><code class="language-css">transform: translateX(-2rem);</code></pre>
-          <div class="div-generico-translate"></div>
-          <div class="transformaciones-translateX translateX-ej3"></div>
-
-          <!--Ejemplo 4-->
-          <pre class="line-numbers"><code class="language-css">transform: translateX(30ch);</code></pre>
-          <div class="div-generico-translate"></div>
-          <div class="transformaciones-translateX translateX-ej4"></div>
+          <div class="transformaciones-translateX translateX-ej4">2</div>
         </article>
 
         <!-- 2. TransformacionesY -->
@@ -206,26 +196,14 @@ rotate: unset;</code></pre>
 
           <h4>Ejemplos:</h4>
           <!--Ejemplo 1-->
-          <pre class="line-numbers"><code class="language-css">transform: translateY(0);</code></pre>
+          <pre class="line-numbers"><code class="language-css">transform: translateY(-3rem);
+transform: translateY(3ch);</code></pre>
           <div class="div-generico-translate"></div>
-          <div class="transformaciones-translateY translateY-ej1"></div>
           <!--Ejemplo 2-->
-          <pre class="line-numbers"><code class="language-css">transform: translateY(45px);</code></pre>
-          <div class="div-generico-translate"></div>
-          <div class="transformaciones-translateY translateY-ej2"></div>
-
           <!--Ejemplo 3-->
-          <pre class="line-numbers"><code class="language-css">transform: translateY(-3rem);</code></pre>
-          <div class="div-generico-translate"></div>
-          <div class="transformaciones-translateY translateY-ej3"></div>
-
+          <div class="transformaciones-translateY translateY-ej3">1</div>
           <!--Ejemplo 4-->
-          <pre class="line-numbers"><code class="language-css">transform: translateY(3ch);</code></pre>
-          <div class="div-generico-translate"></div>
-          <div class="transformaciones-translateY translateY-ej4"></div>
-
-
-
+          <div class="transformaciones-translateY translateY-ej4">2</div>
 
         </article>
         <!-- 3. Transformaciones -->
@@ -242,26 +220,15 @@ rotate: unset;</code></pre>
 
           <h4>Ejemplos:</h4>
           <!--Ejemplo 1-->
-          <pre class="line-numbers"><code class="language-css">transform: translate(20px);</code></pre>
+          <pre class="line-numbers"><code class="language-css">transform: translate(20px);
+transform: translate(500px,40px);
+transform: translate(-3ch, -3mm);</code></pre>
           <div class="div-generico-translate"></div>
-          <div class="transformaciones-translate translate-ej1"></div>
+          <div class="transformaciones-translate translate-ej1">1</div>
           <!--Ejemplo 2-->
-          <pre class="line-numbers"><code class="language-css">transform: translate(50px,40px);</code></pre>
-          <div class="div-generico-translate"></div>
-          <div class="transformaciones-translate translate-ej2"></div>
-
+          <div class="transformaciones-translate translate-ej2">2</div>
           <!--Ejemplo 3-->
-          <pre class="line-numbers"><code class="language-css">transform: translate(-3ch, -3mm);</code></pre>
-          <div class="div-generico-translate"></div>
-          <div class="transformaciones-translate translate-ej3"></div>
-
-          <!--Ejemplo 4-->
-          <pre class="line-numbers"><code class="language-css">transform: translate(2.1rem, -2ex);</code></pre>
-          <div class="div-generico-translate"></div>
-          <div class="transformaciones-translate translate-ej4"></div>
-
-
-
+          <div class="transformaciones-translate translate-ej3">3</div>
 
         </article>
 
@@ -282,19 +249,16 @@ rotate: unset;</code></pre>
           <h4>Ejemplos:</h4>
           <!--Ejemplo 1-->
           <pre
-            class="line-numbers"><code class="language-css">transform: perspective(100px) translateZ(60px);</code></pre>
+            class="line-numbers"><code class="language-css">transform: perspective(100px) translateZ(60px);
+transform: perspective(100px) translateZ(-15rem);
+transform: perspective(100px) translateZ(4ch);</code></pre>
           <div class="div-generico-translate"></div>
-          <div class="transformaciones-translateZ translateZ-ej1"></div>
+          <div class="transformaciones-translateZ translateZ-ej1">1</div>
           <!--Ejemplo 2-->
-          <pre class="line-numbers"><code class="language-css">perspective(100px) translateZ(-15rem);</code></pre>
-          <div class="div-generico-translate"></div>
-          <div class="transformaciones-translateZ translateZ-ej2"></div>
+          <div class="transformaciones-translateZ translateZ-ej2">2</div>
 
           <!--Ejemplo 3-->
-          <pre
-            class="line-numbers"><code class="language-css">transform: perspective(100px) translateZ(4ch);</code></pre>
-          <div class="div-generico-translate"></div>
-          <div class="transformaciones-translateZ translateZ-ej3"></div>
+          <div class="transformaciones-translateZ translateZ-ej3">3</div>
 
 
         </article>
@@ -313,20 +277,15 @@ rotate: unset;</code></pre>
           <h4>Ejemplos:</h4>
           <!--Ejemplo 1-->
           <pre
-            class="line-numbers"><code class="language-css">transform: perspective(200px) translate3d(42px, -62px, 70px);</code></pre>
+            class="line-numbers"><code class="language-css">transform: perspective(200px) translate3d(450px, -62px, 70px);
+transform: perspective(200px) translate3d(-4rem, 0.5rem, -8rem);
+transform:  perspective(200px) translate3d(3ch, 1ch, 7ch);</code></pre>
           <div class="div-generico-translate"></div>
-          <div class="transformaciones-translate3d translate3d-ej1"></div>
+          <div class="transformaciones-translate3d translate3d-ej1">1</div>
           <!--Ejemplo 2-->
-          <pre
-            class="line-numbers"><code class="language-css">transform: perspective(200px) translate3d(-4rem, 0.5rem, -8rem);</code></pre>
-          <div class="div-generico-translate"></div>
-          <div class="transformaciones-translate3d translate3d-ej2"></div>
-
+          <div class="transformaciones-translate3d translate3d-ej2">2</div>
           <!--Ejemplo 3-->
-          <pre
-            class="line-numbers"><code class="language-css">transform:  perspective(200px) translate3d(3ch, 1ch, 7ch);</code></pre>
-          <div class="div-generico-translate"></div>
-          <div class="transformaciones-translate3d translate3d-ej3"></div>
+          <div class="transformaciones-translate3d translate3d-ej3">3</div>
 
 
         </article>
@@ -344,24 +303,17 @@ rotate: unset;</code></pre>
 
           <h4>Ejemplos:</h4>
           <!--Ejemplo 1-->
-          <pre class="line-numbers"><code class="language-css">translate: none;</code></pre>
-          <div class="div-generico-translate"></div>
+          <pre class="line-numbers"><code class="language-css">translate: none;
+translate: 70px;
+translate: 40% 70%;</code></pre>
+          <div  style="display: inline-block;" class="div-generico-translate"></div>
           <div class="transformaciones-translateProp translateProp-ej1"></div>
           <!--Ejemplo 2-->
-          <pre class="line-numbers"><code class="language-css">translate: 70px;</code></pre>
-          <div class="div-generico-translate"></div>
           <div class="transformaciones-translateProp translateProp-ej2"></div>
-
           <!--Ejemplo 3-->
-          <pre class="line-numbers"><code class="language-css">translate: 0 -3rem;</code></pre>
-          <div class="div-generico-translate"></div>
-          <div class="transformaciones-translateProp translateProp-ej3"></div>
-
-          <!--Ejemplo 4-->
-          <pre class="line-numbers"><code class="language-css">translate: 40% 70%;</code></pre>
-          <div class="div-generico-translate"></div>
           <div class="transformaciones-translateProp translateProp-ej4"></div>
 
+          
 
 
         </article>

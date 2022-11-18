@@ -157,8 +157,50 @@ rotate: unset;</code></pre>
         </div>
       </article>
     </section>
-     <section>
-
+    <section>
+      <article>
+        <h3>transformaciones-perspective</h3>
+        <p>La función CSS perspective() define una transformación que establece la distancia entre el usuario y el plano
+          z=0, la perspectiva desde la que estaría el espectador si la interfaz bidimensional fuera tridimensional.</p>
+        <p>Su resultado es un tipo de datos &lt;transformación-función>. </p>
+        <h4>Sintaxis</h4>
+        <pre class="line-numbers"><code class="language-css">perspective(d);</code></pre>
+        <p>valores admitidos </p>
+        <ul>
+          <li>
+            d <br />
+            Es una &lt;longitud> que representa la distancia del usuario al plano z=0. Si es 0 o un valor negativo, no
+            se aplica ninguna transformación de perspectiva.
+          </li>
+        </ul>
+        <h4>Ejemplos:</h4>
+        <pre class="line-numbers"><code class="language-css">transform: perspective(800px);</code></pre>
+        <section class="transformaciones-perspective-ejemplo-sin-modificar">
+          <div id="transformaciones-perspective-example-element" class="transformaciones-perspective-example-element">
+            <div class="transformaciones-perspective-face transformaciones-perspective-front">1</div>
+            <div class="transformaciones-perspective-face transformaciones-perspective-back">2</div>
+            <div class="transformaciones-perspective-face transformaciones-perspective-right">3</div>
+            <div class="transformaciones-perspective-face transformaciones-perspective-left">4</div>
+            <div class="transformaciones-perspective-face transformaciones-perspective-top">5</div>
+            <div class="transformaciones-perspective-face transformaciones-perspective-bottom">6</div>
+          </div>
+        </section>
+        <br />
+        <section class="transformaciones-perspective-ejemplo-modificada">
+          <div id="transformaciones-perspective-example-element" class="transformaciones-perspective-example-element">
+            <div class="transformaciones-perspective-face transformaciones-perspective-front">1</div>
+            <div class="transformaciones-perspective-face transformaciones-perspective-back">2</div>
+            <div class="transformaciones-perspective-face transformaciones-perspective-right">3</div>
+            <div class="transformaciones-perspective-face transformaciones-perspective-left">4</div>
+            <div class="transformaciones-perspective-face transformaciones-perspective-top">5</div>
+            <div class="transformaciones-perspective-face transformaciones-perspective-bottom">6</div>
+          </div>
+        </section>
+        <br />
+      </article>
+    </section>
+    <section>
+      
         <!-- 1. TransformacionesX -->
         <article>
           <h3>translateX(x)</h3>
@@ -548,48 +590,6 @@ transform: perspective(300px) rotateX(45deg);</code></pre>
         </article>
 
 
-    </section>
-    <section>
-      <article>
-        <h3>transformaciones-perspective</h3>
-        <p>La función CSS perspective() define una transformación que establece la distancia entre el usuario y el plano
-          z=0, la perspectiva desde la que estaría el espectador si la interfaz bidimensional fuera tridimensional.</p>
-        <p>Su resultado es un tipo de datos &lt;transformación-función>. </p>
-        <h4>Sintaxis</h4>
-        <pre class="line-numbers"><code class="language-css">perspective(d);</code></pre>
-        <p>valores admitidos </p>
-        <ul>
-          <li>
-            d <br />
-            Es una &lt;longitud> que representa la distancia del usuario al plano z=0. Si es 0 o un valor negativo, no
-            se aplica ninguna transformación de perspectiva.
-          </li>
-        </ul>
-        <h4>Ejemplos:</h4>
-        <pre class="line-numbers"><code class="language-css">transform: perspective(800px);</code></pre>
-        <section class="transformaciones-perspective-ejemplo-sin-modificar">
-          <div id="transformaciones-perspective-example-element" class="transformaciones-perspective-example-element">
-            <div class="transformaciones-perspective-face transformaciones-perspective-front">1</div>
-            <div class="transformaciones-perspective-face transformaciones-perspective-back">2</div>
-            <div class="transformaciones-perspective-face transformaciones-perspective-right">3</div>
-            <div class="transformaciones-perspective-face transformaciones-perspective-left">4</div>
-            <div class="transformaciones-perspective-face transformaciones-perspective-top">5</div>
-            <div class="transformaciones-perspective-face transformaciones-perspective-bottom">6</div>
-          </div>
-        </section>
-        <br />
-        <section class="transformaciones-perspective-ejemplo-modificada">
-          <div id="transformaciones-perspective-example-element" class="transformaciones-perspective-example-element">
-            <div class="transformaciones-perspective-face transformaciones-perspective-front">1</div>
-            <div class="transformaciones-perspective-face transformaciones-perspective-back">2</div>
-            <div class="transformaciones-perspective-face transformaciones-perspective-right">3</div>
-            <div class="transformaciones-perspective-face transformaciones-perspective-left">4</div>
-            <div class="transformaciones-perspective-face transformaciones-perspective-top">5</div>
-            <div class="transformaciones-perspective-face transformaciones-perspective-bottom">6</div>
-          </div>
-        </section>
-        <br />
-      </article>
     </section>
     <section>
       <article>

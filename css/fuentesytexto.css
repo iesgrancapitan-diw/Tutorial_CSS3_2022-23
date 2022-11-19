@@ -424,3 +424,16 @@
 .fuentesytexto_font-stretch-ultra-expanded {
     font-stretch: ultra-expanded;
 }
+
+.fuentesytexto_font-kerning-auto{
+    font-kerning: auto;
+}
+
+.fuentesytexto_font-kerning-normal{
+    font-kerning: normal;
+}
+
+.fuentesytexto_font-kerning-none{
+    font-kerning: none;
+}
+

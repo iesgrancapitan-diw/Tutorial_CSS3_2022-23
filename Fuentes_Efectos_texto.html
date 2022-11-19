@@ -509,7 +509,7 @@ font-weight: 900;
           </div>
         </article>
         <article>
-          <h3>fring</h3>
+          <h3>text-rendering</h3>
           <p>Se usa para establecer el modo de renderizado del texto.</p>
           <h4>Sintaxis</h4>
           <pre
@@ -620,6 +620,33 @@ font-size: 10px;
           <div class="fuentesytexto_resultado">
             <p class="fuentesytexto_font-size-adjust-no">De dificil lectura </p>
             <p class="fuentesytexto_font-size-adjust-yes">Un poco más legible </p>
+          </div>
+        </article>
+        <article>
+          <h3>font-kerning</h3>
+          <p>Establece el tipo de kerning que se usa para el texto. Kerning es el ajuste de los espacios entre caracteres para mejorar la legibilidad.</p>
+          <h4>Sintaxis</h4>
+          <pre class="line-numbers"><code class="language-css">font-kerning: auto | normal | none;
+</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li>auto: el navegador decide si usar kerning o no.</li>
+            <li>normal: kerning está activado.</li>
+            <li>none: kerning está desactivado.</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <pre class="line-numbers"><code class="language-css">font-kerning: auto;
+</code></pre>
+          <h4>Ejemplos</h4>
+          <pre class="line-numbers"><code class="language-css">font-kerning: auto;
+font-kerning: normal;
+font-kerning: none;
+</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado">
+            <p class="fuentesytexto_font-kerning-auto">auto</p>
+            <p class="fuentesytexto_font-kerning-normal">normal</p>
+            <p class="fuentesytexto_font-kerning-none">none</p>
           </div>
         </article>
         <article>

@@ -289,12 +289,12 @@
 
 @font-face {
     font-family: "Warnock Pro";
-    src: url(WarnockPro-Regular.otf);
+    src: url(fuentes_efectos_texto_fuentes_locales/WarnockPro-Regular.otf);
 }
 
 @font-face {
     font-family: "HypatiaSansPro-Regular";
-    src: url(HypatiaSansPro-Regular.otf);
+    src: url(fuentes_efectos_texto_fuentes_locales/HypatiaSansPro-Regular.otf);
 }
 
 .fuentesytexto_font-variant-numeric-2 {
@@ -349,7 +349,7 @@
 
 @font-face {
     font-family: "Amstelvar VF";
-    src: url(Amstelvar-Roman[wdth\,wght\,opsz].ttf);
+    src: url(fuentes_efectos_texto_fuentes_locales/Amstelvar-Roman[wdth\,wght\,opsz].ttf);
 }
 
 .fuentesytexto_font-variant-settings-wght {
@@ -378,7 +378,7 @@
 }
 
 @font-face {
-    src: url(LeagueMono-VF.ttf) format('truetype');
+    src: url(fuentes_efectos_texto_fuentes_locales/LeagueMono-VF.ttf) format('truetype');
     font-family: League;
     font-style: normal;
     font-stretch: 50% 200%

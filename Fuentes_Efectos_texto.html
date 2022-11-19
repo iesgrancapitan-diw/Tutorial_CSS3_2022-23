@@ -447,6 +447,47 @@ font-variant-numeric: stacked-fractions;
           </div>
         </article>
         <article>
+          <h3>font-variant</h3>
+          <p>Se usa para establecer las variantes de las fuentes. Es un "shorthand"</p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">font-variant: normal|small-caps|all-small-caps|petite-caps|all-petite-caps|unicase|titling-caps|lining-nums|oldstyle-nums|proportional-nums|tabular-nums|diagonal-fractions|stacked-fractions|ordinal|slashed-zero|normal|inherit;</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li>normal: no se aplica ninguna variante.</li>
+            <li>small-caps: se aplica la variante de letras pequeñas.</li>
+            <li>all-small-caps: se aplica la variante de letras pequeñas en mayúsculas.</li>
+            <li>petite-caps: se aplica la variante de letras pequeñas en minúsculas.</li>
+            <li>all-petite-caps: se aplica la variante de letras pequeñas en mayúsculas.</li>
+            <li>unicase: se aplica la variante de letras en mayúsculas.</li>
+            <li>titling-caps: se aplica la variante de letras en mayúsculas.</li>
+            <li>lining-nums: se aplica la numeración de líneas.</li>
+            <li>oldstyle-nums: se aplica la numeración antigua.</li>
+            <li>proportional-nums: se aplica la numeración proporcional.</li>
+            <li>tabular-nums: se aplica la numeración tabular.</li>
+            <li>diagonal-fractions: se aplica la numeración de fracciones diagonales.</li>
+            <li>stacked-fractions: se aplica la numeración de fracciones apiladas.</li>
+            <li>ordinal: se aplica la numeración ordinal.</li>
+            <li>slashed-zero: se aplica la numeración con cero barrado.</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <p>normal</p>
+          <h4>Ejemplos:</h4>
+          <p>Algunos parámetros solo funcionan con unas fuentes específicas</p>
+          <p>Como en algunas propiedades se ha tenido que usar más de una instrucción, en este caso los ejemplos se representarán como bloques separados, que representan una línea en el resultado, por un salto de línea.</p>
+          <pre class="line-numbers"><code class="language-css">font-variant: normal;
+font-variant: discretionary-ligatures proportional-nums;
+font-variant: small-caps diagonal-fractions;
+</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado fuentesytexto_font-variant-0">
+            <p class="fuentesytexto_font-variant-0">normal 0123456789 3.14 2.72</p>
+            <p class="fuentesytexto_font-variant-1">discretionary-ligatures fi 3.14 2.72 </p>
+            <p class="fuentesytexto_font-variant-2">small-caps 5/5 100/1</p>
+          </div>
+        </article>
+        <article>
           <h3>font-style</h3>
           <p>Se usa para establecer el estilo de la fuente.</p>
           <h4>Sintaxis</h4>
@@ -595,7 +636,7 @@ color: red;
           </div>
         </article>
         <article>
-          <h2>font-size-adjust</h2>
+          <h3>font-size-adjust</h3>
           <p>Esta función solo funciona en el navegador Firefox.</p>
           <p>Especifica un factor de ajuste de tamaño de fuente. Esto es util cuando en la propiedad font-family el valor no está disponible, entonces se puede reeemplazar por un "porcentaje" representado en esta propiedad.</p>
           <h4>Sintaxis</h4>

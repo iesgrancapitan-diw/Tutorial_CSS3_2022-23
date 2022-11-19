@@ -440,3 +440,15 @@
     font-kerning: none;
 }
 
+.fuentesytexto_font-variant-0{
+    font-variant: normal;
+}
+
+.fuentesytexto_font-variant-1{
+    font-family: 'HypatiaSansPro-Regular', sans-serif;
+    font-variant: discretionary-ligatures proportional-nums;
+}
+
+.fuentesytexto_font-variant-2{
+    font-variant: small-caps diagonal-fractions;
+}

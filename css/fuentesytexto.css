@@ -426,14 +426,17 @@
 }
 
 .fuentesytexto_font-kerning-auto{
+    font-family: serif;
     font-kerning: auto;
 }
 
 .fuentesytexto_font-kerning-normal{
+    font-family: serif;
     font-kerning: normal;
 }
 
 .fuentesytexto_font-kerning-none{
+    font-family: serif;
     font-kerning: none;
 }
 

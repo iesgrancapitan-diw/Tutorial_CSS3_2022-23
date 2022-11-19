@@ -1,23 +1,55 @@
-#fondos-color{
-    background-color: red;
+#div-background{
+    border: 1px solid black;
+    width: 700px;
+    display: flex;
+    align-items: center;
 }
 
-#fondos-rgb{
+#fondos-color{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+#fondos-hexadecimal{
     background-color: #add8e6;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
 }
 
 #fondos-transparent{
     background-color: transparent;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+#fondos-rgb{
+    background-color: rgb(210,120,134);
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
 }
 
 #fondos-rgba{
     background-color: rgba(30, 27, 96, 0.911);
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
 }
 
 #fondos-hsl{
     background-color: hsl(14, 100%, 73%);
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
 }
 
 #fondos-hsla{
     background-color: hsla(14, 100%, 53%, 0.2);
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
 }

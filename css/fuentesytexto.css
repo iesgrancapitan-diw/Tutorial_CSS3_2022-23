@@ -452,3 +452,7 @@
 .fuentesytexto_font-variant-2{
     font-variant: small-caps diagonal-fractions;
 }
+
+.fuentesytexto_font-face{
+    font-family: "League";
+}

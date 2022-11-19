@@ -692,6 +692,50 @@ font-kerning: none;
           </div>
         </article>
         <article>
+          <h3>@font-face</h3>
+          <p>Esta directiva permite cargar fuentes de forma local o remota.</p>
+          <h4>Sintaxis</h4>
+          <pre class="line-numbers"><code class="language-css">@font-face {
+  font-family: 'Nombre de la fuente';
+  src: url('ruta/a/la/fuente.woff2') format('woff2'),
+
+        url('ruta/a/la/fuente.woff') format('woff'),
+
+        url('ruta/a/la/fuente.ttf') format('truetype'),
+
+        url('ruta/a/la/fuente.svg#svgFontName') format('svg');
+
+  font-weight: normal;
+  font-style: normal;
+}
+</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li>font-family: nombre de la fuente.</li>
+            <li>src: ruta a la fuente. En el format se especifica el tipo de archivo que se estáa cargando</li>
+            <li>font-family: Especificas el nombre con el que quieres llamar a la fuente</li>
+            <li>font-weight: peso de la fuente.</li>
+            <li>font-style: estilo de la fuente.</li>
+          </ul>
+          <h4>Ejemplos</h4>
+          <pre class="line-numbers"><code class="language-css">@font-face {
+  src: url(fuentes_efectos_texto_fuentes_locales/LeagueMono-VF.ttf) format('truetype');
+  font-family: League;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-face{
+  font-family: League;
+}
+
+</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado">
+            <p class="fuentesytexto_font-face">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          </div>
+        </article>
+        <article>
           <h3>Google Fonts</h3>
           <p>Google Fonts es un servicio gratuito que ofrece fuentes de Google para que las utilices en tus sitios web. Puedes ver todas las fuentes disponibles en <a href="https://fonts.google.com/" target="_blank">https://fonts.google.com/</a></p>
           <p>Para utilizar una fuente de Google Fonts, debes incluir el siguiente código en la sección <code>&lt;head&gt;</code> de tu documento HTML:</p>

@@ -8,7 +8,7 @@
    background-color: aqua;
 }
 
-#fondos-background-position-porcentaje2{
+#fondos-background-position-valores-posicion{
    background-image: url("../img/background-position-img.png");
    background-position: top right;
    background-repeat: no-repeat;
@@ -18,9 +18,9 @@
    background-color: aqua;
 }
 
-#fondos-background-position-porcentaje3{
+#fondos-background-position-center{
    background-image: url("../img/background-position-img.png");
-   background-position: center center;
+   background-position: center ;
    background-repeat: no-repeat;
    background-size: 50px 50px;
    height: 100px;

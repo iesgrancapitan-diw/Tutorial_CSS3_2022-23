@@ -508,15 +508,22 @@ background-color: hsla(14, 100%, 53%, 0.2);
                 <p>Es un propiedad de CSS que define la posición de la imagen de fondo.</p>
                 <h4>Sintaxis</h4>
                 <pre
-                    class="line-numbers"><code class="language-css">background-position: [porcentaje | palabras clave posición | center];</code></pre>
-                <p>Admite 3 valores, que son los siguientes: </p>
+                    class="line-numbers"><code class="language-css">background-position: [ % | cm | left | center | right | top | bottom | xpos | ypos | center];</code></pre>
+                <p>Admite varios valores, que son los siguientes: </p>
                 <ul>
-                    <li><b>Un porcentaje:</b> La imagen de fondo se colocará al 0 % en el eje horizontal y al 0 % en el
-                        eje vertical,
-                        lo que significa la esquina superior izquierda del elemento.</li>
+                    <li><b>%:</b> Le podremos dar un porcentaje en el eje x o eje y a nuestra imagen. Si damos 0% por defecto es arriba a la izquierda (0,0)</li>
+                    <li><b>cm:</b> Le podremos dar una cantidad de centímetros a nuestra imágen. También podemos usar otros valores relativos o absolutos (px o rem/em)</li>
                     <li><b>Palabras clave de posición:</b> Puede utilizar una combinación de palabras clave de posición:
-                        <b>center, top, bottom y left right.</b>
+                        <b>center, top, bottom y left right.</b></li>
+                    <li>Podemos combinar varias palabras clave de posición como por ejemplo: 
+                        <ul>
+                            <li><b>Top, top center y center top:</b> Coloca la imagen en el punto medio del eje x.</li>
+                            <li><b>Left, left center y center left:</b> Coloca la imagen en el punto medio del eje y.</li>
+                            <li><b>Right, right center y center right:</b> Citua la imagen en el extremo derecho centrada.</li>
+                            <li><b>Bottom, bottom center y center bottom:</b> Posiciona la imagen en el extremo inferior centrada.</li>
+                        </ul>
                     </li>
+                    <li><b>xpos, ypos:</b> Añade nuestra imagen con respecto a sus coordenadas x e y</li>
                     <li><b>Center: </b> La imagen de fondo se colocará en el centro del elemento.</b></li>
                 </ul>
 
@@ -534,7 +541,7 @@ background-color: hsla(14, 100%, 53%, 0.2);
 </code></pre>
                 <div id="fondos-background-position-porcentaje"></div>
                 <br />
-                <pre class="line-numbers"><code class="language-css">#fondos-background-position-porcentaje2{
+                <pre class="line-numbers"><code class="language-css">#fondos-background-position-valores-posicion{
     background-image: url("../img/background-position-img.png");
     background-position: top right;
     background-repeat: no-repeat;
@@ -544,11 +551,11 @@ background-color: hsla(14, 100%, 53%, 0.2);
     background-color: aqua;
 }
 </code></pre>
-                <div id="fondos-background-position-porcentaje2"></div>
+                <div id="fondos-background-position-valores-posicion"></div>
                 <br />
-                <pre class="line-numbers"><code class="language-css">#fondos-background-position-porcentaje3{
+                <pre class="line-numbers"><code class="language-css">#fondos-background-position-center{
     background-image: url("../img/background-position-img.png");
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: 50px 50px;
     height: 100px;
@@ -556,7 +563,7 @@ background-color: hsla(14, 100%, 53%, 0.2);
     background-color: aqua;
 }
 </code></pre>
-                <div id="fondos-background-position-porcentaje3"></div>
+                <div id="fondos-background-position-center"></div>
                 <br />
             </article>
 

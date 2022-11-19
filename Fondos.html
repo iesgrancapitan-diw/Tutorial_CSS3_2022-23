@@ -574,11 +574,20 @@ background-color: hsla(14, 100%, 53%, 0.2);
                     con el color de fondo del elemento.background-blend-mode.</p>
                 <h4>Sintaxis</h4>
                 <pre
-                    class="line-numbers"><code class="language-css">background-blend-mode: [normal | 2 valores(darken,luminosity) | globales(inherit,initial,revert,revert-layer,unset)];</code></pre>
+                    class="line-numbers"><code class="language-css">background-blend-mode: [normal|multiply|screen|overlay|darken|lighten|color-dodge|saturation|color|luminosity|color-burn];</code></pre>
                 <p>Admite varios valores, que son los siguientes: </p>
                 <ul>
-                    <li><b>Background-blend-mode: </b>El modo de fusión que se va a aplicar.
-                        Puede haber varios valores, separados por comas.</li>
+                    <li><b>normal: </b>El modo de fusión que se va a aplicar es el normal. Es el valor por defecto(no hay fusión, ni mezcla).</li>
+                    <li><b>multiply: </b>Establece el mode de fusión para multiplicar.</li>
+                    <li><b>screen: </b>Modo de fusión de la pantalla.</li>
+                    <li><b>overlay: </b>Modo de fusión en superposición.</li>
+                    <li><b>darken: </b>Modo de fusión para oscurecer.</li>
+                    <li><b>lighten: </b>Modo de fusión para esclarecer o dar brillo.</li>
+                    <li><b>color-dodge: </b>Establece el modo de fusión para esquivar el color.</li>
+                    <li><b>saturation: </b>Modo de fusión para saturación.</li>
+                    <li><b>color: </b>El modo de fusión para colores.</li>
+                    <li><b>luminosity: </b>El modo de fusión para la luminosidad</li>
+                    <li><b>color-burn: </b>El modo de fusión efecto quemado/pixelado que se aplicará.</li>
                 </ul>
 
                 <h4>Ejemplos:</h4>
@@ -594,6 +603,7 @@ background-color: hsla(14, 100%, 53%, 0.2);
 </code></pre>
                 <div id="fondos-background-blend-mode-normal"></div>
                 <br />
+
                 <pre class="line-numbers"><code class="language-css">#fondos-background-blend-mode-multiply {
     background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
         url("../img/background-blend-mode-img.png");

@@ -149,7 +149,7 @@
     height: 100px;
     
     animation: animacion-play-state 3s linear infinite;
-    animation-play-state: paused;
+    animation-play-state: running;
     background-color: rgb(111, 194, 202);
     
     

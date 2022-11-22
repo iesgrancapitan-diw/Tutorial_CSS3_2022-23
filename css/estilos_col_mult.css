@@ -12,7 +12,7 @@ img {
 }
 
 #col_ejemploColumn-width>p {
-    column-width: 5px;
+    column-width: 10%;
 }
 
 #col_ejemploColumn-gap {

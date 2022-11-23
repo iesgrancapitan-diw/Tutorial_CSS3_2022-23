@@ -1,12 +1,21 @@
 .fondos-background-origin-imagen1{
-    background: url("../img/background-origin-imagen.png");
+    height:200px; 
+    border: 10px dashed black;
+    padding: 25px;
     background-origin: padding-box;
+    background-image: url("../img/background-repeatY-img.png");  
 }
 .fondos-background-origin-imagen2{
-    background: url("../img/background-origin-imagen.png");
+    height:200px; 
+    border: 10px dashed black;
+    padding: 25px;
     background-origin: border-box;
+    background-image: url("../img/background-repeatY-img.png");  
 }
 .fondos-background-origin-imagen3{
-    background: url("../img/background-origin-imagen.png");
+    height:200px; 
+    border: 10px dashed black;
+    padding: 25px;
     background-origin: content-box;
+    background-image: url("../img/background-repeatY-img.png");  
 }

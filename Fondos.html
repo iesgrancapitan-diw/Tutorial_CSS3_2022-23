@@ -283,34 +283,39 @@ background-color: hsla(14, 100%, 53%, 0.2);
                     class="line-numbers"><code class="language-css">background-origin: padding-box|border-box|content-box|initial|inherit;</code></pre>
                 <h4>Ejemplos: </h4>
                 <ul>
+                    <li >
+                        <p>padding-box</p>
+                        <p>- Valor por defecto. La imagen de fondo comienza desde la esquina superior izquierda del
+                            borde de relleno. Se puede poner más de un valor con una coma.</p>
+                    </li>
                     <pre class="line-numbers"><code class="language-css">.fondos-background-origin-imagen1{
     background: url("../img/background-origin-imagen.png");
     background-origin: padding-box;
 }
 </code></pre>
-                    <li class="fondos-background-origin-imagen1">
-                        <p>padding-box</p>
-                        <p>- Valor por defecto. La imagen de fondo comienza desde la esquina superior izquierda del
-                            borde de relleno. Se puede poner más de un valor con una coma.</p>
+                    <div class="fondos-background-origin-imagen1"></div>
+
+                    <li>
+                        <p>border-box</p>
+                        <p>- La imagen de fondo comienza desde la esquina superior izquierda del borde.</p>
                     </li>
                     <pre class="line-numbers"><code class="language-css">.fondos-background-origin-imagen2{
     background: url("../img/background-origin-imagen.png");
     background-origin: border-box;
 }
 </code></pre>
-                    <li class="fondos-background-origin-imagen2">
-                        <p>border-box</p>
-                        <p>- La imagen de fondo comienza desde la esquina superior izquierda del borde.</p>
+                    <div class="fondos-background-origin-imagen2"></div>
+
+                    <li>
+                        <p>content-box</p>
+                        <p>- La imagen de fondo comienza desde la esquina superior izquierda del contenido.</p>
                     </li>
                     <pre class="line-numbers"><code class="language-css">.fondos-background-origin-imagen3{
     background: url("../img/background-origin-imagen.png");
     background-origin: content-box;
 }
 </code></pre>
-                    <li class="fondos-background-origin-imagen3">
-                        <p>content-box</p>
-                        <p>- La imagen de fondo comienza desde la esquina superior izquierda del contenido.</p>
-                    </li>
+                    <div class="fondos-background-origin-imagen3"></div>
                     <li>
                         <p>initial</p>
                         <p>- Establece esta propiedad en su valor predeterminado.</p>

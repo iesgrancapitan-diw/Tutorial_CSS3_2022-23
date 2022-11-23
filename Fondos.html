@@ -145,46 +145,54 @@ background-color: hsla(14, 100%, 53%, 0.2);
                     class="line-numbers"><code class="language-css">background-image: url|none|initial|inherit;</code></pre>
                 <h4>Ejemplos: </h4>
                 <ul>
+                    <li>
+                        <p>url</p>
+                        <p>- La URL de la imagen. Se pueden especificar más imagenes separando con una coma.</p>
+                    </li>
                     <pre class="line-numbers"><code class="language-css">.fondos-background-image-imagen1{
     background-image: url("../img/background-repeat-space-img.png"), url("../img/background-image-imagen.png");
     background-position: center;
     background-repeat: no-repeat, repeat;
     height: 500px;
 }</code></pre>
-                    <li class="fondos-background-image-imagen1">
-                        <p>url</p>
-                        <p>- La URL de la imagen. Se pueden especificar más imagenes separando con una coma.</p>
+                    <div class="fondos-background-image-imagen1"></div>
+
+                    <li>
+                        <p>none</p>
+                        <p>- No se muestra ninguna imagen por defecto.</p>
                     </li>
                     <pre class="line-numbers"><code class="language-css">.fondos-background-image-imagen2{
     background-image: none;
 }</code></pre>
-                    <li class="fondos-background-image-imagen2">
-                        <p>none</p>
-                        <p>- No se muestra ninguna imagen por defecto.</p>
+                    <div class="fondos-background-image-imagen2"></div>
+
+                    <li>
+                        <p>conic-gradient</p>
+                        <p>- Establece un degradado cónico, pero se tienen que definir dos colores como mínimo.</p>
                     </li>
                     <pre class="line-numbers"><code class="language-css">.fondos-background-image-imagen3{
      background-image: conic-gradient(red, yellow, green);
 }</code></pre>
-                    <li class="fondos-background-image-imagen3">
-                        <p>conic-gradient</p>
-                        <p>- Establece un degradado cónico, pero se tienen que definir dos colores como mínimo.</p>
+                    <div class="fondos-background-image-imagen3"></div>
+
+                    <li>
+                        <p>linear-gradient</p>
+                        <p>- Establece un degradado lineal, pero se tiene que definir dos colores como mínimo.</p>
                     </li>
                     <pre class="line-numbers"><code class="language-css">.fondos-background-image-imagen4{
     background-image: linear-gradient(red, yellow, rgb(140, 139, 235));
 }</code></pre>
-                    <li class="fondos-background-image-imagen4">
-                        <p>linear-gradient</p>
-                        <p>- Establece un degradado lineal, pero se tiene que definir dos colores como mínimo.</p>
-                    </li>
-                    <pre class="line-numbers"><code class="language-css">.fondos-background-image-imagen5{
-    background-image: radial-gradient(red, green, rgb(140, 139, 235));
-}</code></pre>
-                    <li class="fondos-background-image-imagen5">
+                    <div class="fondos-background-image-imagen4"></div>
+
+                    <li>
                         <p>radial-gradient</p>
                         <p>- Establece un degradado radial(del centro a los bordes), teniendo que definir dos colores
                             como mínimo.</p>
                     </li>
-
+                    <pre class="line-numbers"><code class="language-css">.fondos-background-image-imagen5{
+    background-image: radial-gradient(red, green, rgb(140, 139, 235));
+}</code></pre>
+                    <div class="fondos-background-image-imagen5"></div>
                     <li>
                         <p>repeating-conic-gradient</p>
                         <p>- Repite un radiante cónico.</p>

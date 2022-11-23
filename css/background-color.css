@@ -1,74 +1,45 @@
-#div-background{
-    width: 1000px;
-    display: flex;
+#padre>div {
+    display: inline-block;
+    width: 160px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    color: black;
 }
 
-#fondos-color{
+#padre>div>p {
+    text-align: center;
+}
+
+#fondos-color {
     background-color: red;
-    width: 150px;
-    height: 100px;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid black;
-    color: black
 }
 
-#fondos-hexadecimal{
+#fondos-hexadecimal {
     background-color: #add8e6;
-    width: 150px;
-    height: 100px;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid black;
-    color: black
 }
 
-#fondos-transparent{
+#fondos-transparent {
     background-color: transparent;
-    width: 150px;
-    height: 100px;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid black;
-    color: black
+
 }
 
-#fondos-rgb{
-    background-color: rgb(210,120,134);
-    width: 150px;
-    height: 100px;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid black;
-    color: black
+#fondos-rgb {
+    background-color: rgb(210, 120, 134);
+
 }
 
-#fondos-rgba{
+#fondos-rgba {
     background-color: rgba(30, 27, 96, 0.911);
-    width: 150px;
-    height: 100px;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid black;
-    color:black
+
 }
 
-#fondos-hsl{
+#fondos-hsl {
     background-color: hsl(14, 100%, 73%);
-    width: 150px;
-    height: 100px;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid black;
-    color: black
+
 }
 
-#fondos-hsla{
+#fondos-hsla {
     background-color: hsla(14, 100%, 53%, 0.2);
-    width: 150px;
-    height: 100px;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid black;
-    color: black
 }

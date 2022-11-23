@@ -146,7 +146,10 @@ background-color: hsla(14, 100%, 53%, 0.2);
                 <h4>Ejemplos: </h4>
                 <ul>
                     <pre class="line-numbers"><code class="language-css">.fondos-background-image-imagen1{
-    background-image: url("../img/background-image-imagen.png");
+    background-image: url("../img/background-repeat-space-img.png"), url("../img/background-image-imagen.png");
+    background-position: center;
+    background-repeat: no-repeat, repeat;
+    height: 500px;
 }</code></pre>
                     <li class="fondos-background-image-imagen1">
                         <p>url</p>
@@ -181,24 +184,18 @@ background-color: hsla(14, 100%, 53%, 0.2);
                         <p>- Establece un degradado radial(del centro a los bordes), teniendo que definir dos colores
                             como mínimo.</p>
                     </li>
-                    <pre class="line-numbers"><code class="language-css">.fondos-background-image-imagen6{
-    background-image: repeating-conic-gradient(red 20%, yellow 25%);
-}</code></pre>
-                    <li class="fondos-background-image-imagen6">
+
+                    <li>
                         <p>repeating-conic-gradient</p>
                         <p>- Repite un radiante cónico.</p>
                     </li>
-                    <pre class="line-numbers"><code class="language-css">.fondos-background-image-imagen7{
-    background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
-}</code></pre>
-                    <li class="fondos-background-image-imagen7">
+
+                    <li>
                         <p>repeating-linear-gradient</p>
                         <p>- Repite un radiante lineal.</p>
                     </li>
-                    <pre class="line-numbers"><code class="language-css">.fondos-background-image-imagen8{
-    background-image: repeating-radial-gradient(red, yellow 20%, green 25%);
-}</code></pre>
-                    <li class="fondos-background-image-imagen8">
+
+                    <li>
                         <p>repeating-radial-gradient</p>
                         <p>- Repite un radiante radial.</p>
                     </li>

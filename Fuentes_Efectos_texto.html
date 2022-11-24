@@ -448,28 +448,16 @@ font-variant-numeric: stacked-fractions;
         </article>
         <article>
           <h3>font-variant</h3>
-          <p>Se usa para establecer las variantes de las fuentes. Es un "shorthand"</p>
+          <p>La propiedad font-variant es una propiedad abreviada para las propiedades: font-variant-alternates, font-variant-caps, font-variant-east-asian,font-variant-ligatures yfont-variant-numeric. </p>
+          <p>Se usa para establecer las variantes de las fuentes.</p>
           <h4>Sintaxis</h4>
           <pre
             class="line-numbers"
-          ><code class="language-css">font-variant: normal|small-caps|all-small-caps|petite-caps|all-petite-caps|unicase|titling-caps|lining-nums|oldstyle-nums|proportional-nums|tabular-nums|diagonal-fractions|stacked-fractions|ordinal|slashed-zero|normal|inherit;</code></pre>
+          ><code class="language-css">font-variant: none | normal | [ [ common-ligatures | no-common-ligatures ] || [ discretionary-ligatures | no-discretionary-ligatures ] ||[ historical-ligatures | no-historical-ligatures ] || [ contextual | no-contextual ] || [ small-caps | all-small-caps | petite-caps | all-petite-caps | unicase | titling-caps ] || [ stylistic() || historical-forms || styleset(#) || character-variant(#) || swash() || ornaments() || annotation() ] || [ lining-nums | oldstyle-nums ] || [ proportional-nums | tabular-nums ] || [ diagonal-fractions | stacked-fractions ] || ordinal || slashed-zero ] ]</code></pre>
           <p>Admite los siguientes valores:</p>
           <ul>
-            <li>normal: no se aplica ninguna variante.</li>
-            <li>small-caps: se aplica la variante de letras pequeñas.</li>
-            <li>all-small-caps: se aplica la variante de letras pequeñas en mayúsculas.</li>
-            <li>petite-caps: se aplica la variante de letras pequeñas en minúsculas.</li>
-            <li>all-petite-caps: se aplica la variante de letras pequeñas en mayúsculas.</li>
-            <li>unicase: se aplica la variante de letras en mayúsculas.</li>
-            <li>titling-caps: se aplica la variante de letras en mayúsculas.</li>
-            <li>lining-nums: se aplica la numeración de líneas.</li>
-            <li>oldstyle-nums: se aplica la numeración antigua.</li>
-            <li>proportional-nums: se aplica la numeración proporcional.</li>
-            <li>tabular-nums: se aplica la numeración tabular.</li>
-            <li>diagonal-fractions: se aplica la numeración de fracciones diagonales.</li>
-            <li>stacked-fractions: se aplica la numeración de fracciones apiladas.</li>
-            <li>ordinal: se aplica la numeración ordinal.</li>
-            <li>slashed-zero: se aplica la numeración con cero barrado.</li>
+            <li>normal: se aplican las variantes de cada propiedad por defecto</li>
+            <li>none: no se aplica ninguna variante.</li>
           </ul>
           <h4>Valor por defecto</h4>
           <p>normal</p>

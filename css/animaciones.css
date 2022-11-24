@@ -1,6 +1,6 @@
-#animation-keyframes {
+#Animation-keyframes {
   animation-name: keyframes;
-  
+  animation-duration: 3s;
   width: 100px;
   height: 100px;
 }

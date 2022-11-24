@@ -59,21 +59,26 @@
             Duración: La duración de la animación se define con la propiedad
             animation-duration.
           </p>
+          <h4>Sintaxis</h4>
           <pre class="line-numbers">
-            <code class="language-css"><!-- Ejemplo de @keyframe -->
-              div{
-                
-              animation-name: keyframes;
-              animation-duration: 4s;
+            <code class="language-css">@keyframes animationname {
+                from {background-color: red;}
+                to {background-color: yellow;}
+              }</code>
+          </pre>
+          <h4>Ejemplo</h4>
+          <pre class="line-numbers">
+            <code class="language-css"><!-- Ejemplo de @keyframe -->div{      
+            animation-name: keyframes;
+            animation-duration: 4s;
             }
             @keyframes keyframes {
               0% {background-color: red;}
               25% {background-color: yellow;}
               50% {background-color: blue;}
-              100% {background-color: green;}
-            </code>
+              100% {background-color: green;}</code>
           </pre>
-          <div id="animation-keyframes"></div>
+          <div id="Animation-keyframes"></div>
         </article>
         <article>
           <h3>
@@ -83,11 +88,9 @@
             La propiedad animation-name especifica el nombre de la animación que
             se va a ejecutar.
           </p>
-          <h4>Sintaxis/h3>
+          <h4>Sintaxis</h4>
           <pre class="line-numbers">
-            <code class="language-css"><!-- Sintaxis -->
-            animation-name: nombre;
-          </code>
+            <code class="language-css"><!-- Sintaxis -->animation-name: nombre;</code>
         </pre>
         <p>
           El valor nombre es el nombre de la animación que se va a ejecutar. El
@@ -95,11 +98,9 @@
         </p>
         <h4>Ejemplo</h4>
         <pre class="line-numbers">
-          <code class="language-css"><!-- Ejemplo de animation-name -->
-            #animation-name {
+          <code class="language-css"><!-- Ejemplo de animation-name -->#animation-name {
               animation-name: nombreAnimacion;
-            }
-          </code>
+            }</code>
         </pre>
         <div id="Animation-name"></div>
       </article>
@@ -114,12 +115,10 @@
           inverso.
         </p>
         <pre class="line-numbers">
-          <code class="language-css"><!-- Ejemplo de Animation-duration -->
-          div {
+          <code class="language-css"><!-- Ejemplo de Animation-duration -->div {
             animation-name: Animation-direction;
             animation-duration: 4s;
-          }
-          </code>
+          }</code>
         </pre>
       </article>
         <article>
@@ -165,13 +164,11 @@
           <p>El valor por defecto es none.</p>
           <div id="Animation-fill-mode"></div>
           <pre class="line-numbers">
-            <code class="language-css"><!-- Ejemplo de Animation-fill-mode -->
-            div {
+            <code class="language-css"><!-- Ejemplo de Animation-fill-mode -->div {
               animation-name: Animation-duration;
               animation-duration: 4s;
               animation-fill-mode: forwards;
-            }
-            </code>
+            }</code>
           </pre>
         </article>
         <article>
@@ -188,13 +185,11 @@
             el evento.
           </p>
           <pre class="line-numbers">
-            <code class="language-css"><!-- Ejemplo de Animation-delay -->
-            div {
+            <code class="language-css"><!-- Ejemplo de Animation-delay -->div {
               animation-name: Animation-delay;
               animation-duration: 4s;
               animation-delay: 2s;
-            }
-            </code>
+            }</code>
           </pre>
           <div id="animation-delay"></div>
         </article>
@@ -226,13 +221,11 @@
 
           <p>El valor por defecto es normal.</p>
           <pre class="line-numbers">
-            <code class="language-css"><!-- Ejemplo de Animation-direction -->
-            div {
+            <code class="language-css"><!-- Ejemplo de Animation-direction -->div {
               animation-name: Animation-direction;
               animation-duration: 4s;
               animation-direction: alternate;
-            }
-            </code>
+            }</code>
           </pre>
           <div id="Animation-direction"></div>
         </article>
@@ -246,13 +239,11 @@
             significa que la animación se ejecuta en sentido inverso.
           </p>
           <pre class="line-numbers">
-            <code class="language-css"><!-- Ejemplo de Animation-iteration-count -->
-            div {
+            <code class="language-css"><!-- Ejemplo de Animation-iteration-count -->div {
               animation-name: Animation-iteration-count;
               animation-duration: 4s;
               animation-iteration-count: infinite;
-            }
-            </code>
+            }</code>
           </pre>
           <div id="Animation-iteration-count"></div>
         </article>
@@ -269,13 +260,11 @@
           </ul>
           <p>El valor por defecto es running.</p>
           <pre class="line-numbers">
-          <code class="language-css"><!-- Ejemplo de Animation-play-state -->
-          div {
+          <code class="language-css"><!-- Ejemplo de Animation-play-state -->div {
             animation-name: Animation-play-state;
             animation-duration: 4s;
             animation-play-state: paused;
-          }
-          </code>
+          }</code>
           </pre>
           
           
@@ -309,13 +298,11 @@
           </p>
           <p>El valor por defecto es ease.</p>
           <pre class="line-numbers">
-            <code class="language-css"><!-- Ejemplo de Animation-timing-function -->
-            div {
+            <code class="language-css"><!-- Ejemplo de Animation-timing-function -->div {
               animation-name: example;
               animation-duration: 4s;
               animation-timing-function: linear;
-            }
-            </code>
+            }</code>
           </pre>
           <div id="Animation-timing-function"></div>
         </article>

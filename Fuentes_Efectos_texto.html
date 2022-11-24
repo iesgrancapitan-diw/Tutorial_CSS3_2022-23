@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>
+      TUTORIAL CSS3 - 2020/2021 - Diseño de Interfaces Web - CFGS DAW - IES Gran
+      Capitán
+    </title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+   
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/prism.css" />
+    <link rel="stylesheet" href="css/fuentesytexto.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&effect=shadow-multiple|fire" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Lato:900" rel="stylesheet">
+    <script src="js/prism.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1><a href="index.html">TUTORIAL CSS3 - 2022/2023</a></h1>
+      <h2><img src="icon/language-css3.svg" /></h2>
+    </header>
+    <nav>
+      <ul>
+        <li> <span></span> <a href="Bordes.html">Bordes</a></li>
+        <li> <span></span> <a href="Fondos.html">Fondos</a></li>
+        <li> <span></span> <a href="Efectos_texto.html">Fuentes y El Texto</a></li>
+        <li> <span></span> <a href="Transformaciones.html">Transformac.</a></li>
+        <li> <span></span> <a href="Transiciones.html">Transiciones</a></li>
+        <li> <span></span> <a href="Animaciones.html">Animaciones</a></li>
+        <li> <span></span> <a href="Col_mult.html">Col Múltiples</a></li>
+        <li> <span></span> <a href="Color.html">Color y Degradado</a></li>
+        <li> <span></span> <a href="Pseudos_Css3.html">Pseudos CSS3</a></li>
+        <li> <span></span> <a href="Svg_filter.html">Filter y SVG</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div>
+        <h2>TUTORIAL CSS3 - Efectos de Texto y Fuentes</h2>
+        <h3>
+          Propiedades para modificar el texto y la fuente de un documento HTML
+        </h3>
+      </div>
+      <section>
+        <article>
+          <h3>text-transform</h3>
+          <p>Se usa para establecer la transformación del texto de manera que 
+            se muestre en mayúsculas o minúsculas la primera letra de cada palabra o todo el texto por completo.</p>
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">text-transform: capitalize|uppercase|lowercase|initial|inherit;</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li> <span> capitalize: </span>convierte el primer carácter de cada palabra en mayúsculas.</li>
+            <li> <span> uppercase:</span> convierte el texto en mayúsculas.</li>
+            <li> <span> lowercase: </span>convierte el texto en minúsculas.</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <p>none</p>
+          <h4>Ejemplos:</h4>
+          <pre class="line-numbers"><code class="language-css">text-transform: capitalize;
+text-transform: uppercase;
+text-transform: lowercase;</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado">
+            <p class="fuentesytexto_text-transform-capitalize">capitalize</p>
+            <p class="fuentesytexto_text-transform-uppercase">uppercase</p>
+            <p class="fuentesytexto_text-transform-lowercase">LOWERCASE</p>
+          </div>
+        </article>
+      </section>
+      <section>
+        <article>
+          <h3>text-shadow</h3>
+          <p>Se usa para establecer una sombra al texto.</p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">text-shadow: none|h-shadow v-shadow blur color|initial|inherit;</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li> <span> none:</span> no se aplica ninguna sombra.</li>
+            <li> <span> h-shadow:</span> establece la distancia horizontal de la sombra.</li>
+            <li> <span> v-shadow:</span> establece la distancia vertical de la sombra.</li>
+            <li> <span> blur:</span> establece el radio de difuminado de la sombra.</li>
+            <li> <span> color:</span> establece el color de la sombra.</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <p>none</p>
+          <h4>Ejemplos:</h4>
+          <pre class="line-numbers"><code class="language-css">text-shadow: none;
+text-shadow: 2px 2px 2px black;
+text-shadow: 2px 2px 2px black, 4px 4px 4px #000;
+</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado">
+            <p class="fuentesytexto_text-shadow-none">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p class="fuentesytexto_text-shadow-2px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_text-shadow-2px-4px">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </article>
+      </section>
+      <section>
+        <article>
+          <h3>font-stretch</h3>
+          <p>Se usa para establecer la extensión de la fuente.</p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">font-stretch: normal|ultra-condensed|extra-condensed|condensed|semi-condensed|semi-expanded|expanded|extra-expanded|ultra-expanded|initial|inherit;</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li> <span> normal:</span> establece la extensión normal de la fuente.</li>
+            <li> <span> ultra-condensed:</span> establece la extensión ultra-condensada de la fuente.</li>
+            <li> <span> extra-condensed: </span>establece la extensión extra-condensada de la fuente.</li>
+            <li> <span> condensed: </span>establece la extensión condensada de la fuente.</li>
+            <li> <span> semi-condensed: </span>establece la extensión semi-condensada de la fuente.</li>
+            <li> <span> semi-expanded: </span>establece la extensión semi-expandida de la fuente.</li>
+            <li> <span> expanded: </span>establece la extensión expandida de la fuente.</li>
+            <li> <span> extra-expanded: </span>establece la extensión extra-expandida de la fuente.</li>
+            <li> <span> ultra-expanded: </span>establece la extensión ultra-expandida de la fuente.</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <p>normal</p>
+          <h4>Ejemplos:</h4>
+          <p>He usado la fuente League</p>
+          <pre class="line-numbers"><code class="language-css">font-family: League, sans-serif;
+
+font-stretch: normal;
+font-stretch: ultra-condensed;
+font-stretch: extra-condensed;
+font-stretch: condensed;
+font-stretch: semi-condensed;
+font-stretch: semi-expanded;
+font-stretch: expanded;
+font-stretch: extra-expanded;
+font-stretch: ultra-expanded;
+</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado fuentesytexto_font-stretch ">
+            <p class="fuentesytexto_font-stretch-normal">normal</p>
+            <p class="fuentesytexto_font-stretch-ultra-condensed">ultra-condensed</p>
+            <p class="fuentesytexto_font-stretch-extra-condensed">extra-condensed</p>
+            <p class="fuentesytexto_font-stretch-condensed">condensed</p>
+            <p class="fuentesytexto_font-stretch-semi-condensed">semi-condensed</p>
+            <p class="fuentesytexto_font-stretch-semi-expanded">semi-expanded</p>
+            <p class="fuentesytexto_font-stretch-expanded">expanded</p>
+            <p class="fuentesytexto_font-stretch-extra-expanded">extra-expanded</p>
+            <p class="fuentesytexto_font-stretch-ultra-expanded">ultra-expanded</p>
+          </div>
+
+
+        </article>
+        <article>
+          <h3>font-family</h3>
+          <p>Se usa para establecer la familia de fuentes del texto.</p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">font-family: family-name|generic-family|initial|inherit;</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li> <span> family-name: </span>establece el nombre de la familia de fuentes.</li>
+            <li> <span> generic-family:</span> establece la familia de fuentes genérica.</li>
+          </ul>
+          <p>En CSS hay 5 familias de fuentes genéricas:</p>
+          <ul>
+            <li> <span> serif: </span>tienen un pequeño trazo en los bordes de cada letra. Crean una sensación de formalidad y elegancia.</li>
+            <li> <span> monospace: </span>tienen un ancho fijo. Crean un aspecto mecánico </li>
+            <li> <span> sans-serif: </span>no tienen trazos en los bordes de cada letra. Son más modernas y menos formales.</li>
+            <li> <span> cursive: </span>tienen un trazo que recorre cada letra. Son más informales y creativas.</li>
+            <li> <span> fantasy: </span>tienen un trazo que recorre cada letra. Son más informales y creativas.</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <p>serif</p>
+          <h4>Ejemplos:</h4>
+          <pre class="line-numbers"><code class="language-css">font-family: Arial, Helvetica, sans-serif;
+font-family: "Times New Roman", Times, serif;
+font-family: "Courier New", Courier, monospace;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado">
+            <p class="fuentesytexto_font-family">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-family-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-family-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-family-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          </div>
+        </article>
+        <article>
+          <h3>font-variant-ligatures</h3>
+          <p>Se usa para establecer las ligaduras de las fuentes.</p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">font-variant-ligatures: normal|no-common-ligatures| common-ligatures|historical-lig-value|inherit;</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+
+            <li> <span> normal:</span> no se aplica ninguna ligadura.</li>
+            <li> <span> common-ligatures:</span> se aplican las ligaduras comunes.</li>
+            <li> <span> historical-ligatures: </span>se aplican las ligaduras históricas. Que pueden ser "fl", "st" o parecidos</li>
+            <li> <span> no-historical-ligatures: </span>no se aplican las ligaduras históricas.</li>
+            <li> <span> contextual: </span>especifica que se van a utilizar este tipo de ligadura. </li>
+            <li> <span> no-contextual: </span>especifica que no se van a usar.</li>
+            <li> <span> discretionary-ligatures:</span> controla ligaduras específicas de la fuente.</li>
+            <li> <span> no-discretionary-ligatures:</span> no las controla</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <p>normal</p>
+          <h4>Ejemplos:</h4>
+          <pre class="line-numbers"><code class="language-css">font-variant-ligatures: normal;
+font-variant-ligatures: common-ligatures;
+font-variant-ligatures: no-common-ligatures;
+font-variant-ligatures: historical-ligatures;
+font-variant-ligatures: no-historical-ligatures;
+font-variant-ligatures: contextual;
+font-variant-ligatures: no-contextual;
+font-variant-ligatures: discretionary-ligatures;
+font-variant-ligatures: no-discretionary-ligatures;
+</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado fuentesytexto_font-variant-ligatures">
+            <p class="fuentesytexto_font-variant-ligatures-normal">if fi ff tf ft jf fj //normal</p>
+            <p class="fuentesytexto_font-variant-ligatures-common-ligatures">if fi ff tf ft jf fj // common-ligatures</p>
+            <p class="fuentesytexto_font-variant-ligatures-no-common-ligatures">if fi ff tf ft jf fj // no-common-ligatures</p>
+            <p class="fuentesytexto_font-variant-ligatures-historical-ligatures">if fi ff tf ft jf fj // historical-ligatures</p>
+            <p class="fuentesytexto_font-variant-ligatures-no-historical-ligatures">if fi ff tf ft jf fj // no-historical-ligatures</p>
+            <p class="fuentesytexto_font-variant-ligatures-contextual">if fi ff tf ft jf fj // contextual</p>
+            <p class="fuentesytexto_font-variant-ligatures-no-contextual">if fi ff tf ft jf fj // no-contextual</p>
+            <p class="fuentesytexto_font-variant-ligatures-discretionary-ligatures">if fi ff tf ft jf fj //discretionary-ligatures</p>
+            <p class="fuentesytexto_font-variant-ligatures-no-discretionary-ligatures">if fi ff tf ft jf fj // no-discretionary-ligatures</p>
+
+          </div>
+        </article>
+        <article>
+          <h3>font-variant-settings</h3>
+          <p>Esta función solo funciona en el navegador Firefox.</p>
+          <p>Se usa para establecer las variantes de las fuentes.</p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">font-variant-settings: normal|wght|wdth|slnt|ital|opsz|inherit;</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li> <span> normal:</span> no se aplica ninguna variante.</li>
+            <li> <span> wght:</span> especifica el peso de la fuente.</li>
+            <li> <span> wdth:</span> especifica el ancho de la fuente.</li>
+            <li> <span> slnt:</span> especifica la inclinación de la fuente.</li>
+            <li> <span> ital:</span> especifica si la fuente es cursiva.</li>
+            <li> <span> opsz:</span> especifica el porcentaje de "efecto optico que se le aplica a la fuente".</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <p>normal</p>
+          <h4>Ejemplos:</h4>
+          <pre class="line-numbers"><code class="language-css">font-variation-settings: normal;
+
+font-variation-settings: "wght" 900;
+font-family: "Amstelvar VF", Georgia,serif;
+
+font-variation-settings: "wdth" 900;
+font-family: "Amstelvar VF", Georgia,serif;
+
+font-family: "Roboto VF", Helvetica, sans-serif;
+font-variation-settings: "slnt" 12;
+
+font-variation-settings: "ital" 1;
+font-family: "Amstelvar VF", Georgia,serif;
+
+font-variation-settings: "opsz" 10;
+font-family: "Amstelvar VF", Georgia,serif;
+</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado fuentesytexto_font-variant-settings">
+            <p class="fuentesytexto_font-variant-settings-normal">if fi ff tf ft jf fj </p>
+            <p class="fuentesytexto_font-variant-settings-wght">if fi ff tf ft jf fj </p>
+            <p class="fuentesytexto_font-variant-settings-wdth">if fi ff tf ft jf fj</p>
+            <p class="fuentesytexto_font-variant-settings-slnt">if fi ff tf ft jf fj </p>
+            <p class="fuentesytexto_font-variant-settings-ital">if fi ff tf ft jf fj ss01</p>
+            <p class="fuentesytexto_font-variant-settings-opsz">if fi ff tf ft jf fj ss01 ss02</p>
+          </div>
+
+        </article>
+        <article>
+          <h3>font-variant-caps</h3>
+          <p>Se usa para establecer el tipo de capitalización de las fuentes.</p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">font-variant-caps: normal|small-caps|all-small-caps|petite-caps|all-petite-caps|unicase|titling-caps|inherit;</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li> <span> normal:</span> no se aplica ninguna capitalización.</li>
+            <li> <span> small-caps: </span>se aplican las mayúsculas pequeñas.</li>
+            <li> <span> all-small-caps:</span> se aplican las mayúsculas pequeñas a todas las letras.</li>
+            <li> <span> petite-caps: </span>se aplican las mayúsculas pequeñas.</li>
+            <li> <span> all-petite-caps:</span> se aplican las mayúsculas pequeñas a todas las letras.</li>
+            <li> <span> unicase: </span>se aplican las mayúsculas pequeñas a todas las letras.</li>
+            <li> <span> titling-caps:</span> se aplican las mayúsculas pequeñas a todas las letras.</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <p>normal</p>
+          <h4>Ejemplos:</h4>
+          <p>Como en algunas propiedades se ha tenido que usar más de una instrucción, en este caso los ejemplos se representarán como bloques separados, que representan una línea en el resultado, por un salto de línea.</p>
+          <pre class="line-numbers"><code class="language-css">font-variant-caps: small-caps;
+
+font-variant-caps: all-small-caps;
+
+font-variant-caps: petite-caps;
+
+font-feature-settings: "unic";
+font-family: Arial, Helvetica, sans-serif;
+font-variant-caps: unicase;
+
+font-variant-caps: all-petite-caps;
+
+font-feature-settings: "titl";
+font-family: 'League Spartan', sans-serif;
+font-variant-caps: titling-caps;
+</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado">
+            <p class="fuentesytexto_font-variant-caps">small-caps</p>
+            <p class="fuentesytexto_font-variant-caps-2">all-small-caps </p>
+            <p class="fuentesytexto_font-variant-caps-3">petite-caps</p>
+            <p class="fuentesytexto_font-variant-caps-4">unicase</p>
+            <p class="fuentesytexto_font-variant-caps-5">all-petite-caps</p>
+            <p class="fuentesytexto_font-variant-caps-6">titling-caps</p>
+          </div>
+
+        </article>
+        <article>
+          <!-- TODO -->
+          <h3> font-variant-alternates</h3>
+          <p>Se usa para establecer el tipo de alternativas de las fuentes.</p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">font-variant-alternates: normal|historical-forms|stylistic(<number>)|styleset(<number>)|character-variant(<number>)|swash(<number>)|ornaments(<number>)|annotation(<number>)|inherit;</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li> <span> normal:</span> no se aplica ninguna alternativa.</li>
+            <li> <span> historical-forms: </span>se aplican las alternativas históricas.</li>
+            <li> <span> stylistic(<number>):</span> se aplican las alternativas estilísticas.</li>
+            <li> <span> styleset(<number>): </span>se aplican las alternativas de conjunto de estilos.</li>
+            <li> <span> character-variant(<number>):</span> se aplican las alternativas de caracteres.</li>
+            <li> <span> swash(<number>):</span> se aplican las alternativas de trazo.</li>
+            <li> <span> ornaments(<number>):</span> se aplican las alternativas de ornamentación.</li>
+            <li> <span> annotation(<number>):</span> se aplican las alternativas de anotación.</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <p>normal</p>
+          <h4>Ejemplos:</h4>
+          <pre class="line-numbers"><code class="language-css">font-variant-alternates: normal;
+font-variant-alternates: historical-forms;
+font-variant-alternates: stylistic(1);
+font-variant-alternates: styleset(1);
+font-variant-alternates: character-variant(1);
+font-variant-alternates: swash(1);
+font-variant-alternates: ornaments(1);
+font-variant-alternates: annotation(1);
+</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado">
+            <p class="fuentesytexto_font-variant-alternates">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-variant-alternates-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-variant-alternates-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-variant-alternates-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-variant-alternates-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-variant-alternates-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-variant-alternates-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          </div>
+        </article>
+        <article>
+          <h3>font-variant-numeric</h3>
+          <p>Se usa para establecer el tipo de numeración de las fuentes.</p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">font-variant-numeric: normal|ordinal|slashed-zero|lining-nums|oldstyle-nums|proportional-nums|tabular-nums|diagonal-fractions|stacked-fractions|inherit;</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li> <span> normal: </span>no se aplica ninguna numeración.</li>
+            <li> <span> ordinal:</span> se aplica la numeración ordinal.</li>
+            <li> <span> slashed-zero: </span>se aplica la numeración con cero barrado.</li>
+            <li> <span> lining-nums: </span>se aplica la numeración de líneas.</li>
+            <li> <span> oldstyle-nums: </span>se aplica la numeración antigua.</li>
+            <li> <span> proportional-nums: </span>se aplica la numeración proporcional.</li>
+            <li> <span> tabular-nums:</span> se aplica la numeración tabular.</li>
+            <li> <span> diagonal-fractions:</span> se aplica la numeración de fracciones diagonales.</li>
+            <li> <span> stacked-fractions:</span> se aplica la numeración de fracciones apiladas.</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <p>normal</p>
+          <h4>Ejemplos:</h4>
+          <p>Algunos parámetros solo funcionan con unas fuentes específicas</p>
+          <p>Como en algunas propiedades se ha tenido que usar más de una instrucción, en este caso los ejemplos se representarán como bloques separados, que representan una línea en el resultado, por un salto de línea.</p>
+          <pre class="line-numbers"><code class="language-css">font-variant-numeric: normal;
+
+font-family: "Warnock Pro" , serif;
+font-variant-numeric: ordinal;
+
+font-family: 'Noto Sans Mono', monospace;
+font-variant-numeric: slashed-zero;
+
+font-variant-numeric: oldstyle-nums;
+
+font-family: 'HypatiaSansPro-Regular', sans-serif;
+font-variant-numeric: proportional-nums;
+
+font-family: 'HypatiaSansPro-Regular', sans-serif;
+font-variant-numeric: tabular-nums;
+
+font-variant-numeric: diagonal-fractions;
+
+font-family: 'Ubuntu Mono', monospace;
+font-variant-numeric: stacked-fractions;
+</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado fuentesytexto_font-variant-numeric-0">
+            <p class="fuentesytexto_font-variant-numeric">0123456789 3.14 2.72 // normal</p>
+            
+            <p class="fuentesytexto_font-variant-numeric-2">1st // ordinal</p>
+            <p class="fuentesytexto_font-variant-numeric-3">0123456789 3.14 2. // slashed-zero</p>
+            <p class="fuentesytexto_font-variant-numeric-5">0123456789 3.14 2.72 // oldstyle-nums</p>
+            <p class="fuentesytexto_font-variant-numeric-6">0123456789 3.14 2.72 // proportional-nums</p>
+            <p class="fuentesytexto_font-variant-numeric-7">0123456789 3.14 2.72 // tabular-nums</p>
+            <p class="fuentesytexto_font-variant-numeric-8">5/5 709/780 // diagonal-fractions</p>
+            <p class="fuentesytexto_font-variant-numeric-9">5/5 709/780 // stacked-fractions</p>
+          </div>
+        </article>
+        <article>
+          <h3>font-variant</h3>
+          <p>La propiedad font-variant es una propiedad abreviada para las propiedades: font-variant-alternates, font-variant-caps, font-variant-east-asian,font-variant-ligatures yfont-variant-numeric. </p>
+          <p>Se usa para establecer las variantes de las fuentes.</p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">font-variant: none | normal | [ [ common-ligatures | no-common-ligatures ] || [ discretionary-ligatures | no-discretionary-ligatures ] ||[ historical-ligatures | no-historical-ligatures ] || [ contextual | no-contextual ] || [ small-caps | all-small-caps | petite-caps | all-petite-caps | unicase | titling-caps ] || [ stylistic() || historical-forms || styleset(#) || character-variant(#) || swash() || ornaments() || annotation() ] || [ lining-nums | oldstyle-nums ] || [ proportional-nums | tabular-nums ] || [ diagonal-fractions | stacked-fractions ] || ordinal || slashed-zero ] ]</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li> <span> normal:</span> se aplican las variantes de cada propiedad por defecto</li>
+            <li> <span> none: </span>no se aplica ninguna variante.</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <p>normal</p>
+          <h4>Ejemplos:</h4>
+          <p>Algunos parámetros solo funcionan con unas fuentes específicas</p>
+          <p>Como en algunas propiedades se ha tenido que usar más de una instrucción, en este caso los ejemplos se representarán como bloques separados, que representan una línea en el resultado, por un salto de línea.</p>
+          <pre class="line-numbers"><code class="language-css">font-variant: normal;
+font-variant: discretionary-ligatures proportional-nums;
+font-variant: small-caps diagonal-fractions;
+</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado fuentesytexto_font-variant-0">
+            <p class="fuentesytexto_font-variant-0">normal 0123456789 3.14 2.72</p>
+            <p class="fuentesytexto_font-variant-1">discretionary-ligatures fi 3.14 2.72 </p>
+            <p class="fuentesytexto_font-variant-2">small-caps 5/5 100/1</p>
+          </div>
+        </article>
+        <article>
+          <h3>font-style</h3>
+          <p>Se usa para establecer el estilo de la fuente.</p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">font-style: normal|italic|oblique|initial|inherit;</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li> <span> normal:</span> establece el estilo normal de la fuente.</li>
+            <li> <span> italic: </span>establece el estilo cursiva de la fuente.</li>
+            <li> <span> oblique: </span>establece el estilo oblicuo de la fuente. (Parecido a italic pero menos soportado)</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <p>normal</p>
+          <h4>Ejemplos:</h4>
+          <pre class="line-numbers"><code class="language-css">font-style: normal;
+font-style: italic;
+font-style: oblique;
+</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado">
+            <p class="fuentesytexto_font-style">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-style-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-style-oblique">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          </div>
+        </article>
+        <article>
+          <h3>font-weight</h3>
+          <p>Se usa para establecer el grosor de la fuente.</p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">font-weight: normal|bold|bolder|lighter|100|200|300|400|500|600|700|800|900|initial|inherit;</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li> <span> normal:</span> establece el grosor normal de la fuente.</li>
+            <li> <span> bold: </span>establece el grosor grueso de la fuente.</li>
+            <li> <span> bolder:</span> establece el grosor más grueso de la fuente.</li>
+            <li> <span> lighter: </span>establece el grosor más fino de la fuente.</li>
+            <li> <span> 100-900:</span> establece el grosor más fino de la fuente.</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <p>normal</p>
+          <h4>Ejemplos:</h4>
+          <pre class="line-numbers"><code class="language-css">font-weight: normal;
+font-weight: bold;
+font-weight: bolder;
+font-weight: lighter;
+font-weight: 100;
+...
+font-weight: 900;
+</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado">
+            <p class="fuentesytexto_font-weight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-weight-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-weight-bolder">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-weight-lighter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-weight-100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_font-weight-900">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          </div>
+        </article>
+        <article>
+          <h3>text-rendering</h3>
+          <p>Se usa para establecer el modo de renderizado del texto.</p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">text-rendering: auto|optimizeSpeed|optimizeLegibility|geometricPrecision|initial|inherit;</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li> <span> auto: establece el modo de renderizado automático. Dependiendo del navegador este valor cambia, por ejemplo, en Firefox si la fuente es 20 píxeles o mayor lo interpreta como optimizeLegibility en cambio si esta condición no se aplica se interpreta como optimizeSpeed en los demás navegadores siempre se va a interpretar como optimizeSpeed</li>
+            <li> <span> optimizeSpeed:</span> establece el modo de renderizado para optimizar la velocidad.</li>
+            <li> <span> optimizeLegibility:</span> establece el modo de renderizado para optimizar la legibilidad. En fuentes menores de 20px utiliza las ligaduras de las letras en sílabas como "fi"</li>
+            <li> <span> geometricPrecision:</span> establece el modo de renderizado para optimizar la precisión geométrica.</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <p>auto</p>
+          <h4>Ejemplos:</h4>
+          <p>Como en algunas propiedades se ha tenido que usar más de una instrucción, en este caso los ejemplos se representarán como bloques separados, que representan una línea en el resultado, por un salto de línea.</p>
+          <pre class="line-numbers"><code class="language-css">text-rendering: auto;
+
+text-rendering: optimizeSpeed;
+
+text-rendering: optimizeLegibility;
+font-size: 10px;
+
+text-rendering: geometricPrecision;
+</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado">
+            <p class="fuentesytexto_text-rendering">auto</p>
+            <p class="fuentesytexto_text-rendering-optimizeSpeed">optimizeSpeed</p>
+            <p class="fuentesytexto_text-rendering-optimizeLegibility">optimizeLegibility fi</p>
+            <p class="fuentesytexto_text-rendering-geometricPrecision">geometricPrecision</p>
+          </div>
+
+        </article>
+        <article>
+          <h3>text-orientation</h3>
+          <p>Se usa para establecer la orientación del texto. Solo afecta cuando "writing-mode" no está definido a "horizontal-tb"</p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">text-orientation: mixed|upright|sideways-right|sideways-left|initial|inherit;</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li> <span> mixed:</span> establece la orientación del texto en vertical y horizontal.</li>
+            <li> <span> upright: </span>establece la orientación del texto en horizontal.</li>
+            <li> <span> sideways:</span> establece la orientación del texto como lo harían horizontalmente pero girada 90º en sentido de las agujas del relok.</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <p>mixed</p>
+          <h4>Ejemplos:</h4>
+          <pre class="line-numbers"><code class="language-css">text-orientation: mixed;
+text-orientation: upright;
+text-orientation: sideways;
+</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado fuentesytexto_cols">
+            <p class="fuentesytexto_text-orientation">mixed </p>
+            <p class="fuentesytexto_text-orientation-upright">upright</p>
+            <p class="fuentesytexto_text-orientation-sideways">sideways </p>
+          </div>
+        </article>
+        <article>
+          <h3>text-fill-color</h3>
+          <p>Se usa para establecer el color del texto si "color" no está definido. Tiene preferencia si ambos aparecen en el mismo elemento.</p>
+          <h4>Sintaxis</h4>
+          <pre class="line-numbers"><code class="language-css">text-fill-color: color;
+</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li> <span> color: </span>nombre del color, #rrggbb, rgb(), rgba(), hsl(), hsla()</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <pre class="line-numbers"><code class="language-css">text-fill-color: black;
+</code></pre>
+          <h4>Ejemplos</h4>
+          <pre class="line-numbers"><code class="language-css">text-fill-color: blue;
+color: red;
+</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado">
+            <p class="fuentesytexto_-webkit-text-fill-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          </div>
+        </article>
+        <article>
+          <h3>font-size-adjust</h3>
+          <p>Esta función solo funciona en el navegador Firefox.</p>
+          <p>Especifica un factor de ajuste de tamaño de fuente. Esto es util cuando en la propiedad font-family el valor no está disponible, entonces se puede reeemplazar por un "porcentaje" representado en esta propiedad.</p>
+          <h4>Sintaxis</h4>
+          <pre class="line-numbers"><code class="language-css">font-size-adjust: none | number;
+</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li> <span> none:</span> No se aplica ningún ajuste de tamaño de fuente.</li>
+            <li> <span> number: </span>Especifica un factor de ajuste de tamaño de fuente.</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <pre class="line-numbers"><code class="language-css">font-size-adjust: none;
+</code></pre>
+          <h4>Ejemplos</h4>
+          <pre class="line-numbers"><code class="language-css">font-family: Times, serif;
+font-size: 10px;
+
+font-family: Times, serif;
+font-size-adjust: 0.58;
+font-size: 10px;
+</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado">
+            <p class="fuentesytexto_font-size-adjust-no">De dificil lectura </p>
+            <p class="fuentesytexto_font-size-adjust-yes">Un poco más legible </p>
+          </div>
+        </article>
+        <article>
+          <h3>font-kerning</h3>
+          <p>Establece el tipo de kerning que se usa para el texto. Kerning es el ajuste de los espacios entre caracteres para mejorar la legibilidad.</p>
+          <h4>Sintaxis</h4>
+          <pre class="line-numbers"><code class="language-css">font-kerning: auto | normal | none;
+</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li> <span> auto: </span>el navegador decide si usar kerning o no.</li>
+            <li> <span> normal:</span> kerning está activado.</li>
+            <li> <span> none: </span>kerning está desactivado.</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <pre class="line-numbers"><code class="language-css">font-kerning: auto;
+</code></pre>
+          <h4>Ejemplos</h4>
+          <pre class="line-numbers"><code class="language-css">font-kerning: auto;
+font-kerning: normal;
+font-kerning: none;
+</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado">
+            <p class="fuentesytexto_font-kerning-auto">AVAIL // auto</p>
+            <p class="fuentesytexto_font-kerning-normal">AVAIL // normal</p>
+            <p class="fuentesytexto_font-kerning-none">AVAIL // none</p>
+          </div>
+        </article>
+        <article>
+          <h3>@font-face</h3>
+          <p>Esta directiva permite cargar fuentes de forma local o remota.</p>
+          <h4>Sintaxis</h4>
+          <pre class="line-numbers"><code class="language-css">@font-face {
+  font-family: 'Nombre de la fuente';
+  src: url('ruta/a/la/fuente.woff2') format('woff2'),
+        url('ruta/a/la/fuente.woff') format('woff'),
+        url('ruta/a/la/fuente.ttf') format('truetype'),
+        url('ruta/a/la/fuente.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li> <span> font-family: </span>nombre de la fuente.</li>
+            <li> <span> src: </span>ruta a la fuente. En el format se especifica el tipo de archivo que se estáa cargando</li>
+            <li> <span> font-family:</span> Especificas el nombre con el que quieres llamar a la fuente</li>
+            <li> <span> font-weight: </span>peso de la fuente.</li>
+            <li> <span> font-style: </span>estilo de la fuente.</li>
+          </ul>
+          <h4>Ejemplos</h4>
+          <pre class="line-numbers"><code class="language-css">@font-face {
+  src: url(fuentes_efectos_texto_fuentes_locales/LeagueMono-VF.ttf) format('truetype');
+  font-family: League;
+  font-weight: normal;
+  font-style: normal;
+}
+.font-face{
+  font-family: League;
+}
+</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado">
+            <p class="fuentesytexto_font-face">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          </div>
+        </article>
+        <article>
+          <h3>Google Fonts</h3>
+          <p>Google Fonts es un servicio gratuito que ofrece fuentes de Google para que las utilices en tus sitios web. Puedes ver todas las fuentes disponibles en <a href="https://fonts.google.com/" target="_blank">https://fonts.google.com/</a></p>
+          <p>Para utilizar una fuente de Google Fonts, debes incluir el siguiente código en la sección <code>&lt;head&gt;</code> de tu documento HTML:</p>
+          <pre class="line-numbers"><code class="language-html">&lt;link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"&gt;</code></pre>
+          <p>En el ejemplo anterior, se incluye la fuente Roboto. Para incluir otra fuente, debes reemplazar <code>Roboto</code> por el nombre de la fuente que deseas utilizar.</p>
+          <p>También podemos añadir efectos a las fuentes añadiendo la palabra effect seguido del nombre del efecto con la barra vertical "|" podemos añadir varios efectos </p>
+          <pre class="line-numbers"><code class="language-html">&lt;link href="https://fonts.googleapis.com/css?family=Roboto&effect=shadow-multiple|fire" rel="stylesheet"&gt;</code></pre>
+          <h4>Ejemplos</h4>
+          <pre class="line-numbers"><code class="language-css">font-family: 'Roboto', sans-serif;
+</code></pre>
+<p>Añadimos las clases que queremos al elemento seleccionado</p>
+<pre class="line-numbers"><code class="language-html">&lt;p class="font-effect-fire font-effect-shadow-multiple"&gt;</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado">
+            <p class="fuentesytexto_google-fonts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <p class="fuentesytexto_google-fonts2 font-effect-fire font-effect-shadow-multiple">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          </div>
+        </article>
+        <article>
+          <h3>font</h3>
+          <p>La propiedad <code>font</code> es una propiedad abreviada para las propiedades <code>font-style</code>, <code>font-variant</code>, <code>font-weight</code>, <code>font-size</code>, <code>line-height</code> y <code>font-family</code>.</p>
+          <p>La propiedad <code>font</code> se utiliza para establecer todas las propiedades de fuente en una sola declaración.</p>
+          <h4>Sintaxis</h4>
+          <pre class="line-numbers"><code class="language-css">font: font-style font-variant font-weight font-size/line-height font-family;
+</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li> <span> font-style: </span>normal, italic, oblique</li>
+            <li> <span> font-variant: </span>normal, small-caps</li>
+            <li> <span> font-weight:</span> normal, bold, bolder, lighter, 100, 200, 300, 400, 500, 600, 700, 800, 900</li>
+            <li> <span> font-size: </span>xx-small, x-small, small, medium, large, x-large, xx-large, smaller, larger, 10px, 12pt, 80%, 150%</li>
+            <li> <span> line-height: </span>normal, number, length, %</li>
+            <li> <span> font-family: </span>nombre de la fuente, serif, sans-serif, cursive, fantasy, monospace</li>
+          </ul>
+          <h4>Valor por defecto</h4>
+          <pre class="line-numbers"><code class="language-css">font: normal normal normal medium/normal serif;
+</code></pre>
+          <h4>Ejemplos</h4>
+          <pre class="line-numbers"><code class="language-css">font: italic small-caps bold 12px/30px Georgia, serif;
+</code></pre>
+          <h4>Resultado</h4>
+          <div class="fuentesytexto_resultado">
+            <p class="fuentesytexto_font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          </div>
+        </article>
+
+      </section>
+    </main>
+    <footer>
+      <div>Jaime Rabasco Ronda</div>
+      <a href="https://twitter.com/jaimerr" class="social"
+        ><img src="icon/twitter.svg" alt="Twitter"
+      /></a>
+      <a href="https://github.com/jaimerabasco" class="social"
+        ><img src="icon/github.svg" alt="GitHub"
+      /></a>
+    </footer>
+  </body>
+</html>

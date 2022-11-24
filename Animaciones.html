@@ -48,7 +48,7 @@
       <section>
         <article>
           <h3>
-            Propiedad @keyframes
+            Keyframes
           </h3>
           <p>
             La propiedad @keyframes define una animación. La animación se compone
@@ -61,18 +61,23 @@
           </p>
           <pre class="line-numbers">
             <code class="language-css"><!-- Ejemplo de @keyframe -->
-            @keyframes nombreAnimacion {
+              div{
+                
+              animation-name: keyframes;
+              animation-duration: 4s;
+            }
+            @keyframes keyframes {
               0% {background-color: red;}
               25% {background-color: yellow;}
               50% {background-color: blue;}
               100% {background-color: green;}
             </code>
         </pre>
-
+        <div id="animation-keyframes"></div>
         </article>
         <article>
           <h3>
-            Propiedad animation-name
+            Animation-name
           </h3>
           <p>
             La propiedad animation-name especifica el nombre de la animación que
@@ -84,6 +89,58 @@
               animation-name: nombreAnimacion;
             }
           </code>
+        </article>
+        <article>
+          <div id="Animation-duration"></div>
+          <h3>Animation-fill-mode</h3>
+          <p>
+            La propiedad animation-fill-mode especifica cómo se aplican los
+            estilos de la animación antes de que se inicie la animación
+            (animation- delay), y después de que se haya completado la animación
+            (animation- iteration-count). El valor de la propiedad
+            animation-fill-mode es uno de los siguientes:
+          </p>
+          <ul>
+            <li>
+              none: No se aplican estilos de la animación antes de que se inicie
+              la animación, y no se aplican estilos de la animación después de
+              que se haya completado la animación.
+            </li>
+            <li>
+              forwards: No se aplican estilos de la animación antes de que se
+              inicie la animación, pero se aplican estilos de la animación
+              después de que se haya completado la animación.
+            </li>
+            <li>
+              backwards: Se aplican estilos de la animación antes de que se
+              inicie la animación, pero no se aplican estilos de la animación
+              después de que se haya completado la animación.
+            </li>
+            <li>
+              both: Se aplican estilos de la animación antes de que se inicie la
+              animación, y se aplican estilos de la animación después de que se
+              haya completado la animación.
+            </li>
+            <li>
+              inherit: Se hereda el valor de la propiedad animation-fill-mode
+              del elemento padre.
+            </li>
+            <li>
+              initial: Toma el valor por defecto de la propiedad
+              animation-fill-mode.
+            </li>
+          </ul>
+          <p>El valor por defecto es none.</p>
+          <div id="Animation-fill-mode"></div>
+          <pre class="line-numbers">
+            <code class="language-css"><!-- Ejemplo de Animation-fill-mode -->
+            div {
+              animation-name: Animation-duration;
+              animation-duration: 4s;
+              animation-fill-mode: forwards;
+            }
+            </code>
+        </pre>
         </article>
         <article>
           <h3>Animation-delay</h3>
@@ -162,58 +219,6 @@
             div {
               animation-name: Animation-direction;
               animation-duration: 4s;
-            }
-            </code>
-        </pre>
-        </article>
-        <article>
-          <div id="Animation-duration"></div>
-          <h3>Animation-fill-mode</h3>
-          <p>
-            La propiedad animation-fill-mode especifica cómo se aplican los
-            estilos de la animación antes de que se inicie la animación
-            (animation- delay), y después de que se haya completado la animación
-            (animation- iteration-count). El valor de la propiedad
-            animation-fill-mode es uno de los siguientes:
-          </p>
-          <ul>
-            <li>
-              none: No se aplican estilos de la animación antes de que se inicie
-              la animación, y no se aplican estilos de la animación después de
-              que se haya completado la animación.
-            </li>
-            <li>
-              forwards: No se aplican estilos de la animación antes de que se
-              inicie la animación, pero se aplican estilos de la animación
-              después de que se haya completado la animación.
-            </li>
-            <li>
-              backwards: Se aplican estilos de la animación antes de que se
-              inicie la animación, pero no se aplican estilos de la animación
-              después de que se haya completado la animación.
-            </li>
-            <li>
-              both: Se aplican estilos de la animación antes de que se inicie la
-              animación, y se aplican estilos de la animación después de que se
-              haya completado la animación.
-            </li>
-            <li>
-              inherit: Se hereda el valor de la propiedad animation-fill-mode
-              del elemento padre.
-            </li>
-            <li>
-              initial: Toma el valor por defecto de la propiedad
-              animation-fill-mode.
-            </li>
-          </ul>
-          <p>El valor por defecto es none.</p>
-          <div id="Animation-fill-mode"></div>
-          <pre class="line-numbers">
-            <code class="language-css"><!-- Ejemplo de Animation-fill-mode -->
-            div {
-              animation-name: Animation-duration;
-              animation-duration: 4s;
-              animation-fill-mode: forwards;
             }
             </code>
         </pre>

@@ -1,198 +1,186 @@
+#animation-keyframes {
+  animation-name: keyframes;
+  
+  width: 100px;
+  height: 100px;
+}
+@keyframes keyframes {
+  0% {
+    background-color: #ff0000;
+  }
+  25% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: #0000ff;
+  }
+  100% {
+    background-color: #ff00ff;
+  }
+}
+    
+#animation-delay {
+  animation-name: animation-delay;
+  width: 100px;
+  height: 100px;
+  animation-duration: 6s linear infinite;
+  animation-iteration-count: infinite;
 
-#animation-delay{
-    animation-name: animation-delay;
-    width: 100px;
-    height: 100px;
-    animation-duration: 6s linear infinite;
-    animation-iteration-count: infinite;
-    
-    animation-timing-function: ease-in-out;
-    
-    border: 1px solid; 
-    animation: animation-delay 6s linear infinite;
-    animation-delay: 10s;
-    /* // centrar */
-    background-color: black;
+  animation-timing-function: ease-in-out;
 
-    
+  border: 1px solid;
+  animation: animation-delay 6s linear infinite;
+  animation-delay: 10s;
+  /* // centrar */
+  background-color: black;
 }
 
-@keyframes animation-delay{
-    0%{
-        background-color: red;
+@keyframes animation-delay {
+  0% {
+    background-color: red;
 
-        transform: scale(1);
-    }
-    50%{
-        background-color: blue;
+    transform: scale(1);
+  }
+  50% {
+    background-color: blue;
 
-        transform: scale(1.5);
-    }
-    100%{
-        background-color: green;
+    transform: scale(1.5);
+  }
+  100% {
+    background-color: green;
 
-        transform: scale(1);
-    }
+    transform: scale(1);
+  }
 }
-#Animation-direction{
-    animation-name: animacion_de_direcion;
-    width: 100px;
-    height: 100px;
-    
-    animation: animacion-direction 3s linear infinite;
-    animation-direction: alternate-reverse;
-    background-color: black;
-    
-    
+#Animation-direction {
+  animation-name: animacion_de_direcion;
+  width: 100px;
+  height: 100px;
 
+  animation: animacion-direction 3s linear infinite;
+  animation-direction: alternate-reverse;
+  background-color: black;
 }
 @keyframes animacion-direction {
-    0%{
-        /* move a la derecha */
-        transform: translateX(0px);
-
-
-        
-    }
-    50%{
-        /* move a la izquierda */
-        transform: translateX(50px);
-    }
-    100%{
-        /* move a la derecha */
-        transform: translateX(100px);
-    }
+  0% {
+    /* move a la derecha */
+    transform: translateX(0px);
+  }
+  50% {
+    /* move a la izquierda */
+    transform: translateX(50px);
+  }
+  100% {
+    /* move a la derecha */
+    transform: translateX(100px);
+  }
 }
-    
-#Animation-duration{
-    animation-name: animacion-duration;
-    width: 100px;
-    height: 100px;
-    
-    animation: animacion-duration 3s linear infinite;
-    animation-duration: 3s;
-    background-color: rgb(111, 194, 202);
-    
-    
 
+#Animation-duration {
+  animation-name: animacion-duration;
+  width: 100px;
+  height: 100px;
+
+  animation: animacion-duration 3s linear infinite;
+  animation-duration: 3s;
+  background-color: rgb(111, 194, 202);
 }
 @keyframes animacion-duration {
-    0%{
-        
-        transform: translateX(0px);
-    }
-    50%{
-        
-        transform: translateX(50px);
-    }
-    100%{
-        
-        transform: translateX(100px);
-    }
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
 }
-#Animation-fill-mode{
-    animation-name: animacion-fill-mode;
-    width: 100px;
-    height: 100px;
-    
-    animation: animacion-fill-mode 3s linear infinite;
-    animation-delay: 3s;
-    animation-fill-mode: forwards;
-    background-color: rgb(111, 194, 202);
-    
-    
+#Animation-fill-mode {
+  animation-name: animacion-fill-mode;
+  width: 100px;
+  height: 100px;
 
+  animation: animacion-fill-mode 3s linear infinite;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  background-color: rgb(111, 194, 202);
 }
 @keyframes animacion-fill-mode {
-    0%{
-        background-color: black;
-        transform: translateX(0px);
-    }
-    50%{
-        
-        transform: translateX(50px);
-    }
-    100%{
-        
-        transform: translateX(100px);
-    }
+  0% {
+    background-color: black;
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
 }
-#Animation-iteration-count{
-    animation-name: animacion-iteration-count;
-    width: 100px;
-    height: 100px;
-    
-    animation: animacion-iteration-count 3s linear infinite;
-    animation-iteration-count: 3;
-    background-color: rgb(111, 194, 202);
-    
-    
+#Animation-iteration-count {
+  animation-name: animacion-iteration-count;
+  width: 100px;
+  height: 100px;
 
+  animation: animacion-iteration-count 3s linear infinite;
+  animation-iteration-count: 3;
+  background-color: rgb(111, 194, 202);
 }
 @keyframes animacion-iteration-count {
-    0%{
-        background-color: black;
-        transform: translateX(0px);
-    }
-    50%{
-        
-        transform: translateX(50px);
-    }
-    100%{
-        
-        transform: translateX(100px);
-    }
+  0% {
+    background-color: black;
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
 }
-#Animation-play-state{
-    animation-name: animacion-play-state;
-    width: 100px;
-    height: 100px;
-    
-    animation: animacion-play-state 3s linear infinite;
-    animation-play-state: running;
-    background-color: rgb(111, 194, 202);
-    
-    
+#Animation-play-state {
+  animation-name: animacion-play-state;
+  width: 100px;
+  height: 100px;
 
-
+  animation: animacion-play-state 3s linear infinite;
+  animation-play-state: running;
+  background-color: rgb(111, 194, 202);
 }
 @keyframes animacion-play-state {
-    0%{
-        background-color: black;
-        transform: translateX(0px);
-    }
-    50%{
-        
-        transform: translateX(50px);
-    }
-    100%{
-        
-        transform: translateX(100px);
-    }
+  0% {
+    background-color: black;
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
 }
-#Animation-timing-function{
-    animation-name: animacion-timing-function;
-    width: 100px;
-    height: 100px;
-    
-    animation: animacion-timing-function 3s linear infinite;
-    animation-timing-function: ease-in-out;
-    background-color: rgb(111, 194, 202);
-    
-    
+#Animation-timing-function {
+  animation-name: animacion-timing-function;
+  width: 100px;
+  height: 100px;
 
+  animation: animacion-timing-function 3s linear infinite;
+  animation-timing-function: ease-in-out;
+  background-color: rgb(111, 194, 202);
 }
 @keyframes animacion-timing-function {
-    0%{
-        background-color: black;
-        transform: translateX(0px);
-    }
-    50%{
-        
-        transform: translateX(50px);
-    }
-    100%{
-        
-        transform: translateX(100px);
-    }
+  0% {
+    background-color: black;
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
 }

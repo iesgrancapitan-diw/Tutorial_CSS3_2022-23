@@ -61,7 +61,7 @@
           </p>
           <h4>Sintaxis</h4>
           <pre class="line-numbers">
-            <code class="language-css">@keyframes animationname {
+            <code class="language-css">@keyframes keyframes {
                 from {background-color: red;}
                 to {background-color: yellow;}
               }</code>
@@ -114,6 +114,15 @@
           negativo, lo que significa que la animación se ejecuta en sentido
           inverso.
         </p>
+        <h4>Sintaxis</h4>
+        <pre class="line-numbers">
+          <code class="language-css"><!-- Sintaxis -->animation-duration: tiempo;</code>
+      </pre>
+      <p>
+        El valor tiempo es el tiempo que debe durar la animación. El valor
+        puede ser un número seguido de s (segundos) o ms (milisegundos).
+      </p>
+      <h4>Ejemplo</h4>
         <pre class="line-numbers">
           <code class="language-css"><!-- Ejemplo de Animation-duration -->div {
             animation-name: Animation-direction;
@@ -122,7 +131,6 @@
         </pre>
       </article>
         <article>
-          
           <h3>Animation-fill-mode</h3>
           <p>
             La propiedad animation-fill-mode especifica cómo se aplican los
@@ -161,15 +169,23 @@
               animation-fill-mode.
             </li>
           </ul>
-          <p>El valor por defecto es none.</p>
-          <div id="Animation-fill-mode"></div>
+          <h4>Sintaxis</h4>
           <pre class="line-numbers">
-            <code class="language-css"><!-- Ejemplo de Animation-fill-mode -->div {
-              animation-name: Animation-duration;
-              animation-duration: 4s;
-              animation-fill-mode: forwards;
-            }</code>
-          </pre>
+            <code class="language-css"><!-- Sintaxis -->animation-fill-mode: valor;</code>
+        </pre>
+        <p>
+          El valor valor es uno de los siguientes: none, forwards, backwards,
+          both, inherit o initial.
+        </p>
+        <h4>Ejemplo</h4>
+        <pre class="line-numbers">
+          <code class="language-css"><!-- Ejemplo de Animation-fill-mode -->div {
+            animation-name: Animation-duration;
+            animation-duration: 4s;
+            animation-fill-mode: forwards;
+          }</code>
+        </pre>
+        <div id="Animation-fill-mode"></div>
         </article>
         <article>
           <h3>Animation-delay</h3>
@@ -184,6 +200,15 @@
             porcentaje del tiempo total de la animación antes de que se produzca
             el evento.
           </p>
+          <h4>Sintaxis</h4>
+          <pre class="line-numbers">
+            <code class="language-css"><!-- Sintaxis -->animation-delay: tiempo;</code>
+        </pre>
+        <p>
+          El valor tiempo es el tiempo que debe durar la animación. El valor
+          puede ser un número seguido de s (segundos) o ms (milisegundos).
+        </p>
+        <h4>Ejemplo</h4>
           <pre class="line-numbers">
             <code class="language-css"><!-- Ejemplo de Animation-delay -->div {
               animation-name: Animation-delay;
@@ -218,8 +243,15 @@
               luego en sentido normal (alternativamente).
             </li>
           </ul>
-
-          <p>El valor por defecto es normal.</p>
+          <h4>Sintaxis</h4>
+          <pre class="line-numbers">
+            <code class="language-css"><!-- Sintaxis -->animation-direction: valor;</code>
+        </pre>
+        <p>
+          El valor valor es uno de los siguientes: normal, reverse, alternate o
+          alternate-reverse.
+        </p>
+        <h4>Ejemplo</h4>
           <pre class="line-numbers">
             <code class="language-css"><!-- Ejemplo de Animation-direction -->div {
               animation-name: Animation-direction;
@@ -238,6 +270,14 @@
             El valor por defecto es 1. El valor puede ser negativo, lo que
             significa que la animación se ejecuta en sentido inverso.
           </p>
+          <h4>Sintaxis</h4>
+          <pre class="line-numbers">
+            <code class="language-css"><!-- Sintaxis -->animation-iteration-count: valor;</code>
+        </pre>
+        <p>
+          El valor valor es un número o la palabra clave infinite.
+        </p>
+        <h4>Ejemplo</h4>
           <pre class="line-numbers">
             <code class="language-css"><!-- Ejemplo de Animation-iteration-count -->div {
               animation-name: Animation-iteration-count;
@@ -259,6 +299,14 @@
             <li>paused: La animación está pausada.</li>
           </ul>
           <p>El valor por defecto es running.</p>
+          <h4>Sintaxis</h4>
+          <pre class="line-numbers">
+            <code class="language-css"><!-- Sintaxis -->animation-play-state: valor;</code>
+        </pre>
+        <p>
+          El valor valor es uno de los siguientes: running o paused.
+        </p>
+        <h4>Ejemplo</h4>
           <pre class="line-numbers">
           <code class="language-css"><!-- Ejemplo de Animation-play-state -->div {
             animation-name: Animation-play-state;
@@ -266,8 +314,6 @@
             animation-play-state: paused;
           }</code>
           </pre>
-          
-          
           <div id="Animation-play-state"></div>
         </article>
         <article>
@@ -297,6 +343,15 @@
             </ul>
           </p>
           <p>El valor por defecto es ease.</p>
+          <h4>Sintaxis</h4>
+          <pre class="line-numbers">
+            <code class="language-css"><!-- Sintaxis -->animation-timing-function: valor;</code>
+        </pre>
+        <p>
+          El valor valor es una de las siguientes funciones de tiempo: ease,
+          linear, ease-in, ease-out, ease-in-out, o cubic-bezier(n,n,n,n).
+        </p>
+        <h4>Ejemplo</h4>
           <pre class="line-numbers">
             <code class="language-css"><!-- Ejemplo de Animation-timing-function -->div {
               animation-name: example;
@@ -314,6 +369,18 @@
             animation-delay, animation-iteration-count, animation-direction y
             animation-fill-mode.
           </p>
+          <h4>Sintaxis</h4>
+          <pre class="line-numbers">
+            <code class="language-css"><!-- Sintaxis -->animation: valor;</code>
+        </pre>
+        <p>
+          El valor valor es una o más listas separadas por comas, cada una de
+          las cuales es una combinación de los valores de las propiedades
+          animation-name, animation-duration, animation-timing-function,
+          animation-delay, animation-iteration-count, animation-direction y
+          animation-fill-mode.
+        </p>
+        <h4>Ejemplo</h4>
           <pre class="line-numbers">
             <code class="language-css"><!-- Ejemplo de Shorthand -->
             div {

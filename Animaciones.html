@@ -72,8 +72,8 @@
               50% {background-color: blue;}
               100% {background-color: green;}
             </code>
-        </pre>
-        <div id="animation-keyframes"></div>
+          </pre>
+          <div id="animation-keyframes"></div>
         </article>
         <article>
           <h3>
@@ -83,15 +83,47 @@
             La propiedad animation-name especifica el nombre de la animación que
             se va a ejecutar.
           </p>
+          <h4>Sintaxis/h3>
           <pre class="line-numbers">
-            <code class="language-css"><!-- Ejemplo de animation-name -->
-            div {
+            <code class="language-css"><!-- Sintaxis -->
+            animation-name: nombre;
+          </code>
+        </pre>
+        <p>
+          El valor nombre es el nombre de la animación que se va a ejecutar. El
+          nombre de la animación se define con la propiedad @keyframes.
+        </p>
+        <h4>Ejemplo</h4>
+        <pre class="line-numbers">
+          <code class="language-css"><!-- Ejemplo de animation-name -->
+            #animation-name {
               animation-name: nombreAnimacion;
             }
           </code>
-        </article>
+        </pre>
+        <div id="Animation-name"></div>
+      </article>
+      <article>
+        <h3>Animation-duration</h3>
+        <p>
+          La propiedad animation-duration especifica cuánto tiempo debe durar
+          una animación. El valor de la propiedad animation-duration es un
+          tiempo, en segundos o milisegundos. El valor por defecto es 0, lo
+          que significa que la animación no se ejecuta. El valor puede ser
+          negativo, lo que significa que la animación se ejecuta en sentido
+          inverso.
+        </p>
+        <pre class="line-numbers">
+          <code class="language-css"><!-- Ejemplo de Animation-duration -->
+          div {
+            animation-name: Animation-direction;
+            animation-duration: 4s;
+          }
+          </code>
+        </pre>
+      </article>
         <article>
-          <div id="Animation-duration"></div>
+          
           <h3>Animation-fill-mode</h3>
           <p>
             La propiedad animation-fill-mode especifica cómo se aplican los
@@ -140,7 +172,7 @@
               animation-fill-mode: forwards;
             }
             </code>
-        </pre>
+          </pre>
         </article>
         <article>
           <h3>Animation-delay</h3>
@@ -163,7 +195,7 @@
               animation-delay: 2s;
             }
             </code>
-        </pre>
+          </pre>
           <div id="animation-delay"></div>
         </article>
         <article>
@@ -201,27 +233,8 @@
               animation-direction: alternate;
             }
             </code>
-        </pre>
+          </pre>
           <div id="Animation-direction"></div>
-        </article>
-        <article>
-          <h3>Animation-duration</h3>
-          <p>
-            La propiedad animation-duration especifica cuánto tiempo debe durar
-            una animación. El valor de la propiedad animation-duration es un
-            tiempo, en segundos o milisegundos. El valor por defecto es 0, lo
-            que significa que la animación no se ejecuta. El valor puede ser
-            negativo, lo que significa que la animación se ejecuta en sentido
-            inverso.
-          </p>
-          <pre class="line-numbers">
-            <code class="language-css"><!-- Ejemplo de Animation-duration -->
-            div {
-              animation-name: Animation-direction;
-              animation-duration: 4s;
-            }
-            </code>
-        </pre>
         </article>
         <article>
           <h3>Animation-iteration-count</h3>
@@ -240,7 +253,7 @@
               animation-iteration-count: infinite;
             }
             </code>
-        </pre>
+          </pre>
           <div id="Animation-iteration-count"></div>
         </article>
         <article>
@@ -263,7 +276,7 @@
             animation-play-state: paused;
           }
           </code>
-        </pre>
+          </pre>
           
           
           <div id="Animation-play-state"></div>
@@ -303,7 +316,7 @@
               animation-timing-function: linear;
             }
             </code>
-        </pre>
+          </pre>
           <div id="Animation-timing-function"></div>
         </article>
         <article>

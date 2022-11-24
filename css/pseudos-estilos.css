@@ -33,6 +33,15 @@
     text-decoration: underline;
 }
 
+#ejemplo8::first-line {
+    color: blue;
+}
+
+#ejemplo9::selection {
+    color: green;
+    background-color:#f00;
+}
+
 #ejemploPClase {
     width: 25%;
 }
@@ -199,4 +208,24 @@ tr:nth-last-child(-n+3) {
 
 .ejemploPClase33:visited {
     color: red;
+}
+
+.ejemploPClase34:read-only {
+    color: red;
+    background-color: aqua;
+    width: 13%;
+}
+
+.ejemploPClase35:read-write {
+    color: aqua;
+    background-color: red;
+    width: 15%;
+}
+
+.ejemploPClase36:target {
+    color: red;
+}
+
+.ejemploPClase37:placeholder-shown {
+    border-color: blue;
 }

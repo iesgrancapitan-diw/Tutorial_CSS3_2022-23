@@ -13,13 +13,13 @@
     <link
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
-    />
+      />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/estilos.css" />
     <link rel="stylesheet" href="css/prism.css" />
     <link rel="stylesheet" href="css/animaciones.css" />
     <script src="js/prism.js"></script>
-    
+
   </head>
   <body>
     <header>
@@ -48,10 +48,11 @@
       <section>
         <article>
           <h3>
-            Propiedad @keyframes
+            Keyframes
           </h3>
           <p>
-            La propiedad @keyframes define una animación. La animación se compone
+            La propiedad @keyframes define una animación. La animación se
+            compone
             de dos componentes: el estilo de la animación y la duración de la
             animación.
             Estilo: El estilo de la animación se define con las propiedades CSS
@@ -59,93 +60,51 @@
             Duración: La duración de la animación se define con la propiedad
             animation-duration.
           </p>
+          <h4>Sintaxis</h4>
           <pre class="line-numbers">
-            <code class="language-css"><!-- Ejemplo de @keyframe -->
-            @keyframes nombreAnimacion {
+            <code class="language-css">@keyframes keyframes {
+                from {background-color: red;}
+                to {background-color: yellow;}
+              }</code>
+          </pre>
+          <h4>Ejemplo</h4>
+          <pre class="line-numbers">
+            <code class="language-css"><!-- Ejemplo de @keyframe -->div{      
+            animation-name: keyframes;
+            animation-duration: 4s;
+            }
+            @keyframes keyframes {
               0% {background-color: red;}
               25% {background-color: yellow;}
               50% {background-color: blue;}
-              100% {background-color: green;}
-            </code>
-        </pre>
-
+              100% {background-color: green;}</code>
+          </pre>
+          <div id="Animation-keyframes"></div>
         </article>
         <article>
           <h3>
-            Propiedad animation-name
+            Animation-name
           </h3>
           <p>
             La propiedad animation-name especifica el nombre de la animación que
             se va a ejecutar.
           </p>
+          <h4>Sintaxis</h4>
           <pre class="line-numbers">
-            <code class="language-css"><!-- Ejemplo de animation-name -->
-            div {
-              animation-name: nombreAnimacion;
-            }
-          </code>
-        </article>
-        <article>
-          <h3>Animation-delay</h3>
-          <p>
-            La propiedad animation-delay especifica un retraso para iniciar una
-            animación. El valor de la propiedad animation-delay es un tiempo, en
-            segundos o milisegundos. El valor por defecto es 0, lo que significa
-            que la animación se inicia inmediatamente. El valor puede ser
-            negativo, lo que significa que la animación se inicia un tiempo
-            antes de que se produzca el evento. El valor puede ser un
-            porcentaje, lo que significa que la animación se inicia un
-            porcentaje del tiempo total de la animación antes de que se produzca
-            el evento.
-          </p>
-          <pre class="line-numbers">
-            <code class="language-css"><!-- Ejemplo de Animation-delay -->
-            div {
-              animation-name: Animation-delay;
-              animation-duration: 4s;
-              animation-delay: 2s;
-            }
-            </code>
+            <code class="language-css"><!-- Sintaxis -->animation-name: nombre;</code>
         </pre>
-          <div id="animation-delay"></div>
-        </article>
-        <article>
-          <h3>Animation-direction</h3>
           <p>
-            La propiedad animation-direction especifica si una animación debe
-            ser ejecutada en sentido normal, inverso o alternado. El valor de la
-            propiedad animation-direction es uno de los siguientes:
+            El valor nombre es el nombre de la animación que se va a ejecutar.
+            El
+            nombre de la animación se define con la propiedad @keyframes.
           </p>
-          <ul>
-            <li>
-              normal: La animación se ejecuta en sentido normal (desde el
-              principio al final, una vez).
-            </li>
-            <li>
-              reverse: La animación se ejecuta en sentido inverso (del final al
-              principio, una vez).
-            </li>
-            <li>
-              alternate: La animación se ejecuta en sentido normal, y luego en
-              sentido inverso (alternativamente).
-            </li>
-            <li>
-              alternate-reverse: La animación se ejecuta en sentido inverso, y
-              luego en sentido normal (alternativamente).
-            </li>
-          </ul>
-
-          <p>El valor por defecto es normal.</p>
+          <h4>Ejemplo</h4>
           <pre class="line-numbers">
-            <code class="language-css"><!-- Ejemplo de Animation-direction -->
-            div {
-              animation-name: Animation-direction;
-              animation-duration: 4s;
-              animation-direction: alternate;
-            }
-            </code>
+          <code class="language-css"><!-- Ejemplo de animation-name -->#animation-name {
+            animation-name: nombreAnimacion;
+          }</code>
         </pre>
-          <div id="Animation-direction"></div>
+          <div id="Animation-name"></div>
         </article>
         <article>
           <h3>Animation-duration</h3>
@@ -157,17 +116,50 @@
             negativo, lo que significa que la animación se ejecuta en sentido
             inverso.
           </p>
+          <h4>Sintaxis</h4>
           <pre class="line-numbers">
-            <code class="language-css"><!-- Ejemplo de Animation-duration -->
-            div {
-              animation-name: Animation-direction;
-              animation-duration: 4s;
-            }
-            </code>
-        </pre>
+          <code class="language-css"><!-- Sintaxis -->animation-duration: tiempo;</code>
+      </pre>
+          <p>
+            El valor tiempo es el tiempo que debe durar la animación. El valor
+            puede ser un número seguido de s (segundos) o ms (milisegundos).
+          </p>
+          <h4>Ejemplo</h4>
+          <pre class="line-numbers">
+        <code class="language-css"><!-- Ejemplo de Animation-duration -->div {
+          animation-name: Animation-direction;
+          animation-duration: 4s;
+        }</code>
+      </pre>
         </article>
         <article>
-          <div id="Animation-duration"></div>
+          <h3>Animation Shorthand</h3>
+          <p>
+            La propiedad animation es una propiedad abreviada para las
+            propiedades
+            animation-name, animation-duration, animation-timing-function,
+            animation-delay, animation-iteration-count, animation-direction y
+            animation-fill-mode.
+          </p>
+          <h4>Sintaxis</h4>
+          <pre class="line-numbers">
+        <code class="language-css"><!-- Sintaxis -->animation: valor;</code>
+    </pre>
+          <p>
+            El valor valor es una o más listas separadas por comas, cada una de
+            las cuales es una combinación de los valores de las propiedades
+            animation-name, animation-duration, animation-timing-function,
+            animation-delay, animation-iteration-count, animation-direction y
+            animation-fill-mode.
+          </p>
+          <h4>Ejemplo</h4>
+          <pre class="line-numbers">
+        <code class="language-css"><!-- Ejemplo de Shorthand -->div {
+          animation: name duration timing-function delay iteration-count
+            direction fill-mode;
+        }1</code>
+    </article>
+        <article>
           <h3>Animation-fill-mode</h3>
           <p>
             La propiedad animation-fill-mode especifica cómo se aplican los
@@ -206,127 +198,263 @@
               animation-fill-mode.
             </li>
           </ul>
-          <p>El valor por defecto es none.</p>
-          <div id="Animation-fill-mode"></div>
+          <h4>Sintaxis</h4>
           <pre class="line-numbers">
-            <code class="language-css"><!-- Ejemplo de Animation-fill-mode -->
-            div {
-              animation-name: Animation-duration;
-              animation-duration: 4s;
-              animation-fill-mode: forwards;
-            }
-            </code>
+            <code class="language-css"><!-- Sintaxis -->animation-fill-mode: valor;</code>
         </pre>
-        </article>
-        <article>
-          <h3>Animation-iteration-count</h3>
-          <p>
-            La propiedad animation-iteration-count especifica el número de veces
-            que se debe ejecutar una animación. El valor de la propiedad
-            animation-iteration-count es un número, o la palabra clave infinite.
-            El valor por defecto es 1. El valor puede ser negativo, lo que
-            significa que la animación se ejecuta en sentido inverso.
-          </p>
-          <pre class="line-numbers">
-            <code class="language-css"><!-- Ejemplo de Animation-iteration-count -->
-            div {
+            <p>
+              El valor valor es uno de los siguientes: none, forwards,
+              backwards,
+              both, inherit o initial.
+            </p>
+            <h4>Ejemplo</h4>
+            <pre class="line-numbers">
+          <code class="language-css"><!-- Ejemplo de Animation-fill-mode -->div {
+            animation-name: Animation-fill-mode;
+            animation-duration: 4s;
+            animation-fill-mode: forwards;
+          }</code>
+        </pre>
+            <div id="Animation-fill-mode"></div>
+          </article>
+          <article>
+            <h3>Animation-delay</h3>
+            <p>
+              La propiedad animation-delay especifica un retraso para iniciar
+              una
+              animación. El valor de la propiedad animation-delay es un tiempo,
+              en
+              segundos o milisegundos. El valor por defecto es 0, lo que
+              significa
+              que la animación se inicia inmediatamente. El valor puede ser
+              negativo, lo que significa que la animación se inicia un tiempo
+              antes de que se produzca el evento. El valor puede ser un
+              porcentaje, lo que significa que la animación se inicia un
+              porcentaje del tiempo total de la animación antes de que se
+              produzca
+              el evento.
+            </p>
+            <h4>Sintaxis</h4>
+            <pre class="line-numbers">
+            <code class="language-css"><!-- Sintaxis -->animation-delay: tiempo;</code>
+        </pre>
+            <p>
+              El valor tiempo es el tiempo que debe durar la animación. El valor
+              puede ser un número seguido de s (segundos) o ms (milisegundos).
+            </p>
+            <h4>Ejemplo</h4>
+            <pre class="line-numbers">
+            <code class="language-css"><!-- Ejemplo de Animation-delay -->div {
+              animation-name: Animation-delay;
+              animation-duration: 4s;
+              animation-delay: 2s;
+            }</code>
+          </pre>
+            <div id="animation-delay"></div>
+          </article>
+          <article>
+            <h3>Animation-direction</h3>
+            <p>
+              La propiedad animation-direction especifica si una animación debe
+              ser ejecutada en sentido normal, inverso o alternado. El valor de
+              la
+              propiedad animation-direction es uno de los siguientes:
+            </p>
+            <ul>
+              <li>
+                normal: La animación se ejecuta en sentido normal (desde el
+                principio al final, una vez).
+              </li>
+              <li>
+                reverse: La animación se ejecuta en sentido inverso (del final
+                al
+                principio, una vez).
+              </li>
+              <li>
+                alternate: La animación se ejecuta en sentido normal, y luego en
+                sentido inverso (alternativamente).
+              </li>
+              <li>
+                alternate-reverse: La animación se ejecuta en sentido inverso, y
+                luego en sentido normal (alternativamente).
+              </li>
+            </ul>
+            <h4>Sintaxis</h4>
+            <pre class="line-numbers">
+            <code class="language-css"><!-- Sintaxis -->animation-direction: valor;</code>
+        </pre>
+            <p>
+              El valor valor es uno de los siguientes: normal, reverse,
+              alternate o
+              alternate-reverse.
+            </p>
+            <h4>Ejemplo</h4>
+            <pre class="line-numbers">
+            <code class="language-css"><!-- Ejemplo de Animation-direction -->div {
+              animation-name: Animation-direction;
+              animation-duration: 4s;
+              animation-direction: alternate;
+            }</code>
+          </pre>
+            <div id="Animation-direction"></div>
+            <h4>Ejemplo2</h4>
+            <pre class="line-numbers">
+            <code class="language-css"><!-- Ejemplo de Animation-direction -->div {
+              animation-name: Animation-direction;
+              animation-duration: 4s;
+              animation-direction: alternate-reverse;
+            }</code>
+          </pre>
+            <h4>Ejemplo3</h4>
+            <div id="Animation-direction2"></div>
+            <pre class="line-numbers">
+            <code class="language-css"><!-- Ejemplo de Animation-direction -->div {
+              animation-name: Animation-direction;
+              animation-duration: 4s;
+              animation-direction: reverse;
+            }</code>
+            </pre>
+            <div id="Animation-direction3"></div>
+          
+          </article>
+          <article>
+            <h3>Animation-iteration-count</h3>
+            <p>
+              La propiedad animation-iteration-count especifica el número de
+              veces
+              que se debe ejecutar una animación. El valor de la propiedad
+              animation-iteration-count es un número, o la palabra clave
+              infinite.
+              El valor por defecto es 1. El valor puede ser negativo, lo que
+              significa que la animación se ejecuta en sentido inverso.
+            </p>
+            <h4>Sintaxis</h4>
+            <pre class="line-numbers">
+            <code class="language-css"><!-- Sintaxis -->animation-iteration-count: valor;</code>
+        </pre>
+            <p>
+              El valor valor es un número o la palabra clave infinite.
+            </p>
+            <h4>Ejemplo</h4>
+            <pre class="line-numbers">
+            <code class="language-css"><!-- Ejemplo de Animation-iteration-count -->div {
               animation-name: Animation-iteration-count;
               animation-duration: 4s;
               animation-iteration-count: infinite;
-            }
-            </code>
+            }</code>
+          </pre>
+            <div id="Animation-iteration-count"></div>
+          </article>
+          <article>
+            <h3>Animation-play-state</h3>
+            <p>
+              La propiedad animation-play-state especifica si una animación está
+              en ejecución o está pausada. El valor de la propiedad
+              animation-play-state es uno de los siguientes:
+            </p>
+            <ul>
+              <li>running: La animación se está ejecutando.</li>
+              <li>paused: La animación está pausada.</li>
+            </ul>
+            <p>El valor por defecto es running.</p>
+            <h4>Sintaxis</h4>
+            <pre class="line-numbers">
+            <code class="language-css"><!-- Sintaxis -->animation-play-state: valor;</code>
         </pre>
-          <div id="Animation-iteration-count"></div>
-        </article>
-        <article>
-          <h3>Animation-play-state</h3>
-          <p>
-            La propiedad animation-play-state especifica si una animación está
-            en ejecución o está pausada. El valor de la propiedad
-            animation-play-state es uno de los siguientes:
-          </p>
-          <ul>
-            <li>running: La animación se está ejecutando.</li>
-            <li>paused: La animación está pausada.</li>
-          </ul>
-          <p>El valor por defecto es running.</p>
-          <pre class="line-numbers">
-          <code class="language-css"><!-- Ejemplo de Animation-play-state -->
-          div {
+            <p>
+              El valor valor es uno de los siguientes: running o paused.
+            </p>
+            <h4>Ejemplo</h4>
+            <pre class="line-numbers">
+          <code class="language-css"><!-- Ejemplo de Animation-play-state -->div {
             animation-name: Animation-play-state;
             animation-duration: 4s;
             animation-play-state: paused;
-          }
-          </code>
-        </pre>
-          
-          
-          <div id="Animation-play-state"></div>
-        </article>
-        <article>
-          <h3>Animation-timing-function</h3>
-          <p>
-            La propiedad animation-timing-function especifica la velocidad de la
-            animación.
-          
-            El valor de la propiedad animation-timing-function es una función de
-            tiempo.
+          }</code>
+          </pre>
+            <div id="Animation-play-state"></div>
+          </article>
+          <article>
+            <h3>Animation-timing-function</h3>
+            <p>
+              La propiedad animation-timing-function especifica la velocidad de
+              la
+              animación.
 
-            La función de tiempo especifica la velocidad de la animación a lo
-            largo del tiempo. Hay seis funciones de tiempo diferentes:
-            
-            <ul>
-              <li>ease: La velocidad de la animación empieza lenta, luego acelera
-                y luego se ralentiza al final.</li>
-              <li>linear: La velocidad de la animación es constante a lo largo del
-                tiempo.</li>
-              <li>ease-in: La velocidad de la animación empieza lenta.</li>
-              <li>ease-out: La velocidad de la animación se ralentiza al final.</li>
-              <li>ease-in-out: La velocidad de la animación empieza lenta, se
-                acelera en el medio, y luego se ralentiza al final.</li>
-              <li>cubic-bezier(n,n,n,n): Define su propia función de tiempo con
-                cuatro puntos de control. Los puntos de control son números entre
-                0 y 1.</li>
-            </ul>
-          </p>
-          <p>El valor por defecto es ease.</p>
-          <pre class="line-numbers">
-            <code class="language-css"><!-- Ejemplo de Animation-timing-function -->
-            div {
-              animation-name: example;
+              El valor de la propiedad animation-timing-function es una función
+              de
+              tiempo.
+
+              La función de tiempo especifica la velocidad de la animación a lo
+              largo del tiempo. Hay seis funciones de tiempo diferentes:
+
+              <ul>
+                <li>ease: La velocidad de la animación empieza lenta, luego
+                  acelera
+                  y luego se ralentiza al final.</li>
+                <li>linear: La velocidad de la animación es constante a lo largo
+                  del
+                  tiempo.</li>
+                <li>ease-in: La velocidad de la animación empieza lenta.</li>
+                <li>ease-out: La velocidad de la animación se ralentiza al
+                  final.</li>
+                <li>ease-in-out: La velocidad de la animación empieza lenta, se
+                  acelera en el medio, y luego se ralentiza al final.</li>
+                <li>cubic-bezier(n,n,n,n): Define su propia función de tiempo
+                  con
+                  cuatro puntos de control. Los puntos de control son números
+                  entre
+                  0 y 1.</li>
+              </ul>
+            </p>
+            <p>El valor por defecto es ease.</p>
+            <h4>Sintaxis</h4>
+            <pre class="line-numbers">
+            <code class="language-css"><!-- Sintaxis -->animation-timing-function: valor;</code>
+        </pre>
+            <p>
+              El valor valor es una de las siguientes funciones de tiempo: ease,
+              linear, ease-in, ease-out, ease-in-out, o cubic-bezier(n,n,n,n).
+            </p>
+            <h4>Ejemplo</h4>
+            <pre class="line-numbers">
+            <code class="language-css"><!-- Ejemplo de Animation-timing-function -->div {
+              animation-name: Animation-timing-function;
               animation-duration: 4s;
               animation-timing-function: linear;
-            }
-            </code>
-        </pre>
+            }</code>
+          </pre>
           <div id="Animation-timing-function"></div>
-        </article>
-        <article>
-          <h3>Shorthand</h3>
-          <p>
-            La propiedad animation es una propiedad abreviada para las propiedades
-            animation-name, animation-duration, animation-timing-function,
-            animation-delay, animation-iteration-count, animation-direction y
-            animation-fill-mode.
-          </p>
+          <h4>Emjemplo2</h4>
           <pre class="line-numbers">
-            <code class="language-css"><!-- Ejemplo de Shorthand -->
-            div {
-              animation: name duration timing-function delay iteration-count
-                direction fill-mode;
-            }
-            </code>
-        </article>
-      </section>
-    </main>
-    <footer>
-      <div>Antonio Julián Bueno Fuentes</div>
-      <a href="https://twitter.com/jaimerr" class="social"
-        ><img src="icon/twitter.svg" alt="Twitter"
-      /></a>
-      <a href="https://github.com/abueno19" class="social"
-        ><img src="icon/github.svg" alt="GitHub"
-      /></a>
-    </footer>
-  </body>
-</html>
+            <code class="language-css"><!-- Ejemplo de Animation-timing-function -->div {
+              animation-name: Animation-timing-function;
+              animation-duration: 4s;
+              animation-timing-function: ease-in 2s;
+            }</code>
+          </pre>
+          <div id="Animation-timing-function2"></div>
+          <h4>Emjemplo3</h4>
+          <pre class="line-numbers">
+            <code class="language-css"><!-- Ejemplo de Animation-timing-function -->div {
+              animation-name: Animation-timing-function;
+              animation-duration: 4s;
+              animation-timing-function:  ease-out 2s;
+            }</code>
+          </pre>
+          <div id="Animation-timing-function3"></div>
+
+          </article>
+        </section>
+      </main>
+      <footer>
+        <div>Antonio Julián Bueno Fuentes</div>
+        <a href="https://twitter.com/jaimerr" class="social"><img
+            src="icon/twitter.svg" alt="Twitter"
+            /></a>
+        <a href="https://github.com/abueno19" class="social"><img
+            src="icon/github.svg" alt="GitHub"
+            /></a>
+      </footer>
+    </body>
+  </html>

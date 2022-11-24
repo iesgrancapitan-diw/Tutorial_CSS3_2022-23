@@ -37,7 +37,3 @@ img {
     column-count: 5;
     column-fill: balance;
 }
-#col_ejemploColumn_fill_balance-all{
-    column-count: 5;
-    column-fill: balance-all;
-}

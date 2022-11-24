@@ -390,12 +390,10 @@ background-color: #0080FF80;
             </li>
           </ul>
         <h4>Sintaxis</h4>
-        <pre class="line-numbers"><code class="language-css">div{
-  background:linear-gradient(origen o ángulo del degradado, colores)
-}
-div{
-  background:linear-gradient(angulo,color con %,color con %)
-}</code></pre>
+        <pre class="line-numbers"><code class="language-css">body{
+  linear-gradient([angulo] to [left|right|top|bottom] (opcional), [lista de color stops] (obligatorio ))
+} /* lista de color stop = linear-color-stop,linear-color-hint,linear-color-stop */
+</code></pre>
         <h4>Ejemplos:</h4>
         <pre class="line-numbers"><code class="language-css">#grad1 {
   height: 100px;
@@ -582,9 +580,11 @@ background: linear-gradient(primerColor %[del tamaño del elemento, en este caso
             </li>
           </ul>
         <h4>Sintaxis</h4>
-        <pre class="line-numbers"><code class="language-css">div{
-  background:radial-gradient(si queremos que sea circle o ellipse, si indicamos circle empieza el degradado en el centro | todos los colores que queramos)
-}</code></pre>
+        <pre class="line-numbers"><code class="language-css">body{
+  radial-gradient([tamaño] en la [posicion] (opcional), lista-color-stop (obligatorio) )
+} /* tamaño es la longitud del degradado, en pixeles px o con porcentajes %
+y la posicion puede ser = [left | center | right | top | bottom | start | end | longitud con %]
+*/</code></pre>
         <p>
           En el primer ejemplo vamos a definir 3 colores y vamos a ver como el primer color es el del centro, el segundo
           el que va mas pegado al centro y el tercero el color de los bordes
@@ -757,16 +757,12 @@ background: radial-gradient(color,poncentaje,color)
           con un ángulo
         </p>
         <h4>Sintaxis</h4>
-        <pre class="line-numbers"><code class="language-css">div{
-  background: conic-gradient(color,color,color,color,color);}
-}
+        <pre class="line-numbers"><code class="language-css">body{
+  conic-gradient([desde este angulo] (opcional) a esta [posicion] (opcional) || espacio de color, angulo de color-stop-list);
+} /*posicion puede ser = [left | center | right | top | bottom| start | end ]*/
+
 /*Si no se especifica la parada de color, se coloca a medio camino entre el color que viene antes y el que viene despues, si no se especifica un 
-angulo para la primera o ultima parada de color sus valores son 0deg y 360deg*/
-
-
-div{
-  background:conic-gradient(color 0deg,color 90deg, color 180 deg,color 270deg, color 360deg )
-}</code></pre>
+angulo para la primera o ultima parada de color sus valores son 0deg y 360deg*/</code></pre>
         <p>Tambien podemos hace que empieze desde un grado en concreto, o bien que vaya desde un grado hasta otro grado.
         </p>
         <pre

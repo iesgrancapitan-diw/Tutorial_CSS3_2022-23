@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>TUTORIAL CSS3 - 2020/2021 - Diseño de Interfaces Web - CFGS DAW - IES Gran Capitán</title>
+    <title>TUTORIAL CSS3 - 2021/2022 - Diseño de Interfaces Web - CFGS DAW - IES Gran Capitán</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/prism.css">
     <link rel="stylesheet" href="css/pseudos-estilos.css">
     <script src="js/prism.js"></script>
+    <script src="js/pseudos.js"></script>
 </head>
 
 <body>
@@ -48,15 +49,21 @@
 
         <section>
             <h2 id="PseudoElementos">PseudoElementos</h2>
-            <h3><a href="#PseudoClases" style="color: #ffd149";>Ir a Pseudo Clases</a></h3>
+            <h3><a href="#PseudoClases" style="color: #ffd149" ;>Ir a Pseudo Clases</a></h3>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
             <article>
                 <h3>::after</h3>
                 <p> Selecciona el elemento al que se puede aplicar estilo que aparece a continuación del contenido del
                     elemento que lo origina.</p>
-                    <h4>Sintaxis</h4>
-                    <pre class="line-numbers"><code class="language-css">elemento::after {CSS a aplicar}</code></pre>
-                <p>Admite todas las propiedades css  y ademas la propiedad "content".</p>
-                <p>La propiedad "content" es obligatoria y se utiliza para especificar el contenido del pseudoElemento.</p>	
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento::after {CSS a aplicar}</code></pre>
+                <p>Admite todas las propiedades css y ademas la propiedad "content".</p>
+                <p>La propiedad "content" es obligatoria y se utiliza para especificar el contenido del pseudoElemento.
+                </p>
                 <p>El valor de la propiedad "content" puede ser:</p>
                 <ul>
                     <li>cadena: Define el contenido de texto. El valor por defecto es "".</li>
@@ -83,56 +90,64 @@
     color: #f00;
 }
 </code></pre>
-            <p>Resultado:</p>
-            <p id="ejemplo">A este texto se le añade una flecha roja</p>
+                <p>Resultado:</p>
+                <p id="ejemplo">A este texto se le añade una flecha roja</p>
             </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
 
             <article>
                 <h3>::before</h3>
-                <p>Crea un pseudoelemento que es el primer hijo del elemento seleccionado. 
-                Es usado normalmente para añadir contenido estético a un elemento, 
-                usando la propiedad content. Este elemento se muestra en línea con el texto de forma predeterminada.</p>
+                <p>Crea un pseudoelemento que es el primer hijo del elemento seleccionado.
+                    Es usado normalmente para añadir contenido estético a un elemento,
+                    usando la propiedad content. Este elemento se muestra en línea con el texto de forma predeterminada.
+                </p>
                 <h4>Sintaxis</h4>
-                <pre
-                    class="line-numbers"><code class="language-css">elemento::before{CSS a aplicar}</code></pre>
-                    <p>Admite todas las propiedades css  y ademas la propiedad "content".</p>
-                    <p>La propiedad "content" es obligatoria y se utiliza para especificar el contenido del pseudoElemento.</p>	
-                    <p>El valor de la propiedad "content" puede ser:</p>
-                    <ul>
-                        <li>cadena: Define el contenido de texto. El valor por defecto es "".</li>
-                        <li>url: Define una dirección URL</li>
-                        <li>counter (name)</li>
-                        <li>counter (name, list-style-type)</li>
-                        <li>counter (name, list-style-type, separator)</li>
-                        <li>counters (name, string)</li>
-                        <li>counters (name, string, list-style-type)</li>
-                        <li>counters (name, string, list-style-type, separator)</li>
-                        <li>attr(name): Define un atributo de un selector que será mostrado antes/después del selector.</li>
-                        <li>open-quote</li>
-                        <li>close-quote</li>
-                        <li>no-open-quote</li>
-                        <li>no-close-quote</li>
-                    </ul>
-                    <br>
-                    <p>Es comunmente usado para añadir contenido cosmético a un elemento con la propiedad content. Es en
-                        linea (inline) de forma predeterminada.</p>    
+                <pre class="line-numbers"><code class="language-css">elemento::before{CSS a aplicar}</code></pre>
+                <p>Admite todas las propiedades css y ademas la propiedad "content".</p>
+                <p>La propiedad "content" es obligatoria y se utiliza para especificar el contenido del pseudoElemento.
+                </p>
+                <p>El valor de la propiedad "content" puede ser:</p>
+                <ul>
+                    <li>cadena: Define el contenido de texto. El valor por defecto es "".</li>
+                    <li>url: Define una dirección URL</li>
+                    <li>counter (name)</li>
+                    <li>counter (name, list-style-type)</li>
+                    <li>counter (name, list-style-type, separator)</li>
+                    <li>counters (name, string)</li>
+                    <li>counters (name, string, list-style-type)</li>
+                    <li>counters (name, string, list-style-type, separator)</li>
+                    <li>attr(name): Define un atributo de un selector que será mostrado antes/después del selector.</li>
+                    <li>open-quote</li>
+                    <li>close-quote</li>
+                    <li>no-open-quote</li>
+                    <li>no-close-quote</li>
+                </ul>
+                <br>
+                <p>Es comunmente usado para añadir contenido cosmético a un elemento con la propiedad content. Es en
+                    linea (inline) de forma predeterminada.</p>
                 <h4>Ejemplos:</h4>
-                <pre
-                    class="line-numbers"><code class="language-css">#ejemplo2::before{
+                <pre class="line-numbers"><code class="language-css">#ejemplo2::before{
     content: "♥";
     color: #f00;
 }
 </code></pre>
-            <p>Resultado:</p>
-            <p id="ejemplo2">A este texto se le añade un corazón al inicio.</p> 
+                <p>Resultado:</p>
+                <p id="ejemplo2">A este texto se le añade un corazón al inicio.</p>
             </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
 
             <article>
                 <h3>::first-letter</h3>
-                <p> Aplica estilos a la primera letra de la primera línea un elemento de bloque, 
+                <p> Aplica estilos a la primera letra de la primera línea un elemento de bloque,
                     sólo cuando no es precedido de otro contenido (como imágenes o tablas).</p>
-                    <h4>Sintaxis</h4>
-                    <pre class="line-numbers"><code class="language-css">elemento::first-letter {CSS a aplicar}</code></pre>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento::first-letter {CSS a aplicar}</code></pre>
                 <p>Propiedades admitidas:</p>
                 <ul>
                     <li>Todas las propiedades de fuente</li>
@@ -141,8 +156,8 @@
                     <li>Todas las propiedades de relleno</li>
                     <li>Todas las propiedades de bordes</li>
                     <li>La propiedad color</li>
-                    <li>Las propiedades text-decoration, text-shadow, text-transform, letter-spacing, word-spacing, 
-                        line-height, text-decoration-line, text-decoration-style, box-shadow, 
+                    <li>Las propiedades text-decoration, text-shadow, text-transform, letter-spacing, word-spacing,
+                        line-height, text-decoration-line, text-decoration-style, box-shadow,
                         float y vertical-align</li>
                 </ul>
                 <br>
@@ -153,15 +168,19 @@
     font-size: 2em;
 }
 </code></pre>
-            <p>Resultado:</p>
-            <p id="ejemplo3">La primera letra de este parrafo es roja y más grande.</p>
+                <p>Resultado:</p>
+                <p id="ejemplo3">La primera letra de este parrafo es roja y más grande.</p>
             </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
 
             <article>
                 <h3>::placeholder</h3>
                 <p> Representa el texto provisional en un elemento "input" o un elemento "textarea".</p>
-                    <h4>Sintaxis</h4>
-                    <pre class="line-numbers"><code class="language-css">input::placeholder {CSS a aplicar}</code></pre>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">input::placeholder {CSS a aplicar}</code></pre>
                 <p>Propiedades admitidas:</p>
                 <ul>
                     <li>Todas las propiedades de fuente</li>
@@ -170,8 +189,8 @@
                     <li>Todas las propiedades de relleno</li>
                     <li>Todas las propiedades de bordes</li>
                     <li>La propiedad color</li>
-                    <li>Las propiedades text-decoration, text-shadow, text-transform, letter-spacing, word-spacing, 
-                        line-height, text-decoration-line, text-decoration-style, box-shadow, 
+                    <li>Las propiedades text-decoration, text-shadow, text-transform, letter-spacing, word-spacing,
+                        line-height, text-decoration-line, text-decoration-style, box-shadow,
                         float y vertical-align</li>
                 </ul>
                 <br>
@@ -182,16 +201,21 @@
     background-color: #f00;
 }
 </code></pre>
-            <p>Resultado:</p>
-            <input id="ejemplo4" placeholder="Texto en azul con fondo rojo" style="width: 250px;">
+                <p>Resultado:</p>
+                <input id="ejemplo4" placeholder="Texto en azul con fondo rojo" style="width: 250px;">
 
             </article>
-            
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
             <article>
                 <h3>::marker</h3>
-                <p> Selecciona la caja de marcadores de un elemento de la lista, que normalmente contiene una viñeta o un número</p>
-                    <h4>Sintaxis</h4>
-                    <pre class="line-numbers"><code class="language-css">ul li::marker {CSS a aplicar}</code></pre>
+                <p> Selecciona la caja de marcadores de un elemento de la lista, que normalmente contiene una viñeta o
+                    un número</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">ul li::marker {CSS a aplicar}</code></pre>
                 <p>Propiedades admitidas:</p>
                 <ul>
                     <li>Todas las propiedades de fuente</li>
@@ -207,14 +231,18 @@
     font-size: 2em;
 }
 </code></pre>
-            <p>Resultado:</p>
-            <ul>
-                <li class="ejemplo5">Marca con color azul</li>
-                <li class="ejemplo5">Marca con color azul 2</li>
-                <li class="ejemplo5">Marca con color azul 3</li>
-            </ul>
+                <p>Resultado:</p>
+                <ul>
+                    <li class="ejemplo5">Marca con color azul</li>
+                    <li class="ejemplo5">Marca con color azul 2</li>
+                    <li class="ejemplo5">Marca con color azul 3</li>
+                </ul>
 
             </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
 
             <article>
                 <h3>::spelling-error</h3>
@@ -234,8 +262,9 @@
                     </ul>
                 </h4>
                 <p> Representa un segmento de texto que el user agent ha marcado como deletreado incorrectamente.</p>
-                    <h4>Sintaxis</h4>
-                    <pre class="line-numbers"><code class="language-css">elemento::spelling-error {CSS a aplicar}</code></pre>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">elemento::spelling-error {CSS a aplicar}</code></pre>
                 <p>Propiedades admitidas:</p>
                 <ul>
                     <li>color</li>
@@ -255,69 +284,79 @@
     text-decoration: underline;
 }
 </code></pre>
-            <p>Resultado:</p>
-            <p id="ejemplo6">Texto del ejemplo 6</p>
+                <p>Resultado:</p>
+                <p id="ejemplo6">Texto del ejemplo 6</p>
 
             </article>
 
-            <article>
-            <h3>::grammar-error</h3>
-            <h4>IMPORTANTE: este Pseudo Elemento NO es compatible con los siguientes navegadores:
-                <ul>
-                    <li>Chrome</li>
-                    <li>Edge</li>
-                    <li>Firefox</li>
-                    <li>Opera</li>
-                    <li>Safari</li>
-                    <li>Chrome Android</li>
-                    <li>Firefox for Android</li>
-                    <li>Opera Android</li>
-                    <li>Safari on iOS</li>
-                    <li>Samsung Internet</li>
-                    <li>WebView Android</li>
-                </ul>
-            </h4>
-            <p> Representa un segmento de texto que el user agent ha marcado como gramaticamente incorrecto.</p>
-                <h4>Sintaxis</h4>
-                <pre class="line-numbers"><code class="language-css">elemento::grammar-error {CSS a aplicar}</code></pre>
-            <p>Propiedades admitidas:</p>
-            <ul>
-                <li>color</li>
-                <li>background-color</li>
-                <li>cursor</li>
-                <li>caret-color</li>
-                <li>outline</li>
-                <li>text-decoration</li>
-                <li>text-emphasis-color</li>
-                <li>text-shadow</li>
-            </ul>
-            <br>
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
 
-            <h4>Ejemplos:</h4>
-            <pre class="line-numbers"><code class="language-css">#ejemplo7::grammar-error {
+            <article>
+                <h3>::grammar-error</h3>
+                <h4>IMPORTANTE: este Pseudo Elemento NO es compatible con los siguientes navegadores:
+                    <ul>
+                        <li>Chrome</li>
+                        <li>Edge</li>
+                        <li>Firefox</li>
+                        <li>Opera</li>
+                        <li>Safari</li>
+                        <li>Chrome Android</li>
+                        <li>Firefox for Android</li>
+                        <li>Opera Android</li>
+                        <li>Safari on iOS</li>
+                        <li>Samsung Internet</li>
+                        <li>WebView Android</li>
+                    </ul>
+                </h4>
+                <p> Representa un segmento de texto que el user agent ha marcado como gramaticamente incorrecto.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">elemento::grammar-error {CSS a aplicar}</code></pre>
+                <p>Propiedades admitidas:</p>
+                <ul>
+                    <li>color</li>
+                    <li>background-color</li>
+                    <li>cursor</li>
+                    <li>caret-color</li>
+                    <li>outline</li>
+                    <li>text-decoration</li>
+                    <li>text-emphasis-color</li>
+                    <li>text-shadow</li>
+                </ul>
+                <br>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">#ejemplo7::grammar-error {
 color: green;
 text-decoration: underline;
 }
 </code></pre>
-        <p>Resultado:</p>
-        <p id="ejemplo7">Texto del ejemplo 7</p>
+                <p>Resultado:</p>
+                <p id="ejemplo7">Texto del ejemplo 7</p>
 
-        </article>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
 
         </section>
 
         <section>
             <h2 id="PseudoClases">PseudoClases</h2>
-            <h3><a href="#PseudoElementos" style="color: #ffd149";>Ir a Pseudo Elementos</a></h3>
+            <h3><a href="#PseudoElementos" style="color: #ffd149" ;>Ir a Pseudo Elementos</a></h3>
 
             <article>
                 <h3>:active</h3>
                 <p> Representa un elemento (como un botón) que el usuario está activando.</p>
-                    <h4>Sintaxis</h4>
-                    <pre class="line-numbers"><code class="language-css">elemento:active {CSS a aplicar}</code></pre>
-                    <p>Admite todas las propiedades css.</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:active {CSS a aplicar}</code></pre>
+                <p>Admite todas las propiedades css.</p>
                 <br>
-                <p>La pseudo-clase :active se usa comúnmente en los elementos "a" y "button", pero también se puede usar en otros elementos.</p>
+                <p>La pseudo-clase :active se usa comúnmente en los elementos "a" y "button", pero también se puede usar
+                    en otros elementos.</p>
 
                 <h4>Ejemplos:</h4>
                 <pre class="line-numbers"><code class="language-css">#ejemploPClase:active {
@@ -325,11 +364,1048 @@ text-decoration: underline;
     background-color: #0f0;
 }
 </code></pre>
-            <p>Resultado:</p>
-            <p id="ejemploPClase">El estilo se aplica al hacer click en este elemento</p>
+                <p>Resultado:</p>
+                <p id="ejemploPClase">El estilo se aplica al hacer click en este elemento</p>
             </article>
 
-            <!--TODO todas las demás PseudoClases https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes --> 
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
+            <article>
+                <h3>:checked</h3>
+                <p> Representa cualquier radio (&#60;input type="radio"&#62;), checkbox (&#60;input
+                    type="checkbox""&#62;) u option (&#60;option&#62; en un elemento &#60;select&#62;) que está marcado
+                    o conmutado a un estado on</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:checked {CSS a aplicar}</code></pre>
+                <br>
+                <p>La pseudo-clase :checked se usa para cambiar los estilos de los radios, checkbox y option cuando
+                    están seleccionados.</p>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.ejemploPClase2:checked {
+    box-shadow: 0 0 0 3px lime;
+    color: red;
+}
+</code></pre>
+                <p>Resultado:</p>
+                <p>El Resultado se muestra al seleccionar alguno de los elementos.</p>
+                <input type="radio" name="example" class="ejemploPClase2"> Hola
+                <br>
+                <input type="radio" name="example" class="ejemploPClase2"> Adios
+                <br>
+                <input type="checkbox" name="my-checkbox" class="ejemploPClase2"> Seleccioname!!
+                <br>
+                <input type="checkbox" name="my-checkbox" class="ejemploPClase2"> Seleccioname tambien!!
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
+            <article>
+                <h3>:default</h3>
+                <p> Representa cualquier elemento de formulario que sea el predeterminado entre un grupo de elementos
+                    relacionados.</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:default {CSS a aplicar}</code></pre>
+                <br>
+                <p>Este selector se puede usar en los elementos &#60;button&#62;, &#60;input type="checkbox"&#62;,
+                    &#60;input type="radio"&#62; y &#60;option&#62;.</p>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.ejemploPClase3:default + label {
+    box-shadow: 0 0 2px 1px blue;
+    color: blue;
+}
+</code></pre>
+                <p>Resultado:</p>
+                <p>El Resultado se muestra en el elemento que está señalado por defecto</p>
+                <input type="radio" name="season" id="spring" class="ejemploPClase3"> <label> Primavera</label>
+
+                <input type="radio" name="season" id="summer" checked class="ejemploPClase3"> <label> Verano</label>
+
+                <input type="radio" name="season" id="fall" class="ejemploPClase3"> <label> Otoño</label>
+
+                <input type="radio" name="season" id="winter" class="ejemploPClase3"> <label> Invierno</label>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
+            <article>
+                <h3>:dir()</h3>
+                <h4>IMPORTANTE: este Pseudo Elemento SOLO ES compatible con los siguientes navegadores:
+                    <ul>
+                        <li>Firefox</li>
+                        <li>Firefox Android</li>
+                    </ul>
+                </h4>
+                <p> Coincide con los elementos en función de la direccionalidad del texto contenido en ellos.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">elemento:dir(ltr)||:dir(rtl) {CSS a aplicar}</code></pre>
+                <br>
+                <p>La pseudoclase :dir() requiere un parámetro, que representa la direccionalidad de texto que desea
+                    orientar.</p>
+                <p> ltr -> elementos con el texto de izquierda a derecha.
+                    <br>
+                    rtl -> elementos con el texto de derecha a izquierda.
+                </p>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.ejemploPClase4:dir(ltr) {
+    color: blue;
+}
+</code></pre>
+                <p>Resultado:</p>
+                <div dir="ltr" class="ejemploPClase4">El Resultado se muestra en este elemento (solo Firefox)</div>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
+            <article>
+                <h3>:disabled</h3>
+                <p> Representa a cualquier elemento deshabilitado. Un elemento se encuentra deshabilitado si no puede
+                    ser activado
+                    (por ejemplo ser selecionado, hacer click en él o aceptar texto de entrada) ni aceptar el foco.</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:disabled {CSS a aplicar}</code></pre>
+                <br>
+                <p>El elemento tiene además un estado habilitado en el cual puede ser activado o recibir foco.</p>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.ejemploPClase5:disable {
+    background-color: lightseagreen;
+}
+</code></pre>
+                <p>Resultado:</p>
+                <input type="text" class="ejemploPClase5" placeholder="Elemento Desabilitado" disabled>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
+            <article>
+                <h3>:empty</h3>
+                <p> Representa cualquier elemento que no tenga hijos.</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:empty {CSS a aplicar}</code></pre>
+                <br>
+                <p>Los hijos pueden ser nodos de elemento o texto (incluido el espacio en blanco).
+                    Los comentarios o las instrucciones de procesamiento no afectan si un elemento se considera vacío.
+                </p>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.ejemploPClase6:empty {
+    background-color: lime;
+    width: 50px;
+    height: 50px;
+}
+</code></pre>
+                <p>Resultado:</p>
+                <div class="ejemploPClase6"></div>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
+            <article>
+                <h3>:enabled</h3>
+                <p> Representa cualquier elemento habilitado.</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:enabled {CSS a aplicar}</code></pre>
+                <br>
+                <p>Un elemento está habilitado si puede ser activado (es decir seleccionado, se puede hacer click en él,
+                    acepta que se le introduzca texto, etc.) o si accepta el foco. El elemento también tiene un estado
+                    deshabilitado
+                    el en cuál, no puede ser activado ni acepta el foco.</p>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.ejemploPClase7:enabled {
+    background-color: blue;
+}
+</code></pre>
+                <p>Resultado:</p>
+                <input type="text" class="ejemploPClase7" value="Hola Mundo"><br>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
+            <article>
+                <h3>:first</h3>
+                <h4>IMPORTANTE: No compatible con Firefox ni Firefox Mobile</h4>
+                <p> Utilizada con la regla-at @page, representa la primera página de un documento impreso.</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:firts {CSS a aplicar}</code></pre>
+                <br>
+                <p>No puedes cambiar todas las propiedades de CSS con esta pseudoclase. Solo puede cambiar los márgenes,
+                    orphans,
+                    widows y saltos de página del documento.
+                    Además, solo puede usar unidades de longitud absoluta al definir los márgenes.
+                    Todas las otras propiedades serán ignoradas.</p>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">@page :first {
+    margin-left: 50%;
+    margin-top: 50%;
+}
+</code></pre>
+                <p>Resultado:</p>
+                <button id="ejemploPClase8">Imprimir!</button><br>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
+            <article>
+                <h3>:first-child</h3>
+                <p> Representa el primer elemento entre un grupo de elementos hermanos.</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:first-child {CSS a aplicar}</code></pre>
+                <br>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.ejemploPClase9:first-child {
+    background-color: red;
+    width: 15px;
+}
+</code></pre>
+                <p>Resultado:</p>
+                <ul>
+                    <li class="ejemploPClase9">1</li>
+                    <li class="ejemploPClase9">2</li>
+                    <li class="ejemploPClase9">3</li>
+                    <li class="ejemploPClase9">4</li>
+                </ul><br>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
+            <article>
+                <h3>:first-of-type</h3>
+                <p> Representa el primer elemento de su tipo entre un grupo de elementos hermanos.</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:first-of-type {CSS a aplicar}</code></pre>
+                <br>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.ejemploPClase10 p:first-of-type {
+    color: red;
+}
+</code></pre>
+                <p>Resultado:</p>
+                <div class="ejemploPClase10">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                </div>
+                <br>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
+            <article>
+                <h3>:fullscreen</h3>
+                <p> Representa un elemento que se muestra cuando el navegador está en modo de pantalla completa.</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:fullscreen {CSS a aplicar}</code></pre>
+                <br>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.ejemploPClase11:fullscreen > p {
+    padding: 42px;
+    background-color: pink;
+    border:2px solid #f00;
+    font-size: 200%;
+}
+</code></pre>
+                <p>Resultado:</p>
+                <div class="ejemploPClase11">
+                    <p>Hello World!!</p>
+                </div>
+                <br>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
+            <article>
+                <h3>:focus</h3>
+                <p> Representa un elemento (como una entrada de formulario) que ha recibido el foco.</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:focus {CSS a aplicar}</code></pre>
+                <br>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.ejemploPClase12:focus{
+    color:blue;
+    background-color:yellow;
+}
+</code></pre>
+                <p>Resultado:</p>
+                <input type="text" class="ejemploPClase12" value="Hello World!!">
+                <br>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
+            <article>
+                <h3>:hover</h3>
+                <p> La pseudo-clase :hover de CSS coincide cuando el usuario interactúa con un elemento
+                    con un dispositivo señalador, pero no necesariamente lo activa.</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:hover {CSS a aplicar}</code></pre>
+                <br>
+                <p>Los estilos definidos por la pseudoclase :active serán anulados por cualquier pseudo-clase posterior
+                    relacionada con el enlace (:link, :visited, o :active) que tenga al menos la misma especificidad.
+                </p>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.ejemploPClase13:hover{
+    color:blue;
+}
+</code></pre>
+                <p>Resultado:</p>
+                <p class="ejemploPClase13">Pon el cursor sobre mi!!</p>
+                <br>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
+            <article>
+                <h3>:indeterminate</h3>
+                <p> Representa cualquier elemento de formulario cuyo estado sea indeterminado.</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:indeterminate {CSS a aplicar}</code></pre>
+                <br>
+                <p>Los elementos seleccionados por este selector son:</p>
+                <ul>
+                    <li>Elementos &#60;input type="checkbox"&#62; cuya propiedad indeterminate se establece en true por
+                        JavaScript</li>
+                    <li>Elementos &#60;input type="radio"&#62; , cuando todos los radio buttons con el mismo valor name
+                        en el formulario no están marcados</li>
+                    <li>Elementos &#60;progress&#62; en un estado indeterminado</li>
+                </ul>
+
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.ejemploPClase14:inderteminate{
+    color:red;
+}
+</code></pre>
+                <p>Resultado:</p>
+                <p>Al selecccionar una de las dos opciones desaparece el estilo.</p>
+                <input type="radio" class="ejemploPClase14" name="ejemplo14"><label for="ejemplo14"> Opcion 1</label>
+                <input type="radio" class="ejemploPClase14" name="ejemplo14"><label for="ejemplo14.2"> Opcion 2</label>
+
+                <br>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
+            <article>
+                <h3>:in-range</h3>
+                <p> Representa un elemento &#60;input&#62; cuyo valor actual se encuentra dentro de los límites de rango
+                    especificados por los atributos min y max.</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:in-range {CSS a aplicar}</code></pre>
+                <br>
+                <p>Esta pseudo-clase es útil para dar al usuario una indicación visual de que el valor actual de un
+                    campo está dentro de los límites permitidos.</p>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.ejemploPClase15:in-range{
+    color:red;
+    background-color: #0f0;
+}
+</code></pre>
+                <p>Resultado:</p>
+                <p>Al selecccionar una de las dos opciones desaparece el estilo.</p>
+                <input type="number" class="ejemploPClase15" min="0" max="15"><label for="ejemplo15"> Número entre 0 y
+                    15</label>
+
+                <br>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
+            <article>
+                <h3>:invalid</h3>
+                <p> Representa cualquier elemento &#60;input&#62; u otro elemento &#60;form&#62; cuyos contenidos no se
+                    puedan validar.</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:invalid {CSS a aplicar}</code></pre>
+                <br>
+                <p>Esta pseudo-clase es útil para resaltar errores de campo para el usuario.</p>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.ejemploPClase16:invalid{
+    background-color: red;
+}
+</code></pre>
+                <p>Resultado:</p>
+                <p>Al selecccionar una de las dos opciones desaparece el estilo.</p>
+                <input type="url" class="ejemploPClase16"><label for="ejemplo16"> Introduce una url</label>
+
+                <br>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
+            <article>
+                <h3>:lang</h3>
+                <p>La pseudo-clase :lang() de CSS es utilizada para modificar elementos en función del idioma en el que
+                    se determina que están.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">elemento:lang(siglas del idioma) {CSS a aplicar}</code></pre>
+                <br>
+                <p>En HTML, el lenguaje está determinado por una combinación del atributo lang, el elemento
+                    &#60;meta&#62;
+                    y posiblemente por la información del protocolo (como los encabezados HTTP).</p>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.ejemploPClase17:lang(es){
+    color: red;
+}
+
+.ejemploPClase17:lang(en){
+    color: blue;
+}
+</code></pre>
+                <p>Resultado:</p>
+                <p>Nota: El texto se pone de color rojo porque el idioma de la página en general es español.</p>
+                <p class="ejemploPClase17">Texto de ejemplo</p>
+                <p>Nota: El texto se pone de color azul porque el idioma de la etiqueta es ingles (hemos usado el
+                    atributo lang)</p>
+                <p class="ejemploPClase17" lang="en">Texto de ejemplo</p>
+
+                <br>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
+            <article>
+                <h3>:last-child</h3>
+                <p>Representa el último elemento entre un grupo de elementos hermanos.</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:last-child {CSS a aplicar}</code></pre>
+                <br>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.ejemploPClase18:last-child{
+    color: red;
+    border: 1px solid black;
+    width: 7em;
+}
+</code></pre>
+                <p>Resultado:</p>
+                <ul>
+                    <li class="ejemploPClase18">Item número 1</li>
+                    <li class="ejemploPClase18">Item número 2</li>
+                    <li class="ejemploPClase18">Item número 3</li>
+                    <li class="ejemploPClase18">Item número 4</li>
+                    <li class="ejemploPClase18">Item número 5</li>
+                    <li class="ejemploPClase18">Item número 6</li>
+                </ul>
+
+                <br>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
+            <article>
+                <h3>:last-of-type</h3>
+                <p>Representa el último elemento de su tipo entre un grupo de elementos hermanos.</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:last-of-type {CSS a aplicar}</code></pre>
+                <br>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.ejemploPClase19:last-of-type{
+    color: lime;
+}
+</code></pre>
+                <p>Resultado:</p>
+                <div>
+                    <p class="ejemploPClase19">Parrafo 1</p>
+                    <p class="ejemploPClase19">Parrafo 2</p>
+                    <p class="ejemploPClase19">Parrafo 3</p>
+                    <p class="ejemploPClase19">Parrafo 4</p>
+                    <ul>
+                        <li>Elemento de lista número 1</li>
+                        <li class="ejemploPClase19">Esto no es un parrafo pero tambien se aplica el estilo</li>
+                    </ul>
+                </div>
+
+                <br>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
+            <article>
+                <h3>:left</h3>
+                <h4>IMPORTANTE: No es compative con Firefox y Firefox Mobile</h4>
+                <p>La :left CSS pseudo-clase, utilizada con la regla @page at, representa todas las páginas de la
+                    izquierda de un documento impreso.</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">@page :left {CSS a aplicar}</code></pre>
+                <br>
+                <p>Esta pseudoclase se puede usar para cambiar solo las propiedades margin, padding, border y background
+                    del cuadro de página.
+                    Se ignorarán todas las demás propiedades y solo se verá afectado el cuadro de página, no el
+                    contenido del documento en la página. </p>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">@page :left {
+    margin: 2in 3in;
+}
+</code></pre>
+                <p>Resultado:</p>
+                <button id="ejemploPClase20">Imprimir!</button><br>
+                <br>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
+            <article>
+                <h3 id="link">:link</h3>
+                <p>Representa un elemento que aún no se ha visitado. Coincide con cada elemento no visitado &#60;a&#62;,
+                    &#60;area&#62;, o &#60;link&#62; que tiene un atributo href.</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">elemento:link {CSS a aplicar}</code></pre>
+                <br>
+                <p>Los estilos definidos por la pseudo-clase :link serán anulados por cualquier pseudo-clase posterior
+                    relacionada
+                    con el enlace (:active, :hover, o :visited) que tenga al menos la misma especificidad.</p>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.ejemploPClase21:link {
+    background-color: red;
+    color:white;
+}
+</code></pre>
+                <p>Resultado:</p>
+                <a class="ejemploPClase21" href="#link">Enlace generico</a><br>
+                <br>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
+            <article>
+                <h3>:not()</h3>
+                <p>Representa elementos que no coinciden con una lista de selectores.</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">:not(expresion) {CSS a aplicar}</code></pre>
+                <br>
+                <ul>
+                    <li>Se pueden escribir selectores inútiles usando esta pseudoclase. Por ejemplo, :not(*)
+                        coincide con cualquier elemento que no sea un elemento, por lo que la regla nunca se aplicará.
+                    </li>
+                    <li>Esta pseudoclase puede aumentar la especificidad de una regla. Por ejemplo, #foo:not(#bar)
+                        coincidirá
+                        con el mismo elemento que el #foo más simple, pero tiene una especificidad más alta.</li>
+                    <li>:not(.foo) coincidirá con cualquier cosa que no sea .foo, incluidos &#60;html&#62; y
+                        &#60;body&#62;.</li>
+                    <li>Este selector solo se aplica a un elemento; no puedes usarlo para excluir a todos los
+                        antepasados.
+                        Por ejemplo, body :not(table) a se aplicará a los enlaces dentro de una tabla, ya que
+                        &#60;tr&#62;
+                        coincidirá con la parte :not() del selector.</li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.ejemploPClase21:not(p) {
+    background-color: lightblue;
+}
+</code></pre>
+                <p>Resultado:</p>
+                <p class="ejemploPClase21">P número 1</p>
+                <p class="ejemploPClase21">P número 2</p>
+                <pre class="ejemploPClase21">Pre número 1</pre>
+                <ul class="ejemploPClase21">
+                    <li>li 1</li>
+                    <li>li 2</li>
+                </ul>
+                <br>
+                <br>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
+            <article>
+                <h3>:nth-child()</h3>
+                <p>Coincide con uno o más elementos en función de su posición entre un grupo de hermanos.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">elemento:nth-child(patron) {CSS a aplicar}</code></pre>
+                <br>
+                <p>Valores de palabras clave</p>
+                <ul>
+                    <li>
+                        odd.
+                        Representa elementos cuya posición numérica en una serie de hermanos es impar: 1, 3, 5, etc.
+                    </li>
+                    <li>
+                        even.
+                        Representa elementos cuya posición numérica en una serie de hermanos es par: 2, 4, 6, etc.
+                    </li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.ejemploPClase22:nth-child(3n) {
+    background-color: lightseagreen;
+}
+</code></pre>
+                <p>Resultado:</p>
+                <p>Solo los parrafos multiplos de 3 tendrán el estilo aplicado (cada parrafo tiene la clase "ejemploPClase22")</p> 
+                <p class="ejemploPClase22">P número 1</p>
+                <p class="ejemploPClase22">P número 2</p>
+                <p class="ejemploPClase22">P número 3</p>
+                <p class="ejemploPClase22">P número 4</p>
+                <p class="ejemploPClase22">P número 5</p>
+                <p class="ejemploPClase22">P número 6</p>
+
+                <h4>Ejemplo 2</h4>
+                <pre class="line-numbers"><code class="language-css">.ejemploPClase22-2 :nth-child(3n) {
+    background-color: yellowgreen;
+}
+                </code></pre>
+                                <p>Resultado:</p>
+                                <p>Solo los parrafos multiplos de 3 tendrán el estilo aplicado 
+                                    (SOLO el div padre de los parrafos tiene la clase ejemploPClase22-2)</p>
+                                <div class="ejemploPClase22-2">
+                                    <p>P número 1</p>
+                                    <p>P número 2</p>
+                                    <p>P número 3</p>
+                                    <p>P número 4</p>
+                                    <p>P número 5</p>
+                                    <p>P número 6</p>
+                                </div>
+
+
+                <br>
+                <br>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
+            <article>
+                <h3>:nth-last-child()</h3>
+                <p>Selecciona uno o más elementos en función de su posición entre un grupo de hermanos, contando desde
+                    el final.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">elemento:nth-last-child(patron) {CSS a aplicar}</code></pre>
+                <br>
+                <p>Esta pseudo-clase es esencialmente la misma que :nth-child, excepto que cuenta los elementos hacia
+                    atrás desde el final,
+                    no hacia adelante desde el principio.</p>
+                <p>Valores de palabras clave</p>
+                <ul>
+                    <li>
+                        odd.
+                        Representa elementos cuya posición numérica en una serie de hermanos es impar: 1, 3, 5, etc.
+                    </li>
+                    <li>
+                        even.
+                        Representa elementos cuya posición numérica en una serie de hermanos es par: 2, 4, 6, etc.
+                    </li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">tr:nth-last-child(-n+3) {
+    color: blue;
+}
+                  
+</code></pre>
+                <p>Resultado:</p>
+                <p>Selecciona los 3 ultimos elementos</p>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Primera línea</td>
+                        </tr>
+                        <tr>
+                            <td>Segunda línea</td>
+                        </tr>
+                        <tr>
+                            <td>Tercera línea</td>
+                        </tr>
+                        <tr>
+                            <td>Cuarta línea</td>
+                        </tr>
+                        <tr>
+                            <td>Quinta línea</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <br>
+                <br>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
+            <article>
+                <h3>:nth-last-of-type()</h3>
+                <p>Coincide con uno o más elementos de un tipo dado, en función de su posición entre 
+                    un grupo de hermanos, contando desde el final.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">elemento:nth-last-of-type(patron) {CSS a aplicar}</code></pre>
+                <br>
+                <p>Valores de palabras clave</p>
+                <ul>
+                    <li>
+                        odd.
+                        Representa elementos cuya posición numérica en una serie de hermanos es impar: 1, 3, 5, etc.
+                    </li>
+                    <li>
+                        even.
+                        Representa elementos cuya posición numérica en una serie de hermanos es par: 2, 4, 6, etc.
+                    </li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.ejemploPClase22 span:nth-last-of-type(2n) {
+    background-color: lightseagreen;
+}
+</code></pre>
+                <p>Resultado:</p>
+                <div class="ejemploPClase23">
+                    <span>Span numero 1</span><br>
+                    <span>Span numero 2</span><br>
+                    <span>Span numero 3</span><br>
+                    <span>Span numero 4</span><br>
+                </div>
+
+                <br>
+                <br>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
+            <article>
+                <h3>:nth-of-type()</h3>
+                <p>Selecciona uno o más elementos de un tipo dado, en función de su posición entre un grupo de hermanos.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">elemento:nth-of-type(patron) {CSS a aplicar}</code></pre>
+                <br>
+                <p>Valores de palabras clave</p>
+                <ul>
+                    <li>
+                        odd.
+                        Representa elementos cuya posición numérica en una serie de hermanos es impar: 1, 3, 5, etc.
+                    </li>
+                    <li>
+                        even.
+                        Representa elementos cuya posición numérica en una serie de hermanos es par: 2, 4, 6, etc.
+                    </li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.ejemploPClase24 p:nth-of-type(4n) {
+    background-color: green;
+}
+</code></pre>
+                <p>Resultado:</p>
+                <div class="ejemploPClase24">
+                    <p>1er párrafo.</p>
+                    <p>2do párrafo.</p>
+                    <p>3er párrafo.</p>
+                    <p>4to párrafo.</p>
+                    <p>5to párrafo.</p>
+                    <p>6to párrafo.</p>
+                    <p>7to párrafo.</p>
+                    <p>8to párrafo.</p>
+                  </div>
+                <br>
+                <br>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
+            <article>
+                <h3>:only-child</h3>
+                <p>Representa un elemento sin hermanos. Esto es lo mismo que :first-child:last-child o 
+                    :nth-child(1):nth-last-child(1), pero con una especificidad menor.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">elemento:only-child {CSS a aplicar}</code></pre>
+                <br>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.ejemploPClase25 :only-child {
+    color: red;
+}
+</code></pre>
+                <p>Resultado:</p>
+                <div class="ejemploPClase25">
+                    <div>
+                        <p>No tengo hermanos</p>
+                    </div>
+                </div>
+                <div class="ejemploPClase25">
+                    <p>Parrafo con hermanos</p>
+                    <p>Parrafo con hermanos 2</p>
+                    <p>Parrafo con hermanos 3</p>
+                </div>
+                <br>
+                <br>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
+            <article>
+                <h3>:only-of-type</h3>
+                <p>Representa un elemento que no tiene hermanos del mismo tipo.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">elemento:only-of-type {CSS a aplicar}</code></pre>
+                <br>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.ejemploPClase26 :only-of-type {
+    color: blue;
+}
+</code></pre>
+                <p>Resultado:</p>
+                <div class="ejemploPClase26">
+                    <p>Soy el unico parrafo</p>
+                    <pre>Yo soy un tipo pre</pre>
+                    <pre>Yo tambien soy un pre</pre>
+                </div>
+                <br>
+                <br>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
+            <article>
+                <h3>:optional</h3>
+                <p>Representa cualquier elemento &#60;input&#62;, &#60;select&#62;, o &#60;textarea&#62; que no tenga el atributo 
+                    required establecido en él.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">elemento:optional {CSS a aplicar}</code></pre>
+                <br>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.ejemploPClase27 :optional {
+    color: red;
+    width: 25%;
+}
+</code></pre>
+                <p>Resultado:</p>
+                <input type="text" value="No tengo el atributo required por lo cual soy opcional" class="ejemploPClase27">
+                <input type="text" value="Yo si tengo el atributo required" required style="width: 12%;" class="ejemploPClase27">
+                <br>
+                <br>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
+            <article>
+                <h3>:only-of-type</h3>
+                <p>Representa un elemento que no tiene hermanos del mismo tipo.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">elemento:only-of-type {CSS a aplicar}</code></pre>
+                <br>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.ejemploPClase26 :only-of-type {
+    color: blue;
+}
+</code></pre>
+                <p>Resultado:</p>
+                <div class="ejemploPClase26">
+                    <p>Soy el unico parrafo</p>
+                    <pre>Yo soy un tipo pre</pre>
+                    <pre>Yo tambien soy un pre</pre>
+                </div>
+                <br>
+                <br>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
+            <article>
+                <h3>:out-of-range</h3>
+                <p>Representa un elemento &#60;input&#62; cuyo valor actual está fuera de los límites de rango especificados 
+                    por los atributos min y max.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">elemento:out-of-range {CSS a aplicar}</code></pre>
+                <br>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.ejemploPClase28:out-of-range {
+    color: white;
+    background-color: red;
+}
+</code></pre>
+                <p>Resultado:</p>
+                <input type="number" value="12" class="ejemploPClase28" max="10" min="5"><label>Rango entre 5 y 10</label><br>
+                <input type="number" value="6" class="ejemploPClase28" max="10" min="5"><label>Rango entre 5 y 10</label>
+                <br>
+                <br>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
+            <article>
+                <h3>:required</h3>
+                <p>Representa cualquier elemento &#60;input&#62;, &#60;select&#62;, o &#60;textarea&#62; 
+                    que tenga el atributo required establecido en él.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">elemento:required {CSS a aplicar}</code></pre>
+                <br>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.ejemploPClase29:required {
+    color: white;
+    background-color: green;
+}
+</code></pre>
+                <p>Resultado:</p>
+                <input type="text" value="Tengo el atributo required" required class="ejemploPClase29"><br>
+                <input type="text" value="No tengo el atributo required" class="ejemploPClase29">
+                <br>
+                <br>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
+            <article>
+                <h3>:root</h3>
+                <p>Selecciona el elemento raíz de un árbol que representa el documento. En HTML, 
+                    :root representa el elemento &#60;html&#62; y es idéntico al selector html, excepto que su especificidad es mayor.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">:root {CSS a aplicar}</code></pre>
+                <br>
+                <p>:root puede ser útil para declarar variables CSS globales:</p>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">:root{
+    --color-principal: blue;
+}
+.ejemploPClase30{
+    color: var(--color-principal);
+}
+</code></pre>
+                <p>Resultado:</p>
+                <p class="ejemploPClase30">Soy de color azul</p>
+                <br>
+                <br>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+
+            <article>
+                <h3>:valid</h3>
+                <p>Representa cualquier elemento &#60;input&#62; u otro elemento &#60;form&#62; cuyo contenido 
+                    se valide satisfactoriamente. Esto permite que los campos válidos adopten fácilmente una 
+                    apariencia que ayuda al usuario a confirmar que sus datos están formateados correctamente.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">elemento:valid {CSS a aplicar}</code></pre>
+                <br>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.ejemploPClase31:valid{
+    color: grey;
+    background-color: aqua;
+}
+
+</code></pre>
+                <p>Resultado:</p>
+                <input type="number" max="10" min="0" value="2" class="ejemploPClase31"> 
+                <br>
+                <br>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ---------------------------------------------------- -->
+
+            <article>
+                <h3>:visited</h3>
+                <p>Representa enlaces que el usuario ya ha visitado. Por motivos de privacidad, los estilos que se pueden 
+                    modificar con este selector son muy limitados.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">elemento:visited {CSS a aplicar}</code></pre>
+                <br>
+                <p>Los estilos definidos por la pseudo-clase :visited serán anulados por cualquier pseudo-clase posterior 
+                    relacionada con el enlace (:link, :hover o :active) que tenga al menos la misma especificidad. 
+                    Para darle un estilo apropiado a los enlaces, coloque la regla :visited después de la regla 
+                    :link pero antes de las reglas :hover y :active, según lo definido por el orden LVHA: :link — 
+                    :visited — :hover — :active.</p>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.ejemploPClase33:visited {
+    color: red;
+}
+</code></pre>
+                <p>Resultado:</p>
+                <a href="#ejemplo33" class="ejemploPClase33" id="ejemplo33">Link</a>
+                <br>
+                <br>
+            </article>
+
+            <!-- ----------------------------------------------------- -->
+            <!-- ----------------------------------------------------- -->
+            <!-- ---------------------------------------------------- -->
+
         </section>
     </main>
     <footer>

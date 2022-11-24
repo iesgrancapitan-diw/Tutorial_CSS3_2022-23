@@ -2,6 +2,7 @@
     content: "→";
     color: #f00;
 }
+
 #ejemplo2::before {
     content: "♥";
     color: #f00;
@@ -11,26 +12,191 @@
     color: #f00;
     font-size: 2em;
 }
+
 #ejemplo4::placeholder {
     color: blue;
     background-color: #f00;
 }
+
 .ejemplo5::marker {
     color: blue;
     font-size: 2em;
 }
+
 #ejemplo6::spelling-error {
     color: green;
     text-decoration: underline;
 }
+
 #ejemplo7::grammar-error {
     color: green;
     text-decoration: underline;
 }
-#ejemploPClase{
+
+#ejemploPClase {
     width: 25%;
 }
+
 #ejemploPClase:active {
     color: #f00;
     background-color: #0f0;
+}
+
+.ejemploPClase2:checked {
+    box-shadow: 0 0 0 3px lime;
+    color: red;
+}
+
+.ejemploPClase3:default+label {
+    box-shadow: 0 0 2px 1px blue;
+    color: blue;
+}
+
+.ejemploPClase4:dir(ltr) {
+    color: blue;
+}
+
+.ejemploPClase5:disabled::placeholder {
+    background-color: lightseagreen;
+    color: green;
+}
+
+.ejemploPClase6:empty {
+    background-color: lime;
+    width: 50px;
+    height: 50px;
+}
+
+.ejemploPClase7:enabled {
+    color: #2b2;
+}
+
+@page :first {
+    margin-left: 50%;
+    margin-top: 50%;
+}
+
+.ejemploPClase9:first-child {
+    background-color: red;
+    width: 15px;
+}
+
+.ejemploPClase10 p:first-of-type {
+    color: red;
+}
+
+.ejemploPClase11:fullscreen>p {
+    padding: 42px;
+    background-color: pink;
+    border: 2px solid #f00;
+    font-size: 200%;
+}
+
+.ejemploPClase12:focus {
+    color: blue;
+    background-color: yellow;
+}
+
+.ejemploPClase13:hover {
+    color: blue;
+}
+
+input[name="ejemplo14"]:indeterminate + label {
+    background: lime;
+  }
+
+.ejemploPClase15:in-range{
+    color:red;
+    background-color: #0f0;
+}
+
+.ejemploPClase16:invalid{
+    background-color: red;
+}
+
+.ejemploPClase17:lang(es){
+    color: red;
+}
+
+.ejemploPClase17:lang(en){
+    color: blue;
+}
+
+.ejemploPClase18:last-child{
+    color: red;
+    border: 1px solid black;
+    width:7em;
+}
+
+.ejemploPClase19:last-of-type{
+    color: lime;
+}
+
+.ejemploPClase21:link {
+    background-color: red;
+    color:white;
+}
+
+.ejemploPClase21:not(p) {
+    background-color: lightblue;
+}
+
+.ejemploPClase22:nth-child(3n) {
+    background-color: lightseagreen;
+}
+
+.ejemploPClase22-2 :nth-child(3n) {
+    background-color: yellowgreen;
+}
+
+tr:nth-last-child(-n+3) {
+    color: blue;
+}
+
+.ejemploPClase23 span:nth-last-of-type(2n) {
+    background-color: lightseagreen;
+}
+
+.ejemploPClase24 p:nth-of-type(4n) {
+    background-color: green;
+}
+
+.ejemploPClase25 :only-child {
+    color: red;
+}
+
+.ejemploPClase26 :only-of-type {
+    color: blue;
+}
+
+.ejemploPClase27:optional {
+    color: red;
+    width: 25%;
+}
+
+.ejemploPClase28:out-of-range {
+    color: white;
+    background-color: red;
+}
+
+.ejemploPClase29:required {
+    color: white;
+    background-color: green;
+}
+
+:root{
+    --color-principal: blue;
+}
+
+.ejemploPClase30{
+    color: var(--color-principal);
+}
+
+.ejemploPClase31:valid{
+    color: grey;
+    background-color: aqua;
+}
+
+.ejemploPClase33:visited {
+    color: red;
 }

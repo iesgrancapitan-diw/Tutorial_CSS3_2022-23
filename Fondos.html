@@ -76,17 +76,31 @@ background-color: rgba(30, 27, 96, 0.911);
 background-color: hsl(14, 100%, 73%);
 background-color: hsla(14, 100%, 53%, 0.2);
 </code></pre>
-                <br/>
+                <br />
                 <div id="padre">
-                    <div id="fondos-color"><p>red</p></div>
-                    <div id="fondos-hexadecimal"><p>#add8e6</p></div>
-                    <div id="fondos-transparent"><p>transparent</p></div>
-                    <div id="fondos-rgb"><p>rgb(210,120,134)</p></div>
-                    <div id="fondos-rgba"><p>rgba(30,27,96,0.911)</p></div>
-                    <div id="fondos-hsl"><p>hsl(14,100%,73%)</p></div>
-                    <div id="fondos-hsla"><p>hsla(14,100%,53%,0.2)</p></div>
+                    <div id="fondos-color">
+                        <p>red</p>
+                    </div>
+                    <div id="fondos-hexadecimal">
+                        <p>#add8e6</p>
+                    </div>
+                    <div id="fondos-transparent">
+                        <p>transparent</p>
+                    </div>
+                    <div id="fondos-rgb">
+                        <p>rgb(210,120,134)</p>
+                    </div>
+                    <div id="fondos-rgba">
+                        <p>rgba(30,27,96,0.911)</p>
+                    </div>
+                    <div id="fondos-hsl">
+                        <p>hsl(14,100%,73%)</p>
+                    </div>
+                    <div id="fondos-hsla">
+                        <p>hsla(14,100%,53%,0.2)</p>
+                    </div>
                 </div>
-                <br/>
+                <br />
 
             </article>
 
@@ -156,6 +170,14 @@ background-color: hsla(14, 100%, 53%, 0.2);
     height: 500px;
 }</code></pre>
                     <div class="fondos-background-image-imagen1"></div>
+
+                    <pre class="line-numbers"><code class="language-css">.fondos-background-image-imagen1-1 {
+    background-image: url("../img/background-repeat-space-img.png"), linear-gradient(red,yellow,rgb(140, 139, 235));
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 500px;
+}</code></pre>
+                    <div class="fondos-background-image-imagen1-1"></div>
 
                     <li>
                         <p>none</p>
@@ -291,7 +313,7 @@ background-color: hsla(14, 100%, 53%, 0.2);
                     class="line-numbers"><code class="language-css">background-origin: padding-box|border-box|content-box|initial|inherit;</code></pre>
                 <h4>Ejemplos: </h4>
                 <ul>
-                    <li >
+                    <li>
                         <p>padding-box</p>
                         <p>- Valor por defecto. La imagen de fondo comienza desde la esquina superior izquierda del
                             borde de relleno. Se puede poner más de un valor con una coma.</p>
@@ -353,7 +375,8 @@ background-color: hsla(14, 100%, 53%, 0.2);
                     <li><b>size (porcentaje): </b>Puede utilizar valores porcentuales. Tenga en cuenta que esto puede
                         alterar la relación de
                         aspecto de la imagen de fondo y generar resultados inesperados.</li>
-                    <li><b>contain: </b>La palabra clave contain cambiará el tamaño de la imagen de fondo para asegurarse
+                    <li><b>contain: </b>La palabra clave contain cambiará el tamaño de la imagen de fondo para
+                        asegurarse
                         de que permanezca totalmente visible.</li>
                     <li><b>cover: </b>La palabra clave cover cambiará el tamaño de la imagen de fondo para asegurarse de
                         que el elemento esté completamente cubierto.</li>
@@ -517,16 +540,22 @@ background-color: hsla(14, 100%, 53%, 0.2);
                     class="line-numbers"><code class="language-css">background-position: [ % | cm | left | center | right | top | bottom | xpos | ypos | center];</code></pre>
                 <p>Admite varios valores, que son los siguientes: </p>
                 <ul>
-                    <li><b>%:</b> Le podremos dar un porcentaje en el eje x o eje y a nuestra imagen. Si damos 0% por defecto es arriba a la izquierda (0,0)</li>
-                    <li><b>cm:</b> Le podremos dar una cantidad de centímetros a nuestra imágen. También podemos usar otros valores relativos o absolutos (px o rem/em)</li>
+                    <li><b>%:</b> Le podremos dar un porcentaje en el eje x o eje y a nuestra imagen. Si damos 0% por
+                        defecto es arriba a la izquierda (0,0)</li>
+                    <li><b>cm:</b> Le podremos dar una cantidad de centímetros a nuestra imágen. También podemos usar
+                        otros valores relativos o absolutos (px o rem/em)</li>
                     <li><b>Palabras clave de posición:</b> Puede utilizar una combinación de palabras clave de posición:
-                        <b>center, top, bottom y left right.</b></li>
-                    <li>Podemos combinar varias palabras clave de posición como por ejemplo: 
+                        <b>center, top, bottom y left right.</b>
+                    </li>
+                    <li>Podemos combinar varias palabras clave de posición como por ejemplo:
                         <ul>
                             <li><b>Top, top center y center top:</b> Coloca la imagen en el punto medio del eje x.</li>
-                            <li><b>Left, left center y center left:</b> Coloca la imagen en el punto medio del eje y.</li>
-                            <li><b>Right, right center y center right:</b> Citua la imagen en el extremo derecho centrada.</li>
-                            <li><b>Bottom, bottom center y center bottom:</b> Posiciona la imagen en el extremo inferior centrada.</li>
+                            <li><b>Left, left center y center left:</b> Coloca la imagen en el punto medio del eje y.
+                            </li>
+                            <li><b>Right, right center y center right:</b> Citua la imagen en el extremo derecho
+                                centrada.</li>
+                            <li><b>Bottom, bottom center y center bottom:</b> Posiciona la imagen en el extremo inferior
+                                centrada.</li>
                         </ul>
                     </li>
                     <li><b>xpos, ypos:</b> Añade nuestra imagen con respecto a sus coordenadas x e y</li>
@@ -583,7 +612,8 @@ background-color: hsla(14, 100%, 53%, 0.2);
                     class="line-numbers"><code class="language-css">background-blend-mode: [normal|multiply|screen|overlay|darken|lighten|color-dodge|saturation|color|luminosity|color-burn];</code></pre>
                 <p>Admite varios valores, que son los siguientes: </p>
                 <ul>
-                    <li><b>normal: </b>El modo de fusión que se va a aplicar es el normal. Es el valor por defecto(no hay fusión, ni mezcla).</li>
+                    <li><b>normal: </b>El modo de fusión que se va a aplicar es el normal. Es el valor por defecto(no
+                        hay fusión, ni mezcla).</li>
                     <li><b>multiply: </b>Establece el mode de fusión para multiplicar.</li>
                     <li><b>screen: </b>Modo de fusión de la pantalla.</li>
                     <li><b>overlay: </b>Modo de fusión en superposición.</li>

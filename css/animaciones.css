@@ -342,7 +342,6 @@
   animation-name: animacion-play-state;
   width: 100px;
   height: 100px;
-
   animation: animacion-play-state 3s linear infinite;
   animation-play-state: running;
   background-color: rgb(111, 194, 202);

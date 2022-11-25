@@ -1,5 +1,6 @@
 .Svg_filter_tablas{
 	width: 100%;
+    table-layout: fixed;
 }
 
 .Svg_filter_blur1{
@@ -77,4 +78,11 @@
 }
 .Svg_filter_url2{
     filter: url(#granulado);
+}
+
+.Svg_filter_combinacion1{
+    filter: blur(5px) grayscale(1);
+}
+.Svg_filter_combinacion2{
+    filter: drop-shadow(-10px -16px 2px red) hue-rotate(180deg) saturate(150%);
 }

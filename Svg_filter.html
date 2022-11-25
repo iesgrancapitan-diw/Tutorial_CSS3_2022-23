@@ -53,9 +53,140 @@
                     <li>Es un formato abierto, estándar y basado en XML</li>
                     <li>Soportan estilos CSS</li>
                 </ul>
+                <h4>Formas basicas con SVG:</h4>
+                <ul>
+                    <li><a href="#Rectangle">Rectangle</a></li>
+                    <li><a href="#Circle">Circle</a></li>
+                    <li><a href="#Ellipse">Ellipse</a></li>
+                    <li><a href="#Line">Line</a></li>
+                    <li><a href="#Multilinea">Multilinea</a></li>
+                </ul>
                 <h4>Ejemplo de imagen generada con SVG</h4>
                 <img src="Svg_filter_imagen.svg" alt="Mariposa en svg">
 
+            </article>
+            <article>
+                <h3 id="Rectangle">Rectangle</h3>
+                <p>El elemento &lt;rect&gt; dibuja un rectángulo en la pantalla.</p>
+                <p>Las propiedades del elemento son las siguientes:</p>
+                <ul>
+                    <li><span>x. </span>La posición x de la esquina superior izquierda del rectángulo.
+                    </li>
+                    <li><span>y. </span>La posición y de la esquina superior izquierda del rectángulo.
+                    </li>
+                    <li><span>rx. </span>El radio x de las esquinas del rectángulo.
+                    </li>
+                    <li><span>ry. </span>El radio y de las esquinas del rectángulo.
+                    </li>
+                    <li><span>width. </span>El ancho del rectángulo.
+                    </li>
+                    <li><span>height. </span>La altura del rectángulo.
+                    </li>
+                </ul>
+                <h4>Ejemplos de Rectangle</h4>
+                <pre>
+&lt;svg&gt;
+    &lt;rect x="10" y="10" width="30" height="30"/&gt;
+    &lt;rect x="60" y="10" rx="10" ry="10" width="30" height="30"/&gt;
+&lt;/svg&gt;
+                </pre>
+                <svg>
+                    <rect x="10" y="10" width="30" height="30"/>
+                    <rect x="60" y="10" rx="10" ry="10" width="30" height="30"/>
+                </svg>
+            </article>
+            <article>
+                <h3 id="Circle">Circle</h3>
+                <p>El elemento &lt;circle&gt; dibuja un circulo en la pantalla.</p>
+                <p>Las propiedades del elemento son las siguientes:</p>
+                <ul>
+                    <li><span>cx. </span>La posición x del centro del círculo.
+                    </li>
+                    <li><span>cy. </span>La posición y del centro del círculo.
+                    </li>
+                    <li><span>r. </span>El radio del círculo..
+                    </li>
+                </ul>
+                <h4>Ejemplos de Circle</h4>
+                <pre>
+&lt;svg&gt;
+    &lt;circle cx="35" cy="35" r="30"/&gt;
+&lt;/svg&gt;
+                </pre>
+                <svg>
+                    <circle cx="35" cy="35" r="30"/>
+                </svg>
+            </article>
+            <article>
+                <h3 id="Ellipse">Ellipse</h3>
+                <p>El elemento &lt;ellipse&gt; es una forma más general del elemento &lt;circle&gt;, 
+                    donde puede escalar el radio x e y del círculo por separado.</p>
+                <p>Las propiedades del elemento son las siguientes:</p>
+                <ul>
+                    <li><span>cx. </span>La posición x del centro del elipse.
+                    </li>
+                    <li><span>cy. </span>La posición y del centro del elipse.
+                    </li>
+                    <li><span>rx. </span>El radio x del elipse.
+                    </li>
+                    <li><span>ry. </span>El radio y del elipse.
+                    </li>
+                </ul>
+                <h4>Ejemplos de Ellipse</h4>
+                <pre>
+&lt;svg&gt;
+    &lt;ellipse rx="40" cy="45" cx="45" ry="20"/&gt;
+&lt;/svg&gt;
+                </pre>
+                <svg>
+                    <ellipse rx="40" cy="45" cx="45" ry="20"></ellipse>
+                </svg>
+            </article>
+            <article>
+                <h3 id="Line">Line</h3>
+                <p>El elemento &lt;ellipse&gt; es una forma más general del elemento &lt;circle&gt;, 
+                    donde puede escalar el radio x e y del círculo por separado.</p>
+                <p>Las propiedades del elemento son las siguientes:</p>
+                <ul>
+                    <li><span>x1. </span>La posición x del punto 1.
+                    </li>
+                    <li><span>y1. </span>La posición y del punto 1.
+                    </li>
+                    <li><span>x2. </span>La posición x del punto 2.
+                    </li>
+                    <li><span>y2. </span>La posición y del punto 2.
+                    </li>
+                    <li><span>stroke. </span>Color de la linea que une los dos puntos.
+                    </li>
+                </ul>
+                <h4>Ejemplos de Line</h4>
+                <pre>
+&lt;svg&gt;
+    &lt;line x1="10" x2="50" y1="10" y2="100" stroke="black"/&gt;
+&lt;/svg&gt;
+                </pre>
+                <svg>
+                    <line x1="10" x2="50" y1="10" y2="100" stroke="black"/>
+                </svg>
+            </article>
+            <article>
+                <h3 id="Multilinea">Multilinea</h3>
+                <p>Es un grupo de rectas conectadas. 
+                    Dado que la lista de puntos puede ser bastante larga, 
+                    todos los puntos se incluyen en un atributo</p>
+                    <ul>
+                        <li><span>points. </span>Una lista de puntos. Cada número debe estar separado por un espacio, coma, EOL o un carácter de salto de línea. Cada punto debe contener dos números: una coordenada x y una coordenada y.
+                        </li>
+                    </ul>
+                <h4>Ejemplos de Multilinea</h4>
+                <pre>
+&lt;svg&gt;
+    &lt;polyline points="0,20 40,20 40,60 80,60 80,100 120,100 120,140"/&gt;
+&lt;/svg&gt;
+                </pre>
+                <svg>
+                    <polyline points="0,20 40,20 40,60 80,60 80,100 120,100 120,140"/>
+                </svg>
             </article>
             <br>
             <article>
@@ -79,6 +210,7 @@
                     <li><a href="#Sepia">Sepia()</a></li>
                     <li><a href="#Drop">Drop-shadow()</a></li>
                     <li><a href="#Url">Url()</a></li>
+                    <li><a href="#Combinacion">Combinacion de filter</a></li>
                 </ul>
             </article>
             <article>
@@ -90,7 +222,11 @@
                     No se permiten valores negativos. Si no se pasa ningún valor, el valor predeterminado es cero '0'.
                 </p>
                 <h4>Ejemplo de blur</h4>
-                <pre class="line-numbers"><code class="language-css">filter: blur(10px);</code></pre>
+                <pre class="line-numbers"><code class="language-css">2px de blur
+filter: blur(2px);
+
+10px de blur
+filter: blur(10px);</code></pre>
                 <table class="Svg_filter_tablas">
                     <tr>
                         <td><h2>Original</h2></td>
@@ -113,7 +249,11 @@
                     Un valor expresado con un signo de porcentaje (como en 56%) también se puede expresar como decimal (como en 0,56).
                 </p>
                 <h4>Ejemplo de Brightness</h4>
-                <pre class="line-numbers"><code class="language-css">filter: brightness(150%);</code></pre>
+                <pre class="line-numbers"><code class="language-css">50% de brightness
+filter: brightness(50%);
+
+150% de brightness
+filter: brightness(150%);</code></pre>
                 <table class="Svg_filter_tablas">
                     <tr>
                         <td><h2>Original</h2></td>
@@ -135,7 +275,11 @@
                     Un valor expresado con un signo de porcentaje (como en 56%) también se puede expresar como decimal (como en 0,56).
                 </p>
                 <h4>Ejemplo de Contrast</h4>
-                <pre class="line-numbers"><code class="language-css">filter: contrast(150%);</code></pre>
+                <pre class="line-numbers"><code class="language-css">50% de contrast
+filter: contrast(50%);
+
+150% de contrast
+filter: contrast(150%);</code></pre>
                 <table class="Svg_filter_tablas">
                     <tr>
                         <td><h2>Original</h2></td>
@@ -160,7 +304,11 @@
                     Un valor expresado con un signo de porcentaje (como en 56%) también se puede expresar como decimal (como en 0,56).
                 </p>
                 <h4>Ejemplo de Grayscale</h4>
-                <pre class="line-numbers"><code class="language-css">filter: grayscale(100%);</code></pre>
+                <pre class="line-numbers"><code class="language-css">50% de grayscale
+filter: grayscale(50%);
+                    
+100% de grayscale
+filter: grayscale(100%);</code></pre>
                 <table class="Svg_filter_tablas">
                     <tr>
                         <td><h2>Original</h2></td>
@@ -184,7 +332,11 @@
                 <p>El ángulo máximo de rotación es de 360 grados.
                 </p>
                 <h4>Ejemplo de Hue-rotate</h4>
-                <pre class="line-numbers"><code class="language-css">filter: hue-rotate(180deg);</code></pre>
+                <pre class="line-numbers"><code class="language-css">90deg de Hue-rotate
+filter: hue-rotate(90deg);
+
+180deg de Hue-rotate
+filter: hue-rotate(180deg);</code></pre>
                 <table class="Svg_filter_tablas">
                     <tr>
                         <td><h2>Original</h2></td>
@@ -207,7 +359,11 @@
                     Un valor expresado con un signo de porcentaje (como en 56%) también se puede expresar como decimal (como en 0,56).
                 </p>
                 <h4>Ejemplo de Invert</h4>
-                <pre class="line-numbers"><code class="language-css">filter: invert(100%);</code></pre>
+                <pre class="line-numbers"><code class="language-css">50% de Invert
+filter: invert(50%);
+
+100% de Invert
+filter: invert(100%);</code></pre>
                 <table class="Svg_filter_tablas">
                     <tr>
                         <td><h2>Original</h2></td>
@@ -232,7 +388,11 @@
                     Un valor expresado con un signo de porcentaje (como en 56%) también se puede expresar como decimal (como en 0,56).
                 </p>
                 <h4>Ejemplo de Opacity</h4>
-                <pre class="line-numbers"><code class="language-css">filter: opacity(10%);</code></pre>
+                <pre class="line-numbers"><code class="language-css">50% de Opacity
+filter: opacity(50%);
+
+10% de Opacity
+filter: opacity(10%);</code></pre>
                 <table class="Svg_filter_tablas">
                     <tr>
                         <td><h2>Original</h2></td>
@@ -256,7 +416,11 @@
                     Un valor expresado con un signo de porcentaje (como en 56%) también se puede expresar como decimal (como en 0,56).
                 </p>
                 <h4>Ejemplo de Saturate</h4>
-                <pre class="line-numbers"><code class="language-css">filter: saturate(200%);</code></pre>
+                <pre class="line-numbers"><code class="language-css">50% de Saturate
+filter: saturate(50%);
+
+200% de Saturate
+filter: saturate(200%);</code></pre>
                 <table class="Svg_filter_tablas">
                     <tr>
                         <td><h2>Original</h2></td>
@@ -281,7 +445,11 @@
                     Un valor expresado con un signo de porcentaje (como en 56%) también se puede expresar como decimal (como en 0,56).
                 </p>
                 <h4>Ejemplo de Sepia</h4>
-                <pre class="line-numbers"><code class="language-css">filter: sepia(100%);</code></pre>
+                <pre class="line-numbers"><code class="language-css">50% de Sepia
+filter: sepia(50%);
+
+100% de Sepia
+filter: sepia(100%);</code></pre>
                 <table class="Svg_filter_tablas">
                     <tr>
                         <td><h2>Original</h2></td>
@@ -304,26 +472,27 @@
                     a un elemento en función del contenido que contiene, no en función de su forma rectangular.</p>
                 <p>Los parametros para la funcion son los siguientes:</p>
                 <ul>
-                    <li><b>offset-x y offset-y (requerido)</b><p>Son los dos primeros parámetros,
+                    <li><span>offset-x y offset-y (requerido). </span>Son los dos primeros parámetros,
                         son dos valores de longitud (px, em, pc, in, mm, …) para establecer la posición de la sobra respecto a la imagen.
                         El primero, X, especifica la distancia horizontal.
                         Valores negativos establecen la sombra a la izquierda del elemento.
                         El segundo, Y, especifica la distancia vertical.
                         Valores negativos establecen la sombra arriba del elemento.
-                    </p></li>
-                    <li><b>blur-radius (opcional)</b><p>Es el tercer parámetro.
+                    </li>
+                    <li><span>blur-radius (opcional). </span>Es el tercer parámetro.
                         Mientras mayor sea el valor, mayor será el desenfoque,
                         por lo que la sombra se vuelve más grande y clara.
                         No se permiten valores negativos.
                         Si no es especificado, su valor predeterminado será 0 (el borde de la sombra es nítido).
-                    </p></li>
-                    <li><b>color (opcional)</b><p>Es el cuarto parámetro.
+                    </li>
+                    <li><span>color (opcional). </span>Es el cuarto parámetro.
                         Recibe un valor de tipo color
-                    </p></li>
+                    </li>
                 </ul>
                 <h4>Ejemplos de Drop-shadow</h4>
                 <pre class="line-numbers"><code class="language-css">Ejemplo 1
 filter: drop-shadow(16px 5px 2px blue);
+
 Ejemplo 2
 filter: drop-shadow(5px -16px 20px red);</code></pre>
                 <table class="Svg_filter_tablas">
@@ -352,21 +521,24 @@ filter: drop-shadow(5px -16px 20px red);</code></pre>
                 <pre class="line-numbers"><code class="language-css">filter: url(#mifiltro);
 filter: url(#granulado);</code></pre>
                 <h4>Filtro 1</h4>
-                <pre class="line-numbers"><code class="language-html">
-                    <svg height="0">
-                        <filter id="mifiltro" x="-5%" y="-5%" width="110%" height="110%">
-                            <feGaussianBlur in="SourceGraphic" stdDeviation="8"/>
-                        </filter>
-                    </svg>
-                </code></pre>
+                <pre>
+    &lt;svg height="0"&gt;
+        &lt;filter id="mifiltro" x="-5%" y="-5%" width="110%" height="110%"&gt;
+            &lt;feGaussianBlur in="SourceGraphic" stdDeviation="8"/&gt;
+        &lt;/filter&gt;
+    &lt;/svg&gt;
+</pre>
                 <h4>Filtro 2</h4>
-                <pre class="line-numbers"><code class="language-html">
-                    <svg height="0">
-                        <filter id="mifiltro" x="-5%" y="-5%" width="110%" height="110%">
-                            <feGaussianBlur in="SourceGraphic" stdDeviation="8"/>
-                        </filter>
-                    </svg>
-                </code></pre>
+                <pre>
+    &lt;svg height="0"&gt;
+        &lt;filter id="granulado"&gt;
+            &lt;feTurbulence baseFrequency="0.60,0.90" result="colorNoise"&gt;&lt;/feTurbulence&gt;
+            &lt;feColorMatrix in="colorNoise" type="matrix" values=".33 .33 .33 0 0 .33 .33 .33 0 0 .33 .33 .33 0 0 0 0 0 1 0"&gt;&lt;/feColorMatrix&gt;
+            &lt;feComposite operator="in" in2="SourceGraphic" result="monoNoise"&gt;&lt;/feComposite&gt;
+            &lt;feBlend in="SourceGraphic" in2="monoNoise" mode="multiply"&gt;&lt;/feBlend&gt;&gt;
+        &lt;/filter&gt;
+    &lt;/svg&gt;
+</pre>
                 <table class="Svg_filter_tablas">
                     <tr>
                         <td><h2>Original</h2></td>
@@ -377,6 +549,30 @@ filter: url(#granulado);</code></pre>
                         <td><img src="Svg_filter_imagen.svg" alt="Mariposa en svg"></td>
                         <td><img src="Svg_filter_imagen.svg" alt="Mariposa en svg" class="Svg_filter_url1"></td>
                         <td><img src="Svg_filter_imagen.svg" alt="Mariposa en svg" class="Svg_filter_url2"></td>
+                    </tr>
+                </table>
+            </article>
+            <article>
+                <h3 id="Combinacion">Combinacion de filter</h3>
+                <p>Filter nos permite hacer combinaciones con todas sus funciones para poder
+                    aplicar todos los filtros que queramos a una imagen y conseguir personalizarla
+                    como queramos.
+                </h4>
+                <pre class="line-numbers"><code class="language-css">Ejemplo 1
+filter: blur(5px) grayscale(1);
+
+Ejemplo 2
+filter: drop-shadow(-10px -16px 2px red) hue-rotate(180deg) saturate(150%);</code></pre>
+                <table class="Svg_filter_tablas">
+                    <tr>
+                        <td><h2>Original</h2></td>
+                        <td><h2>Ejemplo 1</h2></td>
+                        <td><h2>Ejemplo 2</h2></td>
+                    </tr>
+                    <tr>
+                        <td><img src="Svg_filter_imagen.svg" alt="Mariposa en svg"></td>
+                        <td><img src="Svg_filter_imagen.svg" alt="Mariposa en svg" class="Svg_filter_combinacion1"></td>
+                        <td><img src="Svg_filter_imagen.svg" alt="Mariposa en svg" class="Svg_filter_combinacion2"></td>
                     </tr>
                 </table>
             </article>

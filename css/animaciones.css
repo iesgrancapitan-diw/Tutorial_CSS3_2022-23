@@ -322,7 +322,6 @@
   animation-name: animacion-iteration-count;
   width: 100px;
   height: 100px;
-
   animation: animacion-iteration-count 3s linear infinite;
   animation-iteration-count: 3;
   background-color: rgb(111, 194, 202);

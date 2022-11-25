@@ -1,6 +1,8 @@
 .fondos-background-attachment-imagen1{
     background-image: url("../img/background-attachment-imagen.png");
     background-attachment: scroll;
+    overflow: scroll;
+    width: 50%;
     height: 300px;
 }
 .fondos-background-attachment-imagen2{

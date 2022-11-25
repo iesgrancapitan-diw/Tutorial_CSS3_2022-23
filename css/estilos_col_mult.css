@@ -20,11 +20,25 @@ img {
     column-gap: 80px;
 }
 
-#col_ejemploColumn-rule {
+#col_ejemploColumn-rule-style {
     column-count: 5;
-    column-rule: 1px solid black;
+    column-rule: solid;
 }
-
+#col_ejemploColumn-rule-width {
+    column-count: 5;
+    column-rule: solid;
+    column-rule-width: 5px;
+}
+#col_ejemploColumn-rule-color {
+    column-count: 5;
+    column-rule: solid;
+    column-rule-width: 5px;
+    column-rule-color: red;
+}
+#col_ejemploColumn-rule-shorthand {
+    column-count: 5;
+    column-rule: 5px solid red;
+}
 #col_spam_h1 {
     color: black;
     column-span: all;

@@ -1,0 +1,117 @@
+.duration {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition-property: width;
+    transition-duration: 5s;
+}
+
+.duration:hover {
+    width: 200px;
+}
+
+.delay {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition-property: width;
+    transition-duration: 5s;
+    transition-delay: 2s;
+}
+
+.delay:hover {
+    width: 300px;
+}
+
+.property1 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition-property: width;
+    transition-duration: 2s;
+}
+
+.property1:hover {
+    width: 300px;
+}
+
+.ease {
+    width: 100px;
+    height: 50px;
+    background: red;
+    color: white;
+    font-weight: bold;
+    transition: width 2s;
+    transition-timing-function: ease;
+}
+
+.ease:hover {
+    width: 300px;
+}
+
+.ease-in {
+    width: 100px;
+    height: 50px;
+    background: red;
+    color: white;
+    font-weight: bold;
+    transition: width 2s;
+    transition-timing-function: ease-in;
+}
+
+.ease-in:hover {
+    width: 300px;
+}
+
+.ease-out {
+    width: 100px;
+    height: 50px;
+    background: red;
+    color: white;
+    font-weight: bold;
+    transition: width 2s;
+    transition-timing-function: ease-out;
+}
+
+.ease-out:hover {
+    width: 300px;
+}
+
+.ease-in-out {
+    width: 100px;
+    height: 50px;
+    background: red;
+    color: white;
+    font-weight: bold;
+    transition: width 2s;
+    transition-timing-function: ease-in-out;
+}
+
+.ease-in-out:hover {
+    width: 300px;
+}
+
+.linear {
+    width: 100px;
+    height: 50px;
+    background: red;
+    color: white;
+    font-weight: bold;
+    transition: width 2s;
+    transition-timing-function: linear;
+}
+
+.linear:hover {
+    width: 300px;
+}
+
+.transition1 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s linear 1s;
+}
+
+.transition1:hover {
+    width: 300px;
+}

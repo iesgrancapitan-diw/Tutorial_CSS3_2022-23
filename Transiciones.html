@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>TUTORIAL CSS3 - 2020/2021 - Diseño de Interfaces Web - CFGS DAW - IES Gran Capitán</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,6 +15,7 @@
 
     <script src="js/prism.js"></script>
 </head>
+
 <body>
     <header>
         <h1><a href="index.html">TUTORIAL CSS3 - 2022/2023</a></h1>
@@ -23,7 +25,7 @@
         <ul>
             <li><a href="Bordes.html">Bordes</a></li>
             <li><a href="Fondos.html">Fondos</a></li>
-            <li><a href="Efectos_texto.html">Fuentes y Ef Texto</a></li>   
+            <li><a href="Efectos_texto.html">Fuentes y Ef Texto</a></li>
             <li><a href="Transformaciones.html">Transformac.</a></li>
             <li><a href="Transiciones.html">Transiciones</a></li>
             <li><a href="Animaciones.html">Animaciones</a></li>
@@ -40,123 +42,308 @@
             <h3>Propiedades para aplicar transiciones a nuestro archivo</h3>
         </div>
 
-    <section>
-        <article>
-            <h3>transition-duration</h3>
-            <p>Establece el tiempo que debe tardar una animación de transición en completarse.</p>
-            <h4>Sintaxis</h4>
-            <pre class="line-numbers"><code class="language-css">transition-duration: [Aquí va la duración que le queramos dar a la transición];</code></pre>
-            
-            <h4>Ejemplos:</h4>
-            <pre class="line-numbers"><code class="language-css">border-radius: transition-duration: 500ms;
-transition-property: margin-right;</code></pre>
-                resultado del código de arriba:
-                <br>
-                <br>
-                Lo que hara será poner una duración de 500 milisegundos a la transición de la propiedad margin-right.
-            <span class="duration"></span>
-</article>
+        <section>
+            <article>
+                <h3>transition-duration</h3>
+                <p>Establece el tiempo que debe tardar una transición en completarse.
+                    <br>
+                    <br>
+                    Por defecto, el tiempo de transición que utiliza es de 0 segundos, lo que significa que no habrá
+                    transición si no le ponemos nosotros una duración.
+                </p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">transition-duration: [Aquí va la duración que le queramos dar a la transición];</code></pre>
 
-        <article>
-            <h3>transition-delay</h3>
-            <p>Especifica la cantidad de tiempo a esperar entre un cambio pedido hacia una propiedad y el comienzo de un efecto de transicion</p>
-            <h4>Sintaxis</h4>
-            <pre class="line-numbers"><code class="language-css">transition-delay: [Aqui va la cantidad de tiempo que queramos darle];</code></pre>
-            <h4>Ejemplos:</h4>
-            <pre class="line-numbers"><code class="language-css">div {
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">div {
+width: 100px;
+height: 100px;
+background: red;
+transition-property: width;
+transition-duration: 5s;
+}
+            
+div:hover {
+width: 200px;
+}</code></pre>
+                Resultado del código de arriba:
+                <br>
+                <br>
+                Lo que hará será que al pasar el ratón por encima del cuadrado, tardará 5 segundos en aumentar de
+                tamaño.
+                <br>
+                <br>
+                <div class="duration"></div>
+            </article>
+
+            <article>
+                <h3>transition-delay</h3>
+                <p>Especifica la cantidad de tiempo a esperar entre un cambio pedido hacia una propiedad y el comienzo
+                    de un efecto de transicion.
+                    <br>
+                    <br>
+                    Es decir, si ponemos un delay de 5 segundos, la transición comenzará a los 5 segundos.
+                </p>
+                <ul>
+                    <li>Si no se especifica, el valor por defecto es 0.</li>
+                    <br>
+                    <li>Si se especifica un valor negativo, el efecto de transición se iniciará inmediatamente.</li>
+                </ul>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">transition-delay: [Aqui va la cantidad de tiempo que queramos darle];</code></pre>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">div {
 width: 100px;
 height: 100px;
 background: red;
 transition-property: width;
 transition-duration: 5s;
 transition-delay: 2s;
+}
+              
+div:hover {
+width: 300px;
 }</code></pre>
-Resultado del codigo de arriba:
-<br>
-<br>
-		En este ejemplo, el transition-delay, lo que hará es que las demás transiciones comiencen a ejercerse una vez pasados 2 segundos.
-        </article>
+                Resultado del codigo de arriba:
+                <br>
+                <br>
+                En este ejemplo, el transition-delay, lo que hará es que al poner el cursos en el cuadrado, tardará 2
+                segundos en comenzar la transición, y
+                luego de esos 2 segundos, tardará otros 5 segundos en completarse.
+                <br>
+                <br>
+                <div class="delay"></div>
+            </article>
 
-        <article>
-            <h3>transition-property</h3>
-            <p>Se usa para definir los nombres de las propiedades CSS en las que el efecto de la transición debe aplicarse.</p>
-            <h4>Sintaxis</h4>
-            <pre class="line-numbers"><code class="language-css">transition-property: [Aquí definiremos las propiedades a la que se deberá aplicar];</code></pre>
+            <article>
+                <h3>transition-property</h3>
+                <p>Se usa para definir los nombres de las propiedades CSS en las que el efecto de la transición debe
+                    aplicarse.</p>
+                <ul>
+                    <li>Si no se especifica, el valor por defecto es all, lo que significa que la transición se aplicará
+                        a todas las propiedades.</li>
+                </ul>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">transition-property: [Aquí definiremos las propiedades a la que se deberá aplicar];</code></pre>
 
-            <h4>Ejemplos:</h4>
-            <pre class="line-numbers"><code class="language-css">transition-property: all;</code></pre>
-            Resultas del codigo de arriba:
-            <br>
-            <br>
-            Con esa propiedad, lo que hará es que se aplique a todas las propiedades.
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">div {
+width: 100px;
+height: 100px;
+background: red;
+transition-property: width;
+transition-duration: 2s;
+}
+              
+div:hover {
+width: 300px;
+}
+            </code></pre>
+                Resultas del codigo de arriba:
+                <br>
+                <br>
+                Con esa propiedad, lo que hará será que al pasar el ratón por encima del cuadrado, se aplicará la
+                transición a la propiedad width, que es la que hemos definido.
+                <br>
+                <br>
+                <div class="property1"></div>
+            </article>
 
-            <pre class="line-numbers"><code class="language-css">transition-property: none;</code></pre>
-            Resultas del codigo de arriba:
-            <br>
-            <br>
-            Con esa propiedad, lo que hará es que no se aplique a ninguna propiedad.
-        </article>
+            <article>
+                <h3>transition-timing-function</h3>
+                <p>Es utilizada para especificar el ritmo en el que se producen los cambios durante la transición.</p>
+                <p>Tipos de transition-timing-function:</p>
+                <ul>
+                    <li>ease: La transición comienza lenta, acelera en el medio y termina lenta.</li>
+                    <li>ease-in: La transición comienza lenta y acelera hasta el final.
+                    </li>
+                    <li>ease-out: La transición comienza rápida y termina lenta.
+                    </li>
+                    <li>ease-in-out:La transición comienza lenta, acelera en el medio y termina lenta.
+                    </li>
+                    <li>linear: La transición tiene la misma velocidad desde el principio hasta el final.
+                    </li>
+                </ul>
+                <br>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">transition-timing-function: [Aquí especificaremos el ritmo de los cambios];</code></pre>
+                <br>
+                <br>
+                <h4>Ejemplo transition-timing-function: ease:</h4>
+                <pre class="line-numbers"><code class="language-css">div {
+width: 100px;
+height: 50px;
+background: red;
+color: white;
+font-weight: bold;
+transition: width 2s;
+transition-timing-function: ease;
+}
+            
+div:hover {
+width: 300px;
+}
+            </code></pre>
+                Resultado del codigo de arriba:
+                <br>
+                <br>
+                En este ejemplo, al poner el cursor encima del cuadrado, especificará un efecto de transición con un
+                comienzo lento, luego rápido y luego un final
+                lento.
+                <br>
+                <br>
+                <div class="ease"></div>
+                <br>
+                <br>
+                <br>
+                <h4>Ejemplo transition-timing-function-ease-in:</h4>
 
-        <article>
-            <h3>transition-timing-function</h3>
-            <p>Es utilizada para especificar el ritmo en el que se producen los cambios durante la transición.</p>
-            <h4>Sintaxis</h4>
-            <pre class="line-numbers"><code class="language-css">transition-timing-function: [Aquí especificaremos el ritmo de los cambios];</code></pre>
-            <h4>Ejemplo transition-timing-function: ease:</h4>
-            <pre class="line-numbers"><code class="language-css">transition-timing-function: ease;</code></pre>
-Resultado del codigo de arriba:
-<br>
-<br>
-		En este ejemplo, transition-timing-function especifica un efecto de transición con un comienzo lento, luego rápido y luego un final lento
+                <pre class="line-numbers"><code class="language-css">div {
+width: 100px;
+height: 50px;
+background: red;
+color: white;
+font-weight: bold;
+transition: width 2s;
+transition-timing-function: ease-in;
+}
+                                
+div:hover {
+width: 300px;
+}
+                </code></pre>
+                Resultado del codigo de arriba:
+                <br>
+                <br>
+                En este ejemplo, al poner el cursor encima del cuadrado, especificará un efecto de transición con un
+                comienzo lento.
+                <br>
+                <br>
+                <div class="ease-in"></div>
+                <br>
+                <br>
+                <br>
+                <h4>Ejemplo transition-timing-function: ease-out:</h4>
 
-        <br>
-        <br>
-        <br>
-        <h4>Ejemplo transition-timing-function-ease-in:</h4>
+                <pre class="line-numbers"><code class="language-css">div {
+width: 100px;
+height: 50px;
+background: red;
+color: white;
+font-weight: bold;
+transition: width 2s;
+transition-timing-function: ease-out;
+}
+                                
+div:hover {
+width: 300px;
+}</code></pre>
+                Resultado del codigo de arriba:
+                <br>
+                <br>
+                En este ejemplo, al poner el cursor encima del cuadrado, especificará un efecto de transición con un
+                final lento.
+                <br>
+                <br>
+                <div class="ease-out"></div>
+                <br>
+                <br>
+                <br>
+                <h4>Ejemplo transition-timing-function: ease-in-out:</h4>
 
-        <pre class="line-numbers"><code class="language-css">transition-timing-function: ease-in;</code></pre>
-Resultado del codigo de arriba:
-<br>
-<br>
-		En este ejemplo, transition-timing-function especifica un efecto de transición con un comienzo lento.
+                <pre class="line-numbers"><code class="language-css">div {
+width: 100px;
+height: 50px;
+background: red;
+color: white;
+font-weight: bold;
+transition: width 2s;
+transition-timing-function: ease-in-out;
+}
+                                
+div:hover {
+width: 300px;
+}</code></pre>
+                Resultado del codigo de arriba:
+                <br>
+                <br>
+                En este ejemplo, al poner el cursor encima del cuadrado, especificará un efecto de transición con un
+                comienzo y un
+                final lentos.
+                <br>
+                <br>
+                <div class="ease-in-out"></div>
+                <br>
+                <br>
+                <br>
+                <h4>Ejemplo transition-timing-function: linear:</h4>
 
-        <br>
-        <br>
-        <br>
-        <h4>Ejemplo transition-timing-function: ease-out:</h4>
+                <pre class="line-numbers"><code class="language-css">div {
+width: 100px;
+height: 50px;
+background: red;
+color: white;
+font-weight: bold;
+transition: width 2s;
+transition-timing-function: linear;
+}
+                                
+div:hover {
+width: 300px;
+}</code></pre>
+                Resultado del codigo de arriba:
+                <br>
+                <br>
+                En este ejemplo, al poner el cursor encima del cuadrado, especificará un efecto de transición con la
+                misma velocidad de
+                principio a fin.
+                <br>
+                <br>
+                <div class="linear"></div>
+            </article>
 
-        <pre class="line-numbers"><code class="language-css">transition-timing-function: ease-out;</code></pre>
-Resultado del codigo de arriba:
-<br>
-<br>
-		En este ejemplo, transition-timing-function especifica un efecto de transición con un final lento.
+            <article>
+                <h3>transition(shorthand)</h3>
+                <p>La propiedad "transition" es una propiedad abreviada para :</p>
+                <ul>
+                    <li>transition-property</li>
+                    <li>transition-duration</li>
+                    <li>transition-timing-function</li>
+                    <li>transition-delay</li>
+                </ul>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">transition: [Aquí definiremos las propiedades a la que se deberá aplicar];</code></pre>
 
-        <br>
-        <br>
-        <br>
-        <h4>Ejemplo transition-timing-function: ease-in-out:</h4>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s linear 1s;
+}
 
-        <pre class="line-numbers"><code class="language-css">transition-timing-function: ease-in-out;</code></pre>
-Resultado del codigo de arriba:
-<br>
-<br>
-		En este ejemplo, transition-timing-function especifica un efecto de transición con un comienzo y un final lentos.
-
-        <br>
-        <br>
-        <br>
-        <h4>Ejemplo transition-timing-function: linear:</h4>
-
-        <pre class="line-numbers"><code class="language-css">transition-timing-function: linear;</code></pre>
-Resultado del codigo de arriba:
-<br>
-<br>
-		En este ejemplo, transition-timing-function especifica un efecto de transición con la misma velocidad de principio a fin.
-        </article>
-    </section>
+div:hover {
+  width: 300px;
+}</code></pre>
+                Resultas del codigo de arriba:
+                <br>
+                <br>
+                Con esa propiedad, lo que hará será que al pasar el ratón por encima del cuadrado, se aplicará una
+                transición de 2 segundos, con una velocidad lineal y con un retraso de 1 segundo.
+                <br>
+                <br>
+                <div class="transition1"></div>
+            </article>
+        </section>
     </main>
     <footer>
         <div>Gontzal García Triviño</div>
     </footer>
 </body>
+
 </html>

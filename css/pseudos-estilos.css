@@ -154,7 +154,7 @@ input[name="ejemplo14"]:indeterminate + label {
     background-color: lightseagreen;
 }
 
-.ejemploPClase22-2 :nth-child(3n) {
+.ejemploPClase22-2:nth-child(3n) {
     background-color: yellowgreen;
 }
 
@@ -170,11 +170,11 @@ tr:nth-last-child(-n+3) {
     background-color: green;
 }
 
-.ejemploPClase25 :only-child {
+.ejemploPClase25:only-child {
     color: red;
 }
 
-.ejemploPClase26 :only-of-type {
+.ejemploPClase26:only-of-type {
     color: blue;
 }
 

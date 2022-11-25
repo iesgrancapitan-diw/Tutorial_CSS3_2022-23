@@ -23,7 +23,7 @@
 #Animation-name{
   animation-name: name;
   animation-duration: 5s;
-  
+  animation: name 5s linear infinite;
   width: 100px;
   height: 100px;
 }
@@ -58,7 +58,6 @@
   border: 1px solid;
   animation: animation-delay 6s linear infinite;
   animation-delay: 10s;
-  /* // centrar */
   background-color: black;
 }
 
@@ -160,7 +159,7 @@
   animation: animacion-duration 3s linear infinite;
   animation-duration: 3s;
   background-color: rgb(111, 194, 202);
-}
+} 
 @keyframes animacion-duration {
   0% {
     transform: translateX(0px);

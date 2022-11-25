@@ -245,9 +245,16 @@ to {background-color: yellow;}
             </p>
             <h4>Ejemplo</h4>
             <pre class="line-numbers"><code class="language-css"><!-- Ejemplo de Animation-delay -->div {
-  animation-name: Animation-delay;
-  animation-duration: 4s;
-  animation-delay: 2s;
+  animation-name: animation-delay;
+  width: 100px;
+  height: 100px;
+  animation-duration: 6s linear infinite;
+  animation-iteration-count: infinite;          
+  animation-timing-function: ease-in-out;          
+  border: 1px solid;
+  animation: animation-delay 6s linear infinite;
+  animation-delay: 10s;
+  background-color: black;
 }</code></pre>
             <div id="animation-delay"></div>
           </article>

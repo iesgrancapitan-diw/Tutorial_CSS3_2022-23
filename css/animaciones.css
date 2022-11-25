@@ -1,6 +1,5 @@
 #Animation-keyframes {
-  animation-name: keyframes;
-  animation-duration: 3s;
+  animation: keyframes 3s linear infinite;
   width: 100px;
   height: 100px;
 }
@@ -173,6 +172,27 @@
     transform: translateX(100px);
   }
 }
+
+#Animation{
+  animation-name: animacion;
+  width: 100px;
+  height: 100px;
+
+  animation: animacion 3s linear infinite;
+  background-color: rgb(111, 194, 202);
+}
+@keyframes animacion {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+
 #Animation-fill-mode {
   animation-name: animacion-fill-mode;
   width: 100px;

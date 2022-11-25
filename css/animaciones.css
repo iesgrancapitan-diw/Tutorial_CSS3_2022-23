@@ -84,7 +84,7 @@
   height: 100px;
 
   animation: animacion-direction 3s linear infinite;
-  animation-direction: alternate;
+  animation-direction: normal;
   background-color: black;
 }
 @keyframes animacion-direction {
@@ -106,7 +106,6 @@
   animation-name: animacion_de_direcion2;
   width: 100px;
   height: 100px;
-
   animation: animacion-direction2 3s linear infinite;
   animation-direction: reverse;
   background-color: black;
@@ -130,9 +129,8 @@
   animation-name: animacion_de_direcion3;
   width: 100px;
   height: 100px;
-
   animation: animacion-direction3 3s linear infinite;
-  animation-direction: alternate-reverse;
+  animation-direction: alternate;
   background-color: black;
 }
 @keyframes animacion-direction3 {
@@ -150,6 +148,28 @@
   }
 }
 
+#Animation-direction4{
+  animation-name: animacion_de_direcion4;
+  width: 100px;
+  height: 100px;
+  animation: animacion-direction4 3s linear infinite;
+  animation-direction: alternate-reverse;
+  background-color: black;
+}
+@keyframes animacion-direction4 {
+  0% {
+    /* move a la derecha */
+    transform: translateX(0px);
+  }
+  50% {
+    /* move a la izquierda */
+    transform: translateX(50px);
+  }
+  100% {
+    /* move a la derecha */
+    transform: translateX(100px);
+  }
+}
 
 #Animation-duration {
   animation-name: animacion-duration;

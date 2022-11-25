@@ -196,7 +196,6 @@
   animation-name: animacion;
   width: 100px;
   height: 100px;
-
   animation: animacion 3s linear infinite;
   background-color: rgb(111, 194, 202);
 }
@@ -362,7 +361,6 @@
   animation-name: animacion-timing-function;
   width: 100px;
   height: 100px;
-
   animation: animacion-timing-function 3s linear infinite;
   animation-timing-function: ease-in-out;
   background-color: rgb(111, 194, 202);
@@ -383,7 +381,6 @@
   animation-name: animacion-timing-function2;
   width: 100px;
   height: 100px;
-
   animation: animacion-timing-function2 3s linear infinite;
   animation-timing-function: ease-in 2s;
   background-color: rgb(111, 194, 202);

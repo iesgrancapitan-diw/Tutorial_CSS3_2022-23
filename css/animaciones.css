@@ -401,12 +401,32 @@
   animation-name: animacion-timing-function3;
   width: 100px;
   height: 100px;
-
   animation: animacion-timing-function3 3s linear infinite;
   animation-timing-function: ease-out 2s;
   background-color: rgb(111, 194, 202);
 }
 @keyframes animacion-timing-function3 {
+  0% {
+    background-color: black;
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+#Animation-timing-function4{
+  animation-name: animacion-timing-function4;
+  width: 100px;
+  height: 100px;
+  animation: animacion-timing-function4 3s linear infinite;
+  animation-timing-function: cubic-bezier (0.1, 0.7, 1.0, 0.1);
+  background-color: rgb(111, 194, 202);
+}
+@keyframes animacion-timing-function4 {
   0% {
     background-color: black;
     transform: translateX(0px);

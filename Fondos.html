@@ -582,10 +582,14 @@ background-color: hsla(14, 100%, 53%, 0.2);
                 <pre class="line-numbers"><code class="language-css">#fondos-background-repeat-repeat-round {
     background-image: url("../img/background-repeat-round.png");
     background-repeat: round;
-    background-size: 200px 200px;
-    height: 400px;
-    width: 800px;
+    background-size: 100px 100px;
+    height: 300px;
+    width: 300px;
     border: 2px solid;
+    resize: both;
+    overflow: hidden;
+    /* Pulsar el resize para ajustar la imagen en el ejex e e y probar el background-repeat: round */
+    /* Importante el round no recorta la imagen ajusta(amplía o redimensiona), el repeat si recorta la imagen si no cabe su contenido. */
 }
 </code></pre>
                 <div id="fondos-background-repeat-repeat-round"></div>

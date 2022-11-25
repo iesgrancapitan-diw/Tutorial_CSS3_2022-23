@@ -119,16 +119,16 @@
           y a ese currentColor le asociamos un color, para después usar esa variable donde queramos
         </p>
         <h4>Sintaxis</h4>
-        <pre class="line-numbers"><code class="language-css">
-p{
+        <pre class="line-numbers"><code class="language-css">p{
   color:[color];
   border: [currentcolor]
-};</code></pre>
+}</code></pre>
         <h4>Ejemplos:</h4>
         <pre class="line-numbers"><code class="language-css">div{
-color:blue; /*Ahora este color es el que va a estar asociado a currentcolor, serviria como una variable*/
-border:3px solid currentColor; /*Y cuando queramos darle color al borde solo ponemos la variable currentColor, que contiene el color azul*/
-        </code></pre>
+  color:blue; /*Ahora este color es el que va a estar asociado a currentcolor, serviria como una variable*/
+  border:3px solid currentColor; /*Y cuando queramos darle color al borde solo ponemos la variable currentColor, que contiene
+  el color azul*/
+}</code></pre>
         <div id="currentColor">Ejemplo currentcolor</div>
       </article>
       <article>
@@ -506,8 +506,8 @@ background-color: #0080FF80;
         <img src="img/anguloDegradado.png">
         <h4>Sintaxis</h4>
         <pre class="line-numbers"><code class="language-css">div{
-background:linear-gradient(Grados de la posicion del degradado, el siguiente ejemplo tiene
-una disposicion diagonal, con dos colores se reparten en el degradado de manera equitativa)
+  background:linear-gradient(Grados de la posicion del degradado, el siguiente ejemplo tiene
+  una disposicion diagonal, con dos colores se reparten en el degradado de manera equitativa)
 }</code></pre>
         <p>
         </p>
@@ -529,7 +529,8 @@ una disposicion diagonal, con dos colores se reparten en el degradado de manera 
         </p>
         <h4>Sintaxis</h4>
         <pre class="line-numbers"><code class="language-css">div{
-background: linear-gradient(primerColor %[del tamaño del elemento, en este caso div],segundoColor)</code></pre>
+  background: linear-gradient(primerColor %[del tamaño del elemento, en este caso div],segundoColor)
+}</code></pre>
         <p>
         </p>
         <h4>Ejemplos:</h4>
@@ -649,8 +650,8 @@ y la posicion puede ser = [left | center | right | top | bottom | start | end | 
         </p>
         <h4>Sintaxis</h4>
         <pre class="line-numbers"><code class="language-css">div{
-background: radial-gradient(lo que queremos que sea [ellipse/circle],color,color,color)
-</code></pre>
+  background: radial-gradient(lo que queremos que sea [ellipse/circle],color,color,color)
+}</code></pre>
         <p>
         </p>
         <h4>Ejemplos:</h4>
@@ -673,12 +674,13 @@ background: radial-gradient(lo que queremos que sea [ellipse/circle],color,color
         <h4>Sintaxis</h4>
         <pre
           class="line-numbers"><code class="language-css">div{
-background: radial-gradient([primer % que es el horizontal] [segundo % que es el vertical],color,color,color)</code></pre>
+  background: radial-gradient([primer % que es el horizontal] [segundo % que es el vertical],color,color,color)
+}</code></pre>
         <p>
         </p>
         <h4>Ejemplos:</h4>
         <pre class="line-numbers"><code class="language-css">#grad29{
-background: radial-gradient(50% 30% at center,green,orange,black);
+  background: radial-gradient(50% 30% at center,green,orange,black);
 }
 #grad30{
   background: radial-gradient(90% 10% at center,green,orange,black);
@@ -698,12 +700,26 @@ background: radial-gradient(50% 30% at center,green,orange,black);
         </p>
         <h4>Sintaxis</h4>
         <pre class="line-numbers"><code class="language-css">div{
-background: radial-gradient(hacia donde va el degradado,color que empieza,color que sigue,color con el que acaba el degradado)
-        </code></pre>
+  background: radial-gradient(hacia donde va el degradado,color que empieza,color que sigue,color con el que acaba el degradado)
+}</code></pre>
         <p>
         </p>
         <h4>Ejemplos:</h4>
-        <pre class="line-numbers"><code class="language-css"></code></pre>
+        <pre class="line-numbers"><code class="language-css">#grad31{
+  height: 200px;
+  width: 400px;
+  background: radial-gradient(at top left,red,purple,yellow);
+}
+#grad32{
+  height: 200px;
+  width: 400px;
+  background: radial-gradient(at center,red,purple,yellow);
+}
+#grad33{
+  height: 200px;
+  width: 400px;
+  background: radial-gradient(at bottom right,red,purple,yellow);
+}</code></pre>
         <div class="container">
           <div id="grad31"></div>
           <div id="grad32"></div>
@@ -718,7 +734,7 @@ background: radial-gradient(hacia donde va el degradado,color que empieza,color 
         </p>
         <h4>Sintaxis</h4>
         <pre class="line-numbers"><code class="language-css">div{
-background: radial-gradient(color,poncentaje,color)
+  background: radial-gradient(color,poncentaje,color)
 }</code></pre>
         <p>
         </p>
@@ -766,10 +782,11 @@ angulo para la primera o ultima parada de color sus valores son 0deg y 360deg*/<
         </p>
         <pre
           class="line-numbers"><code class="language-css">div{
-  background: conic-gradient(from [grados deg]color,color,color);}
+  background: conic-gradient(from [grados deg]color,color,color);
 }
 div{
-  background: conic-gradient(color [gradoInicio],mismo color [gradoFinal],color[gradoInicio,mismo color[gradoFinal]]);</code></pre>
+  background: conic-gradient(color [gradoInicio],mismo color [gradoFinal],color[gradoInicio,mismo color[gradoFinal]]);
+}</code></pre>
         <h4>Ejemplos:</h4>
         <pre class="line-numbers"><code class="language-css">#grad17{
   height: 250px;
@@ -799,8 +816,8 @@ div{
         </p>
         <h4>Sintaxis</h4>
         <pre class="line-numbers"><code class="language-css">div{
-background: conic-gradient(color grados, grados, color grados)
-        </code></pre>
+  background: conic-gradient(color grados, grados, color grados)
+}</code></pre>
         <p>
         </p>
         <h4>Ejemplos:</h4>
@@ -820,8 +837,8 @@ background: conic-gradient(color grados, grados, color grados)
         </p>
         <h4>Sintaxis</h4>
         <pre class="line-numbers"><code class="language-css">div{
-background: conic-gradient(posicion donde queramos el degradado conico, color %,color %, color %)
-        </code></pre>
+  background: conic-gradient(posicion donde queramos el degradado conico, color %,color %, color %);
+}</code></pre>
         <p>
         </p>
         <h4>Ejemplos:</h4>

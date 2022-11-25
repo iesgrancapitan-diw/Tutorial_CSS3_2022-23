@@ -214,6 +214,90 @@
     transform: translateX(100px);
   }
 }
+
+#Animation-fill-mode2{
+  animation-fill-mode: backwards;
+  animation-name: animacion-fill-mode2;
+  width: 100px;
+  height: 100px;
+  animation: animacion-fill-mode2 3s linear infinite;
+
+}
+@keyframes animacion-fill-mode2 {
+  0% {
+    background-color: black;
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+#Animation-fill-mode3{
+  animation-fill-mode: both;
+  animation-name: animacion-fill-mode3;
+  width: 100px;
+  height: 100px;
+  animation: animacion-fill-mode3 3s linear infinite;
+
+}
+@keyframes animacion-fill-mode3 {
+  0% {
+    background-color: black;
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+#Animation-fill-mode4{
+  animation-fill-mode: inherit;
+  animation-name: animacion-fill-mode4;
+  width: 100px;
+  height: 100px;
+  animation: animacion-fill-mode4 3s linear infinite;
+
+}
+@keyframes animacion-fill-mode4 {
+  0% {
+    background-color: black;
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+#Animation-fill-mode5{
+  animation-fill-mode: initial;
+  animation-name: animacion-fill-mode5;
+  width: 100px;
+  height: 100px;
+  animation: animacion-fill-mode5 3s linear infinite;
+
+}
+@keyframes animacion-fill-mode5 {
+  0% {
+    background-color: black;
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+
 #Animation-iteration-count {
   animation-name: animacion-iteration-count;
   width: 100px;

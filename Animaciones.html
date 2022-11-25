@@ -174,11 +174,51 @@ to {background-color: yellow;}
             </p>
             <h4>Ejemplo</h4>
             <pre class="line-numbers"><code class="language-css"><!-- Ejemplo de Animation-fill-mode -->div {
-animation-name: Animation-fill-mode;
-animation-duration: 4s;
-animation-fill-mode: forwards;
+  animation-name: animacion-fill-mode;
+  width: 100px;
+  height: 100px;          
+  animation: animacion-fill-mode 3s linear infinite;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  background-color: rgb(111, 194, 202);
 }</code></pre>
-            <div id="Animation-fill-mode"></div>
+<div id="Animation-fill-mode"></div>
+            <h4>Ejemplo2</h4>
+            <pre class="line-numbers"><code class="language-css"><!-- Ejemplo de Animation-fill-mode -->div {
+  animation-fill-mode: backwards;
+  animation-name: animacion-fill-mode2;
+  width: 100px;
+  height: 100px;
+  animation: animacion-fill-mode2 3s linear infinite;
+}</code></pre>
+              <div id="Animation-fill-mode2"></div>
+              <h3>Ejemplo3</h3>
+              <pre class="line-numbers"><code class="language-css"><!-- Ejemplo de Animation-fill-mode -->div {
+  animation-fill-mode: both;
+  animation-name: animacion-fill-mode3;
+  width: 100px;
+  height: 100px;
+  animation: animacion-fill-mode3 3s linear infinite;
+}</code></pre>
+              <div id="Animation-fill-mode3"></div>
+              <h3>Ejemplo4</h3>
+              <pre class="line-numbers"><code class="language-css"><!-- Ejemplo de Animation-fill-mode -->div {
+  animation-fill-mode: inherit;
+  animation-name: animacion-fill-mode4;
+  width: 100px;
+  height: 100px;
+  animation: animacion-fill-mode4 3s linear infinite;
+}</code></pre>
+              <div id="Animation-fill-mode4"></div>
+              <h3>Ejemplo5</h3>
+              <pre class="line-numbers"><code class="language-css"><!-- Ejemplo de Animation-fill-mode -->div {
+  animation-fill-mode: initial;
+  animation-name: animacion-fill-mode5;
+  width: 100px;
+  height: 100px;
+  animation: animacion-fill-mode5 3s linear infinite;
+}</code></pre>
+              <div id="Animation-fill-mode5"></div>
           </article>
           <article>
             <h3>Animation-delay</h3>

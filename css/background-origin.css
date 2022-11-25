@@ -1,21 +1,24 @@
 .fondos-background-origin-imagen1{
     height:200px; 
-    border: 10px dashed black;
+    border: 20px dashed black;
     padding: 25px;
     background-origin: padding-box;
+    background-repeat: no-repeat;
     background-image: url("../img/background-repeatY-img.png");  
 }
 .fondos-background-origin-imagen2{
     height:200px; 
-    border: 10px dashed black;
+    border: 20px dashed black;
     padding: 25px;
     background-origin: border-box;
+    background-repeat: no-repeat;
     background-image: url("../img/background-repeatY-img.png");  
 }
 .fondos-background-origin-imagen3{
     height:200px; 
-    border: 10px dashed black;
+    border: 20px dashed black;
     padding: 25px;
     background-origin: content-box;
+    background-repeat: no-repeat;
     background-image: url("../img/background-repeatY-img.png");  
 }

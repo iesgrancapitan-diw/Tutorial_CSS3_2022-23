@@ -1,0 +1,441 @@
+#Animation-keyframes {
+  animation: keyframes 3s linear infinite;
+  width: 100px;
+  height: 100px;
+}
+@keyframes keyframes {
+  0% {
+    background-color: #ff0000;
+  }
+  25% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: #0000ff;
+  }
+  100% {
+    background-color: #ff00ff;
+  }
+}
+#Animation-name{
+  animation-name: name;
+  animation-duration: 5s;
+  animation: name 5s linear infinite;
+  width: 100px;
+  height: 100px;
+}
+@keyframes name {
+  0% {
+    background-color: #ff0000;
+  }
+  25% {
+    background-color: #ffff00;
+  }
+  50% {
+    background-color: #00ff00;
+  }
+  75% {
+    background-color: #0000ff;
+  }
+  100% {
+    background-color: #ff00ff;
+  }
+}
+
+
+#animation-delay {
+  animation-name: animation-delay;
+  width: 100px;
+  height: 100px;
+  animation-duration: 6s linear infinite;
+  animation-iteration-count: infinite;
+
+  animation-timing-function: ease-in-out;
+
+  border: 1px solid;
+  animation: animation-delay 6s linear infinite;
+  animation-delay: 10s;
+  background-color: black;
+}
+
+@keyframes animation-delay {
+  0% {
+    background-color: red;
+
+    transform: scale(1);
+  }
+  50% {
+    background-color: blue;
+
+    transform: scale(1.5);
+  }
+  100% {
+    background-color: green;
+
+    transform: scale(1);
+  }
+}
+#Animation-direction {
+  animation-name: animacion_de_direcion;
+  width: 100px;
+  height: 100px;
+
+  animation: animacion-direction 3s linear infinite;
+  animation-direction: normal;
+  background-color: black;
+}
+@keyframes animacion-direction {
+  0% {
+    /* move a la derecha */
+    transform: translateX(0px);
+  }
+  50% {
+    /* move a la izquierda */
+    transform: translateX(50px);
+  }
+  100% {
+    /* move a la derecha */
+    transform: translateX(100px);
+  }
+}
+
+#Animation-direction2{
+  animation-name: animacion_de_direcion2;
+  width: 100px;
+  height: 100px;
+  animation: animacion-direction2 3s linear infinite;
+  animation-direction: reverse;
+  background-color: black;
+}
+@keyframes animacion-direction2 {
+  0% {
+    /* move a la derecha */
+    transform: translateX(0px);
+  }
+  50% {
+    /* move a la izquierda */
+    transform: translateX(50px);
+  }
+  100% {
+    /* move a la derecha */
+    transform: translateX(100px);
+  }
+}
+
+#Animation-direction3{
+  animation-name: animacion_de_direcion3;
+  width: 100px;
+  height: 100px;
+  animation: animacion-direction3 3s linear infinite;
+  animation-direction: alternate;
+  background-color: black;
+}
+@keyframes animacion-direction3 {
+  0% {
+    /* move a la derecha */
+    transform: translateX(0px);
+  }
+  50% {
+    /* move a la izquierda */
+    transform: translateX(50px);
+  }
+  100% {
+    /* move a la derecha */
+    transform: translateX(100px);
+  }
+}
+
+#Animation-direction4{
+  animation-name: animacion_de_direcion4;
+  width: 100px;
+  height: 100px;
+  animation: animacion-direction4 3s linear infinite;
+  animation-direction: alternate-reverse;
+  background-color: black;
+}
+@keyframes animacion-direction4 {
+  0% {
+    /* move a la derecha */
+    transform: translateX(0px);
+  }
+  50% {
+    /* move a la izquierda */
+    transform: translateX(50px);
+  }
+  100% {
+    /* move a la derecha */
+    transform: translateX(100px);
+  }
+}
+
+#Animation-duration {
+  animation-name: animacion-duration;
+  width: 100px;
+  height: 100px;
+
+  animation: animacion-duration 3s linear infinite;
+  animation-duration: 3s;
+  background-color: rgb(111, 194, 202);
+} 
+@keyframes animacion-duration {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+#Animation{
+  animation-name: animacion;
+  width: 100px;
+  height: 100px;
+  animation: animacion 3s linear infinite;
+  background-color: rgb(111, 194, 202);
+}
+@keyframes animacion {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+#Animation-fill-mode {
+  animation-name: animacion-fill-mode;
+  width: 100px;
+  height: 100px;
+
+  animation: animacion-fill-mode 3s linear infinite;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  background-color: rgb(111, 194, 202);
+}
+@keyframes animacion-fill-mode {
+  0% {
+    background-color: black;
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+#Animation-fill-mode2{
+  animation-fill-mode: backwards;
+  animation-name: animacion-fill-mode2;
+  width: 100px;
+  height: 100px;
+  animation: animacion-fill-mode2 3s linear infinite;
+
+}
+@keyframes animacion-fill-mode2 {
+  0% {
+    background-color: black;
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+#Animation-fill-mode3{
+  animation-fill-mode: both;
+  animation-name: animacion-fill-mode3;
+  width: 100px;
+  height: 100px;
+  animation: animacion-fill-mode3 3s linear infinite;
+
+}
+@keyframes animacion-fill-mode3 {
+  0% {
+    background-color: black;
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+#Animation-fill-mode4{
+  animation-fill-mode: inherit;
+  animation-name: animacion-fill-mode4;
+  width: 100px;
+  height: 100px;
+  animation: animacion-fill-mode4 3s linear infinite;
+
+}
+@keyframes animacion-fill-mode4 {
+  0% {
+    background-color: black;
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+#Animation-fill-mode5{
+  animation-fill-mode: initial;
+  animation-name: animacion-fill-mode5;
+  width: 100px;
+  height: 100px;
+  animation: animacion-fill-mode5 3s linear infinite;
+
+}
+@keyframes animacion-fill-mode5 {
+  0% {
+    background-color: black;
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+#Animation-iteration-count {
+  animation-name: animacion-iteration-count;
+  width: 100px;
+  height: 100px;
+  animation: animacion-iteration-count 3s linear infinite;
+  animation-iteration-count: 3;
+  background-color: rgb(111, 194, 202);
+}
+@keyframes animacion-iteration-count {
+  0% {
+    background-color: black;
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+#Animation-play-state {
+  animation-name: animacion-play-state;
+  width: 100px;
+  height: 100px;
+  animation: animacion-play-state 3s linear infinite;
+  animation-play-state: running;
+  background-color: rgb(111, 194, 202);
+}
+@keyframes animacion-play-state {
+  0% {
+    background-color: black;
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+#Animation-timing-function {
+  animation-name: animacion-timing-function;
+  width: 100px;
+  height: 100px;
+  animation: animacion-timing-function 3s linear infinite;
+  animation-timing-function: ease-in-out;
+  background-color: rgb(111, 194, 202);
+}
+@keyframes animacion-timing-function {
+  0% {
+    background-color: black;
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+#Animation-timing-function2{
+  animation-name: animacion-timing-function2;
+  width: 100px;
+  height: 100px;
+  animation: animacion-timing-function2 3s linear infinite;
+  animation-timing-function: ease-in 2s;
+  background-color: rgb(111, 194, 202);
+}
+@keyframes animacion-timing-function2 {
+  0% {
+    background-color: black;
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+#Animation-timing-function3{
+  animation-name: animacion-timing-function3;
+  width: 100px;
+  height: 100px;
+  animation: animacion-timing-function3 3s linear infinite;
+  animation-timing-function: ease-out 2s;
+  background-color: rgb(111, 194, 202);
+}
+@keyframes animacion-timing-function3 {
+  0% {
+    background-color: black;
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+#Animation-timing-function4{
+  animation-name: animacion-timing-function4;
+  width: 100px;
+  height: 100px;
+  animation: animacion-timing-function4 3s linear infinite;
+  animation-timing-function: cubic-bezier (0.1, 0.7, 1.0, 0.1);
+  background-color: rgb(111, 194, 202);
+  
+}
+@keyframes animacion-timing-function4 {
+  0% {
+    background-color: black;
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}

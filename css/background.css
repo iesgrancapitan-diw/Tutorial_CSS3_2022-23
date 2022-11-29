@@ -1,0 +1,15 @@
+.fondos-background1 {
+    background: rgb(212, 124, 201) url("../img/background-origin-imagen.png") 75% 75% / 50px 50px no-repeat;
+    height: 100px;
+    background-blend-mode: luminosity;
+}
+.fondos-background2 {
+    background: rgb(1, 148, 75) url("../img/background-blend-mode-img.png") 25% 50% / 100px 100px repeat-y content-box border-box fixed;
+    height: 200px;
+    background-blend-mode: lighten;
+}
+.fondos-background3 {
+    background: rgb(160, 111, 7) url("../img/background-position-img.png") 25% 50% / 100px 100px space padding-box content-box local;
+    height: 150px;
+    background-blend-mode: color-burn;
+}

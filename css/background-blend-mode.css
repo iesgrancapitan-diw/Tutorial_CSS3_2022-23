@@ -1,0 +1,120 @@
+#fondos-background-blend-mode-normal {
+    background-image: linear-gradient(rgba(0, 251, 255, 0.5), rgba(105, 38, 194, 0.5)),
+        url("../img/background-blend-mode-img.png");
+    background-size: contain;
+    background-blend-mode: normal;
+    height: 250px;
+    border: 2px solid;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#fondos-background-blend-mode-multiply {
+    background-image: linear-gradient(rgba(0, 251, 255, 0.5), rgba(105, 38, 194, 0.5)),
+        url("../img/background-blend-mode-img.png");
+    background-size: contain;
+    background-blend-mode: multiply;
+    height: 250px;
+    border: 2px solid;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#fondos-background-blend-mode-screen {
+    background-image: linear-gradient(rgba(0, 251, 255, 0.5), rgba(105, 38, 194, 0.5)),
+        url("../img/background-blend-mode-img.png");
+    background-size: contain;
+    height: 250px;
+    border: 2px solid;
+    background-blend-mode: screen;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#fondos-background-blend-mode-overlay {
+    background-image: linear-gradient(rgba(0, 251, 255, 0.5), rgba(105, 38, 194, 0.5)),
+        url("../img/background-blend-mode-img.png");
+    background-size: contain;
+    height: 250px;
+    border: 2px solid;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#fondos-background-blend-mode-darken {
+    background-image: linear-gradient(rgba(0, 251, 255, 0.5), rgba(105, 38, 194, 0.5)),
+        url("../img/background-blend-mode-img.png");
+    background-size: contain;
+    height: 250px;
+    border: 2px solid;
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#fondos-background-blend-mode-lighten {
+    background-image: linear-gradient(rgba(0, 251, 255, 0.5), rgba(105, 38, 194, 0.5)),
+        url("../img/background-blend-mode-img.png");
+    background-size: contain;
+    height: 250px;
+    border: 2px solid;
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#fondos-background-blend-mode-color-dodge {
+    background-image: linear-gradient(rgba(0, 251, 255, 0.5), rgba(105, 38, 194, 0.5)),
+        url("../img/background-blend-mode-img.png");
+    background-size: contain;
+    height: 250px;
+    border: 2px solid;
+    background-blend-mode: color-dodge;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#fondos-background-blend-mode-saturation {
+    background-image: linear-gradient(rgba(0, 251, 255, 0.5), rgba(105, 38, 194, 0.5)),
+        url("../img/background-blend-mode-img.png");
+    background-size: contain;
+    height: 250px;
+    border: 2px solid;
+    background-blend-mode: saturation;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#fondos-background-blend-mode-color {
+    background-image: linear-gradient(rgba(0, 251, 255, 0.5), rgba(105, 38, 194, 0.5)),
+        url("../img/background-blend-mode-img.png");
+    background-size: contain;
+    height: 250px;
+    border: 2px solid;
+    background-blend-mode: color;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#fondos-background-blend-mode-luminosity {
+    background-image: linear-gradient(rgba(0, 251, 255, 0.5), rgba(105, 38, 194, 0.5)),
+        url("../img/background-blend-mode-img.png");
+    background-size: contain;
+    height: 250px;
+    border: 2px solid;
+    background-blend-mode: luminosity;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#fondos-background-blend-mode-color-burn {
+    background-image: linear-gradient(rgba(0, 251, 255, 0.5), rgba(105, 38, 194, 0.5)),
+        url("../img/background-blend-mode-img.png");
+    background-size: contain;
+    height: 250px;
+    border: 2px solid;
+    background-blend-mode: color-burn;
+    background-repeat: no-repeat;
+    background-position: center;
+}

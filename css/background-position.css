@@ -1,0 +1,29 @@
+#fondos-background-position-porcentaje{
+   background-image: url("../img/background-position-img.png");
+   background-position: 0% 0%;
+   background-repeat: no-repeat;
+   background-size: 50px 50px;
+   height: 100px;
+   border: 2px solid;
+   background-color: aqua;
+}
+
+#fondos-background-position-valores-posicion{
+   background-image: url("../img/background-position-img.png");
+   background-position: top right;
+   background-repeat: no-repeat;
+   background-size: 50px 50px;
+   height: 100px;
+   border: 2px solid;
+   background-color: aqua;
+}
+
+#fondos-background-position-center{
+   background-image: url("../img/background-position-img.png");
+   background-position: center ;
+   background-repeat: no-repeat;
+   background-size: 50px 50px;
+   height: 100px;
+   border: 2px solid;
+   background-color: aqua;
+}

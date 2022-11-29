@@ -1,0 +1,35 @@
+.fondos-background-image-imagen1 {
+    background-image: url("../img/background-repeat-space-img.png"), url("../img/background-image-imagen.png");
+    background-position: center;
+    background-repeat: no-repeat, repeat;
+    height: 500px;
+}
+
+.fondos-background-image-imagen1-1 {
+    background-size: 100px;
+    background-image: url("../img/sol.png"), url("../img/arbol.png"), linear-gradient(yellow,rgb(140, 139, 235), rgb(22, 128, 22));
+    background-position: top, bottom;
+    background-repeat: no-repeat, repeat-x, repeat;
+    height: 500px;
+}
+
+.fondos-background-image-imagen2 {
+    background-image: none;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.fondos-background-image-imagen3 {
+    background-image: conic-gradient(red, yellow, green);
+    height: 50px;
+}
+
+.fondos-background-image-imagen4 {
+    background-image: linear-gradient(red, yellow, rgb(140, 139, 235));
+    height: 50px;
+}
+
+.fondos-background-image-imagen5 {
+    background-image: radial-gradient(red, green, rgb(140, 139, 235));
+    height: 50px;
+}

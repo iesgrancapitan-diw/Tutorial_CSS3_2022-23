@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/estilos.css" />
   <link rel="stylesheet" href="css/prism.css" />
+  <link rel="stylesheet" href="css/colores_degradados.css">
   <script src="js/prism.js"></script>
 </head>
 
@@ -100,7 +101,7 @@
 #colorAgua{
   color: aqua;
 }</code></pre>
-        <div class="container">
+        <div class="colores_container">
           <div id="colorTomate">Color tomate</div>
           <div id="colorLima">Color lima</div>
           <div id="colorAgua">Color agua</div>
@@ -108,7 +109,7 @@
         <!-- <img src="img/ej3.png" /> -->
       </article>
       <article>
-        <h3 id="currentcolor">
+        <h3 id="colores_currentcolor">
           currentcolor<br />
         </h3>
         <p>
@@ -129,7 +130,7 @@
   border:3px solid currentColor; /*Y cuando queramos darle color al borde solo ponemos la variable currentColor, que contiene
   el color azul*/
 }</code></pre>
-        <div id="currentColor">Ejemplo currentcolor</div>
+        <div id="colores_currentColor">Ejemplo currentcolor</div>
       </article>
       <article>
         <h3 id="coloresHexadecimal">Hexadecimal en colores</h3>
@@ -159,7 +160,7 @@ h2{
 h3{
   color:#009b00;
 }</code></pre>
-        <div class="container">
+        <div class="colores_container">
           <div id="colorRed">Color rojo con hexadecimal</div>
           <div id="colorBlue">Color azul con hexadecimal</div>
           <div id="colorGreen">Color verde con hexadecimal</div>
@@ -184,7 +185,7 @@ background-color: #0080FF;
 #hexadecimalConAlpha{
 background-color: #0080FF80;
 }</code></pre>
-        <div class="container">
+        <div class="colores_container">
           <div id="hexadecimalSinAlpha">Hexadimal sin canal alpha</div><br>
           <div id="hexadecimalConAlpha">Hexadimal con canal alpha</div>
         </div>
@@ -207,7 +208,7 @@ background-color: #0080FF80;
           Tambien podemos escribir la intensidad de los numeros seguidos de un
           %, el rango sería del 0-100.<br /><br />
         </p>
-        <table>
+        <table class="color_table">
           <tr>
             <th>Color</th>
             <th style="text-align: center">RGB</th>
@@ -239,7 +240,7 @@ background-color: #0080FF80;
 #colorMoradoRGB {
   color: rgb(100%, 3%, 100%);
 }</code></pre>
-        <div class="container">
+        <div class="colores_container">
           <div id="colorRojoRGB">Color rojo apagado con rgb</div>
           <div id="colorGrisRGB">Color gris con rgb</div>
           <div id="colorMoradoRGB">Color morado con rgb</div>
@@ -272,7 +273,7 @@ background-color: #0080FF80;
 #textoSinOpacidad{
   color: rgba(255,0,0,1);
 }</code></pre>
-        <div class="container">
+        <div class="colores_container">
           <div id="textoConOpacidad">Texto con una opacidad del 0.5%</div>
           <div id="textoSinOpacidad">Texto sin opacidad</div>
         </div>
@@ -321,7 +322,7 @@ background-color: #0080FF80;
 #hslAzul{
   color:hsl(240,0%,50%);
 }</code></pre>
-        <div class="container">
+        <div class="colores_container">
           <div id="hslVerdeClaro">Color verde claro</div>
           <div id="hslVerdeOscuro">Color verde oscuro</div>
           <div id="hslAzul">Color azul pero saturacion a 0%</div>
@@ -358,7 +359,7 @@ background-color: #0080FF80;
 #hslaVerde3 {
   color: hsla(120, 100%, 50%, 1);
 }</code></pre>
-        <div class="container">
+        <div class="colores_container">
           <div id="hslaVerde1">Color verde poca transparencia</div>
           <div id="hslaVerde2">Color verde mitad transparencia</div>
           <div id="hslaVerde3">Color verde mucha transparencia</div>
@@ -415,7 +416,7 @@ background-color: #0080FF80;
   height: 280px;
   background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
 }</code></pre>
-        <div class="container">
+        <div class="colores_container">
           <div id="grad1">Degradado hacia abajo</div><br>
           <div id="grad2">Degradado hacia arriba</div><br>
           <div id="grad3">Degradado hacia derecha</div><br>
@@ -429,7 +430,7 @@ background-color: #0080FF80;
   background: linear-gradient(to bottom, lime,aqua,crimson,deepPink);
 }
 </code></pre>
-        <div class="container">
+        <div class="colores_container">
           <div id="grad5">Degradado con nombres de color</div><br>
           <div id="grad6">Arcoiris</div>
         </div>
@@ -449,7 +450,7 @@ background-color: #0080FF80;
   width: 200px;
   background: radial-gradient(blue,aqua,lime);
 }</code></pre>
-        <div class="container">
+        <div class="colores_container">
           <div id="grad7">Funcion repeating-linear-gradient</div><br>
         </div>
       </article>
@@ -470,7 +471,7 @@ background-color: #0080FF80;
         <pre class="line-numbers"><code class="language-css">#grad8 {
   background: linear-gradient(to left,rgba(255,0,0,0.0),rgba(255,0,0,1));
 }</code></pre>
-        <div class="container">
+        <div class="colores_container">
           <div id="grad8">Transparencia en degradado</div>
 
         </div>
@@ -490,7 +491,7 @@ background-color: #0080FF80;
   linear-gradient(120deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.7%),
   linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
 }</code></pre>
-        <div class="container">
+        <div class="colores_container">
           <div id="grad10">Stacked gradient</div>
         </div>
       </article>
@@ -516,7 +517,7 @@ background-color: #0080FF80;
   height: 100px;
   background:linear-gradient(45deg,blue,green)
 }</code></pre>
-        <div class="container">
+        <div class="colores_container">
           <div id="grad9">Degradado con angulos</div>
         </div>
       </article>
@@ -544,7 +545,7 @@ background-color: #0080FF80;
   width: 200px;
   background: linear-gradient(#00f 80%, #000);
 }</code></pre>
-        <div class="container">
+        <div class="colores_container">
           <div id="grad23"></div>
           <div id="grad24"></div>
         </div>
@@ -595,7 +596,7 @@ y la posicion puede ser = [left | center | right | top | bottom | start | end | 
 #grad12 {
   background: radial-gradient(red 10%, yellow 20%, green 50%);
 }</code></pre>
-        <div class="container">
+        <div class="colores_container">
           <div id="grad11">Degradado radial</div>
           <div id="grad12">Degradado radial con %</div>
         </div>
@@ -618,7 +619,7 @@ y la posicion puede ser = [left | center | right | top | bottom | start | end | 
   height: 200px;
   background: repeating-radial-gradient(#444ffd, #9198e5 15%);
 }</code></pre>
-        <div class="container">
+        <div class="colores_container">
           <div id="grad22"></div>
         </div>
       </article>
@@ -637,7 +638,7 @@ y la posicion puede ser = [left | center | right | top | bottom | start | end | 
         <pre class="line-numbers"><code class="language-css">#grad25{
   background: radial-gradient(at top,red,blue,green);
 }</code></pre>
-        <div class="container">
+        <div class="colores_container">
           <div id="grad25"></div>
           <div id="grad26"></div>
         </div>
@@ -661,7 +662,7 @@ y la posicion puede ser = [left | center | right | top | bottom | start | end | 
 #grad28{
   background: radial-gradient(ellipse,red 20%,blue 50%,rgb(11, 215, 198) 0%);
 }</code></pre>
-        <div class="container">
+        <div class="colores_container">
           <div id="grad27"></div>
           <div id="grad28"></div>
         </div>
@@ -685,7 +686,7 @@ y la posicion puede ser = [left | center | right | top | bottom | start | end | 
 #grad30{
   background: radial-gradient(90% 10% at center,green,orange,black);
 }</code></pre>
-        <div class="container">
+        <div class="colores_container">
           <div id="grad29"></div>
           <div id="grad30"></div>
 
@@ -720,7 +721,7 @@ y la posicion puede ser = [left | center | right | top | bottom | start | end | 
   width: 400px;
   background: radial-gradient(at bottom right,red,purple,yellow);
 }</code></pre>
-        <div class="container">
+        <div class="colores_container">
           <div id="grad31"></div>
           <div id="grad32"></div>
           <div id="grad33"></div>
@@ -749,7 +750,7 @@ y la posicion puede ser = [left | center | right | top | bottom | start | end | 
   width: 200px;
   background: radial-gradient(red,40%,blue);
 }</code></pre>
-        <div class="container">
+        <div class="colores_container">
           <div id="grad34">color stop</div><br>
           <div id="grad35">color hint</div>
         </div>
@@ -803,7 +804,7 @@ div{
   width: 250px;
   background:cronic-gradient(red 0deg,red 90deg,yellow 90deg, yellow 180deg, green 180deg,green 270deg,blue 270deg, blue 360deg);
 }</code></pre>
-        <div class="container">
+        <div class="colores_container">
           <div id="grad17"></div><br>
           <div id="grad18"></div>
           <div id="grad19"></div>
@@ -824,7 +825,7 @@ div{
         <pre class="line-numbers"><code class="language-css">#grad43{
   background: conic-gradient(red 40grad,80grad, blue 360grad);
 }</code></pre>
-        <div class="container">
+        <div class="colores_container">
           <div id="grad43"></div>
           <div id="grad44"></div>
           <div id="grad45"></div>
@@ -848,7 +849,7 @@ div{
 #grad37{
   background: conic-gradient(at 20% 30%, red 20%,yellow 40%,rgb(37, 168, 255) 90%);
 }</code></pre>
-        <div class="container">
+        <div class="colores_container">
           <div id="grad36"></div>
           <div id="grad37"></div>
 
@@ -872,7 +873,7 @@ div{
         <pre class="line-numbers"><code class="language-css">#grad39{
   background: conic-gradient(from 40deg,green,yellow,blue,red);
 }</code></pre>
-        <div class="container">
+        <div class="colores_container">
           <div id="grad39"></div>
           <div id="grad40"></div>
           <div id="grad41"></div>
@@ -888,7 +889,7 @@ div{
   width: 400px;
   background: repeating-conic-gradient(red 0%,yellow,20%,red 50%)
 }</code></pre>
-        <div class="container">
+        <div class="colores_container">
           <div id="grad42"></div>
 
         </div>

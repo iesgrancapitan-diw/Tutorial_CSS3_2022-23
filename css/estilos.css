@@ -1,569 +1,196 @@
-:root {
-  --primaryColor: #303f9f;
-  --primaryLightColor: #666ad1;
-  --primaryDarkColor: #001970;
-  --secondaryColor: #ffa000;
-  --secondaryLightColor: #ffd149;
-  --secondaryDarkColor: #c67100;
-  --primaryTextColor: #000000;
-  --secondaryTextColor: #ffffff;
+:root{
+	--primaryColor: #303f9f;
+	--primaryLightColor: #666ad1;
+	--primaryDarkColor: #001970;
+	--secondaryColor: #ffa000;
+	--secondaryLightColor: #ffd149;
+	--secondaryDarkColor: #c67100;
+	--primaryTextColor: #000000;
+	--secondaryTextColor: #FFFFFF;
 
-  --primarysurfaceColor: #ffffff;
-  --oddsurfaceColor: #f2f2f2;
-  --borderarticleColor: #d3caca;
-}
-
-body {
-  background: var(--primaryDarkColor);
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-}
-#hexadecimalSinAlpha {
-  background-color: #0080ff;
-}
-#hexadecimalConAlpha {
-  background-color: #0080ff80;
-}
-#colorTomate {
-  color: tomato;
-}
-#colorLima {
-  color: lime;
-}
-#colorAgua {
-  color: aqua;
-}
-#colorRed {
-  color: #ff0000;
-}
-#colorBlue {
-  color: #0000ff;
-}
-#colorGreen {
-  color: #009b00;
-}
-#colorRojoRGB {
-  color: rgb(65%, 0%, 0%);
-}
-#colorGrisRGB {
-  color: rgb(129, 129, 129);
-}
-#colorMoradoRGB {
-  color: rgb(100%, 3%, 100%);
-}
-#textoConOpacidad {
-  color: rgba(255, 0, 0, 0.5);
-}
-#textoSinOpacidad {
-  color: rgba(255, 0, 0, 1);
-}
-#hslVerdeClaro {
-  color: hsl(120, 100%, 65%);
-}
-#hslVerdeOscuro {
-  color: hsl(120, 100%, 20%);
-}
-#hslAzul {
-  color: hsl(240, 0%, 50%);
-}
-#hslaVerde1 {
-  color: hsla(120, 100%, 65%, 0.2);
-}
-#hslaVerde2 {
-  color: hsla(120, 100%, 50%, 0.5);
-}
-#hslaVerde3 {
-  color: hsla(120, 100%, 50%, 1);
-}
-#grad1 {
-  width: 400px;
-  height: 100px;
-  background: linear-gradient(to bottom, red, black);
-}
-#grad2 {
-  width: 400px;
-
-  height: 100px;
-  background: linear-gradient(to top, blue, green);
-}
-#grad3 {
-  width: 400px;
-
-  height: 100px;
-  background: linear-gradient(to right, yellow, orange);
-}
-#grad4 {
-  width: 400px;
-
-  height: 100px;
-  background: linear-gradient(to left, purple, brown);
+	--primarysurfaceColor: #FFFFFF;
+	--oddsurfaceColor: #F2F2F2; 
+	--borderarticleColor: #d3caca;
 }
 
-#grad5 {
-  width: 1000px;
-  height: 150px;
-  background: linear-gradient(to bottom, lime, aqua, crimson, deepPink);
-}
-#grad6 {
-  width: 1000px;
-  height: 150px;
-  background: linear-gradient(
-    to right,
-    red,
-    orange,
-    yellow,
-    green,
-    blue,
-    indigo,
-    violet
-  );
-}
-#grad7 {
-  width: 800px;
-  height: 100px;
-  background: repeating-linear-gradient(red, yellow 20px);
-}
-#grad8 {
-  width: 800px;
-  height: 100px;
-  background: linear-gradient(to left, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
-}
-#grad9 {
-  width: 800px;
-  height: 100px;
-  background: linear-gradient(45deg, blue, green);
-}
-#grad10 {
-  height: 200px;
-  width: 200px;
-  background: linear-gradient(
-      200deg,
-      rgba(250, 0, 0, 0.8),
-      rgba(255, 0, 0, 0) 70.7%
-    ),
-    linear-gradient(120deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.7%),
-    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
-}
-#grad11 {
-  height: 200px;
-  width: 500px;
-  background: radial-gradient(blue, aqua, lime);
-}
-#grad12 {
-  width: 500px;
-  height: 200px;
-  background: radial-gradient(red 10%, yellow 20%, green 50%);
-}
-#grad13 {
-  height: 150px;
-  width: 150px;
-  background: radial-gradient(closest-side at 60% 55%, red, yellow, black);
-}
-#grad14 {
-  height: 150px;
-  width: 150px;
-  background: radial-gradient(farthest-side at 60% 55%, red, yellow, black);
-}
-#grad15 {
-  height: 150px;
-  width: 150px;
-  background: radial-gradient(closest-corner at 60% 55%, red, yellow, black);
-}
-#grad16 {
-  height: 150px;
-  width: 150px;
-  background: radial-gradient(farthest-corner at 60% 55%, red, yellow, black);
-}
-#grad17 {
-  height: 250px;
-  width: 500px;
-  background-image: conic-gradient(red, blue, green);
-}
-#grad18 {
-  height: 250px;
-  width: 500px;
-  background-image: conic-gradient(from 70deg, red, blue, green);
-}
-#grad19 {
-  height: 250px;
-  width: 500px;
-  background: conic-gradient(
-    red 0deg,
-    red 90deg,
-    yellow 90deg,
-    yellow 180deg,
-    green 180deg,
-    green 270deg,
-    blue 270deg,
-    blue 360deg
-  );
-}
-#grad20 {
-  width: 500px;
-  height: 200px;
-  background: linear-gradient(
-      to right,
-      rgb(100%, 0%, 0%),
-      rgb(75%, 25%, 50%) 25%
-    ),
-    rgb(50%, 50%, 100%);
-}
-#grad21 {
-  width: 500px;
-  height: 200px;
-  background: linear-gradient(
-    to right,
-    rgb(100%, 0%, 0%),
-    25%,
-    rgb(50%, 50%, 100%)
-  );
-}
-#grad22{
-  width: 500px;
-  height: 200px;
-  background: repeating-radial-gradient(#444ffd, #9198e5 15%);
-}
-#grad23{
-  height: 200px;
-  width: 200px;
-  background: linear-gradient(#00f 40%, #000);
-}
-#grad24{
-  height: 200px;
-  width: 200px;
-  background: linear-gradient(#00f 80%, #000);
-}
-#grad25{
-  height: 200px;
-  width: 400px;
-  background: radial-gradient(at top,red,blue,green);
-}
-#grad26{
-  height: 200px;
-  width: 400px;
-  background: radial-gradient(at bottom right,red,blue,green);
-}
-#grad27{
-  height: 200px;
-  width: 400px;
-  background: radial-gradient(circle,red 20%,blue 50%,rgb(11, 215, 198) 0%);
-}
-#grad28{
-  height: 200px;
-  width: 400px;
-  background: radial-gradient(ellipse,red 20%,blue 50%,rgb(11, 215, 198) 0%);
-}
-#grad29{
-  height: 200px;
-  width: 400px;
-  background: radial-gradient(50% 30% at center,green,orange,black);
-}
-#grad30{
-  height: 200px;
-  width: 400px;
-  background: radial-gradient(90% 10% at center,green,orange,black);
-}
-#grad31{
-  height: 200px;
-  width: 400px;
-  background: radial-gradient(at top left,red,purple,yellow);
-}
-#grad32{
-  height: 200px;
-  width: 400px;
-  background: radial-gradient(at center,red,purple,yellow);
-}#grad33{
-  height: 200px;
-  width: 400px;
-  background: radial-gradient(at bottom right,red,purple,yellow);
-}
-#grad34{
-  height: 200px;
-  width: 200px;
-  background: radial-gradient(red,10%,blue);
-}
-#grad35{
-  height: 200px;
-  width: 200px;
-  background: radial-gradient(red,40%,blue);
-}
-#grad36{
-  height: 200px;
-  width: 200px;
-  background: conic-gradient(at 0% 30%, red 20%,yellow 30%,rgb(37, 168, 255) 50%);
-}
-#grad37{
-  height: 200px;
-  width: 200px;
-  background: conic-gradient(at 20% 30%, red 20%,yellow 40%,rgb(37, 168, 255) 90%);
-}
-#grad38{
-  height: 200px;
-  width: 200px;
-  background: conic-gradient(at 20% 30%, red 20%,yellow 40%,rgb(37, 168, 255) 90%);
-}
-#grad39{
-  height: 200px;
-  width: 200px;
-  background: conic-gradient(from 40deg,green,yellow,blue,red);
-}#grad40{
-  height: 200px;
-  width: 200px;
-  background: conic-gradient(from 180deg,green,yellow,blue,red);
-}#grad41{
-  height: 200px;
-  width: 200px;
-  background: conic-gradient(from 0deg,green,yellow,blue,red);
-}
-#grad42{
-  height: 250px;
-  width: 400px;
-  background: repeating-conic-gradient(red 0%,yellow,20%,red 50%)
-}
-#grad43{
-  height: 200px;
-  width: 200px;
-  background: conic-gradient(red 40grad,60grad, blue 360grad);
-}
-#grad44{
-  height: 200px;
-  width: 200px;
-  background: conic-gradient(red 20grad,90grad, blue 360grad);
-}
-#grad45{
-  height: 200px;
-  width: 200px;
-  background: conic-gradient(red 0grad,180grad, blue 360grad);
-}
-#tipoDegradado {
-  display: block;
-  margin: auto;
-  height: 220px;
-}
-footer {
-  text-align: center;
-  margin-top: 0.5rem;
-}
-#currentColor {
-  color: blue;
-  border: 3px solid currentColor;
-}
-.container {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-}
-footer div {
-  color: var(--secondaryTextColor);
-  margin: 0.5rem 0;
-  font-size: 1.5rem;
+body{
+	background: var(--primaryDarkColor);
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
 }
 
-h1 {
-  color: var(--secondaryTextColor);
-  text-align: center;
+
+footer{
+	text-align: center;
+	margin-top: 0.5rem;
 }
 
-h1 a {
-  color: var(--secondaryTextColor);
-  text-decoration: none;
-}
-ul a {
-  color: var(--secondaryDarkColor);
-  text-decoration: none;
-}
-h2 {
-  color: var(--secondaryLightColor);
-  text-align: center;
-}
-article a{
-  color:var(--secondaryDarkColor);
-  text-decoration: none;
+footer div{
+	color: var(--secondaryTextColor);
+	margin: 0.5rem 0;
+	font-size: 1.5rem;
 }
 
-h2 > img {
-  height: 2em;
-  width: 2em;
+h1{
+	color: var(--secondaryTextColor);
+	text-align: center;
 }
 
-h3 {
-  color: var(--secondaryTextColor);
-  text-align: center;
+h1 a{
+	color: var(--secondaryTextColor);
+	text-decoration: none;
 }
 
-header {
+h2{
+	color: var(--secondaryLightColor);
+	text-align: center;
+
 }
 
-nav {
-  padding: 5px;
-  text-align: center;
+h2 > img{
+	height: 2em;
+	width: 2em;
 }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+h3{
+	color: var(--secondaryTextColor);
+	text-align: center;
 }
 
-nav > ul > li {
-  background: var(--primaryLightColor);
-  border: 0.5px solid var(--primaryColor);
-  border-radius: 5px;
-  box-shadow: 0.5px 0.5px 1px var(--secondaryLightColor);
-  display: inline-block;
-  line-height: 50px;
-  margin: 2px 0px;
-  transition: all 0.2s;
-  width: 90%;
+nav{
+	padding: 5px;
+	text-align: center;
 }
 
-nav > ul > li:hover {
-  background: var(--secondaryColor);
-  box-shadow: 1px 1px 3px var(--secondaryLightColor);
-  transform: scale(1.01, 1.01);
+nav ul{
+	list-style: none;
+	margin:0;
+	padding: 0;
 }
 
-nav > ul > li > a {
-  color: var(--secondaryTextColor);
-  font-size: 1em;
-  text-decoration: none;
-  display: block;
+nav>ul>li{
+	background: var(--primaryLightColor);
+	border:0.5px solid var(--primaryColor);
+	border-radius: 5px;
+	box-shadow:0.5px 0.5px 1px var(--secondaryLightColor);
+	display: inline-block;
+	line-height: 50px;
+	margin: 2px 0px;
+	transition:all 0.2s;
+	width: 90%;
 }
 
-nav > ul > li:hover > a {
-  *color: var(--primaryLightColor);
-  font-weight: bold;
+nav>ul>li:hover{
+	background: var(--secondaryColor);	
+	box-shadow: 1px 1px 3px var(--secondaryLightColor);
+	transform: scale(1.01,1.01);
 }
 
-main {
-  background-color: var(--primarysurfaceColor);
-  margin: 0 auto;
-  text-align: justify;
-  width: 100%;
+nav>ul>li>a{
+	color: var(--secondaryTextColor);
+	font-size: 1em;
+	text-decoration: none;
+	display: block;
 }
 
-main > div {
-  background-color: var(--primaryDarkColor);
-  padding: 0.5px 0px;
+nav>ul>li:hover>a{
+	*color: var(--primaryLightColor);
+	font-weight: bold;
 }
 
-section {
-  padding-bottom: 1px;
+
+main{
+	background-color: var(--primarysurfaceColor);
+	margin: 0 auto;
+	text-align: justify;
+	width: 100%;
 }
 
-section article {
-  margin: 1rem auto;
-  width: 93%;
-  background-color: var(--primarysurfaceColor);
-  border-radius: 8px;
-  border: 1px solid var(--borderarticleColor);
+main > div{
+	background-color: var(--primaryDarkColor);
+	padding: 0.5px 0px;
 }
 
-section article:hover {
-  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302),
-    0 2px 6px 2px rgba(60, 64, 67, 0.149);
+
+section{
+	padding-bottom: 1px;
 }
 
-section > article:nth-child(odd) {
-  background-color: var(--oddsurfaceColor);
-  padding: 10px;
+section article{
+	margin:1rem auto;
+	width: 93%;
+	background-color: var(--primarysurfaceColor);
+	border-radius: 8px;
+	border: 1px solid var(--borderarticleColor);
 }
 
-section > article:nth-child(even) {
-  background-color: var(--primarysurfaceColor);
-  padding: 10px;
+section article:hover{
+	box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302), 0 2px 6px 2px rgba(60,64,67,0.149)
 }
 
-section > article:last-child {
-  margin-bottom: 1rem;
+section > article:nth-child(odd){
+	background-color: var(--oddsurfaceColor);
+	padding: 10px;
 }
 
-section > article > h3 {
-  color: var(--secondaryColor);
-  font-size: 1.4rem;
-  margin-top: 0;
+section > article:nth-child(even){
+	background-color: var(--primarysurfaceColor);	
+	padding: 10px;
 }
 
-section > article h4 {
-  text-align: left;
-  color: var(--secondaryDarkColor);
-  margin-bottom: 0;
+section > article:last-child{
+	margin-bottom: 1rem;
 }
 
-section > article div {
-  *padding: 0.6rem;
-  *text-align: justify;
+
+section>article>h3{
+	color: var(--secondaryColor);
+    font-size: 1.4rem;
+    margin-top: 0;
 }
 
-section > article > p {
-  font-size: 0.96rem;
-  *font-weight: bold;
-  line-height: 1rem;
-  text-align: justify;
-  margin: 0.5rem 0;
+section>article h4{
+	text-align: left;
+    color: var(--secondaryDarkColor);
+    margin-bottom: 0;
 }
 
-section > article span {
-  color: var(--secondaryDarkColor);
+section>article div{
+	*padding: 0.6rem;
+	*text-align: justify;
 }
 
-span {
-  *color: #eceff1;
-  *font-family: Sosa;
-  *font-size: 2em;
+section>article>p{
+	font-size: 0.96rem;
+	*font-weight: bold;
+	line-height: 1rem;
+    text-align: justify;
+    margin: 0.5rem 0;
 }
 
-.social {
-  color: white;
-  display: inline-block;
-  height: 30px;
-  margin: 5px;
-  transition: all 0.5s;
-  width: 30px;
+section > article span{
+	color: var(--secondaryDarkColor);
 }
 
-.social:hover {
-  transform: scale(1.1);
+
+span{
+	*color: #ECEFF1;
+	*font-family: Sosa;
+	*font-size: 2em;
 }
 
-table {
-  border: 1px solid;
-}
-table th,
-td {
-  width: 120px;
-  height: 50px;
-  border: 1px solid;
-}
-.colorRed:hover {
-  color: red;
-}
-.colorBlue:hover {
-  color: blue;
-}
-.colorGreen:hover {
-  background-color: green;
-}
-.colorRed {
-  color: black;
-}
-.colorBlue {
-  color: black;
-}
-.colorGreen {
-  color: black;
-}
-p {
-  color: black;
+
+.social{
+	color: white;
+	display: inline-block;
+	height: 30px;
+	margin: 5px;
+	transition:all 0.5s;
+	width: 30px;
 }
 
-@media only screen and (min-width: 800px) {
-  nav > ul > li {
-    width: 45%;
-  }
-  section article {
-    width: 96%;
-  }
+.social:hover{
+	transform: scale(1.1);
 }
 
 

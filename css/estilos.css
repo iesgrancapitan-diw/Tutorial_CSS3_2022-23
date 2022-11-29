@@ -13,6 +13,7 @@
 	--borderarticleColor: #d3caca;
 }
 
+
 body{
 	background: var(--primaryDarkColor);
 	font-family: 'Roboto', sans-serif;
@@ -56,6 +57,10 @@ h3{
 	color: var(--secondaryTextColor);
 	text-align: center;
 }
+
+header{
+}
+
 
 nav{
 	padding: 5px;

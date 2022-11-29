@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>TUTORIAL CSS3 - 2020/2021 - Diseño de Interfaces Web - CFGS DAW - IES Gran Capitán</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>TUTORIAL CSS3 - 2022/2023 - Diseño de Interfaces Web - CFGS DAW - IES Gran Capitán</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="./css/bordes.css">
     <script src="js/prism.js"></script>
 </head>
+
 <body>
     <header>
         <h1><a href="index.html">TUTORIAL CSS3 - 2022/2023</a></h1>
@@ -21,7 +24,7 @@
         <ul>
             <li><a href="Bordes.html">Bordes</a></li>
             <li><a href="Fondos.html">Fondos</a></li>
-            <li><a href="Efectos_texto.html">Fuentes y Ef Texto</a></li>   
+            <li><a href="Efectos_texto.html">Fuentes y Ef Texto</a></li>
             <li><a href="Transformaciones.html">Transformac.</a></li>
             <li><a href="Transiciones.html">Transiciones</a></li>
             <li><a href="Animaciones.html">Animaciones</a></li>
@@ -38,97 +41,656 @@
             <h3>Propiedades para modificar los bordes de los elementos de un documento HTML</h3>
         </div>
 
-    <section>
-        <article>
-            <h3>border-radius</h3>
-            <p>Indica que el tamaño del borde redondeado. Es importante definir un border-style para que el borde
-                se vea redondeado.</p>
-            <h4>Sintaxis</h4>
-            <pre class="line-numbers"><code class="language-css">border-radius: [Aqui va la sintaxis de cada propiedad];</code></pre>
-            <p>Admite de uno a cuatro valores, que son los siguientes: </p>
-            <ul>
-                <li>Un valor: se aplica a los cuatros lados.</li>
-                <li>Dos valores. se aplica el primero a arriba y abajo y el segundo a derecha e
-                    izquierda.</li>
-                <li>Tres valores: se aplica el <span>primero</span> a arriba,el segundo a derecha e izquierda y el
-                    tercero a abajo.</li>
-                <li>Cuatro valores: se aplica el primero a arriba, el segundo a la derecha, el tercero abajo y el cuarto
-                    a la izquierda.</li>
-            </ul>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae velit laudantium adipisci esse voluptates deserunt eum ex, excepturi, amet, sequi praesentium fugiat fugit accusamus vel nostrum numquam neque repellat autem.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam repellat earum recusandae ad voluptates necessitatibus alias eaque unde expedita, iste, at quibusdam tenetur quis voluptatibus harum culpa a porro.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ad porro optio vel beatae rem quidem quasi blanditiis sint numquam ullam, maxime neque impedit, nobis id? Maxime, commodi! Commodi, quam?</p>
-            
-            <h4>Ejemplos:</h4>
-            <pre class="line-numbers"><code class="language-css">border-radius: 15px 10px 15px 10px;
+        <section>
+
+            <article>
+                <h3>border-style</h3>
+                <p>Indica el estilo del borde. Es importante definir un border-style para que el borde
+                    se pueda ver.</p>
+                <h4>Se permiten los siguientes valores para dicha propiedad</h4>
+                <ul>
+                    <li><b>dotted</b> - Define un borde punteado.</li>
+                    <li><b>dashed</b> - Define un borde discontinuo.</li>
+                    <li><b>solid</b> - Define un borde sólido.</li>
+                    <li><b>double</b> - Define un borde doble.</li>
+                    <li><b>groove</b> - Define un borde ranurado 3D. El efecto depende del valor del color del borde.
+                    </li>
+                    <li><b>ridge</b> - Define un borde estriado 3D. El efecto depende del valor del color del borde.
+                    </li>
+                    <li><b>inset</b> - Define un borde de inserción 3D. El efecto depende del valor del color del borde.
+                    </li>
+                    <li><b>outset</b> - Define un borde inicial 3D. El efecto depende del valor del color del borde.
+                    </li>
+                    <li><b>none</b> - No define ningún borde.</li>
+                    <li><b>hidden</b> - Define un borde oculto.</li>
+                </ul>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">border-style: {tipo de estilo | [estilo borde derecho] | [estilo borde inferior] | [estilo borde izquierdo]};</code></pre>
+                <p>Admite de uno a cuatro valores, que son los siguientes: </p>
+                <ul>
+                    <li>Un valor: se aplica a los cuatros lados.</li>
+                    <li>Dos valores: se aplica el primero a arriba y abajo y el segundo a derecha e
+                        izquierda.</li>
+                    <li>Tres valores: se aplica el <span>primero</span> a arriba,el segundo a derecha e izquierda y el
+                        tercero a abajo.</li>
+                    <li>Cuatro valores: se aplica el primero a arriba, el segundo a la derecha, el tercero abajo y el
+                        cuarto
+                        a la izquierda.</li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">border-style: dotted;
+border-style: dashed;
 border-style: solid;
-border-width: 2px;
-border-color: black;</code></pre>
-		Aquí el resultado del ejemplo del código fuente indicado arriba. En el código fuente de los ejemplos no debe haber ninguna propiedad no explicada anteriormente. Es decir, si para el ejemplo necesitas border-style, border-width y/o border-color, estas propiedades deben ser explicadas con anterioridad
-        </article>
+border-style: double;
+border-style: groove;
+border-style: ridge;
+border-style: inset;
+border-style: outset;
+border-style: none;
+border-style: hidden;</code></pre>
+                <div>
+                    <div id="border-style-dotted" class="border-style-ejemplos1">Ejemplo border-style dotted</div>
 
-        <article>
-            <h3>border-radius</h3>
-            <p>Indica que el tamaño del borde redondeado. Es importante definir un border-style para que el borde
-                se vea redondeado.</p>
-            <h4>Sintaxis</h4>
-            <pre class="line-numbers"><code class="language-css">border-radius: [Aqui va la sintaxis de cada propiedad];</code></pre>
-            <p>Admite de uno a cuatro valores, que son los siguientes: </p>
-            <ul>
-                <li>Un valor: se aplica a los cuatros lados.</li>
-                <li>Dos valores. se aplica el primero a arriba y abajo y el segundo a derecha e
-                    izquierda.</li>
-                <li>Tres valores: se aplica el <span>primero</span> a arriba,el segundo a derecha e izquierda y el
-                    tercero a abajo.</li>
-                <li>Cuatro valores: se aplica el primero a arriba, el segundo a la derecha, el tercero abajo y el cuarto
-                    a la izquierda.</li>
-            </ul>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae velit laudantium adipisci esse voluptates deserunt eum ex, excepturi, amet, sequi praesentium fugiat fugit accusamus vel nostrum numquam neque repellat autem.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam repellat earum recusandae ad voluptates necessitatibus alias eaque unde expedita, iste, at quibusdam tenetur quis voluptatibus harum culpa a porro.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ad porro optio vel beatae rem quidem quasi blanditiis sint numquam ullam, maxime neque impedit, nobis id? Maxime, commodi! Commodi, quam?</p>
-            
-            <h4>Ejemplos:</h4>
-            <pre class="line-numbers"><code class="language-html">&lt;p&gt;Párrafo 1&lt;/p&gt;
-&lt;p&gt;Párrafo 2&lt;/p&gt;
-&lt;p&gt;Párrafo 3&lt;/p&gt;</code></pre>
-			Aquí el resultado del ejemplo del código fuente indicado arriba. En el código fuente de los ejemplos no debe haber ninguna propiedad no explicada anteriormente. Es decir, si para el ejemplo necesitas border-style, border-width y/o border-color, estas propiedades deben ser explicadas con anterioridad
-black;
-        </article>
 
-        <article>
-            <h3>border-radius</h3>
-            <p>Indica que el tamaño del borde redondeado. Es importante definir un border-style para que el borde
-                se vea redondeado.</p>
-            <h4>Sintaxis</h4>
-            <pre class="line-numbers"><code class="language-css">border-radius: [Aqui va la sintaxis de cada propiedad];</code></pre>
-            <p>Admite de uno a cuatro valores, que son los siguientes: </p>
-            <ul>
-                <li>Un valor: se aplica a los cuatros lados.</li>
-                <li>Dos valores. se aplica el primero a arriba y abajo y el segundo a derecha e
-                    izquierda.</li>
-                <li>Tres valores: se aplica el <span>primero</span> a arriba,el segundo a derecha e izquierda y el
-                    tercero a abajo.</li>
-                <li>Cuatro valores: se aplica el primero a arriba, el segundo a la derecha, el tercero abajo y el cuarto
-                    a la izquierda.</li>
-            </ul>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae velit laudantium adipisci esse voluptates deserunt eum ex, excepturi, amet, sequi praesentium fugiat fugit accusamus vel nostrum numquam neque repellat autem.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam repellat earum recusandae ad voluptates necessitatibus alias eaque unde expedita, iste, at quibusdam tenetur quis voluptatibus harum culpa a porro.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ad porro optio vel beatae rem quidem quasi blanditiis sint numquam ullam, maxime neque impedit, nobis id? Maxime, commodi! Commodi, quam?</p>
-            
-            <h4>Ejemplos:</h4>
-            <pre class="line-numbers"><code class="language-css">border-radius: 15px 10px 15px 10px;
-border-style: solid;
-border-width: 2px;
-border-color: black;</code></pre>
-			Aquí el resultado del ejemplo del código fuente indicado arriba. En el código fuente de los ejemplos no debe haber ninguna propiedad no explicada anteriormente. Es decir, si para el ejemplo necesitas border-style, border-width y/o border-color, estas propiedades deben ser explicadas con anterioridad
-        </article>
 
-    </section>
+                    <div id="border-style-dashed" class="border-style-ejemplos1">Ejemplo border-style dashed</div>
+
+
+
+                    <div id="border-style-solid" class="border-style-ejemplos1">Ejemplo border-style solid</div>
+
+
+
+                    <div id="border-style-double" class="border-style-ejemplos1">Ejemplo border-style double</div>
+
+
+                    <div id="border-style-groove" class="border-style-ejemplos1">Ejemplo border-style groove</div>
+                </div>
+                <div>
+                    <div id="border-style-ridge" class="border-style-ejemplos2">Ejemplo border-style ridge</div>
+
+
+                    <div id="border-style-inset" class="border-style-ejemplos2">Ejemplo border-style inset</div>
+
+
+                    <div id="border-style-outset" class="border-style-ejemplos2">Ejemplo border-style outset</div>
+
+
+                    <div id="border-style-none" class="border-style-ejemplos2">Ejemplo border-style none</div>
+
+                    <div id="border-style-hidden" class="border-style-ejemplos2">Ejemplo border-style hidden</div>
+                </div>
+            </article>
+            <article>
+                <h3>border-width</h3>
+                <p>Indica que el ancho de los bordes. El ancho se puede establecer con un tamaño específico (en px, pt,
+                    cm, em, etc.)
+                    o usando uno de los tres valores predefinidos: thin, medium, or thick:</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">border-width: {ancho borde | [ancho borde derecho] | [ancho borde inferior] | [ancho borde izquierdo]};</code></pre>
+                <p>Admite de uno a cuatro valores, que son los siguientes: </p>
+                <ul>
+                    <li>Un valor: se aplica a los cuatros lados.</li>
+                    <li>Dos valores: se aplica el primero a arriba y abajo y el segundo a derecha e
+                        izquierda.</li>
+                    <li>Tres valores: se aplica el <span>primero</span> a arriba,el segundo a derecha e izquierda y el
+                        tercero a abajo.</li>
+                    <li>Cuatro valores: se aplica el primero a arriba, el segundo a la derecha, el tercero abajo y el
+                        cuarto
+                        a la izquierda.</li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">border-width: 4px;
+border-width: thin;
+border-width: medium;
+border-width: thick;
+border-width: 2px 4px 6px 8px;
+</code></pre>
+                <div>
+                    <div id="border-width-1" class="border-width-ejemplos">Ejemplo de border-width con píxeles</div>
+
+                    <div id="border-width-2" class="border-width-ejemplos">Ejemplo de border-width con thin</div>
+
+                    <div id="border-width-3" class="border-width-ejemplos">Ejemplo de border-width con medium</div>
+
+                    <div id="border-width-4" class="border-width-ejemplos">Ejemplo de border-width con thick</div>
+
+                    <div id="border-width-5" class="border-width-ejemplos">Ejemplo de border-width donde el borde de
+                        cada lado sera de un ancho diferente</div>
+                </div>
+            </article>
+
+            <article>
+                <h3>border-color</h3>
+                <p>Propiedad que se utiliza para establecer el color de los cuatro bordes.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">border-style: {color | [color borde derecho] | [color borde inferior] | [color borde izquierdo]};</code></pre>
+                <p>Admite de uno a cuatro valores, que son los siguientes: </p>
+                <ul>
+                    <li>Un valor: se aplica a los cuatros lados.</li>
+                    <li>Dos valores: se aplica el primero a arriba y abajo y el segundo a derecha e
+                        izquierda.</li>
+                    <li>Tres valores: se aplica el <span>primero</span> a arriba,el segundo a derecha e izquierda y el
+                        tercero a abajo.</li>
+                    <li>Cuatro valores: se aplica el primero a arriba, el segundo a la derecha, el tercero abajo y el
+                        cuarto
+                        a la izquierda.</li>
+                </ul>
+                <p>El color se puede configurar mediante: </p>
+                <ul>
+                    <li>nombre - especifique un nombre de color, como "rojo".</li>
+                    <li>HEX: especifica un valor HEX, como "#ff0000".</li>
+                    <li>RGB: especifica un valor RGB, como "rgb(255,0,0)".</li>
+                    <li>HSL: especifique un valor HSL, como "hsl(0, 100%, 50%)".</li>
+                    <li>transparente</li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">border-color: red;
+border-color: red green;
+border-color: red green yellow purple;</code></pre>
+                <div>
+                    <div id="border-color-1" class="border-color-ejemplos">Ejemplo de border-color con un parámetro
+                    </div>
+
+                    <div id="border-color-2" class="border-color-ejemplos">Ejemplo de border-color con dos parámetros
+                    </div>
+
+                    <div id="border-color-3" class="border-color-ejemplos">Ejemplo de border-color con 4 parámetros
+                    </div>
+                </div>
+            </article>
+
+
+            <article>
+                <h3>border-radius</h3>
+                <p>Indica que el tamaño del borde redondeado. Es importante definir un border-style para que el borde
+                    se vea redondeado.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">border-style: {tamaño de redondeado | [tamaño de redondeado borde esquina posterior derecha] | [tamaño de redondeado borde inferior derecho] | [tamaño de redondeado borde inferior izquierdo]};</code></pre>
+                <p>Admite de uno a cuatro valores, que son los siguientes: </p>
+                <ul>
+                    <li>Un valor: se aplica a las cuatros esquinas del borde.</li>
+                    <li>Dos valores: se aplica el primero a la esquina superior izquierda y a la esquina inferior
+                        derecha. Y el segundo valor se aplica a la esquina superior derecha y a la esquina inferior
+                        izquierda. </li>
+                    <li>Tres valores: se aplica el <span>primero</span> a la esquina superior izquierda,el segundo a la
+                        esquina superior derecha e esquina inferior izquierda y el
+                        tercero a la esquina inferior derecha.</li>
+                    <li>Cuatro valores: se aplica el primero a la esquina superior izquierda, el segundo a la esquina
+                        superior derecha, el tercero esquina inferior derecha y el
+                        cuarto
+                        a la esquina inferior izquierda.</li>
+                </ul>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">border-radius: 8px;
+border-radius: 8px 4px;
+border-radius: 16px 8px 4px;
+border-radius: 16px 8px 4px 10px;</code></pre>
+                <div>
+                    <div id="border-radius-1" class="border-radius-ejemplos">Ejemplo de border-radius con un solo
+                        parámetro</div>
+
+                    <div id="border-radius-2" class="border-radius-ejemplos">Ejemplo de border-radius con dos parámetros
+                    </div>
+
+                    <div id="border-radius-3" class="border-radius-ejemplos">Ejemplo de border-radius con tres
+                        parámetros</div>
+
+                    <div id="border-radius-4" class="border-radius-ejemplos">Ejemplo de border-radius con cuatro
+                        parámetros</div>
+                </div>
+            </article>
+
+            <article>
+                <h3>box-shadow</h3>
+                <p>Agrega sombras a diferentes elementos</p>
+                <h4>Se permiten los siguientes valores para dicha propiedad</h4>
+                <ul>
+                    <li><b>none</b> - Valor por defecto. No se muestra ninguna sombra.</li>
+                    <li><b>h-offset</b> - Requerido. Es el desplazamiento horizontal de la sombra. Un valor positivo
+                        situa la sombra en el lado derecho del cuadro(elemento), un valor negativo situa la sombra en el
+                        lado izquierdo del cuadro.</li>
+                    <li><b>v-offset</b> - Requerido. Es el desplazamiento vertical de la sombra. Un valor positivo situa
+                        la sombra debajo del cuadro(elemento), un valor negativo situa la sombra encima del cuadro.</li>
+                    <li><b>blur</b> - Opcional. Es el radio de desenfoque. Cuanto mayor sea el número, más borrosa será
+                        la sombra.</li>
+                    <li><b>spread</b> - Opcional. Es el radio de propagación. Un valor positivo aumenta el tamaño de la
+                        sombra, un valor negativo disminuye el tamaño de la sombra.</li>
+                    <li><b>color</b> - Opcional. Es el color de la sombra. El valor predeterminado es el color del
+                        texto. </li>
+                    <li><b>inset</b> - Opcional. Cambia la sombra de una sombra exterior(por fuera del elemento) a una
+                        sombra interior(dentro del elemento).</li>
+                    <li><b>initial</b> - Establece esta propiedad en su valor predeterminado.</li>
+                    <li><b>inherit</b> - Hereda esta propiedad de su elemento principal.</li>
+                </ul>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">box-shadow: [none|h-offset v-offset blur spread color |inset|initial|inherit]</code></pre>
+                <p>Admite de dos a seis valores, que son los siguientes: </p>
+                <ul>
+                    <li>Dos valores: se aplica el primero a el desplazamiento horizontal de la sombra y el segundo a el
+                        desplazamiento vertical de la sombra.</li>
+                    <li>Tres valores: se aplica el primero a el desplazamiento horizontal de la sombra, el segundo a el
+                        desplazamiento vertical de la sombra y el tercero aumenta el tamaño de la sombra.</li>
+                    <li>Cuatro valores: se aplica el primero a el desplazamiento horizontal de la sombra, el segundo a
+                        el desplazamiento vertical de la sombra, el tercero aumenta el tamaño de la sombra y el cuarto
+                        si es positivo aumenta el tamaño de la sombra y si es negegativo aumenta la sombra.</li>
+                    <li>Cinco valores: se aplica el primero a el desplazamiento horizontal de la sombra, el segundo a
+                        el desplazamiento vertical de la sombra, el tercero aumenta el tamaño de la sombra, el cuarto
+                        si es positivo aumenta el tamaño de la sombra y si es negegativo aumenta la sombra y el quinto
+                        le da color a la sombra.</li>
+                    <li>Seis valores: se aplica el primero a el desplazamiento horizontal de la sombra, el segundo a
+                        el desplazamiento vertical de la sombra, el tercero aumenta el tamaño de la sombra, el cuarto
+                        si es positivo aumenta el tamaño de la sombra y si es negegativo aumenta la sombra, el quinto le
+                        da color a la sombra y el sexto valor puede ser inset, initial o inherit.
+                    </li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">box-shadow: 20px 20px;
+box-shadow: 20px 20px 20px;
+box-shadow: 20px 20px 20px 10px;
+box-shadow: 20px 20px 20px 10px green;
+box-shadow: 20px 20px 20px 10px green inset;
+</code></pre>
+                <div>
+                    <div id="border-box-shadow-1" class="border-box-shadow-ejemplos">Box-shadow con dos parámetros</div>
+
+                    <div id="border-box-shadow-2" class="border-box-shadow-ejemplos">Box-shadow con tres parámetros
+                    </div>
+
+                    <div id="border-box-shadow-3" class="border-box-shadow-ejemplos">Box-shadow con cuatro parámetros
+                    </div>
+
+                    <div id="border-box-shadow-4" class="border-box-shadow-ejemplos">Box-shadow con cinco parámetros
+                    </div>
+
+                    <div id="border-box-shadow-5" class="border-box-shadow-ejemplos">Box-shadow con seis parámetros
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <h3>border-image-source</h3>
+                <p>propiedad especifica la ruta a la imagen que se usará como borde.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">border-image-source: {none|image|initial|inherit}</code></pre>
+                <p>Admite un valor: </p>
+                <ul>
+                    <li>Un valor: url de la imagen a cargar en el borde o initial que establece esta propiedad en su
+                        valor predeterminado o inherit que hereda esta propiedad de su elemento padre o none que no usa
+                        una imagen.</li>
+                </ul>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">border-image-source: url(../border-img/border.png);
+</code></pre>
+                <div id="border-image-source-1">Ejemplo de border-image con un solo
+                    parámetro</div>
+
+            </article>
+
+            <article>
+                <h3>border-image-slice</h3>
+                <p>Propiedad que especifica cómo dividir la imagen especificada por border-image-source . La imagen
+                    siempre se divide en nueve secciones: cuatro esquinas, cuatro bordes y el medio.
+                    Las propiedades border-image-repeat, border-image-width y border-image-outset definen cómo se usarán
+                    estas imágenes.
+                </p>
+                <h4>Se permiten los siguientes valores para dicha propiedad</h4>
+                <ul>
+                    <li><b>number</b> - El número representa los píxeles para imágenes rasterizadas o coordenadas para
+                        imágenes vectoriales.</li>
+                    <li><b>%</b> - El porcentaje es relativo a la altura o el ancho de la imagen.</li>
+                    <li><b>fill</b> - Hace que se muestre la parte central de la imagen.</li>
+                    <li><b>initial</b> - Establece esta propiedad en su valor predeterminado.</li>
+                    <li><b>inherit</b> - Hereda la propiedad de el elemento padre.</li>
+                </ul>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">border-image-slice: {number|%|fill|initial|inherit}</code></pre>
+                <p>Admite de uno a cuatro valores, que son los siguientes: </p>
+                <ul>
+                    <li>Puede tomar de uno a cuatro valores. Si se omite el cuarto valor, es lo mismo que el segundo. Si
+                        también se omite el tercero, es lo mismo que el primero. Si también se omite el segundo, es lo
+                        mismo que el primero. El valor de relleno se puede colocar entre cualquiervalor (fill).
+                    </li>
+                    <li>Un valor: se aplica a todo el borde(slice).</li>
+                    <li>Dos valores: El primer valor es para el borde horizontal y el segundo para el borde vertical.
+                    </li>
+                    <li>Tres valores: El primer valor es para el borde top, el segundo para el borde horizontal y el
+                        tercero para el bottom.</li>
+                    <li>Cuatro valores: El primer valor es para el borde top, el segundo para el borde right, el tercero
+                        para el bottom y el cuarto para el left.</li>
+                </ul>
+
+                <ul>
+                    <li><b>Slice</b> - Es un valor number o % de la separación de las cuatro líneas de
+                        corte.</li>
+                    <li><b>Horizontal</b> - Es un valor number o % de la separación de las dos líneas de corte
+                        horizontales, la superior y la inferior.</li>
+                    <li><b>Vertical</b> - Es un valor number o % de la separación de las dos líneas de corte verticales,
+                        la izquierda y la derecha.</li>
+                    <li><b>Top</b> - Es un valor number o % de la separación de la línea de corte superior.</li>
+                    <li><b>bottom</b> - Es un valor number o % de la separación de la línea de corte inferior.</li>
+                    <li><b>right</b> - Es un valor number o % de la separación de la línea de corte derecha.</li>
+                    <li><b>Left</b> - Es un valor number o % de la separación de la línea de corte izquierda.</li>
+                </ul>
+
+                <div>
+                    
+                    <ul>
+                        <li>Las zonas 1-4 son regiones de esquina. Cada uno se usa una sola vez para formar las esquinas de
+                            la imagen del borde.</li>
+                        <li>Las zonas 5-8 son regiones de borde. Estas regiones se repiten, escalan o modifican de otro modo en la
+                            imagen del borde para que coincidan con las dimensiones del elemento.</li>
+                        <li>La zona 9 es la región media. Se descarta de forma predeterminada, pero se rellena si utilizamos el valor fill.</li>
+                    </ul>
+                    <p>Imagen respecto a las posiciones anteriores vistas:</p>
+                    <img src="./img/border-image-slice.png" alt="border-image-slice"
+                        id="foto-border-image-slice">
+                </div>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">border-image-slice: 10;
+border-image-slice: 10 40%;
+border-image-slice: 10 10% fill;
+border-image-slice: 10 10% 45 fill;
+border-image-slice: 10 10% 45 5;
+</code></pre>
+                <div>
+                    <div id="border-image-slice-1" class="border-image-slice-ejemplos">Ejemplo de border-image-slice con
+                        un
+                        solo
+                        parámetro</div>
+                    <div id="border-image-slice-2" class="border-image-slice-ejemplos">Ejemplo de border-image-slice con
+                        dos
+                        parámetros</div>
+                    <div id="border-image-slice-3" class="border-image-slice-ejemplos">Ejemplo de border-image-slice con
+                        tres
+
+                        parámetros con fill</div>
+                    <div id="border-image-slice-4" class="border-image-slice-ejemplos">Ejemplo de border-image-slice con
+                        cuatro
+
+                        parámetros con fill</div>
+                    <div id="border-image-slice-5" class="border-image-slice-ejemplos">Ejemplo de border-image-slice con
+                        cuatro
+
+                        parámetros</div>
+
+                </div>
+
+            </article>
+
+            <article>
+                <h3>border-image-outset
+                </h3>
+                <p>Propiedad que especifica la cantidad en la que el área de la imagen del borde se extiende más allá
+                    del cuadro del borde.</p>
+                <h4>Se permiten los siguientes valores para dicha propiedad</h4>
+                <ul>
+                    <li><b>number</b> - Representa múltiplos del ancho de borde correspondiente.</li>
+                    <li><b>length</b> - Una unidad de longitud que especifica qué tan lejos de los bordes aparecerá la
+                        imagen del borde. El valor predeterminado es 0.</li>
+                    <li><b>initial</b> - Establece esta propiedad en su valor predeterminado.</li>
+                    <li><b>inherit</b> - Hereda la propiedad de el elemento padre.</li>
+                </ul>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">border-image-outset: {length|number|initial|inherit}</code></pre>
+                <p>Admite de uno a cuatro valores, que son los siguientes: </p>
+                <ul>
+                    <li>Un valor: lado superior.
+                    </li>
+                    <li>Dos valores: primer valor para el lado superior e inferior y el segundo valor para el lado
+                        derecho
+                        e izquierdo.
+                    </li>
+                    <li>Tres valores: primer valor para el lado superior, el segundo valor para el lado derecho e
+                        izquierdo y el tercer valor para el lado izquiero.
+                    </li>
+                    <li>Cuatro valores: primer valor para el lado superior, el segundo valor para el lado derecho, el
+                        tercer valor para el lado inferior y el cuarto valor para el lado izquierdo.
+                    </li>
+                </ul>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">border-image-outset: 10;
+border-image-outset: 5px 8px;
+border-image-outset: 5px 8px 10px;
+border-image-outset: 5px 8px 10px 12px;
+</code></pre>
+                <div>
+                    <div id="border-image-outset-1" class="border-image-outset-ejemplos">Ejemplo de border-image-outset
+                        con un
+                        solo
+                        parámetro</div>
+                    <div id="border-image-outset-2" class="border-image-outset-ejemplos">Ejemplo de border-image-outset
+                        con dos
+                        parámetros</div>
+                    <div id="border-image-outset-3" class="border-image-outset-ejemplos">Ejemplo de border-image-outset
+                        con tres
+                        parámetros</div>
+                    <div id="border-image-outset-4" class="border-image-outset-ejemplos">Ejemplo de border-image-outset
+                        con cuatro
+                        parámetros</div>
+                </div>
+
+            </article>
+
+            <article>
+                <h3>border-image-width
+                </h3>
+                <p>Propiedad que especifica el ancho de la imagen del borde.</p>
+                <h4>Se permiten los siguientes valores para dicha propiedad</h4>
+                <ul>
+                    <li><b>number</b> - Valor predeterminado 1. Representa múltiplos del ancho del borde
+                        correspondiente.
+                    </li>
+                    <li><b>length</b> - Una unidad de longitud (px) que especifica el tamaño del ancho del borde.</li>
+                    <li><b>%</b> - Se refiere al tamaño del área de la imagen del borde: el ancho del área para
+                        desplazamientos horizontales, la altura para desplazamientos verticales.</li>
+                    <li><b>auto</b> - Si se especifica, el ancho es el ancho o alto intrínseco del segmento de imagen
+                        correspondiente.</li>
+                    <li><b>initial</b> - Establece esta propiedad en su valor predeterminado.</li>
+                    <li><b>inherit</b> - Hereda la propiedad de el elemento padre.</li>
+                </ul>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">border-image-width: {number|%|auto|initial|inherit}</code></pre>
+                <p>Admite de uno a cuatro valores, que son los siguientes: </p>
+                <ul>
+                    <li>Un valor: lado superior.
+                    </li>
+                    <li>Dos valores: primer valor para el lado superior e inferior y el segundo valor para el lado
+                        derecho
+                        e izquierdo.
+                    </li>
+                    <li>Tres valores: primer valor para el lado superior, el segundo valor para el lado derecho e
+                        izquierdo y el tercer valor para el lado izquiero.
+                    </li>
+                    <li>Cuatro valores: primer valor para el lado superior, el segundo valor para el lado derecho, el
+                        tercer valor para el lado inferior y el cuarto valor para el lado izquierdo.
+                    </li>
+                </ul>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">border-image-width: 10px;
+border-image-width: 10% 15px;
+border-image-width: 10px 15px 5px;
+border-image-width: 10px 15px 5px 20px;</code></pre>
+                <div>
+                    <div id="border-image-width-1" class="border-image-width-ejemplos">Ejemplo de border-image-width
+                        con un
+                        solo
+                        parámetro</div>
+                    <div id="border-image-width-2" class="border-image-width-ejemplos">Ejemplo de border-image-width
+                        con dos
+                        parámetros</div>
+                    <div id="border-image-width-3" class="border-image-width-ejemplos">Ejemplo de border-image-width
+                        con tres
+                        parámetros</div>
+                    <div id="border-image-width-4" class="border-image-width-ejemplos">Ejemplo de border-image-width
+                        con cuatro
+                        parámetros</div>
+                </div>
+
+            </article>
+
+            <article>
+                <h3>border-image-repeat
+                </h3>
+                <p>Propiedad que especifica si la imagen del borde debe repetirse, redondearse, espaciarse o estirarse..
+                </p>
+                <h4>Se permiten los siguientes valores para dicha propiedad</h4>
+                <ul>
+                    <li><b>stretch</b> - Valor por defecto. La imagen se estira para llenar el área.
+                    <li><b>repeat</b> - La imagen se repite en modo mosaico para rellenar el área.</li>
+                    <li><b>round</b> - La imagen está en mosaico (repetida) para llenar el área. Si no se llena el área
+                        con un número entero de mosaicos, la imagen se vuelve a escalar para que quepa.</li>
+                    <li><b>space</b> - La imagen está en mosaico (repetida) para llenar el área. Si no llena el área con
+                        un número entero de mosaicos, el espacio adicional se distribuye alrededor de los mosaicos.</li>
+                    <li><b>initial</b> - Establece esta propiedad en su valor predeterminado.</li>
+                    <li><b>inherit</b> - Hereda la propiedad de el elemento padre.</li>
+                </ul>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">border-image-width: {stretch|repeat|round|space|initial|inherit}</code></pre>
+                <p>Admite de un, que es el siguientes: </p>
+                <ul>
+                    <li>Un valor: Indica uno de los valores que admite dicha propiedad.
+                    </li>
+                </ul>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">border-image-repeat: stretch;
+border-image-repeat: repeat;
+border-image-repeat: round;
+border-image-repeat: space;</code></pre>
+                <div>
+                    <div id="border-image-repeat-1" class="border-image-repeat-ejemplos">Ejemplo de border-image-repeat
+                        con stretch</div>
+                    <div id="border-image-repeat-2" class="border-image-repeat-ejemplos">Ejemplo de border-image-repeat
+                        con repeat</div>
+                    <div id="border-image-repeat-3" class="border-image-repeat-ejemplos">Ejemplo de border-image-repeat
+                        con round</div>
+                    <div id="border-image-repeat-4" class="border-image-repeat-ejemplos">Ejemplo de border-image-repeat
+                        con space</div>
+                </div>
+
+            </article>
+
+            <article>
+                <h3>border-image</h3>
+                <p>Propiedad que permite especificar una imagen para usarla como borde alrededor de un elemento. Siempre
+                    tiene que haber una propiedad border, para definir primero el borde.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">border-image: {[source] [slice] [width] [outset] [repeat|initial|inherit]}</code></pre>
+                <p>Admite de uno a cinco valores, que son los siguientes: </p>
+                <ul>
+                    <li>Un valor: url de la imagen a cargar en el borde o initial que establece esta propiedad en su
+                        valor predeterminado o inherit que hereda esta propiedad de su elemento padre.</li>
+                    <li>Dos valores: el primero es la url de la imagen a cargar en el borde y el segundo es (slice) que
+                        se trata del valor para repetir la imagen especificada.</li>
+                    <li>tres valores: el primero es la url de la imagen a cargar en el borde, el segundo es (slice) que
+                        se trata del valor para repetir la imagen especificada y el tercero para definir el ancho del
+                        borde.</li>
+                    <li>Cuatro valores: el primero es la url de la imagen a cargar en el borde, el segundo es (slice)
+                        que se trata del valor para repetir la imagen especificada, el tercero para definir el ancho del
+                        borde y el cuarto (outset) es la cantidad en la que el área de la imagen del borde se extiende
+                        más allá del cuadro del borde.
+                    </li>
+                    <li>Cinco valores: el primero es la url de la imagen a cargar en el borde, el segundo es (slice) que
+                        se trata del valor para repetir la imagen especificada, el tercero para definir el ancho del
+                        borde, el cuarto (outset) es la cantidad en la que el área de la imagen del borde se extiende
+                        más allá del cuadro del borde y el quinto (repeat) indica si la imagen del borde debe repetirse,
+                        redondearse o estirarse.
+                    </li>
+                </ul>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">border-image: url(../border-img/border.png);
+border-image: url(../border-img/border.png) 27%;
+border-image: url(../border-img/border.png) 27% 15%;
+border-image: url(../border-img/border.png) 27% 15% 50%;
+border-image: url(../border-img/border.png) 27% 15% 40% repeat;
+</code></pre>
+                <div>
+                    <div id="border-image-1" class="border-image-ejemplos">Ejemplo de border-image con un solo
+                        parámetro</div>
+
+                    <div id="border-image-2" class="border-image-ejemplos">Ejemplo de border-image con dos parámetros
+                    </div>
+
+                    <div id="border-image-3" class="border-image-ejemplos">Ejemplo de border-image con tres
+                        parámetros</div>
+
+                    <div id="border-image-4" class="border-image-ejemplos">Ejemplo de border-image con cuatro
+                        parámetros</div>
+
+                    <div id="border-image-5" class="border-image-ejemplos">Ejemplo de border-image con cinco
+                        parámetros</div>
+                </div>
+            </article>
+
+            <article>
+                <h3>border</h3>
+                <p>Esta propiedad te permite darle ancho al borde, estilo al borde(obligatorio), tamaño al borde</p>
+                <h4>Se permiten los siguientes valores para dicha propiedad</h4>
+                <ul>
+                    <li><b>border-width</b> - Opcional. Ancho del borde.</li>
+                    <li><b>border-style</b> - Requerido. Estilo del borde.</li>
+                    <li><b>border-color</b> - Opcional. Color del borde.</li>
+                    <li><b>initial</b> - Opcional. Establece esta propiedad a su valor predeterminado.</li>
+                    <li><b>inherit</b> - Opcional. Hereda la propiedad de el elemento padre.</li>
+                </ul>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">border: {[border-width] | border-style | [border-color] | [initial] | [inherit}</code></pre>
+                <p>Admite de uno a tres valores, que son los siguientes: </p>
+                <ul>
+                    <li>Un valor: Se le aplica el estilo al borde (al no aparecer el parámetro para definir el color del
+                        borde, se aplicaría el color del texto). También se puede poner inherit o initial.</li>
+                    <li>Dos valores: Un valor es para el estilo (requerido) y el otro es para el color o para el tamaño
+                        del borde (el tamaño del borde si no lo pones es de 1px por defecto).</li>
+                    <li>Tres valores: Un valor es para el estilo (requerido) y el otro es para el color y para el tamaño
+                        del borde.</li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">border: solid;
+border: inherit;
+border: 10px solid;
+border: solid orange;
+border: 10px solid orange;
+                </code></pre>
+                <div>
+                    <div id="border1" class="border-ejemplos">Border con un parámetro</div>
+
+                    <div id="border2-div-padre" class="border-ejemplos">Border padre del que hereda
+                        <div id="border2">Border con un parámetro</div>
+                    </div>
+
+                    <div id="border3" class="border-ejemplos">Border con dos parámetros</div>
+
+                    <div id="border4" class="border-ejemplos">Border con dos parámetros</div>
+
+                    <div id="border5" class="border-ejemplos">Border con tres parámetros</div>
+                </div>
+            </article>
+        </section>
     </main>
     <footer>
-        <div>Jaime Rabasco Ronda</div>
-        <a href="https://twitter.com/jaimerr" class="social"><img src="icon/twitter.svg" alt="Twitter"></a>
-        <a href="https://github.com/jaimerabasco" class="social"><img src="icon/github.svg" alt="GitHub"></a>
+        <div>Hugo Vicente Peligro</div>
+        <a href="#" class="social"><img src="icon/twitter.svg" alt="Twitter"></a>
+        <a href="#" class="social"><img src="icon/github.svg" alt="GitHub"></a>
     </footer>
 </body>
+
 </html>

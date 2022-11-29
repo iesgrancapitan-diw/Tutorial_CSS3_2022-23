@@ -1,0 +1,222 @@
+/* keyframes */
+@keyframes animaciones_move {
+  from {
+    left: 0%;
+  }
+  to {
+    left: 90%;
+  }
+}
+
+@keyframes animaciones_move_color {
+  from {
+    left: 0;
+  }
+  50% {
+    background-color: #ffd149;
+  }
+  to {
+    left: 90%;
+  }
+}
+
+@keyframes animaciones_color {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: blueviolet;
+  }
+}
+
+@keyframes animaciones_fill_mode {
+  from {
+    background-color: #4fff49;
+    left: 0%;
+  }
+  to {
+    background-color: #ffd149;
+    left: 90%;
+  }
+}
+
+/* animaciones */
+
+.animaciones_cat {
+  width: 100px;
+  height: 100px;
+  background-image: url(../img/animaciones_cat.png);
+  position: relative;
+}
+
+.animaciones_cat_text {
+  width: 100px;
+  height: 40px;
+  position: relative;
+  padding-top: 100px;
+  text-align: center;
+  background-image: url(../img/animaciones_cat.png);
+  background-repeat: no-repeat;
+  animation: animaciones_move 5s infinite;
+}
+
+.animaciones_keyframes {
+  animation: animaciones_move_color 5s infinite;
+}
+
+.animaciones_iteration_count {
+  animation: animaciones_move 5s;
+}
+
+#animaciones_iteration_infinite {
+  animation-iteration-count: infinite;
+}
+
+#animaciones_iteration_3 {
+  animation-iteration-count: 3;
+}
+
+.animaciones_name {
+  animation: animaciones_color 20s infinite;
+}
+
+.animaciones_duration {
+  animation: animaciones_color infinite;
+}
+
+#animaciones_duration_10s {
+  animation-duration: 10s;
+}
+
+#animaciones_duration_100ms {
+  animation-duration: 100ms;
+}
+
+.animaciones_delay {
+  animation: animaciones_move 5s infinite;
+}
+
+.animaciones_delay1 {
+  animation-delay: 0s;
+}
+
+.animaciones_delay2 {
+  animation-delay: 2s;
+}
+
+.animaciones_delay3 {
+  animation-delay: -2s;
+}
+
+.animaciones_direction {
+  animation: animaciones_move 5s infinite;
+}
+
+#animaciones_direction1 {
+  animation-direction: normal;
+}
+
+#animaciones_direction2 {
+  animation-direction: reverse;
+}
+
+#animaciones_direction3 {
+  animation-direction: alternate;
+}
+
+#animaciones_direction4 {
+  animation-direction: alternate-reverse;
+}
+
+.animaciones_play_state {
+  animation: animaciones_move 5s infinite;
+}
+
+.animaciones_timing_function {
+  width: 58px;
+  padding-top: 58px;
+  background-image: url(../img/animaciones_cat_head.png);
+  animation: animaciones_move 5s infinite;
+}
+
+.animaciones_ease {
+  animation-timing-function: ease;
+}
+
+.animaciones_ease_in {
+  animation-timing-function: ease-in;
+}
+
+.animaciones_ease_out {
+  animation-timing-function: ease-out;
+}
+
+.animaciones_ease_in_out {
+  animation-timing-function: ease-in-out;
+}
+
+.animaciones_linear {
+  animation-timing-function: linear;
+}
+
+.animaciones_steps_jump_start {
+  height: 60px;
+  animation-timing-function: steps(5, jump-start);
+}
+
+.animaciones_steps_jump_end {
+  height: 60px;
+  animation-timing-function: steps(5, jump-end);
+}
+
+.animaciones_steps_jump_none {
+  height: 60px;
+  animation-timing-function: steps(5, jump-none);
+}
+
+.animaciones_steps_jump_both {
+  height: 60px;
+  animation-timing-function: steps(5, jump-both);
+}
+
+.animaciones_step_start {
+  animation-timing-function: step-start;
+}
+
+.animaciones_step_end {
+  animation-timing-function: step-end;
+}
+
+.animaciones_cubic_bezier {
+  height: 60px;
+  animation-timing-function: cubic-bezier(0.2, -1, 0.8, 1);
+}
+
+.animaciones_fill_mode {
+  background-color: blue;
+}
+
+.animaciones_toggle_fillMode {
+  animation: animaciones_fill_mode 5s;
+  animation-delay: 3s;
+}
+
+#animaciones_fill_mode1 {
+  animation-fill-mode: none;
+}
+
+#animaciones_fill_mode2 {
+  animation-fill-mode: forwards;
+}
+
+#animaciones_fill_mode3 {
+  animation-fill-mode: backwards;
+}
+
+#animaciones_fill_mode4 {
+  animation-fill-mode: both;
+}
+
+.animaciones_animation_shortcut {
+    animation: animaciones_color 10s ease 3s infinite alternate forwards running;
+}

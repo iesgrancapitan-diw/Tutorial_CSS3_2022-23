@@ -1,0 +1,109 @@
+.filter_svg_h1 {
+    color: #001970;
+    font-weight: bolder;
+}
+
+.filter_SVG_original {
+    height: 20%;
+    width: 20%;
+}
+
+.filter_SVG_blurUse1 {
+    filter: blur(5px);
+}
+
+.filter_SVG_blurUse2 {
+    filter: blur(40px);
+}
+
+.filter_SVG_brightnessUse1 {
+    filter: brightness(20%);
+}
+
+.filter_SVG_brightnessUse2 {
+    filter: brightness(70%);
+}
+
+.filter_SVG_contrastUse1 {
+    filter: contrast(20%);
+}
+
+.filter_SVG_contrastUse2 {
+    filter: contrast(70%);
+}
+
+
+.filter_SVG_drop-shadowUse1 {
+    filter: drop-shadow(4px 3px 4px red);
+}
+
+.filter_SVG_drop-shadowUse2 {
+    filter: drop-shadow(16px 20px 9px blue);
+}
+
+.filter_SVG_grayscaleUse1 {
+    filter: grayscale(40%)
+}
+
+.filter_SVG_grayscaleUse2 {
+    filter: grayscale(80%);
+}
+
+.filter_SVG_hue-rotateUse1 {
+    filter: hue-rotate(40deg)
+}
+
+.filter_SVG_hue-rotateUse2 {
+    filter: hue-rotate(80deg);
+}
+
+.filter_SVG_invertUse1 {
+    filter: invert(30%);
+}
+
+.filter_SVG_invertUse2 {
+    filter: invert(80%);
+}
+
+.filter_SVG_opacityUse1 {
+    filter: opacity(20%);
+}
+
+.filter_SVG_opacityUse2 {
+    filter: opacity(80%);
+}
+
+.filter_SVG_saturateUse1 {
+    filter: saturate(10%);
+}
+
+.filter_SVG_saturateUse2 {
+    filter: saturate(400%);
+}
+
+.filter_SVG_sepiaUse1 {
+    filter: sepia(40%);
+}
+
+.filter_SVG_sepiaUse2 {
+    filter: sepia(100%);
+}
+
+.filter_SVG_urlUse1 {
+    filter: url(#blur1);
+}
+
+.filter_SVG_urlUse2 {
+    filter: url(#blur2);
+}
+.filter_SVG_sepia_blur_invertUse {
+    filter: blur(5px) sepia(80%) invert(80%);
+}
+
+.filter_SVG_invert_saturate_grayscale_hue-rotateUse {
+    filter: invert(80%) saturate(400%) grayscale(80%) hue-rotate(240deg);
+}
+
+.filter_SVG_brightness_opacity_grayscale_saturateUse {
+    filter: brightness(20%) opacity(40%) grayscale(70%) saturate(8000%);
+}

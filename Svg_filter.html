@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>TUTORIAL CSS3 - 2022/2023 - Diseño de Interfaces Web - CFGS DAW - IES Gran Capitán</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="css/Svg_filter.css">
+    <script src="js/prism.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">TUTORIAL CSS3 - 2022/2023</a></h1>
+        <h2><img src="icon/language-css3.svg"></h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Bordes.html">Bordes</a></li>
+            <li><a href="Fondos.html">Fondos</a></li>
+            <li><a href="Efectos_texto.html">Fuentes y Ef Texto</a></li>
+            <li><a href="Transformaciones.html">Transformac.</a></li>
+            <li><a href="Transiciones.html">Transiciones</a></li>
+            <li><a href="Animaciones.html">Animaciones</a></li>
+            <li><a href="Col_mult.html">Col Múltiples</a></li>
+            <li><a href="Color.html">Color y Degradado</a></li>
+            <li><a href="Pseudos_Css3.html">Pseudos CSS3</a></li>
+            <li><a href="Svg_filter.html">Filter y SVG</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <h2>TUTORIAL CSS3 - Filter y SVG</h2>
+            <h3>Propiedades para ajustar la representación de imágenes, fondos o bordes y formato de imagen vectorial 2D basado en una sintaxis de XML.</h3>
+        </div>
+
+        <section>
+            <article>
+            <h3>Filter</h3>
+            <p>Filter es una propiedad que se usa principalmente en imágenes y que nos permite realizar diferentes efectos como cambio de color, desenfoque, trabajar con el brillo, etc. 
+                Con muy pocas líneas de código, conseguimos  efectos que normalmente se obtienen con un software de edición de imagenes.</p>
+            </article>
+                <article>
+                <h3>Blur</h3>
+                <p>Aplica un desenfoque Gaussiano a la imagen, el cual consiste en desenfocar una imagen mediante una
+                    función Gaussiana. El efecto mezcla ligeramente el color de los pixeles que estén vecinos el uno del otro en un mapa de
+                    bits (imagen). El efecto es similar al de una fotografía desenfocada.
+                </p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">filter: blur(px);</code></pre>
+                <p>Solo admite un parámetro: </p>
+                <ul>
+                    <li><span>radio</span>: define cuántos píxeles en la pantalla se combinan entre sí.</li>
+                </ul>
+
+                <h4>Ejemplo:</h4>
+                <pre class="line-numbers"><code class="language-css">filter: blur(5px);
+filter: blur(40px);</code></pre>
+                <br>
+                <img class="filter_SVG_original" src="./img/filter_svg_rose.jpg">
+                <img class="filter_SVG_blurUse1 filter_SVG_original" src="./img/filter_svg_rose.jpg">
+                <img class="filter_SVG_blurUse2 filter_SVG_original" src="./img/filter_svg_rose.jpg">
+            </article>
+
+            <article>
+                <h3>Brightness</h3>
+                <p>Aplica una multiplicación lineal a la imagen, haciendo que parezca más o menos brillante. Un valor de 0% convertirá la imagen completamente a negro. Un valor de 100% no producirá ningún cambio en la imagen.
+                </p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">filter: brightness(%);</code></pre>
+                <p>Solo admite un parámetro: </p>
+                <ul>
+                    <li><span>porcentaje</span>: define el porcentaje de brillo aplicado a la imagen.</li>
+                </ul>
+                <h4>Ejemplo:</h4>
+                <pre class="line-numbers"><code class="language-css">filter: brightness(20%);
+filter: brightness(70%);</code></pre>
+                <br>
+                <img class="filter_SVG_original" src="./img/filter_svg_rose.jpg">
+                <img class="filter_SVG_brightnessUse1 filter_SVG_original" src="./img/filter_svg_rose.jpg">
+                <img class="filter_SVG_brightnessUse2 filter_SVG_original" src="./img/filter_svg_rose.jpg">
+            </article>
+
+            <article>
+                <h3>Contrast</h3>
+                <p>Ajusta el contraste de la imagen. Un valor de 0% convertirá la imagen completamente a negro. Un valor de 100% no producirá ningún cambio en la imagen.
+                </p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">filter: contrast(%)</code></pre>
+                <p>Solo admite un solo parametro: </p>
+                <ul>
+                    <li><span>porcentaje</span>: Define el porcentaje de contraste aplicado a la imagen.</li>
+                </ul>
+                <h4>Ejemplo:</h4>
+                <pre class="line-numbers"><code class="language-css">filter: contrast(20%);
+filter: contrast(70%);</code></pre>
+
+                <br>
+                <img class="filter_SVG_original" src="./img/filter_svg_rose.jpg">
+                <img class="filter_SVG_contrastUse1 filter_SVG_original" src="./img/filter_svg_rose.jpg">
+                <img class="filter_SVG_contrastUse2 filter_SVG_original" src="./img/filter_svg_rose.jpg">
+            </article>
+
+            <article>
+                <h3>Drop-shadow</h3>
+                <p>Aplica un efecto de sombra sobre la imagen.</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">filter: drop-shadow(px)</code></pre>
+                <p>Algunas de sus propiedades son: </p>
+                <ul>
+                    <li><span>h-shadow</span>: especifica la distancia horizontal en la que se va a aplicar la sombra sobre la
+                        imagen. Es requerido.</li>
+                    <li><span>y-shadow</span>: especifica la distancia vertical en la que se va a aplicar la sombra sobre la imagen.
+                        Es requerido.</li>
+                    <li><span>blur-radius</span>: ajusta desenfoque. Cuanto mayor es el desenfoque, más grande y clara la sombra. Es opcional.</li>
+                    <li><span>spread-radius</span>: ajusta el tamaño de la sombra, por defecto se ajusta la imagen. Opcional.</li>
+                    <li><span>color</span>: cambia el color de la sombra. Es opcional.</li>
+                </ul>
+                <h4>Ejemplo:</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">filter: drop-shadow(3px 3px 4px red);
+filter: drop-shadow(10px 7px 9px blue);</code></pre>
+                <br>
+                <img class="filter_SVG_original" src="./img/filter_svg_rose.jpg">
+                <img class="filter_SVG_drop-shadowUse1 filter_SVG_original" src="./img/filter_svg_rose.jpg">
+                <img class="filter_SVG_drop-shadowUse2 filter_SVG_original" src="./img/filter_svg_rose.jpg">
+
+            </article>
+
+            <article>
+                <h3>Grayscale</h3>
+                <p>Convierte la imagen a escala de grises.</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">filter: grayscale(%)</code></pre>
+                <p>Algunas de sus propiedades son: </p>
+                <ul>
+                    <li><span>porcentaje</span>: define el porcentaje de la conversión.</li>
+                </ul>
+                <h4>Ejemplo:</h4>
+                <pre class="line-numbers"><code class="language-css">filter: grayscale(40%);
+filter: grayscale(60%);</code></pre>
+                <br>
+                <img class="filter_SVG_original" src="./img/filter_svg_rose.jpg">
+                <img class="filter_SVG_grayscaleUse1 filter_SVG_original" src="./img/filter_svg_rose.jpg">
+                <img class="filter_SVG_grayscaleUse2 filter_SVG_original" src="./img/filter_svg_rose.jpg">
+            </article>
+
+            <article>
+                <h3>Hue-rotate</h3>
+                <p>Aplica una rotación de tono (matiz) al elemento. </p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">filter: hue-rotate(deg)</code></pre>
+                <p>Solo admite un parámetro: </p>
+                <ul>
+                    <li><span>grados</span>: define el número de grados alrededor del círculo de colores al que se ajustarán los
+                        colores de la imagen. El valor por defecto es 0. El valor máximo es 360.
+                    </li>
+                </ul>
+                <h4>Ejemplo:</h4>
+                <pre class="line-numbers"><code class="language-css">filter: hue-rotate(40deg);
+filter: hue-rotate(80deg);</code></pre>
+                <br>
+                <img class="filter_SVG_original" src="./img/filter_svg_rose.jpg">
+                <img class="filter_SVG_hue-rotateUse1 filter_SVG_original" src="./img/filter_svg_rose.jpg">
+                <img class="filter_SVG_hue-rotateUse2 filter_SVG_original" src="./img/filter_svg_rose.jpg">
+
+            </article>
+
+            <article>
+                <h3>Invert</h3>
+                <p>Invierte los colores de la imagen.</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">filter: invert(%)</code></pre>
+                <p>Solo admite un parametro: </p>
+                <ul>
+                    <li><span>porcentaje</span>: define proporción de la conversión. No admite valores negativos.</li>
+                </ul>
+                <h4>Ejemplo:</h4>
+                <pre class="line-numbers"><code class="language-css">filter: invert(30%);
+filter: invert(80%);</code></pre>
+                <br>
+                <img class="filter_SVG_original" src="./img/filter_svg_rose.jpg">
+                <img class="filter_SVG_invertUse1 filter_SVG_original" src="./img/filter_svg_rose.jpg">
+                <img class="filter_SVG_invertUse2 filter_SVG_original" src="./img/filter_svg_rose.jpg">
+            </article>
+
+            <article>
+                <h3>Opacity</h3>
+                <p>Aplica transparencia a la imagen. </p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">filter: opacity(%)</code></pre>
+                <p>Solo admite un parámetro: </p>
+                <ul>
+                    <li>
+                        <span>porcentaje</span>: define proporción de la conversión. Un valor de 0% deja la imagen transparente. No
+                        permite valores negativos.
+                    </li>
+                </ul>
+                <h4>Ejemplo:</h4>
+                <pre class="line-numbers"><code class="language-css">filter: opacity(20%);
+filter: opacity(80%);</code></pre>
+                <br>
+                <img class="filter_SVG_original" src="./img/filter_svg_rose.jpg">
+                <img class="filter_SVG_opacityUse1 filter_SVG_original" src="./img/filter_svg_rose.jpg">
+                <img class="filter_SVG_opacityUse2 filter_SVG_original" src="./img/filter_svg_rose.jpg">
+            </article>
+
+            <article>
+                <h3>Saturate</h3>
+                <p>Aplica saturación a la imagen. </p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">filter: saturate(%)</code></pre>
+                <p>Solo admite un parámetro: </p>
+                <ul>
+                    <li>
+                        <span>porcentaje</span>: define proporción de la conversión.
+                    </li>
+                </ul>
+                <h4>Ejemplo:</h4>
+                <pre class="line-numbers"><code class="language-css">filter: saturate(10%);
+filter: saturate(400%);</code></pre>
+                <br>
+                <img class="filter_SVG_original" src="./img/filter_svg_rose.jpg">
+                <img class="filter_SVG_saturateUse1 filter_SVG_original" src="./img/filter_svg_rose.jpg">
+                <img class="filter_SVG_saturateUse2 filter_SVG_original" src="./img/filter_svg_rose.jpg">
+            </article>
+
+            <article>
+                <h3>Sepia</h3>
+                <p>Convierte la imagen a sepia.</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">filter: sepia(%)</code></pre>
+                <p>Solo admite un parámetro: </p>
+                <ul>
+                    <li>
+                        <span>porcentaje</span>: define proporción de la conversión.
+                    </li>
+                </ul>
+                <h4>Ejemplo:</h4>
+                <pre class="line-numbers"><code class="language-css">filter: sepia(40%);
+filter: sepia(100%);</code></pre>
+                <br>
+                <img class="filter_SVG_original" src="./img/filter_svg_rose.jpg">
+                <img class="filter_SVG_sepiaUse1 filter_SVG_original" src="./img/filter_svg_rose.jpg">
+                <img class="filter_SVG_sepiaUse2 filter_SVG_original" src="./img/filter_svg_rose.jpg">
+            </article>
+
+            <article>
+                <h3>Url</h3>
+                <p>Toma la dirección de un archivo XML que especifica un filtro SVG.</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">filter: url()</code></pre>
+                <p>Solo admite un parámetro: </p>
+                <ul>
+                    <li>
+                        <span>id</span>: id del filtro aplicado.
+                    </li>
+                </ul>
+                <h4>Ejemplo:</h4>
+                <pre class="line-numbers"><code class="language-css">filter: url(#blur)</code></pre>
+                <pre class="line-numbers"><code class="language-html">&lt;svg>
+    &lt;filter id="blur"></filter>
+        &lt;feGaussianBlur in="SourceGraphic" stdDeviation="5"/>
+    &lt;/filter>
+&lt;/svg&gt; </code></pre>
+                <br>
+                <img class="filter_SVG_original" src="./img/filter_svg_rose.jpg">
+                <img class="filter_SVG_urlUse1 filter_SVG_original" src="./img/filter_svg_rose.jpg">
+                <img class="filter_SVG_urlUse2 filter_SVG_original" src="./img/filter_svg_rose.jpg">
+
+                <svg>
+                    <filter id="blur1">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+                    </filter>
+                </svg>
+                <svg>
+                    <filter id="blur2">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="50" />
+                    </filter>
+                </svg>
+            </article>
+
+            <article>
+                <h3>Múltiples filtros</h3>
+                <h4>Ejemplo: Blur, sepia y invert</h4>
+                
+                <pre class="line-numbers"><code class="language-css">filter: blur(5px) sepia(80%) invert(80%);</code></pre>
+                <br>
+                <img class="filter_SVG_original" src="./img/filter_svg_rose.jpg">
+                <img class="filter_SVG_sepia_blur_invertUse filter_SVG_original" src="./img/filter_svg_rose.jpg">
+                <br>
+                <br>
+                <h4>Ejemplo: Invert, saturate, grayscale y hue-rotate</h4>
+
+                <pre class="line-numbers"><code class="language-css">filter: invert(80%) saturate(400%) grayscale(80%) hue-rotate(240deg);</code></pre>
+                <br>
+                <img class="filter_SVG_original" src="./img/filter_svg_rose.jpg">
+                <img class="filter_SVG_invert_saturate_grayscale_hue-rotateUse filter_SVG_original" src="./img/filter_svg_rose.jpg">
+                <br>
+                <br>
+                <h4>Ejemplo: Brightness, opacity, grayscale y saturate</h4>
+
+                <pre class="line-numbers"><code class="language-css">filter: brightness(80%) opacity(400%) grayscale(80%) saturate(40%);</code></pre>
+                <br>
+                <img class="filter_SVG_original" src="./img/filter_svg_rose.jpg">
+                <img class="filter_SVG_brightness_opacity_grayscale_saturateUse filter_SVG_original" src="./img/filter_svg_rose.jpg">
+            </article>
+        </section>
+
+        <section>
+            <article>
+            <h3>SVG</h3>
+               <p>Un SVG es una imagen vectorial, lo que significa que la podemos escalar a cualquier tamaño sin tener problemas de enfoque, 
+                como nos podría pasar con las imágenes con formato PNG o JPG, por ejemplo.
+                Es ideal para trabajar con logos o iconos que a menudo tienen formas y líneas sencillas.
+                Además, pesan pocos megas y permiten una definición mayor en tamaños reducidos.</p>
+            </article>
+                <h3>Figuras básicas</h3>
+            <article>
+                <h3>Rectángulo</h3>
+                <p>Elemento usado para crear formas rectangulares.</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-html">&lt;rect x=[entero], y=[entero], rx=[entero], ry=[entero],
+    width=(px), height=(px), 
+    style=fill:(color); stroke:(color); stroke-width:(px)/&gt;</code></pre>
+                <p>Propiedades:</p>
+                <ul>
+                    <li><span>x=[entero]</span>: abcisa de la esquina superior izquierda del rectángulo.</li>
+                    <li><span>y=[entero]</span>: ordenada de la esquina superior izquierda del rectángulo.</li>
+                    <li><span>rx=[entero]</span>: define el radio horizontal de las esquinas haciendo que adquieran forma redondeada.</li> 
+                    <li><span>ry=[entero]</span>: define el radio vertical de las esquinas haciendo que adquieran forma redondeada.</li>
+                    <li><span>width</span>: establece la anchura del objeto.</li>
+                    <li><span>height</span>: establece la altura del objeto.</li>
+                    <li><span>style</span>: permite agregar atributos relacionados con el estilo del objeto. Valores que puede adquirir:</li>
+                    <dd>
+                        <li type="circle"><span>fill</span>: establece el color del relleno.</li>
+                        <li type="circle"><span>stroke-width</span>: establece la anchura del borde del rectángulo.</li>
+                        <li type="circle"><span>stroke</span>: establece el color del borde del rectángulo.</li>
+                    </dd>
+                </ul>
+                <h4>Ejemplo 1. Rectángulo estándar:</h4>
+                <pre class="line-numbers"><code class="language-html">&lt;svg width="120" height="100">
+    &lt;rect x="10" y="10" width="100" height="80" style="fill:#7BF30A"/>
+&lt;/svg&gt; </code></pre>
+
+                <!--Ejemplo 1. Rectángulo estándar -->
+
+                <svg width="120" height="100">
+                <rect x="10" y="10" width="100" height="80"
+                style="fill:#7BF30A"/>
+                </svg>
+
+                 <!--Ejemplo 2. Rectángulo esquinas redondeadas -->
+                <h4>Ejemplo 2. Rectángulo esquinas redondeadas</h4>
+                <pre class="line-numbers"><code class="language-html">&lt;svg width="400" height="110">
+    &lt;rect width="100" height="100" x="10" y="10" rx="15" ry="15"
+    style="fill:rgb(0,0,255);stroke-width:6;stroke:rgb(255, 233, 0)" />
+&lt;/svg&gt; </code></pre>
+               
+                <svg width="400" height="110">
+                    <rect x="10" y="10"
+                    width="100" height="100"
+                    rx="15" ry="15"style="fill:rgb(0,0,255);stroke-width:6;stroke:rgb(255, 233, 0)" />
+                </svg>
+            </article>
+
+            <!--Círculo-->
+            <article>
+                <h3>Círculo</h3>
+                <p>Elemento usado para crear formas circulares.</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-html">&lt;circle r=[entero], cx=[entero], cy=[entero], 
+    width=(px), height=(px), 
+    style=fill:(color); stroke:(color); stroke-width:(px)/&gt;</code></pre>
+                <p>Algunas de sus propiedades son: </p>
+                <ul>
+                    <li><span>width</span>: establece la anchura del objeto.</li>
+                    <li><span>height</span>: establece la altura del objeto.</li>
+                    <li><span>r</span>: establece el radio del círculo.</li>
+                    <li><span>cx</span>: establece la coordinada <span>x</span> del centro del círculo. </li>
+                    Si se omite, su valor por defecto es 0.</li>
+                    <li><span>cy</span>: establece la coordinada <span>y</span> del centro del círculo. </li>
+                    Si se omite, su valor por defecto es 0.</li>
+                    <li><span>fill</span>: establece el color del relleno.</li>
+                    <li><span>stroke-width</span>: establece la anchura del borde del círculo.</li>
+                    <li><span>stroke</span>: establece el color del borde del círculo.</li>
+                    </dd>
+                </ul>
+                <h4>Ejemplo:</h4>
+                <pre class="line-numbers"><code class="language-html">&lt;svg width=100 height=100;>
+    &lt;circle width="100" height="100" 
+    stroke="green" stroke-width="4" fill="yellow" />
+&lt;/svg&gt; </code></pre>
+
+                <!--Ejemplo Círculo-->
+                <svg width="100" height="100">
+                    <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+            </article>
+            <!--Elipse-->
+            <article>
+                <h3>Elipse</h3>
+                <p>Figura parecida a un círculo. La diferencia estriba en que mientras que en el círculo las coordenadas
+                    del radio <span>x</span> y <span>y</span> son iguales, en la elipse estos valores son diferentes.
+                </p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-html">&lt;ellipse rx=[entero], ry=[entero], cx=[entero], cy=[entero], 
+    width=(px), height=(px), 
+    style=fill:(color); stroke:(color); stroke-width:(px)/&gt;</code></pre>
+                <ul>
+                    <li><span>width</span>: establece la anchura del objeto.</li>
+                    <li><span>height</span>: establece la altura del objeto.</li>
+                    <li><span>rx</span>: establece la coordenada <span>x</span> del radio horizontal.</li>
+                    <li><span>ry</span>: establece la coordenada <span>y</span> del radio vertical.</li>
+                    <li><span>cx</span>: establece la coordinada <span>x</span> del centro de la elipse. </li>
+                    <li><span>cy</span>: establece la coordinada <span>y</span> del centro de la elipse. </li>
+                    <li><span>style</span>: permite agregar atributos relacionados con el estilo del objeto. Valores que puede adquirir:</li>
+                    </li>
+                    <dd>
+                        <li type='circle'><span>fill</span>: establece el color del relleno.</li>
+                        <li type='circle'><span>stroke-width</span>: establece la anchura del borde del círculo.</li>
+                        <li type='circle'><span>stroke</span>: establece el color del borde del círculo.</li>
+                    </dd>
+                </ul>
+                <h4>Ejemplo:</h4>
+                <pre class="line-numbers"><code class="language-html">&lt;svg width=140 height=500;>
+    &lt;ellipse cx="200" cy="80" rx="100" ry="50"
+    style="fill:paleturquoise;stroke:purple;stroke-width:15" />
+&lt;/svg&gt; </code></pre>
+
+                <!--Ejemplo Elipse-->
+                <svg height="140" width="500">
+                    <ellipse cx="200" cy="80" rx="100" ry="50"
+                        style="fill:paleturquoise;stroke:purple;stroke-width:15" />
+                </svg>
+            </article>
+            <!--Línea-->
+            <article>
+                <h3>Línea</h3>
+                <p>Elemento usado para dibujar una línea.
+                </p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-html">&lt;line x1=[entero], y1=[entero], x2=[entero], y2=[entero], 
+    width=(px), height=(px), 
+    style=fill:(color); stroke:(color); stroke-width:(px)/&gt;</code></pre>
+                <ul>
+                <li><span>x1=[entero]</span>: establece el comienzo de la línea en el eje x.</li>
+                <li><span>y1=[entero]</span>: establece el comienzo de la línea en el eje y.</li>
+                <li><span>x2=[entero]</span>: establece el final de la línea en el eje x.</li> 
+                <li><span>y2=[entero]</span>: establece el final de la línea en el eje y.</li>
+                <li><span>width</span>: establece la anchura del objeto.</li>
+                <li><span>height</span>: establece la altura del objeto.</li>
+                <li><span>style</span>: permite agregar atributos relacionados con el estilo del objeto. Valores que puede adquirir:</li>
+                <dd>
+                    <li type="circle"><span>stroke-width</span>: establece la anchura de la línea.</li>
+                    <li type="circle"><span>stroke</span>: establece el color de la línea.</li>
+                </dd>
+            </ul>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-html">&lt;svg width=210 height=500;>
+    &lt;line x1="0" y1="0" x2="200" y2="200"
+    style="stroke:rgb(255,0,0);stroke-width:2"/>
+&lt;/svg&gt; </code></pre>
+
+                <!--Ejemplo Línea-->
+                <svg height="210" width="500">
+                    <line x1="0" y1="0" x2="200" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
+                </svg>
+            </article>
+            <!--Polígono-->
+            <article>
+                <h3>Polígono</h3>
+                <p>Elemento usado para dibujar formas gráficas que contengan al menos 3 lados.
+                    Se crean con líneas rectas las cuales se encuentran conectadas, formando así una figura cerrada.
+                </p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-html">&lt;polygon points= x1[entero], y1=[entero], x2=[entero], y2=[entero], 
+    width=(px), height=(px), 
+    style=fill:(color); stroke:(color); stroke-width:(px)/&gt;</code></pre>
+                <ul>
+                    <li><span>width</span>: establece la anchura del objeto.</li>
+                    <li><span>height</span>: establece la altura del objeto.</li>
+                    <li><span>points:[ coordx1, coordy1, coordx2, coordy2]</span>: define la lista de puntos (pares de <span>x</span> y <span>y</span>)
+                        necesarios para dibujar el polígono.</li>
+                    <li><span>style</span>: permite agregar atributos relacionados con el estilo del objeto. 
+                    </br>Ejemplos:
+                    </li>
+                    <dd>
+                        <li type='circle'><span>fill</span>: establece el color del relleno.</li>
+                        <li type='circle'><span>stroke-width</span>: establece la anchura del borde.</li>
+                        <li type='circle'><span>stroke</span>: establece el color del borde.</li>
+                        <li type='circle'><span>fill-rule</span>: para controlar que se coloree un trozo que está fuera
+                            del trazado.
+                            Toma uno de estos dos valores: <span>evenodd</span> ( par o impar ) o <span>nonzero</span>.
+                        </li>
+                    </dd>
+                </ul>
+
+                <!--Ejemplo 1 Polígono 3 lados-->
+                <h4>Ejemplo 1. Polígono de 3 líneas:</h4>
+                <pre class="line-numbers"><code class="language-html">&lt;svg width=210 height=500;>
+    &lt;polygon points="200,10 250,190 160,210" 
+    style="fill:lime;stroke:purple;stroke-width:1"/>
+&lt;/svg&gt; </code></pre>
+
+                <svg height="210" width="500">
+                    <polygon points="200,10 250,190 160,210" style="fill:lime;stroke:purple;stroke-width:1"/>
+                </svg>
+
+                <!--Ejemplo 2 Polígono Estrella 1-->
+                <h4>Ejemplo 2. Polígono con forma de estrella (fill-rule: evenodd):</h4>
+                <pre class="line-numbers"><code class="language-html">&lt;svg width=210 height=500;>
+    &lt;polygon points="100,10 40,198 190,78 10,78 160,198"
+    style="fill:lime;stroke:purple;
+    stroke-width:5;fill-rule:evenodd;" />
+&lt;/svg&gt; </code></pre>
+
+                <svg height="210" width="500">
+                    <polygon points="100,10 40,198 190,78 10,78 160,198"
+                        style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;"/>
+                </svg>
+
+                <!--Ejemplo 3 Polígono Estrella 2-->
+                <h4>Ejemplo 3. Polígono con forma de estrella (fill-rule: nonzero):</h4>
+                <pre class="line-numbers"><code class="language-html">&lt;svg width=210 height=500;>
+    &lt;polygon points="100,10 40,198 190,78 10,78 160,198"
+    style="fill:lime;stroke:purple;
+    stroke-width:5;fill-rule:nonzero;" />
+&lt;/svg&gt; </code></pre>
+
+                <svg height="210" width="500">
+                    <polygon points="100,10 40,198 190,78 10,78 160,198"
+                        style="fill:lime;stroke:purple;stroke-width:5;fill-rule:nonzero;" />
+                </svg>
+            </article>
+              <!--Polilínea-->
+              <article>
+                <h3>Polilínea</h3>
+                <p>Elemento usado para dibujar un polígono abierto.</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-html">&lt;polyline points= x1[entero], y1=[entero], x2=[entero], y2=[entero], 
+    width=(px), height=(px), 
+    style=fill:(color); stroke:(color); stroke-width:(px)/&gt;</code></pre>
+                <ul>
+                    <li><span>points(x1,y1 x2,y2 x3,y3 ...)</span>:  abcisas y ordenadas de los sucesivos puntos de la polilínea.</li>
+                    <li><span>style</span>: permite agregar atributos relacionados con el estilo del objeto. Valores que puede adquirir:</li>
+                    <dd>
+                        <li type='circle'><span>fill</span>: establece el color del relleno.</li>
+                        <li type='circle'><span>stroke-width</span>: establece la anchura del borde.</li>
+                        <li type='circle'><span>stroke</span>: establece el color del borde.</li>
+                        </li>
+                    </dd>
+                </ul>
+
+            <!--Ejemplo 1. Polilínea abierta-->
+            <h4>Ejemplo 1. Polilínea abierta.</h4>
+            <pre class="line-numbers"><code class="language-html">&lt;svg width="140" height="110">
+    &lt;polyline points="10,70 20,40 40,100 70,10 100,100 120,40 130,70"
+    fill="Peru" stroke-width="3" stroke="RoyalBlue" />
+&lt;/svg&gt; </code></pre>
+        
+            <svg width="140" height="110">
+                <polyline points="10,70 20,40 40,100 70,10 100,100 120,40 130,70"
+                fill="Peru" stroke-width="3" stroke="RoyalBlue" />
+            </svg>
+        
+            <!--Ejemplo 2. Polilínea cerrada--->
+            <h4>Ejemplo 2. Polilínea cerrada.</h4>
+            <pre class="line-numbers"><code class="language-html">&lt;svg width="140" height="110"
+    &lt;polyline points="10,70 20,40 40,100 70,10 100,100 120,40 130,70 10,70"
+    fill="#db5461" stroke-width="3" stroke="#593c8f" />
+&lt;/svg&gt; </code></pre>
+        
+            <svg width="140" height="110">
+                <polyline points="10,70 20,40 40,100 70,10 100,100 120,40 130,70 10,70"
+                fill="#db5461" stroke-width="3" stroke="#593c8f" />
+            </svg>
+ 
+                        </article>
+                  <!--Path-->
+                  <article>
+                    <h3>Path</h3>
+                    <p>Probablemente el elemento &lt;svg&gt; más versátil y avanzado.</p>
+                    <p>Se usa para dibujar figuras avanzadas combinadas con líneas, curvas, arcos, etc. con o sin relleno</p>
+                    
+                    <h4>Sintaxis</h4>
+                    <pre class="line-numbers"><code class="language-html">&lt;path path d="M [entero] a [entero], L [entero] a [entero],  T [entero] a [entero]
+    H [entero], V [entero], S [entero, entero, entero, entero], Q [entero, entero, entero, entero], Z"
+    style=fill:(color); stroke:(color); stroke-width:(px)/&gt;</code></pre>
+                    <ul>
+                        <li><span>M(x,y)</span>: <i>move to</i>. El comando aparece al comienzo de las rutas para especificar dónde debe comenzar el dibujo.
+                        </br>Si el cursor ya estaba en algún lugar de la página, no se traza ninguna línea para conectar las dos posiciones.</li>
+                        <li><span>L(x,y)</span>: <i>line to</i>. Dibuja una línea desde la posición actual a una nueva posición.</li>
+                        <li><span>H(x)</span>: dibuja una línea horizontal. Solo toma un parámetro ya que solo se mueven en una dirección.</li>
+                        <li><span>V(y)</span>: dibuja una línea vertical. Solo toma un parámetro ya que solo se mueven en una dirección.</li>
+                        <li><span>C(x1, y1, x2, y2, x, y)</span>: curva de Bézier, la cual se transfiere desde la pendiente establecida al principio de la línea, hasta la pendiente en el otro extremo.
+                            <dd>
+                                <li type='circle'><span>(x1, y1)</span>: punto de control para el inicio de la curva.</li>
+                                <li type='circle'><span>(x2, y2) </span>: punto de control para el final de la curva.</li>
+                                <li type='circle'><span>(x, y) </span>: especifica dónde debe terminar la línea.</li>
+                            </dd>
+                        <li><span>S(x2, y2, x, y)</span>: establece el comienzo de la línea en el eje y.</li>
+                        <li><span>Q(x1, y1, x, y)</span>: establece el final de la línea en el eje x. </li>
+                        <li><span>T(x,y)</span>: atajo que mira el punto de control utilizado en una curva de Bézier e infiere uno nuevo a partir de él. 
+                        </br>
+                            Esto significa que después del primer punto de control, se pueden crear formas bastante complejas especificando solo puntos finales. </li>
+                        <li><span>A(rx, ry, x-axis-rotation, large-arc-flag, sweep-flag x,y)</span>: crea un arco. </li>
+                        <dd>
+                            <li type='circle'><span>(rx, ry)</span>: semiejes de la elipse que pasa por el punto inicial y el final.</li>
+                            <li type='circle'><span>(x-axis-rotation)</span> rotación del eje x, inclinación de la elipse (entre 0 y 360 grados).</li>
+                            <li type='circle'><span>(large-arc-flag)</span>: arco grande. Determina qué parte de la curva será dibujada. Valores: 1 – para la parte grande de la curva y 0 para la parte pequeña.</li>
+                            <li type='circle'><span>(sweep-flag)</span>: controla la dirección del "lapiz" al dibujar el arco.</li>
+                            <li type='circle'><span>(x, y) </span>: punto final del arco.</li>
+                        </dd>
+                        <li><span>Z</span>: Este comando dibuja una línea recta desde la posición actual hasta el primer punto de la ruta. Suele colocarse al final.</li>
+                        <li><span>style</span>: permite agregar atributos relacionados con el estilo del objeto. Valores que puede adquirir:</li>
+                        </li>
+                        <dd>
+                            <li type='circle'><span>fill</span>: establece el color de relleno de la forma.</li>
+                            <li type='circle'><span>stroke-width</span>: establece la anchura de la línea.</li>
+                            <li type='circle'><span>stroke</span>: establece el color de la línea.</li>
+                        </dd>
+                    </ul>
+                   
+                    <!--Ejemplo 1: 2 elipses-->
+                    <h4>Ejemplo 1. Elipses con Path:</h4>
+                    <pre class="line-numbers"><code class="language-html">&lt;svg width="300" height="130";>
+    &lt;path d="M 80,70 A 70,30 0 0,0 150,40"
+    fill="none" stroke="RoyalBlue" stroke-width="3"/>
+    style="fill:lime;stroke:purple;stroke-width:1"/>
+    &lt;path d="M 80,70 A 70,30 0 0,1 150,40"
+    fill="none" stroke="red" stroke-width="3"/>
+    &lt;path d="M 80,70 A 70,30 0 1,0 150,40"
+    fill="none" stroke="green" stroke-width="3"/>
+    &lt;path d="M 80,70 A 70,30 0 1,1 150,40"
+    fill="none" stroke="gold" stroke-width="3"/>
+&lt;/svg&gt; </code></pre>
+    
+                <svg width="300" height="130">
+                <path d="M 80,70 A 70,30 0 0,0 150,40"
+                  fill="none" stroke="RoyalBlue" stroke-width="3"/>
+                <path d="M 80,70 A 70,30 0 0,1 150,40"
+                  fill="none" stroke="red" stroke-width="3"/>
+                <path d="M 80,70 A 70,30 0 1,0 150,40"
+                  fill="none" stroke="green" stroke-width="3"/>
+                <path d="M 80,70 A 70,30 0 1,1 150,40"
+                  fill="none" stroke="gold" stroke-width="3"/>
+                </svg>
+    
+                    <!--Ejemplo 2. Camino cerrado-->
+                    <h4>Ejemplo 2. Camino cerrado.</h4>
+                    <pre class="line-numbers"><code class="language-html">&lt;svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+    width="140" height="110" viewBox="0 0 140 110">
+    &lt;path d="M 10,70 L 30,40 L 70,100 L 130,10 L 130,70 Z"
+    fill="none" stroke="RoyalBlue" stroke-width="3" />
+&lt;/svg&gt; </code></pre>
+    
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                width="140" height="110" viewBox="0 0 140 110">
+                <path d="M 10,70 L 30,40 L 70,100 L 130,10 L 130,70 Z"
+                   fill="none" stroke="RoyalBlue" stroke-width="3" />
+                </svg>
+    
+                    <!--Ejemplo 3: Cruz-->
+                    <h4>Ejemplo 3. Cruz</h4>
+                    <pre class="line-numbers"><code class="language-html">&lt;svg viewBox="0 0 40 5">
+    &lt;path d="M2 1 h1 v1 h1 v1 h-1 v1 h-1 v-1 h-1 v-1 h1 z" 
+    fill="green"/>
+&lt;/svg&gt; </code></pre>
+    
+            <svg viewBox="0 0 40 5">
+                <path d="M2 1 h1 v1 h1 v1 h-1 v1 h-1 v-1 h-1 v-1 h1 z" 
+                fill="green"/>
+            </svg>
+                </article>
+                            <!--Text-->
+            <article>
+                <h3>Text</h3>
+                <p>Se usa para definir texto.</p>
+
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-html">&lt;text x=[entero] y=[entero]
+    style=font-family: [nombreFuente]; font-size:[entero];
+    stroke:(color); fill:(color) transform = rotate(entero, entero, entero)/></code></pre>
+    
+                    
+                <ul>
+                    <li><span>x</span>: define la coordenada <span>x</span> donde comienza.
+                    <li><span>y</span>: define la coordenada <span>y</span>: donde comienza.
+                    <li><span>&lt;tspan&gt;</span>: etiqueta que permite crear subgrupos del elemento.
+                    <dd>
+                    <li type='circle'><span>fill</span>: establece el color de relleno.</li>
+                    <li type='circle'><span>font-family</span>: familia de la fuente.</li>
+                    <li type='circle'><span>font-size</span>: tamaño de la fuente.</li>
+                    <li type='circle'><span>stroke</span>: color de la fuente.</li>
+                    <li type='circle'><span>transform</span>: permite transformaciones al elemento y sus hijos.</li>
+                    </dd>
+                </ul>
+
+                <!--Ejemplo 1. Texto 1-->
+                <h4>Ejemplo 1. Texto 1:</h4>
+                <pre class="line-numbers"><code class="language-html">&lt;svg width="600px" height="50px">
+    &lt;text x="10"  y="20"
+    style="font-family: Roboto; font-size: 20;
+    stroke: #00ff00; fill: brown" transform="rotate(5, 20, 40)">
+    Esto es un texto construido con SVG</text>
+&lt;/svg&gt; </code></pre>
+
+                <svg width="600px" height="50px">
+                    <text x="10" y="20" style="font-family: Roboto; font-size: 20;
+                stroke: #00ff00; fill: brown" transform="rotate(5, 20, 40)">
+                        Esto es un texto construido con SVG
+                    </text>
+                </svg>
+
+                <!--Ejemplo 2. Etiqueta <tspan>-->
+                <h4>Ejemplo 2. Etiqueta &lt;tspan&gt;:</h4>
+                <pre class="line-numbers"><code class="language-html">&lt;svg text x="10" y="20" style="fill:red;">Several lines:
+    &lt;tspan x="10" y="45">Segunda línea.&lt;/tspan>
+&lt;/svg&gt; </code></pre>
+
+                <svg height="90" width="200">
+                    <text x="10" y="20" style="fill: violet;">Primera línea.
+                        <tspan x="10" y="45">Segunda línea.</tspan>
+                        <tspan x="10" y="70">Tercera línea.</tspan>
+                    </text>
+                </svg>
+
+            </article>
+            <!--Stroke-->
+            <article>
+                <h3>Stroke</h3>
+                <p>Define el color de la línea, texto o trazado de un elemento.</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-html">&lt;stroke x1=[number] y1=[number] x2=[number] y2=[number]
+    stroke-width=[number] stroke=(color) 
+    stroke-linecap=(butt|square|round) 
+    stroke-linejoin=(miter|round|biselado)
+    stroke-dasharray=[entero, entero]/></code></pre>
+                <ul>
+                    <li><span>stroke</span>: define el color de la línea, texto  o trazado de un elemento.
+                    <li><span>stroke-width</span>: define el grosor de la línea, texto  o trazado de un elemento.
+                    <li><span>stroke-linecap</span>: establece la forma de los extremos de los segmentos.
+                        <dd>
+                            <li type='circle'><span>stroke-linecap="butt"</span>: extremo recto.</li>
+                            <li type='circle'><span>stroke-linecap="square"</span>: extremo recto (pero la línea se prolonga como en el caso de la forma redondeada).</li>
+                            <li type='circle'><span>stroke-linecap="round"</span>: extremo redondeado (la línea se prolonga debido a la forma redondeada).</li>
+                            </dd>
+                    <li><span>stroke-linejoin</span>: establece la forma de los vértices de las líneas quebradas.
+                        <dd>
+                            <li type='circle'><span>stroke-linejoin="miter"</span>: en punta.</li>
+                            <li type='circle'><span>stroke-linejoin="round"</span>: redondeado.</li>
+                            <li type='circle'><span>stroke-linejoin="biselado"</span>: con forma de bisel(borde que está cortado oblicuamente, no en ángulo recto).</li>
+                            </dd>
+                    <li><span>stroke-dasharray</span>: define líneas discontínuas mediante una lista de números o porcentajes. Los porcentajes se refieren al espacio de dibujo disponible, no a la longitud de la línea.
+                    
+                </ul>
+
+                <!--Ejemplo 1. Stroke-linecap-->
+                <h4>Ejemplo 1. Stroke-linecap.</h4>
+                <pre class="line-numbers"><code class="language-html">&lt;svg width="130" height="130">
+    &lt;line x1="10" y1="30" x2="120" y2="30"
+    stroke-width="20" stroke="RoyalBlue" stroke-linecap="butt" />
+    &lt;line x1="10" y1="70" x2="120" y2="70"
+    stroke-width="20" stroke="RoyalBlue" stroke-linecap="round" />
+    &lt;line x1="10" y1="110" x2="120" y2="110"
+    stroke-width="20" stroke="RoyalBlue" stroke-linecap="square" />
+&lt;/svg&gt; </code></pre>
+
+                <svg width="130" height="130">
+                    <line x1="10" y1="30" x2="120" y2="30"
+                      stroke-width="20" stroke="#9984F4" stroke-linecap="butt" />
+                    <line x1="10" y1="70" x2="120" y2="70"
+                      stroke-width="20" stroke="#6443F3" stroke-linecap="round" />
+                    <line x1="10" y1="110" x2="120" y2="110"
+                      stroke-width="20" stroke="#3509F5" stroke-linecap="square" />
+                </svg>
+
+                <!--Ejemplo 2.  Stroke-linejoin-->
+                <h4>Ejemplo 2. Stroke-linejoin.</h4>
+                <pre class="line-numbers"><code class="language-html">&lt;svg width="130" height="130">
+    &lt;polyline points="10,50 65,20 120,50" fill="none"
+    stroke-width="20" stroke="#7BF30A" stroke-linejoin="miter" />
+    &lt;polyline points="10,85 65,55 120,85" fill="none"
+    stroke-width="20" stroke="#E0F320" stroke-linejoin="round" />
+    &lt;polyline points="10,120 65,90 120,120" fill="none"
+    stroke-width="20" stroke="#E1400C" stroke-linejoin="bevel" />
+&lt;/svg&gt; </code></pre>
+
+    <svg width="130" height="130">
+        <polyline points="10,50 65,20 120,50" fill="none"
+          stroke-width="20" stroke="#7BF30A" stroke-linejoin="miter" />
+        <polyline points="10,85 65,55 120,85" fill="none"
+          stroke-width="20" stroke="#E0F320" stroke-linejoin="round" />
+        <polyline points="10,120 65,90 120,120" fill="none"
+          stroke-width="20" stroke="#E1400C" stroke-linejoin="bevel" />
+      </svg>
+
+       <!--Ejemplo 3. Stroke-dasharray-->
+       <h4>Ejemplo 3. Stroke-dasharray.</h4>
+       <pre class="line-numbers"><code class="language-html">&lt;svg width="260" height="180">
+    &lt;line x1="10" y1="50" x2="250" y2="50"
+    stroke-width="10" stroke="#BA13EB" stroke-dasharray="20 20"/>
+    &lt;line x1="10" y1="90" x2="250" y2="90"
+    stroke-width="10" stroke="#D267EF" stroke-dasharray="40 40"/>
+    &lt;line x1="10" y1="130" x2="250" y2="130"
+    stroke-width="10" stroke="#DD93F1" stroke-dasharray="40% 20%"/>
+    &lt;line x1="10" y1="170" x2="250" y2="170"
+    stroke-width="10" stroke="#E5B9F1" stroke-dasharray="20% 10% 5% 10%"/>
+    &lt;line x1="10" y1="170" x2="250" y2="170"/>
+&lt;/svg&gt; </code></pre>
+
+    <svg width="260" height="180">
+        <line x1="10" y1="50" x2="250" y2="50"
+          stroke-width="10" stroke="#BA13EB" stroke-dasharray="20 20"/>
+        <line x1="10" y1="90" x2="250" y2="90"
+        stroke-width="10" stroke="#D267EF" stroke-dasharray="40 40"/>
+        <line x1="10" y1="130" x2="250" y2="130"
+        stroke-width="10" stroke="#DD93F1" stroke-dasharray="40% 20%" />
+      <line x1="10" y1="170" x2="250" y2="170"
+        stroke-width="10" stroke="#E5B9F1" stroke-dasharray="20% 10% 5% 10%" />
+        <line x1="10" y1="170" x2="250" y2="170"/>
+    </svg>
+
+            </article>
+                      <!--Gradient Linear-->
+        <article>
+            <h3>Gradiente Lineal</h3>
+            <p>Transición suave de un color a otro, define un gradiente lineal. Aparece dentro de la etiqueta &lt;defs&gt;.</p>
+            <h4>Sintaxis</h4>
+            <pre class="line-numbers"><code class="language-html">&lt;linearGradient x1=(%) y1=(%) x2=(%) y2=(%)/></code></pre>
+            <ul>
+                <li><span>gradientes horizontales</span>: se crean cuando <span>y1</span> y <span>y2</span> son iguales y <span>x1</span> y <span>x2</span> son diferentes.
+                <li><span>gradientes verticales</span>: se crean cuando <span>x1</span> y <span>x2</span> son iguales y <span>y1</span> y <span>y2</span> son diferentes.
+                <li><span>gradientes angulares</span>: se crean cuando <span>x1</span> y <span>x2</span> son diferentes y <span>y1</span> y <span>y2</span> también.
+            </ul>
+
+            <!--Ejemplo 1. Gradiente-->
+            <h4>Ejemplo 1. Gradiente Lineal.</h4>
+            <pre class="line-numbers"><code class="language-html">&lt;svg height="150" width="400">
+    &lt;defs>
+        &lt;linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+        &lt;stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1"/>
+        &lt;stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1"/>
+        &lt;/linearGradient>
+    &lt;/defs>
+    &lt;ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad1)"/>
+&lt;/svg&gt; </code></pre>
+
+            <svg height="150" width="400">
+                <defs>
+                  <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+                  </linearGradient>
+                </defs>
+                <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+              </svg>
+        </article>
+        <!--Gradient Radial-->
+        <article>
+            <h3>Gradient Radial</h3>
+            <p>Transición suave de un color a otro, define un gradiente radial. Aparece dentro de la etiqueta &lt;defs&gt;.</p>
+            <h4>Sintaxis</h4>
+            <pre class="line-numbers"><code class="language-html">&lt;radialGradient cx=(%) cy=(%) r=(%) fx=(%) fy=(%)/></code></pre>
+            <ul>
+                <li><span>gradientes horizontales</span>: se crean cuando <span>y1</span> y <span>y2</span> son iguales y <span>x1</span> y <span>x2</span> son diferentes.
+                <li><span>gradientes verticales</span>: se crean cuando <span>x1</span> y <span>x2</span> son iguales y <span>y1</span> y <span>y2</span> son diferentes.
+                <li><span>gradientes angulares</span>: se crean cuando <span>x1</span> y <span>x2</span> son diferentes y <span>y1</span> y <span>y2</span> también.
+            </ul>
+
+            <!--Ejemplo 1. Gradiente-->
+            <h4>Ejemplo. Gradiente Radial.</h4>
+            <pre class="line-numbers"><code class="language-html">&lt;svg height="150" width="500">
+    &lt;defs>
+        &lt;radialGradient id="grad2" cx="20%" cy="30%" r="30%" fx="50%" fy="50%">
+        &lt;stop offset="0%" style="stop-color:rgb(255,255,255);
+        stop-opacity:0" />
+        &lt;stop offset="100%" style="stop-color:rgb(0,0,255);stop-opacity:1"/>
+        &lt;/radialGradient>
+    &lt;/defs>
+    &lt;ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad2)"/>
+&lt;/svg&gt; </code></pre>
+
+<svg height="150" width="500">
+    <defs>
+      <radialGradient id="grad2" cx="20%" cy="30%" r="30%" fx="50%" fy="50%">
+        <stop offset="0%" style="stop-color:rgb(255,255,255);
+        stop-opacity:0" />
+        <stop offset="100%" style="stop-color:rgb(0,0,255);stop-opacity:1"/>
+      </radialGradient>
+    </defs>
+    <ellipse cx="200" cy="70" rx="85" ry="55" fill="url(#grad2)"/>
+  </svg>
+        </article>
+        </section>
+    </main>
+    <footer>
+        <div>Jaime Rabasco Ronda</div>
+        <a href="https://twitter.com/jaimerr" class="social"><img src="icon/twitter.svg" alt="Twitter"></a>
+        <a href="https://github.com/jaimerabasco" class="social"><img src="icon/github.svg" alt="GitHub"></a>
+    </footer>
+</body>
+<svg height="0">
+    <filter id="mifiltro" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="8"/>
+    </filter>
+    <filter id="granulado">
+        <feTurbulence baseFrequency="0.60,0.90" result="colorNoise"></feTurbulence>
+        <feColorMatrix in="colorNoise" type="matrix" values=".33 .33 .33 0 0 .33 .33 .33 0 0 .33 .33 .33 0 0 0 0 0 1 0"></feColorMatrix>
+        <feComposite operator="in" in2="SourceGraphic" result="monoNoise"></feComposite>
+        <feBlend in="SourceGraphic" in2="monoNoise" mode="multiply"></feBlend>
+    </filter>
+</svg>
+</html>

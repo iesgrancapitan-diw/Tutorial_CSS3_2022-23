@@ -1,0 +1,301 @@
+.transformaciones-original {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 1px dotted black;
+  text-align: center;
+}
+
+#transformaciones-rotate{
+  background-color: darkviolet;
+  width: 100px;
+  height: 100px;
+  transform: rotate(120deg);
+  font-size: 11px;
+}
+
+#transformaciones-rotateX{
+  background-color: darkviolet;
+  width: 100px;
+  height: 100px;
+  transform: rotateX(50deg);
+  font-size: 11px;
+}
+
+#transformaciones-rotateY{
+  background-color: darkviolet;
+  width: 100px;
+  height: 100px;
+  transform: rotateY(50deg);
+  font-size: 11px;
+}
+
+#transformaciones-rotateZ{
+  background-color: darkviolet;
+  width: 100px;
+  height: 100px;
+  transform: rotateZ(50deg);
+  font-size: 11px;
+}
+
+#transformaciones-rotate3d{
+  background-color: darkviolet;
+  width: 100px;
+  height: 100px;
+  transform: rotate3d(3, 1, -1, 120deg);
+  font-size: 11px;
+}
+
+#transformaciones-matrix {
+  color: white;
+  background-color: darkviolet;
+  font-size: 0.75rem;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  width: 100px;
+  height: 100px;
+  transform: matrix(2, 0.5, -0.5, 1, 180, 0);
+}
+
+#transformaciones-matrix3d {
+  color: white;
+  background-color: darkviolet;
+  font-size: 0.75rem;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 75px;
+  width: 100px;
+  height: 100px;
+  transform: matrix3d(2,-1,-5,0,0,1.5,7,0,2,0,4,0,170,20,1.4,1.1);
+}
+
+#transformaciones-skew {
+  color: white;
+  background-color: darkviolet;
+  font-size: 0.75rem;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  transform: translateX(130px) skew(20deg, 10deg);
+}
+
+#transformaciones-skewX {
+  color: white;
+  background-color: darkviolet;
+  font-size: 0.75rem;
+  height: 100px; 
+  width: 100px;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  transform: translateX(130px) skewX(20deg);
+}
+
+#transformaciones-skewY {
+  color: white;
+  background-color: darkviolet;
+  font-size: 0.75rem;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  transform: translateX(130px) skewY(20deg);
+}
+
+#transformaciones-scale {
+  color: white;
+  font-size: 0.75rem;
+  text-align: center;
+  background-color: darkviolet;
+  width: 100px;
+  height: 100px;
+  transform: scale(0.6);
+}
+
+#transformaciones-scaleX {
+  color: white;
+  font-size: 0.75rem;
+  text-align: center;
+  background-color: darkviolet;
+  width: 100px;
+  height: 100px;
+  transform: scaleX(2) translate(100px) ;
+}
+
+#transformaciones-scaleY {
+  margin-top: 59px;
+  margin-bottom: 60px;
+  color: white;
+  font-size: 0.75rem;
+  text-align: center;
+  background-color: darkviolet;
+  width: 100px;
+  height: 100px;
+  transform: scaleY(2) translate(120px);
+}
+
+#transformaciones-scaleZ{
+  color: white;
+  font-size: 0.75rem;
+  text-align: center;
+  background-color: darkviolet;
+  width: 100px;
+  height: 100px;
+  transform: perspective(400px) scaleZ(2) translateZ(-100px);
+}
+
+#transformaciones-scale3d{
+  color: white;
+  font-size: 0.75rem;
+  text-align: center;
+  background-color: darkviolet;
+  width: 100px;
+  height: 100px;
+  transform: perspective(500px) scale3d(3, 0.8,0.5) rotateY(70deg) translate(120px);
+}
+
+#transformaciones-translateX {
+  color: white;
+  background-color: darkviolet;
+  font-size: 0.75rem;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  margin-bottom: 100px;
+  transform: translateX(120px);
+}
+
+#transformaciones-translateXY {
+  color: white;
+  background-color: darkviolet;
+  font-size: 0.75rem;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  margin-bottom: 100px;
+  transform: translate(120px, 40px);    
+}
+
+#transformaciones-translateY {
+  color: white;
+  background-color: darkviolet;
+  font-size: 0.75rem;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  margin-bottom: 100px;
+  transform: translateY(105px);
+}
+
+#transformaciones-translate3d {
+  color: white;
+  background-color: darkviolet;
+  font-size: 0.75rem;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  margin-bottom: 100px;
+  transform: perspective(500px) translate3d(110px, 50px, 180px);
+}
+
+#transformaciones-translateZ {
+  color: white;
+  background-color: darkviolet;
+  font-size: 0.75rem;  
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  margin-bottom: 100px;
+  transform: translateX(120px) perspective(500px) translateZ(60px);
+}
+
+#contenedor-preserve3d {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+#box1-preserve3d {
+  padding: 50px;
+  position: absolute;
+  border: 1px solid black;
+  background-color: red;
+  transform: rotateY(60deg);
+  transform-style: preserve-3d;
+}
+
+#box2-preserve3d {
+  padding: 40px;
+  position: absolute;
+  border: 1px solid black;
+  background-color: darkviolet;
+  transform: rotateY(-60deg);
+}
+
+#contenedor-flat {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+#box1-flat {
+  padding: 50px;
+  position: absolute;
+  border: 1px solid black;
+  background-color: red;
+  transform: rotateY(60deg);
+  transform-style: flat;
+}
+
+#box2-flat {
+  padding: 40px;
+  position: absolute;
+  border: 1px solid black;
+  background-color: darkviolet;
+  transform: rotateY(-60deg) translateX(-30px);
+}
+
+#transformaciones-perspective{
+  color: white;
+  font-size: 0.75rem;
+  text-align: center;
+  background-color: darkviolet;
+  width: 100px;
+  height: 100px;
+  transform: translateX(120px) perspective(400px) rotateY(45deg);
+}
+
+
+#transformaciones-origin{
+  background-color: darkviolet;
+  width: 100px;
+  height: 100px;
+  transform: translateX(120px) skewX(30deg);
+  transform-origin: 100% -30%;
+  font-size: 11px;
+}
+
+#svg{
+  width:30vh;
+  margin: auto;
+}
+
+#box{
+  transform-origin:50% 50%;
+  transform-box: fill-box;
+  animation: rotateBox 3s linear infinite;
+}
+
+@keyframes rotateBox {
+to {
+  transform: rotate(360deg);
+}
+}

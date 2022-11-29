@@ -1,0 +1,215 @@
+.transiciones_transition-delay {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition-duration: 3s;
+    transition-delay: 1s;
+}
+
+.transiciones_transition-delay:hover {
+    width: 300px;
+}
+
+.transiciones_transition-property {
+    font-size: 14px;
+    width: 75px;
+    height: 75px;
+    background: rgb(255, 174, 1);
+    transition-property: width,height,font-size;
+    transition-duration: 2s;
+}
+
+.transiciones_transition-property:hover {
+    font-size: 25px;
+    width: 250px;
+    height: 120px;
+}
+
+.transiciones_transition {
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #0000FF;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.transiciones_transition:hover {
+    background-color: #c001b6;
+    width: 200px;
+    height: 200px;
+    transform: rotate(180deg);
+}
+
+.transiciones_transition-duration {
+    width: 6em;
+    height: 3em;
+    background-color: #0000FF;
+    color: white;
+    font-weight: 300;
+    transition-duration: 3s;
+}
+
+.transiciones_transition-duration:hover {
+    background-color: #f8f403;
+    color: black;
+    width: 200px;
+    height: 200px;
+}
+
+.transiciones_transition-timing-function > #transiciones_transition-timing-function_ease {
+    width: 100px;
+    height: 50px;
+    background: red;
+    color: white;
+    font-weight: bold;
+    transition: width 4s;
+}
+
+.transiciones_transition-timing-function:hover > #transiciones_transition-timing-function_ease {
+    width: 500px;
+    transition-timing-function: ease;
+}
+
+.transiciones_transition-timing-function > #transiciones_transition-timing-function_easein {
+    width: 100px;
+    height: 50px;
+    background: red;
+    color: white;
+    font-weight: bold;
+    transition: width 4s;
+}
+
+.transiciones_transition-timing-function:hover > #transiciones_transition-timing-function_easein {
+    width: 500px;
+    transition-timing-function: ease-in;
+}
+
+.transiciones_transition-timing-function > #transiciones_transition-timing-function_easeout {
+    width: 100px;
+    height: 50px;
+    background: red;
+    color: white;
+    font-weight: bold;
+    transition: width 4s;
+}
+
+.transiciones_transition-timing-function:hover > #transiciones_transition-timing-function_easeout {
+    width: 500px;
+    transition-timing-function: ease-out;
+}
+
+.transiciones_transition-timing-function > #transiciones_transition-timing-function_easeinout {
+    width: 100px;
+    height: 50px;
+    background: red;
+    color: white;
+    font-weight: bold;
+    transition: width 4s;
+}
+
+.transiciones_transition-timing-function:hover > #transiciones_transition-timing-function_easeinout {
+    width: 500px;
+    transition-timing-function: ease-in-out;
+}
+
+.transiciones_transition-timing-function > #transiciones_transition-timing-function_linear {
+    width: 100px;
+    height: 50px;
+    background: red;
+    color: white;
+    font-weight: bold;
+    transition: width 4s;
+}
+
+.transiciones_transition-timing-function:hover > #transiciones_transition-timing-function_linear {
+    width: 500px;
+    transition-timing-function: linear;
+}
+
+.transiciones_transition-timing-function > #transiciones_transition-timing-function_cb {
+    width: 100px;
+    height: 50px;
+    background: red;
+    color: white;
+    font-weight: bold;
+    transition: width 4s;
+}
+
+.transiciones_transition-timing-function:hover > #transiciones_transition-timing-function_cb {
+    width: 500px;
+    transition-timing-function: cubic-bezier(0.2, -2, 0.8, 2);
+}
+
+.transiciones_transition-timing-function > #transiciones_transition-timing-function_jump-start {
+    width: 100px;
+    height: 50px;
+    background: red;
+    color: white;
+    font-weight: bold;
+    transition: width 4s;
+}
+
+.transiciones_transition-timing-function:hover > #transiciones_transition-timing-function_jump-start {
+    width: 500px;
+    transition-timing-function: steps(5, jump-start);
+}
+
+.transiciones_transition-timing-function > #transiciones_transition-timing-function_jump-end {
+    width: 100px;
+    height: 50px;
+    background: red;
+    color: white;
+    font-weight: bold;
+    transition: width 4s;
+}
+
+.transiciones_transition-timing-function:hover > #transiciones_transition-timing-function_jump-end {
+    width: 500px;
+    transition-timing-function: steps(5, jump-end);
+}
+
+.transiciones_transition-timing-function > #transiciones_transition-timing-function_jump-none {
+    width: 100px;
+    height: 50px;
+    background: red;
+    color: white;
+    font-weight: bold;
+    transition: width 4s;
+}
+
+.transiciones_transition-timing-function:hover > #transiciones_transition-timing-function_jump-none {
+    width: 500px;
+    transition-timing-function: steps(5, jump-none);
+}
+
+.transiciones_transition-timing-function > #transiciones_transition-timing-function_jump-both {
+    width: 100px;
+    height: 50px;
+    background: red;
+    color: white;
+    font-weight: bold;
+    transition: width 4s;
+}
+
+.transiciones_transition-timing-function:hover > #transiciones_transition-timing-function_jump-both {
+    width: 500px;
+    transition-timing-function: steps(5, jump-both);
+}
+
+.transiciones_transition-duration{
+	width: 6em;
+	height: 3em;
+	background-color: #0000FF;
+	color: white;
+    font-weight: 300;
+	transition-duration: 3s;
+  }
+
+.transiciones_transition-duration:hover {
+	background-color: #f8f403;
+	color: black;
+	width: 200px;
+	height: 200px;
+  }

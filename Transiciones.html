@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>TUTORIAL CSS3 - 2022/2023 - Diseño de Interfaces Web - CFGS DAW - IES Gran Capitán</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="css/transiciones.css">
+
+    <script src="js/prism.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">TUTORIAL CSS3 - 2022/2023</a></h1>
+        <h2><img src="icon/language-css3.svg"></h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Bordes.html">Bordes</a></li>
+            <li><a href="Fondos.html">Fondos</a></li>
+            <li><a href="Efectos_texto.html">Fuentes y Ef Texto</a></li>
+            <li><a href="Transformaciones.html">Transformac.</a></li>
+            <li><a href="Transiciones.html">Transiciones</a></li>
+            <li><a href="Animaciones.html">Animaciones</a></li>
+            <li><a href="Col_mult.html">Col Múltiples</a></li>
+            <li><a href="Color.html">Color y Degradado</a></li>
+            <li><a href="Pseudos_Css3.html">Pseudos CSS3</a></li>
+            <li><a href="Svg_filter.html">Filter y SVG</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <h2>TUTORIAL CSS3 - Transiciones</h2>
+            <h3>Las transiciones te permiten cambiar el valor propiedades de forma fluida durante un tiempo determinado.</h3>
+        </div>
+
+        <section>
+            <article>
+                <h3>transition-duration</h3>
+                <p>Especifica cuántos segundos o milisegundos tarda en completarse un efecto de transición.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">transition-duration: [duración de la transición]s;</code></pre>
+                <p>Admite de un valor: </p>
+                <ul>
+                    <li><span>time</span>: indica el tiempo en segundos o milisegundos que llevara hasta completar la
+                        transicion.
+                    </li>
+                </ul>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.transiciones_transition-duration {
+    width: 6em;
+    height: 3em;
+    background-color: #0000FF;
+    color: white;
+    font-weight: 300;
+    transition-duration: 3s;
+}
+
+.transiciones_transition-duration:hover {
+    background-color: #f8f403;
+    color: black;
+    width: 200px;
+    height: 200px;
+}</code></pre>
+                <div class="transiciones_transition-duration"></div>
+            </article>
+
+            <article>
+                <h3>transition-delay</h3>
+                <p>La propiedad de transition-delay especifica un retraso (en segundos) para el efecto de transición.
+                </p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">transition-delay: [el retardo en segundos]s;</code></pre>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.transiciones_transition-delay {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition-duration: 3s;
+    transition-delay: 1s;
+}
+                
+.transiciones_transition-delay:hover {
+    width: 300px;
+}</code></pre>
+                <p>Este sería el resultado del código de arriba, usamos la propiedad transition para darle una
+                    transición, esta propiedad se verá con más profundidad posteriormente.</p>
+                <div class="transiciones_transition-delay"></div>
+            </article>
+
+            <article>
+                <h3>transition-property</h3>
+                <p>Especifica el nombre o nombres de las propiedades CSS a las que se deben aplicar las transiciones.
+                    Sólo las propiedades listadas aquí son animadas durante las transiciones; los cambios en todas las
+                    demás propiedades ocurren instantáneamente como es habitual.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">transition-property: none|all|property|initial|inherit;</code></pre>
+                <br>
+                <p>Valores: </p>
+                <ul>
+                    <li><span>all:</span> Es el valor por defecto e indica que se verán afectadas por la transición
+                        todas las propiedades que se puedan.</li>
+                    <li><span>none:</span> Indica que no se aplicará la transición a ninguna propiedad</li>
+                    <li><span>property:</span> Nombre de la propiedad que se va a ver afectada; si son varias,
+                        separarlas con comas.</li>
+                    <li><span>initial:</span> Se utiliza para establecer una propiedad CSS a su valor predeterminado.
+                    </li>
+                    <li><span>inherit:</span> Se heredan las características del elemento padre</li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.transiciones_transition-property {
+    font-size: 14px;
+    width: 75px;
+    height: 75px;
+    background: rgb(255, 174, 1);
+    transition-property: width, height, font-size;
+    transition-duration: 2s;
+}
+                
+.transiciones_transition-property:hover {
+    font-size: 25px;
+    width: 250px;
+    height: 120px;
+}</code></pre>
+                Aquí el resultado del ejemplo del código fuente indicado arriba.
+                <div class="transiciones_transition-property">
+                    <p>Fuente</p>
+                </div>
+            </article>
+
+            <article>
+                <h3>transition-timing-function</h3>
+                <p>Especifica la curva de velocidad del efecto de transición.</p>
+                <p>Esta propiedad permite que un efecto de transición cambie de velocidad durante su duración.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">transition-timing-function: linear|ease|ease-in|ease-out|ease-in-out|step-start|step-end|steps(int,start|end|jumpstep)|cubic-bezier(n,n,n,n)|initial|inherit;</code></pre>
+                <p>Los posibles valores son: </p>
+                <ul>
+                    <li><span>linear</span>: Especifica un efecto de transición con la misma velocidad de principio a
+                        fin (equivalente a cubic-bezier (0,0,1,1))</li>
+                    <li><span>ease</span>: Valor por defecto. Especifica un efecto de transición con un inicio lento,
+                        luego rápido y luego un final lento (equivalente a cubic-bezier (0.25,0.1,0.25,1))</li>
+                    <li><span>ease-in</span>: Especifica un efecto de transición con un inicio lento (equivalente a
+                        cubic-bezier (0,0,0.58,1))</li>
+                    <li><span>ease-out</span>: Especifica un efecto de transición con un final lento (equivalente a
+                        cubic-bezier (0,0,0.58,1))</li>
+                    <li><span>ease-in-out</span>: Especifica un efecto de transición con un inicio y un final lentos
+                        (equivalente a cubic-bezier (0.42,0,0.58,1))</li>
+                    <li><span>step-start</span>: Equivalente a steps(1, start).</li>
+                    <li><span>step-end</span>: Equivalente a steps(1, end).</li>
+                    <li><span>steps(int,start|end|jumpterm)</span>: Especifica una función paso a paso, con dos
+                        parámetros. El
+                        primer parámetro especifica el número de intervalos en la función. Debe ser un número entero
+                        positivo. El segundo parámetro, que es opcional, es el valor "start" o "end", y
+                        especifica el punto en el que se produce el cambio de valores dentro del intervalo. Si se omite
+                        el segundo parámetro, se le asigna el valor "end".</li>
+                    <ul>
+                        <li><span>jump-start</span> la función continua a la izquierda, de modo que el primer salto
+                            ocurre cuando comienza la transición.</li>
+                        <li><span>jump-end</span> la función continua a la derecha, de modo que el primer salto ocurre
+                            cuando termina la transición.</li>
+                        <li><span>jump-none</span>No hay salto en ninguno de los extremos. En su lugar, se mantiene en
+                            la marca del 0% y en la marca del 100%, cada uno durante 1/n de la duración</li>
+                        <li><span>jump-both</span>Incluye pausas en las marcas 0% y 100%, agregando un paso durante el
+                            tiempo de transición.</li>
+                    </ul>
+                    <li><span>cubic-bezier(n,n,n,n)</span>:Puedes definir tus propios valores en la función
+                        cubic-bezier. Los valores posibles son valores numéricos de 0 a 1.</li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.transiciones_transition-timing-function_ease {
+    transition-timing-function: ease;
+}
+                
+.transiciones_transition-timing-function_easein {
+    transition-timing-function: ease-in;
+}
+                
+.transiciones_transition-timing-function_easeout {
+    transition-timing-function: ease-out;
+}
+                
+.transiciones_transition-timing-function_easeinout {
+    transition-timing-function: ease-in-out;
+}
+                
+.transiciones_transition-timing-function_linear {
+    transition-timing-function: linear;
+}
+                
+.transiciones_transition-timing-function_cb {
+     transition-timing-function: cubic-bezier(0.2, -2, 0.8, 2);
+}</code></pre>
+                <div class="transiciones_transition-timing-function">
+                    <div id="transiciones_transition-timing-function_ease">
+                        ease</div>
+                    <div id="transiciones_transition-timing-function_easein">
+                        ease-in</div>
+                    <div id="transiciones_transition-timing-function_easeout">
+                        ease-out</div>
+                    <div id="transiciones_transition-timing-function_easeinout">
+                        ease-in-out</div>
+                    <div id="transiciones_transition-timing-function_linear">
+                        linear</div>
+                    <div id="transiciones_transition-timing-function_cb">
+                        cubic bezier</div>
+                </div>
+                <p>Los siguientes ejemplos usan jump</p>
+                <pre class="line-numbers"><code class="language-css">.jump-start {
+    transition-timing-function: steps(5, jump-start);
+}
+
+.jump-end {
+    transition-timing-function: steps(5, jump-end);
+}
+
+.jump-none {
+    transition-timing-function: steps(5, jump-none);
+}
+
+.jump-both {
+    transition-timing-function: steps(5, jump-both);
+}</code></pre>
+                <div class="transiciones_transition-timing-function">
+                    <div id="transiciones_transition-timing-function_jump-start">
+                        jump-start</div>
+                    <div id="transiciones_transition-timing-function_jump-end">
+                        jump-end</div>
+                    <div id="transiciones_transition-timing-function_jump-none">
+                        jump-none</div>
+                    <div id="transiciones_transition-timing-function_jump-both">
+                        jump-both</div>
+                </div>
+            </article>
+
+            <article>
+                <h3>transition</h3>
+                <p>La propiedad transition es una propiedad abreviada de transition-property, transition-duration,
+                    transition-timing-function (en-US), y transition-delay. Permite definir la transición entre dos
+                    estados de un elemento. Hay diferentes estados que pueden ser definidos utilizando pseudo-clases
+                    como :hover o :active o aplicado dinámicamente usando JavaScript.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">transition: property duration timing-function delay;</code></pre>
+                <p>Admite de uno a cuatro valores, que son los siguientes: </p>
+                <ul>
+                    <li><span>transition-property:</span> especifica el nombre de la propiedad CSS sobre la que se
+                        hará la transicion.
+                    </li>
+                    <li><span>transition-duration:</span> especifica el tiempo el segundos o milisegundos que durará la
+                        transicion
+                    </li>
+                    <li><span>transition-timing-function:</span> da la velocidad de la curva de la transición</li>
+                    <li><span>transition-delay:</span> define cuando empezará la transición</li>
+                </ul>
+                <p>Para crear una transición con la propiedad transition y usando el shorthand se debe indicar la
+                    propiedad del elemento
+                    a la que se desea aplicar la transición seguida de las propiedades de transiciones que se le desea
+                    aplicar (tiempo, retardo,
+                    curva, etc.) no es necesario poner todas las proiedades de transiciones pero al menos si la
+                    propiedad del elemento para saber que se
+                    desea cambiar. Estas propiedades del elemento se pueden separar en bloques con el uso de "," entre
+                    las propiedades de transiciones solo basta
+                    separarlas con espacios.</p>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">/* Asi sería sin shorthand*/ 
+.transiciones_transition {
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #0000FF;
+    transition-property: width, height, background-color, transform;
+    transition-duration: 2s;
+}
+                    
+/* Así sería con shorthand*/
+.transiciones_transition {
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: #0000FF;
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.transiciones_transition:hover {
+    background-color: #c001b6;
+    width: 200px;
+    height: 200px;
+    transform: rotate(180deg);
+}</code></pre>
+                <div class="transiciones_transition"></div>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <div>Jaime Rabasco Ronda</div>
+        <a href="https://twitter.com/jaimerr" class="social"><img src="icon/twitter.svg" alt="Twitter"></a>
+        <a href="https://github.com/jaimerabasco" class="social"><img src="icon/github.svg" alt="GitHub"></a>
+    </footer>
+</body>
+
+</html>

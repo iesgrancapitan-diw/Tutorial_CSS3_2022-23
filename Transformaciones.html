@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>
+      TUTORIAL CSS3 - 2022/2023 - Diseño de Interfaces Web - CFGS DAW - IES Gran Capitán
+    </title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/prism.css" />
+    <link rel="stylesheet" href="css/transformaciones.css" />
+    <script src="js/prism.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1><a href="index.html">TUTORIAL CSS3 - 2022/2023</a></h1>
+      <h2><img src="icon/language-css3.svg" /></h2>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="Bordes.html">Bordes</a></li>
+        <li><a href="Fondos.html">Fondos</a></li>
+        <li><a href="Efectos_texto.html">Fuentes y Ef Texto</a></li>
+        <li><a href="Transformaciones.html">Transformac.</a></li>
+        <li><a href="Transiciones.html">Transiciones</a></li>
+        <li><a href="Animaciones.html">Animaciones</a></li>
+        <li><a href="Col_mult.html">Col Múltiples</a></li>
+        <li><a href="Color.html">Color y Degradado</a></li>
+        <li><a href="Pseudos_Css3.html">Pseudos CSS3</a></li>
+        <li><a href="Svg_filter.html">Filter y SVG</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div>
+        <h2>TUTORIAL CSS3 - Transformaciones</h2>
+        <h3>
+          Propiedades para realizar todo tipo de efectos visuales, incluido 2D y
+          3D
+        </h3>
+      </div>
+      <section>
+        <!-- EXPLICACIÓN ROTATE -->
+        <article>
+          <h3>transform: rotate</h3>
+          <p>
+            Es una funcion a la cual le podemos indicar los grados de
+            inclinación
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: rotate(grados);</code></pre>
+          <p>Admite de un valor, que es el siguiente:</p>
+          <ul>
+            <li>
+              Un valor: Un ángulo en el que se rota el elemento. En caso
+              positivo, rotará en sentido horario, si es negativo, en sentido
+              antihorario.
+            </li>
+          </ul>
+          <h4>Ejemplos:</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">background-color: darkviolet;
+width: 100px;
+height: 100px;
+transform: rotate(120deg);</code></pre>
+          <div class="transformaciones-original">SIN ROTAR</div>
+          <div id="transformaciones-rotate">TRANSFORMACIÓN</div>
+        </article>
+
+        <article>
+          <h3>transform: rotateX</h3>
+          <p>
+            Es una funcion CSS la cual rota un elemento alrededor del eje X sin
+            deformarlo (no influye en el eje Y)
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: rotateX(grados);</code></pre>
+          <p>Admite de un valor, que es el siguiente:</p>
+          <ul>
+            <li>
+              Un valor: Un ángulo en el que se rota el elemento. En caso
+              positivo, rotará en sentido horario, si es negativo, en sentido
+              antihorario.
+            </li>
+          </ul>
+          <h4>Ejemplos:</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">background-color: darkviolet;
+width: 100px;
+height: 100px;
+transform: rotateX(50deg);</code></pre>
+          <div class="transformaciones-original">SIN ROTAR</div>
+          <div id="transformaciones-rotateX">TRANSFORMACIÓN</div>
+        </article>
+
+        <article>
+          <h3>transform: rotateY</h3>
+          <p>
+            Es una funcion CSS la cual rota un elemento alrededor del eje Y sin
+            deformarlo (no influye en el eje X)
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: rotateY(x);</code></pre>
+          <p>Admite de un valor, que es el siguiente:</p>
+          <ul>
+            <li>
+              Un valor: Un ángulo en el que se rota el elemento. En caso
+              positivo, rotará en sentido horario, si es negativo, en sentido
+              antihorario.
+            </li>
+          </ul>
+          <h4>Ejemplos:</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">background-color: darkviolet;
+width: 100px;
+height: 100px;
+transform: rotateY(50deg);</code></pre>
+          <div class="transformaciones-original">SIN ROTAR</div>
+          <div id="transformaciones-rotateY">TRANSFORMACIÓN</div>
+        </article>
+
+        <article>
+          <h3>transform: rotateZ</h3>
+          <p>Es una funcion CSS la cual rota un elemento alrededor del eje Z</p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: rotateZ(grados);</code></pre>
+          <p>Admite de un valor, que es el siguiente:</p>
+          <ul>
+            <li>
+              Un valor: Un ángulo en el que se rota el elemento. En caso
+              positivo, rotará en sentido horario, si es negativo, en sentido
+              antihorario.
+            </li>
+          </ul>
+          <h4>Ejemplos:</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">background-color: darkviolet;
+width: 100px;
+height: 100px;
+transform: rotateZ(50deg);</code></pre>
+          <div class="transformaciones-original">SIN ROTAR</div>
+          <div id="transformaciones-rotateZ">TRANSFORMACIÓN</div>
+        </article>
+
+        <article>
+          <h3>transform: rotate3d</h3>
+          <p>
+            Es una funcion CSS la cual rota un elemento alrededor un eje fijo,
+            el cual al ser en 3D tendrá 3 puntos en las coordenadas,
+            describiendo así el centro de rotación.
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: rotate3d(x, y, z, grados);</code></pre>
+          <p>Admite hasta cuatro valores, que son los siguientes:</p>
+          <ul>
+            <li>
+              Primer valor: Define la coordenada X para el centro de rotación.
+            </li>
+            <li>
+              Segundo valor: Define la coordenada Y para el centro de rotación.
+            </li>
+            <li>
+              Tercer valor: Define la coordenada Z para el centro de rotación.
+            </li>
+            <li>
+              Cuarto valor: Un ángulo en el que se rota el elemento. En caso
+              positivo, rotará en sentido horario, si es negativo, en sentido
+              antihorario.
+            </li>
+          </ul>
+          <h4>Ejemplos:</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">background-color: darkviolet;
+width: 100px;
+height: 100px;
+transform: rotate3d(3, 1, -1, 120deg);</code></pre>
+          <div class="transformaciones-original">SIN ROTAR</div>
+          <div id="transformaciones-rotate3d">TRANSFORMACIÓN</div>
+        </article>
+
+        <!-- FIN DE ROTATE -->
+
+        <!-- INICIO ATRIBUTO TRANSLATE -->
+        <article>
+          <h3>transform: translate</h3>
+          <p>
+            Permite mover el elemento u objeto a lo largo del eje de coordenadas
+            en un plano 2D,es decir, a lo largo del eje X e Y .
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: translate(x, y);</code></pre>
+          <p>Admite dos valores, que son los siguientes:</p>
+          <ul>
+            <li>
+              1º Valor: valor que representa el translado a lo largo del eje de
+              absisas, es decir, a lo largo del Eje X.
+            </li>
+            <li>
+              2º Valor: valor que representa el translado a lo largo del eje de
+              ordenadas, es decir, a lo largo del Eje Y
+            </li>
+          </ul>
+          <p>
+            Cuando hablamos del valor "y", si no se especifíca, su valor es 0.
+          </p>
+          <h4>Ejemplos:</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">background-color: darkviolet;
+height: 100px;
+width: 100px;
+transform: translate(120, 40);</code></pre>
+          <hr />
+          Aquí el resultado del ejemplo del código fuente puesto arriba, es
+          crear un cuadrado transladado 120px a lo largo del Eje X y 40px a lo
+          largo del eje Y.
+          <div class="transformaciones-original">ORIGINAL</div>
+          <div id="transformaciones-translateXY">TRANSLADADOXY</div>
+        </article>
+
+        <article>
+          <h3>transform: translateX</h3>
+          <p>
+            Permite mover el elemento u objeto a lo largo de la absisa, es
+            decir, a lo largo del Eje X
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: translateX(x);</code></pre>
+          <p>Admite un único valor:</p>
+          <ul>
+            <li>
+              1º: valor que reprenta el translado a lo largo del eje de absisas,
+              es decir, a lo largo del Eje X del cual admite un único valor
+            </li>
+          </ul>
+
+          <h4>Ejemplos:</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">background-color: darkviolet;
+height: 100px;
+width: 100px;
+transform: translateX(120px);</code></pre>
+          <hr />
+          Aquí el resultado del ejemplo del código fuente puesto arriba, es
+          crear un cuadrado transladado por 120px a lo largo del eje de absisas
+          (Eje X).
+          <div class="transformaciones-original">ORIGINAL</div>
+          <div id="transformaciones-translateX">TRANSLADADOX</div>
+        </article>
+
+        <article>
+          <h3>transform: translateY</h3>
+          <p>
+            Permite mover el elemento u objeto a lo largo del eje de ordenadas,
+            es decir, a lo largo del eje Y, del cual solo admite un único valor
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: translateY(y);</code></pre>
+          <p>Admite un único valor:</p>
+          <ul>
+            <li>
+              1º valor: valor que representa el translado a lo largo del eje de
+              ordenadas, es decir, a lo largo del Eje Y del cual admite un único
+              valor.
+            </li>
+          </ul>
+
+          <h4>Ejemplos:</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">background-color: darkviolet;
+height: 100px;
+width: 100px;          
+transform: translateX(105px);</code></pre>
+          <hr />
+          Aquí el resultado del ejemplo del código fuente puesto arriba, es
+          crear un cuadrado transladado hacia abajo unos 105px por el eje de
+          absisas, es decir, a lo largo del Eje Y.
+          <div class="transformaciones-original">ORIGINAL</div>
+          <div id="transformaciones-translateY">TRANSLADADOY</div>
+        </article>
+
+        <article>
+          <h3>transform: translate3D</h3>
+          <p>
+            Dentro del CSS hay una función llamada translate3d() donde mueve el
+            elemento en un espacio 3D, por lo que lo movera en un espacio en el
+            que hay 3 vectores( vectores: "x", "y" y "z")
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: translate3d(x, y, z);</code></pre>
+          <p>Admite tres valores (debido a los vectores que representa.):</p>
+          <ul>
+            <li>
+              1º valor: representa el vector del eje de absisa (Eje X) valorado
+              en px
+            </li>
+            <li>
+              2º valor: representa el vector del eje de ordenadas (Eje Y)
+              valorado en px
+            </li>
+            <li>
+              3º valor: representa el vector del eje cota (Eje Z) valorado en px
+            </li>
+          </ul>
+
+          <h4>Ejemplos:</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">background-color: darkviolet;
+height: 100px;
+width: 100px;
+transform: perspective(500 px) translate3d(110px, 50px, 180px);</code></pre>
+          <hr />
+          Aqui el resultado del ejemplo del código fuente puesto arriba, es
+          crear un cuadrado y moverlo en un espacio 3D, movido por 3 vectores,
+          necesitas hacer un perspective que se ha explicado con anterioridad.
+          <div class="transformaciones-original">ORIGINAL</div>
+          <div id="transformaciones-translate3d">TRANSLADADO3D</div>
+        </article>
+
+        <article>
+          <h3>transform: translateZ</h3>
+          <p>
+            La función translateZ nos ha permitido posicionar el elemento a lo
+            largo del eje cota, es decir, a lo largo del Eje Z, por supuesto lo
+            estamos transladando en un espacio en 3D
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: translateZ(z);</code></pre>
+          <p>Admite un valor:</p>
+          <ul>
+            <li>
+              Único valor: representa el vector del eje cota (Eje Z) valorado en
+              px
+            </li>
+          </ul>
+
+          <h4>Ejemplos:</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">background-color: darkviolet;
+height: 100px;
+width: 100px;
+transform: perspective(500 px) translateZ(60px);</code></pre>
+          <hr />
+          Antes de poner los ejemplos moveremos con un translateX al segundo
+          cuadrado creado para que se pueda ver mejor la diferencia y el uso del
+          translateZ, una vez movido vemos como hemos movido dicho elemento u
+          objeto a lo largo del Eje Z por su respectivo vector, en este caso lo
+          hemos movido 60px por dicho vector.(Hemos usado tambien la función
+          perspective al tratarse de moverlo en un plano 3D tenemos que usarlo)
+
+          <div class="transformaciones-original">ORIGINAL</div>
+          <div id="transformaciones-translateZ">TRANSLADADOZ</div>
+        </article>
+
+        <!-- FIN ATRIBUTO TRANSLATE -->
+
+        <!-- INICIO SCALE -->
+        <article>
+          <h3>transform: scale</h3>
+          <p>
+            define una transformación que modifica el tamaño de un elemento en
+            el plano 2D.
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: [scale(sx) scale(sx, sy)]</code></pre>
+          <p>Admite de uno a dos valores, que son los siguientes:</p>
+          <ul>
+            <li>Con un valor: se aplica en un eje</li>
+            <li>
+              Dos valores: aplicará al eje X el primero y el segundo al eje Y
+            </li>
+          </ul>
+
+          <h4>Ejemplo: Escalar dimensiones X e Y al mismo tiempo</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">background-color: darkviolet;
+width: 80px;
+height: 80px;
+transform: scale(0.6);</code></pre>
+          <div class="transformaciones-original">ORIGINAL</div>
+          <div id="transformaciones-scale">TRANSFORMADO</div>
+        </article>
+
+        <article>
+          <h3>transform: scaleX</h3>
+          <p>
+            Es una función CSS la cual transforma un elemento cambiando el
+            tamaño a lo largo del eje X
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: scaleX(valor)</code></pre>
+          <p>Admite un valor:</p>
+          <ul>
+            <li>Este valor se aplica al eje X</li>
+          </ul>
+
+          <h4>Ejemplo:</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">background-color: darkviolet;
+width: 100px;
+height: 100px;
+transform: scaleX(2) translate(100px) ;</code></pre>
+          <p>
+            En el ejemplo hemos usado 'translate' lo cuál se explicará mas tarde
+          </p>
+          <div class="transformaciones-original">ORIGINAL</div>
+          <div id="transformaciones-scaleX">TRANSFORMADO</div>
+        </article>
+
+        <article>
+          <h3>transform: scaleY</h3>
+          <p>
+            Es una función CSS la cual transforma un elemento cambiando el
+            tamaño a lo largo del eje Y
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: scaleY(valor)</code></pre>
+          <p>Admite un valor:</p>
+          <ul>
+            <li>Este valor se aplica al eje Y</li>
+          </ul>
+
+          <h4>Ejemplo:</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">background-color: darkviolet;
+width: 100px;
+height: 100px;
+transform: scaleY(2) translate(120px);</code></pre>
+          <div class="transformaciones-original">ORIGINAL</div>
+          <div id="transformaciones-scaleY">TRANSFORMADO</div>
+        </article>
+
+        <article>
+          <h3>transform: scaleZ</h3>
+          <p>
+            Es una función CSS la cual transforma un elemento cambiando el
+            tamaño a lo largo del eje Z
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: scaleZ(valor)</code></pre>
+          <p>Admite un valor:</p>
+          <ul>
+            <li>
+              Dicho valor representa la escala que se aplicará en la coordenada
+              z de cada punto del elemento
+            </li>
+          </ul>
+
+          <h4>Ejemplo:</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">background-color: darkviolet;
+width: 100px;
+height: 100px;
+transform: perspective(400px) scaleZ(2) translateZ(-100px);</code></pre>
+          <div class="transformaciones-original">ORIGINAL</div>
+          <div id="transformaciones-scaleZ">TRANSFORMADO</div>
+        </article>
+
+        <article>
+          <h3>transform: scale3d</h3>
+          <p>
+            Es una función CSS que deine la transformacion que cabia el tamaño
+            de un elemento en el espacio 3D
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: scale3d(sx, sy, sz)</code></pre>
+          <p>Admite tres valores:</p>
+          <ul>
+            <li>
+              sx: es un número que representa la abscisa del vector de escala
+            </li>
+            <li>
+              sy: es un número que representa el orden del vector de escala
+            </li>
+            <li>
+              sz: es un número que representa el componente z del vector de
+              escala
+            </li>
+          </ul>
+
+          <h4>Ejemplo:</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">background-color: darkviolet;
+width: 100px;
+height: 100px;
+transform: perspective(500px) scale3d(3, 0.8,0.5) rotateY(70deg) translate(120px);</code></pre>
+          <div class="transformaciones-original">ORIGINAL</div>
+          <div id="transformaciones-scale3d">TRANSFORMADO</div>
+        </article>
+
+        <!-- FIN DE ATRIBUTO SCALE -->
+
+        <!-- INICIO ATRIBUTO PERSPECTIVE -->
+        <article>
+          <h3>transform: perspective</h3>
+          <p>
+            Esta propiedad determina la distancia entre el plano z y el usuario
+            para dar algo de perspectiva al elemento 3D
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: perspective(length);</code></pre>
+          <p>Admite un solo valor:</p>
+          <ul>
+            <li>
+              none: Palabra clave la cual indica que no se aplicará ninguna
+              transfomación
+            </li>
+            <li>Numerico: La distancia del usuario al plano z</li>
+          </ul>
+
+          <h4>Ejemplos:</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">background-color: darkviolet;
+width: 100px;
+height: 100px;
+transform: translateX(120px) perspective(400px) rotateY(45deg);</code></pre>
+          <div class="transformaciones-original">ORIGINAL</div>
+          <div id="transformaciones-perspective">TRANSFORMADO</div>
+        </article>
+
+        <!-- FIN ATRIBUTO PERSPECTIVE -->
+
+        <!-- INICIO SKEW -->
+        <article>
+          <h3>transform: skew</h3>
+          <p>
+            Función que provoca una deformación en un plano 2D al objeto, a lo
+            largo del Eje X y del Eje Y
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: skew(x, y);</code></pre>
+          <p>
+            Admite dos valores, ambos medidios en grados(deg), que son los
+            siguientes:
+          </p>
+          <ul>
+            <li>
+              1º Valor: Ángulo que tomaríamos para deformar el objeto a lo largo
+              del eje de absisa, es decir, a lo largo del Eje X
+            </li>
+            <li>
+              2º Valor: Ángulo que tomaríamos para deformar el objeto a lo largo
+              del eje de ordenadas, es decir, a lo largo del Eje Y, en caso de
+              no poner nada en este apartado se tomará con un 0 por defecto
+            </li>
+          </ul>
+
+          <h4>Ejemplos:</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">background-color: darkviolet;
+width: 100px;
+height: 100px;
+transform: skew(20deg, 10deg);</code></pre>
+          <hr />
+          Segun el código fuente desarrollado arriba tendríamos una deformación
+          del elemento u objeto a lo largo del Eje X por 20deg y con respecto al
+          Eje Y esta deformado 10deg, para que sea mas dinámica y óptica le
+          hemos hecho un translateX al cuadrado deformado para una mayor
+          visualización de los contenidos.
+          <div class="transformaciones-original">ORIGINAL</div>
+          <div id="transformaciones-skew">SKEW</div>
+        </article>
+
+        <article>
+          <h3>transform: skewX</h3>
+          <p>
+            Función que aplica una deformación en un plano 2D al objeto a lo
+            largo del Eje de absisas, es decir, a lo largo del Eje X
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: skewX(x);</code></pre>
+          <p>Admite un valor medido en grados, que es el siguiente:</p>
+          <ul>
+            <li>
+              Único valor: este valor es el ángulo que utilizaremos para
+              deformar el elemento o objeto a lo largo del Eje X.
+            </li>
+          </ul>
+
+          <h4>Ejemplos:</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">background-color: darkviolet;
+height: 100px;
+width: 100px;
+transform: skewX(20deg);</code></pre>
+          <hr />
+          Segun el código fuente desarrollado arriba tendríamos una deformación
+          del elemento u objeto a lo largo del Eje X por 20deg, para que sea mas
+          dinámica y optica le hemos hecho un translateX al cuadrad deformado
+          para una mayor visualización de los contenidos.
+          <div class="transformaciones-original">ORGINAL</div>
+          <div id="transformaciones-skewX">SKEWX</div>
+        </article>
+
+        <article>
+          <h3>transform: skewY</h3>
+          <p>
+            Función que aplica una deformación en un plano 2D al objeto a lo
+            largo del Eje de ordenadas, es decir, a lo largo del Eje Y
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: skewY(y);</code></pre>
+          <p>Admite un valor medido en grados, que es el siguiente:</p>
+          <ul>
+            <li>
+              Único valor: este valor es el ángulo que utilizaremos para
+              deformar el elemento o objeto a lo largo del Eje Y.
+            </li>
+          </ul>
+          <h4>Ejemplos:</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">background-color: darkviolet;
+height: 100px;
+width: 100px;
+transform: skewY(20deg);</code></pre>
+          <hr />
+          Segun el código fuente desarrollado arriba tendríamos una deformación
+          del elemento u objeto a lo largo del Eje Y por 20deg, para que sea mas
+          dinámica y óptica le hemos hecho un translateX al cuadrado deformado
+          para una mayor visualización de los contenidos.
+          <div class="transformaciones-original">ORIGINAL</div>
+          <div id="transformaciones-skewY">SKEWY</div>
+        </article>
+
+        <!-- FIN SKEW -->
+
+        <!-- INICIO ATRIBUTO STYLE -->
+        <article>
+          <h3>transform-style:</h3>
+          <p>
+            Indica si el elemento hijo está posicionado en el espacio
+            (preserve-3d) o integrado en el plano (flat)
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform-style: preserve-3d;
+transform-style: flat;</code></pre>
+          <p>Admite los siguientes valores:</p>
+          <ul>
+            <li>Único: Solo puede ser preserve-3d o flat</li>
+            <li>preserve-3d: El elemento hijo estará posicionado en 3D</li>
+            <li>
+              flat: Indica que el elemento hijo estará posicionado en el mismo
+              plano que el elemento padre.
+            </li>
+          </ul>
+          <h4>Ejemplos:</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">#contenedor-preserve3d {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin: 100px;
+    padding: 10px;
+    border: 1px solid black;
+}
+            
+#box1-preserve3d {
+    padding: 50px;
+    position: absolute;
+    border: 1px solid black;
+    background-color: red;
+    transform: rotateY(60deg);
+    transform-style: preserve-3d;
+}
+            
+#box2-preserve3d {
+    padding: 40px;
+    position: absolute;
+    border: 1px solid black;
+    background-color: darkviolet;
+    transform: rotateY(-60deg);
+}</code></pre>
+
+          <div id="contenedor-preserve3d">
+            contenedor-preserve3d
+            <div id="box1-preserve3d">
+              box1-preserve3d
+              <div id="box2-preserve3d">box2-preserve3d</div>
+            </div>
+          </div>
+
+          <pre
+            class="line-numbers"
+          ><code class="language-css">#contenedor-flat {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin: 100px;
+    padding: 10px;
+    border: 1px solid black;
+}
+            
+#box1-flat {
+    padding: 50px;
+    position: absolute;
+    border: 1px solid black;
+    background-color: red;
+    transform: rotateY(60deg);
+    transform-style: flat;
+}
+            
+#box2-flat {
+    padding: 40px;
+    position: absolute;
+    border: 1px solid black;
+    background-color: darkviolet;
+    transform: rotateY(-60deg);
+}</code></pre>
+          <div id="contenedor-flat">
+            contenedor-flat
+            <div id="box1-flat">
+              box1-flat
+              <div id="box2-flat">box2-flat</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- FIN DEL ATRIBUTO STYLE -->
+
+        <!-- Inicio atributo matrix -->
+        <article>
+          <h3>transform: matrix</h3>
+          <p>
+            La función matrix combina todos los métodos de transformación 2D en
+            uno, tomando 6 parámetros.
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: matrix(scaleX(),skewY(), skewX(), scaleY(),translateX(), translateY());</code></pre>
+          <p>
+            Admite 6 parámetros que serían todos los dichos anteriormente (No
+            tienes que poner la función de cada uno, solo poner los valores de
+            ellos):
+          </p>
+          <ul>
+            <li>Los 4 primero valores: Describen la transformación linear</li>
+            <li>
+              Los 2 último valores: Describen el movimiento del a lo largo del
+              eje
+            </li>
+          </ul>
+          <p>
+            En caso de no poner ningun valor en algun caso no toma valores por
+            defecto, por lo que habría que poner siempre valores, en caso de no
+            querer un valor asignarle el 0.
+          </p>
+          <h4>Ejemplos:</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">background-color: darkviolet;
+height: 100px;
+width: 100px;
+transform: matrix(2, 0.5, -0.5, 1, 180, 0);</code></pre>
+          <hr />
+          En el ejemplo del código fuente de arriba tomamos 6 parámetros para
+          poder hacer una transformación en 2D con el fin de hacer en la
+          figura/elemento lo que deseemos dandole siempre que no quisieramos la
+          utilidad de una función el valor 0, porque al no ponerle un valor a
+          una función todo cambiaría.
+          <div class="transformaciones-original">ORIGINAL</div>
+          <div id="transformaciones-matrix">MATRIX</div>
+        </article>
+
+        <article>
+          <h3>transform: matrix3d</h3>
+          <p>
+            La función matrix3d combina todos los métodos de transformación 3D y
+            el uso de la función perspective() en uno, tomando 16 parámetros.
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: matrix3d(a1, b1, c1, d1, a2, b2, c2, d2, a3, b3, c3, d3, a4, b4, c4, d4);</code></pre>
+          <p>
+            Admite 16 parámetros que serían todos los dichos anteriormente
+            (Todos los parámetros serían recogidos por las funciones 3d -->
+            scale3d(), rotate3d(), rotateX(), rotateY(), rotateZ(), scaleZ(),
+            translate3d(), translateZ(), perspective()):
+          </p>
+          <ul>
+            <li>
+              Valores para la transformación lineal a aplicar al elemento u
+              objeto: a1, b1, c1, d1, a2, b2, c2, d2, a3, b3, c3, d3, d4
+            </li>
+            <li>
+              Valores para la traducción a aplicar al elemento u objeto: a4, b4,
+              c4
+            </li>
+          </ul>
+          <p>
+            Cuando creamos una transformación en 3D, podemos usar una de las
+            otras funciones de transformación 3D, o usar matrix3d con todos los
+            argumentos anteriormente citados.
+          </p>
+
+          <h4>Ejemplos:</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">background-color: darkviolet;
+width: 100px;
+height: 100px;
+transform: matrix3d(2,-1,-5,0,0,1.5,7,0,2,0,4,0,170,20,1.4,1.1);</code></pre>
+          <hr />
+          En el ejemplo del código fuente de arriba tomamos 16 parámetros para
+          poder hacer una transformación en 3D con el fin de crear en la
+          figura/elemento lo que deseemos, en caso de no querer usar un valor
+          tendrímos que poner como valor por defecto un 0, porque al no ponerle
+          un valor a una función todo cambiaría.
+          <div class="transformaciones-original">ORIGINAL</div>
+          <div id="transformaciones-matrix3d">MATRIX3D</div>
+        </article>
+
+        <!-- FIN MATRIX -->
+
+        <!-- EXPLICACIÓN ORIGIN -->
+        <article>
+          <h3>transform: origin</h3>
+          <p>
+            Esta transformación permite modificar el origen de las
+            transformaciones de un elemento
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform-origin: (y-offset, x-offset, z-offset);</code></pre>
+          <p>Admite 3 parámetros: que cada uno representa un eje:</p>
+          <ul>
+            <li>
+              1º y-offset: indica la distancia del borde superior de la caja se
+              establece el origen de la transformación se mide en length y
+              porcentage, también se puede valorizar con palabras claves como
+              top, bottom o center pero se usaría de diferente forma -->
+              y-offset-keyword
+            </li>
+            <li>
+              2º x-offset: indica la distancia al borde izquierdo de la caja se
+              establece el origen de la transformación se mide en length y
+              porcentage, también se puede valorizar con palabras claves como
+              left, right o center pero se usaría de difernete forma -->
+              x-offset-keyword
+            </li>
+            <li>
+              3º z-offset: indica que tan lejos del ojo del usuario se establece
+              el origen de posision z = 0, se mide en lenght y nunca en
+              porcentage (es una declaración no válida).
+            </li>
+            <li>
+              4º offset-keyword: usa palabras clave como left, right, top bottom
+              o center que describen el correspondiente desplazamiento
+            </li>
+          </ul>
+
+          <h4>Ejemplos:</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">background-color: darkviolet;
+width: 100px;
+height: 100px;
+transform: translateX(120px) skewX(30deg);
+transform-origin: 100% -30%;</code></pre>
+          <hr />
+          <div class="transformaciones-original">ORIGINAL</div>
+          <div id="transformaciones-origin">ORIGIN</div>
+        </article>
+
+        <article>
+          <h3>transform-box</h3>
+          <p>
+            La propiedad CSS transform-box define el cuadro de diseño con el que
+            se relacionan las propiedades transform y transform-origin.
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform-box: (Propiedad de transform-box);</code></pre>
+          <p>
+            La propiedad transform-box se especifica con una de las palabras
+            claves que se enumeran a continuación:
+          </p>
+          <ul>
+            <li>
+              content-box: el content-box se utiliza como cuadro de referencia.
+              Por ejemplo: El cuadro de referencia de una tabla es el border box
+              de la caja que lo contiene, no de la caja de la tabla.
+            </li>
+            <li>
+              border-box: el border-box se utiliza como cuadro de referencia.
+              Por ejemplo: El cuadro de referencia de una tabla es el border box
+              de la caja que lo contiene, no de la caja de la tabla.
+            </li>
+            <li>
+              fill-box: el cuadro delimitador del objeto se utiliza como cuadro
+              de referencia.
+            </li>
+            <li>
+              stroke-box: el cuadro delimitador del trazo se utiliza como cuadro
+              de referencia.
+            </li>
+            <li>
+              view-box: la ventana gráfica SVG más cercana se utiliza como
+              cuadro de referencia. Si se especifica un atributo viewBox para el
+              elemento de creación de la ventana gráfica SVG, el cuadro de
+              referencia se coloca en el origen del sistema de coordenadas
+              establecido por el atributo viewBox, y la dimensión del cuadro de
+              referencia se establece en los valores de ancho y alto del
+              atributo viewBox.
+            </li>
+          </ul>
+
+          <h4>Ejemplos:</h4>
+          <pre class="line-numbers"><code class="language-html">&lt;svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"&gt;	
+    &lt;g&gt;&lt;rect id="box" x="10" y="10" width="10" height="10" rx="1" ry="1" stroke="black" fill="none" /&gt;&lt;/g&gt;	
+&lt;/svg&gt;</code></pre>
+          <pre class="line-numbers"><code class="language-css">#svg{
+    width:30vh;
+    margin: auto;
+}
+
+#box {
+    transform-origin:50% 50%;
+    transform-box: fill-box;
+    animation: rotateBox 3s linear infinite;
+}
+
+@keyframes rotateBox {
+    to {
+        transform: rotate(360deg);
+}</code></pre>
+          <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+            <g>
+              <rect
+                id="box"
+                x="10"
+                y="10"
+                width="10"
+                height="10"
+                rx="1"
+                ry="1"
+                stroke="black"
+                fill="none"
+              />
+            </g>
+          </svg>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <div>Jaime Rabasco Ronda</div>
+      <a href="https://twitter.com/jaimerr" class="social"
+        ><img src="icon/twitter.svg" alt="Twitter"
+      /></a>
+      <a href="https://github.com/jaimerabasco" class="social"
+        ><img src="icon/github.svg" alt="GitHub"
+      /></a>
+    </footer>
+  </body>
+</html>

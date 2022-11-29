@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>TUTORIAL CSS3 - 2022/2023 - Diseño de Interfaces Web - CFGS DAW - IES Gran Capitán</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="css/col_mult.css">
+    <script src="js/prism.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">TUTORIAL CSS3 - 2022/2023</a></h1>
+        <h2><img src="icon/language-css3.svg"></h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Bordes.html">Bordes</a></li>
+            <li><a href="Fondos.html">Fondos</a></li>
+            <li><a href="Efectos_texto.html">Fuentes y Ef Texto</a></li>
+            <li><a href="Transformaciones.html">Transformac.</a></li>
+            <li><a href="Transiciones.html">Transiciones</a></li>
+            <li><a href="Animaciones.html">Animaciones</a></li>
+            <li><a href="Col_mult.html">Col Múltiples</a></li>
+            <li><a href="Color.html">Color y Degradado</a></li>
+            <li><a href="Pseudos_Css3.html">Pseudos CSS3</a></li>
+            <li><a href="Svg_filter.html">Filter y SVG</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <h2>TUTORIAL CSS3 - Columnas Múltiples</h2>
+            <h3>Propiedades para dar un formato de columnas múltiples a los elementos de un documento HTML</h3>
+        </div>
+
+        <section>
+            <article>
+                <h3 id="col_mult-column-count">column-count</h3>
+                <p>Establece el número de columnas en las que se debe dividir un elemento.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">column-count: número|auto|initial|inherit;</code></pre>
+                <p>Admite uno de estos cuatro valores:</p>
+                <ul>
+                    <li>número: El número de columnas en las que fluirá el contenido del elemento.</li>
+                    <li><span>initial:</span> (Valor predeterminado) El número de columnas
+                        vendrá determinado por otras propiedades,
+                        como por ejemplo, <a href="#col_mult-column-width">column-width</a>.</li>
+                    <li><span>initial:</span> Establece el valor predeterminado para esta propiedad.</li>
+                    <li><span>inherit:</span> Hereda el valor de esta propiedad del elemento padre.</li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">column-count: 3;</code></pre>
+                <div class="col_mult-colum-count-3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae velit laudantium adipisci esse
+                        voluptates deserunt eum ex, excepturi, amet, sequi praesentium fugiat fugit accusamus vel
+                        nostrum numquam neque repellat autem.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam repellat earum
+                        recusandae ad voluptates necessitatibus alias eaque unde expedita, iste, at quibusdam tenetur
+                        quis voluptatibus harum culpa a porro.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ad porro optio vel beatae
+                        rem quidem quasi blanditiis sint numquam ullam, maxime neque impedit, nobis id? Maxime, commodi!
+                        Commodi, quam?</p>
+                </div>
+                <pre class="line-numbers"><code class="language-css">column-count: 4;</code></pre>
+                <div class="col_mult-colum-count-4">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae velit laudantium adipisci esse
+                        voluptates deserunt eum ex, excepturi, amet, sequi praesentium fugiat fugit accusamus vel
+                        nostrum numquam neque repellat autem.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam repellat earum
+                        recusandae ad voluptates necessitatibus alias eaque unde expedita, iste, at quibusdam tenetur
+                        quis voluptatibus harum culpa a porro.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ad porro optio vel beatae
+                        rem quidem quasi blanditiis sint numquam ullam, maxime neque impedit, nobis id? Maxime, commodi!
+                        Commodi, quam?</p>
+                </div>
+            </article>
+
+            <article>
+                <h3>column-gap</h3>
+                <p>Establece la longitud del espacio horizontal entre columnas.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">column-gap: longitud|normal|initial|inherit;</code></pre>
+                <p>Admite uno de los siguientes valores:</p>
+                <ul>
+                    <li>longitud: valor formado por un número y una unidad, tanto absoluta como relativa.</li>
+                    <li><span>normal:</span> (Valor predeterminado) W3C sugiere 1em.</li>
+                    <li><span>initial:</span> Establece el valor predeterminado para esta propiedad.</li>
+                    <li><span>inherit:</span> Hereda el valor de esta propiedad del elemento padre.</li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">column-count: 4;
+column-gap: 5em;</code></pre>
+                <div class="col_mult-colum-gap-5em">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae velit laudantium adipisci esse
+                        voluptates deserunt eum ex, excepturi, amet, sequi praesentium fugiat fugit accusamus vel
+                        nostrum numquam neque repellat autem.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam repellat earum
+                        recusandae ad voluptates necessitatibus alias eaque unde expedita, iste, at quibusdam tenetur
+                        quis
+                        voluptatibus harum culpa a porro.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ad porro optio vel beatae rem
+                        quidem quasi blanditiis sint numquam ullam, maxime neque impedit, nobis id? Maxime, commodi!
+                        Commodi, quam?</p>
+                </div>
+                <pre class="line-numbers"><code class="language-css">column-count: 4;
+column-gap: 150px;</code></pre>
+                <div class="col_mult-colum-gap-150px">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae velit laudantium adipisci esse
+                        voluptates deserunt eum ex, excepturi, amet, sequi praesentium fugiat fugit accusamus vel
+                        nostrum numquam neque repellat autem.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam repellat earum
+                        recusandae ad voluptates necessitatibus alias eaque unde expedita, iste, at quibusdam tenetur
+                        quis
+                        voluptatibus harum culpa a porro.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ad porro optio vel beatae rem
+                        quidem quasi blanditiis sint numquam ullam, maxime neque impedit, nobis id? Maxime, commodi!
+                        Commodi, quam?</p>
+                </div>
+            </article>
+
+            <article>
+                <h3>column-fill</h3>
+                <p>Establece la forma de llenar las columnas, de forma equilibrada o no.
+                    El contenido se puede equilibrar o completar de forma secuencial.
+                    Sugerencia: si agrega una altura a un elemento de varias columnas, puede controlar cómo el
+                    contenido llena las columnas.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">column-fill: balance|auto|initial|inherit;</code></pre>
+                <p>Admite uno de los siguientes valores:</p>
+                <ul>
+                    <li><span>balance:</span> (Valor predeterminado) Llena cada columna con aproximadamente la misma
+                        cantidad de
+                        contenido, pero no permitirá que las columnas sean más altas que la altura (por lo tanto, las
+                        columnas pueden ser más cortas que la altura ya que el navegador distribuye el contenido de
+                        manera uniforme horizontalmente).</li>
+                    <li><span>initial:</span> Llena cada columna hasta que alcance la altura, y
+                        lo hace hasta que se quede sin contenido
+                        (por lo tanto, este valor no necesariamente llenará todas las columnas ni las
+                        llenará de manera
+                        uniforme).</li>
+                    <li><span>auto:</span> Establece el valor predeterminado para esta propiedad.</li>
+                    <li><span>inherit:</span> Hereda el valor de esta propiedad del elemento padre.</li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">column-count: 3;
+column-fill: balance;
+height: 200px;</code></pre>
+                <div class="col_mult-colum-fill-balance">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.</p>
+                </div>
+                <pre class="line-numbers"><code class="language-css">column-count: 3;
+column-fill: auto; 
+height: 200px;</code></pre>
+                <div class="col_mult-colum-fill-auto-con-heigth">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.</p>
+
+
+                </div>
+
+                <pre class="line-numbers"><code class="language-css">column-count: 2;
+column-fill: auto;</code></pre>
+                <div class="col_mult-colum-fill-auto-sin-heigth">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
+                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                        and more recently with desktop publishing software like Aldus PageMaker including versions of
+                        Lorem Ipsum.</p>
+                </div>
+            </article>
+
+            <article>
+                <h3 id="col_mult-column-width">column-width</h3>
+                <p>Establece la anchura de las columnas.
+                    El navegador calculará el número de columnas.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">column-width: auto|longitud|initial|inherit;</code></pre>
+                <p>Admite uno de los siguientes valores:</p>
+                <ul>
+                    <li><span>initial:</span> (Valor predeterminado) La anchura de columna la
+                        determinará el navegador.</li>
+                    <li>longitud: valor formado por un número y una unidad, tanto absoluta como relativa excepto
+                        porcentajes.</li>
+                    </li>
+                    <li><span>auto:</span> Establece el valor predeterminado para esta propiedad.</li>
+                    <li><span>inherit:</span> Hereda el valor de esta propiedad del elemento padre.</li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">column-width: 300px;</code></pre>
+                <div class="col_mult-colum-width-300px">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae velit laudantium adipisci esse
+                        voluptates deserunt eum ex, excepturi, amet, sequi praesentium fugiat fugit accusamus vel
+                        nostrum numquam neque repellat autem.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam repellat earum
+                        recusandae ad voluptates necessitatibus alias eaque unde expedita, iste, at quibusdam tenetur
+                        quis
+                        voluptatibus harum culpa a porro.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ad porro optio vel beatae rem
+                        quidem quasi blanditiis sint numquam ullam, maxime neque impedit, nobis id? Maxime, commodi!
+                        Commodi, quam?</p>
+                </div>
+                <pre class="line-numbers"><code class="language-css">column-width: 10em;</code></pre>
+                <div class="col_mult-colum-width-10em">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae velit laudantium adipisci esse
+                        voluptates deserunt eum ex, excepturi, amet, sequi praesentium fugiat fugit accusamus vel
+                        nostrum numquam neque repellat autem.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam quisquam repellat earum
+                        recusandae ad voluptates necessitatibus alias eaque unde expedita, iste, at quibusdam tenetur
+                        quis
+                        voluptatibus harum culpa a porro.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, ad porro optio vel beatae rem
+                        quidem quasi blanditiis sint numquam ullam, maxime neque impedit, nobis id? Maxime, commodi!
+                        Commodi, quam?</p>
+                </div>
+            </article>
+
+            <article>
+                <h3>column-span</h3>
+                <p>Establece el número de columnas que debe abarcar un elemento.</p>
+                <h4>Sintaxis</h4>
+                <pre class="line-numbers"><code class="language-css">column-span: none|all|initial|inherit;</code></pre>
+                <p>Admite uno de los siguientes valores:</p>
+                <ul>
+                    <li><span>none:</span> (Valor predeterminado) El elemento se extiende a lo largo de una columna.
+                    </li>
+                    <li><span>all:</span> El elemento se extiende, abarcando todas las columnas en una sola.</li>
+                    <li><span>initial:</span> Establece el valor predeterminado para esta propiedad.</li>
+                    <li><span>inherit:</span> Hereda el valor de esta propiedad del elemento padre.</li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">column-count: 3;
+column-span: none;</code></pre>
+                <div class="col_mult-colum-span-none">
+                    <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h2>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                    dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
+                    facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                    delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend
+                    option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent
+                    claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes
+                    demonstraverunt lectores legere me lius quod ii legunt saepius.
+                </div>
+                <pre class="line-numbers"><code class="language-css">column-count: 3;
+column-span: all;</code></pre>
+                <div class="col_mult-colum-span-all">
+                    <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</h2>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                    dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
+                    facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                    delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend
+                    option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent
+                    claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes
+                    demonstraverunt lectores legere me lius quod ii legunt saepius.
+                </div>
+            </article>
+
+            <article>
+                <h3 id="col_mult-column-rule-style">column-rule-style</h3>
+                <p>Establece el estilo de la línea de separación entre las columnas.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">column-rule-style: none|hidden|dotted|dashed|solid|double|groove|ridge|inset|outset|initial|inherit;</code></pre>
+                <p>Admite uno de los siguientes valores:</p>
+                <ul>
+                    <li><span>none:</span> (Valor predeterminado) No existe línea de separación.</li>
+                    <li><span>hidden:</span> la línea de separación se establece como oculta.</li>
+                    <li><span>dotted:</span> la línea de separación se establece como punteada.</li>
+                    <li><span>dashed:</span> la línea de separación se establece como discontinua.</li>
+                    <li><span>solid:</span> la línea de separación se establece como continua.</li>
+                    <li><span>double:</span> la línea de separación se establece como doble.</li>
+                    <li><span>grove:</span> la línea de separación se establece como hundida en 3d.</li>
+                    <li><span>ridge:</span> la línea de separación se establece como estriada en 3d.</li>
+                    <li><span>inset:</span> la línea de separación se establece como hundida provocando que el elemento
+                        que encierra
+                        parezca estar
+                        por debajo del nivel de la superficie de la pantalla.</li>
+                    <li><span>outset:</span> la línea de separación se establece como saliente provocando que el
+                        elemento que
+                        encierra parezca estar
+                        por encima del nivel de la superficie de la pantalla.</li>
+                    <li><span>initial:</span> Establece el valor predeterminado para esta propiedad.</li>
+                    <li><span>inherit:</span> Hereda el valor de esta propiedad del elemento padre.</li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">column-count: 3;
+column-gap: 40px;
+column-rule-style: dotted;</code></pre>
+                <div class="col_mult-colum-rule-style-dotted">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                    dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
+                    facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                    delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend
+                    option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent
+                    claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes
+                    demonstraverunt lectores legere me lius quod ii legunt saepius.
+                </div>
+                <pre class="line-numbers"><code class="language-css">column-count: 3;
+column-gap: 40px;
+column-rule-style: dashed;</code></pre>
+                <div class="col_mult-colum-rule-style-dashed">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                    dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
+                    facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                    delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend
+                    option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent
+                    claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes
+                    demonstraverunt lectores legere me lius quod ii legunt saepius.
+                </div>
+                <pre class="line-numbers"><code class="language-css">column-count: 3;
+column-gap: 40px;
+column-rule-style: solid;</code></pre>
+                <div class="col_mult-colum-rule-style-solid">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                    dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
+                    facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                    delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend
+                    option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent
+                    claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes
+                    demonstraverunt lectores legere me lius quod ii legunt saepius.
+                </div>
+                <pre class="line-numbers"><code class="language-css">column-count: 3;
+column-gap: 40px;
+column-rule-style: double;</code></pre>
+                <div class="col_mult-colum-rule-style-double">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                    dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
+                    facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                    delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend
+                    option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent
+                    claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes
+                    demonstraverunt lectores legere me lius quod ii legunt saepius.
+                </div>
+                <pre class="line-numbers"><code class="language-css">column-count: 3;
+column-gap: 40px;
+column-rule-style: groove;
+</code></pre>
+                <div class="col_mult-colum-rule-style-groove">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                    dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
+                    facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                    delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend
+                    option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent
+                    claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes
+                    demonstraverunt lectores legere me lius quod ii legunt saepius.
+                </div>
+                <pre class="line-numbers"><code class="language-css">column-count: 3;
+column-gap: 40px;
+column-rule-style: ridge;</code></pre>
+                <div class="col_mult-colum-rule-style-ridge">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                    dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
+                    facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                    delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend
+                    option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent
+                    claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes
+                    demonstraverunt lectores legere me lius quod ii legunt saepius.
+                </div>
+                <pre class="line-numbers"><code class="language-css">column-count: 3;
+column-gap: 40px;
+column-rule-style: inset;</code></pre>
+                <div class="col_mult-colum-rule-style-inset">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                    dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
+                    facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                    delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend
+                    option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent
+                    claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes
+                    demonstraverunt lectores legere me lius quod ii legunt saepius.
+                </div>
+                <pre class="line-numbers"><code class="language-css">column-count: 3;
+column-gap: 40px;
+column-rule-style: outset;</code></pre>
+                <div class="col_mult-colum-rule-style-outset">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                    dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
+                    facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                    delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend
+                    option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent
+                    claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes
+                    demonstraverunt lectores legere me lius quod ii legunt saepius.
+                </div>
+            </article>
+
+            <article>
+                <h3 id="col_mult-column-rule-width">column-rule-width</h3>
+                <p>Establece la anchura de la la línea de separación entre columnas.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">column-rule-width: medium|thin|thick|longitud|initial|inherit;</code></pre>
+                <p>Admite uno de los siguientes valores:</p>
+                <ul>
+                    <li><span>medium:</span> (Valor predeterminado) la linea de separación es de anchura media.</li>
+                    <li><span>thin:</span> la linea de separación es delgada.</li>
+                    <li><span>thick:</span> la linea de separación es gruesa.</li>
+                    <li>longitud: valor formado por un número y una unidad, tanto absoluta como relativa.</li>
+                    <li><span>initial:</span> Establece el valor predeterminado para esta propiedad.</li>
+                    <li><span>inherit:</span> Hereda el valor de esta propiedad del elemento padre.</li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">column-count: 3;
+column-gap: 40px;
+column-rule-style: solid;
+column-rule-width: medium;</code></pre>
+                <div class="col_mult-colum-rule-width-medium">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                    dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
+                    facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                    delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend
+                    option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent
+                    claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes
+                    demonstraverunt lectores legere me lius quod ii legunt saepius.
+                </div>
+                <pre class="line-numbers"><code class="language-css">column-count: 3;
+column-gap: 40px;
+column-rule-style: inset;
+column-rule-width: 20px;</code></pre>
+                <div class="col_mult-colum-rule-width-length">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                    dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
+                    facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                    delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend
+                    option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent
+                    claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes
+                    demonstraverunt lectores legere me lius quod ii legunt saepius.
+                </div>
+            </article>
+
+            <article>
+
+                <h3 id="col_mult-column-rule-color">column-rule-color</h3>
+                <p>Establece el color de la línea de separación entre columnas.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">column-rule-color: color|initial|inherit;</code></pre>
+                <p>Admite uno de los siguientes valores:</p>
+                <ul>
+                    <li>color: se aplica el <a href="Color.html">color</a> indicado.</li>
+                    <li><span>initial:</span> Establece el valor predeterminado para esta propiedad.</li>
+                    <li><span>inherit:</span> Hereda el valor de esta propiedad del elemento padre.</li>
+                </ul>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">column-count: 3;
+column-gap: 40px;
+column-rule-style: groove;
+column-rule-width: 10px;
+column-rule-color: royalblue;</code></pre>
+                <div class="col_mult-colum-rule-color-royalblue">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                    dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
+                    facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                    delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend
+                    option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent
+                    claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes
+                    demonstraverunt lectores legere me lius quod ii legunt saepius.
+                </div>
+
+                <pre class="line-numbers"><code class="language-css">column-count: 3;
+column-gap: 40px;
+column-rule-style: solid;
+column-rule-width: 10px;
+column-rule-color: red;</code></pre>
+                <div class="col_mult-colum-rule-color-red">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                    dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
+                    facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                    delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend
+                    option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent
+                    claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes
+                    demonstraverunt lectores legere me lius quod ii legunt saepius.
+                </div>
+            </article>
+
+            <article>
+
+                <h3>column-rule</h3>
+                <p>Es la union de las propiedades <a href="#col_mult-column-rule-width">column-rule-width</a>,
+                    <a href="#col_mult-column-rule-color">column-rule-color</a> y <a
+                        href="#col_mult-column-rule-style">column-rule-style.</a>
+                    Indica anchura, color y estilo de la línea separadora entre las columnas.
+                </p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">column-rule: column-rule-width || column-rule-style || column-rule-color;</code></pre>
+                <p>Admite los valores de las propiedades que engloba en cualquier cantidad y orden, ya que cada uno se
+                    especifica de manera diferente. Las propiedades no incluidas serán aplicadas con su valor
+                    predeterminado </p>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">column-count: 3;
+column-gap: 40px;
+column-rule: 4px double red;</code></pre>
+                <div class="col_mult-colum-rule-double">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                    dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
+                    facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                    delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend
+                    option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent
+                    claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes
+                    demonstraverunt lectores legere me lius quod ii legunt saepius.
+                </div>
+                <pre class="line-numbers"><code class="language-css">column-count: 3;
+column-gap: 40px;
+column-rule: 4px ridge red;</code></pre>
+                <div class="col_mult-colum-rule-ridge">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                    dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
+                    facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                    delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend
+                    option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent
+                    claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes
+                    demonstraverunt lectores legere me lius quod ii legunt saepius.
+                </div>
+            </article>
+
+            <article>
+
+                <h3>columns</h3>
+                <p>Es la unión de las propiedades <a href="#col_mult-column-width">column-width</a> y <a
+                        href="#col_mult-column-count"> column-count.</a></p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">columns: auto|column-width column-count|initial|inherit;</code></pre>
+                <p>Admite los valores de las propiedades que engloba</p>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">columns: 30px 3;</code></pre>
+                <div class="col_mult-colums">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                    dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
+                    facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                    delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend
+                    option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent
+                    claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes
+                    demonstraverunt lectores legere me lius quod ii legunt saepius.
+                </div>
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <div>Jaime Rabasco Ronda, AlexSRK 09</div>
+        <a href="https://twitter.com/jaimerr" class="social"><img src="icon/twitter.svg" alt="Twitter"></a>
+        <a href="https://github.com/alexsrk09" class="social"><img src="icon/github.svg" alt="GitHub"></a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,458 @@
+.fuentesytexto_resultado {
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 90%);
+}
+
+.fuentesytexto_text-transform-capitalize {
+    text-transform: capitalize;
+}
+
+.fuentesytexto_text-transform-uppercase {
+    text-transform: uppercase;
+}
+
+.fuentesytexto_text-transform-lowercase {
+    text-transform: lowercase;
+}
+
+.fuentesytexto_text-shadow-none {
+    text-shadow: none;
+}
+
+.fuentesytexto_text-shadow-2px {
+    text-shadow: 2px 2px 2px black;
+}
+
+.fuentesytexto_text-shadow-2px-4px {
+    text-shadow: 2px 2px 2px black, 4px 4px 4px black;
+}
+
+.fuentesytexto_font-family {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fuentesytexto_font-family-2 {
+    font-family: "Times New Roman", Times, serif;
+
+}
+
+.fuentesytexto_font-family-3 {
+    font-family: "Courier New", Courier, monospace;
+}
+
+.fuentesytexto_font-family-4 {
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.fuentesytexto_font-style {
+    font-style: normal;
+}
+
+.fuentesytexto_font-style-italic {
+    font-style: italic;
+}
+
+.fuentesytexto_font-style-oblique {
+    font-style: oblique;
+}
+
+.fuentesytexto_font-weight {
+    font-weight: normal;
+}
+
+.fuentesytexto_font-weight-bold {
+    font-weight: bold;
+}
+
+.fuentesytexto_font-weight-bolder {
+    font-weight: bolder;
+}
+
+.fuentesytexto_font-weight-lighter {
+    font-weight: lighter;
+}
+
+.fuentesytexto_font-weight-100 {
+    font-weight: 100;
+}
+
+.fuentesytexto_font-weight-900 {
+    font-weight: 900;
+}
+
+.fuentesytexto_google-fonts {
+    font-family: 'Roboto', sans-serif;
+}
+
+.fuentesytexto_font {
+    font: italic small-caps bold 12px/30px Georgia, serif;
+}
+
+.fuentesytexto_font-variant-ligatures-normal {
+    font-variant-ligatures: normal;
+}
+
+.fuentesytexto_font-variant-ligatures-common-ligatures {
+    font-variant-ligatures: common-ligatures;
+}
+
+.fuentesytexto_font-variant-ligatures-no-common-ligatures {
+    font-variant-ligatures: no-common-ligatures;
+}
+
+.fuentesytexto_font-variant-ligatures-historical-ligatures {
+    font-variant-ligatures: historical-ligatures;
+}
+
+.fuentesytexto_font-variant-ligatures-no-historical-ligatures {
+    font-variant-ligatures: no-historical-ligatures;
+}
+
+.fuentesytexto_font-variant-ligatures-contextual {
+    font-variant-ligatures: contextual;
+}
+
+.fuentesytexto_font-variant-ligatures-no-contextual {
+    font-variant-ligatures: no-contextual;
+}
+
+.fuentesytexto_font-variant-ligatures-discretionary-ligatures {
+    font-variant-ligatures: discretionary-ligatures;
+}
+
+.fuentesytexto_font-variant-ligatures-no-discretionary-ligatures {
+    font-variant-ligatures: no-discretionary-ligatures;
+}
+
+.fuentesytexto_font-variant-ligatures {
+    font-family: Lora, serif;
+}
+
+.fuentesytexto_font-variant-caps-normal {
+    font-variant-caps: normal;
+}
+
+.fuentesytexto_font-variant-caps-small-caps {
+    font-variant-caps: small-caps;
+}
+
+.fuentesytexto_font-variant-caps-all-small-caps {
+    font-variant-caps: all-small-caps;
+}
+
+.fuentesytexto_font-variant-caps-petite-caps {
+    font-variant-caps: petite-caps;
+}
+
+.fuentesytexto_font-variant-caps-all-petite-caps {
+    font-variant-caps: all-petite-caps;
+}
+
+.fuentesytexto_font-variant-caps-unicase {
+    font-variant-caps: unicase;
+}
+
+.fuentesytexto_font-variant-caps-all-titling-caps {
+    font-variant-caps: titling-caps;
+}
+
+
+
+.fuentesytexto_font-variant-caps {
+    font-variant-caps: small-caps;
+}
+
+.fuentesytexto_font-variant-caps-2 {
+    font-variant-caps: all-small-caps;
+}
+
+.fuentesytexto_font-variant-caps-3 {
+    font-variant-caps: petite-caps;
+}
+
+.fuentesytexto_font-variant-caps-4 {
+    font-feature-settings: "unic";
+    font-variant-caps: unicase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fuentesytexto_font-variant-caps-5 {
+    font-variant-caps: all-petite-caps;
+}
+
+.fuentesytexto_font-variant-caps-6 {
+    font-feature-settings: "titl";
+    font-family: 'League Spartan', sans-serif;
+    font-variant-caps: titling-caps;
+}
+
+/* TODO */
+.fuentesytexto_font-variant-alternates {
+    font-variant-alternates: normal;
+}
+
+.fuentesytexto_font-variant-alternates-2 {
+    font-variant-alternates: historical-forms;
+    font-family: 'League Spartan', sans-serif;
+
+}
+
+.fuentesytexto_font-variant-alternates-3 {
+    font-feature-settings: "salt 2";
+    font-family: 'League Spartan', sans-serif;
+    font-variant-alternates: stylistic(1);
+}
+
+.fuentesytexto_font-variant-alternates-4 {
+    font-variant-alternates: styleset(1);
+}
+
+.fuentesytexto_font-variant-alternates-5 {
+    font-variant-alternates: character-variant(1);
+}
+
+.fuentesytexto_font-variant-alternates-6 {
+    font-variant-alternates: swash(1);
+}
+
+.fuentesytexto_font-variant-alternates-7 {
+    font-variant-alternates: ornaments(1);
+}
+
+.fuentesytexto_font-variant-alternates-8 {
+    font-variant-alternates: annotation(1);
+}
+
+.fuentesytexto_font-variant-alternates-9 {
+    font-variant-alternates: ornaments(1);
+}
+
+.fuentesytexto_font-variant-alternates-10 {
+    font-variant-alternates: annotation(1);
+}
+
+/* FIN DEL TODO */
+
+.fuentesytexto_text-rendering {
+    text-rendering: auto;
+}
+
+.fuentesytexto_text-rendering-optimizeSpeed {
+    text-rendering: optimizeSpeed;
+}
+
+.fuentesytexto_text-rendering-optimizeLegibility {
+    text-rendering: optimizeLegibility;
+    font-size: 10px;
+}
+
+.fuentesytexto_text-rendering-geometricPrecision {
+    text-rendering: geometricPrecision;
+}
+
+.fuentesytexto_text-orientation {
+    text-orientation: mixed;
+    writing-mode: vertical-lr;
+}
+
+.fuentesytexto_text-orientation-upright {
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+}
+
+.fuentesytexto_text-orientation-sideways {
+    text-orientation: sideways;
+    writing-mode: vertical-lr;
+}
+
+
+.fuentesytexto_-webkit-text-fill-color {
+    -webkit-text-fill-color: blue;
+    color: red;
+}
+
+.fuentesytexto_cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.fuentesytexto_font-variant-numeric-0 {
+    font-family: none;
+}
+
+.fuentesytexto_font-variant-numeric {
+    font-variant-numeric: normal;
+}
+
+@font-face {
+    font-family: "Warnock Pro";
+    src: url(fuentes_efectos_texto_fuentes_locales/WarnockPro-Regular.otf);
+}
+
+@font-face {
+    font-family: "HypatiaSansPro-Regular";
+    src: url(fuentes_efectos_texto_fuentes_locales/HypatiaSansPro-Regular.otf);
+}
+
+.fuentesytexto_font-variant-numeric-2 {
+    font-feature-settings: "ordn";
+    font-family: "Warnock Pro", serif;
+    font-variant-numeric: ordinal;
+}
+
+.fuentesytexto_font-variant-numeric-3 {
+    font-variant-numeric: slashed-zero;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+.fuentesytexto_font-variant-numeric-5 {
+    font-variant-numeric: oldstyle-nums;
+}
+
+.fuentesytexto_font-variant-numeric-6 {
+    font-family: 'HypatiaSansPro-Regular', sans-serif;
+    font-variant-numeric: proportional-nums;
+}
+
+.fuentesytexto_font-variant-numeric-7 {
+    font-family: 'HypatiaSansPro-Regular', sans-serif;
+    font-variant-numeric: tabular-nums;
+}
+
+.fuentesytexto_font-variant-numeric-8 {
+    font-variant-numeric: diagonal-fractions;
+}
+
+.fuentesytexto_font-variant-numeric-9 {
+    font-family: 'Ubuntu Mono', monospace;
+    font-variant-numeric: stacked-fractions;
+}
+
+.fuentesytexto_font-size-adjust-yes {
+    font-family: Times, serif;
+    font-size-adjust: 0.58;
+    font-size: 10px;
+}
+
+.fuentesytexto_font-size-adjust-no {
+    font-family: Times, serif;
+    font-size-adjust: none;
+    font-size: 10px;
+}
+
+.fuentesytexto_font-variant-settings-normal {
+    font-variation-settings: normal;
+}
+
+@font-face {
+    font-family: "Amstelvar VF";
+    src: url(fuentes_efectos_texto_fuentes_locales/Amstelvar-Roman[wdth\,wght\,opsz].ttf);
+}
+
+.fuentesytexto_font-variant-settings-wght {
+    font-variation-settings: "wght" 900;
+    font-family: "Amstelvar VF", Georgia, serif;
+}
+
+.fuentesytexto_font-variant-settings-wdth {
+    font-variation-settings: "wdth" 900;
+    font-family: "Amstelvar VF", Georgia, serif;
+}
+
+.fuentesytexto_font-variant-settings-opsz {
+    font-variation-settings: "opsz" 10;
+    font-family: "Amstelvar VF", Georgia, serif;
+}
+
+.fuentesytexto_font-variant-settings-ital {
+    font-variation-settings: "ital" 1;
+    font-family: "Amstelvar VF", Georgia, serif;
+}
+
+.fuentesytexto_font-variant-settings-slnt {
+    font-family: "Roboto VF", Helvetica, sans-serif;
+    font-variation-settings: "slnt" 12;
+}
+
+@font-face {
+    src: url(fuentes_efectos_texto_fuentes_locales/LeagueMono-VF.ttf) format('truetype');
+    font-family: League;
+    font-style: normal;
+    font-stretch: 50% 200%
+}
+
+.fuentesytexto_font-stretch {
+    font-size: 1.2em;
+    font-family: League, sans-serif;
+}
+
+.fuentesytexto_font-stretch-normal {
+    font-stretch: normal;
+}
+
+.fuentesytexto_font-stretch-ultra-condensed {
+    font-stretch: ultra-condensed;
+}
+
+.fuentesytexto_font-stretch-extra-condensed {
+    font-stretch: extra-condensed;
+}
+
+.fuentesytexto_font-stretch-condensed {
+    font-stretch: condensed;
+}
+
+.fuentesytexto_font-stretch-semi-condensed {
+    font-stretch: semi-condensed;
+}
+
+.fuentesytexto_font-stretch-semi-expanded {
+    font-stretch: semi-expanded;
+}
+
+.fuentesytexto_font-stretch-expanded {
+    font-stretch: expanded;
+}
+
+.fuentesytexto_font-stretch-extra-expanded {
+    font-stretch: extra-expanded;
+}
+
+.fuentesytexto_font-stretch-ultra-expanded {
+    font-stretch: ultra-expanded;
+}
+
+.fuentesytexto_font-kerning-auto{
+    font-family: serif;
+    font-kerning: auto;
+}
+
+.fuentesytexto_font-kerning-normal{
+    font-family: serif;
+    font-kerning: normal;
+}
+
+.fuentesytexto_font-kerning-none{
+    font-family: serif;
+    font-kerning: none;
+}
+
+.fuentesytexto_font-variant-0{
+    font-variant: normal;
+}
+
+.fuentesytexto_font-variant-1{
+    font-family: 'HypatiaSansPro-Regular', sans-serif;
+    font-variant: discretionary-ligatures proportional-nums;
+}
+
+.fuentesytexto_font-variant-2{
+    font-variant: small-caps diagonal-fractions;
+}
+
+.fuentesytexto_font-face{
+    font-family: "League";
+}

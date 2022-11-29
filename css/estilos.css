@@ -566,11 +566,21 @@ p {
   }
 }
 
-@media only screen and (min-width: 1560px) {
-  nav > ul > li {
-    width: 9%;
-  }
-  section article {
-    width: 98%;
-  }
+
+@media only screen and (min-width:800px){
+	nav>ul>li{
+		width: 45%;
+	}
+	section article{
+		width: 96%;
+	}
+}
+
+@media only screen and (min-width:1560px){
+	nav>ul>li{
+		width: 9%;
+	}
+	section article{
+		width: 98%;
+	}
 }

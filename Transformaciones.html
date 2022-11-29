@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>
+      TUTORIAL CSS3 - 2020/2021 - Diseño de Interfaces Web - CFGS DAW - IES Gran
+      Capitán
+    </title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/prism.css" />
+    <link rel="stylesheet" href="css/transformaciones.css" />
+    <script src="js/prism.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1><a href="index.html">TUTORIAL CSS3 - 2022/2023</a></h1>
+      <h2><img src="icon/language-css3.svg" /></h2>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="Bordes.html">Bordes</a></li>
+        <li><a href="Fondos.html">Fondos</a></li>
+        <li><a href="Efectos_texto.html">Fuentes y Ef Texto</a></li>
+        <li><a href="Transformaciones.html">Transformac.</a></li>
+        <li><a href="Transiciones.html">Transiciones</a></li>
+        <li><a href="Animaciones.html">Animaciones</a></li>
+        <li><a href="Col_mult.html">Col Múltiples</a></li>
+        <li><a href="Color.html">Color y Degradado</a></li>
+        <li><a href="Pseudos_Css3.html">Pseudos CSS3</a></li>
+        <li><a href="Svg_filter.html">Filter y SVG</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div>
+        <h2>TUTORIAL CSS3 - Transformaciones</h2>
+        <h3>
+          Propiedades para modificar las transformaciones de los elementos de un
+          documento HTML
+        </h3>
+      </div>
+      <section>
+        <article>
+          <h3>transform-rotate</h3>
+          <p>
+            La propiedad CSS rotate permite especificar las transformaciones de
+            rotación de forma individual e independiente de la propiedad
+            transform.
+          </p>
+          <p>
+            Esto se ajusta mejor al uso típico de la interfaz de usuario, y
+            ahorra tener que recordar el orden exacto de las funciones de
+            transformación para especificar en la propiedad transform.
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">/* Keyword values */
+  transform: rotate(none);
+  
+  transform: rotate(x deg);
+  transform: rotate(x turn);
+  transform: rotate(x rad);
+  
+  /* x, y, or z axis name plus angle */ 
+  transform: rotateX(x deg); 
+  transform: rotateY(x turn); 
+  transform: rotateZ(x rad); 
+  
+  /* Vector plus angle value rotate3d(x, y, z, a)*/ 
+  transform: rotate(x y z a);
+  
+  /* Global values */
+  transform: rotate(inherit);
+  transform: rotate(initial);
+  transform: rotate(revert);
+  transform: rotate(revert-layer);
+  transform: rotate(unset);</code></pre>
+          <ul>
+            <li>
+              Valor del ángulo<br />
+              Un ángulo(&lt;angle>) que especifica el ángulo de rotación del
+              elemento afectado, alrededor del eje Z. Equivale a la función
+              rotate() (rotación 2D).
+            </li>
+            <br />
+            <li>
+              Nombre del eje x, y o z más el valor del ángulo <br />
+              El nombre del eje alrededor del cual se quiere girar el elemento
+              afectado ("x", "y" o "z"), más un ángulo(&lt;angle>) que
+              especifica el ángulo por el que se girará el elemento. Equivale a
+              una función rotateX()/rotateY()/rotateZ() (rotación 3D).
+            </li>
+            <br />
+            <li>
+              Vector más valor angular<br />
+              Tres &lt;number>s que representan un vector centrado en el origen
+              que define una línea alrededor de la cual se quiere girar el
+              elemento, más un ángulo(&lt;angle>) que especifica el ángulo por
+              el que se girará el elemento. Equivale a una función rotate3d()
+              (rotación 3D).
+            </li>
+            <br />
+            <li>
+              none <br />
+              Especifica que no se debe aplicar ninguna rotación.
+            </li>
+            <br />
+          </ul>
+          <h2>Ejemplos:</h2>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: rotate(90deg);</code></pre>
+          <div class="transformaciones-rotate">
+            <p>Rotation</p>
+            <p class="transformaciones-rotate-angle1">Rotation</p>
+          </div>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: rotate(0.50turn);</code></pre>
+          <div class="transformaciones-rotate">
+            <p>Rotation</p>
+            <p class="transformaciones-rotate-angle2">Rotation</p>
+          </div>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: rotate(2.28rad);</code></pre>
+          <div class="transformaciones-rotate">
+            <p>Rotation</p>
+            <p class="transformaciones-rotate-angle3">Rotation</p>
+          </div>
+          <br />
+        </article>
+        <article>
+          <h3>rotate(x)</h3>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: rotateX(45deg);</code></pre>
+          <div class="transformaciones-rotate">
+            <p>Rotation</p>
+            <p class="transformaciones-rotate-anglex">Rotation</p>
+          </div>
+        </article>
+        <article>
+          <h3>rotate(y)</h3>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: rotateY(0.15turn);</code></pre>
+          <div class="transformaciones-rotate">
+            <p>Rotation</p>
+            <p class="transformaciones-rotate-angley">Rotation</p>
+          </div>
+        </article>
+        <article>
+          <h3>rotate(z)</h3>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: rotateZ(2.28rad);</code></pre>
+          <div class="transformaciones-rotate">
+            <p>Rotation</p>
+            <p class="transformaciones-rotate-anglez">Rotation</p>
+          </div>
+          <br />
+        </article>
+        <article>
+          <h3>rotate(x y z a)</h3>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: rotate(1 -0.5 1 180deg);</code></pre>
+          <div class="transformaciones-rotate">
+            <p>Rotation</p>
+            <p class="transformaciones-rotate-dosejes">Rotation</p>
+          </div>
+        </article>
+      </section>
+      <section>
+        <article>
+          <h3>transform-perspective</h3>
+          <p>
+            La función CSS perspective() define una transformación que establece
+            la distancia entre el usuario y el plano z=0, la perspectiva desde
+            la que estaría el espectador si la interfaz bidimensional fuera
+            tridimensional.
+          </p>
+          <p>Su resultado es un tipo de datos &lt;transformación-función>.</p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">perspective(d);</code></pre>
+          <p>valores admitidos</p>
+          <ul>
+            <li>
+              d <br />
+              Es una &lt;longitud> que representa la distancia del usuario al
+              plano z=0. Si es 0 o un valor negativo, no se aplica ninguna
+              transformación de perspectiva.
+            </li>
+          </ul>
+          <h4>Ejemplos:</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: perspective(800px);</code></pre>
+          <section class="transformaciones-perspective-ejemplo-sin-modificar">
+            <div
+              id="transformaciones-perspective-example-element"
+              class="transformaciones-perspective-example-element"
+            >
+              <div
+                class="transformaciones-perspective-face transformaciones-perspective-front"
+              >
+                1
+              </div>
+              <div
+                class="transformaciones-perspective-face transformaciones-perspective-back"
+              >
+                2
+              </div>
+              <div
+                class="transformaciones-perspective-face transformaciones-perspective-right"
+              >
+                3
+              </div>
+              <div
+                class="transformaciones-perspective-face transformaciones-perspective-left"
+              >
+                4
+              </div>
+              <div
+                class="transformaciones-perspective-face transformaciones-perspective-top"
+              >
+                5
+              </div>
+              <div
+                class="transformaciones-perspective-face transformaciones-perspective-bottom"
+              >
+                6
+              </div>
+            </div>
+          </section>
+          <br />
+          <section class="transformaciones-perspective-ejemplo-modificada">
+            <div
+              id="transformaciones-perspective-example-element"
+              class="transformaciones-perspective-example-element"
+            >
+              <div
+                class="transformaciones-perspective-face transformaciones-perspective-front"
+              >
+                1
+              </div>
+              <div
+                class="transformaciones-perspective-face transformaciones-perspective-back"
+              >
+                2
+              </div>
+              <div
+                class="transformaciones-perspective-face transformaciones-perspective-right"
+              >
+                3
+              </div>
+              <div
+                class="transformaciones-perspective-face transformaciones-perspective-left"
+              >
+                4
+              </div>
+              <div
+                class="transformaciones-perspective-face transformaciones-perspective-top"
+              >
+                5
+              </div>
+              <div
+                class="transformaciones-perspective-face transformaciones-perspective-bottom"
+              >
+                6
+              </div>
+            </div>
+          </section>
+          <br />
+        </article>
+      </section>
+      <section>
+        <!-- 1. TransformacionesX -->
+        <article>
+          <h3>translateX(x)</h3>
+          <p>
+            La función CSS translateX() translada un elemento horizontalmente en
+            el plano 2D.
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: translateX(size);</code></pre>
+          <p>Admite un valor</p>
+          <ul>
+            <li>El valor se aplica al desplazamiento en el eje x.</li>
+          </ul>
+          <p>
+            Si se indica un valor negativo, el elemento se desplazará en la
+            dirección opuesta.
+          </p>
+
+          <h4>Ejemplos:</h4>
+
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: translateX(400px);
+transform: translateX(50ch);</code></pre>
+          <div class="div-generico-translate"></div>
+          <!--Ejemplo 1-->
+          <div class="transformaciones-translateX translateX-ej2">1</div>
+          <!--Ejemplo 2-->
+          <div class="transformaciones-translateX translateX-ej4">2</div>
+        </article>
+
+        <!-- 2. TransformacionesY -->
+        <article>
+          <h3>translateY(y)</h3>
+          <p>
+            La función CSS translateY() translada un elemento verticalmente en
+            el plano 2D.
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: translateY(size);</code></pre>
+          <p>Admite un valor</p>
+          <ul>
+            <li>El valor se aplica al desplazamiento en el eje y.</li>
+          </ul>
+          <p>
+            Si se indica un valor negativo, el elemento se desplazará en la
+            dirección opuesta.
+          </p>
+
+          <h4>Ejemplos:</h4>
+          <!--Ejemplo 1-->
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: translateY(-3rem);
+transform: translateY(3ch);</code></pre>
+          <div class="div-generico-translate"></div>
+          <!--Ejemplo 2-->
+          <!--Ejemplo 3-->
+          <div class="transformaciones-translateY translateY-ej3">1</div>
+          <!--Ejemplo 4-->
+          <div class="transformaciones-translateY translateY-ej4">2</div>
+        </article>
+        <!-- 3. Transformaciones -->
+        <article>
+          <h3>translate()</h3>
+          <p>
+            La function de CSS translate() recoloca un elemento en el eje
+            horizontal y/o vertical.
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: translate(size , [size]);</code></pre>
+          <p>Admite uno o dos valores</p>
+          <ul>
+            <li>El valor se aplica al desplazamiento en el eje x o/y y.</li>
+          </ul>
+          <p>
+            Si se indica un valor negativo, el elemento se desplazará en la
+            dirección opuesta.
+          </p>
+
+          <h4>Ejemplos:</h4>
+          <!--Ejemplo 1-->
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: translate(20px);
+transform: translate(500px,40px);
+transform: translate(-3ch, -3mm);</code></pre>
+          <div class="div-generico-translate"></div>
+          <div class="transformaciones-translate translate-ej1">1</div>
+          <!--Ejemplo 2-->
+          <div class="transformaciones-translate translate-ej2">2</div>
+          <!--Ejemplo 3-->
+          <div class="transformaciones-translate translate-ej3">3</div>
+        </article>
+
+        <!-- 4. Transformaciones -->
+        <article>
+          <h3>translateZ()</h3>
+          <p>
+            La función translateZ() CSS reposiciona un elemento a lo largo del
+            eje-z (z-axis) en el espacio 3D, es decir, más cerca o mas lejos del
+            espectador.
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: perspective translateZ(size);</code></pre>
+          <p>Admite un valor</p>
+          <ul>
+            <li>El valor se aplica al desplazamiento en el eje z.</li>
+          </ul>
+          <p>
+            La función perspective() posiciona al espectador en relación con el
+            plano que se encuentra donde z=0
+          </p>
+          <p>
+            Si se indica un valor negativo, el elemento se desplazará en la
+            dirección opuesta.
+          </p>
+
+          <h4>Ejemplos:</h4>
+          <!--Ejemplo 1-->
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: perspective(100px) translateZ(60px);
+transform: perspective(100px) translateZ(-15rem);
+transform: perspective(100px) translateZ(4ch);</code></pre>
+          <div class="div-generico-translate"></div>
+          <div class="transformaciones-translateZ translateZ-ej1">1</div>
+          <!--Ejemplo 2-->
+          <div class="transformaciones-translateZ translateZ-ej2">2</div>
+
+          <!--Ejemplo 3-->
+          <div class="transformaciones-translateZ translateZ-ej3">3</div>
+        </article>
+        <!-- 5. Transformaciones -->
+        <article>
+          <h3>translate3d()</h3>
+          <p>
+            La función CSS translate3d() recoloca un elemento en el espacio 3D.
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: translate(size , [size]);</code></pre>
+          <p>Admite de uno a tres valores</p>
+          <ul>
+            <li>El valor se aplica al desplazamiento en el eje x,y o/y z.</li>
+          </ul>
+          <p>
+            Si se indica un valor negativo, el elemento se desplazará en la
+            dirección opuesta.
+          </p>
+
+          <h4>Ejemplos:</h4>
+          <!--Ejemplo 1-->
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: perspective(200px) translate3d(450px, -62px, 70px);
+transform: perspective(200px) translate3d(-4rem, 0.5rem, -8rem);
+transform:  perspective(200px) translate3d(3ch, 1ch, 7ch);</code></pre>
+          <div class="div-generico-translate"></div>
+          <div class="transformaciones-translate3d translate3d-ej1">1</div>
+          <!--Ejemplo 2-->
+          <div class="transformaciones-translate3d translate3d-ej2">2</div>
+          <!--Ejemplo 3-->
+          <div class="transformaciones-translate3d translate3d-ej3">3</div>
+        </article>
+        <!-- 6. Transformaciones -->
+        <article>
+          <h3>translate</h3>
+          <p>
+            La propiedad de CSS translate recoloca un elemento en el eje x, y,
+            z.
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">translate(sizeX , [sizeY], [sizeZ]);</code></pre>
+          <p>Admite de uno a tres valores</p>
+          <ul>
+            <li>El valor se aplica al desplazamiento en el eje x, y o/y z.</li>
+          </ul>
+          <p>
+            Si se indica un valor negativo, el elemento se desplazará en la
+            dirección opuesta.
+          </p>
+
+          <h4>Ejemplos:</h4>
+          <!--Ejemplo 1-->
+          <pre class="line-numbers"><code class="language-css">translate: none;
+translate: 70px;
+translate: 40% 70%;</code></pre>
+          <div
+            style="display: inline-block"
+            class="div-generico-translate"
+          ></div>
+          <div class="transformaciones-translateProp translateProp-ej1"></div>
+          <!--Ejemplo 2-->
+          <div class="transformaciones-translateProp translateProp-ej2"></div>
+          <!--Ejemplo 3-->
+          <div class="transformaciones-translateProp translateProp-ej4"></div>
+        </article>
+      </section>
+      <section>
+        <!-- 1. ScaleX -->
+        <article>
+          <h3>scaleX(x)</h3>
+          <p>
+            La función CSS scaleX() define una transformación que cambia el
+            tamaño de un elemento a lo largo del eje x (horizontalmente).
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: scaleX(size);</code></pre>
+          <p>Admite un valor</p>
+          <ul>
+            <li>
+              Reescala el elemento un número de veces (sólo en horizontal).
+            </li>
+            <li>Solo admite porcentajes y números decimales</li>
+          </ul>
+          <p>
+            Si se indica un valor negativo, el elemento se escala de forma
+            inversa.
+          </p>
+
+          <h4>Ejemplos:</h4>
+          <!--Ejemplo 1-->
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: scaleX(2);</code></pre>
+          <div class="div-generico-scale"></div>
+          <div class="transformaciones-scaleX scaleX-ej1"></div>
+          <!--Ejemplo 2-->
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: scaleX(50%);</code></pre>
+          <div class="div-generico-scale"></div>
+          <div class="transformaciones-scaleX scaleX-ej2"></div>
+
+          <!--Ejemplo 3-->
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: scaleX(-3.5);</code></pre>
+          <div class="div-generico-scale"></div>
+          <div class="transformaciones-scaleX scaleX-ej3"></div>
+
+          <!--Ejemplo 4-->
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: scaleX(-20%);</code></pre>
+          <div class="div-generico-scale"></div>
+          <div class="transformaciones-scaleX scaleX-ej4"></div>
+        </article>
+
+        <!-- 2. ScaleY -->
+        <article>
+          <h3>scaleY(y)</h3>
+          <p>Reescala el elemento un número de veces (sólo en vertical).</p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: translateY(size);</code></pre>
+          <p>Admite un valor</p>
+          <ul>
+            <li>Reescala el elemento un número de veces (sólo en vertical).</li>
+            <li>Solo admite porcentajes y números decimales</li>
+          </ul>
+          <p>
+            Si se indica un valor negativo, el elemento se escala de forma
+            inversa.
+          </p>
+
+          <h4>Ejemplos:</h4>
+          <!--Ejemplo 1-->
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform:scaleY(1.5);</code></pre>
+          <div class="div-generico-scale"></div>
+          <div class="transformaciones-scaleY scaleY-ej1"></div>
+          <!--Ejemplo 2-->
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: scaleY(300%);</code></pre>
+          <div class="div-generico-scale"></div>
+          <div class="transformaciones-scaleY scaleY-ej2"></div>
+
+          <!--Ejemplo 3-->
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: scaleY(-2.5);</code></pre>
+          <div class="div-generico-scale"></div>
+          <div class="transformaciones-scaleY scaleY-ej3"></div>
+
+          <!--Ejemplo 4-->
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: scaleY(-20%);</code></pre>
+          <div class="div-generico-scale"></div>
+          <div class="transformaciones-scaleY scaleY-ej4"></div>
+        </article>
+        <!-- 3. Scale -->
+        <article>
+          <h3>scale()</h3>
+          <p>
+            La función CSS scale() define una transformación que modifica el
+            tamaño de un elemento en el plano 2D. Debido a que la cantidad de
+            escalado está definida por un vector, puede cambiar el tamaño de la
+            dimensiones horizontal y vertical a diferentes escalas.
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: translate(size , [size]);</code></pre>
+          <p>Admite uno o dos valores</p>
+          <ul>
+            <li>
+              Reescala el elemento un número de veces (sólo en vertical y/o
+              horizontal).
+            </li>
+            <li>Solo admite porcentajes y números decimales</li>
+          </ul>
+          <p>
+            Si se indica un valor negativo, el elemento se escala de forma
+            inversa.
+          </p>
+
+          <h4>Ejemplos:</h4>
+          <!--Ejemplo 1-->
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: scale(2,3);</code></pre>
+          <div class="div-generico-scale"></div>
+          <div class="transformaciones-scale scale-ej1"></div>
+          <!--Ejemplo 2-->
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: scale(140%,50%);</code></pre>
+          <div class="div-generico-scale"></div>
+          <div class="transformaciones-scale scale-ej2"></div>
+
+          <!--Ejemplo 3-->
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: scale(-4, -3);</code></pre>
+          <div class="div-generico-scale"></div>
+          <div class="transformaciones-scale scale-ej3"></div>
+
+          <!--Ejemplo 4-->
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: scale(-40%, -300%);</code></pre>
+          <div class="div-generico-scale"></div>
+          <div class="transformaciones-scale scale-ej4"></div>
+        </article>
+
+        <!-- 4. Scale -->
+        <article>
+          <h3>scaleZ()</h3>
+          <p>
+            La función CSS scaleZ() modifica la coordenada z de cada punto del
+            elemento por un factor constante
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: perspective translateZ(size);</code></pre>
+          <p>Admite un valor</p>
+          <ul>
+            <li>Moodifica la coordenada z.</li>
+            <li>Si el escalado es 1 no se modifica</li>
+            <li>Solo admite porcentajes y números decimales</li>
+          </ul>
+          <p>
+            La función perspective() posiciona al espectador en relación con el
+            plano que se encuentra donde z=0
+          </p>
+          <p>
+            Si se indica un valor negativo, el elemento se escala de forma
+            inversa.
+          </p>
+          <h4>Ejemplos:</h4>
+          <!--Ejemplo 1-->
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: perspective(300px) scale3d(3,4,5) rotateX(45deg);</code></pre>
+          <div class="div-generico-scale"></div>
+          <div class="transformaciones-scaleZ scaleZ-ej1"></div>
+          <!--Ejemplo 2-->
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: perspective(300px) scale3d(10%,40%,50%) rotateX(45deg);</code></pre>
+          <div class="div-generico-scale"></div>
+          <div class="transformaciones-scaleZ scaleZ-ej2"></div>
+
+          <!--Ejemplo 3-->
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: perspective(300px) scale3d(-1,150%,2) rotateX(45deg);</code></pre>
+          <div class="div-generico-scale"></div>
+          <div class="transformaciones-scaleZ scaleZ-ej3"></div>
+        </article>
+        <!-- 5. Scale -->
+        <article>
+          <h3>scale3d()</h3>
+          <p>
+            La función CSS scale3d() define una transformación que cambia el
+            tamaño de un elemento en el espacio 3D. Debido a que la cantidad de
+            escala está definida por un vector, puede cambiar el tamaño de
+            diferentes dimensiones en diferentes escalas.
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: translate(size , [size]);</code></pre>
+          <p>Admite de uno a tres valores</p>
+          <ul>
+            <li>El valor se aplica al escalado en el eje x,y o/y z.</li>
+          </ul>
+          <p>
+            Si se indica un valor negativo, el elemento se escala de forma
+            inversa.
+          </p>
+          <h4>Ejemplos:</h4>
+          <!--Ejemplo 1-->
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: perspective(300px) scale3d(2,1,5) rotateX(45deg);</code></pre>
+          <div class="div-generico-scale"></div>
+          <div class="transformaciones-scale3d scale3d-ej1"></div>
+          <!--Ejemplo 2-->
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: perspective(300px) scale3d(10%,40%,50%) rotateX(45deg);</code></pre>
+          <div class="div-generico-scale"></div>
+          <div class="transformaciones-scale3d scale3d-ej2"></div>
+
+          <!--Ejemplo 3-->
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform:  perspective(300px) scale3d(-1,150%,2) rotateX(45deg);</code></pre>
+          <div class="div-generico-scale"></div>
+          <div class="transformaciones-scale3d scale3d-ej3"></div>
+        </article>
+        <!-- 6. Scale -->
+        <article>
+          <h3>scale</h3>
+          <p>La propiedad de CSS scale escala un elemento en el eje x, y, z.</p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">scale(sizeX , [sizeY], [sizeZ]);</code></pre>
+          <p>Admite de uno a tres valores</p>
+          <ul>
+            <li>El valor se aplica al escalado en el eje x, y o/y z.</li>
+          </ul>
+          <p>
+            Si se indica un valor negativo, el elemento se escala de forma
+            inversa.
+          </p>
+          <h4>Ejemplos:</h4>
+          <!--Ejemplo 1-->
+          <pre
+            class="line-numbers"
+          ><code class="language-css">scale: 3;</code></pre>
+          <div class="div-generico-scale"></div>
+          <div class="transformaciones-scaleProp scaleProp-ej1"></div>
+          <!--Ejemplo 2-->
+          <pre
+            class="line-numbers"
+          ><code class="language-css">scale: 70%;</code></pre>
+          <div class="div-generico-scale"></div>
+          <div class="transformaciones-scaleProp scaleProp-ej2"></div>
+
+          <!--Ejemplo 3-->
+          <pre
+            class="line-numbers"
+          ><code class="language-css">scale: 2 2;</code></pre>
+          <div class="div-generico-scale"></div>
+          <div class="transformaciones-scaleProp scaleProp-ej3"></div>
+
+          <!--Ejemplo 4-->
+          <pre
+            class="line-numbers"
+          ><code class="language-css">scale: 40% 70%;</code></pre>
+          <div class="div-generico-scale"></div>
+          <div class="transformaciones-scaleProp scaleProp-ej4"></div>
+
+          <!--Ejemplo 5-->
+          <pre
+            class="line-numbers"
+          ><code class="language-css">scale: 2 40% 200%;
+transform: perspective(300px) rotateX(45deg);</code></pre>
+          <div class="div-generico-scale"></div>
+          <div class="transformaciones-scaleProp scaleProp-ej5"></div>
+        </article>
+      </section>
+      <section>
+        <article>
+          <h3>skew(x,y)</h3>
+          <p>
+            La función CSS skew() define una transformación que sesga un
+            elemento en el plano 2D. Su resultado es un tipo de datos
+            &lt;transform-function>.
+          </p>
+          <p>
+            Esta transformación es un mapeo de cizallamiento (transvección) que
+            distorsiona cada punto dentro de un elemento en un determinado
+            ángulo en las direcciones horizontal y vertical. El efecto es como
+            si se cogiera cada esquina del elemento y se tirara de ellas en un
+            ángulo determinado.
+          </p>
+          <p>
+            Las coordenadas de cada punto se modifican en un valor proporcional
+            al ángulo especificado y a la distancia al origen. Así, cuanto más
+            lejos del origen esté un punto, mayor será el valor que se le añada.
+          </p>
+          <h4>Sintaxis</h4>
+          <p>
+            La función skew() se especifica con uno o dos valores, que
+            representan la cantidad de inclinación que se aplicará en cada
+            dirección. Si sólo se especifica un valor se utiliza para el eje x y
+            no habrá inclinación en el eje y.
+          </p>
+          <pre class="line-numbers"><code class="language-css">skew(ax)
+
+skew(ax, ay)
+
+/*skewx() es igual que skew() ya que ambos usan el eje x*/
+skewx(a)
+
+skewy(a)</code></pre>
+          <ul>
+            <li>
+              a
+              <br />
+              Representa el ángulo de inclinación en el eje x o y. Puede ser un
+              ángulo en grados, radianes o grados sexagesimales.
+            </li>
+            <br />
+            <li>
+              ax
+              <br />
+              Es un &lt;ángulo> que representa el ángulo a utilizar para
+              distorsionar el elemento a lo largo del eje x (o abscisa).
+            </li>
+            <br />
+            <li>
+              ay
+              <br />
+              Es un &lt;ángulo> que representa el ángulo a utilizar para
+              distorsionar el elemento a lo largo del eje y (u ordenada). Si no
+              se define, su valor por defecto es 0, lo que resulta en una
+              inclinación puramente horizontal.
+            </li>
+          </ul>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: skew(10deg);</code></pre>
+          <div class="transformaciones-skew">Normal</div>
+          <div class="transformaciones-skewedx">Skewed</div>
+          <pre
+            class="line-numbers"
+          ><code class="language-css"> transform: skew(10deg, 10deg);</code></pre>
+          <div class="transformaciones-skew">Normal</div>
+          <div class="transformaciones-skewed">Skewed</div>
+        </article>
+        <article>
+          <h3>skewX(x)</h3>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: skewx(10deg);</code></pre>
+          <div class="transformaciones-skew">Normal</div>
+          <div class="transformaciones-skewedx">Skewed</div>
+        </article>
+        <article>
+          <h3>skewY(y)</h3>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: skewy(10deg);</code></pre>
+          <div class="transformaciones-skew">Normal</div>
+          <div class="transformaciones-skewedy">Skewed</div>
+        </article>
+      </section>
+      <section>
+        <article>
+          <h3>transform-matrix</h3>
+          <p>
+            La función CSS matrix() define una matriz de transformación 2D
+            homogénea. Su resultado es un tipo de datos
+            &lt;transformación-función>.
+          </p>
+          <h4>Sintaxis</h4>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: matrix(a, b, c, d, tx, ty);</code></pre>
+          <p>valores admitidos</p>
+          <ul>
+            <li>
+              a b c d<br />
+              Son &lt;números> que describen la transformación lineal.
+            </li>
+            <li>
+              tx ty <br />
+              Son &lt;números> que describen la traslación a aplicar.
+            </li>
+          </ul>
+          <p>
+            Los primeros cuatro valores hacen referencia a la transformación que
+            sufre el objeto que estamos modificando
+          </p>
+          <p>
+            Los ultimos dos valores hacen referenciaa la traslación que sufre el
+            objeto que estamos modificando
+          </p>
+          <p>
+            La diferencia esta en que los primeros cuuatro valores modifican su
+            tamaño y los ultimos dos valores modifican su posición respecto al
+            eje de coordenadas original
+          </p>
+
+          <h4>Ejemplos:</h4>
+          <br />
+          <p>
+            En el siguiente ejemplo se puede ver como se modifica el tamaño y la
+            posición de un elemento
+          </p>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: matrix(1.2, 0.2, -1, 0.9, 0, 20);</code></pre>
+          <div class="Transformaciones-matrix">sin modificar</div>
+          <div class="Transformaciones-matrix-cuadrado"></div>
+          <br />
+        </article>
+      </section>
+      <section>
+        <article>
+          <h3>transform-matrix3d</h3>
+          <p>
+            La función CSS matrix3d() define una transformación 3D como una
+            matriz homogénea de 4x4. Su resultado es un tipo de datos
+            &lt;transformación-función>.
+          </p>
+          <h4>Sintaxis</h4>
+          <p>
+            La función matrix3d() se especifica con 16 valores. Se describen en
+            el orden columna-mayor.
+          </p>
+          <pre
+            class="line-numbers"
+          ><code class="language-css">matrix3d(a1, b1, c1, d1, a2, b2, c2, d2, a3, b3, c3, d3, a4, b4, c4, d4);</code></pre>
+          <p>valores admitidos</p>
+          <ul>
+            <li>
+              a1 b1 c1 d1 a2 b2 c2 d2 a3 b3 c3 d3<br />
+              Son &lt;números> que describen la transformación lineal.
+            </li>
+            <li>
+              a4 b4 c4 d4<br />
+              Son &lt;números> que describen la traslación a aplicar.
+            </li>
+          </ul>
+          <h4>Ejemplo:</h4>
+          <br />
+          <pre
+            class="line-numbers"
+          ><code class="language-css">transform: matrix3d(1, 0, 0, 0, 0, 1, 6, 0, 0, 0, 1, 0, 50, 25, 0, 1.1);</code></pre>
+          <div class="Transformaciones-matrix">sin modificar</div>
+          <div class="Transformaciones-matrix-cuadrado3d"></div>
+          <br />
+        </article>
+      </section>
+    </main>
+    <footer>
+      <div>Jaime Rabasco Ronda</div>
+      <a href="https://twitter.com/jaimerr" class="social"
+        ><img src="icon/twitter.svg" alt="Twitter"
+      /></a>
+      <a href="https://github.com/jaimerabasco" class="social"
+        ><img src="icon/github.svg" alt="GitHub"
+      /></a>
+    </footer>
+  </body>
+</html>

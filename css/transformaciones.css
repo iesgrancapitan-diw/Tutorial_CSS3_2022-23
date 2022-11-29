@@ -1,0 +1,465 @@
+.Transformaciones-matrix {
+  width: 100px;
+  height: 100px;
+  background-color: #ff0000;
+}
+
+.Transformaciones-matrix-cuadrado {
+  width: 100px;
+  height: 100px;
+  background-color: #ff0000;
+  transform: matrix(1.2, 0.2, -1, 0.9, 0, 20);
+}
+
+.Transformaciones-matrix-cuadrado3d {
+  width: 100px;
+  height: 100px;
+  background-color: #ff0000;
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 6, 0, 0, 0, 1, 0, 50, 25, 0, 1.1);
+}
+
+.transformaciones-perspective-example-element {
+  width: 100px;
+  height: 100px;
+  perspective: 550px;
+  transform-style: preserve-3d;
+}
+
+.transformaciones-perspective-face {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: inherit;
+  font-size: 60px;
+  color: #fff;
+}
+
+.transformaciones-perspective-front {
+  background: rgba(90, 90, 90, 0.7);
+  transform: translateZ(50px);
+}
+
+.transformaciones-perspective-back {
+  background: rgba(0, 210, 0, 0.7);
+  transform: rotateY(180deg) translateZ(50px);
+}
+
+.transformaciones-perspective-right {
+  background: rgba(210, 0, 0, 0.7);
+  transform: rotateY(90deg) translateZ(50px);
+}
+
+.transformaciones-perspective-left {
+  background: rgba(0, 0, 210, 0.7);
+  transform: rotateY(-90deg) translateZ(50px);
+}
+
+.transformaciones-perspective-top {
+  background: rgba(210, 210, 0, 0.7);
+  transform: rotateX(90deg) translateZ(50px);
+}
+
+.transformaciones-perspective-bottom {
+  background: rgba(210, 0, 210, 0.7);
+  transform: rotateX(-90deg) translateZ(50px);
+}
+
+.transformaciones-perspective-ejemplo-sin-modificar {
+  transform: perspective(none);
+}
+
+.transformaciones-perspective-ejemplo-modificada {
+  transform: perspective(800px);
+}
+
+.transformaciones-rotate {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.transformaciones-rotate p {
+  padding: 10px 5px;
+  border: 3px solid black;
+  border-radius: 20px;
+  width: 150px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.transformaciones-rotate {
+  transition: rotate 1s;
+}
+
+.transformaciones-rotate-angle1 {
+  rotate: 90deg;
+}
+
+.transformaciones-rotate-angle2 {
+  rotate: 0.5turn;
+}
+
+.transformaciones-rotate-angle3 {
+  rotate: 2.28rad;
+}
+
+.transformaciones-rotate-anglex {
+  rotate: x 45deg;
+}
+
+.transformaciones-rotate-angley {
+  rotate: y 0.15turn;
+}
+
+.transformaciones-rotate-anglez {
+  rotate: z 2.28rad;
+}
+
+.transformaciones-rotate-dosejes {
+  rotate: 1 -0.5 1 180deg;
+}
+
+.transformaciones-translateX {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+  background-color: red;
+  transition: 1.5s;
+}
+
+.translateX-ej1 {
+  transform: translateX(0);
+}
+
+.translateX-ej2 {
+  transform: translateX(400px);
+}
+
+.translateX-ej3 {
+  transform: translateX(-2rem);
+}
+
+.translateX-ej4 {
+  transform: translateX(50ch);
+}
+
+.transformaciones-translateY {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+  background-color: blue;
+  transition: 1.5s;
+}
+
+.translateY-ej1 {
+  transform: translateY(0px);
+}
+
+.translateY-ej2 {
+  transform: translateY(45px);
+}
+
+.translateY-ej3 {
+  transform: translateY(-3rem);
+}
+
+.translateY-ej4 {
+  transform: translateY(3ch);
+}
+
+.transformaciones-translate {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+  background-color: orange;
+  transition: 1.5s;
+}
+
+.translate-ej1 {
+  transform: translate(20px);
+}
+
+.translate-ej2 {
+  transform: translate(500px, 40px);
+}
+
+.translate-ej3 {
+  transform: translate(-3ch, -3mm);
+}
+
+.translate-ej4 {
+  transform: translate(2.1rem, -2ex);
+}
+
+.transformaciones-translateZ {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+  background-color: rgb(130, 75, 219);
+  transform: perspective(100px);
+  transition: 1.5s;
+  opacity: 0.8;
+}
+
+.translateZ-ej1 {
+  transform: perspective(100px) translateZ(60px);
+  background-color: rgb(81, 49, 133);
+}
+
+.translateZ-ej2 {
+  transform: perspective(100px) translateZ(-15rem);
+  background-color: rgb(81, 49, 133);
+}
+
+.translateZ-ej3 {
+  transform: perspective(100px) translateZ(4ch);
+  background-color: rgb(81, 49, 133);
+}
+
+.transformaciones-translate3d {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+  background-color: rgb(101, 209, 228);
+  transform-style: preserve-3d;
+  transition: 1.5s;
+}
+
+.translate3d-ej1 {
+  transform: perspective(200px) translate3d(450px, -62px, 90px);
+}
+
+.translate3d-ej2 {
+  transform: perspective(200px) translate3d(-4rem, 0.5rem, -8rem);
+}
+
+.translate3d-ej3 {
+  transform: perspective(200px) translate3d(3ch, 1ch, 7ch);
+}
+
+.transformaciones-translateProp {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+  background-color: rgb(226, 113, 151);
+  transition: 1.5s;
+}
+
+.translateProp-ej1 {
+  translate: none;
+}
+
+.translateProp-ej2 {
+  translate: 70px;
+}
+
+.translateProp-ej3:hover {
+  translate: 0 -3rem;
+}
+
+.translateProp-ej4 {
+  translate: 40% 70%;
+}
+
+.transformaciones-scaleX {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 100px;
+  background-color: red;
+  transition: 1.5s;
+}
+
+.scaleX-ej1 {
+  transform: scaleX(2);
+}
+
+.scaleX-ej2 {
+  transform: scaleX(50%);
+}
+
+.scaleX-ej3 {
+  transform: scaleX(-3.5);
+}
+
+.scaleX-ej4 {
+  transform: scaleX(-20%);
+}
+
+.transformaciones-scaleY {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 100px;
+  background-color: blue;
+  transition: 1.5s;
+}
+
+.scaleY-ej1 {
+  transform: scaleY(1.5);
+}
+
+.scaleY-ej2 {
+  transform: scaleY(300%);
+}
+
+.scaleY-ej3 {
+  transform: scaleY(-2.5);
+}
+
+.scaleY-ej4 {
+  transform: scaleY(-20%);
+}
+
+.transformaciones-scale {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: orange;
+  margin: 100px;
+  transition: 1.5s;
+}
+
+.scale-ej1 {
+  transform: scale(2, 3);
+}
+
+.scale-ej2 {
+  transform: scale(140%, 50%);
+}
+
+.scale-ej3 {
+  transform: scale(-4, -3);
+}
+
+.scale-ej4 {
+  transform: scale(-40%, -300%);
+}
+
+.transformaciones-scaleZ {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 100px;
+  background-color: rgb(130, 75, 219);
+  transform: perspective(100px);
+  transition: 1.5s;
+}
+
+.scaleZ-ej1 {
+  transform: perspective(300px) scaleZ(3) rotateX(45deg);
+}
+
+.scaleZ-ej2 {
+  transform: perspective(300px) scaleZ(-3) rotateX(45deg);
+}
+
+.scaleZ-ej3 {
+  transform: perspective(300px) scaleZ(50%) rotateX(45deg);
+}
+
+.transformaciones-scale3d {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 100px;
+  background-color: rgb(101, 209, 228);
+  transform-style: preserve-3d;
+  transition: 1.5s;
+}
+
+.scale3d-ej1 {
+  transform: perspective(300px) scale3d(2, 1, 5) rotateX(45deg);
+}
+
+.scale3d-ej2 {
+  transform: perspective(300px) scale3d(10%, 40%, 50%) rotateX(45deg);
+}
+
+.scale3d-ej3 {
+  transform: perspective(300px) scale3d(-1, 150%, 2) rotateX(45deg);
+}
+
+.transformaciones-scaleProp {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 100px;
+  background-color: rgb(226, 113, 151);
+  transition: 1.5s;
+}
+
+.scaleProp-ej1 {
+  scale: 3;
+}
+
+.scaleProp-ej2 {
+  scale: 70%;
+}
+
+.scaleProp-ej3 {
+  scale: 2 2;
+}
+
+.scaleProp-ej4 {
+  scale: 40% 70%;
+}
+
+.scaleProp-ej5 {
+  scale: 2 40% 200%;
+  transform: perspective(300px) rotateX(45deg);
+}
+
+.transformaciones-skew {
+  width: 80px;
+  height: 80px;
+  background-color: skyblue;
+}
+
+.transformaciones-skewedx {
+  width: 80px;
+  height: 80px;
+  transform: skew(10deg);
+  /* Equal to skewX(10deg) */
+  background-color: pink;
+}
+
+.transformaciones-skewedy {
+  width: 80px;
+  height: 80px;
+  transform: skewy(10deg);
+  /* Equal to skewX(10deg) */
+  background-color: pink;
+}
+
+.transformaciones-skewed {
+  width: 80px;
+  height: 80px;
+  transform: skew(10deg, 10deg);
+  background-color: pink;
+}
+
+.div-generico-scale {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  margin: 100px;
+  border: 1px solid black;
+}
+
+.div-generico-translate {
+  display: inline-block;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+  border: 1px solid black;
+}

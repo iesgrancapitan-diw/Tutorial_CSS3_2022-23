@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>TUTORIAL CSS3 - 2020/2021 - Diseño de Interfaces Web - CFGS DAW - IES Gran Capitán</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="css/estilos_col_mult.css">
+    <script src="js/prism.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">TUTORIAL CSS3 - 2022/2023</a></h1>
+        <h2><img src="icon/language-css3.svg"></h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Bordes.html">Bordes</a></li>
+            <li><a href="Fondos.html">Fondos</a></li>
+            <li><a href="Efectos_texto.html">Fuentes y Ef Texto</a></li>
+            <li><a href="Transformaciones.html">Transformac.</a></li>
+            <li><a href="Transiciones.html">Transiciones</a></li>
+            <li><a href="Animaciones.html">Animaciones</a></li>
+            <li><a href="Col_mult.html">Col Múltiples</a></li>
+            <li><a href="Color.html">Color y Degradado</a></li>
+            <li><a href="Pseudos_Css3.html">Pseudos CSS3</a></li>
+            <li><a href="Svg_filter.html">Filter y SVG</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <h2>TUTORIAL CSS3 - Columnas Múltiples</h2>
+            <h3>Propiedades para modificar la disposición de los elementos de un documento HTML en formato columnas</h3>
+        </div>
+
+        <section>
+            <article>
+                <h3>column-count</h3>
+                <p>Indica el número de columnas que pueden aparecer en la misma linea.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">column-count: [Número de columnas en una fila];</code></pre>
+                <p>Admite únicamente un valor positivo y entero </p>
+
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">column-count:5;</code></pre>
+                <p>El elemento se dividirá en 5 columnas</p>
+                <h4>Resultado:</h4>
+                <br>
+                <div id="col_ejemploColumn-count">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p> <!-- se pone mas debajo que las otras, arreglar -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h3>column-width</h3>
+                <p>Indica el ancho de colmunas</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">column-width: [anchura de la columna];</code></pre>
+                    <p>Admite un valor o un auto</p>
+                    <ul>
+                        <li>Un valor: En cualquier unidad de medida aceptada en HTML</li>
+                        <li>Auto: asigna el mismo ancho a todas las columnas en función de la pantalla ocupando todo el espacio que le aporte la etiqueta padre</li>
+                    </ul>
+                    <img src="img\col_mult\col_mult_width.jfif" alt="column-width">
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">.grupo_columnas{
+    column-count:5;
+}
+.grupo_columnas > p{
+    column-width:10%;
+}
+</code></pre>
+                <p>El elemento se dividirá en 5 columnas con un ancho de 10%</p>
+                <h4>Resultado:</h4>
+                <br>
+                <div id="col_ejemploColumn-width">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p> <!-- se pone mas debajo que las otras, arreglar -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                </div>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h3>column-gap</h3>
+                <p>Indica el espaciado entre columnas.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">column-gap: [tamaño del espaciado, auto, normal, initial o inherit];</code></pre>
+                <p>Admite un valor, un auto, normal, initial o inherit</p>
+                <img src="img\col_mult\col_mult_gap.jfif" alt="column-width">
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">column-count: 5;
+column-gap:80px;</code></pre>
+                <p>Las columnas se separarán 50 px</p>
+                <h4>Resultado:</h4>
+                <br>
+                <div id="col_ejemploColumn-gap">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p> <!-- se pone mas debajo que las otras, arreglar -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <article>
+                <h3>column-rule</h3>
+                <p>La 'regla de la columna' coloca efectivamente un borde en el medio del 'espacio de la columna'. Por lo tanto, para habilitar esto, se debe especificar un ancho de 'espacio de columna' que tenga el mismo valor o mayor que la regla de columna.</p>
+                <img src="img\col_mult\col_mult_rule.jfif" alt="column-width">
+                <h2>column-rule-style</h2>
+                <p>Da estilo al separador de las columnas</p>
+                
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">column-rule-style: none, hidden, dotted, dashed, solid, double, groove, ridge, inset, outset;
+</code></pre>
+<br>
+                <h4>Ejemplo:</h4>
+                <pre class="line-numbers"><code class="language-css">column-rule-style: solid;</code></pre>
+                <p>Las columnas tendran una linea separadora sólida</p>
+                <h4>Resultado:</h4>
+                <br>
+                <div id="col_ejemploColumn-rule-style">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p> <!-- se pone mas debajo que las otras, arreglar -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                </div>
+                <h2>column-rule-width</h2>
+                <p>Da estilo al separador de las columnas</p>
+                
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">column-rule-width: [tamaño thin, medium, thick, initial o inherit];
+</code></pre>
+<br>
+                <h4>Ejemplo:</h4>
+                <pre class="line-numbers"><code class="language-css">column-rule-style: solid;
+column-rule-width: 5px;</code></pre>
+                </code></pre>
+                <p>Las columnas tendran una linea separadora de 5px</p>
+                <h4>Resultado:</h4>
+                <br>
+                <div id="col_ejemploColumn-rule-width">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p> <!-- se pone mas debajo que las otras, arreglar -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                </div>
+
+                <h2>column-rule-color</h2>
+                <p>Da estilo al separador de las columnas</p>
+                
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">column-rule-color: [color];
+</code></pre>
+<br>
+                <h4>Ejemplo:</h4>
+                <pre class="line-numbers"><code class="language-css">column-rule-style: solid;
+column-rule-width: 5px;
+column-rule-color: red;
+</code></pre>
+                </code></pre>
+                <p>Las columnas tendran una linea separadora de color rojo de 5px</p>
+                <h4>Resultado:</h4>
+                <br>
+                <div id="col_ejemploColumn-rule-color">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p> <!-- se pone mas debajo que las otras, arreglar -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                </div>
+
+                <h2>column-rule shorthand</h2>
+                <p>Da estilo al separador de las columnas con los atributos antes explicados</p>
+                
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">column-rule: [tamaño] [estilo] [color];
+</code></pre>
+<br>
+                <h4>Ejemplo:</h4>
+                <pre class="line-numbers"><code class="language-css">column-rule: 5px solid red;                </code></pre>
+                <p>Las columnas tendran una linea separadora de color rojo de 5px</p>
+                <h4>Resultado:</h4>
+                <br>
+                <div id="col_ejemploColumn-rule-shorthand">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p> <!-- se pone mas debajo que las otras, arreglar -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                </div>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h3>column-fill</h3>
+                <p>Da dos controles para establecer cómo se equilibra la cantidad de contenido en las columnas.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">column-fill: [auto o balance];</code></pre>
+                <p>Si se establece en 'balance', la variación en la longitud de la columna se minimizará y todas las longitudes serán lo más iguales posible. Si se establece en 'auto', las columnas se llenarán en orden y (por ejemplo) puede resultar en que la cuarta de 4 columnas tenga menos contenido que las 3 columnas anteriores. Si se estableciera un equilibrio en esto, permitiría que las 4 columnas tuvieran aproximadamente la misma altura</p>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">column-count: 5;
+column-fill:auto;</code></pre>
+                <p>Las columnas se colocarán de forma automática</p>
+                <h4>Resultado:</h4>
+                <br>
+                <div id="col_ejemploColumn_fill-auto">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p> <!-- se pone mas debajo que las otras, arreglar -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                </div>
+
+                <pre class="line-numbers"><code class="language-css">column-count: 5;
+column-fill:balance;</code></pre>
+                <p>Las columnas se colocarán de forma balanceada</p>
+                <h4>Resultado:</h4>
+                <br>
+                <div id="col_ejemploColumn_fill_balance">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p> <!-- se pone mas debajo que las otras, arreglar -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid, harum fuga error delectus nesciunt nobis odio saepe magni vel amet deleniti necessitatibus et ad animi cum ullam soluta quis.</p>
+                </div>
+
+                
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <div>Jaime Rabasco Ronda, AlexSRK 09</div>
+        <a href="https://twitter.com/jaimerr" class="social"><img src="icon/twitter.svg" alt="Twitter"></a>
+        <a href="https://github.com/alexsrk09" class="social"><img src="icon/github.svg" alt="GitHub"></a>
+    </footer>
+</body>
+
+</html>

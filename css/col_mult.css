@@ -1,0 +1,152 @@
+.col_mult-colum-count-4 {
+    column-count: 4;
+}
+
+.col_mult-colum-count-3 {
+    column-count: 3;
+}
+
+.col_mult-colum-gap-5em {
+    column-count: 4;
+    column-gap: 5em;
+}
+
+.col_mult-colum-gap-150px {
+    column-count: 4;
+    column-gap: 150px;
+}
+
+.col_mult-colum-fill-balance {
+    column-count: 3;
+    column-fill: balance;
+    height: 200px;
+}
+
+.col_mult-colum-fill-auto-con-heigth {
+    column-count: 3;
+    column-fill: auto;
+    height: 200px;
+}
+
+.col_mult-colum-fill-auto-sin-heigth {
+    column-count: 2;
+    column-fill: auto;
+}
+
+.col_mult-colum-width-300px {
+    column-width: 300px;
+}
+
+.col_mult-colum-width-10em {
+    column-width: 10em;
+}
+
+.col_mult-colum-span-none {
+    column-count: 3;
+}
+
+.col_mult-colum-span-none>h2 {
+    column-span: none;
+}
+
+.col_mult-colum-span-all {
+    column-count: 3;
+}
+
+.col_mult-colum-span-all>h2 {
+    column-span: all;
+}
+
+.col_mult-colum-rule-style-dotted {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule-style: dotted;
+}
+
+.col_mult-colum-rule-style-dashed {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule-style: dashed;
+}
+
+.col_mult-colum-rule-style-solid {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule-style: solid;
+}
+
+.col_mult-colum-rule-style-double {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule-style: double;
+}
+
+.col_mult-colum-rule-style-groove {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule-style: groove;
+}
+
+.col_mult-colum-rule-style-ridge {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule-style: ridge;
+}
+
+.col_mult-colum-rule-style-inset {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule-style: inset;
+}
+
+.col_mult-colum-rule-style-outset {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule-style: outset;
+}
+
+.col_mult-colum-rule-width-medium {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule-style: solid;
+    column-rule-width: medium;
+}
+
+.col_mult-colum-rule-width-length {
+    column-rule-width: 20px;
+    column-rule-style: inset;
+    column-count: 3;
+    column-gap: 40px;
+}
+
+.col_mult-colum-rule-color-red {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule-style: solid;
+    column-rule-width: 10px;
+    column-rule-color: red;
+}
+
+.col_mult-colum-rule-color-royalblue {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule-style: groove;
+    column-rule-width: 10px;
+    column-rule-color: royalblue;
+}
+
+.col_mult-colum-rule-double {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule: 4px double red;
+}
+
+.col_mult-colum-rule-ridge {
+    column-count: 3;
+    column-gap: 40px;
+    column-rule: 4px ridge red;
+}
+
+.col_mult-colums {
+    columns: 30px 3;
+}
